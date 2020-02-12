@@ -1,4 +1,0 @@
-@mixin border-two-side($l-size,$r-size,$color,$style){
-    border-left: $l-size $color $style;
-    border-right: $r-size $color $style ;
-}
