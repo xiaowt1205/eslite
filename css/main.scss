@@ -1,0 +1,109 @@
+@import "./model.scss";
+@import "./_variables.scss";
+@import "./_function.scss";
+
+
+*{
+    font-family: 'Noto Serif TC', serif;
+}
+
+header{
+    nav{
+        padding: 60px 0 ;
+        ul{
+            display: inline-block;
+            li{
+                @extend %letter-spacing;
+                text-align: center;
+                display: inline-block;
+                padding: 2px 10px;
+
+                &:nth-child(-n+5){
+                    padding: 2px 0.8rem;
+                }
+
+                &:nth-child(-n+4){
+                    @include border-two-side(1px,0,$fc-gray,solid)     
+                }
+
+                &:nth-child(5){
+                    @include border-two-side(1px,1px,$fc-gray,solid)     
+                }       
+
+                a{  
+                    color: $fc-black;
+                    font-size: $fs-16;
+                    font-weight: $fw-bold;
+                    transition: .3s;
+                    transition-timing-function: ease;
+
+                    &:hover{
+                        color: $fc-hover; 
+                        text-decoration: none;
+                    }
+
+                    .cicle{
+                        margin-top: 2px;
+                        position: relative;
+                        width: 20px;
+                        height: 20px;
+                        border: 1.4px black solid;
+                        border-radius: 25px;
+
+                        &:hover{
+                            border: 1.4px $fc-hover solid;
+                        }
+
+                        .fa-info{
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-40%,-50%);
+                        }
+                    }
+                }
+                &.menu-btn{
+                    a{
+                        div{
+                            position: relative;
+                            top: 5px;
+                            width: 60px;
+                            height: 2px;
+                            background-color: $fc-black;
+                            transform-origin: center;
+                            transition: .3s;
+                            transition-timing-function: ease-in-out;
+
+                            &::after{
+                                content:' ';
+                                position: absolute;
+                                left: 0;
+                                top: 12px;
+                                width: 60px;
+                                height: 2px;
+                                background-color: $fc-black;
+                                transform-origin:center;
+                                transition: .3s;    
+                                transition-timing-function: ease-in-out;                     
+                            }
+                        }
+                    }
+                    &.active{
+                        div{
+                            transform: rotate(45deg);
+                            &::after{
+                                top: 0px;
+                                transform: rotate(270deg);
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+
+    aside{
+        padding: 60px 130px 60px 80px;
+        background-color: $main-color;
+    }
+}
