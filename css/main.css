@@ -28,15 +28,26 @@ header nav ul li {
   letter-spacing: 2px;
 }
 
+.container-fluid {
+  max-width: 1600px;
+}
+
+.padding-none {
+  padding: 0;
+}
+
 * {
   font-family: 'Noto Serif TC', serif;
 }
 
 header nav {
   padding: 60px 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 header nav ul {
+  height: 30px;
   display: inline-block;
 }
 
@@ -47,7 +58,7 @@ header nav ul li {
 }
 
 header nav ul li:nth-child(-n+5) {
-  padding: 2px 0.8rem;
+  padding: 2px 1.3rem;
 }
 
 header nav ul li:nth-child(-n+4) {
@@ -96,6 +107,11 @@ header nav ul li a .cicle .fa-info {
           transform: translate(-40%, -50%);
 }
 
+header nav ul li.menu-btn {
+  top: 0;
+  right: -65px;
+}
+
 header nav ul li.menu-btn a div {
   position: relative;
   top: 5px;
@@ -137,8 +153,63 @@ header nav ul li.menu-btn.active div::after {
           transform: rotate(270deg);
 }
 
+header .banner {
+  padding: 0;
+  left: 50%;
+  top: 150px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 header aside {
-  padding: 60px 130px 60px 80px;
+  padding-top: 60px;
+  top: 0;
+  left: 50%;
+  z-index: 99;
+  width: 700px;
+  height: 850px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+header aside .logo {
+  width: 300px;
+  margin-bottom: 65px;
+}
+
+header aside .swiper-pagination {
+  width: 250px;
+  position: unset;
+  margin-bottom: 65px;
+}
+
+header aside .swiper-pagination-bullet {
+  margin-right: 15px;
+  border: 1.5px solid white;
+  background: transparent;
+  opacity: .8;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+header aside .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: white;
+  opacity: 1;
+}
+
+header aside i {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+header .aside-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  width: 38%;
+  height: 840px;
   background-color: #665252;
 }
 /*# sourceMappingURL=main.css.map */

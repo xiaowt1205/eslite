@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <!-- google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <!-- layout -->
     <link rel="stylesheet" href="./css/main.css">
     <!-- page css  -->
@@ -21,28 +23,70 @@
 
 <body>
     <!-- index -->
-    <header class="d-flex justify-content-between position-relative">
-        <nav class="order-sm-1">
-            <ul class="d-flex">
-                <li><a href="">關於我們</a></li>
-                <li><a href="">閱讀分享計畫</a></li>
-                <li><a href="">青年培育計畫</a></li>
-                <li><a href="">基金會訊息</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href=""><i class="fas fa-share-alt"></i></a></li>
-                <li><a href=""><div class="cicle"><i class="fas fa-info"></i></div></a></li>
-                <li><a href=""><i class="fas fa-search"></i></a></li>
-                <li class="menu-btn"><a href="#" ><div class=""></div></a></li>
-            </ul>
+    <header class="d-flex justify-content-between">
+        <nav class="order-sm-1 container-fluid">
+            <div class="row justify-content-end">
+                <div class="col-8 d-flex justify-content-end">
+                    <ul class="d-flex">
+                        <li><a href="">關於我們</a></li>
+                        <li><a href="">閱讀分享計畫</a></li>
+                        <li><a href="">青年培育計畫</a></li>
+                        <li><a href="">基金會訊息</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href=""><i class="fas fa-share-alt"></i></a></li>
+                        <li><a href="">
+                                <div class="cicle"><i class="fas fa-info"></i></div>
+                            </a></li>
+                        <li><a href=""><i class="fas fa-search"></i></a></li>
+                        <li class="menu-btn position-absolute"><a href="#">
+                                <div class=""></div>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <div class="banner position-absolute"></div>
-        <aside>
-            <div class="logo">
-                <img class="w-100" src="./img/index/logo.png" alt="誠品文化藝術基金會LOGO">
+        <div class="banner position-absolute container-fluid">
+            <div class="row justify-content-end">
+                <div class="col-10">
+                    <div class="swiper-banner swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="w-100" src="./img/index/banner-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="w-100" src="./img/index/banner-2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="w-100" src="./img/index/banner-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="w-100" src="./img/index/banner-2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="w-100" src="./img/index/banner-1.jpg" alt="">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside class="position-absolute container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <div class="logo">
+                        <img src="./img/index/logo.png" alt="">
+                    </div>
+                    <div class="swiper-pagination d-flex"></div>
+                    <a href="#"><i class="fab fa-youtube"></i></a><br>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
             </div>
         </aside>
+        <div class="aside-bg"></div>
     </header>
-    <main></main>
+    <main>
+    </main>
     <footer></footer>
 
     <!-- Inside page -->
@@ -58,15 +102,25 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
     <!-- <script src="./js/nav.js"></script> -->
     <!-- page js -->
     <script src=""></script>
 
 
     <script>
-        $('.menu-btn').click(function(){
+        $('.menu-btn').click(function () {
             $('.menu-btn').toggleClass('active');
         })
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-banner', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
     </script>
 </body>
 
