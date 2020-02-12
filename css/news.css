@@ -24,6 +24,14 @@ p {
   margin: 0;
 }
 
+.container-fluid {
+  max-width: 1600px;
+}
+
+.padding-none {
+  padding: 0;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -121,14 +129,15 @@ p {
 
 .news_list .news .btnGroup .loadingPoint:hover {
   border: 1px solid #ffffff;
+  background-color: #000000;
+}
+
+.news_list .news .btnGroup .loadingPoint:hover a {
+  color: #ffffff;
 }
 
 .news_list .news .btnGroup .loadingPoint a {
   text-decoration: none;
   color: #000000;
-}
-
-.news_list .news .btnGroup .loadingPoint a:hover {
-  color: #ffffff;
 }
 /*# sourceMappingURL=news.css.map */

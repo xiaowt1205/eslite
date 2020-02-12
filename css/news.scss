@@ -111,6 +111,10 @@
 
                 &:hover{
                     border: 1px solid $fc-white;
+                    background-color: $fc-black;
+                }
+                &:hover a{
+                    color: $fc-white;
                 }
 
                 
@@ -119,11 +123,6 @@
                     text-decoration: none;
                     color: $fc-black;
                     
-                    &:hover{
-                        color: $fc-white;
-                    }
-                    
-                
                 }
             }
         }
