@@ -1,3 +1,15 @@
+@import "./_variables.scss";
+@import "./_function.scss";
+
+
+* {
+    font-family: 'Noto Serif TC', serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
 #Video {
     background-color: #E4E4E4;
     padding: 100px 0px;
@@ -77,10 +89,14 @@
 
     .container_1600 {
         max-width: 1600px;
-        padding: 0px 135px;
+        padding: 120px 135px 0px;
         box-sizing: border-box;
         margin: 0 auto;
         display: flex;
+        position: relative;
+        background-color: $fc-white;
+        // overflow: hidden;
+        box-shadow: 5px 5px 10px #888888;
 
         .title_region {
             width: 250px;
@@ -118,23 +134,28 @@
                 padding: 27px 0px 0px;
                 // padding-left: 10px;
                 letter-spacing: 25px;
-                text-align:left ;
+                text-align: left;
             }
 
 
         }
-        .content_text{
+
+        .content_text {
             width: 100%;
             display: flex;
             flex-direction: column;
             padding: 0px 95px;
-            .block{
+            margin-top: 25px;
+
+            .block {
                 display: flex;
                 padding: 30px 0px;
                 position: relative;
-                
-                &:nth-child(1){
-                    &::before{
+                // justify-content: space-around;
+                align-items: center;
+
+                &:nth-child(1) {
+                    &::before {
                         content: '';
                         position: absolute;
                         width: 100%;
@@ -143,7 +164,8 @@
                         top: 0;
                     }
                 }
-                &::after{
+
+                &::after {
                     content: '';
                     position: absolute;
                     width: 100%;
@@ -151,22 +173,95 @@
                     background-color: black;
                     bottom: 0;
                 }
-                p{
+
+                p {
                     margin: 0px;
                     font-size: 18px;
-                    &.time{
-                        padding: 0px 50px;
-                        &::before{
 
+                    &.time {
+                        padding: 0px 50px;
+                        position: relative;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 25px;
+                            height: 5px;
+                            background-color: red;
+                            top: 50%;
+                            left: 0;
+                            transform: translateY(-50%);
                         }
                     }
-                    &.sort{
+
+                    &.sort {
                         padding: 0px 45px;
+                        border-left: 1px solid $fc-black;
+                        border-right: 1px solid $fc-black;
                     }
-                    &.text{
+
+                    &.text {
                         padding-left: 35px;
                     }
                 }
+            }
+
+            .button {
+                padding: 35px 0px 65px;
+                display: flex;
+
+                span {
+                    padding: 20px 80px;
+                    border: 1px solid $fc-black;
+                    margin-left: auto;
+                    letter-spacing: 5px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .adornment {
+        // background-color: red;
+        position: relative;
+        max-width: 1600px;
+        margin: 0 auto;
+        // width: 100%;
+        height: 40px;
+        overflow: hidden;
+
+        // transform: skewX(45deg);
+        .block {
+            border-left: 1600px solid;
+            border-bottom: 0px solid;
+            border-top: 40px solid;
+            border-color: $fc-white $fc-white transparent transparent;
+            position: absolute;
+            z-index: 61213906;
+            box-shadow: 5px 5px 10px #888888;
+        }
+
+    }
+}
+
+#Vendor {
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li {
+            padding: 0px 0px;
+            border-right: 1px solid $fc-black;
+
+            &:nth-last-child(2) {
+                padding: 0px 25px;
+                border-right: none;
+            }
+            .button{
+                max-width: 70px;
+                width: 70px;
+                height: 2px;
+                background-color: blanchedalmond;
             }
         }
     }
