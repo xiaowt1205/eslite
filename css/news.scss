@@ -1,0 +1,132 @@
+@import "./model.scss";
+@import "./_variables.scss";
+@import "./_function.scss";
+
+
+*{
+    box-sizing: border-box;
+}
+
+.news_list{
+    width: 100%;
+
+    border-top: 1px solid $fc-gray;
+
+    font-weight: bold;
+
+    .news{
+        width: 100%;
+        height: 90px;
+
+        border-bottom: 1px solid $fc-gray;
+
+        display: flex;
+
+        .date{
+            width: 130px;
+
+            line-height: 90px;
+
+        }
+        .theme{
+            width: 440px;
+
+            text-align: center;
+
+            position: relative;
+
+            line-height: 90px;
+
+            &::before{
+                content: '';
+
+                height: 20px;
+
+                border: 1px solid $fc-gray;
+
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &::after{
+                content: '';
+
+                height: 20px;
+
+                border: 1px solid $fc-gray;
+
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+        }
+        .place{
+            width: 175px;
+
+            line-height: 90px;
+            text-align: center;
+
+            position: relative;
+
+            &::after{
+                content: '';
+
+                height: 20px;
+
+                border: 1px solid $fc-gray;
+
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+        }
+
+        .btnGroup{
+            width: 140px;
+
+            display: flex;
+            align-self: center;
+            flex-wrap: wrap;
+
+            margin-left: 30px;
+            padding: 16px 0;
+
+            .loadingPoint{
+                width: 39px;
+                height: 27px;
+                
+                font-size: $fs-12;
+                line-height: 22px;
+                text-align: center;
+        
+                border: 1px solid $fc-gray;
+
+                margin: 0 5px 3px 0;
+
+                &:hover{
+                    border: 1px solid $fc-white;
+                }
+
+                
+                a{
+                    
+                    text-decoration: none;
+                    color: $fc-black;
+                    
+                    &:hover{
+                        color: $fc-white;
+                    }
+                    
+                
+                }
+            }
+        }
+    }
+}
+
