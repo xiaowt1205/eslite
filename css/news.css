@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.news_list {
+  width: 100%;
+  border-top: 1px solid #808080;
+  font-weight: bold;
+}
+
+.news_list .news {
+  width: 100%;
+  height: 90px;
+  border-bottom: 1px solid #808080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news_list .news .date {
+  width: 130px;
+  line-height: 90px;
+}
+
+.news_list .news .theme {
+  width: 440px;
+  text-align: center;
+  position: relative;
+  line-height: 90px;
+}
+
+.news_list .news .theme::before {
+  content: '';
+  height: 20px;
+  border: 1px solid #808080;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.news_list .news .theme::after {
+  content: '';
+  height: 20px;
+  border: 1px solid #808080;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.news_list .news .place {
+  width: 175px;
+  line-height: 90px;
+  text-align: center;
+  position: relative;
+}
+
+.news_list .news .place::after {
+  content: '';
+  height: 20px;
+  border: 1px solid #808080;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.news_list .news .btnGroup {
+  width: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 30px;
+  padding: 16px 0;
+}
+
+.news_list .news .btnGroup .loadingPoint {
+  width: 39px;
+  height: 27px;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: center;
+  border: 1px solid #808080;
+  margin: 0 5px 3px 0;
+}
+
+.news_list .news .btnGroup .loadingPoint:hover {
+  border: 1px solid #ffffff;
+}
+
+.news_list .news .btnGroup .loadingPoint a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.news_list .news .btnGroup .loadingPoint a:hover {
+  color: #ffffff;
+}
+/*# sourceMappingURL=news.css.map */
