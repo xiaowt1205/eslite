@@ -363,7 +363,7 @@ header .aside-bg {
 .menu .menu-container .menu-title:last-child {
   position: absolute;
   right: 100px;
-  top: 400px;
+  top: 330px;
 }
 
 .menu .menu-btn {
@@ -418,6 +418,54 @@ header .aside-bg {
   top: 0px;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
+}
+
+footer {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #231815;
+}
+
+@media (min-width: 1200px) {
+  footer .container {
+    max-width: 1140px !important;
+  }
+}
+
+footer .container .footer-info {
+  padding: 0 30px 0 40px;
+  border-left: 1px #FFFFFF solid;
+  border-right: 1px #FFFFFF solid;
+}
+
+footer .container .logo {
+  max-width: 270px;
+}
+
+footer .container p {
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+footer .container .icon-bg {
+  width: 50px;
+  height: 50px;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  margin-right: 20px;
+  position: relative;
+}
+
+footer .container .icon-bg i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 32px;
+  color: #231815;
 }
 
 @-webkit-keyframes menu-fadeIn {
