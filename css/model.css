@@ -23,8 +23,20 @@ p {
   margin: 0;
 }
 
-.container-fluid {
-  max-width: 1600px;
+a:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+  }
 }
 
 .padding-none {

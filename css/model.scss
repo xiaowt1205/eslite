@@ -22,13 +22,22 @@ p{
     margin: 0;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 %letter-spacing{
     letter-spacing: 2px;
 }
 
 
-.container-fluid{
-    max-width: 1600px;
+.container{
+    @media(min-width:1200px){
+        max-width: 1200px;
+    }
+    @media(min-width:1600px){
+        max-width: 1600px;
+    }
 }
 
 .padding-none{

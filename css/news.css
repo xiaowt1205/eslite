@@ -24,8 +24,20 @@ p {
   margin: 0;
 }
 
-.container-fluid {
-  max-width: 1600px;
+a:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+  }
 }
 
 .padding-none {
@@ -128,12 +140,12 @@ p {
 }
 
 .news_list .news .btnGroup .loadingPoint:hover {
-  border: 1px solid #ffffff;
+  border: 1px solid #FFFFFF;
   background-color: #000000;
 }
 
 .news_list .news .btnGroup .loadingPoint:hover a {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .news_list .news .btnGroup .loadingPoint a {
