@@ -507,37 +507,10 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
-    <!-- <script src="./js/nav.js"></script> -->
+    <script src="./js/index.js"></script>
     <!-- page js -->
     <script src=""></script>
 
-
-    <script>
-        $('.menu-btn').click(function () {
-            $('.menu-btn').toggleClass('active');
-            // $('.menu').toggleClass('active');
-            if ($('.menu').hasClass('active')) {
-                $('.menu').addClass('fadeout')
-                setTimeout(
-                    function () {
-                        $('.menu').removeClass('active')
-                        $('.menu').removeClass('fadeout')
-                    }, 600
-                )
-            } else {
-                $('.menu').addClass('active')
-            }
-        })
-    </script>
-
-    <script>
-        var swiper = new Swiper('.swiper-banner', {
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
-    </script>
 </body>
 
 </html>

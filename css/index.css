@@ -7,22 +7,6 @@ ul {
   list-style-type: none;
 }
 
-a:link {
-  color: #FFFFFF;
-}
-
-a:visited {
-  color: #FFFFFF;
-}
-
-a:hover {
-  color: #FFFFFF;
-}
-
-a:active {
-  color: #FFFFFF;
-}
-
 #Plan {
   position: relative;
   z-index: 3;
