@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+.padding-none {
+  padding: 0;
+}
+
+.insidePageTitle {
+  margin: 80px 0 0 0;
+}
+
+.insidePageTitle .breadcrumbArea {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.insidePageTitle .breadcrumbArea nav {
+  padding: 0;
+}
+
+.insidePageTitle .breadcrumbArea nav .breadcrumb {
+  background: unset;
+  color: #000000;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.insidePageTitle .breadcrumbArea nav .breadcrumb a {
+  text-decoration: unset;
+  color: #000000;
+}
+
+.insidePageTitle .breadcrumbArea nav .breadcrumb-item.active {
+  color: #000000;
+}
+
+.insidePageTitle .breadcrumbArea nav .breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  padding-right: 0;
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb;
+}
+
+.insidePageTitle .breadcrumbArea nav .breadcrumb-item + .breadcrumb-item {
+  padding-left: 0;
+}
+
+.insidePageTitle .breadcrumbArea .title {
+  font-size: 32px;
+  position: relative;
+  right: -15px;
+}
+
+.insidePageTitle .breadcrumbArea .title::before {
+  content: '';
+  height: 300%;
+  border-left: 1px solid black;
+  position: absolute;
+  top: -200%;
+  left: -5px;
+}
+
+.insidePageTitle .btnArea {
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.insidePageTitle .btnArea a {
+  color: #000000;
+}
+
+.insidePageTitle .btnArea a .back, .insidePageTitle .btnArea a .print {
+  width: 90px;
+  height: 90px;
+  border: 1px solid black;
+  border-radius: 50%;
+  text-align: center;
+  padding: 20px 20px;
+  margin: 5px auto;
+}
+
+.insidePageTitle .iconGroup {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.insidePageTitle .iconGroup a {
+  color: #000000;
+}
+
+.insidePageTitle .iconGroup a i {
+  margin: 0 5px;
+}
+/*# sourceMappingURL=InsidePagetemplate.css.map */
