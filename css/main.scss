@@ -12,6 +12,11 @@ header{
         padding: 60px 0;
         padding-left: 0 !important ;
         padding-right: 0 !important ;
+
+        @media(max-width: 576px){
+            padding: 10px 0;
+
+        }
       
         ul{
             height: 30px;
@@ -70,10 +75,19 @@ header{
         } 
 
         aside{
-    
+            
+            @media(max-width:576px){
+
+            }
+
             .logo{
                 width: 300px;
                 margin-bottom: 65px;
+
+                @media(max-width:576px){
+                    width: 130px;
+                    margin: auto;
+                }
             }
     
             .swiper-pagination{
@@ -102,57 +116,93 @@ header{
             }
 
             .aside-btn-group{
-                .aside-btn{
-                    position: relative;
-                    @include border-two-side(1px,0,$fc-white,solid);
-                    letter-spacing: 8px;
-                    color: $fc-white;
-                    font-size: $fs-20;
-                    -webkit-writing-mode: vertical-rl;
-                    writing-mode: vertical-rl;
-                    padding: 350px 15px 5px 15px;
-                    overflow: hidden;
-                    .gradient-mask{
-                        padding-top: 15px;
-                        position: absolute;
-                        top: 50%;
-                        left: 0;
+                @media(max-width:576px){
+                    background-color: #857D7D;
+                    padding: 25px 0 15px 0;
+                }
+                a{
+                    @media(max-width:576px){
                         width: 100%;
-                        height: 100%;
-                        transition: 0.5s;
-                        background : linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-                        opacity: 0;
-                        transition-timing-function: ease-in-out;
-                        line-height: 61px;
-                        font-size: $fs-16;
+                    }
+                    .aside-btn{
+                        position: relative;
+                        @include border-two-side(1px,0,$fc-white,solid);
+                        letter-spacing: 8px;
+                        color: $fc-white;
+                        font-size: $fs-20;
+                        -webkit-writing-mode: vertical-rl;
+                        writing-mode: vertical-rl;
+                        padding: 350px 15px 5px 15px;
                         overflow: hidden;
+    
+                        @media(max-width:576px){
+                            writing-mode: unset;
+                            @include border-two-side(0px,0,$fc-white,solid);
+                            padding: 0;
+                            width: 100%;
+                            text-align: center;
+                            font-size: $fs-14;
+                            margin-bottom: 10px;
+                            overflow: unset;
 
-                        .aside-sub-btn-group{
-                            opacity: 0;
-                            transition-timing-function: ease-in;
-                            transition: 1s;
 
-                            .aside-sub-btn{
-                                transition: .3s;
-                                opacity: 0.5;
-
-                                &:hover{
-                                    opacity: 1;
-                                }
+                            &::after{
+                                content:' ';
+                                width: 210px;
+                                height: 1px;
+                                background-color: $fc-white;
+                                position: absolute;
+                                top: 25px;
+                                left: 50%;
+                                transform: translateX(-50%);
                             }
                         }
-
-                    }
-                
-                    &:hover{
+    
                         .gradient-mask{
+                            padding-top: 15px;
+                            position: absolute;
+                            top: 50%;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            transition: 0.5s;
                             background : linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-                            opacity: 1;
-                            top: 0;
-
+                            opacity: 0;
+                            transition-timing-function: ease-in-out;
+                            line-height: 61px;
+                            font-size: $fs-16;
+                            overflow: hidden;
+                            @media(max-width:576px){
+                                display: none;
+                            }
+    
                             .aside-sub-btn-group{
+                                opacity: 0;
+                                transition-timing-function: ease-in;
+                                transition: 1s;
+    
+                                .aside-sub-btn{
+                                    transition: .3s;
+                                    opacity: 0.5;
+    
+                                    &:hover{
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+    
+                        }
+                    
+                        &:hover{
+                            .gradient-mask{
+                                background : linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
                                 opacity: 1;
-
+                                top: 0;
+    
+                                .aside-sub-btn-group{
+                                    opacity: 1;
+    
+                                }
                             }
                         }
                     }
@@ -162,8 +212,21 @@ header{
     }
 
     .banner{
+        position:relative;
         right: 0;
         top:-675px;
+
+        @media(max-width: 576px){
+            position: unset;
+        }
+
+        .col-12{
+            position: absolute;
+
+            @media(max-width: 576px){
+                position: unset;
+            }
+        }
     }
 
 
@@ -372,6 +435,11 @@ footer{
     padding: 50px 0;
     background-color: $main-color-dark;
 
+    @media (max-width:576px){
+        height: 414px;
+    }
+
+
     .container{
         @media (min-width:1200px){
             max-width: 1140px !important;
@@ -379,11 +447,35 @@ footer{
 
         .footer-info{
             padding: 0 30px 0 40px;
-            @include border-two-side(1px,1px,$fc-white,solid)   
+            @include border-two-side(1px,1px,$fc-white,solid);
+            
+            @media (max-width:576px){
+                text-align: center;
+                font-size: $fs-12;
+                @include border-two-side(0px,0px,$fc-white,solid);
+                position: relative;
+                margin-bottom: 45px;
+                
+                &::after{
+                    content: ' ';
+                    width: 112px;
+                    height: 1px;
+                    background-color: $fc-white;
+                    position: absolute;
+                    left: 50%;
+                    top: 120%;
+                    transform: translateX(-50%);
+                }
+            }
         }
 
         .logo{
             max-width: 270px;
+
+            @media (max-width:576px){
+                margin:0 auto 30px auto;
+                max-width: 130px;
+            }
         }
         
         p{
@@ -391,6 +483,10 @@ footer{
             color:$fc-white;
             letter-spacing: 2px;
             margin-bottom: 10px;
+
+            @media (max-width:576px){
+                text-align: center;
+            }
         }
         
         .icon-bg{
@@ -399,7 +495,12 @@ footer{
             background-color: $fc-white;
             border-radius: 25px;
             margin-right: 20px;
-            position: relative;
+            position: relative;   
+            
+            @media (max-width:576px){
+                margin-right: 0;
+                margin: 10px 10px 0 10px;
+            }
 
             i{
                 position: absolute;
