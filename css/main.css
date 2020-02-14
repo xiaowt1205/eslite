@@ -11,6 +11,7 @@ body {
 ul {
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 li {
@@ -41,6 +42,38 @@ header nav ul li {
 @media (min-width: 1600px) {
   .container {
     max-width: 1600px;
+  }
+}
+
+.container_1140 {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container_1140 {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container_1140 {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container_1140 {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .container_1140 {
+    max-width: 1140px;
   }
 }
 
