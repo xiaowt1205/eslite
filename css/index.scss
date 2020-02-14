@@ -6,11 +6,11 @@
     font-family: 'Noto Serif TC', serif;
 }
 
-header{
-    display: none;
-}
 #Statistics {
     background-color: $bc-white;
+    position: relative;
+    overflow: hidden;
+    padding:50px 0 70px 0;
 
     .title_region {
         position: relative;
@@ -198,11 +198,12 @@ header{
 
         .slash {
             position: absolute;
-            width: 100%;
+            width: calc(100% - 160px);
             height: 120%;
             transform: skewY(3deg);
             background-color: $bc-light-brown;
             z-index: 1;
+            bottom: 55px
             // box-shadow: 0 0 5px 10px $bc-light-brown;
         }
     }
@@ -422,7 +423,7 @@ header{
 #Plan1 {
     position: relative;
     z-index: 3;
-    box-shadow: 0 10px 20px -5px $bc-brown;
+    box-shadow: 0 5px 5px -5px $bc-brown;
 
     .title_region {
         width: 250px;

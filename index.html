@@ -24,43 +24,61 @@
 </head>
 
 <body>
+    <!-- index nav -->
     <header class="container">
-        <nav class="order-sm-1 row no-gutters justify-content-between">
-            <aside class="col-4">
+        <nav class="order-1 row no-gutters justify-content-between">
+            <aside class="col-12 col-xl-4">
                 <div class="logo">
-                    <img src="./img/index/logo.png" alt="">
+                    <img class="d-none d-sm-block" src="./img/index/logo-white.png" alt="">
+                    <img class="d-block d-sm-none" src="./img/index/logo-black.svg" alt="">
                 </div>
-                <div class="swiper-pagination d-flex"></div>
-                <a href="#" style="margin-left:-9px;"><i class="fab fa-youtube"></i></a><br>
-                <a href="#" style="margin-left:-6px;"><i class="fab fa-facebook-f"></i></a>
-                <div class="aside-btn-group d-flex">
+                <div class="swiper-pagination d-sm-flex d-none"></div>
+                <a href="#" class="d-none d-sm-block" style="margin-left:-9px;"><i class="fab fa-youtube"></i></a><br>
+                <a href="#" class="d-none d-sm-block" style="margin-left:-6px;"><i class="fab fa-facebook-f"></i></a>
+                <div class="aside-btn-group d-none d-sm-flex">
                     <a href="">
                         <div class="aside-btn">支持計畫<div class="gradient-mask">
-                                <div>支持計畫/支持計畫/支持計畫</div>
+                                <div class="aside-sub-btn-group d-flex">
+                                    <div class="aside-sub-btn">支持計畫</div>\
+                                    <div class="aside-sub-btn">支持計畫</div>\
+                                    <div class="aside-sub-btn">支持計畫</div>
+                                </div>
                             </div>
                         </div>
                     </a>
                     <a href="">
                         <div class="aside-btn">加入志工<div class="gradient-mask">
-                                <div>加入志工/加入志工/加入志工</div>
+                                <div class="aside-sub-btn-group d-flex">
+                                    <div class="aside-sub-btn">加入志工</div>\
+                                    <div class="aside-sub-btn">加入志工</div>\
+                                    <div class="aside-sub-btn">加入志工</div>
+                                </div>
                             </div>
                         </div>
                     </a>
                     <a href="">
                         <div class="aside-btn">申請書籍<div class="gradient-mask">
-                                <div>申請書籍/申請書籍/申請書籍</div>
+                                <div class="aside-sub-btn-group d-flex">
+                                    <div class="aside-sub-btn">申請書籍</div>\
+                                    <div class="aside-sub-btn">申請書籍</div>\
+                                    <div class="aside-sub-btn">申請書籍</div>
+                                </div>
                             </div>
                         </div>
                     </a>
                     <a href="">
                         <div class="aside-btn">第四類別<div class="gradient-mask">
-                                <div>第四類別/第四類別/第四類別</div>
+                                <div class="aside-sub-btn-group d-flex">
+                                    <div class="aside-sub-btn">第四類別</div>\
+                                    <div class="aside-sub-btn">第四類別</div>\
+                                    <div class="aside-sub-btn">第四類別</div>
+                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
             </aside>
-            <div class="col d-flex justify-content-end">
+            <div class="col d-none d-xl-flex justify-content-end">
                 <ul class="d-flex">
                     <li><a href="">關於我們</a></li>
                     <li><a href="">閱讀分享計畫</a></li>
@@ -80,8 +98,8 @@
                 </ul>
             </div>
         </nav>
-        <div class="banner row no-gutters justify-content-end position-relative">
-            <div class="col-10 position-absolute">
+        <div class="banner order-0  row no-gutters justify-content-end">
+            <div class="col-12 col-xl-10">
                 <div class="swiper-banner swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -103,11 +121,11 @@
                 </div>
             </div>
         </div>
-        <div class="aside-bg"></div>
+        <div class="aside-bg d-sm-block d-none"></div>
     </header>
 
     <!-- menu -->
-    <!-- <div class="menu">
+    <div class="menu">
         <div class="menu-container position-relative">
             <div class="menu-btn position-absolute">
                 <a href="#">
@@ -449,7 +467,7 @@
                 </li>
             </ul>
         </div>
-    </div> -->
+    </div>
 
     <!-- main content -->
     <main>
@@ -842,12 +860,12 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-12 col-xl-3">
                     <div class="logo">
-                        <img class="w-100" src="./img/index/logo.png" alt="">
+                        <img class="w-100" src="./img/index/logo-white.png" alt="">
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-xl-4">
                     <div class="footer-info">
                         <p>11073台北市信義區菸廠路88號4F之7</p>
                         <p>連絡電話 ￨ +886-2-6636-9888</p>
@@ -855,11 +873,11 @@
                         <p>統一編號 ￨ 25681974</p>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-xl-3">
                     <p>個人資料保護管理政策</p>
                     <p>版權所有聲明</p>
                 </div>
-                <div class="col d-flex">
+                <div class="col d-flex justify-content-center justify-content-sm-start">
                     <div class="icon-bg"><a href=""><i class="fab fa-youtube"></i></a></div>
                     <div class="icon-bg"><a href=""><i class="fab fa-facebook-f"></i></a></div>
                 </div>

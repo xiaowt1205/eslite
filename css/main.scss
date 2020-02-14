@@ -8,14 +8,19 @@
 }
 
 header{
+    height: 840px;
+
+    @media(max-width: 576px){
+        height: unset;
+    }
+    
     nav{
-        padding: 60px 0;
+        padding: 60px 0 0 0 ;
         padding-left: 0 !important ;
         padding-right: 0 !important ;
 
         @media(max-width: 576px){
             padding: 10px 0;
-
         }
       
         ul{

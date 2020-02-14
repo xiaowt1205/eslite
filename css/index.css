@@ -4,12 +4,11 @@
   font-family: 'Noto Serif TC', serif;
 }
 
-header {
-  display: none;
-}
-
 #Statistics {
   background-color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0 70px 0;
 }
 
 #Statistics .title_region {
@@ -234,12 +233,13 @@ header {
 
 #Statistics .Statistics_bg .slash {
   position: absolute;
-  width: 100%;
+  width: calc(100% - 160px);
   height: 120%;
   -webkit-transform: skewY(3deg);
           transform: skewY(3deg);
   background-color: #E4E4E4;
   z-index: 1;
+  bottom: 55px;
 }
 
 #Plan {
@@ -478,8 +478,8 @@ header {
 #Plan1 {
   position: relative;
   z-index: 3;
-  -webkit-box-shadow: 0 10px 20px -5px #231815;
-          box-shadow: 0 10px 20px -5px #231815;
+  -webkit-box-shadow: 0 5px 5px -5px #231815;
+          box-shadow: 0 5px 5px -5px #231815;
 }
 
 #Plan1 .title_region {

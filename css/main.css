@@ -85,8 +85,18 @@ header nav ul li {
   font-family: 'Noto Serif TC', serif;
 }
 
+header {
+  height: 840px;
+}
+
+@media (max-width: 576px) {
+  header {
+    height: unset;
+  }
+}
+
 header nav {
-  padding: 60px 0;
+  padding: 60px 0 0 0;
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
