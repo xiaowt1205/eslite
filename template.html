@@ -506,14 +506,6 @@
         </div>
     </footer>
 
-    <input type="button" value="按一下" onclick="add1(1234)">
-    <div id="test1"></div>
-    <div id="test2"></div>
-    <div id="test3"></div>
-
-    <!-- Inside page -->
-
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -527,33 +519,21 @@
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
     <script src="./js/main.js"></script>
-    
+
     <!-- page js -->
     <script src="./js/index.js"></script>
 
 
     <script>
-        function add1(setNum) {
-            var inner1 = document.getElementById("test1");
-            var inner2 = document.getElementById("test2");
-            var inner3 = document.getElementById("test3");
-            inner.innerHTML = 0
-            var num = 0;
-            var set = null;
-            var speed = 10;
-            var addNum = 5;
-            var setNum = setNum;
-            set = setInterval(function () {
-                if (num >= setNum) {
-                    num = setNum;
-                    inner.innerHTML = num;
-                    clearInterval(set);
-                } else {
-                    num += addNum;
-                }
-                inner.innerHTML = num
-            }, speed);
+
+
+        window.onscroll = function () {
+            // dynamicNumberCounter(scrollTop Position(Num), element's id(String) , Target Number(Num))
+            // ex) dynamicNumberCounter(400, "test", 64);
         }
+
+        
+        
     </script>
 
 </body>
