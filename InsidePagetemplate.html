@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <!-- google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <!-- layout -->
     <link rel="stylesheet" href="./css/main.css">
     <!-- page css  -->
@@ -101,30 +99,6 @@
                 </ul>
             </div>
         </nav>
-        <div class="banner row no-gutters justify-content-end position-relative">
-            <div class="col-10 position-absolute">
-                <div class="swiper-banner swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img class="w-100" src="./img/index/banner-1.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="w-100" src="./img/index/banner-2.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="w-100" src="./img/index/banner-1.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="w-100" src="./img/index/banner-2.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="w-100" src="./img/index/banner-1.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="aside-bg"></div>
     </header>
 
     <!-- menu -->
@@ -506,14 +480,6 @@
         </div>
     </footer>
 
-    <input type="button" value="按一下" onclick="add1(1234)">
-    <div id="test1"></div>
-    <div id="test2"></div>
-    <div id="test3"></div>
-
-    <!-- Inside page -->
-
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -524,37 +490,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
     <script src="./js/main.js"></script>
-    
     <!-- page js -->
-    <script src="./js/index.js"></script>
-
-
-    <script>
-        function add1(setNum) {
-            var inner1 = document.getElementById("test1");
-            var inner2 = document.getElementById("test2");
-            var inner3 = document.getElementById("test3");
-            inner.innerHTML = 0
-            var num = 0;
-            var set = null;
-            var speed = 10;
-            var addNum = 5;
-            var setNum = setNum;
-            set = setInterval(function () {
-                if (num >= setNum) {
-                    num = setNum;
-                    inner.innerHTML = num;
-                    clearInterval(set);
-                } else {
-                    num += addNum;
-                }
-                inner.innerHTML = num
-            }, speed);
-        }
-    </script>
+    <script src=""></script>
 
 </body>
 
