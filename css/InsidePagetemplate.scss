@@ -1,0 +1,121 @@
+@import "./model.scss";
+@import "./_variables.scss";
+@import "./_function.scss";
+
+
+.insidePageTitle{   
+
+    margin:80px 0 0 0;
+
+    .breadcrumbArea{
+
+        writing-mode: vertical-lr ;
+
+        font-weight: bold;
+
+        margin: 0 auto;
+
+        
+        nav{
+
+            padding: 0;
+
+            .breadcrumb{
+                background: unset;
+                color: $fc-black;
+            
+                writing-mode: vertical-lr ;
+                font-size: $fs-18;
+    
+                margin: 0;
+                padding: 0;
+            
+                a{
+                    text-decoration: unset;
+                    color: $fc-black;
+                }
+            }
+            
+            .breadcrumb-item.active {
+                color: $fc-black;
+                
+            }
+            
+            .breadcrumb-item + .breadcrumb-item::before {
+                content: ">";
+            
+                padding-right:0;
+            
+                writing-mode: horizontal-tb;
+            
+            }
+            .breadcrumb-item+.breadcrumb-item {
+                padding-left: 0;
+            }
+        }
+
+        .title{
+            font-size: $fs-32;
+
+            position: relative;
+            right: -15px;
+
+
+
+            &::before{
+                content: '';
+
+                height: 300%;
+
+                border-left: 1px solid black;
+
+                position: absolute;
+                top: -200%;
+                left: -5px;
+                
+            }
+        }
+    }
+
+    .btnArea{
+
+        font-weight: bold;
+
+        margin-top: 25px;
+
+        a{  
+            color: $fc-black;
+
+            .back, .print{
+                width: 90px;
+                height: 90px;
+    
+                border: 1px solid black;
+                border-radius: 50%;
+    
+                text-align: center;
+    
+                padding: 20px 20px;
+                margin: 5px auto;
+    
+            }
+        }
+    }
+
+    .iconGroup{
+
+        margin-top: 25px;
+
+        display: flex;
+        justify-content: center;
+
+        a{
+
+            color: $fc-black;
+
+            i{
+                margin: 0 5px;
+            }
+        }
+    }
+}
