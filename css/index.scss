@@ -6,6 +6,9 @@
     font-family: 'Noto Serif TC', serif;
 }
 
+header{
+    display: none;
+}
 #Statistics {
     background-color: $bc-white;
 
@@ -14,6 +17,7 @@
         margin: 0 auto;
         padding: 0px 0px 25px;
         display: flex;
+        z-index: 2;
 
         @media screen and (max-width:1200px) {
             flex-direction: column;
@@ -108,7 +112,9 @@
 
     .content {
         padding: 70px 0px;
-        @media screen and (max-width:1600px) and(min-width:){}
+        position: relative;
+        z-index: 2;
+        @media screen and (max-width:1600px) and(min-width:768px){}
             
         
         .business_text {
@@ -182,11 +188,13 @@
 
     .Statistics_bg {
         position: absolute;
-        top: 0;
+        bottom: 0;
         left: 0;
         width: 100%;
+        padding: 0px 80px;
         height: 120%;
-        transform: translateY(-95%);
+        transform: translateY(0%);
+        box-sizing: border-box;
 
         .slash {
             position: absolute;
@@ -194,6 +202,7 @@
             height: 120%;
             transform: skewY(3deg);
             background-color: $bc-light-brown;
+            z-index: 1;
             // box-shadow: 0 0 5px 10px $bc-light-brown;
         }
     }
@@ -209,7 +218,7 @@
             width: 250px;
             margin: 0 auto;
             text-align: center;
-            padding: 0px 0px 25px;
+            padding: 50px 0px 25px;
 
             h2 {
                 position: relative;
@@ -923,7 +932,7 @@
 }
 
 #Vendor {
-    display: none;
+    // display: none;
 
     ul {
         display: flex;
@@ -955,7 +964,6 @@
                     transform: rotate(45deg);
                     transform-origin: right;
                     background-color: $fc-black;
-                    // transform: translateY(-50%);
                 }
             }
         }

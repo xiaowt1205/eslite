@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <!-- <header class="container">
+    <header class="container">
         <nav class="order-sm-1 row no-gutters justify-content-between">
             <aside class="col-4">
                 <div class="logo">
@@ -104,7 +104,7 @@
             </div>
         </div>
         <div class="aside-bg"></div>
-    </header> -->
+    </header>
 
     <!-- menu -->
     <!-- <div class="menu">
@@ -453,6 +453,7 @@
 
     <!-- main content -->
     <main>
+
         <section id="Statistics">
             <div class="container">
                 <div class="title_region">
@@ -468,7 +469,7 @@
                 <div class="row content d-flex justify-content-center">
                     <div class="col-lg-3 col-md-4 col-12 d-flex flex-column align-items-center">
                         <div class="business_text">
-                            <span>123</span>
+                            <span id="test0">0</span>
                             <span>受捐款單位</span>
                         </div>
                         <a href="">
@@ -477,7 +478,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-12 d-flex flex-column align-items-center">
                         <div class="business_text">
-                            <span>123</span>
+                            <span id="test1">0</span>
                             <span>受捐款單位</span>
                         </div>
                         <a href="">
@@ -486,7 +487,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-12 d-flex flex-column align-items-center">
                         <div class="business_text">
-                            <span>123</span>
+                            <span id="test2">0</span>
                             <span>受捐款單位</span>
                         </div>
                         <a href="">
@@ -495,9 +496,9 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="Statistics_bg">
+            <div class="Statistics_bg">
                 <div class="slash"></div>
-            </div> -->
+            </div>
         </section>
 
         <!-- plan 六塊版面 -->
@@ -883,6 +884,16 @@
 
     <!-- page js -->
     <script src=""></script>
+    <script>
+        window.onscroll = function () {
+            dynamicNumberCounter(400, "test0", 123);
+            dynamicNumberCounter(400, "test1", 500);
+            dynamicNumberCounter(400, "test2", 230);
+            // dynamicNumberCounter(scrollTop Position(Num), element's id(String) , Target Number(Num))
+            // ex) dynamicNumberCounter(400, "test", 64);
+        }
+
+    </script>
 
 </body>
 

@@ -4,6 +4,10 @@
   font-family: 'Noto Serif TC', serif;
 }
 
+header {
+  display: none;
+}
+
 #Statistics {
   background-color: #FFFFFF;
 }
@@ -15,6 +19,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 2;
 }
 
 @media screen and (max-width: 1200px) {
@@ -128,6 +133,8 @@
 
 #Statistics .content {
   padding: 70px 0px;
+  position: relative;
+  z-index: 2;
 }
 
 #Statistics .content .business_text {
@@ -214,12 +221,15 @@
 
 #Statistics .Statistics_bg {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
+  padding: 0px 80px;
   height: 120%;
-  -webkit-transform: translateY(-95%);
-          transform: translateY(-95%);
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #Statistics .Statistics_bg .slash {
@@ -229,6 +239,7 @@
   -webkit-transform: skewY(3deg);
           transform: skewY(3deg);
   background-color: #E4E4E4;
+  z-index: 1;
 }
 
 #Plan {
@@ -242,7 +253,7 @@
   width: 250px;
   margin: 0 auto;
   text-align: center;
-  padding: 0px 0px 25px;
+  padding: 50px 0px 25px;
 }
 
 #Plan .container_1140 .title_region h2 {
@@ -1028,10 +1039,6 @@
   background-color: #E4E4E4;
   -webkit-box-shadow: 0 0 5px 10px #E4E4E4;
           box-shadow: 0 0 5px 10px #E4E4E4;
-}
-
-#Vendor {
-  display: none;
 }
 
 #Vendor ul {
