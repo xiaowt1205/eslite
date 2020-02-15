@@ -20,24 +20,6 @@ header {
     .aside-bg {
         z-index: 1;
     }
-
-
-
-    // .slash {
-    //     position: absolute;
-    //     width: 100%;
-    //     height: 120%;
-    //     transform: skewY(3deg);
-    //     background-color: $bc-light-brown;
-    //     z-index: -1;
-    //     bottom: 55px;
-    //     box-sizing: border-box;
-
-    //     @media screen and (max-width:1600px) {
-    //         width: calc(100% - 60px);
-    //         padding: 0px 30px;
-    //     }
-    // }
 }
 
 main {
@@ -188,7 +170,6 @@ main {
                 max-width: 100%;
             }
         }
-
 
         .business_text {
             display: flex;
