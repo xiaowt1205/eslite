@@ -6,11 +6,67 @@
     font-family: 'Noto Serif TC', serif;
 }
 
+
+header {
+    nav {
+        position: relative;
+        z-index: 2;
+    }
+
+    .banner {
+        z-index: 2;
+    }
+
+    .aside-bg {
+        z-index: 1;
+    }
+
+
+
+    // .slash {
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 120%;
+    //     transform: skewY(3deg);
+    //     background-color: $bc-light-brown;
+    //     z-index: -1;
+    //     bottom: 55px;
+    //     box-sizing: border-box;
+
+    //     @media screen and (max-width:1600px) {
+    //         width: calc(100% - 60px);
+    //         padding: 0px 30px;
+    //     }
+    // }
+}
+
+main {
+    position: relative;
+
+    .bg {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 50%;
+        max-width: 1800px;
+        width: 100%;
+        height: 300px;
+        transform: translate(-50%, -100%);
+        box-sizing: border-box;
+        background-color: $bc-light-brown;
+
+        @media screen and (max-width:1600px) {
+            width: calc(100% - 60px);
+            padding: 0px 30px;
+        }
+    }
+}
+
 #Statistics {
     background-color: $bc-white;
     position: relative;
     overflow: hidden;
-    padding:50px 0 70px 0;
+    padding: 50px 0 70px 0;
 
     .title_region {
         position: relative;
@@ -73,7 +129,11 @@
                 align-items: center;
             }
 
-            & .year_books:nth-child(1) {
+            &>a {
+                display: contents;
+            }
+
+            & a:nth-child(1) .year_books {
                 border-right: 1px solid $bc-white;
 
                 @media screen and (max-width:1200px) {
@@ -114,9 +174,22 @@
         padding: 70px 0px;
         position: relative;
         z-index: 2;
-        @media screen and (max-width:1600px) and(min-width:768px){}
-            
-        
+
+        @media screen and (max-width:1600px) and(min-width:992px) {
+            &>div {
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%;
+            }
+        }
+
+        @media screen and (max-width:992px) {
+            &>div {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+
+
         .business_text {
             display: flex;
             flex-direction: column;
@@ -141,6 +214,7 @@
                 padding-bottom: 20px;
                 position: relative;
                 letter-spacing: 15px;
+
                 &::before {
                     content: '';
                     position: absolute;
@@ -151,6 +225,7 @@
                     left: 50%;
                     transform: translateX(-50%);
                 }
+
                 &::after {
                     content: '個';
                     position: absolute;
@@ -161,7 +236,7 @@
                     // background-color: $bc-brown;
                     bottom: 0;
                     right: 0;
-                    transform: translate(90% , -10%);
+                    transform: translate(90%, -10%);
                 }
 
 
@@ -173,13 +248,15 @@
                 letter-spacing: 3px;
             }
         }
-        .btn{
+
+        .btn {
             width: 220px;
             padding: 10px 0px;
-            background-color:$bc-brown;
+            background-color: $bc-brown;
             color: $fc-white;
             margin-bottom: 55px;
             letter-spacing: 3px;
+
             @media screen and (max-width:1200px) {
                 width: 150px;
             }
@@ -189,22 +266,31 @@
     .Statistics_bg {
         position: absolute;
         bottom: 0;
-        left: 0;
+        left: 50%;
+        max-width: 1800px;
         width: 100%;
-        padding: 0px 80px;
-        height: 120%;
-        transform: translateY(0%);
+        height: 200%;
+        transform: translate(-50%, 0%);
         box-sizing: border-box;
+
+        @media screen and (max-width:1600px) {
+            padding: 0px 30px;
+        }
 
         .slash {
             position: absolute;
-            width: calc(100% - 160px);
+            width: 100%;
             height: 120%;
             transform: skewY(3deg);
             background-color: $bc-light-brown;
             z-index: 1;
-            bottom: 55px
-            // box-shadow: 0 0 5px 10px $bc-light-brown;
+            bottom: 55px;
+            box-sizing: border-box;
+
+            @media screen and (max-width:1600px) {
+                width: calc(100% - 60px);
+                padding: 0px 30px;
+            }
         }
     }
 }
@@ -212,7 +298,7 @@
 #Plan {
     position: relative;
     z-index: 3;
-    box-shadow: 0 10px 20px -5px $bc-brown;
+    box-shadow: 0 5px 8px -5px $bc-brown;
 
     .container_1140 {
         .title_region {
@@ -423,7 +509,7 @@
 #Plan1 {
     position: relative;
     z-index: 3;
-    box-shadow: 0 5px 5px -5px $bc-brown;
+    box-shadow: 0 5px 8px -5px $bc-brown;
 
     .title_region {
         width: 250px;
@@ -577,30 +663,87 @@
     }
 
     .player {
-        background-image: url('../img/index/video.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
+        position: relative;
         width: 100%;
         margin-bottom: 80px;
-        border-radius: 50px;
-        overflow: hidden;
-        position: relative;
 
-        .player_hover {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: $bc-brown-Transparent;
-            z-index: 2;
+        @media screen and (max-width:992px) {
+            margin-bottom: unset;
         }
+
+        .play_img {
+            width: 100%;
+            padding: 300px 0px;
+            border-radius: 50px;
+            position: relative;
+            background-image: url('../img/index/video.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+
+            .icon {
+                display: none;
+            }
+
+            @media screen and (max-width:992px) {
+                padding: 0px;
+
+                &>a {
+                    position: absolute;
+                    z-index: 3;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                .icon {
+                    display: inline-block;
+                    padding: 25px 50px;
+                    border: 2px solid $fc-white;
+                    border-radius: 15px;
+
+                    i {
+                        font-size: $fs-24;
+                        color: $fc-white;
+                    }
+                }
+            }
+
+            .player_hover {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $bc-brown-Transparent;
+                z-index: 2;
+            }
+
+            img {
+                opacity: 0;
+                width: 100%;
+                display: none;
+
+                @media screen and (max-width:992px) {
+                    display: block;
+                }
+            }
+        }
+
 
         .player_content {
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 110px 0px;
-            position: relative;
+            position: absolute;
+            top: 0;
             z-index: 3;
+
+            @media screen and (max-width:992px) {
+                position: relative;
+                padding: 40px 0px;
+            }
 
             .text {
                 p {
@@ -613,6 +756,13 @@
                     margin: 0 auto 30px;
                     position: relative;
 
+
+                    @media screen and (max-width:992px) {
+                        color: $fc-black;
+                        padding: 0;
+                        margin: 0 auto 20px;
+                    }
+
                     &::after {
                         content: '';
                         position: absolute;
@@ -622,7 +772,17 @@
                         width: 100px;
                         height: 2px;
                         background-color: $fc-white;
+
+                        @media screen and (max-width:992px) {
+                            display: none;
+                        }
                     }
+                }
+            }
+
+            &>a {
+                @media screen and (max-width:992px) {
+                    display: none;
                 }
             }
 
@@ -645,6 +805,10 @@
                     letter-spacing: 2.5px;
                     text-align: justify;
                     line-height: 35px;
+
+                    @media screen and (max-width:992px) {
+                        color: $fc-black;
+                    }
                 }
             }
         }
@@ -933,28 +1097,60 @@
 }
 
 #Vendor {
-    // display: none;
+    padding: 0px 0px 110px;
+    overflow: hidden;
 
-    ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .content {
+        position: relative;
 
-        li {
-            padding: 0px 0px;
-            border-right: 1px solid $fc-black;
+        &.container_1140 {
+            padding-right: 70px;
 
-            &:nth-last-child(2) {
-                padding: 0px 25px;
-                border-right: none;
+            @media screen and (max-width:1200px) {
+                padding-right: 15px;
+            }
+        }
+
+        @media screen and (max-width:1200px) {
+            &>div {
+                text-align: center;
+            }
+        }
+
+        img {
+            width: 100%;
+
+            @media screen and (max-width:1200px) {
+                width: 300px;
+            }
+
+            @media screen and (max-width:768px) {
+                width: 100%;
+            }
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(80%, -50%);
+
+            @media screen and (max-width:1200px) {
+                padding: 30px 0px;
+                position: unset;
+                transform: unset
             }
 
             .arrow_button {
+                position: relative;
                 width: 70px;
                 height: 2px;
                 background-color: blanchedalmond;
                 border-bottom: 2px solid $fc-black;
-                position: relative;
+
+                @media screen and (max-width:1200px) {
+                    margin: auto;
+                }
 
                 &::after {
                     content: '';
