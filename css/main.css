@@ -106,7 +106,7 @@ header nav {
 
 @media (max-width: 576px) {
   header nav {
-    padding: 10px 0;
+    padding: 25px 0;
     background-color: #FFFFFF;
   }
 }
@@ -170,6 +170,12 @@ header nav ul li a .cicle .fa-info {
   top: 50%;
   -webkit-transform: translate(-40%, -50%);
           transform: translate(-40%, -50%);
+}
+
+@media (max-width: 576px) {
+  header nav aside {
+    height: 22px;
+  }
 }
 
 header nav aside .logo {
@@ -508,6 +514,12 @@ header .aside-bg {
   right: -75px;
 }
 
+@media (max-width: 576px) {
+  .menu-btn {
+    right: 45px;
+  }
+}
+
 .menu-btn a div {
   position: relative;
   top: 5px;
@@ -520,6 +532,12 @@ header .aside-bg {
   transition: .3s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
+}
+
+@media (max-width: 576px) {
+  .menu-btn a div {
+    width: 40px;
+  }
 }
 
 .menu-btn a div::after {
@@ -538,6 +556,13 @@ header .aside-bg {
           transition-timing-function: ease-in-out;
 }
 
+@media (max-width: 576px) {
+  .menu-btn a div::after {
+    width: 40px;
+    top: 8px;
+  }
+}
+
 .menu-btn.active div {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -546,9 +571,44 @@ header .aside-bg {
 
 .menu-btn.active div::after {
   background-color: #FFFFFF;
-  top: 0px;
+  top: -1px;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+}
+
+.mobile {
+  background-color: #857D7D;
+  padding: 15px 0 10px 0;
+}
+
+.mobile .accordion {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.mobile .accordion .aside-btn-group .aside-btn-title div {
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.mobile .accordion .aside-btn-group .aside-btn-title div::after {
+  content: '';
+  position: absolute;
+  width: 180px;
+  height: 1px;
+  background-color: #FFFFFF;
+  top: 28px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.mobile .accordion .aside-btn-group .aside-sub-btn {
+  margin-top: 8px;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.6;
 }
 
 footer {
