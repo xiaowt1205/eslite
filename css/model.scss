@@ -33,6 +33,9 @@ a:hover {
 
 
 .container {
+
+
+
     @media(min-width:1200px) {
         max-width: 1200px;
     }
@@ -40,6 +43,16 @@ a:hover {
     @media(min-width:1600px) {
         max-width: 1600px;
     }
+
+    @media(max-width:1199px) {
+        max-width: 1199px;
+    }
+
+    @media(max-width:576px) {
+        max-width: unset;
+    }
+
+
 }
 
 .container_1140 {
@@ -49,20 +62,32 @@ a:hover {
     margin-right: auto;
     margin-left: auto;
 
-    @media(min-width:576px) {
-        max-width: 540px;
+    // @media(min-width:576px) {
+    //     max-width: 540px;
+    // }
+
+    // @media(min-width:768px) {
+    //     max-width: 720px;
+    // }
+
+    // @media(min-width:992px) {
+    //     max-width: 960px;
+    // }
+
+    @media(min-width:1200px) {
+        max-width: 1200px;
     }
 
-    @media(min-width:768px) {
-        max-width: 720px;
-    }
-
-    @media(min-width:992px) {
-        max-width: 960px;
-    }
-
-    @media(min-width:1140px) {
+    @media(min-width:1600px) {
         max-width: 1140px;
+    }
+
+    @media(max-width:1199px) {
+        max-width: 1199px;
+    }
+
+    @media(max-width:576px) {
+        max-width: unset;
     }
 }
 

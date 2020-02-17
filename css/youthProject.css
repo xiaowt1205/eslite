@@ -41,6 +41,18 @@ a:hover {
   }
 }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 1199px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: unset;
+  }
+}
+
 .container_1140 {
   width: 100%;
   padding-right: 15px;
