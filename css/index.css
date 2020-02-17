@@ -298,6 +298,12 @@ main .bg {
   }
 }
 
+@media (max-width: 576px) {
+  #Statistics .Statistics_bg {
+    padding: 0;
+  }
+}
+
 #Statistics .Statistics_bg .slash {
   position: absolute;
   width: 100%;
@@ -315,6 +321,13 @@ main .bg {
   #Statistics .Statistics_bg .slash {
     width: calc(100% - 60px);
     padding: 0px 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  #Statistics .Statistics_bg .slash {
+    width: 100%;
+    left: 0;
   }
 }
 
@@ -360,7 +373,7 @@ main .bg {
   letter-spacing: 13px;
 }
 
-#Plan .container {
+#Plan .container .pd {
   padding-bottom: 100px;
 }
 

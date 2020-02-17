@@ -10,8 +10,13 @@
 header{
     height: 840px;
 
+   
     @media(max-width: 576px){
         height: unset;
+
+        &.container{
+            padding: 0;
+        }
     }
     
     nav{
@@ -21,6 +26,7 @@ header{
 
         @media(max-width: 576px){
             padding: 10px 0;
+            background-color: $fc-white;
         }
       
         ul{

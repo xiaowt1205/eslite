@@ -93,6 +93,9 @@ header {
   header {
     height: unset;
   }
+  header.container {
+    padding: 0;
+  }
 }
 
 header nav {
@@ -104,6 +107,7 @@ header nav {
 @media (max-width: 576px) {
   header nav {
     padding: 10px 0;
+    background-color: #FFFFFF;
   }
 }
 

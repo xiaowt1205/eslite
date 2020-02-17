@@ -258,6 +258,10 @@ main {
             padding: 0px 30px;
         }
 
+        @media(max-width: 576px){
+            padding: 0;
+        }
+
         .slash {
             position: absolute;
             width: 100%;
@@ -271,6 +275,11 @@ main {
             @media screen and (max-width:1600px) {
                 width: calc(100% - 60px);
                 padding: 0px 30px;
+            }
+
+            @media(max-width: 576px){
+                width: 100%;
+                left: 0;
             }
         }
     }
@@ -320,7 +329,9 @@ main {
 
     .container {
 
-        padding-bottom: 100px;
+        .pd{
+            padding-bottom: 100px;
+        }
 
         .content {
             & :nth-child(1) .card {
