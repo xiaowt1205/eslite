@@ -65,27 +65,27 @@ header nav ul li {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1200px) {
   .container_1140 {
-    max-width: 540px;
+    max-width: 1200px;
   }
 }
 
-@media (min-width: 768px) {
-  .container_1140 {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container_1140 {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1140px) {
+@media (min-width: 1600px) {
   .container_1140 {
     max-width: 1140px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container_1140 {
+    max-width: 1199px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container_1140 {
+    max-width: unset;
   }
 }
 
