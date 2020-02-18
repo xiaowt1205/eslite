@@ -2,10 +2,20 @@
 @import "./_variables.scss";
 @import "./_function.scss";
 
+header{
+    height: unset;
+}
+
+.imgSize{
+    width: 81px;
+
+    margin-bottom: 100px;
+}
+
 
 .insidePageTitle{   
 
-    margin:80px 0 0 0;
+    margin-top:87px;
 
     .breadcrumbArea{
 
@@ -26,6 +36,7 @@
             
                 writing-mode: vertical-lr ;
                 font-size: $fs-18;
+                letter-spacing: 2.5px;
     
                 margin: 0;
                 padding: 0;
@@ -56,6 +67,7 @@
 
         .title{
             font-size: $fs-32;
+            letter-spacing: 10px;
 
             position: relative;
             right: -15px;
@@ -86,6 +98,10 @@
         a{  
             color: $fc-black;
 
+            &:hover{
+                color: $fc-white;
+            }
+
             .back, .print{
                 width: 90px;
                 height: 90px;
@@ -97,6 +113,10 @@
     
                 padding: 20px 20px;
                 margin: 5px auto;
+
+                &:hover{
+                    background-color: $fc-black;
+                }
     
             }
         }

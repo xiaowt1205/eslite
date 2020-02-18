@@ -16,42 +16,456 @@
     <!-- layout -->
     <link rel="stylesheet" href="./css/main.css">
     <!-- page css  -->
+    <link rel="stylesheet" href="./css/InsidePagetemplate.css">
     <link rel="stylesheet" href="./css/youthProject.css">
+
+
+    <style>
+
+
+
+    </style>
 </head>
 
 <body>
     <!-- index -->
-    <header class="d-flex justify-content-between position-relative">
-        <nav class="order-sm-1">
-            <ul class="d-flex">
-                <li><a href="">關於我們</a></li>
-                <li><a href="">閱讀分享計畫</a></li>
-                <li><a href="">青年培育計畫</a></li>
-                <li><a href="">基金會訊息</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href=""><i class="fas fa-share-alt"></i></a></li>
-                <li><a href=""><div class="cicle"><i class="fas fa-info"></i></div></a></li>
-                <li><a href=""><i class="fas fa-search"></i></a></li>
-                <li class="menu-btn"><a href="#" ><div class=""></div></a></li>
-            </ul>
-        </nav>
-        <div class="banner position-absolute"></div>
-        <aside>
-            <div class="logo">
-                <img class="w-100" src="./img/index/logo.png" alt="誠品文化藝術基金會LOGO">
+    <header class="container">
+        <nav class="order-sm-1 row no-gutters justify-content-start">
+            <div class="col d-none d-xl-flex justify-content-end">
+                <ul class="d-flex">
+                    <li><a href="">關於我們</a></li>
+                    <li><a href="">閱讀分享計畫</a></li>
+                    <li><a href="">青年培育計畫</a></li>
+                    <li><a href="">基金會訊息</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href=""><i class="fas fa-share-alt"></i></a></li>
+                    <li><a href="">
+                            <div class="cicle"><i class="fas fa-info"></i></div>
+                        </a></li>
+                    <li><a href=""><i class="fas fa-search"></i></a></li>
+                    <li class="menu-btn position-absolute">
+                        <a href="#">
+                            <div class=""></div>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </aside>
+        </nav>
     </header>
-    <main></main>
-    <footer></footer>
 
-    <!-- Inside page -->
+    <!-- menu -->
+    <div class="menu">
+        <div class="menu-container position-relative">
+            <div class="menu-btn position-absolute">
+                <a href="#">
+                    <div class=""></div>
+                </a>
+            </div>
+            <ul class="d-flex justify-content-end flex-wrap">
+                <li class="menu-title"><a href="">
+                        <div>關於我們</div>
+                    </a>
+                    <ul>
+                        <li class="menu-content"><a href="">簡介、架構、勸募徵信</a></li>
+                        <li class="menu-content"><a href="">年度勸募徵信PDF檔案</a></li>
+                        <li class="menu-content"><a href="">聯絡我們表單</a></li>
+                    </ul>
+                </li>
+                <li class="menu-title"><a href="">
+                        <div>閱讀分享計畫</div>
+                    </a>
+                    <ul>
+                        <li>
+                            <div class="accordion" id="study-plan-1">
+                                <div>
+                                    <div id="study-plan-heading-1">
+                                        <a class="menu-content collapse-content collapsed" type="button"
+                                            data-toggle="collapse" data-target="#study-plan-collapse-1"
+                                            aria-expanded="true" aria-controls="study-plan-collapse-1">
+                                            閱讀分享計畫
+                                        </a>
+                                    </div>
 
-    <div class="btnGroup">
-       <a href=""> <div class="project">計畫介紹</div></a>
-       <a href=""><div class="project">璞玉計畫</div></a>
-       <a href=""> <div class="project">志工隊</div></a>
+                                    <div id="study-plan-collapse-1" class="collapse drop-down"
+                                        aria-labelledby="study-plan-heading-1" data-parent="#study-plan-1">
+                                        <div class="card-body collapse-body">
+                                            <ul>
+                                                <li><a href="">計畫介紹</a></li>
+                                                <li><a href="">計畫響應</a></li>
+                                                <li><a href="">沿線閱讀</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion" id="study-plan-2">
+                                <div>
+                                    <div id="study-plan-heading-2">
+                                        <a class="menu-content collapse-content collapsed" type="button"
+                                            data-toggle="collapse" data-target="#study-plan-collapse-2"
+                                            aria-expanded="true" aria-controls="study-plan-collapse-2">
+                                            個人/團體捐書
+                                        </a>
+                                    </div>
+
+                                    <div id="study-plan-collapse-2" class="collapse drop-down"
+                                        aria-labelledby="study-plan-heading-2" data-parent="#study-plan-2">
+                                        <div class="card-body collapse-body">
+                                            <ul>
+                                                <li><a href="">個人捐書</a></li>
+                                                <li><a href="">團體捐書</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion" id="study-plan-3">
+                                <div>
+                                    <div id="study-plan-heading-3">
+                                        <a class="menu-content collapse-content collapsed" type="button"
+                                            data-toggle="collapse" data-target="#study-plan-collapse-3"
+                                            aria-expanded="true" aria-controls="study-plan-collapse-3">
+                                            郵寄捐書
+                                        </a>
+                                    </div>
+
+                                    <div id="study-plan-collapse-3" class="collapse drop-down"
+                                        aria-labelledby="study-plan-heading-3" data-parent="#study-plan-3">
+                                        <div class="card-body collapse-body">
+                                            <ul>
+                                                <li><a href="">郵寄捐書-1</a></li>
+                                                <li><a href="">郵寄捐書-2</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion" id="study-plan-4">
+                                <div>
+                                    <div id="study-plan-heading-4">
+                                        <a class="menu-content collapse-content collapsed" type="button"
+                                            data-toggle="collapse" data-target="#study-plan-collapse-4"
+                                            aria-expanded="true" aria-controls="study-plan-collapse-4">
+                                            書籍申請
+                                        </a>
+                                    </div>
+
+                                    <div id="study-plan-collapse-4" class="collapse drop-down"
+                                        aria-labelledby="study-plan-heading-4" data-parent="#study-plan-4">
+                                        <div class="card-body collapse-body">
+                                            <ul>
+                                                <li><a href="">書籍申請-A</a></li>
+                                                <li><a href="">書籍申請-B</a></li>
+                                                <li><a href="">書籍申請-C</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion" id="study-plan-5">
+                                <div>
+                                    <div id="study-plan-heading-5">
+                                        <a class="menu-content collapse-content collapsed" type="button"
+                                            data-toggle="collapse" data-target="#study-plan-collapse-5"
+                                            aria-expanded="true" aria-controls="study-plan-collapse-5">
+                                            閱讀分享志工
+                                        </a>
+                                    </div>
+
+                                    <div id="study-plan-collapse-5" class="collapse drop-down"
+                                        aria-labelledby="study-plan-heading-5" data-parent="#study-plan-5">
+                                        <div class="card-body collapse-body">
+                                            <ul>
+                                                <li><a href="">閱讀分享志工-甲</a></li>
+                                                <li><a href="">閱讀分享志工-乙</a></li>
+                                                <li><a href="">閱讀分享志工-丙</a></li>
+                                                <li><a href="">閱讀分享志工-丁</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion" id="study-plan-6">
+                                <div>
+                                    <div id="study-plan-heading-6">
+                                        <a class="menu-content collapse-content collapsed" type="button"
+                                            data-toggle="collapse" data-target="#study-plan-collapse-6"
+                                            aria-expanded="true" aria-controls="study-plan-collapse-6">
+                                            沿線閱讀
+                                        </a>
+                                    </div>
+
+                                    <div id="study-plan-collapse-6" class="collapse drop-down"
+                                        aria-labelledby="study-plan-heading-6" data-parent="#study-plan-6">
+                                        <div class="card-body collapse-body">
+                                            <ul>
+                                                <li><a href="">沿線閱讀-X</a></li>
+                                                <li><a href="">沿線閱讀-Y</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion" id="study-plan-7">
+                                <div>
+                                    <div id="study-plan-heading-7">
+                                        <a class="menu-content collapse-content collapsed" type="button"
+                                            data-toggle="collapse" data-target="#study-plan-collapse-7"
+                                            aria-expanded="true" aria-controls="study-plan-collapse-7">
+                                            合作據點介紹
+                                        </a>
+                                    </div>
+
+                                    <div id="study-plan-collapse-7" class="collapse drop-down"
+                                        aria-labelledby="study-plan-heading-7" data-parent="#study-plan-7">
+                                        <div class="card-body collapse-body">
+                                            <ul>
+                                                <li><a href="">合作據點介紹-北部</a></li>
+                                                <li><a href="">合作據點介紹-中部</a></li>
+                                                <li><a href="">合作據點介紹-南部</a></li>
+                                                <li><a href="">合作據點介紹-部</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-title"><a href="">
+                        <div>青年培育計畫</div>
+                    </a>
+                    <ul>
+                        <li>
+                            <div class="accordion" id="youth-plan-1">
+                                <div>
+                                    <div id="youth-plan-heading-1">
+                                        <a class="menu-content collapse-content collapsed" type="button"
+                                            data-toggle="collapse" data-target="#youth-plan-collapse-1"
+                                            aria-expanded="true" aria-controls="youth-plan-collapse-1">
+                                            青年培育計畫
+                                        </a>
+                                    </div>
+
+                                    <div id="youth-plan-collapse-1" class="collapse drop-down"
+                                        aria-labelledby="youth-plan-heading-1" data-parent="#youth-plan-1">
+                                        <div class="card-body collapse-body">
+                                            <ul>
+                                                <li><a href="">培育計畫A</a></li>
+                                                <li><a href="">培育計畫B</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion" id="youth-plan-2">
+                                <div>
+                                    <div id="youth-plan-heading-2">
+                                        <a class="menu-content collapse-content collapsed" type="button"
+                                            data-toggle="collapse" data-target="#youth-plan-collapse-2"
+                                            aria-expanded="true" aria-controls="youth-plan-collapse-2">
+                                            璞玉計畫
+                                        </a>
+                                    </div>
+
+                                    <div id="youth-plan-collapse-2" class="collapse drop-down"
+                                        aria-labelledby="youth-plan-heading-2" data-parent="#youth-plan-2">
+                                        <div class="card-body collapse-body">
+                                            <ul>
+                                                <li><a href="">璞玉計畫-方案1</a></li>
+                                                <li><a href="">璞玉計畫-方案2</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion" id="youth-plan-3">
+                                <div>
+                                    <div id="youth-plan-heading-3">
+                                        <a class="menu-content collapse-content collapsed" type="button"
+                                            data-toggle="collapse" data-target="#youth-plan-collapse-3"
+                                            aria-expanded="true" aria-controls="youth-plan-collapse-3">
+                                            申請成為學員
+                                        </a>
+                                    </div>
+
+                                    <div id="youth-plan-collapse-3" class="collapse drop-down"
+                                        aria-labelledby="youth-plan-heading-3" data-parent="#youth-plan-3">
+                                        <div class="card-body collapse-body">
+                                            <ul>
+                                                <li><a href="">怎麼申請</a></li>
+                                                <li><a href="">馬上申請</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion" id="youth-plan-4">
+                                <div>
+                                    <div id="youth-plan-heading-4">
+                                        <a class="menu-content collapse-content collapsed" type="button"
+                                            data-toggle="collapse" data-target="#youth-plan-collapse-4"
+                                            aria-expanded="true" aria-controls="youth-plan-collapse-4">
+                                            申請成為隊輔
+                                        </a>
+                                    </div>
+
+                                    <div id="youth-plan-collapse-4" class="collapse drop-down"
+                                        aria-labelledby="youth-plan-heading-4" data-parent="#youth-plan-4">
+                                        <div class="card-body collapse-body">
+                                            <ul>
+                                                <li><a href="">怎麼申請</a></li>
+                                                <li><a href="">申請須知</a></li>
+                                                <li><a href="">馬上申請</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion" id="youth-plan-5">
+                                <div>
+                                    <div id="youth-plan-heading-5">
+                                        <a class="menu-content collapse-content collapsed" type="button"
+                                            data-toggle="collapse" data-target="#youth-plan-collapse-5"
+                                            aria-expanded="true" aria-controls="youth-plan-collapse-5">
+                                            志工隊
+                                        </a>
+                                    </div>
+
+                                    <div id="youth-plan-collapse-5" class="collapse drop-down"
+                                        aria-labelledby="youth-plan-heading-5" data-parent="#youth-plan-5">
+                                        <div class="card-body collapse-body">
+                                            <ul>
+                                                <li><a href="">志工隊A隊</a></li>
+                                                <li><a href="">志工隊B隊</a></li>
+                                                <li><a href="">志工隊C隊</a></li>
+                                                <li><a href="">志工隊D隊</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-title"><a href="">
+                        <div>基金會訊息</div>
+                    </a>
+                    <ul>
+                        <li class="menu-content"><a href="">訊息列表</a></li>
+                    </ul>
+                </li>
+                <li class="menu-title"><a href="">
+                        <div>FAQ</div>
+                    </a>
+                    <ul>
+                        <li class="menu-content"><a href="">問題列表</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
+
+
+
+    <!-- main content -->
+    <main class="container">
+        <div class="row">
+            <aside class="col-1 offset-1 d-sm-flex d-none justify-content-end">
+                <img class="imgSize" src="./img/index/logo.svg" alt="">
+            </aside>
+    
+            <div class="insidePageTitle col-1 d-sm-block d-none">
+                <div class="breadcrumbArea">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">青年培育計畫</li>
+                        </ol>
+                    </nav>
+                    <div class="title">青年培育計畫</div>
+                </div>
+                <div class="btnArea">
+                    <a href=""><div class="back">回 <br>上一頁</div></a>
+                    <a href=""><div class="print">友 善<br>列 印</div></a>
+                </div>
+                <div class="iconGroup">
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- page right content -->
+            <aside class="col-12 col-sm-7 offset-sm-1 pageContent">
+                <div class="btnGroup">
+                    <a href=""> <div class="project">計畫介紹</div></a>
+                    <a href=""><div class="project">璞玉計畫</div></a>
+                    <a href=""> <div class="project">志工隊</div></a>
+                 </div>
+            </aside>
+        </div>
+    </main>
+
+   <!-- footer -->
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-xl-3">
+                <div class="logo">
+                    <img class="w-100" src="./img/index/logo-white.png" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-xl-4">
+                <div class="footer-info">
+                    <p>11073台北市信義區菸廠路88號4F之7</p>
+                    <p>連絡電話 ￨ +886-2-6636-9888</p>
+                    <p>傳　　真 ￨ +886-2-6636-1230</p>
+                    <p>統一編號 ￨ 25681974</p>
+                </div>
+            </div>
+            <div class="col-12 col-xl-3">
+                <p>個人資料保護管理政策</p>
+                <p>版權所有聲明</p>
+            </div>
+            <div class="col d-flex justify-content-center justify-content-sm-start">
+                <div class="icon-bg"><a href=""><i class="fab fa-youtube"></i></a></div>
+                <div class="icon-bg"><a href=""><i class="fab fa-facebook-f"></i></a></div>
+            </div>
+        </div>
+    </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -63,16 +477,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <!-- <script src="./js/nav.js"></script> -->
+
+    <script src="./js/main.js"></script>
     <!-- page js -->
-    <script src=""></script>
-
-
     <script>
-        $('.menu-btn').click(function(){
-            $('.menu-btn').toggleClass('active');
-        })
+
     </script>
+
 </body>
 
 </html>

@@ -115,8 +115,17 @@ a:hover {
   padding: 0;
 }
 
+header {
+  height: unset;
+}
+
+.imgSize {
+  width: 81px;
+  margin-bottom: 100px;
+}
+
 .insidePageTitle {
-  margin: 80px 0 0 0;
+  margin-top: 87px;
 }
 
 .insidePageTitle .breadcrumbArea {
@@ -138,6 +147,7 @@ a:hover {
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   font-size: 18px;
+  letter-spacing: 2.5px;
   margin: 0;
   padding: 0;
 }
@@ -165,6 +175,7 @@ a:hover {
 
 .insidePageTitle .breadcrumbArea .title {
   font-size: 32px;
+  letter-spacing: 10px;
   position: relative;
   right: -15px;
 }
@@ -187,6 +198,10 @@ a:hover {
   color: #000000;
 }
 
+.insidePageTitle .btnArea a:hover {
+  color: #FFFFFF;
+}
+
 .insidePageTitle .btnArea a .back, .insidePageTitle .btnArea a .print {
   width: 90px;
   height: 90px;
@@ -195,6 +210,10 @@ a:hover {
   text-align: center;
   padding: 20px 20px;
   margin: 5px auto;
+}
+
+.insidePageTitle .btnArea a .back:hover, .insidePageTitle .btnArea a .print:hover {
+  background-color: #000000;
 }
 
 .insidePageTitle .iconGroup {

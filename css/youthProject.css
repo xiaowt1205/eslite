@@ -115,6 +115,10 @@ a:hover {
   padding: 0;
 }
 
+.pageContent {
+  margin-top: 160px;
+}
+
 .btnGroup .project {
   width: 100%;
   height: 130px;
