@@ -16,8 +16,10 @@ $('.menu-btn-pc').click(function () {
 
 
     
-// $('.collapse').on('show.bs.collapse', function () {
-//     $('.collapse').each(function () {
-//         $(this).collapse('hide');
-//     });
-// });
+$('.collapse').on('show.bs.collapse', function () {
+    $('.pc-collapse').each(function () {
+        $(this).collapse('hide');
+    });
+});
+
+console.log($('.collapse'));
