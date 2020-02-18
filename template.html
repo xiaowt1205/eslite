@@ -82,7 +82,7 @@
                     </a>
                 </div>
                 <div class="menu-btn position-absolute d-block d-sm-none">
-                    <a href="#">
+                    <a type="button" data-toggle="modal" data-target="#mobile-menu">
                         <div class=""></div>
                     </a>
                 </div>
@@ -99,7 +99,7 @@
                             <div class="cicle"><i class="fas fa-info"></i></div>
                         </a></li>
                     <li><a href=""><i class="fas fa-search"></i></a></li>
-                    <li class="menu-btn position-absolute">
+                    <li class="menu-btn menu-btn-pc position-absolute">
                         <a href="#">
                             <div class=""></div>
                         </a>
@@ -131,7 +131,7 @@
             </div>
         </div>
         <div class="aside-bg d-sm-block d-none"></div>
-        <div class="mobile col d-block d-xl-none justify-content-center">
+        <div class="mobile-aside col d-block d-xl-none justify-content-center">
             <div class="accordion" id="aside-btn-1">
                 <div class="aside-btn-group">
                     <div class="aside-btn-title text-center">
@@ -222,10 +222,13 @@
     <!-- menu -->
     <div class="menu">
         <div class="menu-container position-relative">
-            <div class="menu-btn position-absolute">
+            <div class="menu-btn menu-btn-pc position-absolute d-sm-block d-none">
                 <a href="#">
-                    <div class=""></div>
+                    <div></div>
                 </a>
+            </div>
+            <div class="logo d-sm-none d-block">
+                <img class="w-100" src="./img/index/logo-white-no_deco.png" alt="">
             </div>
             <ul class="d-flex justify-content-end flex-wrap">
                 <li class="menu-title"><a href="">
@@ -263,7 +266,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </li>
                         <li>
@@ -287,7 +289,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </li>
                         <li>
@@ -564,6 +565,341 @@
         </div>
     </div>
 
+    <!-- mobile menu -->
+    <div class="modal fade" id="mobile-menu" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-top">
+                    <div class="logo">
+                        <img class="w-100" src="./img/index/logo-white-no_deco.png" alt="">
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- <div class="menu-btn menu-btn-pc position-absolute">
+                        <a href="#">
+                            <div></div>
+                        </a>
+                    </div> -->
+                </div>
+                <div class="modal-collapse-group">
+                    <div class="accordion" id="about-us">
+                        <div id="about-us-heading" class="menu-title">
+                            <a class="collapsed collapse-deco" type="button" data-toggle="collapse"
+                                data-target="#about-us-collapse" aria-expanded="true" aria-controls="about-us-collapse">
+                                關於我們
+                            </a>
+                        </div>
+
+                        <div id="about-us-collapse" class="collapse" aria-labelledby="about-us-heading"
+                            data-parent="#about-us">
+                            <a href="">
+                                <div class="menu-sub-title pl-2">簡介、架構、勸募徵信</div>
+                            </a>
+                            <a href="">
+                                <div class="menu-sub-title pl-2">年度勸募徵信PDF檔案</div>
+                            </a>
+                            <a href="">
+                                <div class="menu-sub-title pl-2">聯絡我們表單</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion" id="study-plan">
+                        <div>
+                            <div id="study-plan-heading" class="menu-title">
+                                <a class="collapsed collapse-deco" type="button" data-toggle="collapse"
+                                    data-target="#study-plan-collapse" aria-expanded="true"
+                                    aria-controls="study-plan-collapse">
+                                    閱讀分享計畫
+                                </a>
+                            </div>
+
+                            <div id="study-plan-collapse" class="collapse" aria-labelledby="study-plan-heading"
+                                data-parent="#study-plan">
+                                <div class="accordion" id="study-plan-1">
+                                    <div id="study-plan-1-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" type="button" data-toggle="collapse"
+                                            data-target="#study-plan-1-collapse" aria-expanded="true"
+                                            aria-controls="study-plan-1-collapse">
+                                            閱讀分享計畫
+                                        </a>
+                                    </div>
+                                    <div id="study-plan-1-collapse" class="collapse" aria-labelledby="study-plan-1-heading"
+                                        data-parent="#study-plan-1">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">計畫介紹</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">計畫響應</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">沿線閱讀</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="study-plan-2">
+                                    <div id="study-plan-2-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" type="button" data-toggle="collapse"
+                                            data-target="#study-plan-2-collapse" aria-expanded="true"
+                                            aria-controls="study-plan-2-collapse">
+                                            個人/團體捐書
+                                        </a>
+                                    </div>
+                                    <div id="study-plan-2-collapse" class="collapse" aria-labelledby="study-plan-2-heading"
+                                        data-parent="#study-plan-2">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">個人捐書</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">團體捐書</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="study-plan-3">
+                                    <div id="study-plan-3-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" type="button" data-toggle="collapse"
+                                            data-target="#study-plan-3-collapse" aria-expanded="true"
+                                            aria-controls="study-plan-3-collapse">
+                                            書籍申請
+                                        </a>
+                                    </div>
+                                    <div id="study-plan-3-collapse" class="collapse" aria-labelledby="study-plan-3-heading"
+                                        data-parent="#study-plan-3">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">書籍申請-A</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">書籍申請-B</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">書籍申請-C</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="study-plan-4">
+                                    <div id="study-plan-4-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" type="button" data-toggle="collapse"
+                                            data-target="#study-plan-4-collapse" aria-expanded="true"
+                                            aria-controls="study-plan-4-collapse">
+                                            閱讀分享志工
+                                        </a>
+                                    </div>
+                                    <div id="study-plan-4-collapse" class="collapse" aria-labelledby="study-plan-4-heading"
+                                        data-parent="#study-plan-4">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">志工甲</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">志工乙</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">志工丙</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="study-plan-5">
+                                    <div id="study-plan-5-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" type="button" data-toggle="collapse"
+                                            data-target="#study-plan-5-collapse" aria-expanded="true"
+                                            aria-controls="study-plan-5-collapse">
+                                            沿線閱讀
+                                        </a>
+                                    </div>
+                                    <div id="study-plan-5-collapse" class="collapse" aria-labelledby="study-plan-5-heading"
+                                        data-parent="#study-plan-5">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">沿線閱讀Z</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">沿線閱讀X</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">沿線閱讀C</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="study-plan-6">
+                                    <div id="study-plan-6-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" type="button" data-toggle="collapse"
+                                            data-target="#study-plan-6-collapse" aria-expanded="true"
+                                            aria-controls="study-plan-6-collapse">
+                                            合作據點介紹
+                                        </a>
+                                    </div>
+                                    <div id="study-plan-6-collapse" class="collapse" aria-labelledby="study-plan-6-heading"
+                                        data-parent="#study-plan-6">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">合作據點介紹-中部</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">合作據點介紹-南部</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">合作據點介紹-北部</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">合作據點介紹-東部</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="youth-plan">
+                        <div>
+                            <div id="youth-plan-heading" class="menu-title">
+                                <a class="collapsed collapse-deco" type="button" data-toggle="collapse"
+                                    data-target="#youth-plan-collapse" aria-expanded="true"
+                                    aria-controls="youth-plan-collapse">
+                                    青年培育計畫
+                                </a>
+                            </div>
+
+                            <div id="youth-plan-collapse" class="collapse" aria-labelledby="youth-plan-heading"
+                                data-parent="#youth-plan">
+                                <div class="accordion" id="youth-plan-1">
+                                    <div id="youth-plan-1-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" type="button" data-toggle="collapse"
+                                            data-target="#youth-plan-1-collapse" aria-expanded="true"
+                                            aria-controls="youth-plan-1-collapse">
+                                            青年培育計畫
+                                        </a>
+                                    </div>
+                                    <div id="youth-plan-1-collapse" class="collapse" aria-labelledby="youth-plan-1-heading"
+                                        data-parent="#youth-plan-1">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">計畫AAA</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">計畫BBB</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">計畫CCC</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="youth-plan-2">
+                                    <div id="youth-plan-2-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" type="button" data-toggle="collapse"
+                                            data-target="#youth-plan-2-collapse" aria-expanded="true"
+                                            aria-controls="youth-plan-2-collapse">
+                                            璞玉計畫
+                                        </a>
+                                    </div>
+                                    <div id="youth-plan-2-collapse" class="collapse" aria-labelledby="youth-plan-2-heading"
+                                        data-parent="#youth-plan-2">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">璞玉計畫-方案1</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">璞玉計畫-方案ㄉ</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="youth-plan-3">
+                                    <div id="youth-plan-3-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" type="button" data-toggle="collapse"
+                                            data-target="#youth-plan-3-collapse" aria-expanded="true"
+                                            aria-controls="youth-plan-3-collapse">
+                                            申請成為學員
+                                        </a>
+                                    </div>
+                                    <div id="youth-plan-3-collapse" class="collapse" aria-labelledby="youth-plan-3-heading"
+                                        data-parent="#youth-plan-3">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">如何申請</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">馬上申請</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">申請須知</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="youth-plan-4">
+                                    <div id="youth-plan-4-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" type="button" data-toggle="collapse"
+                                            data-target="#youth-plan-4-collapse" aria-expanded="true"
+                                            aria-controls="youth-plan-4-collapse">
+                                            申請成為隊輔
+                                        </a>
+                                    </div>
+                                    <div id="youth-plan-4-collapse" class="collapse" aria-labelledby="youth-plan-4-heading"
+                                        data-parent="#youth-plan-4">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">如何申請</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">馬上申請</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">申請須知</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="youth-plan-5">
+                                    <div id="youth-plan-5-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" type="button" data-toggle="collapse"
+                                            data-target="#youth-plan-5-collapse" aria-expanded="true"
+                                            aria-controls="youth-plan-5-collapse">
+                                            志工隊
+                                        </a>
+                                    </div>
+                                    <div id="youth-plan-5-collapse" class="collapse" aria-labelledby="youth-plan-5-heading"
+                                        data-parent="#youth-plan-5">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">志工隊A隊</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">志工隊B隊</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">志工隊C隊</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">志工隊D隊</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="foundation-message">
+                        <div id="foundation-message-heading" class="menu-title">
+                            <a class="collapsed collapse-deco" type="button" data-toggle="collapse"
+                                data-target="#foundation-message-collapse" aria-expanded="true" aria-controls="foundation-message-collapse">
+                                基金會訊息
+                            </a>
+                        </div>
+
+                        <div id="foundation-message-collapse" class="collapse" aria-labelledby="foundation-message-heading"
+                            data-parent="#foundation-message">
+                            <a href="">
+                                <div class="menu-sub-title pl-2">訊息列表</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion" id="FAQ">
+                        <div id="FAQ-heading" class="menu-title">
+                            <a class="collapsed collapse-deco" type="button" data-toggle="collapse"
+                                data-target="#FAQ-collapse" aria-expanded="true" aria-controls="FAQ-collapse">
+                                FAQ
+                            </a>
+                        </div>
+
+                        <div id="FAQ-collapse" class="collapse" aria-labelledby="FAQ-heading"
+                            data-parent="#FAQ">
+                            <a href="">
+                                <div class="menu-sub-title pl-2">問題列表</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- main content -->
     <main>
 
@@ -597,6 +933,7 @@
             </div>
         </div>
     </footer>
+
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
