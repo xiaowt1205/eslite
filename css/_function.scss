@@ -1,4 +1,8 @@
-@mixin border-two-side($l-size,$r-size,$color,$style){
+@mixin border-two-side($l-size, $r-size, $color, $style) {
     border-left: $l-size $color $style;
-    border-right: $r-size $color $style ;
+    border-right: $r-size $color $style;
+}
+
+@mixin text_btn($size, $color) {
+    border: $size solid $color;
 }

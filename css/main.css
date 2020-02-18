@@ -221,6 +221,12 @@ header nav aside .logo {
   margin-bottom: 65px;
 }
 
+@media (max-width: 1599px) {
+  header nav aside .logo {
+    margin-bottom: 40px;
+  }
+}
+
 @media (max-width: 576px) {
   header nav aside .logo {
     width: 130px;
@@ -232,6 +238,12 @@ header nav aside .swiper-pagination {
   width: 250px;
   position: unset;
   margin-bottom: 65px;
+}
+
+@media (max-width: 1599px) {
+  header nav aside .swiper-pagination {
+    margin-bottom: 40px;
+  }
 }
 
 header nav aside .swiper-pagination-bullet {
@@ -252,6 +264,12 @@ header nav aside i {
   font-size: 18px;
   color: #FFFFFF;
   margin-bottom: 15px;
+}
+
+@media (max-width: 1599px) {
+  header nav aside i {
+    margin-bottom: -10px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -279,6 +297,12 @@ header nav aside .aside-btn-group a .aside-btn {
       writing-mode: vertical-rl;
   padding: 350px 15px 5px 15px;
   overflow: hidden;
+}
+
+@media (max-width: 1599px) {
+  header nav aside .aside-btn-group a .aside-btn {
+    padding: 325px 15px 5px 15px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -327,6 +351,12 @@ header nav aside .aside-btn-group a .aside-btn .gradient-mask {
   overflow: hidden;
 }
 
+@media (max-width: 1599px) {
+  header nav aside .aside-btn-group a .aside-btn .gradient-mask {
+    padding-top: 0px;
+  }
+}
+
 @media (max-width: 576px) {
   header nav aside .aside-btn-group a .aside-btn .gradient-mask {
     display: none;
@@ -368,6 +398,12 @@ header .banner {
   top: -675px;
 }
 
+@media (max-width: 1599px) {
+  header .banner {
+    top: -450px;
+  }
+}
+
 @media (max-width: 576px) {
   header .banner {
     position: unset;
@@ -392,6 +428,12 @@ header .aside-bg {
   width: 38%;
   height: 840px;
   background-color: #665252;
+}
+
+@media (max-width: 1599px) {
+  header .aside-bg {
+    height: 750px;
+  }
 }
 
 .menu {

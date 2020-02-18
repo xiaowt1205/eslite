@@ -95,16 +95,25 @@ header{
                 width: 300px;
                 margin-bottom: 65px;
 
+                @media(max-width:1599px){
+                    margin-bottom: 40px;
+                }
+
                 @media(max-width:576px){
                     width: 130px;
                     margin: auto;
                 }
             }
-    
+        
+
             .swiper-pagination{
                 width: 250px;
                 position: unset;
                 margin-bottom: 65px;
+
+                @media(max-width:1599px){
+                    margin-bottom: 40px;
+                }
             }
     
             .swiper-pagination-bullet{
@@ -124,6 +133,10 @@ header{
                 font-size: $fs-18;
                 color: $fc-white;
                 margin-bottom: 15px;
+
+                @media(max-width:1599px){
+                    margin-bottom: -10px;
+                }
             }
 
             .aside-btn-group{
@@ -145,6 +158,10 @@ header{
                         writing-mode: vertical-rl;
                         padding: 350px 15px 5px 15px;
                         overflow: hidden;
+
+                        @media(max-width:1599px){
+                            padding: 325px 15px 5px 15px;
+                        }
     
                         @media(max-width:576px){
                             writing-mode: unset;
@@ -183,6 +200,11 @@ header{
                             line-height: 61px;
                             font-size: $fs-16;
                             overflow: hidden;
+
+                            @media(max-width:1599px){
+                                padding-top: 0px;
+                            }
+
                             @media(max-width:576px){
                                 display: none;
                             }
@@ -227,6 +249,11 @@ header{
         right: 0;
         top:-675px;
 
+        @media(max-width:1599px){
+            top:-450px;
+        }
+     
+
         @media(max-width: 576px){
             position: unset;
         }
@@ -249,6 +276,10 @@ header{
         width: 38%;
         height: 840px;
         background-color: $main-color;
+
+        @media(max-width: 1599px){
+            height: 750px;
+        }
     }
 }
 
