@@ -95,16 +95,25 @@ header{
                 width: 300px;
                 margin-bottom: 65px;
 
+                @media(max-width:1599px){
+                    margin-bottom: 40px;
+                }
+
                 @media(max-width:576px){
                     width: 130px;
                     margin: auto;
                 }
             }
-    
+        
+
             .swiper-pagination{
                 width: 250px;
                 position: unset;
                 margin-bottom: 65px;
+
+                @media(max-width:1599px){
+                    margin-bottom: 40px;
+                }
             }
     
             .swiper-pagination-bullet{
@@ -124,6 +133,10 @@ header{
                 font-size: $fs-18;
                 color: $fc-white;
                 margin-bottom: 15px;
+
+                @media(max-width:1599px){
+                    margin-bottom: -10px;
+                }
             }
 
             .aside-btn-group{
@@ -145,6 +158,10 @@ header{
                         writing-mode: vertical-rl;
                         padding: 350px 15px 5px 15px;
                         overflow: hidden;
+
+                        @media(max-width:1599px){
+                            padding: 325px 15px 5px 15px;
+                        }
     
                         @media(max-width:576px){
                             writing-mode: unset;
@@ -183,6 +200,11 @@ header{
                             line-height: 61px;
                             font-size: $fs-16;
                             overflow: hidden;
+
+                            @media(max-width:1599px){
+                                padding-top: 0px;
+                            }
+
                             @media(max-width:576px){
                                 display: none;
                             }
@@ -227,6 +249,11 @@ header{
         right: 0;
         top:-675px;
 
+        @media(max-width:1599px){
+            top:-450px;
+        }
+     
+
         @media(max-width: 576px){
             position: unset;
         }
@@ -249,6 +276,10 @@ header{
         width: 38%;
         height: 840px;
         background-color: $main-color;
+
+        @media(max-width: 1599px){
+            height: 750px;
+        }
     }
 }
 
@@ -283,6 +314,11 @@ header{
         margin: auto;
         padding: 180px 100px 0 100px;
         
+        @media (max-width:576px){
+            max-width: 320px;
+            padding: 20px 50px;
+        }
+
         ul,li{
             letter-spacing: 2px;
         }
@@ -305,6 +341,7 @@ header{
 
             ul{
                 margin-top: -15px;
+
                 .menu-content{
                     margin-bottom: 10px;
 
@@ -389,10 +426,127 @@ header{
                 top: 330px;
             }
         }
+        
     }
     .menu-btn{
         right: 15px;
         top:75px;
+
+        @media (max-width:576px){
+            right: 30px;
+            top:20px;
+        }
+    }
+    .logo{
+        width: 130px;
+        margin: auto;
+        text-align: center;
+
+        &::after{
+            content:'';
+            position: absolute;
+            top:55px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 230px;
+            height: 1px;
+            background-color: $fc-white;
+        }
+    }
+}
+
+.modal{
+    background-color: rgba(35,24,21,0.9);
+
+    .modal-content{
+        background-color: transparent;
+        border: none;
+
+        .modal-top{
+            height: 61px;
+            .logo{
+                padding: 10px 0;
+                width: 130px;
+                position: absolute;
+                left: 50%;
+                top: 10px;
+                transform: translateX(-50%);
+    
+                &::after{
+                    content: '';
+                    width: 280px;
+                    height:1px;
+                    background-color: $fc-white;
+                    position: absolute;
+                    left: 50%;
+                    top: 50px;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        
+        .modal-collapse-group{
+            padding: 25px 40px 0 40px;
+            
+            .accordion{
+                margin-bottom: 20px;
+
+                .menu-title{
+                    a{
+                        color: $fc-white;
+                        font-size: $fs-18;
+                        letter-spacing: 3px;
+                    }
+                }
+
+                .menu-sub-title{
+                    font-size: $fs-14;
+                    color: $fc-white;
+                    opacity: 0.3;
+                    margin-top: 15px;
+                    transition:.3s;
+
+                    &:hover{
+                        opacity: 0.8;
+                    }
+
+                    .collapse-deco{
+                        &::after, &::before{
+                            top: 11px;
+                            width: 10px;
+                        }
+                    }
+                }
+
+                .collapse-deco{
+                    position: relative;
+                    transition: .3s;
+                    transition-timing-function: ease-in-out;
+                    &::after, &::before{
+                        content:' ';
+                        position: absolute;
+                        right: -20px;
+                        top: 14px;
+                        width: 12px;
+                        height: 1.5px;
+                        background-color:$fc-white;
+                        opacity: 0.6;
+                    }
+    
+                    &::before{
+                        transform: rotate(0deg);
+                        transition: 0.3s; 
+                    }
+    
+                    &.collapsed{
+    
+                        &::before{
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -417,7 +571,7 @@ header{
             transition-timing-function: ease-in-out;
 
             @media(max-width: 576px){
-                width: 40px;
+                width: 30px;
             }
 
             &::after{
@@ -433,7 +587,7 @@ header{
                 transition-timing-function: ease-in-out;    
                 
                 @media(max-width: 576px){
-                    width: 40px;
+                    width: 30px;
                     top: 8px;
                 }
             }
@@ -453,7 +607,7 @@ header{
     }
 }
 
-.mobile{
+.mobile-aside{
     background-color: #857D7D;
     padding: 15px 0 10px 0;
 

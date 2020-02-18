@@ -1,5 +1,5 @@
-$('.menu-btn').click(function () {
-    $('.menu-btn').toggleClass('active');
+$('.menu-btn-pc').click(function () {
+    $('.menu-btn-pc').toggleClass('active');
     if ($('.menu').hasClass('active')) {
         $('.menu').addClass('fadeout')
         setTimeout(
@@ -17,7 +17,9 @@ $('.menu-btn').click(function () {
 
     
 $('.collapse').on('show.bs.collapse', function () {
-    $('.collapse').each(function () {
+    $('.pc-collapse').each(function () {
         $(this).collapse('hide');
     });
 });
+
+console.log($('.collapse'));
