@@ -34,7 +34,7 @@ a:hover {
 
 .container {
 
-    @media(min-width:1200px) {
+    @media(min-width:1260px) {
         max-width: 1200px;
     }
 
@@ -42,9 +42,9 @@ a:hover {
         max-width: 1600px;
     }
 
-    @media(max-width:1199px) {
-        max-width: 1199px;
-    }
+    // @media(max-width:1199px) {
+    //     max-width: 1199px;
+    // }
 
     @media(max-width:576px) {
         max-width: unset;

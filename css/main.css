@@ -33,7 +33,7 @@ header nav ul li {
   letter-spacing: 2px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1260px) {
   .container {
     max-width: 1200px;
   }
@@ -42,12 +42,6 @@ header nav ul li {
 @media (min-width: 1600px) {
   .container {
     max-width: 1600px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .container {
-    max-width: 1199px;
   }
 }
 
@@ -395,12 +389,12 @@ header nav aside .aside-btn-group a .aside-btn:hover .gradient-mask .aside-sub-b
 header .banner {
   position: relative;
   right: 0;
-  top: -675px;
+  top: -615px;
 }
 
 @media (max-width: 1599px) {
   header .banner {
-    top: -450px;
+    top: -440px;
   }
 }
 
@@ -417,6 +411,13 @@ header .banner .col-12 {
 @media (max-width: 576px) {
   header .banner .col-12 {
     position: unset;
+  }
+}
+
+@media (max-width: 1599px) {
+  header .banner .swiper-container {
+    width: 95%;
+    margin-right: unset;
   }
 }
 

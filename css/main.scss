@@ -104,7 +104,6 @@ header{
                     margin: auto;
                 }
             }
-        
 
             .swiper-pagination{
                 width: 250px;
@@ -247,10 +246,10 @@ header{
     .banner{
         position:relative;
         right: 0;
-        top:-675px;
+        top:-615px;
 
         @media(max-width:1599px){
-            top:-450px;
+            top:-440px;
         }
      
 
@@ -265,6 +264,13 @@ header{
                 position: unset;
             }
         }
+
+        .swiper-container{
+            @media(max-width:1599px){
+                width: 95%;
+                margin-right: unset;
+            }  
+        }   
     }
 
 
