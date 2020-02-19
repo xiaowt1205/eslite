@@ -29,7 +29,7 @@ a:hover {
   text-decoration: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1260px) {
   .container {
     max-width: 1200px;
   }
@@ -38,12 +38,6 @@ a:hover {
 @media (min-width: 1600px) {
   .container {
     max-width: 1600px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .container {
-    max-width: 1199px;
   }
 }
 
@@ -113,10 +107,6 @@ a:hover {
 
 .padding-none {
   padding: 0;
-}
-
-.pageContent {
-  margin-top: 160px;
 }
 
 .btnGroup .project {
