@@ -1,27 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
-header {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-}
-
-main {
-  margin-top: 200px;
-}
-
-.one .content {
-  margin-left: auto;
-  margin-right: unset !important;
-  padding: 0px 125px;
-}
-
-.one .content .picture {
+.one .picture {
   width: 100%;
   height: 40vh;
   background-color: #665252;
 }
 
-.one .content .text_area .text_block {
+.one .text_area .text_block {
   font-size: 14px;
   text-indent: 40px;
   letter-spacing: 4px;
@@ -29,23 +13,23 @@ main {
   padding: 50px 0px;
 }
 
-.one .content .text_area .text_block p {
+.one .text_area .text_block p {
   margin-bottom: 20px;
 }
 
-.one .content table.table_area {
+.one table.table_area {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
   width: 100%;
   text-align: center;
 }
 
-.one .content table.table_area tr {
+.one table.table_area tr {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
 }
 
-.one .content table.table_area tr th {
+.one table.table_area tr th {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
   width: 25%;
@@ -55,7 +39,7 @@ main {
   letter-spacing: 3px;
 }
 
-.one .content table.table_area tr td {
+.one table.table_area tr td {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
   width: 25%;
@@ -63,21 +47,21 @@ main {
   letter-spacing: 3px;
 }
 
-.one .content .picture_area .text_title {
+.one .picture_area .text_title {
   padding: 50px 0px;
 }
 
-.one .content .picture_area .picture_block {
+.one .picture_area .picture_block {
   position: relative;
 }
 
-.one .content .picture_area .picture_block .pic {
+.one .picture_area .picture_block .pic {
   width: 100%;
   height: 150px;
   background-color: black;
 }
 
-.one .content .picture_area .picture_block .arrow_button-prev {
+.one .picture_area .picture_block .arrow_button-prev {
   position: absolute;
   padding: 20px 0px;
   top: 50%;
@@ -86,7 +70,7 @@ main {
           transform: translate(-100%, -50%);
 }
 
-.one .content .picture_area .picture_block .arrow_button-prev .arrow_button::before {
+.one .picture_area .picture_block .arrow_button-prev .arrow_button::before {
   content: '';
   position: absolute;
   height: 2px;
@@ -99,7 +83,7 @@ main {
   background-color: #000000;
 }
 
-.one .content .picture_area .picture_block .arrow_button-next {
+.one .picture_area .picture_block .arrow_button-next {
   position: absolute;
   right: -40px;
   top: 50%;
@@ -108,7 +92,7 @@ main {
           transform: translate(100%, -50%);
 }
 
-.one .content .picture_area .picture_block .arrow_button-next .arrow_button::after {
+.one .picture_area .picture_block .arrow_button-next .arrow_button::after {
   content: '';
   position: absolute;
   height: 2px;
@@ -121,7 +105,7 @@ main {
   background-color: #000000;
 }
 
-.one .content .picture_area .picture_block .arrow_button {
+.one .picture_area .picture_block .arrow_button {
   position: relative;
   width: 70px;
   height: 2px;
@@ -130,20 +114,20 @@ main {
 }
 
 @media screen and (max-width: 1200px) {
-  .one .content .picture_area .picture_block .arrow_button {
+  .one .picture_area .picture_block .arrow_button {
     margin: auto;
   }
 }
 
-.one .content .area_annex {
+.one .area_annex {
   margin-bottom: 50px;
 }
 
-.one .content .area_annex .text_title {
+.one .area_annex .text_title {
   padding: 50px 0px;
 }
 
-.one .content .area_annex .text_block {
+.one .area_annex .text_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,7 +145,7 @@ main {
   margin-bottom: 15px;
 }
 
-.one .content .area_annex .text_block::before {
+.one .area_annex .text_block::before {
   position: absolute;
   content: '';
   width: 100%;
@@ -170,32 +154,32 @@ main {
   z-index: -1;
 }
 
-.one .content .area_annex .text_block p {
+.one .area_annex .text_block p {
   padding: 25px;
   background-color: #FFFFFF;
 }
 
-.one .content .area_annex .text_block .text_btn {
+.one .area_annex .text_block .text_btn {
   padding: 25px;
   background-color: #FFFFFF;
 }
 
-.one .content .area_annex .text_block .text_btn .btn {
+.one .area_annex .text_block .text_btn .btn {
   min-width: 60px;
   max-width: 60px;
   letter-spacing: 2px;
   border: 1px solid #808080;
 }
 
-.one .content .area_link {
+.one .area_link {
   margin-bottom: 50px;
 }
 
-.one .content .area_link .text_title {
+.one .area_link .text_title {
   padding: 50px 0px;
 }
 
-.one .content .area_link .text_block {
+.one .area_link .text_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,7 +197,7 @@ main {
   margin-bottom: 15px;
 }
 
-.one .content .area_link .text_block::before {
+.one .area_link .text_block::before {
   position: absolute;
   content: '';
   width: 100%;
@@ -222,38 +206,38 @@ main {
   z-index: -1;
 }
 
-.one .content .area_link .text_block p {
+.one .area_link .text_block p {
   padding: 25px;
   background-color: #FFFFFF;
 }
 
-.one .content .area_link .text_block .text_btn {
+.one .area_link .text_block .text_btn {
   padding: 25px;
   background-color: #FFFFFF;
 }
 
-.one .content .area_link .text_block .text_btn .btn {
+.one .area_link .text_block .text_btn .btn {
   min-width: 60px;
   max-width: 60px;
   letter-spacing: 2px;
   border: 1px solid #808080;
 }
 
-.one .content .message_area {
+.one .message_area {
   position: relative;
   padding-left: 30px;
   margin: 110px 0px 110px;
   font-size: 16px;
 }
 
-.one .content .message_area > div {
+.one .message_area > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 2.5px 0px;
 }
 
-.one .content .message_area > div > div {
+.one .message_area > div > div {
   width: 110px;
   padding-right: 20px;
   white-space: nowrap;
@@ -262,7 +246,7 @@ main {
   position: relative;
 }
 
-.one .content .message_area > div > div::after {
+.one .message_area > div > div::after {
   position: absolute;
   content: '';
   width: 3px;
@@ -272,7 +256,7 @@ main {
   background-color: #231815;
 }
 
-.one .content .message_area::before {
+.one .message_area::before {
   content: '';
   position: absolute;
   top: 0;
@@ -282,43 +266,37 @@ main {
   background-color: #231815;
 }
 
-.one .content .message_area .firtst_data > div > p {
+.one .message_area .firtst_data > div > p {
   letter-spacing: 15px;
 }
 
-.one .content .message_area .firtst_data > p {
+.one .message_area .firtst_data > p {
   padding-left: 20px;
 }
 
-.one .content .message_area .new_data > div > p {
+.one .message_area .new_data > div > p {
   letter-spacing: 2.7px;
 }
 
-.one .content .message_area .new_data > p {
+.one .message_area .new_data > p {
   padding-left: 20px;
 }
 
-.one .content .message_area .click_point > div > p {
+.one .message_area .click_point > div > p {
   letter-spacing: 2.7px;
 }
 
-.one .content .message_area .click_point > p {
+.one .message_area .click_point > p {
   padding-left: 20px;
 }
 
-.two .content {
-  margin-left: auto;
-  margin-right: unset !important;
-  padding: 0px 125px;
-}
-
-.two .content .text_area .picture {
+.two .text_area .picture {
   width: 100%;
   height: 40vh;
   background-color: #665252;
 }
 
-.two .content .text_area .text_block {
+.two .text_area .text_block {
   font-size: 14px;
   text-indent: 40px;
   letter-spacing: 4px;
@@ -326,23 +304,23 @@ main {
   padding: 50px 0px;
 }
 
-.two .content .text_area .text_block p {
+.two .text_area .text_block p {
   margin-bottom: 20px;
 }
 
-.two .content table.table_area {
+.two table.table_area {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
   width: 100%;
   text-align: center;
 }
 
-.two .content table.table_area tr {
+.two table.table_area tr {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
 }
 
-.two .content table.table_area tr th {
+.two table.table_area tr th {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
   width: 25%;
@@ -352,7 +330,7 @@ main {
   letter-spacing: 3px;
 }
 
-.two .content table.table_area tr td {
+.two table.table_area tr td {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
   width: 25%;
@@ -360,21 +338,21 @@ main {
   letter-spacing: 3px;
 }
 
-.two .content .picture_area .text_title {
+.two .picture_area .text_title {
   padding: 50px 0px;
 }
 
-.two .content .picture_area .picture_block {
+.two .picture_area .picture_block {
   position: relative;
 }
 
-.two .content .picture_area .picture_block .pic {
+.two .picture_area .picture_block .pic {
   width: 100%;
   height: 150px;
   background-color: black;
 }
 
-.two .content .picture_area .picture_block .arrow_button-prev {
+.two .picture_area .picture_block .arrow_button-prev {
   position: absolute;
   padding: 20px 0px;
   top: 50%;
@@ -383,7 +361,7 @@ main {
           transform: translate(-100%, -50%);
 }
 
-.two .content .picture_area .picture_block .arrow_button-prev .arrow_button::before {
+.two .picture_area .picture_block .arrow_button-prev .arrow_button::before {
   content: '';
   position: absolute;
   height: 2px;
@@ -396,7 +374,7 @@ main {
   background-color: #000000;
 }
 
-.two .content .picture_area .picture_block .arrow_button-next {
+.two .picture_area .picture_block .arrow_button-next {
   position: absolute;
   right: -40px;
   top: 50%;
@@ -405,7 +383,7 @@ main {
           transform: translate(100%, -50%);
 }
 
-.two .content .picture_area .picture_block .arrow_button-next .arrow_button::after {
+.two .picture_area .picture_block .arrow_button-next .arrow_button::after {
   content: '';
   position: absolute;
   height: 2px;
@@ -418,7 +396,7 @@ main {
   background-color: #000000;
 }
 
-.two .content .picture_area .picture_block .arrow_button {
+.two .picture_area .picture_block .arrow_button {
   position: relative;
   width: 70px;
   height: 2px;
@@ -427,20 +405,20 @@ main {
 }
 
 @media screen and (max-width: 1200px) {
-  .two .content .picture_area .picture_block .arrow_button {
+  .two .picture_area .picture_block .arrow_button {
     margin: auto;
   }
 }
 
-.two .content .area_annex {
+.two .area_annex {
   margin-bottom: 50px;
 }
 
-.two .content .area_annex .text_title {
+.two .area_annex .text_title {
   padding: 50px 0px;
 }
 
-.two .content .area_annex .text_block {
+.two .area_annex .text_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,7 +436,7 @@ main {
   margin-bottom: 15px;
 }
 
-.two .content .area_annex .text_block::before {
+.two .area_annex .text_block::before {
   position: absolute;
   content: '';
   width: 100%;
@@ -467,24 +445,24 @@ main {
   z-index: -1;
 }
 
-.two .content .area_annex .text_block p {
+.two .area_annex .text_block p {
   padding: 25px;
   background-color: #FFFFFF;
 }
 
-.two .content .area_annex .text_block .text_btn {
+.two .area_annex .text_block .text_btn {
   padding: 25px;
   background-color: #FFFFFF;
 }
 
-.two .content .area_annex .text_block .text_btn .btn {
+.two .area_annex .text_block .text_btn .btn {
   min-width: 60px;
   max-width: 60px;
   letter-spacing: 2px;
   border: 1px solid #808080;
 }
 
-.two .content .area_link {
+.two .area_link {
   margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -495,22 +473,22 @@ main {
           flex-direction: column;
 }
 
-.two .content .area_link .text_title {
+.two .area_link .text_title {
   padding: 50px 0px;
   width: 100%;
 }
 
-.two .content .area_link .link_area {
+.two .area_link .link_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.two .content .area_link .link_area a {
+.two .area_link .link_area a {
   margin-right: 15px;
 }
 
-.two .content .area_link .link_area .text_block {
+.two .area_link .link_area .text_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,7 +506,7 @@ main {
   margin-bottom: 15px;
 }
 
-.two .content .area_link .link_area .text_block p {
+.two .area_link .link_area .text_block p {
   width: 100%;
   padding: 25px;
   background-color: #FFFFFF;
@@ -537,21 +515,21 @@ main {
   white-space: nowrap;
 }
 
-.two .content .message_area {
+.two .message_area {
   position: relative;
   padding-left: 30px;
   margin: 110px 0px 110px;
   font-size: 16px;
 }
 
-.two .content .message_area > div {
+.two .message_area > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 2.5px 0px;
 }
 
-.two .content .message_area > div > div {
+.two .message_area > div > div {
   width: 110px;
   padding-right: 20px;
   white-space: nowrap;
@@ -560,7 +538,7 @@ main {
   position: relative;
 }
 
-.two .content .message_area > div > div::after {
+.two .message_area > div > div::after {
   position: absolute;
   content: '';
   width: 3px;
@@ -570,7 +548,7 @@ main {
   background-color: #231815;
 }
 
-.two .content .message_area::before {
+.two .message_area::before {
   content: '';
   position: absolute;
   top: 0;
@@ -580,37 +558,31 @@ main {
   background-color: #231815;
 }
 
-.two .content .message_area .firtst_data > div > p {
+.two .message_area .firtst_data > div > p {
   letter-spacing: 15px;
 }
 
-.two .content .message_area .firtst_data > p {
+.two .message_area .firtst_data > p {
   padding-left: 20px;
 }
 
-.two .content .message_area .new_data > div > p {
+.two .message_area .new_data > div > p {
   letter-spacing: 2.7px;
 }
 
-.two .content .message_area .new_data > p {
+.two .message_area .new_data > p {
   padding-left: 20px;
 }
 
-.two .content .message_area .click_point > div > p {
+.two .message_area .click_point > div > p {
   letter-spacing: 2.7px;
 }
 
-.two .content .message_area .click_point > p {
+.two .message_area .click_point > p {
   padding-left: 20px;
 }
 
-.three .content {
-  margin-left: auto;
-  margin-right: unset !important;
-  padding: 0px 125px;
-}
-
-.three .content .text_area {
+.three .text_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,7 +592,7 @@ main {
           flex-direction: column;
 }
 
-.three .content .text_area .picture {
+.three .text_area .picture {
   width: 100%;
   height: 40vh;
   background-color: #665252;
@@ -630,7 +602,7 @@ main {
   margin-bottom: 50px;
 }
 
-.three .content .text_area .text_block {
+.three .text_area .text_block {
   font-size: 14px;
   text-indent: 40px;
   letter-spacing: 4px;
@@ -638,23 +610,23 @@ main {
   padding: 50px 0px;
 }
 
-.three .content .text_area .text_block p {
+.three .text_area .text_block p {
   margin-bottom: 20px;
 }
 
-.three .content table.table_area {
+.three table.table_area {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
   width: 100%;
   text-align: center;
 }
 
-.three .content table.table_area tr {
+.three table.table_area tr {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
 }
 
-.three .content table.table_area tr th {
+.three table.table_area tr th {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
   width: 25%;
@@ -664,7 +636,7 @@ main {
   letter-spacing: 3px;
 }
 
-.three .content table.table_area tr td {
+.three table.table_area tr td {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
   width: 25%;
@@ -672,21 +644,21 @@ main {
   letter-spacing: 3px;
 }
 
-.three .content .picture_area .text_title {
+.three .picture_area .text_title {
   padding: 50px 0px;
 }
 
-.three .content .picture_area .picture_block {
+.three .picture_area .picture_block {
   position: relative;
 }
 
-.three .content .picture_area .picture_block .pic {
+.three .picture_area .picture_block .pic {
   width: 100%;
   height: 150px;
   background-color: black;
 }
 
-.three .content .picture_area .picture_block .arrow_button-prev {
+.three .picture_area .picture_block .arrow_button-prev {
   position: absolute;
   padding: 20px 0px;
   top: 50%;
@@ -695,7 +667,7 @@ main {
           transform: translate(-100%, -50%);
 }
 
-.three .content .picture_area .picture_block .arrow_button-prev .arrow_button::before {
+.three .picture_area .picture_block .arrow_button-prev .arrow_button::before {
   content: '';
   position: absolute;
   height: 2px;
@@ -708,7 +680,7 @@ main {
   background-color: #000000;
 }
 
-.three .content .picture_area .picture_block .arrow_button-next {
+.three .picture_area .picture_block .arrow_button-next {
   position: absolute;
   right: -40px;
   top: 50%;
@@ -717,7 +689,7 @@ main {
           transform: translate(100%, -50%);
 }
 
-.three .content .picture_area .picture_block .arrow_button-next .arrow_button::after {
+.three .picture_area .picture_block .arrow_button-next .arrow_button::after {
   content: '';
   position: absolute;
   height: 2px;
@@ -730,7 +702,7 @@ main {
   background-color: #000000;
 }
 
-.three .content .picture_area .picture_block .arrow_button {
+.three .picture_area .picture_block .arrow_button {
   position: relative;
   width: 70px;
   height: 2px;
@@ -739,20 +711,20 @@ main {
 }
 
 @media screen and (max-width: 1200px) {
-  .three .content .picture_area .picture_block .arrow_button {
+  .three .picture_area .picture_block .arrow_button {
     margin: auto;
   }
 }
 
-.three .content .area_annex {
+.three .area_annex {
   margin-bottom: 50px;
 }
 
-.three .content .area_annex .text_title {
+.three .area_annex .text_title {
   padding: 50px 0px;
 }
 
-.three .content .area_annex .text_block {
+.three .area_annex .text_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -770,7 +742,7 @@ main {
   margin-bottom: 15px;
 }
 
-.three .content .area_annex .text_block::before {
+.three .area_annex .text_block::before {
   position: absolute;
   content: '';
   width: 100%;
@@ -779,24 +751,24 @@ main {
   z-index: -1;
 }
 
-.three .content .area_annex .text_block p {
+.three .area_annex .text_block p {
   padding: 25px;
   background-color: #FFFFFF;
 }
 
-.three .content .area_annex .text_block .text_btn {
+.three .area_annex .text_block .text_btn {
   padding: 25px;
   background-color: #FFFFFF;
 }
 
-.three .content .area_annex .text_block .text_btn .btn {
+.three .area_annex .text_block .text_btn .btn {
   min-width: 60px;
   max-width: 60px;
   letter-spacing: 2px;
   border: 1px solid #808080;
 }
 
-.three .content .area_link {
+.three .area_link {
   margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -807,22 +779,22 @@ main {
           flex-direction: column;
 }
 
-.three .content .area_link .text_title {
+.three .area_link .text_title {
   padding: 50px 0px;
   width: 100%;
 }
 
-.three .content .area_link .link_area {
+.three .area_link .link_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.three .content .area_link .link_area a {
+.three .area_link .link_area a {
   margin-right: 15px;
 }
 
-.three .content .area_link .link_area .text_block {
+.three .area_link .link_area .text_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -840,7 +812,7 @@ main {
   margin-bottom: 15px;
 }
 
-.three .content .area_link .link_area .text_block p {
+.three .area_link .link_area .text_block p {
   width: 100%;
   padding: 25px;
   background-color: #FFFFFF;
@@ -849,21 +821,21 @@ main {
   white-space: nowrap;
 }
 
-.three .content .message_area {
+.three .message_area {
   position: relative;
   padding-left: 30px;
   margin: 110px 0px 110px;
   font-size: 16px;
 }
 
-.three .content .message_area > div {
+.three .message_area > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 2.5px 0px;
 }
 
-.three .content .message_area > div > div {
+.three .message_area > div > div {
   width: 110px;
   padding-right: 20px;
   white-space: nowrap;
@@ -872,7 +844,7 @@ main {
   position: relative;
 }
 
-.three .content .message_area > div > div::after {
+.three .message_area > div > div::after {
   position: absolute;
   content: '';
   width: 3px;
@@ -882,7 +854,7 @@ main {
   background-color: #231815;
 }
 
-.three .content .message_area::before {
+.three .message_area::before {
   content: '';
   position: absolute;
   top: 0;
@@ -892,49 +864,43 @@ main {
   background-color: #231815;
 }
 
-.three .content .message_area .firtst_data > div > p {
+.three .message_area .firtst_data > div > p {
   letter-spacing: 15px;
 }
 
-.three .content .message_area .firtst_data > p {
+.three .message_area .firtst_data > p {
   padding-left: 20px;
 }
 
-.three .content .message_area .new_data > div > p {
+.three .message_area .new_data > div > p {
   letter-spacing: 2.7px;
 }
 
-.three .content .message_area .new_data > p {
+.three .message_area .new_data > p {
   padding-left: 20px;
 }
 
-.three .content .message_area .click_point > div > p {
+.three .message_area .click_point > div > p {
   letter-spacing: 2.7px;
 }
 
-.three .content .message_area .click_point > p {
+.three .message_area .click_point > p {
   padding-left: 20px;
 }
 
-.four .content {
-  margin-left: auto;
-  margin-right: unset !important;
-  padding: 0px 125px;
-}
-
-.four .content .text_area {
+.four .text_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 50px 0px;
 }
 
-.four .content .text_area .picture {
+.four .text_area .picture {
   width: 40%;
   background-color: #665252;
 }
 
-.four .content .text_area .text_block {
+.four .text_area .text_block {
   width: 60%;
   font-size: 14px;
   text-indent: 40px;
@@ -943,27 +909,27 @@ main {
   padding: 0px 10px;
 }
 
-.four .content .text_area .text_block p {
+.four .text_area .text_block p {
   margin-bottom: 20px;
 }
 
-.four .content .text_area .text_block p:nth-last-child(1) {
+.four .text_area .text_block p:nth-last-child(1) {
   margin: 0;
 }
 
-.four .content table.table_area {
+.four table.table_area {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
   width: 100%;
   text-align: center;
 }
 
-.four .content table.table_area tr {
+.four table.table_area tr {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
 }
 
-.four .content table.table_area tr th {
+.four table.table_area tr th {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
   width: 25%;
@@ -973,7 +939,7 @@ main {
   letter-spacing: 3px;
 }
 
-.four .content table.table_area tr td {
+.four table.table_area tr td {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
   width: 25%;
@@ -981,21 +947,21 @@ main {
   letter-spacing: 3px;
 }
 
-.four .content .picture_area .text_title {
+.four .picture_area .text_title {
   padding: 50px 0px;
 }
 
-.four .content .picture_area .picture_block {
+.four .picture_area .picture_block {
   position: relative;
 }
 
-.four .content .picture_area .picture_block .pic {
+.four .picture_area .picture_block .pic {
   width: 100%;
   height: 150px;
   background-color: black;
 }
 
-.four .content .picture_area .picture_block .arrow_button-prev {
+.four .picture_area .picture_block .arrow_button-prev {
   position: absolute;
   padding: 20px 0px;
   top: 50%;
@@ -1004,7 +970,7 @@ main {
           transform: translate(-100%, -50%);
 }
 
-.four .content .picture_area .picture_block .arrow_button-prev .arrow_button::before {
+.four .picture_area .picture_block .arrow_button-prev .arrow_button::before {
   content: '';
   position: absolute;
   height: 2px;
@@ -1017,7 +983,7 @@ main {
   background-color: #000000;
 }
 
-.four .content .picture_area .picture_block .arrow_button-next {
+.four .picture_area .picture_block .arrow_button-next {
   position: absolute;
   right: -40px;
   top: 50%;
@@ -1026,7 +992,7 @@ main {
           transform: translate(100%, -50%);
 }
 
-.four .content .picture_area .picture_block .arrow_button-next .arrow_button::after {
+.four .picture_area .picture_block .arrow_button-next .arrow_button::after {
   content: '';
   position: absolute;
   height: 2px;
@@ -1039,7 +1005,7 @@ main {
   background-color: #000000;
 }
 
-.four .content .picture_area .picture_block .arrow_button {
+.four .picture_area .picture_block .arrow_button {
   position: relative;
   width: 70px;
   height: 2px;
@@ -1048,20 +1014,20 @@ main {
 }
 
 @media screen and (max-width: 1200px) {
-  .four .content .picture_area .picture_block .arrow_button {
+  .four .picture_area .picture_block .arrow_button {
     margin: auto;
   }
 }
 
-.four .content .area_annex {
+.four .area_annex {
   margin-bottom: 50px;
 }
 
-.four .content .area_annex .text_title {
+.four .area_annex .text_title {
   padding: 50px 0px;
 }
 
-.four .content .area_annex .text_block {
+.four .area_annex .text_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1079,7 +1045,7 @@ main {
   margin-bottom: 15px;
 }
 
-.four .content .area_annex .text_block::before {
+.four .area_annex .text_block::before {
   position: absolute;
   content: '';
   width: 100%;
@@ -1088,24 +1054,24 @@ main {
   z-index: -1;
 }
 
-.four .content .area_annex .text_block p {
+.four .area_annex .text_block p {
   padding: 25px;
   background-color: #FFFFFF;
 }
 
-.four .content .area_annex .text_block .text_btn {
+.four .area_annex .text_block .text_btn {
   padding: 25px;
   background-color: #FFFFFF;
 }
 
-.four .content .area_annex .text_block .text_btn .btn {
+.four .area_annex .text_block .text_btn .btn {
   min-width: 60px;
   max-width: 60px;
   letter-spacing: 2px;
   border: 1px solid #808080;
 }
 
-.four .content .area_link {
+.four .area_link {
   margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1116,22 +1082,22 @@ main {
           flex-direction: column;
 }
 
-.four .content .area_link .text_title {
+.four .area_link .text_title {
   padding: 50px 0px;
   width: 100%;
 }
 
-.four .content .area_link .link_area {
+.four .area_link .link_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.four .content .area_link .link_area a {
+.four .area_link .link_area a {
   margin-right: 15px;
 }
 
-.four .content .area_link .link_area .text_block {
+.four .area_link .link_area .text_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1149,7 +1115,7 @@ main {
   margin-bottom: 15px;
 }
 
-.four .content .area_link .link_area .text_block p {
+.four .area_link .link_area .text_block p {
   width: 100%;
   padding: 25px;
   background-color: #FFFFFF;
@@ -1158,21 +1124,21 @@ main {
   white-space: nowrap;
 }
 
-.four .content .message_area {
+.four .message_area {
   position: relative;
   padding-left: 30px;
   margin: 110px 0px 110px;
   font-size: 16px;
 }
 
-.four .content .message_area > div {
+.four .message_area > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 2.5px 0px;
 }
 
-.four .content .message_area > div > div {
+.four .message_area > div > div {
   width: 110px;
   padding-right: 20px;
   white-space: nowrap;
@@ -1181,7 +1147,7 @@ main {
   position: relative;
 }
 
-.four .content .message_area > div > div::after {
+.four .message_area > div > div::after {
   position: absolute;
   content: '';
   width: 3px;
@@ -1191,7 +1157,7 @@ main {
   background-color: #231815;
 }
 
-.four .content .message_area::before {
+.four .message_area::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1201,37 +1167,31 @@ main {
   background-color: #231815;
 }
 
-.four .content .message_area .firtst_data > div > p {
+.four .message_area .firtst_data > div > p {
   letter-spacing: 15px;
 }
 
-.four .content .message_area .firtst_data > p {
+.four .message_area .firtst_data > p {
   padding-left: 20px;
 }
 
-.four .content .message_area .new_data > div > p {
+.four .message_area .new_data > div > p {
   letter-spacing: 2.7px;
 }
 
-.four .content .message_area .new_data > p {
+.four .message_area .new_data > p {
   padding-left: 20px;
 }
 
-.four .content .message_area .click_point > div > p {
+.four .message_area .click_point > div > p {
   letter-spacing: 2.7px;
 }
 
-.four .content .message_area .click_point > p {
+.four .message_area .click_point > p {
   padding-left: 20px;
 }
 
-.five .content {
-  margin-left: auto;
-  margin-right: unset !important;
-  padding: 0px 125px;
-}
-
-.five .content .text_area {
+.five .text_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1242,12 +1202,12 @@ main {
           flex-direction: row-reverse;
 }
 
-.five .content .text_area .picture {
+.five .text_area .picture {
   width: 40%;
   background-color: #665252;
 }
 
-.five .content .text_area .text_block {
+.five .text_area .text_block {
   width: 60%;
   font-size: 14px;
   text-indent: 40px;
@@ -1256,27 +1216,27 @@ main {
   padding: 0px 10px;
 }
 
-.five .content .text_area .text_block p {
+.five .text_area .text_block p {
   margin-bottom: 20px;
 }
 
-.five .content .text_area .text_block p:nth-last-child(1) {
+.five .text_area .text_block p:nth-last-child(1) {
   margin: 0;
 }
 
-.five .content table.table_area {
+.five table.table_area {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
   width: 100%;
   text-align: center;
 }
 
-.five .content table.table_area tr {
+.five table.table_area tr {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
 }
 
-.five .content table.table_area tr th {
+.five table.table_area tr th {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
   width: 25%;
@@ -1286,7 +1246,7 @@ main {
   letter-spacing: 3px;
 }
 
-.five .content table.table_area tr td {
+.five table.table_area tr td {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
   width: 25%;
@@ -1294,21 +1254,21 @@ main {
   letter-spacing: 3px;
 }
 
-.five .content .picture_area .text_title {
+.five .picture_area .text_title {
   padding: 50px 0px;
 }
 
-.five .content .picture_area .picture_block {
+.five .picture_area .picture_block {
   position: relative;
 }
 
-.five .content .picture_area .picture_block .pic {
+.five .picture_area .picture_block .pic {
   width: 100%;
   height: 150px;
   background-color: black;
 }
 
-.five .content .picture_area .picture_block .arrow_button-prev {
+.five .picture_area .picture_block .arrow_button-prev {
   position: absolute;
   padding: 20px 0px;
   top: 50%;
@@ -1317,7 +1277,7 @@ main {
           transform: translate(-100%, -50%);
 }
 
-.five .content .picture_area .picture_block .arrow_button-prev .arrow_button::before {
+.five .picture_area .picture_block .arrow_button-prev .arrow_button::before {
   content: '';
   position: absolute;
   height: 2px;
@@ -1330,7 +1290,7 @@ main {
   background-color: #000000;
 }
 
-.five .content .picture_area .picture_block .arrow_button-next {
+.five .picture_area .picture_block .arrow_button-next {
   position: absolute;
   right: -40px;
   top: 50%;
@@ -1339,7 +1299,7 @@ main {
           transform: translate(100%, -50%);
 }
 
-.five .content .picture_area .picture_block .arrow_button-next .arrow_button::after {
+.five .picture_area .picture_block .arrow_button-next .arrow_button::after {
   content: '';
   position: absolute;
   height: 2px;
@@ -1352,7 +1312,7 @@ main {
   background-color: #000000;
 }
 
-.five .content .picture_area .picture_block .arrow_button {
+.five .picture_area .picture_block .arrow_button {
   position: relative;
   width: 70px;
   height: 2px;
@@ -1361,20 +1321,20 @@ main {
 }
 
 @media screen and (max-width: 1200px) {
-  .five .content .picture_area .picture_block .arrow_button {
+  .five .picture_area .picture_block .arrow_button {
     margin: auto;
   }
 }
 
-.five .content .area_annex {
+.five .area_annex {
   margin-bottom: 50px;
 }
 
-.five .content .area_annex .text_title {
+.five .area_annex .text_title {
   padding: 50px 0px;
 }
 
-.five .content .area_annex .text_block {
+.five .area_annex .text_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1392,7 +1352,7 @@ main {
   margin-bottom: 15px;
 }
 
-.five .content .area_annex .text_block::before {
+.five .area_annex .text_block::before {
   position: absolute;
   content: '';
   width: 100%;
@@ -1401,24 +1361,24 @@ main {
   z-index: -1;
 }
 
-.five .content .area_annex .text_block p {
+.five .area_annex .text_block p {
   padding: 25px;
   background-color: #FFFFFF;
 }
 
-.five .content .area_annex .text_block .text_btn {
+.five .area_annex .text_block .text_btn {
   padding: 25px;
   background-color: #FFFFFF;
 }
 
-.five .content .area_annex .text_block .text_btn .btn {
+.five .area_annex .text_block .text_btn .btn {
   min-width: 60px;
   max-width: 60px;
   letter-spacing: 2px;
   border: 1px solid #808080;
 }
 
-.five .content .area_link {
+.five .area_link {
   margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1429,22 +1389,22 @@ main {
           flex-direction: column;
 }
 
-.five .content .area_link .text_title {
+.five .area_link .text_title {
   padding: 50px 0px;
   width: 100%;
 }
 
-.five .content .area_link .link_area {
+.five .area_link .link_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.five .content .area_link .link_area a {
+.five .area_link .link_area a {
   margin-right: 15px;
 }
 
-.five .content .area_link .link_area .text_block {
+.five .area_link .link_area .text_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1462,7 +1422,7 @@ main {
   margin-bottom: 15px;
 }
 
-.five .content .area_link .link_area .text_block p {
+.five .area_link .link_area .text_block p {
   width: 100%;
   padding: 25px;
   background-color: #FFFFFF;
@@ -1471,21 +1431,21 @@ main {
   white-space: nowrap;
 }
 
-.five .content .message_area {
+.five .message_area {
   position: relative;
   padding-left: 30px;
   margin: 110px 0px 110px;
   font-size: 16px;
 }
 
-.five .content .message_area > div {
+.five .message_area > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 2.5px 0px;
 }
 
-.five .content .message_area > div > div {
+.five .message_area > div > div {
   width: 110px;
   padding-right: 20px;
   white-space: nowrap;
@@ -1494,7 +1454,7 @@ main {
   position: relative;
 }
 
-.five .content .message_area > div > div::after {
+.five .message_area > div > div::after {
   position: absolute;
   content: '';
   width: 3px;
@@ -1504,7 +1464,7 @@ main {
   background-color: #231815;
 }
 
-.five .content .message_area::before {
+.five .message_area::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1514,27 +1474,27 @@ main {
   background-color: #231815;
 }
 
-.five .content .message_area .firtst_data > div > p {
+.five .message_area .firtst_data > div > p {
   letter-spacing: 15px;
 }
 
-.five .content .message_area .firtst_data > p {
+.five .message_area .firtst_data > p {
   padding-left: 20px;
 }
 
-.five .content .message_area .new_data > div > p {
+.five .message_area .new_data > div > p {
   letter-spacing: 2.7px;
 }
 
-.five .content .message_area .new_data > p {
+.five .message_area .new_data > p {
   padding-left: 20px;
 }
 
-.five .content .message_area .click_point > div > p {
+.five .message_area .click_point > div > p {
   letter-spacing: 2.7px;
 }
 
-.five .content .message_area .click_point > p {
+.five .message_area .click_point > p {
   padding-left: 20px;
 }
 /*# sourceMappingURL=CPtext-Pagetemplate.css.map */
