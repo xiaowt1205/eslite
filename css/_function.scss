@@ -6,3 +6,16 @@
 @mixin text_btn($size, $color) {
     border: $size solid $color;
 }
+
+@mixin btn-style($pd-x,$pd-y,$border-radius) {
+    padding: $pd-x $pd-y;
+    border-radius:$border-radius;
+    background-color: transparent;
+    border: 1px solid $bc-dark-brown-hover;
+    transition: .3s;
+
+    &:hover{
+        background-color: $bc-dark-brown-hover;
+    }
+
+}

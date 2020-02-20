@@ -7,10 +7,62 @@
     box-sizing: border-box;
 }
 
+.btnGroup{
+
+    .btnArea{
+        border: 2px solid $fc-black;
+        border-radius: 7px;
+
+        letter-spacing: 2px;
+
+        padding: 5px 30px;
+        margin-right: 20px;
+
+        &:hover{
+            background-color: $bc-dark-brown-hover;
+
+            color: $fc-white;
+        }
+    }
+}
+
+.nameGroup{
+
+    border: 2px solid $fc-black;
+
+    padding: 5px 0;
+
+    .dateName{
+
+        width: 130px;
+        
+        text-align: center;
+    }
+
+    .themeName{
+
+        width: 440px;
+
+        text-align: center;
+    }
+
+    .placeName{
+
+        width: 175px;
+
+        text-align: center;
+    }
+
+    .loadingPointName{
+
+        width: 140px;
+
+        text-align: center;
+    }
+}
+
 .news_list{
     width: 100%;
-
-    border-top: 1px solid $fc-gray;
 
     font-weight: bold;
 
