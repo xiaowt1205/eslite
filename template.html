@@ -37,9 +37,9 @@
                     <img class="d-block d-sm-none" src="./img/index/logo-black.svg" alt="">
                 </div>
                 <div class="swiper-pagination d-sm-flex d-none"></div>
-                <a href="#" class="d-none d-sm-block" style="margin-left:-9px;"><i class="fab fa-youtube"></i></a>
-                <a href="#" class="d-none d-sm-block" style="margin-left:-6px;"><i class="fab fa-facebook-f"></i></a>
-                <div class="aside-btn-group d-none d-sm-flex">
+                <a href="#" class="link-icon" style="margin-left:-9px;"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="link-icon" style="margin-left:-6px;"><i class="fab fa-facebook-f"></i></a>
+                <div class="aside-btn-group d-none d-lg-flex">
                     <a href="">
                         <div class="aside-btn">支持計畫<div class="gradient-mask">
                                 <div class="aside-sub-btn-group d-flex">
@@ -81,11 +81,6 @@
                         </div>
                     </a>
                 </div>
-                <div class="menu-btn position-absolute d-block d-sm-none">
-                    <a type="button" data-toggle="modal" data-target="#mobile-menu">
-                        <div class=""></div>
-                    </a>
-                </div>
             </aside>
             <div class="col d-none d-xl-flex justify-content-end">
                 <ul class="d-flex">
@@ -99,7 +94,7 @@
                             <div class="cicle"><i class="fas fa-info"></i></div>
                         </a></li>
                     <li><a href=""><i class="fas fa-search"></i></a></li>
-                    <li class="menu-btn menu-btn-pc position-absolute">
+                    <li class="menu-btn menu-btn-pc">
                         <a href="#">
                             <div class=""></div>
                         </a>
@@ -131,6 +126,11 @@
             </div>
         </div>
         <div class="aside-bg d-sm-block d-none"></div>
+        <div class="menu-btn  d-block d-xl-none position-absolute">
+            <a type="button" data-toggle="modal" data-target="#mobile-menu">
+                <div class=""></div>
+            </a>
+        </div>
         <div class="mobile-aside col d-block d-xl-none justify-content-center">
             <div class="accordion" id="aside-btn-1">
                 <div class="aside-btn-group">
@@ -576,7 +576,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <!-- <div class="menu-btn menu-btn-pc position-absolute">
+                    <!-- <div class="menu-btn menu-btn-pc">
                         <a href="#">
                             <div></div>
                         </a>
