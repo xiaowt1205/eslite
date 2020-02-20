@@ -1,0 +1,144 @@
+@import "./_variables.scss";
+@import "./_function.scss";
+
+
+.area_table {
+    padding-bottom: 30px;
+
+    @media screen and (max-width:992px) {
+        padding-bottom: 25px;
+
+    }
+
+    &>div {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 80px;
+
+        @media screen and (max-width:992px) {
+            margin-bottom: 25px;
+        }
+    }
+
+    .text {
+        text-align: center;
+        border-right: 1px solid $br-black;
+        border-bottom: 1px solid $br-black;
+        padding: 25px 0px;
+
+        @media screen and (max-width:992px) {
+            border-left: 1px solid $br-black;
+        }
+
+        &:nth-child(1) {
+            border-top: 1px solid $br-black;
+        }
+
+        &:nth-child(2) {
+            border-top: 1px solid $br-black;
+
+            @media screen and (max-width:992px) {
+                border-top: unset;
+            }
+        }
+
+        &:nth-child(2n+1) {
+            font-weight: $fw-bold;
+            border-left: 1px solid $br-black;
+
+            @media screen and (max-width:992px) {
+                padding: 10px 5px 5px;
+                border-top: 1px solid $br-black;
+            }
+        }
+
+        &:nth-child(2n) {
+            color: $fc-gray;
+
+            @media screen and (max-width:992px) {
+                padding: 20px 5px 25px;
+                margin-bottom: 15px;
+            }
+        }
+
+    }
+
+    .message_area {
+        position: relative;
+        padding-left: 30px;
+        font-size: $fs-16;
+
+        &>div {
+            display: flex;
+
+            padding: 2.5px 0px;
+
+
+
+            &>div {
+                width: 110px;
+                // overflow: hidden;
+                padding-right: 20px;
+                white-space: nowrap;
+                box-sizing: unset;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 3px;
+                    height: 100%;
+                    top: 0;
+                    right: 0;
+                    background-color: $bc-brown;
+                }
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background-color: $bc-brown;
+        }
+
+        .firtst_data {
+            &>div {
+                &>p {
+                    letter-spacing: 15px;
+                }
+            }
+
+            &>p {
+                padding-left: 20px;
+            }
+        }
+
+        .new_data {
+            &>div {
+                &>p {
+                    letter-spacing: 2.7px;
+                }
+            }
+
+            &>p {
+                padding-left: 20px;
+            }
+        }
+
+        .click_point {
+            &>div {
+                &>p {
+                    letter-spacing: 2.7px;
+                }
+            }
+
+            &>p {
+                padding-left: 20px;
+            }
+        }
+    }
+}
