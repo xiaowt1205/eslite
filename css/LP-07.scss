@@ -30,7 +30,9 @@
 
     border: 2px solid $fc-black;
 
-    padding: 5px 0;
+    padding: 15px 0;
+
+    margin: 30px 0;
 
     .dateName{
 
@@ -41,7 +43,7 @@
 
     .themeName{
 
-        width: 440px;
+        width: 430px;
 
         text-align: center;
     }
@@ -181,3 +183,91 @@
     }
 }
 
+
+
+
+.pageContent{
+
+    margin-bottom: 200px;
+
+    position: relative;
+}
+
+.pageNumber{
+
+    position: absolute;
+    left: 50%;
+    bottom: -100px;
+
+    transform: translateX(-50%);
+
+    ul{
+
+
+        .number{
+
+
+
+            &:first-child{
+
+                a{
+
+                    background-color: $bc-number-black;
+                    color: $fc-white;
+                }
+
+            }
+
+            a{
+                display: block;
+
+                width: 25px;
+                height: 25px;
+
+                color: $fc-black;
+                background-color: unset;
+
+                text-align: center;
+
+                border-radius: 50%;
+    
+                
+                font-weight: bold;
+
+                &:hover{
+                    background-color: $bc-number-black;
+                    color: $fc-white;
+                }
+            }
+
+        }
+
+        .nextBTN,.lastBTN{
+            border: 1px solid $bc-number-black;
+
+            padding: 10px 20px ;
+
+            a{
+
+                color: $fc-black;
+            }
+        }
+
+        .nextBTN{
+
+            margin-left: 20px;
+        }
+
+        .lastBTN{
+            margin-left: 10px;
+        }
+    }
+
+    .more{
+
+        border: 1px solid $bc-number-black;
+
+        padding: 10px 50px ;
+
+    }
+}

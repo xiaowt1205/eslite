@@ -1,0 +1,122 @@
+@import "./model.scss";
+@import "./_variables.scss";
+@import "./_function.scss";
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+.cardBox{
+    width: calc(33.33333% - 30px);
+
+    margin: 0 30px 50px 0;
+
+    @media (max-width:577px) {
+        
+        width: 100%;
+        margin: 0 0 50px 0;
+    }
+
+    .photo{
+
+        width: 100%;
+        height: 160px;
+
+        background-color: black;
+        background-size: cover;
+        background-position: center center;
+
+    }
+}
+
+
+
+
+.pageContent{
+
+    margin-bottom: 200px;
+
+    position: relative;
+}
+
+.pageNumber{
+
+    position: absolute;
+    left: 50%;
+    bottom: -100px;
+
+    transform: translateX(-50%);
+
+    ul{
+
+
+        .number{
+
+
+
+            &:first-child{
+
+                a{
+
+                    background-color: $bc-number-black;
+                    color: $fc-white;
+                }
+
+            }
+
+            a{
+                display: block;
+
+                width: 25px;
+                height: 25px;
+
+                color: $fc-black;
+                background-color: unset;
+
+                text-align: center;
+
+                border-radius: 50%;
+    
+                
+                font-weight: bold;
+
+                &:hover{
+                    background-color: $bc-number-black;
+                    color: $fc-white;
+                }
+            }
+
+        }
+
+        .nextBTN,.lastBTN{
+            border: 1px solid $bc-number-black;
+
+            padding: 10px 20px ;
+
+            a{
+
+                color: $fc-black;
+            }
+        }
+
+        .nextBTN{
+
+            margin-left: 20px;
+        }
+
+        .lastBTN{
+            margin-left: 10px;
+        }
+    }
+
+    .more{
+
+        border: 1px solid $bc-number-black;
+
+        padding: 10px 50px ;
+
+    }
+}
+
