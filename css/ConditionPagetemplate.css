@@ -48,7 +48,7 @@
 }
 
 .Connection_area .Connection_form .form_input {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -60,7 +60,7 @@
   }
 }
 
-.Connection_area .Connection_form .form_input input {
+.Connection_area .Connection_form .form_input > input {
   width: 100%;
   padding: 10px 20px;
   border-radius: 5px;
@@ -74,37 +74,38 @@
           box-shadow: none;
 }
 
-.Connection_area .Connection_form .form_input img {
-  width: 100%;
-  border: 1px solid #000000;
+.Connection_area .Connection_form .form_input > ul {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000000;
 }
 
 @media screen and (max-width: 1200px) {
-  .Connection_area .Connection_form .form_input img {
-    height: 40px;
+  .Connection_area .Connection_form .form_input > ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
-.Connection_area .Connection_form .form_input .icon {
-  width: 100px;
-  font-size: 18px;
+.Connection_area .Connection_form .form_input > ul li {
+  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.Connection_area .Connection_form .form_input .icon i {
-  margin: 0px 2px;
-  padding: 7px;
-  border-radius: 50%;
-  color: #FFFFFF;
-  background-color: #000000;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .Connection_area .Connection_form .form_input > ul li {
+    width: 33.3333%;
+    margin-bottom: 20px;
+  }
+}
+
+.Connection_area .Connection_form .form_input > ul li div {
+  padding-left: 10px;
+  font-size: 18px;
 }
 
 .Connection_area .Connection_form .text {
@@ -115,6 +116,10 @@
 
 .Connection_area .Connection_form .text P {
   padding: 15px 0px;
+}
+
+.Connection_area .Connection_form .form_btn {
+  padding: 15px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -139,6 +144,10 @@
   color: #FFFFFF;
 }
 
+.Connection_area .Connection_form .form_btn input:nth-last-child(1) {
+  margin-right: 0px;
+}
+
 @media screen and (max-width: 1400px) {
   .Connection_area .Connection_form .form_btn input {
     width: 50%;
@@ -148,13 +157,6 @@
     margin-left: 10px;
     margin-right: 0px;
   }
-}
-
-.Connection_area .Connection_form textarea {
-  width: 100%;
-  padding: 10px 20px;
-  border-radius: 5px;
-  resize: none;
 }
 
 .Connection_area .Connection_form select {
@@ -181,4 +183,4 @@
   width: 100%;
   padding: 10px 20px;
 }
-/*# sourceMappingURL=ConnectionPagetemplate.css.map */
+/*# sourceMappingURL=ConditionPagetemplate.css.map */

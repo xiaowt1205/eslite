@@ -52,7 +52,7 @@
         }
 
         .form_input {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
 
             @media screen and (max-width:1200px) {
                 margin-bottom: 40px;
@@ -62,7 +62,7 @@
                 }
             }
 
-            input {
+            &>input {
                 width: 100%;
                 padding: 10px 20px;
                 border-radius: 5px;
@@ -75,35 +75,29 @@
                 box-shadow: none;
             }
 
-            img {
-                width: 100%;
-                border: 1px solid $br-black;
-
+            &>ul {
+                padding-bottom: 20px;
+                border-bottom: 1px solid $br-black;
                 @media screen and (max-width:1200px) {
-                    height: 40px;
-                }
-            }
-
-            .icon {
-                width: 100px;
-                font-size: $fs-18;
-                display: flex;
-                justify-content: space-around;
-
-                @media screen and (max-width:1200px) {
-                    // margin-bottom: 20px;
+                    flex-wrap: wrap;
                 }
 
-                & i {
-                    margin: 0px 2px;
-                    padding: 7px;
-                    border-radius: 50%;
-                    color: $fc-white;
-                    background-color: $bc-black;
+                li {
+                    width: 20%;
+                    display: flex;
                     align-items: center;
-                    cursor: pointer;
-                }
 
+                    @media screen and (max-width:1200px) {
+                        width: 33.3333%;
+                        margin-bottom: 20px;
+                    }
+
+
+                    div {
+                        padding-left: 10px;
+                        font-size: $fs-18;
+                    }
+                }
             }
         }
 
@@ -119,6 +113,7 @@
         }
 
         .form_btn {
+            padding: 15px;
             @media screen and (max-width:1400px) {
                 display: flex;
             }
@@ -136,6 +131,10 @@
                     color: $fc-white;
                 }
 
+                &:nth-last-child(1) {
+                    margin-right: 0px;
+                }
+
                 @media screen and (max-width:1400px) {
                     width: 50%;
                     margin-right: 10px;
@@ -147,13 +146,6 @@
                 }
             }
 
-        }
-
-        textarea {
-            width: 100%;
-            padding: 10px 20px;
-            border-radius: 5px;
-            resize: none;
         }
 
         select {
