@@ -1,0 +1,186 @@
+@import "./_variables.scss";
+@import "./_function.scss";
+
+.Connection_area {
+    .text_block {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        text-align: justify;
+
+        @media screen and (max-width:1200px) {
+            border-bottom: 1px solid $br-black;
+        }
+
+        p {
+            letter-spacing: 2px;
+
+            &.text {
+                text-indent: 30px;
+            }
+        }
+    }
+
+
+    .Connection_form {
+        margin-bottom: 150px;
+
+        .name {
+            font-size: $fs-22;
+            letter-spacing: 2px;
+            padding-bottom: 30px;
+            // justify-content: flex-end;
+            // display: flex;
+            // align-self: flex-start;
+
+            &>div {
+                display: unset;
+                min-width: 150px;
+                letter-spacing: 4px;
+                padding: 0px 0px 0px 20px;
+                position: relative;
+                line-height: 24px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 10px;
+                    height: 100%;
+                    background-color: $bc-brown;
+                }
+            }
+        }
+
+        .form_input {
+            margin-bottom: 20px;
+
+            @media screen and (max-width:1200px) {
+                margin-bottom: 40px;
+
+                .block {
+                    margin-bottom: 20px;
+                }
+            }
+
+            input {
+                width: 100%;
+                padding: 10px 20px;
+                border-radius: 5px;
+                outline-width: 0px none invert;
+                border: 1px solid $br-black;
+                text-shadow: none;
+                -webkit-appearance: none;
+                -webkit-user-select: text;
+                outline-color: transparent;
+                box-shadow: none;
+            }
+
+            img {
+                width: 100%;
+                border: 1px solid $br-black;
+
+                @media screen and (max-width:1200px) {
+                    height: 40px;
+                }
+            }
+
+            .icon {
+                width: 100px;
+                font-size: $fs-18;
+                display: flex;
+                justify-content: space-around;
+
+                @media screen and (max-width:1200px) {
+                    // margin-bottom: 20px;
+                }
+
+                & i {
+                    margin: 0px 2px;
+                    padding: 7px;
+                    border-radius: 50%;
+                    color: $fc-white;
+                    background-color: $bc-black;
+                    align-items: center;
+                    cursor: pointer;
+                }
+
+            }
+        }
+
+        .text {
+            margin-bottom: 30px;
+            text-align: justify;
+            letter-spacing: 1px;
+
+            P {
+                padding: 15px 0px;
+            }
+
+        }
+
+        .form_btn {
+            @media screen and (max-width:1400px) {
+                display: flex;
+            }
+
+            input {
+                width: 220px;
+                padding: 10px 0px;
+                background-color: $fc-white;
+                color: $bc-brown;
+                letter-spacing: 3px;
+                margin-right: 20px;
+
+                &:hover {
+                    background-color: $bc-brown;
+                    color: $fc-white;
+                }
+
+                @media screen and (max-width:1400px) {
+                    width: 50%;
+                    margin-right: 10px;
+
+                    &:nth-last-child(1) {
+                        margin-left: 10px;
+                        margin-right: 0px;
+                    }
+                }
+            }
+
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px 20px;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-right: -20px;
+            -webkit-appearance: none;
+            text-indent: 0.01px;
+            background-image: url('../img/icon/caret-down-solid.svg');
+            background-size: 20px;
+            background-repeat: no-repeat;
+            background-position-x: 96%;
+            background-position-y: center;
+
+
+            & option:nth-child(1) {
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+
+            option {
+                line-height: 30px;
+                width: 100%;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
