@@ -134,7 +134,8 @@ a:hover {
 
 .nameGroup {
   border: 2px solid #000000;
-  padding: 5px 0;
+  padding: 15px 0;
+  margin: 30px 0;
 }
 
 .nameGroup .dateName {
@@ -143,7 +144,7 @@ a:hover {
 }
 
 .nameGroup .themeName {
-  width: 440px;
+  width: 430px;
   text-align: center;
 }
 
@@ -259,4 +260,60 @@ a:hover {
   text-decoration: none;
   color: #000000;
 }
-/*# sourceMappingURL=news.css.map */
+
+.pageContent {
+  margin-bottom: 200px;
+  position: relative;
+}
+
+.pageNumber {
+  position: absolute;
+  left: 50%;
+  bottom: -100px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.pageNumber ul .number:first-child a {
+  background-color: #333333;
+  color: #FFFFFF;
+}
+
+.pageNumber ul .number a {
+  display: block;
+  width: 25px;
+  height: 25px;
+  color: #000000;
+  background-color: unset;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.pageNumber ul .number a:hover {
+  background-color: #333333;
+  color: #FFFFFF;
+}
+
+.pageNumber ul .nextBTN, .pageNumber ul .lastBTN {
+  border: 1px solid #333333;
+  padding: 10px 20px;
+}
+
+.pageNumber ul .nextBTN a, .pageNumber ul .lastBTN a {
+  color: #000000;
+}
+
+.pageNumber ul .nextBTN {
+  margin-left: 20px;
+}
+
+.pageNumber ul .lastBTN {
+  margin-left: 10px;
+}
+
+.pageNumber .more {
+  border: 1px solid #333333;
+  padding: 10px 50px;
+}
+/*# sourceMappingURL=LP-07.css.map */

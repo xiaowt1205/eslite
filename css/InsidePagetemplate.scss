@@ -17,6 +17,11 @@ header{
 
     padding-top: 120px;
 
+    @media (max-width:577px) {
+        
+        padding-top: 0;
+    }
+
 }
 
 
@@ -86,6 +91,8 @@ header{
 
                 height: 300%;
 
+                max-height: 301%;
+
                 border-left: 1px solid black;
 
                 position: absolute;
@@ -145,4 +152,36 @@ header{
             }
         }
     }
+}
+
+.phoneStyle{
+    width: 100vw;
+
+    background: unset;
+
+    font-size: $fs-14;
+    text-decoration: unset;
+    
+    padding: 0 15px;
+    margin: 20px 0 40px 0;
+
+    a{
+        text-decoration: unset;
+        color: $fc-black;
+    }
+    
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: ">";
+
+
+    }
+}
+
+.phoneStyleTitle{
+    
+    font-weight: bold;
+
+    padding: 0 15px;
+    margin-bottom: 30px;
 }
