@@ -39,19 +39,29 @@ a:hover {
 
 .container {
 
-    @media(max-width:576px) {
-        max-width: unset;
+    // @media(max-width:576px) {
+    //     max-width: unset;
+    // }
+
+    // @media(min-width:1200px) {
+    //     // max-width: 1060px;
+    // }
+
+    // @media(min-width:1340px) {
+    //     max-width: 1200px;
+    // }
+    
+    @media(min-width:768px) {
+        max-width: 768px;
     }
 
-    @media(min-width:1200px) {
-        // max-width: 1060px;
+    @media(min-width:1400px) {
+        max-width: 1400px;
+        padding-left: 0;
+        padding-right:0;
     }
 
-    @media(min-width:1340px) {
-        max-width: 1200px;
-    }
-
-    @media(min-width:1720px) {
+    @media(min-width:1600px) {
         max-width: 1600px;
     }
 }
