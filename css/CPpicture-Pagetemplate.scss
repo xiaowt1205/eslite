@@ -1,0 +1,140 @@
+@import "./_variables.scss";
+@import "./_function.scss";
+
+
+.area_picture {
+    padding-bottom: 30px;
+
+    @media screen and (max-width:992px) {
+        padding-bottom: 25px;
+    }
+
+    &>div {
+        margin: 0px;
+    }
+
+    .text {
+        width: 100%;
+
+        p {
+            margin-bottom: 35px;
+            line-height: 30px;
+            width: 100%;
+            // flex-wrap: wrap;
+            // &>a {
+            //     overflow : hidden;
+            //     text-overflow : ellipsis;
+            //     white-space : nowrap;
+            //     width : 100%;
+            // }
+
+            @media screen and (max-width:992px) {
+                letter-spacing: 5px;
+                text-align: justify;
+            }
+        }
+
+        .text_link {
+            margin-bottom: 35px;
+            line-height: 30px;
+
+            @media screen and (max-width:992px) {
+                letter-spacing: 3px;
+                text-align: unset;
+                word-break: break-all;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 100%;
+                display: -webkit-box;
+                -webkit-line-clamp: 2; //行數
+                -webkit-box-orient: vertical;
+                white-space: normal;
+            }
+        }
+    }
+
+    .picture_block {
+
+    }
+
+    .message_area {
+        position: relative;
+        padding-left: 30px;
+        font-size: $fs-16;
+        margin-bottom: 60px;
+
+        &>div {
+            display: flex;
+
+            padding: 2.5px 0px;
+
+
+
+            &>div {
+                width: 110px;
+                // overflow: hidden;
+                padding-right: 20px;
+                white-space: nowrap;
+                box-sizing: unset;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 3px;
+                    height: 100%;
+                    top: 0;
+                    right: 0;
+                    background-color: $bc-brown;
+                }
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background-color: $bc-brown;
+        }
+
+        .firtst_data {
+            &>div {
+                &>p {
+                    letter-spacing: 15px;
+                }
+            }
+
+            &>p {
+                padding-left: 20px;
+            }
+        }
+
+        .new_data {
+            &>div {
+                &>p {
+                    letter-spacing: 2.7px;
+                }
+            }
+
+            &>p {
+                padding-left: 20px;
+            }
+        }
+
+        .click_point {
+            &>div {
+                &>p {
+                    letter-spacing: 2.7px;
+                }
+            }
+
+            &>p {
+                padding-left: 20px;
+            }
+        }
+    }
+}
