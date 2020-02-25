@@ -116,6 +116,10 @@ a:hover {
   padding: 0;
 }
 
+.modal-dialog {
+  max-width: 1000px;
+}
+
 header {
   height: unset;
 }

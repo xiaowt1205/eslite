@@ -120,6 +120,10 @@ header #topline nav ul li {
   padding: 0;
 }
 
+.modal-dialog {
+  max-width: 1000px;
+}
+
 * {
   font-family: 'Noto Serif TC', serif;
 }

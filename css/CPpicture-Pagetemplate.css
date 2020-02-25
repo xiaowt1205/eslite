@@ -51,6 +51,103 @@
   }
 }
 
+.area_picture .picture_block {
+  position: relative;
+}
+
+.area_picture .picture_block > div > div {
+  margin-bottom: 20px;
+}
+
+.area_picture .picture_block .img {
+  width: 100%;
+  height: 100px;
+  min-height: 100px;
+  max-height: 100px;
+  background-color: green;
+}
+
+.area_picture .picture_block .modal {
+  padding: 0;
+  padding-right: 0px !important;
+}
+
+.area_picture .picture_block .modal .modal-dialog {
+  max-width: 1200px;
+  padding: 0px 30px;
+}
+
+.area_picture .picture_block .modal .modal-dialog .modal-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.area_picture .picture_block .modal .modal-dialog .modal-content .modal-header .modal-title {
+  color: #FFFFFF;
+}
+
+.area_picture .picture_block .modal .modal-dialog .modal-content .modal-body {
+  height: 700px;
+}
+
+.area_picture .picture_block .btnnn .arrow_button-prev {
+  position: absolute;
+  padding: 20px 0px;
+  top: 50%;
+  left: -40px;
+  -webkit-transform: translate(-100%, -50%);
+          transform: translate(-100%, -50%);
+}
+
+.area_picture .picture_block .btnnn .arrow_button-prev .arrow_button::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 10px;
+  left: -1px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  background-color: #000000;
+}
+
+.area_picture .picture_block .btnnn .arrow_button-next {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  padding: 20px 0px;
+  -webkit-transform: translate(100%, -50%);
+          transform: translate(100%, -50%);
+}
+
+.area_picture .picture_block .btnnn .arrow_button-next .arrow_button::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 10px;
+  right: -1px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  background-color: #000000;
+}
+
+.area_picture .picture_block .btnnn .arrow_button {
+  position: relative;
+  width: 70px;
+  height: 2px;
+  background-color: blanchedalmond;
+  border-bottom: 2px solid #000000;
+}
+
+@media screen and (max-width: 1200px) {
+  .area_picture .picture_block .btnnn .arrow_button {
+    margin: auto;
+  }
+}
+
 .area_picture .message_area {
   position: relative;
   padding-left: 30px;
@@ -116,5 +213,82 @@
 
 .area_picture .message_area .click_point > p {
   padding-left: 20px;
+}
+
+.customization-swiper-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customization-swiper-bg.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.customization-swiper-bg .customization-swiper-content {
+  width: 100%;
+  max-width: 1000px;
+  height: 800px;
+}
+
+.customization-swiper-bg .customization-swiper-content .close-swiper-page {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 70px;
+  right: 300px;
+}
+
+.customization-swiper-bg .customization-swiper-content .close-swiper-page div {
+  width: 60px;
+  height: 1.5px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  z-index: 3;
+}
+
+.customization-swiper-bg .customization-swiper-content .close-swiper-page div::after {
+  content: '';
+  width: 60px;
+  height: 1.5px;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  background-color: white;
+  top: 0;
+  left: 0;
+}
+
+.customization-swiper-bg .customization-swiper-content .swiper-pagination-fraction {
+  color: white;
+}
+
+.customization-swiper-bg .customization-swiper-content .swiper-content {
+  height: 100%;
+}
+
+.customization-swiper-bg .customization-swiper-content .swiper-content .gallery-top {
+  height: 80%;
+}
+
+.customization-swiper-bg .customization-swiper-content .swiper-content .gallery-thumbs {
+  height: 20%;
 }
 /*# sourceMappingURL=CPpicture-Pagetemplate.css.map */
