@@ -39,10 +39,6 @@ a:hover {
 
 .container {
 
-    // @media(max-width:576px) {
-    //     max-width: unset;
-    // }
-
     // @media(min-width:1200px) {
     //     // max-width: 1060px;
     // }
@@ -51,8 +47,17 @@ a:hover {
     //     max-width: 1200px;
     // }
 
-    @media(min-width:768px) {
-        max-width: 768px;
+    @media(max-width:992px) {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    @media(min-width:1024px) {
+        max-width: 1024px;
+    }
+
+    @media(min-width:1200px) {
+        max-width: 1200px;
     }
 
     @media(min-width:1400px) {
