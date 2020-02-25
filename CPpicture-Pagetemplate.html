@@ -13,17 +13,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <!-- google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <!-- layout -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/model.css">
     <link rel="stylesheet" href="./css/InsidePagetemplate.css">
     <!-- page css  -->
     <link rel="stylesheet" href="./css/CPpicture-Pagetemplate.css">
+    <link rel="stylesheet" href="./css/lightbox.css">
 
     <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
 
+        .gallery-top {
+            height: 80%;
+            width: 100%;
+        }
 
+        .gallery-thumbs {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+
+        .gallery-thumbs .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .gallery-thumbs .swiper-slide-thumb-active {
+            opacity: 1;
+        }
     </style>
 </head>
 
@@ -450,46 +482,141 @@
                         </div>
                         <div class="picture_block">
                             <div class="row">
-                                <div class="col-3"></div>
-                                <div class="col-3"></div>
-                                <div class="col-3"></div>
-                                <div class="col-3"></div>
-                                <div class="col-3"></div>
-                                <div class="col-3"></div>
-                                <div class="col-3"></div>
-                                <div class="col-3"></div>
-                                <div class="col-3"></div>
-                                <div class="col-3"></div>
-                                <div class="col-3"></div>
-                                <div class="col-3"></div>
-                                <div class="col-3"></div>
-                                <div class="col-3"></div>
-                                <div class="col-3"></div>
-                                <div class="col-3"></div>
-                            </div>
-                        </div>
-                        <div class="message_area">
-                            <div class="firtst_data">
-                                <div>
-                                    <p class="">發布日期</p>
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="toggle-swiper-page">
+                                        <div class="img">
+                                            <!-- <img src="" alt=""> -->
+                                        </div>
+                                    </a>
                                 </div>
-                                <p class="">107-6-6</p>
-                            </div>
-                            <div class="new_data">
-                                <div>
-                                    <p class="">最後更新日期</p>
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="toggle-swiper-page">
+                                        <div class="img">
+                                            <!-- <img src="" alt=""> -->
+                                        </div>
+                                    </a>
                                 </div>
-                                <p class="">108-11-27</p>
-                            </div>
-                            <div class="click_point">
-                                <div>
-                                    <p class="">資料點閱次數</p>
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="toggle-swiper-page">
+                                        <div class="img">
+                                            <!-- <img src="" alt=""> -->
+                                        </div>
+                                    </a>
                                 </div>
-                                <p class="">3068</p>
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="toggle-swiper-page">
+                                        <div class="img">
+                                            <!-- <img src="" alt=""> -->
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="toggle-swiper-page">
+                                        <div class="img">
+                                            <!-- <img src="" alt=""> -->
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="toggle-swiper-page">
+                                        <div class="img">
+                                            <!-- <img src="" alt=""> -->
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="toggle-swiper-page">
+                                        <div class="img">
+                                            <!-- <img src="" alt=""> -->
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="toggle-swiper-page">
+                                        <div class="img">
+                                            <!-- <img src="" alt=""> -->
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="toggle-swiper-page">
+                                        <div class="img">
+                                            <!-- <img src="" alt=""> -->
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="toggle-swiper-page">
+                                        <div class="img">
+                                            <!-- <img src="" alt=""> -->
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="toggle-swiper-page">
+                                        <div class="img">
+                                            <!-- <img src="" alt=""> -->
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="toggle-swiper-page">
+                                        <div class="img">
+                                            <!-- <img src="" alt=""> -->
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="toggle-swiper-page">
+                                        <div class="img">
+                                            <!-- <img src="" alt=""> -->
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="toggle-swiper-page">
+                                        <div class="img">
+                                            <!-- <img src="" alt=""> -->
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="toggle-swiper-page">
+                                        <div class="img">
+                                            <!-- <img src="" alt=""> -->
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="toggle-swiper-page">
+                                        <div class="img">
+                                            <!-- <img src="" alt=""> -->
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="message_area">
+                                <div class="firtst_data">
+                                    <div>
+                                        <p class="">發布日期</p>
+                                    </div>
+                                    <p class="">107-6-6</p>
+                                </div>
+                                <div class="new_data">
+                                    <div>
+                                        <p class="">最後更新日期</p>
+                                    </div>
+                                    <p class="">108-11-27</p>
+                                </div>
+                                <div class="click_point">
+                                    <div>
+                                        <p class="">資料點閱次數</p>
+                                    </div>
+                                    <p class="">3068</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
         </div>
     </main>
@@ -523,6 +650,60 @@
         </div>
     </footer>
 
+    <div class="customization-swiper-bg">
+        <div class="customization-swiper-content">
+            <div class="close-swiper-page">
+                <div></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <!-- Swiper -->
+            <div class="swiper-content">
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-1.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-1.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-1.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-1.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-1.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-1.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-1.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-1.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-2.jpg)"></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+                <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-1.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-1.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-1.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-1.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-1.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-1.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-1.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-1.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/index/banner-2.jpg)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -533,10 +714,54 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
+    <script src="./js/lightbox.js"></script>
     <script src="./js/main.js"></script>
     <!-- page js -->
+
+    <!-- Initialize Swiper -->
     <script>
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+            thumbs: {
+                swiper: galleryThumbs
+            }
+        });
+    </script>
+
+    <script>
+        $(".toggle-swiper-page").click(function () {
+            let swiper_index = $(".toggle-swiper-page").index(this)
+
+            $(".customization-swiper-bg").toggleClass('active')
+            galleryThumbs.update()
+            galleryTop.update()
+
+            galleryThumbs.slideTo(swiper_index, 0, false)
+            galleryTop.slideTo(swiper_index, 0, false)
+        });
+
+        $(".close-swiper-page").click(function(){
+            $(".customization-swiper-bg").removeClass('active')
+        })
 
     </script>
 
