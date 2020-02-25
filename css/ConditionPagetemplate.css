@@ -108,6 +108,33 @@
   font-size: 18px;
 }
 
+.Connection_area .Connection_form .dateInput .period {
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.Connection_area .Connection_form .dateInput .position-relative {
+  position: relative;
+}
+
+.Connection_area .Connection_form .dateInput .position-relative .fa-calendar-alt {
+  position: absolute;
+  right: 0;
+}
+
+.Connection_area .Connection_form .dateInput .clearBTN {
+  width: 100px;
+  height: 100%;
+  background-color: #4D4D4D;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 14px;
+  margin-left: 25px;
+}
+
 .Connection_area .Connection_form .text {
   margin-bottom: 30px;
   text-align: justify;
@@ -182,5 +209,9 @@
   line-height: 30px;
   width: 100%;
   padding: 10px 20px;
+}
+
+#ui-datepicker-div {
+  left: 62% !important;
 }
 /*# sourceMappingURL=ConditionPagetemplate.css.map */

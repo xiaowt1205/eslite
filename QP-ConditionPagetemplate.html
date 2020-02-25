@@ -20,6 +20,10 @@
     <!-- page css  -->
     <link rel="stylesheet" href="./css/ConditionPagetemplate.css">
 
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+    
+    <link rel="stylesheet" href="jqueryui/style.css">
+
     <style>
 
     </style>
@@ -454,8 +458,13 @@
                             <div class="col-xl-3 col-12 name">
                                 <div>張貼日</div>
                             </div>
-                            <div class="col-xl-9 col-12 form_input">
-
+                            <div class="col-xl-9 col-12 form_input d-flex dateInput">
+                                <div class="period">起</div>
+                                <!-- <div class="position-relative"> -->
+                                    <input type="text" id="datepicker" placeholder="年 / 月 / 日">
+                                    <!-- <i class="far fa-calendar-alt"></i> -->
+                                <!-- </div> -->
+                                <div class="clearBTN">清除</div>
                             </div>
                             <div class="col-xl-3 col-12 name">
                                 <div>主旨</div>
@@ -557,6 +566,13 @@
 
     <script src="./js/main.js"></script>
     <!-- page js -->
+    <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script>
+        $(function() {
+          $( "#datepicker" ).datepicker();
+        });
+        </script>
     <script>
 
     </script>

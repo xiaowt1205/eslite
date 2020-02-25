@@ -29,6 +29,11 @@ header{
 
     margin-top:87px;
 
+    @media (max-width:1200px)and(min-width:992px) {
+        
+        margin-top:unset;
+    }
+
     .breadcrumbArea{
 
         writing-mode: vertical-lr ;
@@ -36,6 +41,11 @@ header{
         font-weight: bold;
 
         margin: 0 auto;
+
+        @media (max-width:1200px)and(min-width:992px) {
+        
+            writing-mode: unset ;
+        }
 
         
         nav{
@@ -52,6 +62,11 @@ header{
     
                 margin: 0;
                 padding: 0;
+
+                @media (max-width:1200px)and(min-width:992px) {
+        
+                    writing-mode: unset ;
+                }
             
                 a{
                     text-decoration: unset;
@@ -98,6 +113,11 @@ header{
                 position: absolute;
                 top: -200%;
                 left: -5px;
+
+                @media (max-width:1200px)and(min-width:992px) {
+        
+                    display: none;
+                }
                 
             }
         }

@@ -99,6 +99,45 @@
                     }
                 }
             }
+
+        }
+
+        .dateInput{
+
+            .period{
+
+                font-weight: bold;
+
+                margin-right: 25px;
+            }
+
+            .position-relative{
+                position: relative;
+
+                .fa-calendar-alt{
+                    position: absolute;
+                    right: 0;
+                }
+            }
+
+            .clearBTN{
+
+                width: 100px;
+                height: 100%;
+
+                background-color: $fc-pure-gray;
+
+                border-radius: 5px;
+
+                color: $fc-white;
+                font-size: $fs-14;
+                font-weight: bold;
+                text-align: center;
+
+                padding-top: 14px;
+                margin-left: 25px;
+                
+            }
         }
 
         .text {
@@ -174,4 +213,9 @@
             }
         }
     }
+}
+
+#ui-datepicker-div{
+    left: 62% !important;
+
 }
