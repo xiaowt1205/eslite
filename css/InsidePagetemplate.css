@@ -147,7 +147,7 @@ header {
   padding-top: 120px;
 }
 
-@media (max-width: 577px) {
+@media (max-width: 1200px) {
   .pageContent {
     padding-top: 0;
   }
@@ -354,11 +354,5 @@ header {
   header .container {
     max-width: 540px !important;
   }
-}
-
-main.container aside,
-main.container .insidePageTitle {
-  position: relative;
-  top: -100px;
 }
 /*# sourceMappingURL=InsidePagetemplate.css.map */
