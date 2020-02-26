@@ -267,7 +267,7 @@
             position: fixed;
             top: 70px;
             right: 300px;
-            
+
             div {
                 width: 60px;
                 height: 1.5px;
@@ -275,7 +275,7 @@
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%,-50%)  rotate(45deg);
+                transform: translate(-50%, -50%) rotate(45deg);
                 z-index: 3;
 
                 &::after {
@@ -291,20 +291,130 @@
             }
         }
 
+        .swiper_title {
+            // position: relative;
+            display: flex;
+            margin-bottom: 50px;
+
+            // justify-content: start;
+            .name {
+                font-size: $fs-32;
+                color: $fc-white;
+            }
+
+            .swiper-pagination-fraction {
+                transform: translateY(-7px);
+                margin-left: 20px;
+                margin-bottom: -5px;
+                position: relative;
+                bottom: unset;
+                left: unset;
+                width: unset;
+                min-width: 150px;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                letter-spacing: 3px;
+                font-size: $fs-32;
+
+                span {
+                    padding: 0px 10px;
+                }
+
+                // padding: 0px 20px;
+                &::before {
+                    content: '(';
+                    position: absolute;
+                    left: 0px;
+
+                }
+
+                &::after {
+                    content: ')';
+                    position: absolute;
+                    right: 0px;
+                }
+            }
+        }
+
         .swiper-pagination-fraction {
             color: white;
         }
 
         .swiper-content {
-            height: 100%;
+            height: 85%;
 
-            .gallery-top {
+            .block {
                 height: 80%;
+                position: relative;
+
+                .arrow_button-prev {
+                    position: absolute;
+                    padding: 20px 0px;
+                    top: 50%;
+                    left: -40px;
+                    transform: translate(-100%, -50%);
+
+                    .arrow_button {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            height: 2px;
+                            width: 10px;
+                            left: -1px;
+                            transform: rotate(-45deg);
+                            transform-origin: left;
+                            background-color: $fc-white;
+                        }
+                    }
+                }
+
+                .arrow_button-next {
+                    position: absolute;
+                    right: -40px;
+                    top: 50%;
+                    padding: 20px 0px;
+                    transform: translate(100%, -50%);
+
+                    .arrow_button {
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            height: 2px;
+                            width: 10px;
+                            right: -1px;
+                            transform: rotate(45deg);
+                            transform-origin: right;
+                            background-color: $fc-white;
+                        }
+                    }
+                }
+
+                .arrow_button {
+                    position: relative;
+                    width: 70px;
+                    height: 2px;
+                    background-color: blanchedalmond;
+                    border-bottom: 2px solid $fc-white;
+
+                    @media screen and (max-width:1200px) {
+                        margin: auto;
+                    }
+
+
+                }
             }
 
-            .gallery-thumbs {
+            .gallery-top {}
+
+            .block_swiper {
                 height: 20%;
+
+                .gallery-thumbs {
+                    height: 100%;
+                }
             }
+
         }
 
     }
