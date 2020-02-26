@@ -26,29 +26,44 @@
 </head>
 
 <body>
-    <!-- index -->
-    <header class="container">
-        <nav class="order-sm-1 row no-gutters justify-content-start">
-            <div class="col d-none d-xl-flex justify-content-end">
-                <ul class="d-flex">
-                    <li><a href="">關於我們</a></li>
-                    <li><a href="">閱讀分享計畫</a></li>
-                    <li><a href="">青年培育計畫</a></li>
-                    <li><a href="">基金會訊息</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href=""><i class="fas fa-share-alt"></i></a></li>
-                    <li><a href="">
-                            <div class="cicle"><i class="fas fa-info"></i></div>
-                        </a></li>
-                    <li><a href=""><i class="fas fa-search"></i></a></li>
-                    <li class="menu-btn position-absolute">
-                        <a href="#">
-                            <div class=""></div>
-                        </a>
-                    </li>
-                </ul>
+    
+    <header>
+        <div id="topline" class="container">
+            <div class="row justify-content-end">
+                <div class="col-4 col-xl-4">
+                    <div class="logo">
+                        <img class="d-none d-lg-block" src="./img/index/logo-white.png" alt="">
+                        <img class="d-block d-lg-none" src="./img/index/logo-black.svg" alt="">
+                    </div>
+                </div>
+                <nav class="col-4 col-xl-8">
+                    <ul class="d-none d-xl-flex justify-content-end">
+                        <li><a href="">關於我們</a></li>
+                        <li><a href="">閱讀分享計畫</a></li>
+                        <li><a href="">青年培育計畫</a></li>
+                        <li><a href="">基金會訊息</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li class="nav-icon"><a href=""><i class="fas fa-share-alt"></i></a></li>
+                        <li class="nav-icon"><a href="">
+                                <div class="cicle"><i class="fas fa-info"></i></div>
+                            </a></li>
+                        <li class="nav-icon"><a href=""><i class="fas fa-search"></i></a></li>
+                        <li class="menu-btn menu-btn-pc ">
+                            <a href="#">
+                                <div class=""></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="position-absolute d-block d-xl-none modal-menu-toggle">
+                        <li class="menu-btn" data-toggle="modal" data-target="#mobile-menu">
+                            <a href="#">
+                                <div class=""></div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </nav>
+        </div>
     </header>
 
     <!-- menu -->
@@ -506,8 +521,6 @@
                     </form>
                 </div>
             </section>
-
-
         </div>
     </main>
 
