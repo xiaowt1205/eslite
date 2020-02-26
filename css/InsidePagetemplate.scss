@@ -17,7 +17,7 @@ header{
 
     padding-top: 120px;
 
-    @media (max-width:577px) {
+    @media (max-width:1200px) {
         
         padding-top: 0;
     }
@@ -239,12 +239,12 @@ header{
     }
 }
 
-main{
-    &.container{
-        aside,
-        .insidePageTitle{
-            position: relative;
-            top: -100px;
-        }
-    }
-}
+// main{
+//     &.container{
+//         aside,
+//         .insidePageTitle{
+//             position: relative;
+//             top: -100px;
+//         }
+//     }
+// }
