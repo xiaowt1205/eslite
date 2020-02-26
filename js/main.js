@@ -22,4 +22,3 @@ $('.collapse').on('show.bs.collapse', function () {
     });
 });
 
-console.log($('.collapse'));

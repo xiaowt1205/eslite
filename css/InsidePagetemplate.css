@@ -293,7 +293,7 @@ header {
 }
 
 .phoneStyle {
-  width: 100vw;
+  width: 100%;
   background: unset;
   font-size: 14px;
   text-decoration: unset;
@@ -314,5 +314,51 @@ header {
   font-weight: bold;
   padding: 0 15px;
   margin-bottom: 30px;
+}
+
+header {
+  padding: 40px 0px 60px 0;
+}
+
+@media (max-width: 992px) {
+  header {
+    padding: 20px 0px 20px 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  header #topline nav ul.modal-menu-toggle {
+    right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  header #topline nav ul.modal-menu-toggle {
+    top: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  header #topline nav ul.modal-menu-toggle {
+    right: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  header .container {
+    max-width: 720px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  header .container {
+    max-width: 540px !important;
+  }
+}
+
+main.container aside,
+main.container .insidePageTitle {
+  position: relative;
+  top: -100px;
 }
 /*# sourceMappingURL=InsidePagetemplate.css.map */
