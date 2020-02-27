@@ -4,6 +4,13 @@
 
 header{
     height: unset;
+
+    .logo{
+
+        img{
+            width: 100%;
+        }
+    }
 }
 
 .imgSize{
@@ -212,23 +219,7 @@ header{
     @media (max-width:992px){
         padding: 20px 0px 20px 0;
     }
-    #topline{
-        nav{
-            ul{
-                &.modal-menu-toggle{
-                    @media (max-width:1200px){
-                        right: 0;
-                    }
-                    @media (max-width:992px){
-                        top: 5px;
-                    }
-                    @media (max-width:576px){
-                        right: 15px;
-                    }
-                }
-            }
-        }
-    }
+    
     .container{
         @media (max-width:992px){
             max-width: 720px !important;
@@ -238,13 +229,3 @@ header{
         }
     }
 }
-
-// main{
-//     &.container{
-//         aside,
-//         .insidePageTitle{
-//             position: relative;
-//             top: -100px;
-//         }
-//     }
-// }

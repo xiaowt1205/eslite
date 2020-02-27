@@ -38,13 +38,6 @@ header nav ul li {
   letter-spacing: 2px;
 }
 
-@media (max-width: 992px) {
-  .container {
-    width: 100% !important;
-    padding: 0 !important;
-  }
-}
-
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
