@@ -33,7 +33,7 @@ header {
                     }
 
                     @media(min-width:1600px) {
-                        padding: 2px 1.3rem;
+                        padding: 2px 35px;
                     }
                 }
 
@@ -570,8 +570,8 @@ footer {
             }
 
             .icon-bg {
-                width: 50px;
-                height: 50px;
+                width: 40px;
+                height: 40px;
                 background-color: $fc-white;
                 border-radius: 25px;
                 margin-right: 20px;
@@ -587,7 +587,7 @@ footer {
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    font-size: $fs-32;
+                    font-size: $fs-27;
                     color: $main-color-dark;
                 }
             }

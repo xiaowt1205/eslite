@@ -1,3 +1,5 @@
+@import "./_variables.scss";
+
 * {
     box-sizing: border-box;
 }
@@ -28,8 +30,17 @@ p {
     margin: 0;
 }
 
-a:hover {
-    text-decoration: none;
+a {
+    color: $fc-black;
+
+    &:hover {
+        color: $hc-brown;
+        text-decoration: none;
+    }
+
+    &:active {
+        color: $fc-black;
+    }
 }
 
 %letter-spacing {

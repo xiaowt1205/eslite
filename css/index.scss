@@ -9,7 +9,7 @@
     -webkit-user-select: none;
 }
 
-header{
+header {
     padding: 70px 0px 30px;
     position: relative;
     z-index: 2;
@@ -23,6 +23,7 @@ header{
             max-width: unset !important;
         }
     }
+
     #topline {
         @media(min-width:992px) {
             margin-bottom: 40px;
@@ -341,8 +342,9 @@ main {
             }
 
             h2 {
-
                 font-size: $fs-76;
+                font-weight: $fw-600;
+                letter-spacing: 3.5px;
                 margin: 0;
 
                 @media screen and (max-width:1200px) {
@@ -369,15 +371,30 @@ main {
             }
 
             p.small {
-                font-size: 33px;
-                margin: auto 0px 0px;
-                padding-left: 10px;
+                font-size: $fs-32;
+                font-weight: $fw-600;
                 letter-spacing: 13px;
+                margin: auto 0px 0px;
+                padding-left: 30px;
+            }
+
+            #list-tab {
+                .active {
+                    .year_books {
+                        background-color: $bc-brown;
+                        color: $bc-white;
+
+                        &:nth-child(1) {
+                            border-right: 1px solid $bc-brown;
+                        }
+                    }
+                }
             }
 
             .icon {
                 margin-left: auto;
                 display: flex;
+                flex-direction: row;
 
                 @media screen and (max-width:1200px) {
                     padding: 20px 0px 0px;
@@ -923,10 +940,18 @@ main {
 
 
             .text {
+                min-height: 150px;
                 position: relative;
                 z-index: 3;
                 padding: 30px 0px;
                 text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                &:hover {
+                    p {}
+                }
 
                 h2 {
                     font-size: $fs-22;
@@ -959,6 +984,63 @@ main {
                     font-size: $fs-16;
                     color: $fc-white;
                     letter-spacing: 5px;
+                }
+
+                .button {
+                    width: 250px;
+                    margin: 0 auto;
+                    background-color: $bc-black;
+                    border: 1px solid $bc-white;
+                    text-align: center;
+                    padding: 10px 25px;
+                    position: relative;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $bc-white;
+                        border: 1px solid $bc-black;
+
+                        span {
+                            color: $fc-black;
+                        }
+
+                        .arrow_button {
+                            background-color: $bc-black;
+                            border-bottom: 2px solid $bc-black;
+
+                            &::after {
+                                background-color: $bc-black;
+                            }
+                        }
+                    }
+
+                    span {
+                        letter-spacing: 5px;
+                        font-size: 15px;
+                        color: $fc-white;
+                    }
+
+                    .arrow_button {
+                        width: 25px;
+                        height: 2px;
+                        background-color: $bc-white;
+                        border-bottom: 2px solid $bc-white;
+                        position: absolute;
+                        top: 50%;
+                        right: 20px;
+                        transform: translateY(-50%);
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            height: 2px;
+                            width: 5px;
+                            right: -1px;
+                            transform: rotate(45deg);
+                            transform-origin: right;
+                            background-color: $bc-white;
+                        }
+                    }
                 }
             }
 
@@ -1035,6 +1117,16 @@ main {
             }
         }
 
+        &:hover {
+            .play_img {
+                animation-name: video-fadeOut;
+                animation-fill-mode: forwards;
+                animation-duration: 2s;
+                animation-timing-function: ease-in-out;
+
+            }
+        }
+
         @media screen and (max-width:992px) {
             margin-bottom: unset;
         }
@@ -1047,6 +1139,7 @@ main {
             background-image: url('../img/index/video.jpg');
             background-size: cover;
             background-repeat: no-repeat;
+            background-position: center;
             overflow: hidden;
 
             .icon {
@@ -1190,23 +1283,42 @@ main {
     .button {
         width: 250px;
         margin: 0 auto;
-        background-color: black;
+        background-color: $bc-black;
+        border: 1px solid $bc-white;
         text-align: center;
         padding: 10px 25px;
         position: relative;
         cursor: pointer;
 
+        &:hover {
+            background-color: $bc-white;
+            border: 1px solid $bc-black;
+
+            span {
+                color: $fc-black;
+            }
+
+            .arrow_button {
+                background-color: $bc-black;
+                border-bottom: 2px solid $bc-black;
+
+                &::after {
+                    background-color: $bc-black;
+                }
+            }
+        }
+
         span {
             letter-spacing: 5px;
             font-size: 15px;
-            color: white;
+            color: $fc-white;
         }
 
         .arrow_button {
             width: 25px;
             height: 2px;
-            background-color: blanchedalmond;
-            border-bottom: 2px solid $fc-white;
+            background-color: $bc-white;
+            border-bottom: 2px solid $bc-white;
             position: absolute;
             top: 50%;
             right: 20px;
@@ -1220,7 +1332,7 @@ main {
                 right: -1px;
                 transform: rotate(45deg);
                 transform-origin: right;
-                background-color: $fc-white;
+                background-color: $bc-white;
             }
         }
     }
@@ -1329,7 +1441,6 @@ main {
                             width: 100%;
                             margin: 0;
                             padding: 27px 0px 0px;
-                            // padding-left: 10px;
                             letter-spacing: 25px;
                             text-align: left;
 
@@ -1363,8 +1474,8 @@ main {
                             content: '';
                             position: absolute;
                             width: 100%;
-                            height: 3px;
-                            background-color: black;
+                            height: 1px;
+                            background-color: $br-gray;
                             top: 0;
                         }
                     }
@@ -1386,9 +1497,17 @@ main {
                         content: '';
                         position: absolute;
                         width: 100%;
-                        height: 3px;
-                        background-color: black;
+                        height: 1px;
+                        background-color: $br-gray;
                         bottom: 0;
+                    }
+
+                    &:hover {
+                        .time {
+                            &::before {
+                                display: block;
+                            }
+                        }
                     }
 
                     p {
@@ -1396,8 +1515,9 @@ main {
                         font-size: 18px;
 
                         &.time {
-                            padding: 0px 50px;
+                            padding: 0px 40px;
                             position: relative;
+                            letter-spacing: 2px;
 
                             @media screen and (max-width:1100px) {
                                 padding: 0px 50px 0px 0px;
@@ -1412,23 +1532,23 @@ main {
                                 position: absolute;
                                 width: 25px;
                                 height: 5px;
-                                background-color: red;
+                                background-color: $hc-brown;
                                 top: 50%;
                                 left: 0;
                                 transform: translateY(-50%);
-
-                                @media screen and (max-width:1100px) {
-                                    position: unset;
-                                }
+                                display: none;
                             }
                         }
 
                         &.sort {
-                            width: 36px;
-                            padding: 0px 45px;
+                            width: 58px;
+                            padding: 0px 20px;
+                            text-align: right;
+                            letter-spacing: 7px;
+                            font-weight: $fw-600;
                             box-sizing: unset;
-                            border-left: 1px solid $fc-black;
-                            border-right: 1px solid $fc-black;
+                            border-left: 1px solid $br-gray;
+                            border-right: 1px solid $br-gray;
 
                             @media screen and (max-width:576px) {
                                 padding: 0px 15px;
@@ -1437,6 +1557,7 @@ main {
 
                         &.text {
                             padding-left: 35px;
+                            letter-spacing: 2px;
 
                             @media screen and (max-width:1100px) {
                                 margin-top: 15px;
@@ -1452,6 +1573,7 @@ main {
                 }
 
                 .button {
+                    margin-top: 30px;
                     padding: 35px 0px 65px;
                     display: flex;
                     justify-content: flex-end;
@@ -1465,6 +1587,12 @@ main {
                         border: 1px solid $fc-black;
                         letter-spacing: 5px;
                         font-weight: 600;
+
+                        &:hover {
+                            color: $fc-white;
+                            border: 1px solid $fc-white;
+                            background-color: $bc-black;
+                        }
                     }
                 }
             }
@@ -1514,16 +1642,16 @@ main {
 
 #Vendor {
     padding: 0px 0px 110px;
-    overflow: hidden;
 
     .content {
-        position: relative;
 
         &.container_1140 {
-            padding-right: 70px;
+            // padding-right: 70px;
+            // transform: translateX(-70px);
 
             @media screen and (max-width:1200px) {
                 padding-right: 15px;
+                transform: translateX(-15px);
             }
         }
 
@@ -1533,42 +1661,65 @@ main {
             }
         }
 
-        .logo {
-            flex: 0 0 22%;
-            max-width: 22%;
-            padding: 0px 15px;
+        .vendor_area {
             position: relative;
-            @media screen and (max-width:1200px) {
-                flex: 0 0 50%;
-                max-width: 50%;
+            width: 100%;
+            padding-right: 100px;
+
+            @media screen and (max-width:1024px) {
+                padding: 0px 30px;
             }
 
-            &.arrow_block {
-                flex: 0 0 12%;
-                max-width: 12%;
-                @media screen and (max-width:1200px) {
-                    flex: 0 0 50%;
-                    max-width: 50%;
+            .arrow_button-prev {
+                position: absolute;
+                padding: 20px 0px;
+                top: 50%;
+                left: 0px;
+                transform: translate(0%, -50%);
+
+                .arrow_button {
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        height: 2px;
+                        width: 10px;
+                        left: -1px;
+                        transform: rotate(-45deg);
+                        transform-origin: left;
+                        background-color: $fc-black;
+                    }
+                }
+
+                @media screen and (max-width:1024px) {
+                    left: 50%;
+                    transform: translate(-150%, 100%);
                 }
             }
 
-            img {
-                width: 100%;
-            }
-        }
+            .arrow_button-next {
+                position: absolute;
+                right: 0px;
+                top: 50%;
+                padding: 20px 0px;
+                transform: translate(0%, -50%);
 
+                .arrow_button {
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 2px;
+                        width: 10px;
+                        right: -1px;
+                        transform: rotate(45deg);
+                        transform-origin: right;
+                        background-color: $fc-black;
+                    }
+                }
 
-        .arrow {
-
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translate(50%, -50%);
-
-            @media screen and (max-width:1200px) {
-                padding: 30px 0px;
-                position: unset;
-                transform: unset
+                @media screen and (max-width:1024px) {
+                    right: 50%;
+                    transform: translate(150%, 100%);
+                }
             }
 
             .arrow_button {
@@ -1582,17 +1733,22 @@ main {
                     margin: auto;
                 }
 
-                &::after {
-                    content: '';
-                    position: absolute;
-                    height: 2px;
-                    width: 10px;
-                    right: -1px;
-                    transform: rotate(45deg);
-                    transform-origin: right;
-                    background-color: $fc-black;
-                }
+            }
+
+            img {
+                width: 100%;
             }
         }
+    }
+}
+
+
+@keyframes video-fadeOut {
+    from {
+        background-size: 120%;
+    }
+
+    to {
+        background-size: 150%;
     }
 }
