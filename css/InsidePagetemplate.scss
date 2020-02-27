@@ -4,6 +4,13 @@
 
 header{
     height: unset;
+
+    .logo{
+
+        img{
+            width: 100%;
+        }
+    }
 }
 
 .imgSize{
@@ -176,13 +183,10 @@ header{
 
 .phoneStyle{
     width: 100%;
-
     background: unset;
-
     font-size: $fs-14;
     text-decoration: unset;
-    
-    padding: 0 15px;
+    padding: 0px;
     margin: 20px 0 40px 0;
 
     a{
@@ -202,7 +206,7 @@ header{
     
     font-weight: bold;
 
-    padding: 0 15px;
+    padding: 0px;
     margin-bottom: 30px;
 }
 
@@ -212,23 +216,7 @@ header{
     @media (max-width:992px){
         padding: 20px 0px 20px 0;
     }
-    #topline{
-        nav{
-            ul{
-                &.modal-menu-toggle{
-                    @media (max-width:1200px){
-                        right: 0;
-                    }
-                    @media (max-width:992px){
-                        top: 5px;
-                    }
-                    @media (max-width:576px){
-                        right: 15px;
-                    }
-                }
-            }
-        }
-    }
+    
     .container{
         @media (max-width:992px){
             max-width: 720px !important;
@@ -238,13 +226,3 @@ header{
         }
     }
 }
-
-// main{
-//     &.container{
-//         aside,
-//         .insidePageTitle{
-//             position: relative;
-//             top: -100px;
-//         }
-//     }
-// }

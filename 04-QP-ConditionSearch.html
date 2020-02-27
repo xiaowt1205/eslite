@@ -15,12 +15,16 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
     <!-- layout -->
     <link rel="stylesheet" href="./css/main.css">
-    <!-- page css  -->
+    <link rel="stylesheet" href="./css/model.css">
     <link rel="stylesheet" href="./css/InsidePagetemplate.css">
+    <!-- page css  -->
+    <link rel="stylesheet" href="./css/04-QP-ConditionSearch.css">
+
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+
+    <link rel="stylesheet" href="jqueryui/style.css">
 
     <style>
-
-
 
     </style>
 </head>
@@ -787,12 +791,10 @@
                 </ol>
                 <h2 class="d-xl-none phoneStyleTitle">分頁標題</h2>
             </div>
-             <!-- 手機板的title結束 -->
-            
+            <!-- 手機板的title結束 -->
 
             <!-- page right content -->
-            <section class="offset-lg-0 offset-xl-1 pageContent col-12 col-lg-9 col-xl-7">
-
+            <section class="offset-lg-0 offset-xl-1 pageContent col-12 col-lg-9 col-xl-7 Connection_area">
                 <!-- 平板版的title -->
                 <div class="w-100 d-none d-lg-block d-xl-none " aria-label="breadcrumb">
                     <ol class="breadcrumb phoneStyle">
@@ -801,10 +803,92 @@
                     </ol>
                     <h2 class="phoneStyleTitle">分頁標題</h2>
                 </div>
-                 <!-- 平板版的title結束 -->
+                <!-- 平板版的title結束 -->
 
                 <!-- 內頁起點 -->
+                <div class="row justify-content-end">
+                    <form action="" class="Connection_form col-12">
+                        <div class="row justify-content-end">
+                            <div class="col-xl-3 col-12 name">
+                                <div>標題</div>
+                            </div>
+                            <div class="col-xl-9 col-12 form_input">
+                                <input type="text" name="title_name" placeholder="請輸入標題">
+                            </div>
+                            <div class="col-xl-3 col-12 name">
+                                <div>內容</div>
+                            </div>
+                            <div class="col-xl-9 col-12 form_input">
+                                <select>
+                                    <option>分類一</option>
+                                    <option selected="true">分類二</option>
+                                    <option>分類三</option>
+                                    <option>分類四</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-3 col-12 name">
+                                <div>張貼日</div>
+                            </div>
+                            <div class="col-xl-9 col-12 form_input d-flex dateInput">
+                                <div class="period">起</div>
+                                <!-- <div class="position-relative"> -->
+                                <input type="text" id="datepicker" placeholder="年 / 月 / 日">
+                                <!-- <i class="far fa-calendar-alt"></i> -->
+                                <!-- </div> -->
+                                <div class="clearBTN">清除</div>
+                            </div>
+                            <div class="col-xl-3 col-12 name">
+                                <div>主旨</div>
+                            </div>
+                            <div class="col-xl-9 col-12 form_input">
+                                <ul class="d-flex">
+                                    <li><input type="radio" checked="checked" name="Option_number" value="" />
+                                        <div> 選項一</div>
+                                    </li>
+                                    <li><input type="radio" checked="checked" name="Option_number" value="" />
+                                        <div> 選項二</div>
+                                    </li>
+                                    <li><input type="radio" checked="checked" name="Option_number" value="" />
+                                        <div> 選項三</div>
+                                    </li>
+                                    <li><input type="radio" checked="checked" name="Option_number" value="" />
+                                        <div> 選項四</div>
+                                    </li>
+                                    <li><input type="radio" checked="checked" name="Option_number" value="" />
+                                        <div> 選項五</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-3 col-12 name">
+                                <div>分類項目</div>
+                            </div>
+                            <div class="col-xl-9 col-12 form_input">
+                                <ul class="d-flex">
+                                    <li><input type="radio" checked="checked" name="class_number" value="" />
+                                        <div>A</div>
+                                    </li>
+                                    <li><input type="radio" checked="checked" name="class_number" value="" />
+                                        <div>B</div>
+                                    </li>
+                                    <li><input type="radio" checked="checked" name="class_number" value="" />
+                                        <div>C</div>
+                                    </li>
+                                    <li><input type="radio" checked="checked" name="class_number" value="" />
+                                        <div>D</div>
+                                    </li>
+                                    <li><input type="radio" checked="checked" name="class_number" value="" />
+                                        <div>E</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-9 col-12 d-flex justify-content-end form_btn">
+                                <input type="submit" value="送出資料">
+                                <input type="reset" value="重新填寫">
+                            </div>
+                        </div>
 
+                    </form>
+                </div>
                 <!-- 內頁終點 -->
             </section>
 
@@ -859,6 +943,13 @@
 
     <script src="./js/main.js"></script>
     <!-- page js -->
+    <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+    </script>
     <script>
 
     </script>

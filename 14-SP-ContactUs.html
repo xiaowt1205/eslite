@@ -15,17 +15,18 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
     <!-- layout -->
     <link rel="stylesheet" href="./css/main.css">
-    <!-- page css  -->
+    <link rel="stylesheet" href="./css/model.css">
     <link rel="stylesheet" href="./css/InsidePagetemplate.css">
+    <!-- page css  -->
+    <link rel="stylesheet" href="./css/14-SP-ContactUs.css">
 
     <style>
-
-
 
     </style>
 </head>
 
 <body>
+
     <header>
         <div id="topline" class="container">
             <div class="row no-gutters">
@@ -787,12 +788,10 @@
                 </ol>
                 <h2 class="d-xl-none phoneStyleTitle">分頁標題</h2>
             </div>
-             <!-- 手機板的title結束 -->
-            
+            <!-- 手機板的title結束 -->
 
             <!-- page right content -->
-            <section class="offset-lg-0 offset-xl-1 pageContent col-12 col-lg-9 col-xl-7">
-
+            <section class="offset-lg-0 offset-xl-1 pageContent col-12 col-lg-9 col-xl-7 Connection_area">
                 <!-- 平板版的title -->
                 <div class="w-100 d-none d-lg-block d-xl-none " aria-label="breadcrumb">
                     <ol class="breadcrumb phoneStyle">
@@ -801,14 +800,82 @@
                     </ol>
                     <h2 class="phoneStyleTitle">分頁標題</h2>
                 </div>
-                 <!-- 平板版的title結束 -->
+                <!-- 平板版的title結束 -->
+                <div class="row justify-content-end">
+                    <div class="col-12 text_block">
+                        <p>
+                            您好
+                        </p>
+                        <p class="text">
+                            我們很重視您對誠品文化藝術基金會的任何建議，請盡量完整輸入下方表格資料，讓我們了解您的意見或想法，我們會盡速處理或回覆您的提問。謝謝！
+                        </p>
+                    </div>
+                    <form action="" class="Connection_form col-12">
+                        <div class="row justify-content-end">
+                            <div class="col-xl-3 col-12 name">
+                                <div>聯絡人名字</div>
+                            </div>
+                            <div class="col-xl-9 col-12 form_input">
+                                <input type="text" name="name" placeholder="請輸入您的真實姓名">
+                            </div>
+                            <div class="col-xl-3 col-12 name">
+                                <div>聯絡電話</div>
+                            </div>
+                            <div class="col-xl-9 col-12 form_input">
+                                <input type="tel" name="tel" placeholder="請輸入您的電話號碼">
+                            </div>
+                            <div class="col-xl-3 col-12 name">
+                                <div>EMAIL</div>
+                            </div>
+                            <div class="col-xl-9 col-12 form_input">
+                                <input type="email" name="email" placeholder="請輸入您的電子郵件">
+                            </div>
+                            <div class="col-xl-3 col-12 name">
+                                <div>問題類別</div>
+                            </div>
+                            <div class="col-xl-9 col-12 form_input">
+                                <select>
+                                    <option>一般問題</option>
+                                    <option selected="true">我想要捐書</option>
+                                    <option>成為捐輸書</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-3 col-12 name">
+                                <div>內容說明</div>
+                            </div>
+                            <div class="col-xl-9 col-12 form_input">
+                                <textarea name="textarea" id="textarea" rows="6" placeholder="請輸入您的意見內容"></textarea>
+                            </div>
+                            <div class="col-xl-3 col-12 name">
+                                <div>驗證碼</div>
+                            </div>
+                            <div class="col-xl-9 col-12 form_input">
+                                <div class="row d-flex justify-content-around align-items-center">
+                                    <div class="col-xl-4 col-8 block">
+                                        <img src="/img/test/CaptchaImage.jpg" alt="">
+                                    </div>
+                                    <div class="col-xl-2 col-4 block icon">
+                                        <i class="fas fa-volume-up"></i>
+                                        <i class="fas fa-sync-alt"></i>
+                                    </div>
+                                    <div class="col-xl-6 col-12 block">
+                                        <input type="text" name="name" placeholder="請填驗證碼">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-9 col-12  text">
+                                <p>如果看不清驗證碼，請點圖片重新產生一組驗證碼。若圖片不清楚，請點查看驗證碼連結另開視窗。</p>
+                                <p>註：本單元是以電子郵件傳送，請確認您已有郵件帳號，且能正常收發郵件，謝謝！</p>
+                            </div>
+                            <div class="col-xl-9 col-12  form_btn">
+                                <input type="submit" value="送出資料">
+                                <input type="reset" value="重新填寫">
+                            </div>
+                        </div>
 
-                <!-- 內頁起點 -->
-
-                <!-- 內頁終點 -->
+                    </form>
+                </div>
             </section>
-
-
         </div>
     </main>
 

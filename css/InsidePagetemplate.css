@@ -34,13 +34,6 @@ a:hover {
   text-decoration: none;
 }
 
-@media (max-width: 992px) {
-  .container {
-    width: 100% !important;
-    padding: 0 !important;
-  }
-}
-
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
@@ -135,6 +128,10 @@ a:hover {
 
 header {
   height: unset;
+}
+
+header .logo img {
+  width: 100%;
 }
 
 .imgSize {
@@ -297,7 +294,7 @@ header {
   background: unset;
   font-size: 14px;
   text-decoration: unset;
-  padding: 0 15px;
+  padding: 0px;
   margin: 20px 0 40px 0;
 }
 
@@ -312,7 +309,7 @@ header {
 
 .phoneStyleTitle {
   font-weight: bold;
-  padding: 0 15px;
+  padding: 0px;
   margin-bottom: 30px;
 }
 
@@ -323,24 +320,6 @@ header {
 @media (max-width: 992px) {
   header {
     padding: 20px 0px 20px 0;
-  }
-}
-
-@media (max-width: 1200px) {
-  header #topline nav ul.modal-menu-toggle {
-    right: 0;
-  }
-}
-
-@media (max-width: 992px) {
-  header #topline nav ul.modal-menu-toggle {
-    top: 5px;
-  }
-}
-
-@media (max-width: 576px) {
-  header #topline nav ul.modal-menu-toggle {
-    right: 15px;
   }
 }
 
