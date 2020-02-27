@@ -239,7 +239,7 @@ header nav ul.modal-menu-toggle {
 @media (max-width: 992px) {
   header nav ul.modal-menu-toggle {
     top: -60px;
-    right: 30px;
+    right: 0px;
   }
 }
 

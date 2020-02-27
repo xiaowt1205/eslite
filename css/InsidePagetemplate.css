@@ -294,7 +294,7 @@ header .logo img {
   background: unset;
   font-size: 14px;
   text-decoration: unset;
-  padding: 0 15px;
+  padding: 0px;
   margin: 20px 0 40px 0;
 }
 
@@ -309,7 +309,7 @@ header .logo img {
 
 .phoneStyleTitle {
   font-weight: bold;
-  padding: 0 15px;
+  padding: 0px;
   margin-bottom: 30px;
 }
 
