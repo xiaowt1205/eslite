@@ -9,11 +9,20 @@
 
 .btnGroup{
 
+    
+    @media (max-width:992px) {
+
+        border-bottom: 1px solid;
+    }
     .btnArea{
+
+        min-width: 60px;
+
         border: 2px solid $fc-black;
         border-radius: 7px;
 
         letter-spacing: 2px;
+        text-align: center;
 
         padding: 5px 30px;
         margin-right: 20px;
@@ -23,12 +32,25 @@
 
             color: $fc-white;
         }
+
+        @media (max-width:1200px)and(min-width:992px) {
+
+            padding: 5px 20px;
+        }
+
+        @media (max-width:992px) {
+
+            padding: 5px 0px;
+            margin-right: 12px;
+            margin-bottom: 12px;
+
+        }
     }
 }
 
 .nameGroup{
 
-    border: 2px solid $fc-black;
+    border: 1px solid $fc-black;
 
     padding: 15px 0;
 
@@ -36,14 +58,16 @@
 
     .dateName{
 
-        width: 130px;
+        min-width: 130px;
         
         text-align: center;
     }
 
     .themeName{
 
-        width: 430px;
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
 
         text-align: center;
     }
@@ -57,7 +81,7 @@
 
     .loadingPointName{
 
-        width: 140px;
+        min-width: 165px;
 
         text-align: center;
     }
@@ -70,20 +94,49 @@
 
     .news{
         width: 100%;
-        height: 90px;
+        min-height: 90px;
 
         border-bottom: 1px solid $fc-gray;
 
-        display: flex;
-
         .date{
-            width: 130px;
+            min-width: 130px;
 
             line-height: 90px;
+            letter-spacing: 2px;
+
+            @media (max-width:992px) {
+
+                width: unset;
+
+                color: $fc-666666-gray;
+                font-size: $fs-12;
+                font-weight: bold;
+                line-height: unset;
+
+                padding-top: 30px;
+                padding-bottom: 15px;
+
+    
+            }
+
+            span{
+
+                font-size: $fs-12;
+                color: $fc-666666-gray;
+                font-weight: bold;
+                letter-spacing: 4px;
+
+                border-left: 1px solid $fc-666666-gray;
+                border-right: 1px solid $fc-666666-gray;
+
+                padding: 0 15px;
+                margin-left: 15px;
+            }
 
         }
         .theme{
-            width: 440px;
+
+            width: 100%;
 
             text-align: center;
 
@@ -118,13 +171,21 @@
             }
 
         }
+
+        .themePhoneName{
+
+            font-size: $fs-14;
+
+            letter-spacing: 2px;
+        }
         .place{
-            width: 175px;
+            min-width: 175px;
 
             line-height: 90px;
             text-align: center;
 
             position: relative;
+            
 
             &::after{
                 content: '';
@@ -141,19 +202,61 @@
 
         }
 
+        .placePhoneName{
+
+            font-size: $fs-12;
+            color: $fc-666666-gray;
+            font-weight: bold; 
+
+            padding: 10px 0;
+            
+            letter-spacing: 4px;
+
+            span{
+               padding: 0 9px;
+
+               border-left: 1px solid $fc-666666-gray;
+            }
+
+        }
+
+        .loadingPointPhoneName{
+
+            span{
+                color: $fc-666666-gray;
+                font-size: $fs-12;
+                letter-spacing: 1px;
+
+                padding-right: 9px;
+    
+                border-right: 1px solid $fc-666666-gray;
+            }
+        }
+
         .btnGroup{
-            width: 140px;
+            min-width: 165px;
 
             display: flex;
             align-self: center;
             flex-wrap: wrap;
 
-            margin-left: 30px;
             padding: 16px 0;
 
+            @media (max-width:992px) {
+
+                flex-wrap: nowrap;
+
+                margin-left: 0;
+
+                border-bottom: none;
+
+                padding: 15px 0 30px 0;
+    
+            }
+
             .loadingPoint{
-                width: 39px;
-                height: 27px;
+                min-width: 39px;
+                min-height: 27px;
                 
                 font-size: $fs-12;
                 line-height: 22px;
@@ -161,14 +264,38 @@
         
                 border: 1px solid $fc-gray;
 
+                padding: 1px;
                 margin: 0 5px 3px 0;
+
+                @media (max-width:992px) {
+
+                    min-height: 20px;
+
+                    color: $fc-666666-gray;
+                    font-weight: bold; 
+
+                    margin: 0 10px 3px 0;
+                    
+                 }
+
 
                 &:hover{
                     border: 1px solid $fc-white;
                     background-color: $fc-black;
+
+                    @media (max-width:992px) {
+
+                        background-color: $fc-666666-gray; 
+                    }
+
                 }
                 &:hover a{
                     color: $fc-white;
+                    
+                    @media (max-width:992px) {
+
+                       color: $fc-white;
+                    }
                 }
 
                 
@@ -176,8 +303,21 @@
                     
                     text-decoration: none;
                     color: $fc-black;
+
+                    @media (max-width:992px) {
+
+                        font-size: $fs-12;
+                        color: $fc-666666-gray;
+                        font-weight: bold;
+
+
+        
+                    }
                     
                 }
+                
+                
+                
             }
         }
     }
@@ -245,7 +385,14 @@
         .nextBTN,.lastBTN{
             border: 1px solid $bc-number-black;
 
+            font-weight: bold;
+
             padding: 10px 20px ;
+
+            
+        @media (max-width:1400px){
+            padding: 10px 5px;
+        }
 
             a{
 
@@ -265,9 +412,13 @@
 
     .more{
 
-        border: 1px solid $bc-number-black;
+        border: 2px solid $bc-number-black;
 
-        padding: 10px 50px ;
+        font-weight: bold;
+
+        padding: 10px 45px ;
+
+        cursor: pointer;
 
     }
 }
