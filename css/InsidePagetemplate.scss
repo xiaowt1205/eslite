@@ -226,3 +226,30 @@ header{
         }
     }
 }
+
+
+.Page-BG{
+    position: fixed;
+    top: 58%;
+    right:0;
+    z-index:-10;
+    width: 100%;
+    height: 40vh;
+    background-image: url('../img/page-bg-1.png');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    div{
+        position: fixed;
+        top: 30.5%;
+        right:0;
+        z-index:-10;
+        width: 100%;
+        height: 25vh;
+        background-image: url('../img/page-bg-2.png');
+        background-position: left;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
