@@ -562,9 +562,9 @@ main .bg {
 }
 
 #Statistics .statistics_area .content .business_area .business_block {
-  margin: 0px 0px 25px;
+  margin: 0px 0px 55px;
   border-radius: 500px;
-  border: 10px solid #665252;
+  border: 10px solid #544747;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -580,6 +580,12 @@ main .bg {
           align-items: center;
   width: 320px;
   height: 320px;
+}
+
+#Statistics .statistics_area .content .business_area .business_block:hover {
+  border: 20px solid #6a4945;
+  -webkit-box-shadow: 0 0 10px #000000;
+          box-shadow: 0 0 10px #000000;
 }
 
 @media screen and (max-width: 1200px) {
@@ -706,10 +712,16 @@ main .bg {
 #Statistics .statistics_area .content .business_area .btn {
   width: 220px;
   padding: 10px 0px;
-  background-color: #231815;
-  color: #FFFFFF;
+  background-color: #E4E4E4;
+  border: 3px solid #544747;
+  color: #231815;
   margin-bottom: 55px;
   letter-spacing: 3px;
+}
+
+#Statistics .statistics_area .content .business_area .btn:hover {
+  background-color: #544747;
+  color: #FFFFFF;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1049,20 +1061,20 @@ main .bg {
   padding: 0px 0px 145px;
 }
 
-#Plan1 .content .card:nth-child(1) {
-  background-image: url("../img/index/plan_02.png");
+#Plan1 .content .card:nth-child(1) .Plan_bg::after {
+  background-image: url("../img/index/plan_01.jpg");
 }
 
-#Plan1 .content .card:nth-child(2) {
-  background-image: url("../img/index/plan_03.png");
+#Plan1 .content .card:nth-child(2) .Plan_bg::after {
+  background-image: url("../img/index/plan_02.jpg");
 }
 
-#Plan1 .content .card:nth-child(3) {
-  background-image: url("../img/index/plan_04.png");
+#Plan1 .content .card:nth-child(3) .Plan_bg::after {
+  background-image: url("../img/index/plan_03.jpg");
 }
 
-#Plan1 .content .card:nth-child(4) {
-  background-image: url("../img/index/plan_06.png");
+#Plan1 .content .card:nth-child(4) .Plan_bg::after {
+  background-image: url("../img/index/plan_04.jpg");
 }
 
 @media screen and (max-width: 1600px) {
@@ -1089,8 +1101,23 @@ main .bg {
   background-position: center;
 }
 
+#Plan1 .content .card:hover .text .button {
+  display: block;
+  height: unset;
+}
+
+#Plan1 .content .card:hover .Plan_bg::before {
+  background-color: #23181590;
+}
+
+#Plan1 .content .card:hover .Plan_bg::after {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
 #Plan1 .content .card .text {
   min-height: 150px;
+  max-height: 150px;
   position: relative;
   z-index: 3;
   padding: 30px 0px;
@@ -1144,14 +1171,18 @@ main .bg {
 }
 
 #Plan1 .content .card .text .button {
+  display: none;
   width: 250px;
+  height: 0px;
   margin: 0 auto;
+  padding: 10px 25px;
   background-color: #000000;
   border: 1px solid #FFFFFF;
   text-align: center;
-  padding: 10px 25px;
   position: relative;
   cursor: pointer;
+  -webkit-transition: height 2s ease-out 2s;
+  transition: height 2s ease-out 2s;
 }
 
 #Plan1 .content .card .text .button:hover {
@@ -1207,7 +1238,31 @@ main .bg {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #23181571;
+  overflow: hidden;
+}
+
+#Plan1 .content .card .Plan_bg::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #23181565;
+  z-index: 2;
+}
+
+#Plan1 .content .card .Plan_bg::after {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 #Video {
@@ -1280,15 +1335,11 @@ main .bg {
   }
 }
 
-#Video .player:hover .play_img {
-  -webkit-animation-name: video-fadeOut;
-          animation-name: video-fadeOut;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+#Video .player:hover .play_img::before {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 @media screen and (max-width: 992px) {
@@ -1302,11 +1353,32 @@ main .bg {
   padding: 300px 0px;
   border-radius: 50px;
   position: relative;
+  overflow: hidden;
+}
+
+#Video .player .play_img::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
   background-image: url("../img/index/video.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  overflow: hidden;
+}
+
+#Video .player .play_img::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #23181571;
 }
 
 #Video .player .play_img .icon {
@@ -1335,16 +1407,6 @@ main .bg {
     font-size: 24px;
     color: #FFFFFF;
   }
-}
-
-#Video .player .play_img .player_hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #23181571;
-  z-index: 2;
 }
 
 #Video .player .play_img img {

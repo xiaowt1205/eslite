@@ -12,7 +12,9 @@
     <!-- font-awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <!-- google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:200,300,400,500,600,700,900&display=swap&subset=chinese-traditional" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:200,300,400,500,600,700,900&display=swap&subset=chinese-traditional"
+        rel="stylesheet">
     <!-- swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <!-- layout -->
@@ -947,7 +949,7 @@
                                     <div class="business_area col-3 d-flex flex-column align-items-center">
                                         <div class="business_block">
                                             <div class="business_text">
-                                                <span id="test0">0</span>
+                                                <span id="total_0">0</span>
                                                 <span>受捐款單位</span>
                                             </div>
                                         </div>
@@ -958,7 +960,7 @@
                                     <div class="business_area col-3 d-flex flex-column align-items-center">
                                         <div class="business_block">
                                             <div class="business_text">
-                                                <span id="test1">0</span>
+                                                <span id="total_1">0</span>
                                                 <span>受捐款單位</span>
                                             </div>
                                         </div>
@@ -969,7 +971,7 @@
                                     <div class="business_area col-3 d-flex flex-column align-items-center">
                                         <div class="business_block">
                                             <div class="business_text">
-                                                <span id="test2">0</span>
+                                                <span id="total_2">0</span>
                                                 <span>受捐款單位</span>
                                             </div>
                                         </div>
@@ -986,7 +988,7 @@
                                     <div class="business_area col-3 d-flex flex-column align-items-center">
                                         <div class="business_block">
                                             <div class="business_text">
-                                                <span id="test0">0</span>
+                                                <span id="year_0">0</span>
                                                 <span>受捐款單位</span>
                                             </div>
                                         </div>
@@ -997,7 +999,7 @@
                                     <div class="business_area col-3 d-flex flex-column align-items-center">
                                         <div class="business_block">
                                             <div class="business_text">
-                                                <span id="test1">0</span>
+                                                <span id="year_1">0</span>
                                                 <span>受捐款單位</span>
                                             </div>
                                         </div>
@@ -1008,7 +1010,7 @@
                                     <div class="business_area col-3 d-flex flex-column align-items-center">
                                         <div class="business_block">
                                             <div class="business_text">
-                                                <span id="test2">0</span>
+                                                <span id="year_2">0</span>
                                                 <span>受捐款單位</span>
                                             </div>
                                         </div>
@@ -1260,6 +1262,11 @@
                             <p class="detail">
                                 因為有您的支持，我們將可以走得更遠
                             </p>
+                            <div class="button">
+                                <span>計畫說明</span>
+                                <div class="arrow_button">
+                                </div>
+                            </div>
                         </div>
                         <div class="Plan_bg"></div>
                     </a>
@@ -1269,6 +1276,11 @@
                             <p class="detail">
                                 因為有您的支持，我們將可以走得更遠
                             </p>
+                            <div class="button">
+                                <span>計畫說明</span>
+                                <div class="arrow_button">
+                                </div>
+                            </div>
                         </div>
                         <div class="Plan_bg"></div>
                     </a>
@@ -1278,6 +1290,11 @@
                             <p class="detail">
                                 因為有您的支持，我們將可以走得更遠
                             </p>
+                            <div class="button">
+                                <span>計畫說明</span>
+                                <div class="arrow_button">
+                                </div>
+                            </div>
                         </div>
                         <div class="Plan_bg"></div>
                     </a>
@@ -1314,8 +1331,7 @@
                                 <i class="fas fa-play"></i>
                             </div>
                         </a>
-                        <div class="player_hover">
-                        </div>
+                        <!-- <div class="player_hover"></div> -->
                         <img src="./img/index/video.jpg" alt="">
                     </div>
 
@@ -1508,9 +1524,12 @@
 
     <script>
         window.onscroll = function () {
-            dynamicNumberCounter(400, "test0", 123);
-            dynamicNumberCounter(400, "test1", 500);
-            dynamicNumberCounter(400, "test2", 230);
+            dynamicNumberCounter(400, "total_0", 123);
+            dynamicNumberCounter(400, "total_1", 500);
+            dynamicNumberCounter(400, "total_2", 230);
+            dynamicNumberCounter(400, "year_0", 123);
+            dynamicNumberCounter(400, "year_1", 500);
+            dynamicNumberCounter(400, "year_2", 230);
             // dynamicNumberCounter(scrollTop Position(Num), element's id(String) , Target Number(Num))
             // ex) dynamicNumberCounter(400, "test", 64);
         }
