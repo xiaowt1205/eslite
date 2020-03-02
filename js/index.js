@@ -16,7 +16,7 @@ var swiper = new Swiper('.vendor_area .swiper-container', {
     },
     navigation: {
         nextEl: '.vendor_area .arrow_button-next',
-        //prevEl: '.picture_area .arrow_button-prev',
+        prevEl: '.vendor_area .arrow_button-prev',
     },
 });
 
