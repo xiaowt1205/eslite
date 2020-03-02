@@ -58,7 +58,7 @@
                         </li>
                     </ul>
                     <ul class="position-absolute d-block d-xl-none modal-menu-toggle">
-                        <li  class="menu-btn" data-toggle="modal" data-target="#mobile-menu">
+                        <li class="menu-btn" data-toggle="modal" data-target="#mobile-menu">
                             <a href="#">
                                 <div class=""></div>
                             </a>
@@ -829,13 +829,18 @@
                             <div class="col-xl-3 col-12 name">
                                 <div>張貼日</div>
                             </div>
-                            <div class="col-xl-9 col-12 form_input d-flex dateInput">
-                                <div class="period">起</div>
-                                <!-- <div class="position-relative"> -->
-                                <input type="text" id="datepicker" placeholder="年 / 月 / 日">
+                            <div class="col-xl-9 col-12 form_input d-flex dateInput flex-wrap">
+                                <div class="w-100 d-flex">
+                                    <div class="period">起</div>
+                                    <input type="text" id="datepicker" placeholder="年 / 月 / 日">
+                                    <div class="clearBTN">清除</div>
+                                </div>
+                                <div class="w-100 d-flex">
+                                    <div class="period">迄</div>
+                                    <input type="text" id="datepicker" placeholder="年 / 月 / 日">
+                                    <div class="clearBTN">清除</div>
+                                </div>
                                 <!-- <i class="far fa-calendar-alt"></i> -->
-                                <!-- </div> -->
-                                <div class="clearBTN">清除</div>
                             </div>
                             <div class="col-xl-3 col-12 name">
                                 <div>主旨</div>

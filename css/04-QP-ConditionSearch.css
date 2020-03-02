@@ -35,6 +35,7 @@
   padding: 0px 0px 0px 20px;
   position: relative;
   line-height: 24px;
+  font-weight: 900;
 }
 
 .Connection_area .Connection_form .name > div::before {
@@ -48,12 +49,12 @@
 }
 
 .Connection_area .Connection_form .form_input {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 992px) {
   .Connection_area .Connection_form .form_input {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .Connection_area .Connection_form .form_input .block {
     margin-bottom: 20px;
@@ -108,6 +109,23 @@
   font-size: 18px;
 }
 
+.Connection_area .Connection_form .dateInput > .w-100:first-child {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 992px) {
+  .Connection_area .Connection_form .dateInput > .w-100:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+.Connection_area .Connection_form .dateInput input {
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid black;
+}
+
 .Connection_area .Connection_form .dateInput .period {
   font-weight: bold;
   margin-right: 25px;
@@ -131,8 +149,14 @@
   font-size: 14px;
   font-weight: bold;
   text-align: center;
-  padding-top: 14px;
   margin-left: 25px;
+  line-height: 49px;
+}
+
+@media (max-width: 992px) {
+  .Connection_area .Connection_form .dateInput .clearBTN {
+    display: none;
+  }
 }
 
 .Connection_area .Connection_form .text {
@@ -198,6 +222,7 @@
   background-repeat: no-repeat;
   background-position-x: 96%;
   background-position-y: center;
+  border: 1px solid #000000;
 }
 
 .Connection_area .Connection_form select option:nth-child(1) {

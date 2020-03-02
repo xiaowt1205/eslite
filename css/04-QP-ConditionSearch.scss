@@ -20,7 +20,6 @@
         }
     }
 
-
     .Connection_form {
         margin-bottom: 150px;
 
@@ -28,9 +27,6 @@
             font-size: $fs-22;
             letter-spacing: 2px;
             padding-bottom: 30px;
-            // justify-content: flex-end;
-            // display: flex;
-            // align-self: flex-start;
 
             &>div {
                 min-width: 150px;
@@ -38,6 +34,7 @@
                 padding: 0px 0px 0px 20px;
                 position: relative;
                 line-height: 24px;
+                font-weight: 900;
 
                 &::before {
                     content: '';
@@ -52,10 +49,10 @@
         }
 
         .form_input {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
 
-            @media screen and (max-width:1200px) {
-                margin-bottom: 40px;
+            @media (max-width:992px) {
+                margin-bottom: 30px;
 
                 .block {
                     margin-bottom: 20px;
@@ -92,22 +89,34 @@
                         margin-bottom: 20px;
                     }
 
-
                     div {
                         padding-left: 10px;
                         font-size: $fs-18;
                     }
                 }
             }
-
         }
 
         .dateInput{
+            &>.w-100{
+                &:first-child{
+                    margin-bottom: 40px;
+
+                    @media(max-width: 992px){
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            input{
+                padding: 10px 20px;
+                border-radius: 5px;
+                width: 100%;
+                border: 1px solid black;
+            }
 
             .period{
-
                 font-weight: bold;
-
                 margin-right: 25px;
             }
 
@@ -121,22 +130,20 @@
             }
 
             .clearBTN{
-
                 width: 100px;
                 height: 100%;
-
                 background-color: $fc-pure-gray;
-
                 border-radius: 5px;
-
                 color: $fc-white;
                 font-size: $fs-14;
                 font-weight: bold;
                 text-align: center;
-
-                padding-top: 14px;
                 margin-left: 25px;
-                
+                line-height: 49px;
+
+                @media (max-width:992px){
+                    display: none;
+                }
             }
         }
 
@@ -153,6 +160,7 @@
 
         .form_btn {
             padding: 15px;
+
             @media screen and (max-width:1400px) {
                 display: flex;
             }
@@ -184,7 +192,6 @@
                     }
                 }
             }
-
         }
 
         select {
@@ -199,6 +206,7 @@
             background-repeat: no-repeat;
             background-position-x: 96%;
             background-position-y: center;
+            border: 1px solid $br-black;
 
 
             & option:nth-child(1) {
@@ -212,10 +220,10 @@
                 padding: 10px 20px;
             }
         }
+        
     }
 }
 
 #ui-datepicker-div{
     left: 62% !important;
-
 }
