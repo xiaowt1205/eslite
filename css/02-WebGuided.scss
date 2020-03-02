@@ -27,6 +27,38 @@
                 padding: 10px 0px;
                 font-size: $fs-14;        
                 letter-spacing: 4px;
+
+                @media (max-width:992px){
+                    &.collapse-deco{
+                        position: relative;
+                        transition: .3s;
+                        transition-timing-function: ease-in-out;
+    
+                        &::after,
+                        &::before {
+                            content: ' ';
+                            position: absolute;
+                            right: -20px;
+                            top: 19px;
+                            width: 12px;
+                            height: 1.5px;
+                            background-color: $fc-black;
+                            opacity: 0.6;
+                        }
+    
+                        &::before {
+                            transform: rotate(0deg);
+                            transition: 0.3s;
+                        }
+    
+                        &.collapsed {
+    
+                            &::before {
+                                transform: rotate(90deg);
+                            }
+                        }
+                    }
+                }
             }
 
             ul{
@@ -35,10 +67,6 @@
                     padding: 5px 0;
                     opacity: 0.8;
                     letter-spacing: 1.5px;
-
-                    &:last-child{
-                        
-                    }
                 }
             }
         }

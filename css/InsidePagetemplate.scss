@@ -42,15 +42,6 @@ header{
     }
 }
 
-
-
-header{
-
-    
- 
-}
-
-
 .imgSize{
     width: 81px;
     min-width: 80px;
@@ -65,7 +56,6 @@ header{
     }
 
 }
-
 
 .insidePageTitle{  
     margin-top:87px;
@@ -83,7 +73,6 @@ header{
         @media (max-width:1200px)and(min-width:992px) {
             writing-mode: unset ;
         }
-
         
         &::after{
             content: '';
@@ -186,7 +175,6 @@ header{
     }
 }
 
-
 .phoneStyle{
     width: 100%;
     background: unset;
@@ -201,7 +189,6 @@ header{
         color: $fc-black;
     }
     
-
     .breadcrumb-item + .breadcrumb-item::before {
         content: ">";
         color: $fc-black;
@@ -226,8 +213,6 @@ header{
     letter-spacing: 4px;
     font-weight: 900;
 }
-
-
 
 .Page-BG{
     position: fixed;
