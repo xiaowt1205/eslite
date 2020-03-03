@@ -266,14 +266,6 @@ header nav ul.modal-menu-toggle {
   }
 }
 
-@media (max-width: 993px) {
-  header nav ul.modal-menu-toggle {
-    -webkit-transform: translateY(-125%);
-            transform: translateY(-125%);
-    right: 45px;
-  }
-}
-
 header nav ul.modal-menu-toggle li {
   border: none;
   padding: 0;

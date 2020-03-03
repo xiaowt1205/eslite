@@ -35,6 +35,21 @@ header #topline {
   }
 }
 
+@media (max-width: 993px) {
+  header ul.modal-menu-toggle {
+    -webkit-transform: translateY(-125%);
+            transform: translateY(-125%);
+    right: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  header ul.modal-menu-toggle {
+    -webkit-transform: translateY(-125%);
+            transform: translateY(-125%);
+  }
+}
+
 header #headline {
   padding-bottom: 40px;
 }

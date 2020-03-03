@@ -31,6 +31,17 @@ header {
         }
     }
 
+    ul.modal-menu-toggle {
+        @media(max-width:993px) {
+            transform: translateY(-125%);
+            right: 45px;
+        }
+
+        @media(max-width:576px) {
+            transform: translateY(-125%);
+        }
+    }
+
     #headline {
         padding-bottom: 40px;
 

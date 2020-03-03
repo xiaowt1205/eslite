@@ -108,11 +108,6 @@ header {
                 right: 0px;
             }
 
-            @media(max-width:993px) {
-                transform: translateY(-125%);
-                right: 45px;
-            }
-
             li {
                 border: none;
                 padding: 0;
@@ -490,7 +485,7 @@ header {
 .mobile-aside {
     background-color: $main-color;
     padding: 20px 15px 30px;
-    
+
     .accordion {
         width: 100%;
 

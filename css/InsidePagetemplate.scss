@@ -66,6 +66,17 @@ header {
         }
     }
 
+    ul.modal-menu-toggle {
+        @media(max-width:993px) {
+            transform: translateY(0%);
+            right: 45px;
+        }
+
+        @media(max-width:576px) {
+            transform: translateY(-100%);
+        }
+    }
+
 }
 
 main {
@@ -94,7 +105,17 @@ main {
 }
 
 .pageContent {
+    padding-top: 140px;
+
+    @media (max-width:1200px) {
+        margin-left: 8%;
+        flex: 0 0 67%;
+        max-width: 67%;
+        padding-top: 0px;
+    }
+
     @media (max-width:576px) {
+        margin-left: 0%;
         flex: 0 0 100%;
         max-width: 100%;
     }

@@ -30,13 +30,13 @@
     <header>
         <div id="topline" class="container">
             <div class="row no-gutters">
-                <div class="col-lg-6 col-xl-4">
+                <div class="col-lg-6 col-xl-3">
                     <div class="logo">
-                        <img class="d-none d-lg-block" src="./img/index/logo-white.png" alt="">
-                        <img class="d-block d-lg-none" src="./img/index/logo-black.svg" alt="">
+                        <!-- <img class="d-none d-lg-block" src="./img/index/logo-white.png" alt=""> -->
+                        <img src="./img/index/logo-black.svg" alt="">
                     </div>
                 </div>
-                <nav class="col-lg-6 col-xl-8">
+                <nav class="col-lg-6 col-xl-9">
                     <ul class="d-none d-xl-flex justify-content-end">
                         <li><a href="">關於我們</a></li>
                         <li><a href="">閱讀分享計畫</a></li>
@@ -55,7 +55,7 @@
                         </li>
                     </ul>
                     <ul class="position-absolute d-block d-xl-none modal-menu-toggle">
-                        <li  class="menu-btn" data-toggle="modal" data-target="#mobile-menu">
+                        <li class="menu-btn" data-toggle="modal" data-target="#mobile-menu">
                             <a href="#">
                                 <div class=""></div>
                             </a>
@@ -749,13 +749,51 @@
 
     <!-- main content -->
     <main class="container">
-        <div class="row">
-            <aside class="col-1 offset-1 d-lg-flex d-lg-2 d-xl-1 d-none justify-content-end align-items-start">
+        <div class="row breadcrumbblock">
+            <aside class="col-3 d-flex justify-content-center block">
                 <img class="imgSize" src="./img/index/logo.svg" alt="">
+                <div class="insidePageTitle">
+                    <nav class="breadcrumbArea" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">關於我們</li>
+                        </ol>
+                        <div class="title">關於我們</div>
+                    </nav>
+                    <div class="btnArea">
+                        <div class="back block">
+                            <a href="">
+                                <div class="size">
+                                    <span>回</span>
+                                    <span>上一頁</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="print block">
+                            <a href="">
+                                <div class="size">
+                                    <span>友善</span>
+                                    <span>列印</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="iconGroup d-xl-flex">
+                        <div class="icon">
+                            <a href="">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </aside>
-
             <!-- 電腦版的title -->
-            <div class="insidePageTitle col-1 col-lg-10 col-xl-1  d-xl-block d-none">
+            <!-- <div class="insidePageTitle col-1 col-lg-10 col-xl-1  d-xl-block d-none">
                 <div class="breadcrumbArea">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
@@ -777,33 +815,31 @@
                     <a href=""><i class="fab fa-facebook-square"></i></a>
                     <a href=""><i class="fab fa-youtube"></i></a>
                 </div>
-            </div>
+            </div> -->
             <!-- 電腦版的title結束 -->
 
             <!-- 手機板的title開始 -->
-            <div class="col-11 d-lg-none " aria-label="breadcrumb">
+            <!-- <div class="col-11 d-lg-none " aria-label="breadcrumb">
                 <ol class="breadcrumb phoneStyle">
                     <li class="breadcrumb-item"><a href="#">首頁</a></li>
                     <li class="breadcrumb-item active" aria-current="page">分頁標題</li>
                 </ol>
                 <h2 class="d-xl-none phoneStyleTitle">分頁標題</h2>
-            </div>
-             <!-- 手機板的title結束 -->
-
+            </div> -->
+            <!-- 手機板的title結束 -->
 
             <!-- page right content -->
-            <section class="offset-lg-0 offset-xl-1 pageContent col-12 col-lg-9 col-xl-7">
-                
+            <section class="pageContent col-7 offset-1">
                 <!-- 平板版的title -->
-                <div class="w-100 d-none d-lg-block d-xl-none " aria-label="breadcrumb">
+                <div class="w-100 d-lg-block d-xl-none " aria-label="breadcrumb">
                     <ol class="breadcrumb phoneStyle">
                         <li class="breadcrumb-item"><a href="#">首頁</a></li>
                         <li class="breadcrumb-item active" aria-current="page">分頁標題</li>
                     </ol>
                     <h2 class="phoneStyleTitle">分頁標題</h2>
                 </div>
-                 <!-- 平板版的title結束 -->
-                                 <!-- 內頁起點 -->
+                <!-- 平板版的title結束 -->
+                <!-- 內頁起點 -->
                 <div class="btnGroup">
                     <a href="">
                         <div class="project d-flex align-items-center">
@@ -839,10 +875,8 @@
                         </div>
                     </a>
                 </div>
-                                <!-- 內頁終點 -->
+                <!-- 內頁終點 -->
             </section>
-
-
         </div>
     </main>
 
