@@ -8,8 +8,10 @@
 }
 
 header {
-    
+    position: relative;
+
     nav {
+        padding: 0;
 
         @media(min-width:1200px) {
             position: absolute;
@@ -19,6 +21,10 @@ header {
         ul {
             height: 30px;
             display: inline-block;
+
+            @media(max-width:576px) {
+                height: 20px;
+            }
 
             li {
                 @extend %letter-spacing;
@@ -98,17 +104,13 @@ header {
         ul.modal-menu-toggle {
             z-index: 3;
 
-            @media(max-width:992px) {
-                top: -60px;
+            @media(max-width:1200px) {
                 right: 0px;
             }
 
-            @media(min-width:992px) {
-                right: 0px;
-            }
-
-            @media(min-width:1024px) {
-                right: 90px;
+            @media(max-width:993px) {
+                transform: translateY(-125%);
+                right: 45px;
             }
 
             li {
@@ -122,8 +124,11 @@ header {
         max-width: 350px;
         min-width: 270px;
 
-        @media (max-width:992px) {
-            margin: 0 auto 30px auto;
+        @media (max-width:993px) {
+            margin: 0 auto;
+        }
+
+        @media (max-width:576px) {
             width: 100%;
             max-width: 200px;
             min-width: unset;
@@ -171,7 +176,6 @@ header {
         li {
             letter-spacing: 2px;
         }
-
 
         .menu-title {
             margin: 0 33px 20px 33px;
@@ -286,6 +290,11 @@ header {
         @media (max-width:992px) {
             right: 30px;
             top: 20px;
+        }
+
+        @media (max-width:576px) {
+            top: unset;
+            bottom: 0px;
         }
     }
 
@@ -408,24 +417,12 @@ header {
 }
 
 .menu-btn {
-
-    // @media(min-width:1720px) {
-    //     top:0;
-    //     right:-75px;
-    // }
-
-    // @media(max-width: 1199px){
-    //     right: 4%;
-    //     top: 50px;
-    // }
-
     a {
         div {
             position: relative;
             top: 5px;
             width: 60px;
             height: 20px;
-            border-top: 2px solid $fc-black;
             transform-origin: center;
             transition: .3s;
             transition-timing-function: ease-in-out;
@@ -434,11 +431,15 @@ header {
                 width: 30px;
             }
 
-            &::after {
+            @media(max-width: 992px) {
+                top: 0;
+            }
+
+            &::before {
                 content: ' ';
                 position: absolute;
                 left: 0;
-                top: 12px;
+                top: 0px;
                 width: 60px;
                 height: 2px;
                 background-color: $fc-black;
@@ -448,7 +449,25 @@ header {
 
                 @media(max-width: 992px) {
                     width: 30px;
-                    top: 8px;
+                    top: 0px;
+                }
+            }
+
+            &::after {
+                content: ' ';
+                position: absolute;
+                left: 0;
+                bottom: 0px;
+                width: 60px;
+                height: 2px;
+                background-color: $fc-black;
+                transform-origin: center;
+                transition: .3s;
+                transition-timing-function: ease-in-out;
+
+                @media(max-width: 992px) {
+                    width: 30px;
+                    bottom: 0px;
                 }
             }
         }
@@ -470,11 +489,10 @@ header {
 
 .mobile-aside {
     background-color: $main-color;
-    padding: 15px 0 10px 0;
-
+    padding: 20px 15px 30px;
+    
     .accordion {
         width: 100%;
-        margin-bottom: 15px;
 
         .aside-btn-group {
 
@@ -484,6 +502,7 @@ header {
                     color: $fc-white;
                     letter-spacing: 2px;
                     position: relative;
+                    padding: 10px 0px;
 
                     &::after {
                         content: '';
@@ -491,7 +510,7 @@ header {
                         width: 180px;
                         height: 1px;
                         background-color: $fc-white;
-                        top: 28px;
+                        bottom: 0px;
                         left: 50%;
                         transform: translateX(-50%);
                     }
@@ -608,10 +627,7 @@ footer {
                     }
                 }
             }
-
         }
-
-
     }
 }
 

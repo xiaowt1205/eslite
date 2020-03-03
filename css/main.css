@@ -144,6 +144,14 @@ header nav ul li {
   font-family: 'Noto Serif TC', serif;
 }
 
+header {
+  position: relative;
+}
+
+header nav {
+  padding: 0;
+}
+
 @media (min-width: 1200px) {
   header nav {
     position: absolute;
@@ -154,6 +162,12 @@ header nav ul li {
 header nav ul {
   height: 30px;
   display: inline-block;
+}
+
+@media (max-width: 576px) {
+  header nav ul {
+    height: 20px;
+  }
 }
 
 header nav ul li {
@@ -246,22 +260,17 @@ header nav ul.modal-menu-toggle {
   z-index: 3;
 }
 
-@media (max-width: 992px) {
-  header nav ul.modal-menu-toggle {
-    top: -60px;
-    right: 0px;
-  }
-}
-
-@media (min-width: 992px) {
+@media (max-width: 1200px) {
   header nav ul.modal-menu-toggle {
     right: 0px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 993px) {
   header nav ul.modal-menu-toggle {
-    right: 90px;
+    -webkit-transform: translateY(-125%);
+            transform: translateY(-125%);
+    right: 45px;
   }
 }
 
@@ -275,9 +284,14 @@ header .logo {
   min-width: 270px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 993px) {
   header .logo {
-    margin: 0 auto 30px auto;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  header .logo {
     width: 100%;
     max-width: 200px;
     min-width: unset;
@@ -451,6 +465,13 @@ header .logo {
   }
 }
 
+@media (max-width: 576px) {
+  .menu .menu-btn {
+    top: unset;
+    bottom: 0px;
+  }
+}
+
 .menu .logo {
   width: 130px;
   margin: auto;
@@ -572,7 +593,6 @@ header .logo {
   top: 5px;
   width: 60px;
   height: 20px;
-  border-top: 2px solid #000000;
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-transition: .3s;
@@ -587,11 +607,40 @@ header .logo {
   }
 }
 
+@media (max-width: 992px) {
+  .menu-btn a div {
+    top: 0;
+  }
+}
+
+.menu-btn a div::before {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 60px;
+  height: 2px;
+  background-color: #000000;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+@media (max-width: 992px) {
+  .menu-btn a div::before {
+    width: 30px;
+    top: 0px;
+  }
+}
+
 .menu-btn a div::after {
   content: ' ';
   position: absolute;
   left: 0;
-  top: 12px;
+  bottom: 0px;
   width: 60px;
   height: 2px;
   background-color: #000000;
@@ -606,7 +655,7 @@ header .logo {
 @media (max-width: 992px) {
   .menu-btn a div::after {
     width: 30px;
-    top: 8px;
+    bottom: 0px;
   }
 }
 
@@ -625,18 +674,18 @@ header .logo {
 
 .mobile-aside {
   background-color: #665252;
-  padding: 15px 0 10px 0;
+  padding: 20px 15px 30px;
 }
 
 .mobile-aside .accordion {
   width: 100%;
-  margin-bottom: 15px;
 }
 
 .mobile-aside .accordion .aside-btn-group .aside-btn-title div {
   color: #FFFFFF;
   letter-spacing: 2px;
   position: relative;
+  padding: 10px 0px;
 }
 
 .mobile-aside .accordion .aside-btn-group .aside-btn-title div::after {
@@ -645,7 +694,7 @@ header .logo {
   width: 180px;
   height: 1px;
   background-color: #FFFFFF;
-  top: 28px;
+  bottom: 0px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);

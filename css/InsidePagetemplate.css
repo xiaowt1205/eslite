@@ -138,10 +138,9 @@ a:active {
 
 header {
   height: unset;
-  padding: 40px 0px 60px 0;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   header {
     padding: 0;
     height: 70px;
@@ -156,96 +155,150 @@ header {
   }
 }
 
+header #topline {
+  position: relative;
+  padding: 60px 0px 60px 0;
+}
+
+@media (max-width: 576px) {
+  header #topline {
+    padding: 35px 0px;
+  }
+}
+
 @media (max-width: 992px) {
-  header .container {
+  header #topline.container {
     max-width: 720px !important;
   }
 }
 
 @media (max-width: 768px) {
-  header .container {
+  header #topline.container {
     max-width: 540px !important;
   }
 }
 
+header #topline.container .logo {
+  max-width: 0px;
+  min-width: 0px;
+}
+
 @media (max-width: 992px) {
-  header .container .logo {
+  header #topline.container .logo {
     margin: 0 auto;
   }
 }
 
-header .container .logo img {
-  width: 100%;
+@media (max-width: 576px) {
+  header #topline.container .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-header .container nav ul.modal-menu-toggle {
-  top: -30px;
+header #topline.container .logo img {
+  display: none;
+  width: 0px;
+}
+
+@media (max-width: 576px) {
+  header #topline.container .logo img {
+    display: block;
+    width: 130px;
+  }
+}
+
+main {
+  padding-top: 65px;
+  margin-top: -150px;
+  padding-bottom: 115px;
+}
+
+@media screen and (max-width: 576px) {
+  main {
+    margin-top: unset;
+    padding: 20px 15px 115px;
+  }
 }
 
 .imgSize {
   width: 81px;
   min-width: 80px;
-  margin-bottom: 100px;
+  margin: 0px 35px;
 }
 
-.pageContent {
-  padding-top: 120px;
-}
-
-@media (max-width: 1200px) {
-  .pageContent {
-    padding-top: 0;
+@media screen and (max-width: 1200px) {
+  .imgSize {
+    margin: 0px 15px;
   }
 }
 
-.insidePageTitle {
-  margin-top: 87px;
-}
-
-@media (max-width: 1200px) and (min-width: 992px) {
-  .insidePageTitle {
-    margin-top: unset;
-  }
-}
-
-.insidePageTitle .breadcrumbArea {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-  font-weight: bold;
-  margin: 0 auto;
-  position: relative;
-}
-
-@media (max-width: 1200px) and (min-width: 992px) {
-  .insidePageTitle .breadcrumbArea {
-    -webkit-writing-mode: unset;
-        -ms-writing-mode: unset;
-            writing-mode: unset;
-  }
-}
-
-.insidePageTitle .breadcrumbArea::after {
-  content: '';
-  height: 300%;
-  border-left: 1px solid black;
-  position: absolute;
-  top: -200%;
-  left: 37px;
-}
-
-@media (max-width: 1200px) and (min-width: 992px) {
-  .insidePageTitle .breadcrumbArea::after {
+@media screen and (max-width: 576px) {
+  .imgSize {
     display: none;
   }
 }
 
-.insidePageTitle .breadcrumbArea nav {
-  padding: 0;
+@media (max-width: 576px) {
+  .pageContent {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
-.insidePageTitle .breadcrumbArea nav .breadcrumb {
+.breadcrumbblock {
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .breadcrumbblock .block {
+    position: unset;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .breadcrumbblock .block {
+    display: none;
+  }
+}
+
+.breadcrumbblock .insidePageTitle {
+  padding-top: 75px;
+}
+
+@media screen and (max-width: 768px) {
+  .breadcrumbblock .insidePageTitle {
+    display: none;
+  }
+}
+
+.breadcrumbblock .insidePageTitle .breadcrumbArea {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  font-weight: bold;
+  margin: 0 auto 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.breadcrumbblock .insidePageTitle .breadcrumbArea .breadcrumb {
   background: unset;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   color: #000000;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
@@ -253,27 +306,32 @@ header .container nav ul.modal-menu-toggle {
   font-size: 18px;
   letter-spacing: 2.5px;
   margin: 0;
-  padding: 0;
+  padding: 0px 20px;
 }
 
-@media (max-width: 1200px) and (min-width: 992px) {
-  .insidePageTitle .breadcrumbArea nav .breadcrumb {
-    -webkit-writing-mode: unset;
-        -ms-writing-mode: unset;
-            writing-mode: unset;
-  }
+.breadcrumbblock .insidePageTitle .breadcrumbArea .breadcrumb .breadcrumb-item:nth-last-child(1) {
+  position: relative;
 }
 
-.insidePageTitle .breadcrumbArea nav .breadcrumb a {
+.breadcrumbblock .insidePageTitle .breadcrumbArea .breadcrumb .breadcrumb-item:nth-last-child(1)::after {
+  content: '';
+  height: 300%;
+  border-left: 1px solid black;
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+}
+
+.breadcrumbblock .insidePageTitle .breadcrumbArea .breadcrumb a {
   text-decoration: unset;
   color: #000000;
 }
 
-.insidePageTitle .breadcrumbArea nav .breadcrumb-item.active {
+.breadcrumbblock .insidePageTitle .breadcrumbArea .breadcrumb .breadcrumb-item.active {
   color: #000000;
 }
 
-.insidePageTitle .breadcrumbArea nav .breadcrumb-item + .breadcrumb-item::before {
+.breadcrumbblock .insidePageTitle .breadcrumbArea .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
   content: ">";
   padding-right: 0;
   -webkit-writing-mode: horizontal-tb;
@@ -281,46 +339,61 @@ header .container nav ul.modal-menu-toggle {
           writing-mode: horizontal-tb;
 }
 
-.insidePageTitle .breadcrumbArea nav .breadcrumb-item + .breadcrumb-item {
+.breadcrumbblock .insidePageTitle .breadcrumbArea .breadcrumb .breadcrumb-item + .breadcrumb-item {
   padding-left: 0;
 }
 
-.insidePageTitle .breadcrumbArea .title {
+.breadcrumbblock .insidePageTitle .breadcrumbArea .title {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   font-size: 32px;
   letter-spacing: 10px;
-  position: relative;
-  right: -15px;
+  padding: 0px 15px;
 }
 
-.insidePageTitle .btnArea {
+.breadcrumbblock .btnArea {
   font-weight: bold;
   margin-top: 25px;
 }
 
-.insidePageTitle .btnArea a {
+.breadcrumbblock .btnArea .block {
+  width: 94px;
+  height: 94px;
+  margin: 0 auto 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.breadcrumbblock .btnArea .size {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.breadcrumbblock .btnArea a {
   color: #000000;
 }
 
-.insidePageTitle .btnArea a:hover {
+.breadcrumbblock .btnArea a:hover {
   color: #FFFFFF;
 }
 
-.insidePageTitle .btnArea a .back, .insidePageTitle .btnArea a .print {
-  width: 90px;
-  height: 90px;
-  border: 1px solid black;
-  border-radius: 50%;
-  text-align: center;
-  padding: 20px 20px;
-  margin: 5px auto;
-}
-
-.insidePageTitle .btnArea a .back:hover, .insidePageTitle .btnArea a .print:hover {
-  background-color: #000000;
-}
-
-.insidePageTitle .iconGroup {
-  margin-top: 25px;
+.breadcrumbblock .iconGroup {
+  padding: 20px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,12 +402,28 @@ header .container nav ul.modal-menu-toggle {
           justify-content: center;
 }
 
-.insidePageTitle .iconGroup a {
+.breadcrumbblock .iconGroup .icon {
+  padding: 0px 5px;
+}
+
+.breadcrumbblock .iconGroup a {
   color: #000000;
 }
 
-.insidePageTitle .iconGroup a i {
-  margin: 0 5px;
+.breadcrumbblock .iconGroup a i {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.pageContent .flat {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .pageContent .flat {
+    display: block;
+  }
 }
 
 .phoneStyle {
