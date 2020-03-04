@@ -7,129 +7,6 @@
     font-family: 'Noto Serif TC', serif;
 }
 
-header {
-    position: relative;
-
-    nav {
-        padding: 0;
-
-        @media(min-width:1200px) {
-            position: absolute;
-            right: 60px;
-        }
-
-        ul {
-            height: 30px;
-            display: inline-block;
-
-            @media(max-width:576px) {
-                height: 20px;
-            }
-
-            li {
-                @extend %letter-spacing;
-                text-align: center;
-                display: inline-block;
-                padding: 2px 10px;
-
-                &:nth-child(-n+5) {
-                    padding: 2px 1.3rem;
-
-                    @media(min-width:1200px) {
-                        padding: 2px 17px;
-                    }
-
-                    @media(min-width:1600px) {
-                        padding: 2px 35px;
-                    }
-                }
-
-                &:nth-child(-n+4) {
-                    @include border-two-side(1px, 0, $fc-gray, solid)
-                }
-
-                &:nth-child(5) {
-                    @include border-two-side(1px, 1px, $fc-gray, solid)
-                }
-
-                a {
-                    color: $fc-black;
-                    font-size: $fs-16;
-                    font-weight: $fw-bold;
-                    transition: .3s;
-                    transition-timing-function: ease;
-
-                    @media(min-width:1200px) {
-                        font-size: $fs-14;
-                    }
-
-                    @media(min-width:1600px) {
-                        font-size: $fs-16;
-                    }
-
-                    &:hover {
-                        color: $fc-hover;
-                        text-decoration: none;
-                    }
-
-                    .cicle {
-                        margin-top: 2px;
-                        position: relative;
-                        width: 20px;
-                        height: 20px;
-                        border: 1.4px black solid;
-                        border-radius: 25px;
-
-                        &:hover {
-                            border: 1.4px $fc-hover solid;
-                        }
-
-                        .fa-info {
-                            position: absolute;
-                            left: 50%;
-                            top: 50%;
-                            transform: translate(-40%, -50%);
-                        }
-                    }
-                }
-
-                &.nav-icon {
-                    @media (max-width:1400px) {
-                        display: none;
-                    }
-                }
-            }
-        }
-
-        ul.modal-menu-toggle {
-            z-index: 3;
-
-            @media(max-width:1200px) {
-                right: 0px;
-            }
-
-            li {
-                border: none;
-                padding: 0;
-            }
-        }
-    }
-
-    .logo {
-        max-width: 350px;
-        min-width: 270px;
-
-        @media (max-width:993px) {
-            margin: 0 auto;
-        }
-
-        @media (max-width:576px) {
-            width: 100%;
-            max-width: 200px;
-            min-width: unset;
-        }
-    }
-}
 
 .menu {
     display: none;
@@ -146,6 +23,11 @@ header {
         animation-name: menu-fadeIn;
         animation-duration: 0.5s;
         animation-timing-function: ease-in-out;
+        overflow-y: overlay;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     &.fadeout {
@@ -164,7 +46,7 @@ header {
 
         @media (max-width:992px) {
             max-width: 320px;
-            padding: 20px 50px;
+            padding: 20px;
         }
 
         ul,
@@ -266,14 +148,13 @@ header {
                         }
                     }
                 }
-
             }
 
-            &:last-child {
-                position: absolute;
-                right: 100px;
-                top: 330px;
-            }
+            // &:last-child {
+            //     position: absolute;
+            //     right: 100px;
+            //     top: 330px;
+            // }
         }
 
     }
@@ -294,14 +175,17 @@ header {
     }
 
     .logo {
+        position: relative;
         width: 130px;
+        padding-bottom: 20px;
         margin: auto;
         text-align: center;
+        margin-bottom: 20px;
 
         &::after {
             content: '';
             position: absolute;
-            top: 55px;
+            bottom: 0px;
             left: 50%;
             transform: translateX(-50%);
             width: 230px;
@@ -415,7 +299,7 @@ header {
     a {
         div {
             position: relative;
-            top: 5px;
+            // top: 5px;
             width: 60px;
             height: 20px;
             transform-origin: center;
@@ -427,7 +311,7 @@ header {
             }
 
             @media(max-width: 992px) {
-                top: 0;
+                // top: 0;
             }
 
             &::before {
@@ -469,6 +353,7 @@ header {
     }
 
     &.active {
+
         div {
             transform: rotate(45deg);
             border-top: 2px solid $fc-white;
