@@ -2,10 +2,7 @@
 @import "./_function.scss";
 
 .Guide_area {
-    @media screen and (min-width:1740px) {
-        flex: 0 0 58.333333%;
-        max-width: 58.333333%;
-    }
+    padding: 0px 15px;
 
     p {
         font-weight: 900;
@@ -25,25 +22,26 @@
                 margin-bottom: 10px;
             }
 
-            .collapse-block{
+            .collapse-block {
                 margin-bottom: 30px;
-                @media (max-width:992px){
+
+                @media (max-width:992px) {
                     margin-bottom: 20px;
                 }
             }
 
             .sub-title {
                 padding: 10px 0px;
-                font-size: $fs-14;        
+                font-size: $fs-14;
                 letter-spacing: 4px;
 
-                @media (max-width:992px){
+                @media (max-width:992px) {
 
-                    &.collapse-deco{
+                    &.collapse-deco {
                         position: relative;
                         transition: .3s;
                         transition-timing-function: ease-in-out;
-    
+
                         &::after,
                         &::before {
                             content: ' ';
@@ -55,14 +53,14 @@
                             background-color: $fc-black;
                             opacity: 0.6;
                         }
-    
+
                         &::before {
                             transform: rotate(0deg);
                             transition: 0.3s;
                         }
-    
+
                         &.collapsed {
-    
+
                             &::before {
                                 transform: rotate(90deg);
                             }
@@ -71,7 +69,7 @@
                 }
             }
 
-            ul{ 
+            ul {
                 padding-top: 10px;
 
                 li {

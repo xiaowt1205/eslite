@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
+.Connection_area {
+  padding: 0px 15px;
+}
+
 .Connection_area .text_block {
   padding-bottom: 30px;
   margin-bottom: 30px;

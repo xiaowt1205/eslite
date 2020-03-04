@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
-@media screen and (min-width: 1740px) {
-  .Guide_area {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 58.333333%;
-            flex: 0 0 58.333333%;
-    max-width: 58.333333%;
-  }
+.Guide_area {
+  padding: 0px 15px;
 }
 
 .Guide_area p {

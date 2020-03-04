@@ -30,14 +30,14 @@
     <header>
         <div id="topline" class="container">
             <div class="row no-gutters">
-                <div class="col-lg-6 col-xl-4">
+                <div class="col-lg-6 col-xl-3">
                     <div class="logo">
-                        <img class="d-none d-lg-block" src="./img/index/logo-white.png" alt="">
-                        <img class="d-block d-lg-none" src="./img/index/logo-black.svg" alt="">
+                        <!-- <img class="d-none d-lg-block" src="./img/index/logo-white.png" alt=""> -->
+                        <img src="./img/index/logo-black.svg" alt="">
                     </div>
                 </div>
                 <nav class="col-lg-6 col-xl-8">
-                    <ul class="d-none d-xl-flex justify-content-end">
+                    <ul class="d-flex justify-content-end">
                         <li><a href="">關於我們</a></li>
                         <li><a href="">閱讀分享計畫</a></li>
                         <li><a href="">青年培育計畫</a></li>
@@ -48,20 +48,23 @@
                                 <div class="cicle"><i class="fas fa-info"></i></div>
                             </a></li>
                         <li class="nav-icon"><a href=""><i class="fas fa-search"></i></a></li>
-                        <li class="menu-btn menu-btn-pc ">
+                        <!-- <li class="menu-btn" data-toggle="modal" data-target="#mobile-menu">
                             <a href="#">
                                 <div class=""></div>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
-                    <ul class="position-absolute d-block d-xl-none modal-menu-toggle">
-                        <li  class="menu-btn" data-toggle="modal" data-target="#mobile-menu">
-                            <a href="#">
-                                <div class=""></div>
-                            </a>
-                        </li>
-                    </ul>
+                    <!-- position-absolute -->
                 </nav>
+                <div class="col-xl-1 d-flex menu-icon">
+                    <ul class="modal-menu-toggle">
+                        <li class="menu-btn menu-btn-pc">
+                            <a href="#">
+                                <div class=""></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -69,7 +72,7 @@
     <!-- menu -->
     <div class="menu">
         <div class="menu-container position-relative">
-            <div class="menu-btn menu-btn-pc position-absolute d-lg-block d-none">
+            <div class="menu-btn menu-btn-pc position-absolute">
                 <a href="#">
                     <div></div>
                 </a>
@@ -412,350 +415,388 @@
         </div>
     </div>
 
-        <!-- mobile menu -->
-        <div class="modal fade" id="mobile-menu" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-top">
-                        <div class="logo">
-                            <img class="w-100" src="./img/index/logo-white-no_deco.png" alt="">
-                        </div>
-                        <button class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <!-- <div class="menu-btn menu-btn-pc">
-                            <a href="#">
-                                <div></div>
-                            </a>
-                        </div> -->
+    <!-- mobile menu -->
+    <div class="modal fade" id="mobile-menu" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-top">
+                    <div class="logo">
+                        <img class="w-100" src="./img/index/logo-white-no_deco.png" alt="">
                     </div>
-                    <div class="modal-collapse-group">
-                        <div class="accordion" id="about-us">
-                            <div id="about-us-heading" class="menu-title">
-                                <a class="collapsed collapse-deco" data-toggle="collapse" data-target="#about-us-collapse"
-                                    aria-expanded="true" aria-controls="about-us-collapse">
-                                    關於我們
-                                </a>
-                            </div>
-    
-                            <div id="about-us-collapse" class="collapse" aria-labelledby="about-us-heading"
-                                data-parent="#about-us">
-                                <a href="">
-                                    <div class="menu-sub-title pl-2">簡介、架構、勸募徵信</div>
-                                </a>
-                                <a href="">
-                                    <div class="menu-sub-title pl-2">年度勸募徵信PDF檔案</div>
-                                </a>
-                                <a href="">
-                                    <div class="menu-sub-title pl-2">聯絡我們表單</div>
-                                </a>
-                            </div>
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- <div class="menu-btn menu-btn-pc">
+                        <a href="#">
+                            <div></div>
+                        </a>
+                    </div> -->
+                </div>
+                <div class="modal-collapse-group">
+                    <div class="accordion" id="about-us">
+                        <div id="about-us-heading" class="menu-title">
+                            <a class="collapsed collapse-deco" data-toggle="collapse" data-target="#about-us-collapse"
+                                aria-expanded="true" aria-controls="about-us-collapse">
+                                關於我們
+                            </a>
                         </div>
-                        <div class="accordion" id="study-plan">
-                            <div>
-                                <div id="study-plan-heading" class="menu-title">
-                                    <a class="collapsed collapse-deco" data-toggle="collapse"
-                                        data-target="#study-plan-collapse" aria-expanded="true"
-                                        aria-controls="study-plan-collapse">
-                                        閱讀分享計畫
-                                    </a>
-                                </div>
-    
-                                <div id="study-plan-collapse" class="collapse" aria-labelledby="study-plan-heading"
-                                    data-parent="#study-plan">
-                                    <div class="accordion" id="study-plan-1">
-                                        <div id="study-plan-1-heading" class="menu-sub-title pl-2">
-                                            <a class="collapsed collapse-deco" data-toggle="collapse"
-                                                data-target="#study-plan-1-collapse" aria-expanded="true"
-                                                aria-controls="study-plan-1-collapse">
-                                                閱讀分享計畫
-                                            </a>
-                                        </div>
-                                        <div id="study-plan-1-collapse" class="collapse"
-                                            aria-labelledby="study-plan-1-heading" data-parent="#study-plan-1">
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">計畫介紹</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">計畫響應</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">沿線閱讀</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="accordion" id="study-plan-2">
-                                        <div id="study-plan-2-heading" class="menu-sub-title pl-2">
-                                            <a class="collapsed collapse-deco" data-toggle="collapse"
-                                                data-target="#study-plan-2-collapse" aria-expanded="true"
-                                                aria-controls="study-plan-2-collapse">
-                                                個人/團體捐書
-                                            </a>
-                                        </div>
-                                        <div id="study-plan-2-collapse" class="collapse"
-                                            aria-labelledby="study-plan-2-heading" data-parent="#study-plan-2">
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">個人捐書</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">團體捐書</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="accordion" id="study-plan-3">
-                                        <div id="study-plan-3-heading" class="menu-sub-title pl-2">
-                                            <a class="collapsed collapse-deco" data-toggle="collapse"
-                                                data-target="#study-plan-3-collapse" aria-expanded="true"
-                                                aria-controls="study-plan-3-collapse">
-                                                書籍申請
-                                            </a>
-                                        </div>
-                                        <div id="study-plan-3-collapse" class="collapse"
-                                            aria-labelledby="study-plan-3-heading" data-parent="#study-plan-3">
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">書籍申請-A</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">書籍申請-B</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">書籍申請-C</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="accordion" id="study-plan-4">
-                                        <div id="study-plan-4-heading" class="menu-sub-title pl-2">
-                                            <a class="collapsed collapse-deco" data-toggle="collapse"
-                                                data-target="#study-plan-4-collapse" aria-expanded="true"
-                                                aria-controls="study-plan-4-collapse">
-                                                閱讀分享志工
-                                            </a>
-                                        </div>
-                                        <div id="study-plan-4-collapse" class="collapse"
-                                            aria-labelledby="study-plan-4-heading" data-parent="#study-plan-4">
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">志工甲</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">志工乙</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">志工丙</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="accordion" id="study-plan-5">
-                                        <div id="study-plan-5-heading" class="menu-sub-title pl-2">
-                                            <a class="collapsed collapse-deco" data-toggle="collapse"
-                                                data-target="#study-plan-5-collapse" aria-expanded="true"
-                                                aria-controls="study-plan-5-collapse">
-                                                沿線閱讀
-                                            </a>
-                                        </div>
-                                        <div id="study-plan-5-collapse" class="collapse"
-                                            aria-labelledby="study-plan-5-heading" data-parent="#study-plan-5">
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">沿線閱讀Z</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">沿線閱讀X</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">沿線閱讀C</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="accordion" id="study-plan-6">
-                                        <div id="study-plan-6-heading" class="menu-sub-title pl-2">
-                                            <a class="collapsed collapse-deco" data-toggle="collapse"
-                                                data-target="#study-plan-6-collapse" aria-expanded="true"
-                                                aria-controls="study-plan-6-collapse">
-                                                合作據點介紹
-                                            </a>
-                                        </div>
-                                        <div id="study-plan-6-collapse" class="collapse"
-                                            aria-labelledby="study-plan-6-heading" data-parent="#study-plan-6">
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">合作據點介紹-中部</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">合作據點介紹-南部</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">合作據點介紹-北部</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">合作據點介紹-東部</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
+                        <div id="about-us-collapse" class="collapse" aria-labelledby="about-us-heading"
+                            data-parent="#about-us">
+                            <a href="">
+                                <div class="menu-sub-title pl-2">簡介、架構、勸募徵信</div>
+                            </a>
+                            <a href="">
+                                <div class="menu-sub-title pl-2">年度勸募徵信PDF檔案</div>
+                            </a>
+                            <a href="">
+                                <div class="menu-sub-title pl-2">聯絡我們表單</div>
+                            </a>
                         </div>
-                        <div class="accordion" id="youth-plan">
-                            <div>
-                                <div id="youth-plan-heading" class="menu-title">
-                                    <a class="collapsed collapse-deco" data-toggle="collapse"
-                                        data-target="#youth-plan-collapse" aria-expanded="true"
-                                        aria-controls="youth-plan-collapse">
-                                        青年培育計畫
-                                    </a>
-                                </div>
-    
-                                <div id="youth-plan-collapse" class="collapse" aria-labelledby="youth-plan-heading"
-                                    data-parent="#youth-plan">
-                                    <div class="accordion" id="youth-plan-1">
-                                        <div id="youth-plan-1-heading" class="menu-sub-title pl-2">
-                                            <a class="collapsed collapse-deco" data-toggle="collapse"
-                                                data-target="#youth-plan-1-collapse" aria-expanded="true"
-                                                aria-controls="youth-plan-1-collapse">
-                                                青年培育計畫
-                                            </a>
-                                        </div>
-                                        <div id="youth-plan-1-collapse" class="collapse"
-                                            aria-labelledby="youth-plan-1-heading" data-parent="#youth-plan-1">
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">計畫AAA</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">計畫BBB</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">計畫CCC</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="accordion" id="youth-plan-2">
-                                        <div id="youth-plan-2-heading" class="menu-sub-title pl-2">
-                                            <a class="collapsed collapse-deco" data-toggle="collapse"
-                                                data-target="#youth-plan-2-collapse" aria-expanded="true"
-                                                aria-controls="youth-plan-2-collapse">
-                                                璞玉計畫
-                                            </a>
-                                        </div>
-                                        <div id="youth-plan-2-collapse" class="collapse"
-                                            aria-labelledby="youth-plan-2-heading" data-parent="#youth-plan-2">
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">璞玉計畫-方案1</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">璞玉計畫-方案ㄉ</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="accordion" id="youth-plan-3">
-                                        <div id="youth-plan-3-heading" class="menu-sub-title pl-2">
-                                            <a class="collapsed collapse-deco" data-toggle="collapse"
-                                                data-target="#youth-plan-3-collapse" aria-expanded="true"
-                                                aria-controls="youth-plan-3-collapse">
-                                                申請成為學員
-                                            </a>
-                                        </div>
-                                        <div id="youth-plan-3-collapse" class="collapse"
-                                            aria-labelledby="youth-plan-3-heading" data-parent="#youth-plan-3">
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">如何申請</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">馬上申請</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">申請須知</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="accordion" id="youth-plan-4">
-                                        <div id="youth-plan-4-heading" class="menu-sub-title pl-2">
-                                            <a class="collapsed collapse-deco" data-toggle="collapse"
-                                                data-target="#youth-plan-4-collapse" aria-expanded="true"
-                                                aria-controls="youth-plan-4-collapse">
-                                                申請成為隊輔
-                                            </a>
-                                        </div>
-                                        <div id="youth-plan-4-collapse" class="collapse"
-                                            aria-labelledby="youth-plan-4-heading" data-parent="#youth-plan-4">
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">如何申請</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">馬上申請</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">申請須知</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="accordion" id="youth-plan-5">
-                                        <div id="youth-plan-5-heading" class="menu-sub-title pl-2">
-                                            <a class="collapsed collapse-deco" data-toggle="collapse"
-                                                data-target="#youth-plan-5-collapse" aria-expanded="true"
-                                                aria-controls="youth-plan-5-collapse">
-                                                志工隊
-                                            </a>
-                                        </div>
-                                        <div id="youth-plan-5-collapse" class="collapse"
-                                            aria-labelledby="youth-plan-5-heading" data-parent="#youth-plan-5">
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">志工隊A隊</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">志工隊B隊</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">志工隊C隊</div>
-                                            </a>
-                                            <a href="">
-                                                <div class="menu-sub-title pl-4">志工隊D隊</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion" id="foundation-message">
-                            <div id="foundation-message-heading" class="menu-title">
+                    </div>
+                    <div class="accordion" id="study-plan">
+                        <div>
+                            <div id="study-plan-heading" class="menu-title">
                                 <a class="collapsed collapse-deco" data-toggle="collapse"
-                                    data-target="#foundation-message-collapse" aria-expanded="true"
-                                    aria-controls="foundation-message-collapse">
-                                    基金會訊息
+                                    data-target="#study-plan-collapse" aria-expanded="true"
+                                    aria-controls="study-plan-collapse">
+                                    閱讀分享計畫
                                 </a>
                             </div>
-    
-                            <div id="foundation-message-collapse" class="collapse"
-                                aria-labelledby="foundation-message-heading" data-parent="#foundation-message">
-                                <a href="">
-                                    <div class="menu-sub-title pl-2">訊息列表</div>
-                                </a>
+
+                            <div id="study-plan-collapse" class="collapse" aria-labelledby="study-plan-heading"
+                                data-parent="#study-plan">
+                                <div class="accordion" id="study-plan-1">
+                                    <div id="study-plan-1-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" data-toggle="collapse"
+                                            data-target="#study-plan-1-collapse" aria-expanded="true"
+                                            aria-controls="study-plan-1-collapse">
+                                            閱讀分享計畫
+                                        </a>
+                                    </div>
+                                    <div id="study-plan-1-collapse" class="collapse"
+                                        aria-labelledby="study-plan-1-heading" data-parent="#study-plan-1">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">計畫介紹</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">計畫響應</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">沿線閱讀</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="study-plan-2">
+                                    <div id="study-plan-2-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" data-toggle="collapse"
+                                            data-target="#study-plan-2-collapse" aria-expanded="true"
+                                            aria-controls="study-plan-2-collapse">
+                                            個人/團體捐書
+                                        </a>
+                                    </div>
+                                    <div id="study-plan-2-collapse" class="collapse"
+                                        aria-labelledby="study-plan-2-heading" data-parent="#study-plan-2">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">個人捐書</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">團體捐書</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="study-plan-3">
+                                    <div id="study-plan-3-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" data-toggle="collapse"
+                                            data-target="#study-plan-3-collapse" aria-expanded="true"
+                                            aria-controls="study-plan-3-collapse">
+                                            書籍申請
+                                        </a>
+                                    </div>
+                                    <div id="study-plan-3-collapse" class="collapse"
+                                        aria-labelledby="study-plan-3-heading" data-parent="#study-plan-3">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">書籍申請-A</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">書籍申請-B</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">書籍申請-C</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="study-plan-4">
+                                    <div id="study-plan-4-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" data-toggle="collapse"
+                                            data-target="#study-plan-4-collapse" aria-expanded="true"
+                                            aria-controls="study-plan-4-collapse">
+                                            閱讀分享志工
+                                        </a>
+                                    </div>
+                                    <div id="study-plan-4-collapse" class="collapse"
+                                        aria-labelledby="study-plan-4-heading" data-parent="#study-plan-4">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">志工甲</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">志工乙</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">志工丙</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="study-plan-5">
+                                    <div id="study-plan-5-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" data-toggle="collapse"
+                                            data-target="#study-plan-5-collapse" aria-expanded="true"
+                                            aria-controls="study-plan-5-collapse">
+                                            沿線閱讀
+                                        </a>
+                                    </div>
+                                    <div id="study-plan-5-collapse" class="collapse"
+                                        aria-labelledby="study-plan-5-heading" data-parent="#study-plan-5">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">沿線閱讀Z</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">沿線閱讀X</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">沿線閱讀C</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="study-plan-6">
+                                    <div id="study-plan-6-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" data-toggle="collapse"
+                                            data-target="#study-plan-6-collapse" aria-expanded="true"
+                                            aria-controls="study-plan-6-collapse">
+                                            合作據點介紹
+                                        </a>
+                                    </div>
+                                    <div id="study-plan-6-collapse" class="collapse"
+                                        aria-labelledby="study-plan-6-heading" data-parent="#study-plan-6">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">合作據點介紹-中部</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">合作據點介紹-南部</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">合作據點介紹-北部</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">合作據點介紹-東部</div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="accordion" id="FAQ">
-                            <div id="FAQ-heading" class="menu-title">
-                                <a class="collapsed collapse-deco" data-toggle="collapse" data-target="#FAQ-collapse"
-                                    aria-expanded="true" aria-controls="FAQ-collapse">
-                                    FAQ
+                    </div>
+                    <div class="accordion" id="youth-plan">
+                        <div>
+                            <div id="youth-plan-heading" class="menu-title">
+                                <a class="collapsed collapse-deco" data-toggle="collapse"
+                                    data-target="#youth-plan-collapse" aria-expanded="true"
+                                    aria-controls="youth-plan-collapse">
+                                    青年培育計畫
                                 </a>
                             </div>
-    
-                            <div id="FAQ-collapse" class="collapse" aria-labelledby="FAQ-heading" data-parent="#FAQ">
-                                <a href="">
-                                    <div class="menu-sub-title pl-2">問題列表</div>
-                                </a>
+
+                            <div id="youth-plan-collapse" class="collapse" aria-labelledby="youth-plan-heading"
+                                data-parent="#youth-plan">
+                                <div class="accordion" id="youth-plan-1">
+                                    <div id="youth-plan-1-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" data-toggle="collapse"
+                                            data-target="#youth-plan-1-collapse" aria-expanded="true"
+                                            aria-controls="youth-plan-1-collapse">
+                                            青年培育計畫
+                                        </a>
+                                    </div>
+                                    <div id="youth-plan-1-collapse" class="collapse"
+                                        aria-labelledby="youth-plan-1-heading" data-parent="#youth-plan-1">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">計畫AAA</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">計畫BBB</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">計畫CCC</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="youth-plan-2">
+                                    <div id="youth-plan-2-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" data-toggle="collapse"
+                                            data-target="#youth-plan-2-collapse" aria-expanded="true"
+                                            aria-controls="youth-plan-2-collapse">
+                                            璞玉計畫
+                                        </a>
+                                    </div>
+                                    <div id="youth-plan-2-collapse" class="collapse"
+                                        aria-labelledby="youth-plan-2-heading" data-parent="#youth-plan-2">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">璞玉計畫-方案1</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">璞玉計畫-方案ㄉ</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="youth-plan-3">
+                                    <div id="youth-plan-3-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" data-toggle="collapse"
+                                            data-target="#youth-plan-3-collapse" aria-expanded="true"
+                                            aria-controls="youth-plan-3-collapse">
+                                            申請成為學員
+                                        </a>
+                                    </div>
+                                    <div id="youth-plan-3-collapse" class="collapse"
+                                        aria-labelledby="youth-plan-3-heading" data-parent="#youth-plan-3">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">如何申請</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">馬上申請</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">申請須知</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="youth-plan-4">
+                                    <div id="youth-plan-4-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" data-toggle="collapse"
+                                            data-target="#youth-plan-4-collapse" aria-expanded="true"
+                                            aria-controls="youth-plan-4-collapse">
+                                            申請成為隊輔
+                                        </a>
+                                    </div>
+                                    <div id="youth-plan-4-collapse" class="collapse"
+                                        aria-labelledby="youth-plan-4-heading" data-parent="#youth-plan-4">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">如何申請</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">馬上申請</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">申請須知</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="youth-plan-5">
+                                    <div id="youth-plan-5-heading" class="menu-sub-title pl-2">
+                                        <a class="collapsed collapse-deco" data-toggle="collapse"
+                                            data-target="#youth-plan-5-collapse" aria-expanded="true"
+                                            aria-controls="youth-plan-5-collapse">
+                                            志工隊
+                                        </a>
+                                    </div>
+                                    <div id="youth-plan-5-collapse" class="collapse"
+                                        aria-labelledby="youth-plan-5-heading" data-parent="#youth-plan-5">
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">志工隊A隊</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">志工隊B隊</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">志工隊C隊</div>
+                                        </a>
+                                        <a href="">
+                                            <div class="menu-sub-title pl-4">志工隊D隊</div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="foundation-message">
+                        <div id="foundation-message-heading" class="menu-title">
+                            <a class="collapsed collapse-deco" data-toggle="collapse"
+                                data-target="#foundation-message-collapse" aria-expanded="true"
+                                aria-controls="foundation-message-collapse">
+                                基金會訊息
+                            </a>
+                        </div>
+
+                        <div id="foundation-message-collapse" class="collapse"
+                            aria-labelledby="foundation-message-heading" data-parent="#foundation-message">
+                            <a href="">
+                                <div class="menu-sub-title pl-2">訊息列表</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion" id="FAQ">
+                        <div id="FAQ-heading" class="menu-title">
+                            <a class="collapsed collapse-deco" data-toggle="collapse" data-target="#FAQ-collapse"
+                                aria-expanded="true" aria-controls="FAQ-collapse">
+                                FAQ
+                            </a>
+                        </div>
+
+                        <div id="FAQ-collapse" class="collapse" aria-labelledby="FAQ-heading" data-parent="#FAQ">
+                            <a href="">
+                                <div class="menu-sub-title pl-2">問題列表</div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
     <!-- main content -->
     <main class="container">
-        <div class="row">
-            <aside class="col-1 offset-1 d-lg-flex d-lg-2 d-xl-1 d-none justify-content-end align-items-start">
+        <div class="row breadcrumbblock">
+            <aside class="col-3 d-flex justify-content-center block">
                 <img class="imgSize" src="./img/index/logo.svg" alt="">
+                <div class="insidePageTitle">
+                    <nav class="breadcrumbArea" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">關於我們</li>
+                        </ol>
+                        <div class="title">關於我們</div>
+                    </nav>
+                    <div class="btnArea">
+                        <div class="back block">
+                            <a href="">
+                                <div class="size">
+                                    <span>回</span>
+                                    <span>上一頁</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="print block">
+                            <a href="">
+                                <div class="size">
+                                    <span>友善</span>
+                                    <span>列印</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="iconGroup d-xl-flex">
+                        <div class="icon">
+                            <a href="">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </aside>
-    
             <!-- 電腦版的title -->
-            <div class="insidePageTitle col-1 col-lg-10 col-xl-1  d-xl-block d-none">
+            <!-- <div class="insidePageTitle col-1 col-lg-10 col-xl-1  d-xl-block d-none">
                 <div class="breadcrumbArea">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
@@ -777,24 +818,32 @@
                     <a href=""><i class="fab fa-facebook-square"></i></a>
                     <a href=""><i class="fab fa-youtube"></i></a>
                 </div>
-            </div>
+            </div> -->
             <!-- 電腦版的title結束 -->
 
             <!-- 手機板的title開始 -->
-            <div class="col-11 d-lg-none " aria-label="breadcrumb">
+            <!-- <div class="col-11 d-lg-none " aria-label="breadcrumb">
                 <ol class="breadcrumb phoneStyle">
                     <li class="breadcrumb-item"><a href="#">首頁</a></li>
                     <li class="breadcrumb-item active" aria-current="page">分頁標題</li>
                 </ol>
                 <h2 class="d-xl-none phoneStyleTitle">分頁標題</h2>
-            </div>
-             <!-- 手機板的title結束 -->
+            </div> -->
+            <!-- 手機板的title結束 -->
+
 
             <!-- page right content -->
-            <section class="offset-lg-0 offset-xl-1 pageContent col-12 col-lg-9 col-xl-7">
-                
-                 <!-- 平板版的title -->
-                 <div class="w-100 d-none d-lg-block d-xl-none " aria-label="breadcrumb">
+            <section class="pageContent col-7 offset-1">
+
+                <!-- 平板版的title -->
+                <!-- <div class="w-100 d-lg-block d-xl-none " aria-label="breadcrumb">
+                    <ol class="breadcrumb phoneStyle">
+                        <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">分頁標題</li>
+                    </ol>
+                    <h2 class="phoneStyleTitle">分頁標題</h2>
+                </div> -->
+                <div class="w-100 flat" aria-label="breadcrumb">
                     <ol class="breadcrumb phoneStyle">
                         <li class="breadcrumb-item"><a href="#">首頁</a></li>
                         <li class="breadcrumb-item active" aria-current="page">分頁標題</li>
@@ -802,148 +851,257 @@
                     <h2 class="phoneStyleTitle">分頁標題</h2>
                 </div>
                 <!-- 平板版的title結束 -->
-                
+
                 <!-- 內頁起點 -->
-                <div class="btnGroup d-sm-flex d-none">
-                    <a href="#"><div class="btnArea tab-btn active">全部</div></a>
-                    <a href="#"><div class="btnArea tab-btn">分類1</div></a>
-                    <a href="#"><div class="btnArea tab-btn">分類2</div></a>
-                    <a href="#"><div class="btnArea tab-btn">分類3</div></a>
-                    <a href="#"><div class="btnArea tab-btn">分類4</div></a>
-                </div>
+                <div class="col-12">
+                    <div class="btnGroup d-sm-flex d-none">
+                        <a href="#">
+                            <div class="btnArea tab-btn active">全部</div>
+                        </a>
+                        <a href="#">
+                            <div class="btnArea tab-btn">分類1</div>
+                        </a>
+                        <a href="#">
+                            <div class="btnArea tab-btn">分類2</div>
+                        </a>
+                        <a href="#">
+                            <div class="btnArea tab-btn">分類3</div>
+                        </a>
+                        <a href="#">
+                            <div class="btnArea tab-btn">分類4</div>
+                        </a>
+                    </div>
 
-                <div class="QA-tab active">
-                    <div class="QA active">
-                        <div class="query">全部全部全部全部全部問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
+                    <div class="QA-tab active">
+                        <div class="QA active">
+                            <div class="query">全部全部全部全部全部問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
+                        <div class="QA">
+                            <div class="query">全部全部全部全部全部問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
+                        <div class="QA">
+                            <div class="query">全部全部全部全部全部問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
+                        <div class="QA">
+                            <div class="query">全部全部全部全部全部問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
+                        <div class="QA">
+                            <div class="query">全部全部全部全部全部問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
                     </div>
-                    <div class="QA">
-                        <div class="query">全部全部全部全部全部問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
+                    <div class="QA-tab">
+                        <div class="QA active">
+                            <div class="query">分類1分類1分類1分類1分類1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
+                        <div class="QA">
+                            <div class="query">分類1分類1分類1分類1分類1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
+                        <div class="QA">
+                            <div class="query">分類1分類1分類1分類1分類1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
+                        <div class="QA">
+                            <div class="query">分類1分類1分類1分類1分類1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
+                        <div class="QA">
+                            <div class="query">分類1分類1分類1分類1分類1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
                     </div>
-                    <div class="QA">
-                        <div class="query">全部全部全部全部全部問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
+                    <div class="QA-tab">
+                        <div class="QA active">
+                            <div class="query">分類2分類2分類2分類2問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
+                        <div class="QA">
+                            <div class="query">分類2分類2分類2分類2問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
+                        <div class="QA">
+                            <div class="query">分類2分類2分類2分類2問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
+                        <div class="QA">
+                            <div class="query">分類2分類2分類2分類2問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
+                        <div class="QA">
+                            <div class="query">分類2分類2分類2分類2問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
                     </div>
-                    <div class="QA">
-                        <div class="query">全部全部全部全部全部問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
+                    <div class="QA-tab">
+                        <div class="QA active">
+                            <div class="query">分類3分類3分類3分類3問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
+                        <div class="QA">
+                            <div class="query">分類3分類3分類3分類3問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
+                        <div class="QA">
+                            <div class="query">分類3分類3分類3分類3問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
+                        <div class="QA">
+                            <div class="query">分類3分類3分類3分類3問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
+                        <div class="QA">
+                            <div class="query">分類3分類3分類3分類3問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
                     </div>
-                    <div class="QA">
-                        <div class="query">全部全部全部全部全部問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
+                    <div class="QA-tab">
+                        <div class="QA active">
+                            <div class="query">分類4分類4分類4分類4問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
+                        <div class="QA">
+                            <div class="query">分類4分類4分類4分類4問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
+                        <div class="QA">
+                            <div class="query">分類4分類4分類4分類4問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
+                        <div class="QA">
+                            <div class="query">分類4分類4分類4分類4問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
+                        <div class="QA">
+                            <div class="query">分類4分類4分類4分類4問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i
+                                    class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="answer">
+                                答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="QA-tab">
-                    <div class="QA active">
-                        <div class="query">分類1分類1分類1分類1分類1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
-                    </div>
-                    <div class="QA">
-                        <div class="query">分類1分類1分類1分類1分類1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
-                    </div>
-                    <div class="QA">
-                        <div class="query">分類1分類1分類1分類1分類1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
-                    </div>
-                    <div class="QA">
-                        <div class="query">分類1分類1分類1分類1分類1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
-                    </div>
-                    <div class="QA">
-                        <div class="query">分類1分類1分類1分類1分類1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
-                    </div>
-                </div>
-                <div class="QA-tab">
-                    <div class="QA active">
-                        <div class="query">分類2分類2分類2分類2問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
-                    </div>
-                    <div class="QA">
-                        <div class="query">分類2分類2分類2分類2問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
-                    </div>
-                    <div class="QA">
-                        <div class="query">分類2分類2分類2分類2問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
-                    </div>
-                    <div class="QA">
-                        <div class="query">分類2分類2分類2分類2問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
-                    </div>
-                    <div class="QA">
-                        <div class="query">分類2分類2分類2分類2問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
-                    </div>
-                </div>
-                <div class="QA-tab">
-                    <div class="QA active">
-                        <div class="query">分類3分類3分類3分類3問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
-                    </div>
-                    <div class="QA">
-                        <div class="query">分類3分類3分類3分類3問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
-                    </div>
-                    <div class="QA">
-                        <div class="query">分類3分類3分類3分類3問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
-                    </div>
-                    <div class="QA">
-                        <div class="query">分類3分類3分類3分類3問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
-                    </div>
-                    <div class="QA">
-                        <div class="query">分類3分類3分類3分類3問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
-                    </div>
-                </div>
-                <div class="QA-tab">
-                    <div class="QA active">
-                        <div class="query">分類4分類4分類4分類4問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
-                    </div>
-                    <div class="QA">
-                        <div class="query">分類4分類4分類4分類4問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
-                    </div>
-                    <div class="QA">
-                        <div class="query">分類4分類4分類4分類4問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
-                    </div>
-                    <div class="QA">
-                        <div class="query">分類4分類4分類4分類4問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
-                    </div>
-                    <div class="QA">
-                        <div class="query">分類4分類4分類4分類4問題1問題1問題1問題1問題1問題1問題1問題1問題1問題1 <i class="fas fa-chevron-up"></i></div>
-                        <div class="answer">答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</div>
-                    </div>
-                </div>
-                 
-                <nav class="pageNumber">
-                    <ul class="d-sm-flex justify-content-center  align-items-center d-none">
-                        <li class="number"><a href="">1</a></li>
-                        <li class="number"><a href="">2</a></li>
-                        <li class="number"><a href="">3</a></li>
-                        <li class="number"><a href="">4</a></li>
-                        <li class="number"><a href="">5</a></li>
-                        <li class="number"><a href="">6</a></li>
-                        <li class="number"><a href="">7</a></li>
-                        <li class="nextBTN"><a href="">下一頁</a></li>
-                        <li class="lastBTN"><a href="">最後一頁</a></li>
-                    </ul>
 
-                    <div class="more d-sm-none">更多消息</div>
+                    <nav class="pageNumber">
+                        <ul class="d-sm-flex justify-content-center  align-items-center d-none">
+                            <li class="number"><a href="">1</a></li>
+                            <li class="number"><a href="">2</a></li>
+                            <li class="number"><a href="">3</a></li>
+                            <li class="number"><a href="">4</a></li>
+                            <li class="number"><a href="">5</a></li>
+                            <li class="number"><a href="">6</a></li>
+                            <li class="number"><a href="">7</a></li>
+                            <li class="nextBTN"><a href="">下一頁</a></li>
+                            <li class="lastBTN"><a href="">最後一頁</a></li>
+                        </ul>
 
-                </nav>
+                        <div class="more d-sm-none">更多消息</div>
 
-                                <!-- 內頁終點 -->
+                    </nav>
+                </div>
+                <!-- 內頁終點 -->
             </section>
-
-
         </div>
     </main>
 
@@ -985,6 +1143,7 @@
         <div></div>
     </div>
 
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -999,7 +1158,7 @@
     <!-- page js -->
 
     <script>
-        $('.tab-btn').click(function(){
+        $('.tab-btn').click(function () {
             let tab_index = $('.tab-btn').index(this)
             $('.tab-btn').removeClass('active')
             $(this).addClass('active')
@@ -1007,11 +1166,11 @@
             $('.QA-tab').eq(tab_index).addClass('active')
         })
 
-        $('.QA').click(function(){
-            if($('.QA').hasClass('active')){
+        $('.QA').click(function () {
+            if ($('.QA').hasClass('active')) {
                 $('.QA').removeClass('active')
                 $(this).addClass('active')
-            }else{
+            } else {
                 $(this).addClass('active')
             }
         })

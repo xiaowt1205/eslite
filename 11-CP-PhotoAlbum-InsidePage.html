@@ -58,14 +58,14 @@
     <header>
         <div id="topline" class="container">
             <div class="row no-gutters">
-                <div class="col-lg-6 col-xl-4">
+                <div class="col-lg-6 col-xl-3">
                     <div class="logo">
-                        <img class="d-none d-lg-block" src="./img/index/logo-white.png" alt="">
-                        <img class="d-block d-lg-none" src="./img/index/logo-black.svg" alt="">
+                        <!-- <img class="d-none d-lg-block" src="./img/index/logo-white.png" alt=""> -->
+                        <img src="./img/index/logo-black.svg" alt="">
                     </div>
                 </div>
                 <nav class="col-lg-6 col-xl-8">
-                    <ul class="d-none d-xl-flex justify-content-end">
+                    <ul class="d-flex justify-content-end">
                         <li><a href="">關於我們</a></li>
                         <li><a href="">閱讀分享計畫</a></li>
                         <li><a href="">青年培育計畫</a></li>
@@ -76,20 +76,23 @@
                                 <div class="cicle"><i class="fas fa-info"></i></div>
                             </a></li>
                         <li class="nav-icon"><a href=""><i class="fas fa-search"></i></a></li>
-                        <li class="menu-btn menu-btn-pc ">
+                        <!-- <li class="menu-btn" data-toggle="modal" data-target="#mobile-menu">
                             <a href="#">
                                 <div class=""></div>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
-                    <ul class="position-absolute d-block d-xl-none modal-menu-toggle">
-                        <li  class="menu-btn" data-toggle="modal" data-target="#mobile-menu">
-                            <a href="#">
-                                <div class=""></div>
-                            </a>
-                        </li>
-                    </ul>
+                    <!-- position-absolute -->
                 </nav>
+                <div class="col-xl-1 d-flex menu-icon">
+                    <ul class="modal-menu-toggle">
+                        <li class="menu-btn menu-btn-pc">
+                            <a href="#">
+                                <div class=""></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -97,7 +100,7 @@
     <!-- menu -->
     <div class="menu">
         <div class="menu-container position-relative">
-            <div class="menu-btn menu-btn-pc position-absolute d-lg-block d-none">
+            <div class="menu-btn menu-btn-pc position-absolute">
                 <a href="#">
                     <div></div>
                 </a>
@@ -439,7 +442,7 @@
             </ul>
         </div>
     </div>
- 
+
     <!-- mobile menu -->
     <div class="modal fade" id="mobile-menu" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -777,13 +780,51 @@
 
     <!-- main content -->
     <main class="container">
-        <div class="row">
-            <aside class="col-1 offset-1 d-lg-flex d-lg-2 d-xl-1 d-none justify-content-end align-items-start">
+        <div class="row breadcrumbblock">
+            <aside class="col-3 d-flex justify-content-center block">
                 <img class="imgSize" src="./img/index/logo.svg" alt="">
+                <div class="insidePageTitle">
+                    <nav class="breadcrumbArea" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">關於我們</li>
+                        </ol>
+                        <div class="title">關於我們</div>
+                    </nav>
+                    <div class="btnArea">
+                        <div class="back block">
+                            <a href="">
+                                <div class="size">
+                                    <span>回</span>
+                                    <span>上一頁</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="print block">
+                            <a href="">
+                                <div class="size">
+                                    <span>友善</span>
+                                    <span>列印</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="iconGroup d-xl-flex">
+                        <div class="icon">
+                            <a href="">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </aside>
-
             <!-- 電腦版的title -->
-            <div class="insidePageTitle col-1 col-lg-10 col-xl-1  d-xl-block d-none">
+            <!-- <div class="insidePageTitle col-1 col-lg-10 col-xl-1  d-xl-block d-none">
                 <div class="breadcrumbArea">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
@@ -805,25 +846,32 @@
                     <a href=""><i class="fab fa-facebook-square"></i></a>
                     <a href=""><i class="fab fa-youtube"></i></a>
                 </div>
-            </div>
+            </div> -->
             <!-- 電腦版的title結束 -->
 
             <!-- 手機板的title開始 -->
-            <div class="col-11 d-lg-none " aria-label="breadcrumb">
+            <!-- <div class="col-11 d-lg-none " aria-label="breadcrumb">
                 <ol class="breadcrumb phoneStyle">
                     <li class="breadcrumb-item"><a href="#">首頁</a></li>
                     <li class="breadcrumb-item active" aria-current="page">分頁標題</li>
                 </ol>
                 <h2 class="d-xl-none phoneStyleTitle">分頁標題</h2>
-            </div>
+            </div> -->
             <!-- 手機板的title結束 -->
 
 
             <!-- page right content -->
-            <section class="offset-sm-1 offset-lg-0 offset-xl-1 pageContent col-12 col-lg-9 col-xl-7">
+            <section class="pageContent col-7 offset-1">
 
                 <!-- 平板版的title -->
-                <div class="w-100 d-none d-lg-block d-xl-none " aria-label="breadcrumb">
+                <!-- <div class="w-100 d-lg-block d-xl-none " aria-label="breadcrumb">
+                    <ol class="breadcrumb phoneStyle">
+                        <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">分頁標題</li>
+                    </ol>
+                    <h2 class="phoneStyleTitle">分頁標題</h2>
+                </div> -->
+                <div class="w-100 flat" aria-label="breadcrumb">
                     <ol class="breadcrumb phoneStyle">
                         <li class="breadcrumb-item"><a href="#">首頁</a></li>
                         <li class="breadcrumb-item active" aria-current="page">分頁標題</li>
@@ -831,159 +879,161 @@
                     <h2 class="phoneStyleTitle">分頁標題</h2>
                 </div>
                 <!-- 平板版的title結束 -->
-                <div class="container">
-                    <div class="area_picture">
-                        <div class="row">
-                            <div class="text">
-                                <p>在誠品物流大樓中的一處角落， 每個月都會有一群來自四面八方的志工夥伴，他們可能是誠品書店志工、企業夥伴志工，
-                                    也可能是上班族、學生、或是家庭主婦，他們相信，每一本他們經手過的書籍， 都有可能是偏鄉地區孩童翻轉的機會。</p>
-                                <p>歡迎您一同成為理書志工夥伴，讓更多閱讀的種子，在台灣每一寸土地落下、發芽、成長。</p>
-                                <div class="text_link">
-                                    加入理書志工:
-                                    <a href="http://www.eslitefoundation.org.tw/Jo">
-                                        http://www.eslitefoundation.org.tw/Jo...
-                                    </a>
-                                </div>
 
+                <!-- 內頁起點 -->
+                <div class="area_picture">
+                    <div class="row">
+                        <div class="text">
+                            <p>在誠品物流大樓中的一處角落， 每個月都會有一群來自四面八方的志工夥伴，他們可能是誠品書店志工、企業夥伴志工，
+                                也可能是上班族、學生、或是家庭主婦，他們相信，每一本他們經手過的書籍， 都有可能是偏鄉地區孩童翻轉的機會。</p>
+                            <p>歡迎您一同成為理書志工夥伴，讓更多閱讀的種子，在台灣每一寸土地落下、發芽、成長。</p>
+                            <div class="text_link">
+                                加入理書志工:
+                                <a href="http://www.eslitefoundation.org.tw/Jo">
+                                    http://www.eslitefoundation.org.tw/Jo...
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="picture_block">
+                        <div class="row">
+                            <div class="col-xl-3 col-md-4 col-6">
+                                <a href="#" class="toggle-swiper-page">
+                                    <div class="img">
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-6">
+                                <a href="#" class="toggle-swiper-page">
+                                    <div class="img">
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-6">
+                                <a href="#" class="toggle-swiper-page">
+                                    <div class="img">
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-6">
+                                <a href="#" class="toggle-swiper-page">
+                                    <div class="img">
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-6">
+                                <a href="#" class="toggle-swiper-page">
+                                    <div class="img">
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-6">
+                                <a href="#" class="toggle-swiper-page">
+                                    <div class="img">
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-6">
+                                <a href="#" class="toggle-swiper-page">
+                                    <div class="img">
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-6">
+                                <a href="#" class="toggle-swiper-page">
+                                    <div class="img">
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-6">
+                                <a href="#" class="toggle-swiper-page">
+                                    <div class="img">
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-6">
+                                <a href="#" class="toggle-swiper-page">
+                                    <div class="img">
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-6">
+                                <a href="#" class="toggle-swiper-page">
+                                    <div class="img">
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-6">
+                                <a href="#" class="toggle-swiper-page">
+                                    <div class="img">
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-6">
+                                <a href="#" class="toggle-swiper-page">
+                                    <div class="img">
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-6">
+                                <a href="#" class="toggle-swiper-page">
+                                    <div class="img">
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-6">
+                                <a href="#" class="toggle-swiper-page">
+                                    <div class="img">
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-md-4 col-6">
+                                <a href="#" class="toggle-swiper-page">
+                                    <div class="img">
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                        <div class="picture_block">
-                            <div class="row">
-                                <div class="col-xl-3 col-md-4 col-6">
-                                    <a href="#" class="toggle-swiper-page">
-                                        <div class="img">
-                                            <!-- <img src="" alt=""> -->
-                                        </div>
-                                    </a>
+                        <div class="message_area">
+                            <div class="firtst_data">
+                                <div>
+                                    <p class="">發布日期</p>
                                 </div>
-                                <div class="col-xl-3 col-md-4 col-6">
-                                    <a href="#" class="toggle-swiper-page">
-                                        <div class="img">
-                                            <!-- <img src="" alt=""> -->
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-xl-3 col-md-4 col-6">
-                                    <a href="#" class="toggle-swiper-page">
-                                        <div class="img">
-                                            <!-- <img src="" alt=""> -->
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-xl-3 col-md-4 col-6">
-                                    <a href="#" class="toggle-swiper-page">
-                                        <div class="img">
-                                            <!-- <img src="" alt=""> -->
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-xl-3 col-md-4 col-6">
-                                    <a href="#" class="toggle-swiper-page">
-                                        <div class="img">
-                                            <!-- <img src="" alt=""> -->
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-xl-3 col-md-4 col-6">
-                                    <a href="#" class="toggle-swiper-page">
-                                        <div class="img">
-                                            <!-- <img src="" alt=""> -->
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-xl-3 col-md-4 col-6">
-                                    <a href="#" class="toggle-swiper-page">
-                                        <div class="img">
-                                            <!-- <img src="" alt=""> -->
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-xl-3 col-md-4 col-6">
-                                    <a href="#" class="toggle-swiper-page">
-                                        <div class="img">
-                                            <!-- <img src="" alt=""> -->
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-xl-3 col-md-4 col-6">
-                                    <a href="#" class="toggle-swiper-page">
-                                        <div class="img">
-                                            <!-- <img src="" alt=""> -->
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-xl-3 col-md-4 col-6">
-                                    <a href="#" class="toggle-swiper-page">
-                                        <div class="img">
-                                            <!-- <img src="" alt=""> -->
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-xl-3 col-md-4 col-6">
-                                    <a href="#" class="toggle-swiper-page">
-                                        <div class="img">
-                                            <!-- <img src="" alt=""> -->
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-xl-3 col-md-4 col-6">
-                                    <a href="#" class="toggle-swiper-page">
-                                        <div class="img">
-                                            <!-- <img src="" alt=""> -->
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-xl-3 col-md-4 col-6">
-                                    <a href="#" class="toggle-swiper-page">
-                                        <div class="img">
-                                            <!-- <img src="" alt=""> -->
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-xl-3 col-md-4 col-6">
-                                    <a href="#" class="toggle-swiper-page">
-                                        <div class="img">
-                                            <!-- <img src="" alt=""> -->
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-xl-3 col-md-4 col-6">
-                                    <a href="#" class="toggle-swiper-page">
-                                        <div class="img">
-                                            <!-- <img src="" alt=""> -->
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-xl-3 col-md-4 col-6">
-                                    <a href="#" class="toggle-swiper-page">
-                                        <div class="img">
-                                            <!-- <img src="" alt=""> -->
-                                        </div>
-                                    </a>
-                                </div>
+                                <p class="">107-6-6</p>
                             </div>
-                            <div class="message_area">
-                                <div class="firtst_data">
-                                    <div>
-                                        <p class="">發布日期</p>
-                                    </div>
-                                    <p class="">107-6-6</p>
+                            <div class="new_data">
+                                <div>
+                                    <p class="">最後更新日期</p>
                                 </div>
-                                <div class="new_data">
-                                    <div>
-                                        <p class="">最後更新日期</p>
-                                    </div>
-                                    <p class="">108-11-27</p>
+                                <p class="">108-11-27</p>
+                            </div>
+                            <div class="click_point">
+                                <div>
+                                    <p class="">資料點閱次數</p>
                                 </div>
-                                <div class="click_point">
-                                    <div>
-                                        <p class="">資料點閱次數</p>
-                                    </div>
-                                    <p class="">3068</p>
-                                </div>
+                                <p class="">3068</p>
                             </div>
                         </div>
                     </div>
+                </div>
+                <!-- 內頁終點 -->
             </section>
         </div>
     </main>
@@ -1117,7 +1167,6 @@
             freeMode: true,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
-
         });
         var galleryTop = new Swiper('.gallery-top', {
             spaceBetween: 10,

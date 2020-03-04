@@ -448,6 +448,9 @@ main {
 
 .breadcrumbblock {
   position: relative;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media screen and (max-width: 768px) {
