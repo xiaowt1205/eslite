@@ -518,10 +518,11 @@ main {
                         align-items: center;
                         width: 320px;
                         height: 320px;
-                        transition: all 1s;
+                        transition:.3s;
+                        transition-timing-function: ease-in-out;
 
                         &:hover {
-                            border: 20px solid $br-brown-hover;
+                            border: 12px solid $br-brown-hover;
                             box-shadow: 0 0 10px $br-shadow;
                         }
 
@@ -551,6 +552,7 @@ main {
                             flex-direction: column;
                             align-items: center;
                             margin-top: -15px;
+                            color:#321C07;
 
                             & span:nth-child(1) {
                                 font-size: $fs-76;
