@@ -167,11 +167,6 @@
             right: 30px;
             top: 20px;
         }
-
-        @media (max-width:576px) {
-            top: unset;
-            bottom: 0px;
-        }
     }
 
     .logo {
@@ -357,7 +352,10 @@
         div {
             transform: rotate(45deg);
             border-top: 2px solid $fc-white;
-
+            &::before {
+                background-color: $fc-white;
+                top: -2px;
+            }
             &::after {
                 background-color: $fc-white;
                 top: -1px;

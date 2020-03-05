@@ -25,6 +25,7 @@ $br-shadow:#000000;
 
 // font size
 $fs-76:76px;
+$fs-67:67px;
 $fs-62:62px;
 $fs-48:48px;
 $fs-33:33px;
@@ -38,13 +39,14 @@ $fs-16:16px;
 $fs-14:14px;
 $fs-12:12px;
 $fs-10:10px;
+$fs-07:7px;
 
 // font weight
-$fw-bold:bold; 
-$fw-800:800; 
-$fw-700:700;  
-$fw-600:600;  
-$fw-300:400;  
+$fw-bold:bold;
+$fw-800:800;
+$fw-700:700;
+$fw-600:600;
+$fw-400:400;
 
 // background color
 $bc-black:#000000;
@@ -55,8 +57,11 @@ $bc-white:#FFFFFF;
 $bc-dark-brown-hover:#352E2C;
 $bc-number-black:#333333;
 $bc-Transparent:transparent;
+$bc-graw:#e5e5e5;
+$bc-dark-graw:#a0a0a0;
 // background color Transparent
 $bc-brown-Transparent:#23181571;
+$bc-light-brown-Transparent:#665252ed;
 
 //hover color
 $hc-brown:#886D6A;
@@ -64,6 +69,3 @@ $hc-brown:#886D6A;
 //mask
 $mc-brown:#23181565;
 $mc-brown-hover:#23181590;
-
-
-

@@ -68,7 +68,7 @@
 .Connection_area .Connection_form .form_input > input {
   width: 100%;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   outline-width: 0px none invert;
   border: 1px solid #000000;
   text-shadow: none;
@@ -109,8 +109,14 @@
 }
 
 .Connection_area .Connection_form .form_input > ul li div {
+  letter-spacing: 3px;
   padding-left: 10px;
   font-size: 18px;
+}
+
+.Connection_area .Connection_form .form_input input,
+.Connection_area .Connection_form .form_input select {
+  letter-spacing: 4px;
 }
 
 .Connection_area .Connection_form .dateInput > .w-100:first-child {
@@ -147,6 +153,7 @@
 .Connection_area .Connection_form .dateInput .clearBTN {
   width: 100px;
   height: 100%;
+  letter-spacing: 5px;
   background-color: #4D4D4D;
   border-radius: 5px;
   color: #FFFFFF;
@@ -229,15 +236,35 @@
   border: 1px solid #000000;
 }
 
+.Connection_area .Connection_form select .select-selected {
+  background-color: #000000;
+}
+
 .Connection_area .Connection_form select option:nth-child(1) {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
 .Connection_area .Connection_form select option {
+  background-color: #e5e5e5;
   line-height: 30px;
   width: 100%;
   padding: 10px 20px;
+  letter-spacing: 4px;
+}
+
+.Connection_area .Connection_form select option:hover:active {
+  background-color: #a0a0a0;
+}
+
+.Connection_area .Connection_form select option:nth-child(1) {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.Connection_area .Connection_form select option:nth-last-child(1) {
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
 }
 
 #ui-datepicker-div {

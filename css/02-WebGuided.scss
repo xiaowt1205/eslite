@@ -4,81 +4,85 @@
 .Guide_area {
     padding: 0px 15px;
 
-    p {
-        font-weight: 900;
-        font-size: $fs-24;
-        letter-spacing: 5px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid $bc-brown;
-    }
+    .block {
+        width: 230px;
+        p {
+            font-weight: 900;
+            font-size: $fs-24;
+            letter-spacing: 5px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid $bc-brown;
+        }
 
-    .content {
-        .Guide_block {
-            padding: 30px 0px;
-            margin-bottom: 30px;
-
-            @media (max-width:768px) {
-                padding: 20px 0px 20px 20px;
-                margin-bottom: 10px;
-            }
-
-            .collapse-block {
+        .content {
+            .Guide_block {
+                padding: 30px 0px;
                 margin-bottom: 30px;
 
-                @media (max-width:992px) {
-                    margin-bottom: 20px;
+                @media (max-width:768px) {
+                    padding: 20px 0px 20px 20px;
+                    margin-bottom: 10px;
                 }
-            }
 
-            .sub-title {
-                padding: 10px 0px;
-                font-size: $fs-14;
-                letter-spacing: 4px;
+                .collapse-block {
+                    margin-bottom: 30px;
 
-                @media (max-width:992px) {
+                    @media (max-width:992px) {
+                        margin-bottom: 20px;
+                    }
+                }
 
-                    &.collapse-deco {
-                        position: relative;
-                        transition: .3s;
-                        transition-timing-function: ease-in-out;
+                .sub-title {
+                    padding: 10px 0px;
+                    font-size: $fs-14;
+                    letter-spacing: 4px;
 
-                        &::after,
-                        &::before {
-                            content: ' ';
-                            position: absolute;
-                            right: -20px;
-                            top: 19px;
-                            width: 9px;
-                            height: 1px;
-                            background-color: $fc-black;
-                            opacity: 0.6;
-                        }
+                    @media (max-width:992px) {
 
-                        &::before {
-                            transform: rotate(0deg);
-                            transition: 0.3s;
-                        }
+                        &.collapse-deco {
+                            position: relative;
+                            transition: .3s;
+                            transition-timing-function: ease-in-out;
 
-                        &.collapsed {
+                            &::after,
+                            &::before {
+                                content: ' ';
+                                position: absolute;
+                                right: -20px;
+                                top: 19px;
+                                width: 9px;
+                                height: 1px;
+                                background-color: $fc-black;
+                                opacity: 0.6;
+                            }
 
                             &::before {
-                                transform: rotate(90deg);
+                                transform: rotate(0deg);
+                                transition: 0.3s;
+                            }
+
+                            &.collapsed {
+
+                                &::before {
+                                    transform: rotate(90deg);
+                                }
                             }
                         }
                     }
                 }
-            }
 
-            ul {
-                padding-top: 10px;
+                ul {
+                    padding-top: 10px;
 
-                li {
-                    font-size: $fs-12;
-                    padding: 5px 0;
-                    opacity: 0.8;
-                    letter-spacing: 1.5px;
+                    li {
+                        font-size: $fs-12;
+                        padding: 5px 0;
+                        opacity: 0.8;
+                        letter-spacing: 1.5px;
+                    }
                 }
             }
         }
     }
+
 }

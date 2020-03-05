@@ -306,13 +306,6 @@ a:active {
   }
 }
 
-@media (max-width: 576px) {
-  .menu .menu-btn {
-    top: unset;
-    bottom: 0px;
-  }
-}
-
 .menu .logo {
   position: relative;
   width: 130px;
@@ -500,6 +493,11 @@ a:active {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   border-top: 2px solid #FFFFFF;
+}
+
+.menu-btn.active div::before {
+  background-color: #FFFFFF;
+  top: -2px;
 }
 
 .menu-btn.active div::after {

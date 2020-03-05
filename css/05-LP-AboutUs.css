@@ -143,31 +143,38 @@ a:active {
 
 .btnGroup a .project {
   width: 100%;
+  max-width: 780px;
   height: 80px;
-  border-radius: 8px;
-  background-color: #231815;
+  border-radius: 15px;
+  background-color: #665252ed;
   margin-bottom: 30px;
   font-size: 18px;
   padding: 0 25px;
 }
 
-@media (max-width: 577px) {
+@media (max-width: 768px) {
   .btnGroup a .project::before {
     content: '';
     border: 1px solid #FFFFFF;
     width: 130px;
     position: absolute;
-    bottom: 25%;
+    bottom: 20%;
   }
 }
 
 .btnGroup a .project:hover {
-  background-color: #665252;
+  background-color: #231815;
 }
 
-@media (max-width: 577px) {
+.btnGroup a .project:hover .date {
+  background-color: #231815;
+}
+
+@media (max-width: 768px) {
   .btnGroup a .project {
-    height: 88px;
+    height: 90px;
+    margin-bottom: 45px;
+    font-size: 16px;
     position: relative;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -179,6 +186,17 @@ a:active {
   margin-right: 20px;
 }
 
+.btnGroup a .project > p {
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+@media (max-width: 1024px) {
+  .btnGroup a .project > p {
+    letter-spacing: 3px;
+  }
+}
+
 .btnGroup a .project hr {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -187,7 +205,7 @@ a:active {
   margin: 0 30px;
 }
 
-@media (max-width: 577px) {
+@media (max-width: 768px) {
   .btnGroup a .project hr {
     display: none;
   }
@@ -196,27 +214,40 @@ a:active {
 .btnGroup a .project .date {
   width: 50px;
   height: 50px;
-  background-color: #231815;
   border: 1px solid #FFFFFF;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media (max-width: 577px) {
+@media (max-width: 768px) {
   .btnGroup a .project .date {
     position: absolute;
     top: 0;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    background-color: #665252;
   }
 }
 
 .btnGroup a .project .date p {
   font-size: 10px;
-  text-align: center;
 }
 
-.btnGroup a .project .date p:first-child {
-  font-size: 14px;
+.btnGroup a .project .date p:nth-last-child(1) {
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
 }
 /*# sourceMappingURL=05-LP-AboutUs.css.map */
