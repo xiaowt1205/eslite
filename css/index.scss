@@ -500,8 +500,8 @@ main {
 
                     h2 {
                         font-size: $fs-76;
-                        font-weight: $fw-600;
-                        letter-spacing: 3.5px;
+                        font-weight: $fw-700;
+                        letter-spacing: 1.5px;
                         margin: 0;
 
                         @media screen and (max-width:1024px) {
@@ -529,7 +529,7 @@ main {
 
                     p {
                         font-size: $fs-32;
-                        font-weight: $fw-600;
+                        font-weight: $fw-700;
                         letter-spacing: 13px;
                         margin: auto 0px 0px;
                         padding-left: 30px;
@@ -580,6 +580,7 @@ main {
                     .year_books {
                         display: flex;
                         justify-content: center;
+                        font-weight: $fw-bold;
                         min-width: 250px;
                         padding: 10px 0px;
                         margin-top: auto;
@@ -751,9 +752,11 @@ main {
 
                     .btn {
                         width: 220px;
+                        font-weight: $fw-bold;
+                        font-size: $fs-18;
                         padding: 10px 0px;
                         background-color: $bc-light-brown;
-                        border: 3px solid $br-brown;
+                        border: 1px solid $br-brown;
                         color: $fc-brown;
                         margin-bottom: 55px;
                         letter-spacing: 3px;
@@ -820,7 +823,9 @@ main {
 
             h2 {
                 position: relative;
-                font-size: 76px;
+                font-size: $fs-76;
+                font-weight: $fw-700;
+                letter-spacing: 1.5px;
                 padding-bottom: 25px;
                 margin: 0;
 
@@ -1031,8 +1036,10 @@ main {
 
         h2 {
             position: relative;
-            font-size: 76px;
-            padding: 40px 0px;
+            font-size: $fs-76;
+            font-weight: $fw-700;
+            letter-spacing: 1.5px;
+            padding: 40px 0px 20px;
             margin: 0;
 
             &::after {
@@ -1048,12 +1055,13 @@ main {
         }
 
         p {
-            font-size: 33px;
+            font-size: $fs-33;
+            font-weight: $fw-bold;
             width: 100%;
             margin: 0;
             padding: 30px 0px;
             padding-left: 10px;
-            letter-spacing: 13px;
+            letter-spacing: 21px;
         }
     }
 
@@ -1531,8 +1539,8 @@ main {
     .button {
         width: 250px;
         margin: 0 auto;
-        background-color: $bc-black;
-        border: 1px solid $bc-white;
+        background-color: $bc-Transparent;
+        border: 1px solid $br-black;
         text-align: center;
         padding: 10px 25px;
         position: relative;

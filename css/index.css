@@ -746,8 +746,8 @@ main .bg {
 
 #Statistics .container_1600 .statistics_area .title_region .title_block h2 {
   font-size: 76px;
-  font-weight: 600;
-  letter-spacing: 3.5px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
   margin: 0;
 }
 
@@ -780,7 +780,7 @@ main .bg {
 
 #Statistics .container_1600 .statistics_area .title_region .title_block p {
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 13px;
   margin: auto 0px 0px;
   padding-left: 30px;
@@ -846,6 +846,7 @@ main .bg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-weight: bold;
   min-width: 250px;
   padding: 10px 0px;
   margin-top: auto;
@@ -1073,9 +1074,11 @@ main .bg {
 
 #Statistics .container_1600 .statistics_area .content .business_area .btn {
   width: 220px;
+  font-weight: bold;
+  font-size: 18px;
   padding: 10px 0px;
   background-color: #E4E4E4;
-  border: 3px solid #544747;
+  border: 1px solid #544747;
   color: #231815;
   margin-bottom: 55px;
   letter-spacing: 3px;
@@ -1150,6 +1153,8 @@ main .bg {
 #Plan .container_1140 .title_region h2 {
   position: relative;
   font-size: 76px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
   padding-bottom: 25px;
   margin: 0;
 }
@@ -1383,7 +1388,9 @@ main .bg {
 #Plan1 .title_region h2 {
   position: relative;
   font-size: 76px;
-  padding: 40px 0px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 40px 0px 20px;
   margin: 0;
 }
 
@@ -1401,11 +1408,12 @@ main .bg {
 
 #Plan1 .title_region p {
   font-size: 33px;
+  font-weight: bold;
   width: 100%;
   margin: 0;
   padding: 30px 0px;
   padding-left: 10px;
-  letter-spacing: 13px;
+  letter-spacing: 21px;
 }
 
 #Plan1 .content {
@@ -1912,8 +1920,8 @@ main .bg {
 #Video .button {
   width: 250px;
   margin: 0 auto;
-  background-color: #000000;
-  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  border: 1px solid #000000;
   text-align: center;
   padding: 10px 25px;
   position: relative;
