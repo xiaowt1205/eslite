@@ -12,6 +12,7 @@
 
     .text_area {
         .text_block {
+            font-weight: 900;
             font-size: $fs-14;
             text-indent: 40px;
             letter-spacing: 4px;
@@ -75,6 +76,12 @@
                 left: -40px;
                 transform: translate(-100%, -50%);
 
+                @media(max-width:576px){
+                    top:120%;
+                    left:45%;
+                }
+
+
                 .arrow_button {
                     &::before {
                         content: '';
@@ -95,6 +102,11 @@
                 top: 50%;
                 padding: 20px 0px;
                 transform: translate(100%, -50%);
+
+                @media(max-width:576px){
+                    top:120%;
+                    right:45%
+                }
 
                 .arrow_button {
                     &::after {
@@ -144,22 +156,25 @@
             overflow: hidden;
             margin-bottom: 15px;
 
-            &::before {
-                position: absolute;
-                content: '';
-                width: 100%;
-                height: 2px;
-                background-color: green;
-                z-index: -1;
-            }
-
             p {
                 padding: 25px;
-                background-color: $bc-white;
+                font-size: $fs-18;
+                letter-spacing: 3px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top:50%;
+                    transform: translateY(-50%);
+                    left: 25%;
+                    width: 200%;
+                    height: 1px;
+                    background-color: rgba(128, 128, 128, 0.1);
+                }
             }
 
             .text_btn {
-                padding: 25px;
+                padding: 30px 25px;
                 background-color: $bc-white;
 
                 .btn {
@@ -191,22 +206,13 @@
             overflow: hidden;
             margin-bottom: 15px;
 
-            &::before {
-                position: absolute;
-                content: '';
-                width: 100%;
-                height: 2px;
-                background-color: green;
-                z-index: -1;
-            }
-
             p {
                 padding: 25px;
                 background-color: $bc-white;
             }
 
             .text_btn {
-                padding: 25px;
+                padding: 30px 25px;
                 background-color: $bc-white;
 
                 .btn {
@@ -229,13 +235,8 @@
         &>div {
             display: flex;
 
-            padding: 2.5px 0px;
-
-
-
             &>div {
                 width: 110px;
-                // overflow: hidden;
                 padding-right: 20px;
                 white-space: nowrap;
                 box-sizing: unset;
@@ -244,7 +245,7 @@
                 &::after {
                     position: absolute;
                     content: '';
-                    width: 3px;
+                    width: 1.5px;
                     height: 100%;
                     top: 0;
                     right: 0;
@@ -264,6 +265,9 @@
         }
 
         .firtst_data {
+            p{
+                line-height: 1;
+            }
             &>div {
                 &>p {
                     letter-spacing: 15px;
@@ -272,10 +276,15 @@
 
             &>p {
                 padding-left: 20px;
+                letter-spacing: 2px;
             }
         }
 
         .new_data {
+            margin: 10px 0;
+            p{
+                line-height: 1;
+            }
             &>div {
                 &>p {
                     letter-spacing: 2.7px;
@@ -284,10 +293,14 @@
 
             &>p {
                 padding-left: 20px;
+                letter-spacing: 2px;
             }
         }
 
         .click_point {
+            p{
+                line-height: 1;
+            }
             &>div {
                 &>p {
                     letter-spacing: 2.7px;
@@ -296,6 +309,7 @@
 
             &>p {
                 padding-left: 20px;
+                letter-spacing: 2px;
             }
         }
     }
@@ -311,11 +325,12 @@
         }
 
         .text_block {
+            font-weight: 900;
             font-size: $fs-14;
             text-indent: 40px;
             letter-spacing: 4px;
             text-align: justify;
-            padding: 50px 0px;
+            padding: 70px 0px 60px 0;
 
             p {
                 margin-bottom: 20px;
@@ -374,6 +389,11 @@
                 top: 50%;
                 left: -40px;
                 transform: translate(-100%, -50%);
+                
+                @media(max-width:576px){
+                    top:120%;
+                    left:45%;
+                }
 
                 .arrow_button {
                     &::before {
@@ -395,6 +415,11 @@
                 top: 50%;
                 padding: 20px 0px;
                 transform: translate(100%, -50%);
+                
+                @media(max-width:576px){
+                    top:120%;
+                    right:45%
+                }
 
                 .arrow_button {
                     &::after {
@@ -444,23 +469,28 @@
             overflow: hidden;
             margin-bottom: 15px;
 
-            &::before {
-                position: absolute;
-                content: '';
-                width: 100%;
-                height: 2px;
-                background-color: green;
-                z-index: -1;
-            }
-
             p {
                 padding: 25px;
-                background-color: $bc-white;
+                font-size: $fs-18;
+                letter-spacing: 3px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top:50%;
+                    transform: translateY(-50%);
+                    left: 25%;
+                    width: 200%;
+                    height: 1px;
+                    background-color: rgba(128, 128, 128, 0.1);
+                }
             }
 
             .text_btn {
-                padding: 25px;
+                padding: 30px 25px;
                 background-color: $bc-white;
+                position: relative;
+                z-index: 2;
 
                 .btn {
                     min-width: 60px;
@@ -485,9 +515,30 @@
 
         .link_area {
             display: flex;
+            flex-wrap: wrap;
 
             & a {
                 margin-right: 15px;
+
+                @media(max-width:576px){
+                    width: 100%;
+                }
+                .text_block{
+                    p{
+                        font-size: $fs-18;
+                        transition: .5s;
+                    }
+                }
+                
+
+                &:hover{
+                    .text_block{
+                        p{
+                            background-color: $fc-black;
+                            color: $fc-white;
+                        }
+                    }
+                }
             }
 
             .text_block {
@@ -525,13 +576,8 @@
         &>div {
             display: flex;
 
-            padding: 2.5px 0px;
-
-
-
             &>div {
                 width: 110px;
-                // overflow: hidden;
                 padding-right: 20px;
                 white-space: nowrap;
                 box-sizing: unset;
@@ -540,7 +586,7 @@
                 &::after {
                     position: absolute;
                     content: '';
-                    width: 3px;
+                    width: 1.5px;
                     height: 100%;
                     top: 0;
                     right: 0;
@@ -560,6 +606,9 @@
         }
 
         .firtst_data {
+            p{
+                line-height: 1;
+            }
             &>div {
                 &>p {
                     letter-spacing: 15px;
@@ -568,10 +617,15 @@
 
             &>p {
                 padding-left: 20px;
+                letter-spacing: 2px;
             }
         }
 
         .new_data {
+            margin: 10px 0;
+            p{
+                line-height: 1;
+            }
             &>div {
                 &>p {
                     letter-spacing: 2.7px;
@@ -580,10 +634,14 @@
 
             &>p {
                 padding-left: 20px;
+                letter-spacing: 2px;
             }
         }
 
         .click_point {
+            p{
+                line-height: 1;
+            }
             &>div {
                 &>p {
                     letter-spacing: 2.7px;
@@ -592,6 +650,7 @@
 
             &>p {
                 padding-left: 20px;
+                letter-spacing: 2px;
             }
         }
     }
@@ -613,11 +672,12 @@
         }
 
         .text_block {
+            font-weight: 900;
             font-size: $fs-14;
             text-indent: 40px;
             letter-spacing: 4px;
             text-align: justify;
-            padding: 50px 0px;
+            padding: 0px 0px 50px 0;
 
 
 
@@ -679,6 +739,12 @@
                 left: -40px;
                 transform: translate(-100%, -50%);
 
+                @media(max-width:576px){
+                    top:120%;
+                    left:45%;
+                }
+
+
                 .arrow_button {
                     &::before {
                         content: '';
@@ -699,6 +765,11 @@
                 top: 50%;
                 padding: 20px 0px;
                 transform: translate(100%, -50%);
+
+                @media(max-width:576px){
+                    top:120%;
+                    right:45%
+                }
 
                 .arrow_button {
                     &::after {
@@ -748,22 +819,26 @@
             overflow: hidden;
             margin-bottom: 15px;
 
-            &::before {
-                position: absolute;
-                content: '';
-                width: 100%;
-                height: 2px;
-                background-color: green;
-                z-index: -1;
-            }
-
             p {
                 padding: 25px;
-                background-color: $bc-white;
+                font-size: $fs-18;
+                letter-spacing: 3px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top:50%;
+                    transform: translateY(-50%);
+                    left: 25%;
+                    width: 200%;
+                    height: 1px;
+                    background-color: rgba(128, 128, 128, 0.1);
+                }
+                
             }
 
             .text_btn {
-                padding: 25px;
+                padding: 30px 25px;
                 background-color: $bc-white;
 
                 .btn {
@@ -789,9 +864,30 @@
 
         .link_area {
             display: flex;
+            flex-wrap: wrap;
 
             & a {
                 margin-right: 15px;
+
+                @media(max-width:576px){
+                    width: 100%;
+                }
+                .text_block{
+                    p{
+                        font-size: $fs-18;
+                        transition: .5s;
+                    }
+                }
+                
+
+                &:hover{
+                    .text_block{
+                        p{
+                            background-color: $fc-black;
+                            color: $fc-white;
+                        }
+                    }
+                }
             }
 
             .text_block {
@@ -827,7 +923,6 @@
 
         &>div {
             display: flex;
-            padding: 2.5px 0px;
 
             &>div {
                 width: 110px;
@@ -839,7 +934,7 @@
                 &::after {
                     position: absolute;
                     content: '';
-                    width: 3px;
+                    width: 1.5px;
                     height: 100%;
                     top: 0;
                     right: 0;
@@ -851,15 +946,17 @@
         &::before {
             content: '';
             position: absolute;
-            top: 50%;
+            top: 0;
             left: 0;
             width: 5px;
-            height: 75px;
-            transform: translateY(-50%);
+            height: 100%;
             background-color: $bc-brown;
         }
 
         .firtst_data {
+            p{
+                line-height: 1;
+            }
             &>div {
                 &>p {
                     letter-spacing: 15px;
@@ -868,10 +965,15 @@
 
             &>p {
                 padding-left: 20px;
+                letter-spacing: 2px;
             }
         }
 
         .new_data {
+            margin: 10px 0;
+            p{
+                line-height: 1;
+            }
             &>div {
                 &>p {
                     letter-spacing: 2.7px;
@@ -880,10 +982,14 @@
 
             &>p {
                 padding-left: 20px;
+                letter-spacing: 2px;
             }
         }
 
         .click_point {
+            p{
+                line-height: 1;
+            }
             &>div {
                 &>p {
                     letter-spacing: 2.7px;
@@ -892,6 +998,7 @@
 
             &>p {
                 padding-left: 20px;
+                letter-spacing: 2px;
             }
         }
     }
@@ -907,9 +1014,11 @@
         .picture {
             width: 40%;
             background-color: $bc-brown-hover;
+            margin-right: 50px;
         }
 
         .text_block {
+            font-weight: 900;
             width: 60%;
             font-size: $fs-14;
             text-indent: 40px;
@@ -981,6 +1090,12 @@
                 left: -40px;
                 transform: translate(-100%, -50%);
 
+                @media(max-width:576px){
+                    top:120%;
+                    left:45%;
+                }
+
+
                 .arrow_button {
                     &::before {
                         content: '';
@@ -1001,6 +1116,11 @@
                 top: 50%;
                 padding: 20px 0px;
                 transform: translate(100%, -50%);
+
+                @media(max-width:576px){
+                    top:120%;
+                    right:45%
+                }
 
                 .arrow_button {
                     &::after {
@@ -1050,22 +1170,25 @@
             overflow: hidden;
             margin-bottom: 15px;
 
-            &::before {
-                position: absolute;
-                content: '';
-                width: 100%;
-                height: 2px;
-                background-color: green;
-                z-index: -1;
-            }
-
             p {
                 padding: 25px;
-                background-color: $bc-white;
+                font-size: $fs-18;
+                letter-spacing: 3px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top:50%;
+                    transform: translateY(-50%);
+                    left: 25%;
+                    width: 200%;
+                    height: 1px;
+                    background-color: rgba(128, 128, 128, 0.1);
+                }
             }
 
             .text_btn {
-                padding: 25px;
+                padding: 30px 25px;
                 background-color: $bc-white;
 
                 .btn {
@@ -1091,9 +1214,30 @@
 
         .link_area {
             display: flex;
+            flex-wrap: wrap;
 
             & a {
                 margin-right: 15px;
+
+                @media(max-width:576px){
+                    width: 100%;
+                }
+                .text_block{
+                    p{
+                        font-size: $fs-18;
+                        transition: .5s;
+                    }
+                }
+                
+
+                &:hover{
+                    .text_block{
+                        p{
+                            background-color: $fc-black;
+                            color: $fc-white;
+                        }
+                    }
+                }
             }
 
             .text_block {
@@ -1119,7 +1263,6 @@
 
             }
         }
-
     }
 
     .message_area {
@@ -1131,13 +1274,8 @@
         &>div {
             display: flex;
 
-            padding: 2.5px 0px;
-
-
-
             &>div {
                 width: 110px;
-                // overflow: hidden;
                 padding-right: 20px;
                 white-space: nowrap;
                 box-sizing: unset;
@@ -1146,7 +1284,7 @@
                 &::after {
                     position: absolute;
                     content: '';
-                    width: 3px;
+                    width: 1.5px;
                     height: 100%;
                     top: 0;
                     right: 0;
@@ -1166,6 +1304,9 @@
         }
 
         .firtst_data {
+            p{
+                line-height: 1;
+            }
             &>div {
                 &>p {
                     letter-spacing: 15px;
@@ -1174,10 +1315,15 @@
 
             &>p {
                 padding-left: 20px;
+                letter-spacing: 2px;
             }
         }
 
         .new_data {
+            margin: 10px 0;
+            p{
+                line-height: 1;
+            }
             &>div {
                 &>p {
                     letter-spacing: 2.7px;
@@ -1186,10 +1332,14 @@
 
             &>p {
                 padding-left: 20px;
+                letter-spacing: 2px;
             }
         }
 
         .click_point {
+            p{
+                line-height: 1;
+            }
             &>div {
                 &>p {
                     letter-spacing: 2.7px;
@@ -1198,10 +1348,10 @@
 
             &>p {
                 padding-left: 20px;
+                letter-spacing: 2px;
             }
         }
     }
-
 }
 
 .five {
@@ -1214,6 +1364,7 @@
         .picture {
             width: 40%;
             background-color: $bc-brown-hover;
+            margin-left: 50px;
         }
 
         .text_block {
@@ -1288,6 +1439,12 @@
                 left: -40px;
                 transform: translate(-100%, -50%);
 
+                @media(max-width:576px){
+                    top:120%;
+                    left:45%;
+                }
+
+
                 .arrow_button {
                     &::before {
                         content: '';
@@ -1308,6 +1465,11 @@
                 top: 50%;
                 padding: 20px 0px;
                 transform: translate(100%, -50%);
+
+                @media(max-width:576px){
+                    top:120%;
+                    right:45%
+                }
 
                 .arrow_button {
                     &::after {
@@ -1357,22 +1519,25 @@
             overflow: hidden;
             margin-bottom: 15px;
 
-            &::before {
-                position: absolute;
-                content: '';
-                width: 100%;
-                height: 2px;
-                background-color: green;
-                z-index: -1;
-            }
-
             p {
                 padding: 25px;
-                background-color: $bc-white;
+                font-size: $fs-18;
+                letter-spacing: 3px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top:50%;
+                    transform: translateY(-50%);
+                    left: 25%;
+                    width: 200%;
+                    height: 1px;
+                    background-color: rgba(128, 128, 128, 0.1);
+                }
             }
 
             .text_btn {
-                padding: 25px;
+                padding: 30px 25px;
                 background-color: $bc-white;
 
                 .btn {
@@ -1398,9 +1563,30 @@
 
         .link_area {
             display: flex;
+            flex-wrap: wrap;
 
             & a {
                 margin-right: 15px;
+
+                @media(max-width:576px){
+                    width: 100%;
+                }
+                .text_block{
+                    p{
+                        font-size: $fs-18;
+                        transition: .5s;
+                    }
+                }
+                
+
+                &:hover{
+                    .text_block{
+                        p{
+                            background-color: $fc-black;
+                            color: $fc-white;
+                        }
+                    }
+                }
             }
 
             .text_block {
@@ -1438,13 +1624,8 @@
         &>div {
             display: flex;
 
-            padding: 2.5px 0px;
-
-
-
             &>div {
                 width: 110px;
-                // overflow: hidden;
                 padding-right: 20px;
                 white-space: nowrap;
                 box-sizing: unset;
@@ -1453,7 +1634,7 @@
                 &::after {
                     position: absolute;
                     content: '';
-                    width: 3px;
+                    width: 1.5px;
                     height: 100%;
                     top: 0;
                     right: 0;
@@ -1473,6 +1654,9 @@
         }
 
         .firtst_data {
+            p{
+                line-height: 1;
+            }
             &>div {
                 &>p {
                     letter-spacing: 15px;
@@ -1481,10 +1665,15 @@
 
             &>p {
                 padding-left: 20px;
+                letter-spacing: 2px;
             }
         }
 
         .new_data {
+            margin: 10px 0;
+            p{
+                line-height: 1;
+            }
             &>div {
                 &>p {
                     letter-spacing: 2.7px;
@@ -1493,10 +1682,14 @@
 
             &>p {
                 padding-left: 20px;
+                letter-spacing: 2px;
             }
         }
 
         .click_point {
+            p{
+                line-height: 1;
+            }
             &>div {
                 &>p {
                     letter-spacing: 2.7px;
@@ -1505,9 +1698,13 @@
 
             &>p {
                 padding-left: 20px;
+                letter-spacing: 2px;
             }
         }
     }
 
 }
 
+th{
+    word-break: break-all;
+}
