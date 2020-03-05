@@ -21,6 +21,14 @@
         margin: 0 0 50px 0;
     }
 
+    p{
+
+        &:nth-of-type(1){
+        
+            margin: 15px 0;
+        }
+    }
+
     a{
 
         color: unset;
@@ -39,7 +47,9 @@
     
             p{
                 font-weight: bold;
+
             }
+
     
             .mask{
     
@@ -62,11 +72,15 @@
                     color: red;
     
                     transition: .5s;
+
+                    opacity: 1;
                 }
         
                 .fa-youtube{
         
-                    font-size: 120px;
+                    font-size: 80px;
+
+                    opacity: .7;
         
                     position: relative;
     

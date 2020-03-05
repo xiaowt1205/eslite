@@ -161,6 +161,10 @@ a:active {
   background-position: center center;
 }
 
+.cardBox p:nth-of-type(1) {
+  margin: 15px 0;
+}
+
 .pageContent {
   margin-bottom: 200px;
   position: relative;

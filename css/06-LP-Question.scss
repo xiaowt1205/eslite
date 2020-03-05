@@ -7,19 +7,6 @@
     box-sizing: border-box;
 }
 
-.breadcrumbArea{
-    .title{
-        &::before{
-            content: '';
-            height: 500px !important;
-            max-height: 301%;
-            border-left: 1px solid black;
-            position: absolute;
-            top: -200%;
-            left: -5px;
-        }
-    }
-}
 
 
 .btnGroup{
@@ -30,7 +17,7 @@
         color: $fc-pure-gray;
 
         .btnArea{
-            border: 2px solid $fc-black;
+            border: 1px solid $fc-black;
             border-radius: 7px;
             letter-spacing: 2px;
             padding: 5px 30px;
@@ -60,7 +47,7 @@
         .query{
             font-weight: bold;
             font-size: $fs-18;
-            margin-bottom: 20px;
+            
         }
     
         .answer{
@@ -72,13 +59,17 @@
         .fa-chevron-up{
             transition: .5s;
         }
+
     
         &.active .fa-chevron-up{
             transform: rotate(180deg);
         }
         &.active .answer{
+            transition-timing-function: ease-in-out;
             transition: 1s;
             max-height: 400px;
+            margin-top: 20px;
+            
         }
     }
 }

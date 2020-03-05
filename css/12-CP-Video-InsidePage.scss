@@ -16,6 +16,8 @@
     .text {
         width: 100%;
 
+        font-weight: 600;
+
         p {
             margin-bottom: 35px;
             line-height: 30px;
@@ -108,10 +110,12 @@
                 &::after {
                     position: absolute;
                     content: '';
-                    width: 3px;
-                    height: 100%;
-                    top: 0;
+                    width: 1px;
+                    height: 75%;
+                    top: 50%;
                     right: 0;
+
+                    transform: translateY(-50%);
                     background-color: $bc-brown;
                 }
             }

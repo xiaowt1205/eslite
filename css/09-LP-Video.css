@@ -153,6 +153,10 @@ a:active {
   }
 }
 
+.cardBox p:nth-of-type(1) {
+  margin: 15px 0;
+}
+
 .cardBox a {
   color: unset;
 }
@@ -195,10 +199,12 @@ a:active {
   color: red;
   -webkit-transition: .5s;
   transition: .5s;
+  opacity: 1;
 }
 
 .cardBox a .photo .mask .fa-youtube {
-  font-size: 120px;
+  font-size: 80px;
+  opacity: .7;
   position: relative;
 }
 

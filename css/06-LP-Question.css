@@ -141,16 +141,6 @@ a:active {
           box-sizing: border-box;
 }
 
-.breadcrumbArea .title::before {
-  content: '';
-  height: 500px !important;
-  max-height: 301%;
-  border-left: 1px solid black;
-  position: absolute;
-  top: -200%;
-  left: -5px;
-}
-
 .btnGroup {
   padding-bottom: 30px;
   border-bottom: 1px solid #4D4D4D;
@@ -161,7 +151,7 @@ a:active {
 }
 
 .btnGroup a .btnArea {
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   border-radius: 7px;
   letter-spacing: 2px;
   padding: 5px 30px;
@@ -190,7 +180,6 @@ a:active {
 .QA-tab .QA .query {
   font-weight: bold;
   font-size: 18px;
-  margin-bottom: 20px;
 }
 
 .QA-tab .QA .answer {
@@ -211,9 +200,12 @@ a:active {
 }
 
 .QA-tab .QA.active .answer {
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
   -webkit-transition: 1s;
   transition: 1s;
   max-height: 400px;
+  margin-top: 20px;
 }
 
 .pageContent {
