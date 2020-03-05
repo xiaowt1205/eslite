@@ -1037,10 +1037,27 @@
   padding: 50px 0px;
 }
 
+@media (max-width: 576px) {
+  .four .text_area {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0px 0px;
+  }
+}
+
 .four .text_area .picture {
   width: 40%;
   background-color: #665252;
   margin-right: 50px;
+}
+
+@media (max-width: 576px) {
+  .four .text_area .picture {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 35px;
+    min-height: 300px;
+  }
 }
 
 .four .text_area .text_block {
@@ -1051,6 +1068,13 @@
   letter-spacing: 4px;
   text-align: justify;
   padding: 0px 10px;
+}
+
+@media (max-width: 576px) {
+  .four .text_area .text_block {
+    width: 100%;
+    margin-bottom: 35px;
+  }
 }
 
 .four .text_area .text_block p {
@@ -1401,10 +1425,27 @@
           flex-direction: row-reverse;
 }
 
+@media (max-width: 576px) {
+  .five .text_area {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0px 0px;
+  }
+}
+
 .five .text_area .picture {
   width: 40%;
   background-color: #665252;
   margin-left: 50px;
+}
+
+@media (max-width: 576px) {
+  .five .text_area .picture {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 35px;
+    min-height: 300px;
+  }
 }
 
 .five .text_area .text_block {
@@ -1414,6 +1455,13 @@
   letter-spacing: 4px;
   text-align: justify;
   padding: 0px 10px;
+}
+
+@media (max-width: 576px) {
+  .five .text_area .text_block {
+    width: 100%;
+    margin-bottom: 35px;
+  }
 }
 
 .five .text_area .text_block p {
