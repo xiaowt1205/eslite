@@ -336,6 +336,10 @@ main {
             border: 1px solid black;
             border-radius: 50%;
             overflow: hidden;
+
+            &:hover {
+                background-color: $fc-black;
+            }
         }
 
         .size {

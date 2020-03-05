@@ -21,6 +21,8 @@
     }
 
     .text {
+
+        letter-spacing: 3px;
         text-align: center;
         border-right: 1px solid $br-black;
         border-bottom: 1px solid $br-black;
@@ -86,10 +88,12 @@
                 &::after {
                     position: absolute;
                     content: '';
-                    width: 3px;
-                    height: 100%;
-                    top: 0;
+                    width: 1px;
+                    height: 75%;
+                    top: 50%;
                     right: 0;
+
+                    transform: translateY(-50%);
                     background-color: $bc-brown;
                 }
             }

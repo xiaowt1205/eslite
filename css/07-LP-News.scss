@@ -50,11 +50,14 @@
 
 .nameGroup{
 
-    border: 1px solid $fc-black;
+    border: 2px solid $fc-black;
 
     padding: 15px 0;
 
-    margin: 30px 0;
+    margin-top: 30px;
+
+    letter-spacing: 2px;
+    font-weight: bold;
 
     .dateName{
 
@@ -92,22 +95,25 @@
 
     font-weight: bold;
 
+    letter-spacing: 2px;
+
     .news{
         width: 100%;
         min-height: 90px;
 
-        border-bottom: 1px solid $fc-gray;
+        border-bottom: 2px solid $fc-gray;
 
         .date{
             min-width: 130px;
 
             line-height: 90px;
             letter-spacing: 2px;
+            color: $fc-gray;
 
             @media (max-width:992px) {
 
                 width: unset;
-
+                
                 color: $fc-666666-gray;
                 font-size: $fs-12;
                 font-weight: bold;
@@ -116,7 +122,7 @@
                 padding-top: 30px;
                 padding-bottom: 15px;
 
-    
+                
             }
 
             span{
@@ -371,7 +377,6 @@
 
                 border-radius: 50%;
     
-                
                 font-weight: bold;
 
                 &:hover{
@@ -388,6 +393,18 @@
             font-weight: bold;
 
             padding: 10px 20px ;
+
+            
+            &:hover{
+
+                background-color: $fc-black;
+
+            }
+
+            &:hover a{
+
+                color: $fc-white;
+            }
 
             
         @media (max-width:1400px){

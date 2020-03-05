@@ -15,6 +15,7 @@
 
 .area_video .text {
   width: 100%;
+  font-weight: 600;
 }
 
 .area_video .text p {
@@ -108,10 +109,12 @@
 .area_video .message_area > div > div::after {
   position: absolute;
   content: '';
-  width: 3px;
-  height: 100%;
-  top: 0;
+  width: 1px;
+  height: 75%;
+  top: 50%;
   right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   background-color: #231815;
 }
 
