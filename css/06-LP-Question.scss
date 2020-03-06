@@ -3,73 +3,79 @@
 @import "./_function.scss";
 
 
-*{
+* {
     box-sizing: border-box;
 }
 
 
 
-.btnGroup{
+.btnGroup {
     padding-bottom: 30px;
-    border-bottom:1px solid $fc-pure-gray ;
-  
-    a{
+    border-bottom: 1px solid $fc-pure-gray;
+
+    a {
         color: $fc-pure-gray;
 
-        .btnArea{
+        .btnArea {
             border: 1px solid $fc-black;
             border-radius: 7px;
             letter-spacing: 2px;
             padding: 5px 30px;
             margin-right: 20px;
-    
-            &.active{
+
+            &.active {
                 background-color: $bc-dark-brown-hover;
                 color: $fc-white;
+            }
+
+            @media screen and (max-width:1200px) {
+                padding: 5px 20px;
+
             }
         }
     }
 }
 
 
-.QA-tab{
+.QA-tab {
     display: none;
 
-    &.active{
+    &.active {
         display: block;
     }
 
-    .QA{
+    .QA {
         padding: 20px 0;
-        border-bottom:1px solid $fc-pure-gray ;
+        border-bottom: 1px solid $fc-pure-gray;
         cursor: pointer;
-    
-        .query{
+
+        .query {
             font-weight: bold;
             font-size: $fs-18;
-            
+
         }
-    
-        .answer{
+
+        .answer {
             overflow: hidden;
             max-height: 0;
             transition: 0.3s;
         }
-    
-        .fa-chevron-up{
+
+        .fa-chevron-up {
             transition: .5s;
         }
 
-    
-        &.active .fa-chevron-up{
+
+        &.active .fa-chevron-up {
             transform: rotate(180deg);
         }
-        &.active .answer{
+
+        &.active .answer {
             transition-timing-function: ease-in-out;
             transition: 1s;
             max-height: 400px;
             margin-top: 20px;
-            
+
         }
     }
 }
@@ -77,27 +83,27 @@
 
 
 
-.pageContent{
+.pageContent {
     margin-bottom: 200px;
     position: relative;
 }
 
-.pageNumber{
+.pageNumber {
     position: absolute;
     left: 50%;
     bottom: -100px;
     transform: translateX(-50%);
 
-    ul{
-        .number{
-            &:first-child{
-                a{
+    ul {
+        .number {
+            &:first-child {
+                a {
                     background-color: $bc-number-black;
                     color: $fc-white;
                 }
             }
 
-            a{
+            a {
                 display: block;
                 width: 25px;
                 height: 25px;
@@ -106,34 +112,36 @@
                 text-align: center;
                 border-radius: 50%;
                 font-weight: bold;
-                &:hover{
+
+                &:hover {
                     background-color: $bc-number-black;
                     color: $fc-white;
                 }
             }
         }
 
-        .nextBTN,.lastBTN{
+        .nextBTN,
+        .lastBTN {
             border: 1px solid $bc-number-black;
-            padding: 10px 20px ;
+            padding: 10px 20px;
 
-            a{
+            a {
                 color: $fc-black;
             }
         }
 
-        .nextBTN{
+        .nextBTN {
             margin-left: 20px;
         }
 
-        .lastBTN{
+        .lastBTN {
             margin-left: 10px;
         }
     }
 
-    .more{
+    .more {
         border: 1px solid $bc-number-black;
-        padding: 10px 50px ;
+        padding: 10px 50px;
 
     }
 }

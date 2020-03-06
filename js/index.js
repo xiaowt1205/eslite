@@ -19,6 +19,20 @@ var swiper = new Swiper('.vendor_area .swiper-container', {
         prevEl: '.vendor_area .arrow_button-prev',
     },
 });
+var swiper = new Swiper('.vendor_area-mob .swiper-container', {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    breakpoints: {
+        // when window width is >= 1200px
+        768: {
+            slidesPerView: 4,
+        },
+    },
+    navigation: {
+        nextEl: '.vendor_area-mob .arrow_button-next',
+        prevEl: '.vendor_area-mob .arrow_button-prev',
+    },
+});
 
 var doOnce = false;
 

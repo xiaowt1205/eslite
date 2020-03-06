@@ -163,6 +163,12 @@ a:active {
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 1200px) {
+  .btnGroup a .btnArea {
+    padding: 5px 20px;
+  }
+}
+
 .QA-tab {
   display: none;
 }
@@ -242,12 +248,14 @@ a:active {
   color: #FFFFFF;
 }
 
-.pageNumber ul .nextBTN, .pageNumber ul .lastBTN {
+.pageNumber ul .nextBTN,
+.pageNumber ul .lastBTN {
   border: 1px solid #333333;
   padding: 10px 20px;
 }
 
-.pageNumber ul .nextBTN a, .pageNumber ul .lastBTN a {
+.pageNumber ul .nextBTN a,
+.pageNumber ul .lastBTN a {
   color: #000000;
 }
 

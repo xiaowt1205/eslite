@@ -516,14 +516,14 @@ a:active {
   width: 100%;
 }
 
-.mobile-aside .accordion .aside-btn-group .aside-btn-title div {
+.mobile-aside .accordion .aside-btn-group .aside-btn-title > div {
   color: #FFFFFF;
   letter-spacing: 2px;
   position: relative;
   padding: 10px 0px;
 }
 
-.mobile-aside .accordion .aside-btn-group .aside-btn-title div::after {
+.mobile-aside .accordion .aside-btn-group .aside-btn-title > div::after {
   content: '';
   position: absolute;
   width: 180px;
