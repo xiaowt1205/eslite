@@ -7,6 +7,12 @@
   width: 230px;
 }
 
+@media (max-width: 768px) {
+  .Guide_area .block {
+    display: block;
+  }
+}
+
 .Guide_area .block p {
   font-weight: 900;
   font-size: 24px;

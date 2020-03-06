@@ -245,6 +245,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 5;
 }
 
 .customization-swiper-bg .customization-swiper-content {

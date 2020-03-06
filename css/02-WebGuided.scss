@@ -6,6 +6,11 @@
 
     .block {
         width: 230px;
+
+        @media (max-width:768px) {
+            display: block;
+        }
+
         p {
             font-weight: 900;
             font-size: $fs-24;

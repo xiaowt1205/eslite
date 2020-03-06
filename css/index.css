@@ -641,12 +641,6 @@ header #headline .aside-bg {
   }
 }
 
-@media (max-width: 576px) {
-  header #headline .banner {
-    height: 320px;
-  }
-}
-
 header #headline .banner .swiper-banner {
   height: 100%;
 }
