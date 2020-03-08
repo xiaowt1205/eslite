@@ -549,12 +549,12 @@ main {
   padding: 0px 15px;
 }
 
-.breadcrumbblock .btnArea {
+.breadcrumbblock .insidePageTitle .btnArea {
   font-weight: bold;
   margin-top: 25px;
 }
 
-.breadcrumbblock .btnArea .block {
+.breadcrumbblock .insidePageTitle .btnArea .block {
   width: 94px;
   height: 94px;
   margin: 0 auto 10px;
@@ -563,11 +563,11 @@ main {
   overflow: hidden;
 }
 
-.breadcrumbblock .btnArea .block:hover {
+.breadcrumbblock .insidePageTitle .btnArea .block:hover {
   background-color: #000000;
 }
 
-.breadcrumbblock .btnArea .size {
+.breadcrumbblock .insidePageTitle .btnArea .size {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -585,11 +585,11 @@ main {
           align-items: center;
 }
 
-.breadcrumbblock .btnArea a {
+.breadcrumbblock .insidePageTitle .btnArea a {
   color: #000000;
 }
 
-.breadcrumbblock .btnArea a:hover {
+.breadcrumbblock .insidePageTitle .btnArea a:hover {
   color: #FFFFFF;
 }
 

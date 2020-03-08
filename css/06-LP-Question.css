@@ -141,71 +141,100 @@ a:active {
           box-sizing: border-box;
 }
 
-.btnGroup {
-  padding-bottom: 30px;
+.question .btnGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 20px;
   border-bottom: 1px solid #4D4D4D;
 }
 
-.btnGroup a {
+@media screen and (max-width: 768px) {
+  .question .btnGroup {
+    display: none;
+  }
+}
+
+.question .btnGroup a {
+  margin: 0px 20px 30px 0px;
+}
+
+.question .btnGroup a .btnArea {
+  width: 120px;
+  max-height: 42px;
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: 1px solid #000000;
+  font-size: 16px;
+  font-weight: unset;
+  text-align: center;
+  letter-spacing: 2px;
   color: #4D4D4D;
 }
 
-.btnGroup a .btnArea {
-  border: 1px solid #000000;
-  border-radius: 7px;
-  letter-spacing: 2px;
-  padding: 5px 30px;
-  margin-right: 20px;
-}
-
-.btnGroup a .btnArea.active {
+.question .btnGroup a .btnArea.active {
   background-color: #352E2C;
   color: #FFFFFF;
 }
 
-@media screen and (max-width: 1200px) {
-  .btnGroup a .btnArea {
-    padding: 5px 20px;
-  }
-}
-
-.QA-tab {
+.question .QA-tab {
   display: none;
 }
 
-.QA-tab.active {
+.question .QA-tab.active {
   display: block;
 }
 
-.QA-tab .QA {
-  padding: 20px 0;
+.question .QA-tab .QA {
+  padding: 20px 15px 20px 0px;
   border-bottom: 1px solid #4D4D4D;
   cursor: pointer;
 }
 
-.QA-tab .QA .query {
+.question .QA-tab .QA .query {
   font-weight: bold;
   font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.QA-tab .QA .answer {
+.question .QA-tab .QA .query .fa-chevron-up {
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .question .QA-tab .QA .query {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .question .QA-tab .QA .query span {
+    padding-bottom: 20px;
+  }
+}
+
+.question .QA-tab .QA .answer {
   overflow: hidden;
   max-height: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.QA-tab .QA .fa-chevron-up {
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.QA-tab .QA.active .fa-chevron-up {
+.question .QA-tab .QA.active .fa-chevron-up {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.QA-tab .QA.active .answer {
+.question .QA-tab .QA.active .answer {
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
   -webkit-transition: 1s;
@@ -214,25 +243,25 @@ a:active {
   margin-top: 20px;
 }
 
-.pageContent {
-  margin-bottom: 200px;
+.question .pageNumber {
   position: relative;
+  height: 100px;
 }
 
-.pageNumber {
+.question .pageNumber ul {
   position: absolute;
+  top: 50%;
   left: 50%;
-  bottom: -100px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-.pageNumber ul .number:first-child a {
+.question .pageNumber ul .number:first-child a {
   background-color: #333333;
   color: #FFFFFF;
 }
 
-.pageNumber ul .number a {
+.question .pageNumber ul .number a {
   display: block;
   width: 25px;
   height: 25px;
@@ -243,31 +272,38 @@ a:active {
   font-weight: bold;
 }
 
-.pageNumber ul .number a:hover {
+.question .pageNumber ul .number a:hover {
   background-color: #333333;
   color: #FFFFFF;
 }
 
-.pageNumber ul .nextBTN,
-.pageNumber ul .lastBTN {
+.question .pageNumber ul .nextBTN,
+.question .pageNumber ul .lastBTN {
+  width: 106px;
+  text-align: center;
   border: 1px solid #333333;
   padding: 10px 20px;
 }
 
-.pageNumber ul .nextBTN a,
-.pageNumber ul .lastBTN a {
+.question .pageNumber ul .nextBTN a,
+.question .pageNumber ul .lastBTN a {
   color: #000000;
 }
 
-.pageNumber ul .nextBTN {
+.question .pageNumber ul .nextBTN {
   margin-left: 20px;
 }
 
-.pageNumber ul .lastBTN {
+.question .pageNumber ul .lastBTN {
   margin-left: 10px;
 }
 
-.pageNumber .more {
+.question .pageNumber .more {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   border: 1px solid #333333;
   padding: 10px 50px;
 }

@@ -6,100 +6,82 @@
 
 .btnGroup {
 
-    a {
+    .project {
+        @include btn_style(100%, 80px, 30px, 8px, $brown-hover, $brown-hover, $brown);
+        @include text_style($fs-18, unset, unset, unset);
+        color: $white;
+        margin-bottom: 30px;
 
-        color: $fc-white;
-        text-decoration: none;
-
-        .project {
-            width: 100%;
-            max-width: 780px;
-            height: 80px;
-            border-radius: 15px;
-            background-color: $bc-light-brown-Transparent;
-            margin-bottom: 30px;
-            font-size: $fs-18;
-            padding: 0 25px;
-
-            &::before {
-                @media (max-width:768px) {
-                    content: '';
-                    border: 1px solid $fc-white;
-                    width: 130px;
-                    position: absolute;
-                    bottom: 20%;
-                }
+        &::before {
+            @media (max-width:768px) {
+                content: '';
+                border: 1px solid $fc-white;
+                width: 130px;
+                position: absolute;
+                bottom: 20%;
             }
+        }
 
-            &:hover {
+        &:hover {
+            .date {
                 background-color: $bc-brown;
-
-                .date {
-                    background-color: $bc-brown;
-                }
-
             }
+        }
+
+        @media (max-width:768px) {
+            max-height: 90px;
+            margin-bottom: 40px;
+            font-size: $fs-16;
+            position: relative;
+            justify-content: center;
+        }
+
+        span {
+            margin-right: 20px;
+        }
+
+        .title {
+            font-weight: $fw-400;
+            letter-spacing: 5px;
+
+            @media (max-width:1024px) {
+                letter-spacing: 3px;
+            }
+        }
+
+        hr {
+            flex-grow: 1;
+            background-color: $fc-white;
+            margin: 0 30px;
 
             @media (max-width:768px) {
-                height: 90px;
-                margin-bottom: 45px;
-                font-size: $fs-16;
-                position: relative;
-                justify-content: center;
+                display: none;
+            }
+        }
+
+        .date {
+            width: 50px;
+            height: 50px;
+            border: 1px solid $white;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @media (max-width:768px) {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: $brown-hover;
             }
 
-            span {
-                margin-right: 20px;
-            }
+            p {
+                font-size: $fs-10;
 
-            &>p {
-                font-weight: $fw-400;
-                letter-spacing: 5px;
-
-                @media (max-width:1024px) {
-                    letter-spacing: 3px;
-                }
-            }
-
-            hr {
-                flex-grow: 1;
-                background-color: $fc-white;
-                margin: 0 30px;
-
-                @media (max-width:768px) {
-                    display: none;
-                }
-            }
-
-            .date {
-                width: 50px;
-                height: 50px;
-                // background-color: $bc-brown;
-                border: 1px solid $fc-white;
-                border-radius: 50%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                @media (max-width:768px) {
-                    position: absolute;
-                    top: 0;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    background-color: $bc-brown-hover;
-                }
-
-                p {
-                    font-size: $fs-10;
-
-                    // text-align: center;
-                    // &:first-child {
-                    //     font-size: 14px;
-                    // }
-                    &:nth-last-child(1) {
-                        transform: scale(0.85);
-                    }
+                &:nth-last-child(1) {
+                    transform: scale(0.85);
                 }
             }
         }

@@ -7,141 +7,154 @@
     box-sizing: border-box;
 }
 
+.question {
+
+    .btnGroup {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        border-bottom: 1px solid $fc-pure-gray;
+
+        @media screen and (max-width:768px) {
+            display: none;
+        }
+
+        a {
+            margin: 0px 20px 30px 0px;
+
+            .btnArea {
+                @include little_btn_style(120px, 42px, 8px, 8px, $black);
+                @include text_style($fs-16, unset, center, 2px);
+                color: $fc-pure-gray;
+
+                &.active {
+                    background-color: $bc-dark-brown-hover;
+                    color: $fc-white;
+                }
+            }
+        }
+    }
+
+    .QA-tab {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        .QA {
+            padding: 20px 15px 20px 0px;
+            border-bottom: 1px solid $fc-pure-gray;
+            cursor: pointer;
+
+            .query {
+                font-weight: bold;
+                font-size: $fs-18;
+                display: flex;
+                align-items: center;
+
+                .fa-chevron-up {
+                    transition: .5s;
+                    margin-left: 20px;
+                }
+
+                @media screen and (max-width:576px) {
+                    flex-direction: column;
+
+                    span {
+                        padding-bottom: 20px;
+                    }
+                }
 
 
-.btnGroup {
-    padding-bottom: 30px;
-    border-bottom: 1px solid $fc-pure-gray;
+            }
 
-    a {
-        color: $fc-pure-gray;
-
-        .btnArea {
-            border: 1px solid $fc-black;
-            border-radius: 7px;
-            letter-spacing: 2px;
-            padding: 5px 30px;
-            margin-right: 20px;
+            .answer {
+                overflow: hidden;
+                max-height: 0;
+                transition: 0.3s;
+            }
 
             &.active {
-                background-color: $bc-dark-brown-hover;
-                color: $fc-white;
+                .fa-chevron-up {
+                    transform: rotate(180deg);
+                }
+
+                .answer {
+                    transition-timing-function: ease-in-out;
+                    transition: 1s;
+                    max-height: 400px;
+                    margin-top: 20px;
+
+                }
             }
-
-            @media screen and (max-width:1200px) {
-                padding: 5px 20px;
-
-            }
         }
     }
-}
 
+    .pageNumber {
+        position: relative;
+        height: 100px;
 
-.QA-tab {
-    display: none;
+        ul {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
 
-    &.active {
-        display: block;
-    }
+            .number {
+                &:first-child {
+                    a {
+                        background-color: $bc-number-black;
+                        color: $fc-white;
+                    }
+                }
 
-    .QA {
-        padding: 20px 0;
-        border-bottom: 1px solid $fc-pure-gray;
-        cursor: pointer;
-
-        .query {
-            font-weight: bold;
-            font-size: $fs-18;
-
-        }
-
-        .answer {
-            overflow: hidden;
-            max-height: 0;
-            transition: 0.3s;
-        }
-
-        .fa-chevron-up {
-            transition: .5s;
-        }
-
-
-        &.active .fa-chevron-up {
-            transform: rotate(180deg);
-        }
-
-        &.active .answer {
-            transition-timing-function: ease-in-out;
-            transition: 1s;
-            max-height: 400px;
-            margin-top: 20px;
-
-        }
-    }
-}
-
-
-
-
-.pageContent {
-    margin-bottom: 200px;
-    position: relative;
-}
-
-.pageNumber {
-    position: absolute;
-    left: 50%;
-    bottom: -100px;
-    transform: translateX(-50%);
-
-    ul {
-        .number {
-            &:first-child {
                 a {
-                    background-color: $bc-number-black;
-                    color: $fc-white;
+                    display: block;
+                    width: 25px;
+                    height: 25px;
+                    color: $fc-black;
+                    background-color: unset;
+                    text-align: center;
+                    border-radius: 50%;
+                    font-weight: bold;
+
+                    &:hover {
+                        background-color: $bc-number-black;
+                        color: $fc-white;
+                    }
                 }
             }
 
-            a {
-                display: block;
-                width: 25px;
-                height: 25px;
-                color: $fc-black;
-                background-color: unset;
+            .nextBTN,
+            .lastBTN {
+                width: 106px;
                 text-align: center;
-                border-radius: 50%;
-                font-weight: bold;
+                border: 1px solid $bc-number-black;
+                padding: 10px 20px;
 
-                &:hover {
-                    background-color: $bc-number-black;
-                    color: $fc-white;
+                a {
+                    color: $fc-black;
                 }
             }
-        }
 
-        .nextBTN,
-        .lastBTN {
-            border: 1px solid $bc-number-black;
-            padding: 10px 20px;
+            .nextBTN {
+                margin-left: 20px;
+            }
 
-            a {
-                color: $fc-black;
+            .lastBTN {
+                margin-left: 10px;
             }
         }
 
-        .nextBTN {
-            margin-left: 20px;
+        .more {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid $bc-number-black;
+            padding: 10px 50px;
+
         }
-
-        .lastBTN {
-            margin-left: 10px;
-        }
-    }
-
-    .more {
-        border: 1px solid $bc-number-black;
-        padding: 10px 50px;
-
     }
 }

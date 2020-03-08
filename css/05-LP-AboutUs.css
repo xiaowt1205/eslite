@@ -136,24 +136,29 @@ a:active {
   max-width: 1000px;
 }
 
-.btnGroup a {
+.btnGroup .project {
+  max-width: 100%;
+  max-height: 80px;
+  padding: 30px 25px;
+  border-radius: 8px;
+  background-color: #6a4945;
+  border: 1px solid #6a4945;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-size: 18px;
+  font-weight: unset;
+  text-align: unset;
+  letter-spacing: unset;
   color: #FFFFFF;
-  text-decoration: none;
+  margin-bottom: 30px;
 }
 
-.btnGroup a .project {
-  width: 100%;
-  max-width: 780px;
-  height: 80px;
-  border-radius: 15px;
-  background-color: #665252ed;
-  margin-bottom: 30px;
-  font-size: 18px;
-  padding: 0 25px;
+.btnGroup .project:hover {
+  background-color: #231815;
 }
 
 @media (max-width: 768px) {
-  .btnGroup a .project::before {
+  .btnGroup .project::before {
     content: '';
     border: 1px solid #FFFFFF;
     width: 130px;
@@ -162,18 +167,14 @@ a:active {
   }
 }
 
-.btnGroup a .project:hover {
-  background-color: #231815;
-}
-
-.btnGroup a .project:hover .date {
+.btnGroup .project:hover .date {
   background-color: #231815;
 }
 
 @media (max-width: 768px) {
-  .btnGroup a .project {
-    height: 90px;
-    margin-bottom: 45px;
+  .btnGroup .project {
+    max-height: 90px;
+    margin-bottom: 40px;
     font-size: 16px;
     position: relative;
     -webkit-box-pack: center;
@@ -182,22 +183,22 @@ a:active {
   }
 }
 
-.btnGroup a .project span {
+.btnGroup .project span {
   margin-right: 20px;
 }
 
-.btnGroup a .project > p {
+.btnGroup .project .title {
   font-weight: 400;
   letter-spacing: 5px;
 }
 
 @media (max-width: 1024px) {
-  .btnGroup a .project > p {
+  .btnGroup .project .title {
     letter-spacing: 3px;
   }
 }
 
-.btnGroup a .project hr {
+.btnGroup .project hr {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -206,12 +207,12 @@ a:active {
 }
 
 @media (max-width: 768px) {
-  .btnGroup a .project hr {
+  .btnGroup .project hr {
     display: none;
   }
 }
 
-.btnGroup a .project .date {
+.btnGroup .project .date {
   width: 50px;
   height: 50px;
   border: 1px solid #FFFFFF;
@@ -232,21 +233,21 @@ a:active {
 }
 
 @media (max-width: 768px) {
-  .btnGroup a .project .date {
+  .btnGroup .project .date {
     position: absolute;
     top: 0;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    background-color: #665252;
+    background-color: #6a4945;
   }
 }
 
-.btnGroup a .project .date p {
+.btnGroup .project .date p {
   font-size: 10px;
 }
 
-.btnGroup a .project .date p:nth-last-child(1) {
+.btnGroup .project .date p:nth-last-child(1) {
   -webkit-transform: scale(0.85);
           transform: scale(0.85);
 }

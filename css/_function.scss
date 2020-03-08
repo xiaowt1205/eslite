@@ -7,14 +7,43 @@
     border: $size solid $color;
 }
 
-@mixin btn-style($pd-x,$pd-y,$border-radius) {
+@mixin btn-style($pd-x, $pd-y, $border-radius) {
     padding: $pd-x $pd-y;
-    border-radius:$border-radius;
+    border-radius: $border-radius;
     background-color: transparent;
     border: 1px solid $bc-dark-brown-hover;
     transition: .3s;
 
-    &:hover{
+    &:hover {
         background-color: $bc-dark-brown-hover;
     }
+}
+
+@mixin btn_style($max-w, $max-h, $pd-x, $br-size, $br-color, $bg-color, $bg-hover-color) {
+    max-width: $max-w;
+    max-height: $max-h;
+    padding: $pd-x 25px;
+    border-radius: $br-size;
+    background-color: $bg-color;
+    border: 1px solid $br-color;
+    transition: .3s;
+
+    &:hover {
+        background-color: $bg-hover-color;
+    }
+}
+
+@mixin text_style($fs, $fw, $ta, $ls) {
+    font-size: $fs;
+    font-weight: $fw;
+    text-align: $ta;
+    letter-spacing: $ls;
+}
+
+@mixin little_btn_style($w, $max-h, $pd-x, $br-size, $br-color) {
+    width: $w;
+    max-height: $max-h;
+    padding: $pd-x 15px;
+    border-radius: $br-size;
+    border: 1px solid $br-color;
 }
