@@ -3,198 +3,141 @@
 @import "./_function.scss";
 
 
-*{
+* {
     box-sizing: border-box;
 }
 
 
-.cardBox{
-    width: calc(33.33333% - 30px);
+.cardBox {
+    width: calc(33.33333% - 20px);
+    margin: 0 0 35px;
 
-    margin: 0 30px 50px 0;
+    @media (max-width:1400px) {
+        width: calc(50% - 15px);
+    }
 
-
-
-    @media (max-width:577px) {
-        
+    @media (max-width:991px) {
         width: 100%;
-        margin: 0 0 50px 0;
     }
 
-    p{
+    .photo {
+        width: 100%;
+        height: 160px;
+        background-image: url(../img/test.jpg);
+        background-color: black;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
 
-        &:nth-of-type(1){
-        
-            margin: 15px 0;
-        }
-    }
-
-    a{
-
-        color: unset;
-
-        .photo{
-
+        .mask {
             width: 100%;
-            height: 160px;
-    
-            background-image: url(../img/test.jpg);
-            background-color: black;
-            background-size: cover;
-            background-position: center center;
-    
-            position: relative;
-    
-            p{
-                font-weight: bold;
+            height: 100%;
+            background-image: linear-gradient(top, $fc-black, transparent);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
 
+            &:hover .fa-youtube {
+                color: red;
+                transition: .5s;
+                opacity: 1;
             }
 
-    
-            .mask{
-    
-                width: 100%;
-                height: 100%;
-        
-                background-image: linear-gradient(top,$fc-black,transparent);
-                
-                display: flex;
-                justify-content: center;
-                align-items: center;
-        
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 2;
-    
-                &:hover .fa-youtube{
-    
-                    color: red;
-    
-                    transition: .5s;
+            .fa-youtube {
 
-                    opacity: 1;
-                }
-        
-                .fa-youtube{
-        
-                    font-size: 80px;
+                font-size: 80px;
+                opacity: .7;
+                position: relative;
 
-                    opacity: .7;
-        
-                    position: relative;
-    
-                    &::after{
-    
-                        content: '';
-    
-                        width: 50px;
-                        height: 50px;
-                        background-color: $fc-white;
-    
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%,-50%);
-                        z-index: -1;
-    
-                    }
-        
+                &::after {
+                    content: '';
+                    width: 50px;
+                    height: 50px;
+                    background-color: $fc-white;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: -1;
                 }
             }
-    
         }
     }
 
-
+    .title {
+        margin: 15px 0;
+        // height: 50px;
+    }
 }
 
-
-
-
-.pageContent{
-
-    margin-bottom: 200px;
-
+.pageNumber {
     position: relative;
-}
+    width: 100%;
+    height: 100px;
 
-.pageNumber{
+    ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
-    position: absolute;
-    left: 50%;
-    bottom: -100px;
-
-    transform: translateX(-50%);
-
-    ul{
-
-
-        .number{
-
-
-
-            &:first-child{
-
-                a{
-
+        .number {
+            &:first-child {
+                a {
                     background-color: $bc-number-black;
                     color: $fc-white;
                 }
-
             }
 
-            a{
+            a {
                 display: block;
-
                 width: 25px;
                 height: 25px;
-
                 color: $fc-black;
                 background-color: unset;
-
                 text-align: center;
-
                 border-radius: 50%;
-    
-                
                 font-weight: bold;
 
-                &:hover{
+                &:hover {
                     background-color: $bc-number-black;
                     color: $fc-white;
                 }
             }
-
         }
 
-        .nextBTN,.lastBTN{
+        .nextBTN,
+        .lastBTN {
+            width: 106px;
+            text-align: center;
             border: 1px solid $bc-number-black;
+            padding: 10px 20px;
 
-            padding: 10px 20px ;
-
-            a{
-
+            a {
                 color: $fc-black;
             }
         }
 
-        .nextBTN{
-
+        .nextBTN {
             margin-left: 20px;
         }
 
-        .lastBTN{
+        .lastBTN {
             margin-left: 10px;
         }
     }
 
-    .more{
-
+    .more {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         border: 1px solid $bc-number-black;
-
-        padding: 10px 50px ;
+        padding: 10px 50px;
 
     }
 }
-

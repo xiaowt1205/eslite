@@ -176,16 +176,15 @@
             }
 
             input {
+                @include text_style($fs-16, unset, center, 3px);
+                @include font_hover($bc-brown, $fc-white);
                 width: 220px;
                 padding: 10px 0px;
                 background-color: $fc-white;
-                color: $bc-brown;
-                letter-spacing: 3px;
                 margin-right: 20px;
 
                 &:hover {
                     background-color: $bc-brown;
-                    color: $fc-white;
                 }
 
                 &:nth-last-child(1) {
@@ -220,9 +219,7 @@
 
             .select-selected {
                 background-color: $br-black;
-
             }
-
 
             & option:nth-child(1) {
                 border-top-left-radius: 5px;

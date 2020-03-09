@@ -28,9 +28,6 @@
             font-size: $fs-22;
             letter-spacing: 2px;
             padding-bottom: 30px;
-            // justify-content: flex-end;
-            // display: flex;
-            // align-self: flex-start;
 
             &>div {
                 min-width: 150px;
@@ -90,10 +87,6 @@
                 display: flex;
                 justify-content: space-around;
 
-                @media screen and (max-width:1200px) {
-                    // margin-bottom: 20px;
-                }
-
                 & i {
                     margin: 0px 2px;
                     padding: 7px;
@@ -124,17 +117,11 @@
             }
 
             input {
+                @include text_style($fs-16, unset, center, 3px);
+                @include btn_style(220px, unset, 10px, unset, unset, $white, $brown);
+                @include font_hover($bc-brown, $fc-white);
                 width: 220px;
-                padding: 10px 0px;
-                background-color: $fc-white;
-                color: $bc-brown;
-                letter-spacing: 3px;
                 margin-right: 20px;
-
-                &:hover {
-                    background-color: $bc-brown;
-                    color: $fc-white;
-                }
 
                 @media screen and (max-width:1400px) {
                     width: 50%;
@@ -146,7 +133,6 @@
                     }
                 }
             }
-
         }
 
         textarea {

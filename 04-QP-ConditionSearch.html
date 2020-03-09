@@ -881,14 +881,16 @@
                                     <div>張貼日</div>
                                 </div>
                                 <div class="col-xl-9 col-12 form_input d-flex dateInput flex-wrap">
-                                    <div class="w-100 d-flex">
+                                    <div class="w-100 d-flex start">
                                         <div class="period">起</div>
-                                        <input type="text" id="datepicker" placeholder="年 / 月 / 日">
+                                        <input type="text" id="datepicker_start" class="datepicker"
+                                            placeholder="年 / 月 / 日">
                                         <div class="clearBTN">清除</div>
                                     </div>
-                                    <div class="w-100 d-flex">
+                                    <div class="w-100 d-flex end">
                                         <div class="period">迄</div>
-                                        <input type="text" id="datepicker" placeholder="年 / 月 / 日">
+                                        <input type="text" id="datepicker_end" class="datepicker"
+                                            placeholder="年 / 月 / 日">
                                         <div class="clearBTN">清除</div>
                                     </div>
                                     <!-- <i class="far fa-calendar-alt"></i> -->
@@ -988,71 +990,6 @@
         <div></div>
     </div>
 
-    <!-- main content -->
-    <main class="container">
-        <div class="row">
-            <aside class="col-1 offset-1 d-lg-flex d-lg-2 d-xl-1 d-none justify-content-end align-items-start">
-                <img class="imgSize" src="./img/index/logo.svg" alt="">
-            </aside>
-
-            <!-- 電腦版的title -->
-            <div class="insidePageTitle col-1 col-lg-10 col-xl-1  d-xl-block d-none">
-                <div class="breadcrumbArea">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">首頁</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">關於我們</li>
-                        </ol>
-                    </nav>
-                    <div class="title">關於我們</div>
-                </div>
-                <div class="btnArea d-none d-xl-block">
-                    <a href="">
-                        <div class="back">回 <br>上一頁</div>
-                    </a>
-                    <a href="">
-                        <div class="print">友 善<br>列 印</div>
-                    </a>
-                </div>
-                <div class="iconGroup d-none d-xl-flex">
-                    <a href=""><i class="fab fa-facebook-square"></i></a>
-                    <a href=""><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            <!-- 電腦版的title結束 -->
-
-            <!-- 手機板的title開始 -->
-            <div class="col-11 d-lg-none " aria-label="breadcrumb">
-                <ol class="breadcrumb phoneStyle">
-                    <li class="breadcrumb-item"><a href="#">首頁</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">分頁標題</li>
-                </ol>
-                <h2 class="d-xl-none phoneStyleTitle">分頁標題</h2>
-            </div>
-            <!-- 手機板的title結束 -->
-
-            <!-- page right content -->
-            <section class="offset-lg-0 offset-xl-1 pageContent col-12 col-lg-9 col-xl-7 ">
-                <!-- 平板版的title -->
-                <div class="w-100 d-none d-lg-block d-xl-none " aria-label="breadcrumb">
-                    <ol class="breadcrumb phoneStyle">
-                        <li class="breadcrumb-item"><a href="#">首頁</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">分頁標題</li>
-                    </ol>
-                    <h2 class="phoneStyleTitle">分頁標題</h2>
-                </div>
-                <!-- 平板版的title結束 -->
-
-                <!-- 內頁起點 -->
-                
-                <!-- 內頁終點 -->
-            </section>
-
-
-        </div>
-    </main>
-
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -1069,12 +1006,24 @@
     <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
     <script>
         $(function () {
-            $("#datepicker").datepicker({
+            $("#datepicker_start").datepicker({
                 dateFormat: 'yy/mm/dd'
             });
         });
+        $('.start .clearBTN').click(function () {
+            $('#datepicker_start').val("");
+        })
     </script>
     <script>
+        $(function () {
+            $("#datepicker_end").datepicker({
+                dateFormat: 'yy/mm/dd'
+            });
+        });
+
+        $('.end .clearBTN').click(function () {
+            $('#datepicker_end').val("");
+        })
     </script>
 
 </body>

@@ -20,13 +20,6 @@
             margin-bottom: 35px;
             line-height: 30px;
             width: 100%;
-            // flex-wrap: wrap;
-            // &>a {
-            //     overflow : hidden;
-            //     text-overflow : ellipsis;
-            //     white-space : nowrap;
-            //     width : 100%;
-            // }
 
             @media screen and (max-width:992px) {
                 letter-spacing: 5px;
@@ -57,15 +50,10 @@
     .picture_block {
         position: relative;
 
-        .row{
-            &>div{
-                padding-right: 0 !important;
+        .photo {
+            &>div {
+                margin-bottom: 16px;
             }
-
-        }
-
-        &>div>div {
-            margin-bottom: 16px;
         }
 
         .img {
@@ -98,90 +86,22 @@
                         height: 700px;
                     }
                 }
-
-            }
-
-        }
-
-
-        .btnnn {
-
-            .arrow_button-prev {
-                position: absolute;
-                padding: 20px 0px;
-                top: 50%;
-                left: -40px;
-                transform: translate(-100%, -50%);
-
-                .arrow_button {
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        height: 2px;
-                        width: 10px;
-                        left: -1px;
-                        transform: rotate(-45deg);
-                        transform-origin: left;
-                        background-color: $fc-black;
-                    }
-                }
-            }
-
-            .arrow_button-next {
-                position: absolute;
-                right: -40px;
-                top: 50%;
-                padding: 20px 0px;
-                transform: translate(100%, -50%);
-
-                .arrow_button {
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        height: 2px;
-                        width: 10px;
-                        right: -1px;
-                        transform: rotate(45deg);
-                        transform-origin: right;
-                        background-color: $fc-black;
-                    }
-                }
-            }
-
-            .arrow_button {
-                position: relative;
-                width: 70px;
-                height: 2px;
-                background-color: blanchedalmond;
-                border-bottom: 2px solid $fc-black;
-
-                @media screen and (max-width:1200px) {
-                    margin: auto;
-                }
-
-
             }
         }
-
     }
 
     .message_area {
         position: relative;
         padding-left: 30px;
         font-size: $fs-16;
-        margin-top: 30px;
         margin-bottom: 60px;
 
         &>div {
             display: flex;
-
             padding: 2.5px 0px;
-
-
 
             &>div {
                 width: 110px;
-                // overflow: hidden;
                 padding-right: 20px;
                 white-space: nowrap;
                 box-sizing: unset;
@@ -191,7 +111,7 @@
                     position: absolute;
                     content: '';
                     width: 1px;
-                    height: 80%;
+                    height: 15px;
                     top: 50%;
                     right: 0;
                     transform: translateY(-50%);
@@ -203,10 +123,11 @@
         &::before {
             content: '';
             position: absolute;
-            top: 0;
+            top: 50%;
             left: 0;
             width: 5px;
-            height: 100%;
+            height: 75px;
+            transform: translateY(-50%);
             background-color: $bc-brown;
         }
 
@@ -219,7 +140,6 @@
 
             &>p {
                 padding-left: 20px;
-                letter-spacing: 2px;
             }
         }
 
@@ -232,7 +152,6 @@
 
             &>p {
                 padding-left: 20px;
-                letter-spacing: 2px;
             }
         }
 
@@ -245,7 +164,6 @@
 
             &>p {
                 padding-left: 20px;
-                letter-spacing: 2px;
             }
         }
     }
@@ -253,12 +171,10 @@
 
 
 .customization-swiper-bg {
+    @include region(100%, 100vh, rgba(0, 0, 0, 0.9));
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
     display: none;
     justify-content: center;
     align-items: center;
@@ -269,22 +185,36 @@
     }
 
     .customization-swiper-content {
-        width: 100%;
-        max-width: 1000px;
-        height: 800px;
+        position: relative;
+        @include region(100%, 800px, unset);
+        padding: 0px 150px;
+        max-width: 1300px;
+
+        @media screen and (max-width:768px) {
+            height: 500px;
+        }
+
+        @media screen and (max-width:576px) {
+            height: 300px;
+            padding: 0px 50px;
+            position: unset;
+        }
 
         .close-swiper-page {
             cursor: pointer;
-            width: 100px;
-            height: 100px;
-            position: fixed;
-            top: 70px;
-            right: 300px;
+            @include region(100px, 100px, unset);
+            position: absolute;
+            top: 0px;
+            right: 0px;
+
+            @media screen and (max-width:576px) {
+                @include region(50px, 50px, unset);
+                top: 50px;
+                right: 20px;
+            }
 
             div {
-                width: 60px;
-                height: 1.5px;
-                background-color: white;
+                @include region(60px, 1.5px, $white);
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -293,53 +223,47 @@
 
                 &::after {
                     content: '';
-                    width: 60px;
-                    height: 1.5px;
+                    @include region(60px, 1.5px, $white);
                     position: absolute;
-                    transform: rotate(-90deg);
-                    background-color: white;
                     top: 0;
                     left: 0;
+                    transform: rotate(-90deg);
+
                 }
             }
         }
 
         .swiper_title {
-            // position: relative;
             display: flex;
             margin-bottom: 50px;
 
-            // justify-content: start;
             .name {
                 font-size: $fs-32;
                 color: $fc-white;
             }
 
             .swiper-pagination-fraction {
-                transform: translateY(-7px);
-                margin-left: 20px;
-                margin-bottom: -5px;
+                @include text_style($fs-32, unset, unset, 3px);
                 position: relative;
                 bottom: unset;
                 left: unset;
+                transform: translateY(-7px);
+                margin-left: 20px;
+                margin-bottom: -5px;
                 width: unset;
                 min-width: 150px;
-                justify-content: center;
                 display: flex;
+                justify-content: center;
                 align-items: center;
-                letter-spacing: 3px;
-                font-size: $fs-32;
 
                 span {
                     padding: 0px 10px;
                 }
 
-                // padding: 0px 20px;
                 &::before {
                     content: '(';
                     position: absolute;
                     left: 0px;
-
                 }
 
                 &::after {
@@ -357,68 +281,76 @@
         .swiper-content {
             height: 85%;
 
+            @media screen and (max-width:576px) {
+                position: relative;
+            }
+
             .block {
                 height: 80%;
                 position: relative;
 
                 .arrow_button-prev {
                     position: absolute;
-                    padding: 20px 0px;
                     top: 50%;
                     left: -40px;
                     transform: translate(-100%, -50%);
+                    padding: 20px 0px;
+
+                    @media screen and (max-width:576px) {
+                        top: unset;
+                        bottom: -80px;
+                        left: 45%;
+                        transform: translate(-100%, 100%);
+                    }
 
                     .arrow_button {
                         &::before {
                             content: '';
+                            @include region(10px, 2px, $white);
                             position: absolute;
-                            height: 2px;
-                            width: 10px;
                             left: -1px;
                             transform: rotate(-45deg);
                             transform-origin: left;
-                            background-color: $fc-white;
                         }
                     }
                 }
 
                 .arrow_button-next {
                     position: absolute;
-                    right: -40px;
                     top: 50%;
-                    padding: 20px 0px;
+                    right: -40px;
                     transform: translate(100%, -50%);
+                    padding: 20px 0px;
+
+                    @media screen and (max-width:576px) {
+                        top: unset;
+                        bottom: -80px;
+                        right: 45%;
+                        transform: translate(100%, 100%);
+                    }
 
                     .arrow_button {
                         &::after {
                             content: '';
+                            @include region(10px, 2px, $white);
                             position: absolute;
-                            height: 2px;
-                            width: 10px;
                             right: -1px;
                             transform: rotate(45deg);
                             transform-origin: right;
-                            background-color: $fc-white;
                         }
                     }
                 }
 
                 .arrow_button {
+                    @include region(70px, 2px, $white);
                     position: relative;
-                    width: 70px;
-                    height: 2px;
-                    background-color: blanchedalmond;
                     border-bottom: 2px solid $fc-white;
 
                     @media screen and (max-width:1200px) {
                         margin: auto;
                     }
-
-
                 }
             }
-
-            .gallery-top {}
 
             .block_swiper {
                 height: 20%;
@@ -427,8 +359,6 @@
                     height: 100%;
                 }
             }
-
         }
-
     }
 }

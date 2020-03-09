@@ -142,26 +142,23 @@ a:active {
 }
 
 .cardBox {
-  width: calc(33.33333% - 30px);
-  margin: 0 30px 50px 0;
+  width: calc(33.33333% - 20px);
+  margin: 0 0 35px;
 }
 
-@media (max-width: 577px) {
+@media (max-width: 1400px) {
   .cardBox {
-    width: 100%;
-    margin: 0 0 50px 0;
+    width: calc(50% - 15px);
   }
 }
 
-.cardBox p:nth-of-type(1) {
-  margin: 15px 0;
+@media (max-width: 991px) {
+  .cardBox {
+    width: 100%;
+  }
 }
 
-.cardBox a {
-  color: unset;
-}
-
-.cardBox a .photo {
+.cardBox .photo {
   width: 100%;
   height: 160px;
   background-image: url(../img/test.jpg);
@@ -171,11 +168,7 @@ a:active {
   position: relative;
 }
 
-.cardBox a .photo p {
-  font-weight: bold;
-}
-
-.cardBox a .photo .mask {
+.cardBox .photo .mask {
   width: 100%;
   height: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(transparent));
@@ -195,20 +188,20 @@ a:active {
   z-index: 2;
 }
 
-.cardBox a .photo .mask:hover .fa-youtube {
+.cardBox .photo .mask:hover .fa-youtube {
   color: red;
   -webkit-transition: .5s;
   transition: .5s;
   opacity: 1;
 }
 
-.cardBox a .photo .mask .fa-youtube {
+.cardBox .photo .mask .fa-youtube {
   font-size: 80px;
   opacity: .7;
   position: relative;
 }
 
-.cardBox a .photo .mask .fa-youtube::after {
+.cardBox .photo .mask .fa-youtube::after {
   content: '';
   width: 50px;
   height: 50px;
@@ -221,17 +214,22 @@ a:active {
   z-index: -1;
 }
 
-.pageContent {
-  margin-bottom: 200px;
-  position: relative;
+.cardBox .title {
+  margin: 15px 0;
 }
 
 .pageNumber {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
+.pageNumber ul {
   position: absolute;
+  top: 50%;
   left: 50%;
-  bottom: -100px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .pageNumber ul .number:first-child a {
@@ -255,12 +253,16 @@ a:active {
   color: #FFFFFF;
 }
 
-.pageNumber ul .nextBTN, .pageNumber ul .lastBTN {
+.pageNumber ul .nextBTN,
+.pageNumber ul .lastBTN {
+  width: 106px;
+  text-align: center;
   border: 1px solid #333333;
   padding: 10px 20px;
 }
 
-.pageNumber ul .nextBTN a, .pageNumber ul .lastBTN a {
+.pageNumber ul .nextBTN a,
+.pageNumber ul .lastBTN a {
   color: #000000;
 }
 
@@ -273,6 +275,11 @@ a:active {
 }
 
 .pageNumber .more {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   border: 1px solid #333333;
   padding: 10px 50px;
 }

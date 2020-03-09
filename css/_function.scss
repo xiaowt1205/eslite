@@ -47,3 +47,17 @@
     border-radius: $br-size;
     border: 1px solid $br-color;
 }
+
+@mixin font_hover($color, $color_hover) {
+    color: $color;
+
+    &:hover {
+        color: $color_hover;
+    }
+}
+
+@mixin region($w, $h, $bg) {
+    width: $w;
+    height: $h;
+    background-color: $bg;
+}

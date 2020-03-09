@@ -55,11 +55,7 @@
   position: relative;
 }
 
-.area_picture .picture_block .row > div {
-  padding-right: 0 !important;
-}
-
-.area_picture .picture_block > div > div {
+.area_picture .picture_block .photo > div {
   margin-bottom: 16px;
 }
 
@@ -94,69 +90,10 @@
   height: 700px;
 }
 
-.area_picture .picture_block .btnnn .arrow_button-prev {
-  position: absolute;
-  padding: 20px 0px;
-  top: 50%;
-  left: -40px;
-  -webkit-transform: translate(-100%, -50%);
-          transform: translate(-100%, -50%);
-}
-
-.area_picture .picture_block .btnnn .arrow_button-prev .arrow_button::before {
-  content: '';
-  position: absolute;
-  height: 2px;
-  width: 10px;
-  left: -1px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  background-color: #000000;
-}
-
-.area_picture .picture_block .btnnn .arrow_button-next {
-  position: absolute;
-  right: -40px;
-  top: 50%;
-  padding: 20px 0px;
-  -webkit-transform: translate(100%, -50%);
-          transform: translate(100%, -50%);
-}
-
-.area_picture .picture_block .btnnn .arrow_button-next .arrow_button::after {
-  content: '';
-  position: absolute;
-  height: 2px;
-  width: 10px;
-  right: -1px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  background-color: #000000;
-}
-
-.area_picture .picture_block .btnnn .arrow_button {
-  position: relative;
-  width: 70px;
-  height: 2px;
-  background-color: blanchedalmond;
-  border-bottom: 2px solid #000000;
-}
-
-@media screen and (max-width: 1200px) {
-  .area_picture .picture_block .btnnn .arrow_button {
-    margin: auto;
-  }
-}
-
 .area_picture .message_area {
   position: relative;
   padding-left: 30px;
   font-size: 16px;
-  margin-top: 30px;
   margin-bottom: 60px;
 }
 
@@ -180,7 +117,7 @@
   position: absolute;
   content: '';
   width: 1px;
-  height: 80%;
+  height: 15px;
   top: 50%;
   right: 0;
   -webkit-transform: translateY(-50%);
@@ -191,10 +128,12 @@
 .area_picture .message_area::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
   width: 5px;
-  height: 100%;
+  height: 75px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   background-color: #231815;
 }
 
@@ -204,7 +143,6 @@
 
 .area_picture .message_area .firtst_data > p {
   padding-left: 20px;
-  letter-spacing: 2px;
 }
 
 .area_picture .message_area .new_data > div > p {
@@ -213,7 +151,6 @@
 
 .area_picture .message_area .new_data > p {
   padding-left: 20px;
-  letter-spacing: 2px;
 }
 
 .area_picture .message_area .click_point > div > p {
@@ -222,16 +159,15 @@
 
 .area_picture .message_area .click_point > p {
   padding-left: 20px;
-  letter-spacing: 2px;
 }
 
 .customization-swiper-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
   display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -249,24 +185,52 @@
 }
 
 .customization-swiper-bg .customization-swiper-content {
+  position: relative;
   width: 100%;
-  max-width: 1000px;
   height: 800px;
+  background-color: unset;
+  padding: 0px 150px;
+  max-width: 1300px;
+}
+
+@media screen and (max-width: 768px) {
+  .customization-swiper-bg .customization-swiper-content {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .customization-swiper-bg .customization-swiper-content {
+    height: 300px;
+    padding: 0px 50px;
+    position: unset;
+  }
 }
 
 .customization-swiper-bg .customization-swiper-content .close-swiper-page {
   cursor: pointer;
   width: 100px;
   height: 100px;
-  position: fixed;
-  top: 70px;
-  right: 300px;
+  background-color: unset;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+@media screen and (max-width: 576px) {
+  .customization-swiper-bg .customization-swiper-content .close-swiper-page {
+    width: 50px;
+    height: 50px;
+    background-color: unset;
+    top: 50px;
+    right: 20px;
+  }
 }
 
 .customization-swiper-bg .customization-swiper-content .close-swiper-page div {
   width: 60px;
   height: 1.5px;
-  background-color: white;
+  background-color: #FFFFFF;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -279,12 +243,12 @@
   content: '';
   width: 60px;
   height: 1.5px;
+  background-color: #FFFFFF;
   position: absolute;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  background-color: white;
   top: 0;
   left: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .customization-swiper-bg .customization-swiper-content .swiper_title {
@@ -300,26 +264,28 @@
 }
 
 .customization-swiper-bg .customization-swiper-content .swiper_title .swiper-pagination-fraction {
+  font-size: 32px;
+  font-weight: unset;
+  text-align: unset;
+  letter-spacing: 3px;
+  position: relative;
+  bottom: unset;
+  left: unset;
   -webkit-transform: translateY(-7px);
           transform: translateY(-7px);
   margin-left: 20px;
   margin-bottom: -5px;
-  position: relative;
-  bottom: unset;
-  left: unset;
   width: unset;
   min-width: 150px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  letter-spacing: 3px;
-  font-size: 32px;
 }
 
 .customization-swiper-bg .customization-swiper-content .swiper_title .swiper-pagination-fraction span {
@@ -346,6 +312,12 @@
   height: 85%;
 }
 
+@media screen and (max-width: 576px) {
+  .customization-swiper-bg .customization-swiper-content .swiper-content {
+    position: relative;
+  }
+}
+
 .customization-swiper-bg .customization-swiper-content .swiper-content .block {
   height: 80%;
   position: relative;
@@ -353,53 +325,73 @@
 
 .customization-swiper-bg .customization-swiper-content .swiper-content .block .arrow_button-prev {
   position: absolute;
-  padding: 20px 0px;
   top: 50%;
   left: -40px;
   -webkit-transform: translate(-100%, -50%);
           transform: translate(-100%, -50%);
+  padding: 20px 0px;
+}
+
+@media screen and (max-width: 576px) {
+  .customization-swiper-bg .customization-swiper-content .swiper-content .block .arrow_button-prev {
+    top: unset;
+    bottom: -80px;
+    left: 45%;
+    -webkit-transform: translate(-100%, 100%);
+            transform: translate(-100%, 100%);
+  }
 }
 
 .customization-swiper-bg .customization-swiper-content .swiper-content .block .arrow_button-prev .arrow_button::before {
   content: '';
-  position: absolute;
-  height: 2px;
   width: 10px;
+  height: 2px;
+  background-color: #FFFFFF;
+  position: absolute;
   left: -1px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   -webkit-transform-origin: left;
           transform-origin: left;
-  background-color: #FFFFFF;
 }
 
 .customization-swiper-bg .customization-swiper-content .swiper-content .block .arrow_button-next {
   position: absolute;
-  right: -40px;
   top: 50%;
-  padding: 20px 0px;
+  right: -40px;
   -webkit-transform: translate(100%, -50%);
           transform: translate(100%, -50%);
+  padding: 20px 0px;
+}
+
+@media screen and (max-width: 576px) {
+  .customization-swiper-bg .customization-swiper-content .swiper-content .block .arrow_button-next {
+    top: unset;
+    bottom: -80px;
+    right: 45%;
+    -webkit-transform: translate(100%, 100%);
+            transform: translate(100%, 100%);
+  }
 }
 
 .customization-swiper-bg .customization-swiper-content .swiper-content .block .arrow_button-next .arrow_button::after {
   content: '';
-  position: absolute;
-  height: 2px;
   width: 10px;
+  height: 2px;
+  background-color: #FFFFFF;
+  position: absolute;
   right: -1px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   -webkit-transform-origin: right;
           transform-origin: right;
-  background-color: #FFFFFF;
 }
 
 .customization-swiper-bg .customization-swiper-content .swiper-content .block .arrow_button {
-  position: relative;
   width: 70px;
   height: 2px;
-  background-color: blanchedalmond;
+  background-color: #FFFFFF;
+  position: relative;
   border-bottom: 2px solid #FFFFFF;
 }
 

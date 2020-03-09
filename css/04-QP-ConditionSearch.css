@@ -193,17 +193,23 @@
 }
 
 .Connection_area .Connection_form .form_btn input {
+  font-size: 16px;
+  font-weight: unset;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #231815;
   width: 220px;
   padding: 10px 0px;
   background-color: #FFFFFF;
-  color: #231815;
-  letter-spacing: 3px;
   margin-right: 20px;
 }
 
 .Connection_area .Connection_form .form_btn input:hover {
-  background-color: #231815;
   color: #FFFFFF;
+}
+
+.Connection_area .Connection_form .form_btn input:hover {
+  background-color: #231815;
 }
 
 .Connection_area .Connection_form .form_btn input:nth-last-child(1) {

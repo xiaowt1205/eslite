@@ -3,130 +3,110 @@
 @import "./_function.scss";
 
 
-*{
+* {
     box-sizing: border-box;
 }
 
 
-.cardBox{
-    width: calc(33.33333% - 30px);
+.cardBox {
+    width: calc(33.33333% - 20px);
+    margin: 0 0 35px;
 
-    margin: 0 30px 50px 0;
-
-    @media (max-width:577px) {
-        
-        width: 100%;
-        margin: 0 0 50px 0;
+    @media (max-width:1400px) {
+        width: calc(50% - 15px);
     }
 
-    .photo{
+    @media (max-width:991px) {
+        width: 100%;
+    }
 
+    .photo {
         width: 100%;
         height: 160px;
-
         background-color: black;
         background-size: cover;
         background-position: center center;
-
-
-
     }
 
-    p{
+    .date {
+        margin: 15px 0;
+    }
 
-        &:nth-of-type(1){
-
-            margin: 15px 0;
-        }
+    .title {
+        height: 50px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; //行數
+        -webkit-box-orient: vertical;
+        white-space: normal;
     }
 }
 
 
 
-
-.pageContent{
-
-    margin-bottom: 200px;
-
+.pageNumber {
     position: relative;
-}
+    width: 100%;
+    height: 100px;
 
-.pageNumber{
+    ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
-    position: absolute;
-    left: 50%;
-    bottom: -100px;
-
-    transform: translateX(-50%);
-
-    ul{
-
-
-        .number{
-
-
-
-            &:first-child{
-
-                a{
-
+        .number {
+            &:first-child {
+                a {
                     background-color: $bc-number-black;
                     color: $fc-white;
                 }
-
             }
 
-            a{
+            a {
                 display: block;
-
                 width: 25px;
                 height: 25px;
-
                 color: $fc-black;
                 background-color: unset;
-
                 text-align: center;
-
                 border-radius: 50%;
-    
-                
                 font-weight: bold;
 
-                &:hover{
+                &:hover {
                     background-color: $bc-number-black;
                     color: $fc-white;
                 }
             }
-
         }
 
-        .nextBTN,.lastBTN{
+        .nextBTN,
+        .lastBTN {
+            width: 106px;
+            text-align: center;
             border: 1px solid $bc-number-black;
+            padding: 10px 20px;
 
-            padding: 10px 20px ;
-
-            a{
-
+            a {
                 color: $fc-black;
             }
         }
 
-        .nextBTN{
-
+        .nextBTN {
             margin-left: 20px;
         }
 
-        .lastBTN{
+        .lastBTN {
             margin-left: 10px;
         }
     }
 
-    .more{
-
+    .more {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         border: 1px solid $bc-number-black;
-
-        padding: 10px 50px ;
+        padding: 10px 50px;
 
     }
 }
-

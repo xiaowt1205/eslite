@@ -7,7 +7,6 @@
 
     @media screen and (max-width:992px) {
         padding-bottom: 25px;
-
     }
 
     &>div {
@@ -21,7 +20,6 @@
     }
 
     .text {
-
         letter-spacing: 3px;
         text-align: center;
         border-right: 1px solid $br-black;
@@ -69,17 +67,14 @@
         position: relative;
         padding-left: 30px;
         font-size: $fs-16;
+        margin-bottom: 60px;
 
         &>div {
             display: flex;
-
             padding: 2.5px 0px;
-
-
 
             &>div {
                 width: 110px;
-                // overflow: hidden;
                 padding-right: 20px;
                 white-space: nowrap;
                 box-sizing: unset;
@@ -89,10 +84,9 @@
                     position: absolute;
                     content: '';
                     width: 1px;
-                    height: 75%;
+                    height: 15px;
                     top: 50%;
                     right: 0;
-
                     transform: translateY(-50%);
                     background-color: $bc-brown;
                 }
@@ -102,10 +96,11 @@
         &::before {
             content: '';
             position: absolute;
-            top: 0;
+            top: 50%;
             left: 0;
             width: 5px;
-            height: 100%;
+            height: 75px;
+            transform: translateY(-50%);
             background-color: $bc-brown;
         }
 
