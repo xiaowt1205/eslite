@@ -212,22 +212,20 @@ main {
 }
 
 .pageContent {
-    padding-top: 140px;
+    margin: 0;
+    padding: 140px 8.333333333% 0px;
 
     @media (max-width:1200px) {
-        margin-left: 8%;
-        flex: 0 0 67%;
-        max-width: 67%;
-    }
-
-    @media (max-width:768px) {
-        padding-top: 0px;
-        margin-left: 0%;
         flex: 0 0 75%;
         max-width: 75%;
     }
 
+    @media (max-width:768px) {
+        padding-top: 0px;
+    }
+
     @media (max-width:576px) {
+        padding: 0px 15px;
         flex: 0 0 100%;
         max-width: 100%;
     }
@@ -245,15 +243,16 @@ main {
     position: relative;
     align-items: flex-start;
 
-    @media screen and (max-width:768px) {
-        .block {
+    .block {
+        display: flex;
+        justify-content: center;
+
+        @media screen and (max-width:768px) {
             position: unset;
         }
-    }
 
-    @media screen and (max-width:576px) {
-        .block {
-            display: none;
+        @media (max-width: 576px) {
+            display: none !important;
         }
     }
 
