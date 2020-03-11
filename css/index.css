@@ -747,6 +747,12 @@ header #headline .swiper_block .headline_swiper {
   width: calc(100% - 265px);
 }
 
+@media screen and (max-width: 1200px) {
+  header #headline .swiper_block .headline_swiper {
+    width: 100%;
+  }
+}
+
 header #headline .aside-bg {
   position: absolute;
   top: 0;
