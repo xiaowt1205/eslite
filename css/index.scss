@@ -399,6 +399,7 @@ header {
                         align-items: flex-end;
                         // min-width: 63px;
                         width: 63px;
+
                         @media(max-width:992px) {
                             width: 100%;
                         }
@@ -1137,221 +1138,8 @@ main {
     }
 }
 
+
 #Plan {
-    position: relative;
-    z-index: 3;
-    box-shadow: 0 5px 8px -5px $bc-brown;
-
-    .container_1140 {
-        .title_region {
-            width: 250px;
-            margin: 0 auto;
-            text-align: center;
-            padding: 50px 0px 25px;
-
-            h2 {
-                position: relative;
-                font-size: $fs-76;
-                font-weight: $fw-700;
-                letter-spacing: 1.5px;
-                padding-bottom: 25px;
-                margin: 0;
-
-                &::after {
-                    content: '';
-                    width: 120%;
-                    height: 2px;
-                    background-color: #000000;
-                    position: absolute;
-                    bottom: 0;
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
-            }
-
-            p {
-                font-size: 33px;
-                width: 100%;
-                margin: 0;
-                padding: 20px 0px;
-                padding-left: 10px;
-                letter-spacing: 13px;
-            }
-        }
-
-    }
-
-    .container {
-
-        .pd {
-            padding-bottom: 100px;
-        }
-
-        .content {
-            & :nth-child(1) .card {
-                background-image: url(../img/index/plan_01.png);
-            }
-
-            & :nth-child(2) .card {
-                background-image: url(../img/index/plan_02.png);
-            }
-
-            & :nth-child(3) .card {
-                background-image: url(../img/index/plan_03.png);
-            }
-
-            & :nth-child(4) .card {
-                background-image: url(../img/index/plan_04.png);
-            }
-
-            & :nth-child(5) .card {
-                background-image: url(../img/index/plan_05.JPG);
-            }
-
-            & :nth-child(6) .card {
-                background-image: url(../img/index/plan_06.png);
-            }
-
-            .card {
-                margin-bottom: 30px;
-                position: relative;
-                align-items: center;
-                justify-content: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-
-                &:hover .text_hover {
-                    display: flex;
-
-                    @media screen and (max-width:576px) {
-                        display: none;
-                    }
-                }
-
-                img {
-                    width: 100%;
-                    opacity: 0;
-
-                    @media screen and (max-width:576px) {
-                        & {
-                            height: 100px;
-                        }
-                    }
-                }
-
-                .text {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    position: absolute;
-                    background-color: $bc-brown-Transparent;
-
-                    p {
-                        font-size: $fs-32;
-                        color: $fc-white;
-                        text-align: center;
-                        letter-spacing: 7px;
-                        display: inline-block;
-                        margin: 0 auto;
-                        position: relative;
-
-                        @media screen and (max-width:576px) {
-                            font-size: $fs-18;
-                        }
-
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            bottom: -25px;
-                            left: 50%;
-                            transform: translateX(-50%);
-                            width: 210px;
-                            height: 3px;
-                            background-color: $fc-white;
-
-                            @media screen and (max-width:576px) {
-                                bottom: -10px;
-                            }
-                        }
-                    }
-                }
-
-                .text_hover {
-                    display: none;
-                    height: 100%;
-                    position: absolute;
-                    flex-direction: column;
-                    justify-content: center;
-                    background-color: $fc-card-hover;
-
-                    h2 {
-                        font-size: $fs-27;
-                        color: $fc-white;
-                        margin-bottom: 20px;
-                        text-align: center;
-                    }
-
-                    p {
-                        color: $fc-white;
-                        display: -webkit-box;
-                        font-size: $fs-18;
-                        -webkit-line-clamp: 3;
-                        text-overflow: ellipsis;
-                        -webkit-box-orient: vertical;
-                        white-space: normal;
-                        padding: 0px 65px;
-                        letter-spacing: 2px;
-                        overflow: hidden;
-                        margin-bottom: 35px;
-                    }
-
-                    .button {
-                        display: flex;
-                        max-width: 230px;
-                        margin: 0 auto;
-
-                        span {
-                            max-width: 230px;
-                            padding: 10px 70px;
-                            border: 1px solid $fc-white;
-                            letter-spacing: 5px;
-                            font-weight: 600;
-                            position: relative;
-
-                            .arrow_button {
-                                width: 25px;
-                                height: 2px;
-                                background-color: blanchedalmond;
-                                border-bottom: 2px solid $fc-white;
-                                position: absolute;
-                                top: 50%;
-                                right: 20px;
-                                transform: translateY(-50%);
-
-                                &::after {
-                                    content: '';
-                                    position: absolute;
-                                    height: 2px;
-                                    width: 5px;
-                                    right: -1px;
-                                    transform: rotate(45deg);
-                                    transform-origin: right;
-                                    background-color: $fc-white;
-                                }
-                            }
-                        }
-
-                    }
-                }
-
-            }
-        }
-    }
-}
-
-#Plan1 {
     position: relative;
     z-index: 3;
     box-shadow: 0 5px 8px -5px $bc-brown;
@@ -2137,12 +1925,16 @@ main {
             h2 {
                 position: relative;
                 width: 250px;
-                font-size: 76px;
+                font-size: $fs-67;
                 padding-bottom: 35px;
                 margin: 0;
 
                 & :nth-child(1) {
                     letter-spacing: 4px;
+
+                    span {
+                        margin-left: 55px;
+                    }
                 }
 
                 & :nth-child(2) {
@@ -2162,7 +1954,7 @@ main {
 
                 &::after {
                     content: '';
-                    width: 85%;
+                    width: 100%;
                     height: 2px;
                     background-color: #000000;
                     position: absolute;
@@ -2226,6 +2018,7 @@ main {
                         height: 1px;
                         background-color: $br-gray;
                         top: 0;
+                        left: 0;
 
                     }
                 }
@@ -2233,7 +2026,7 @@ main {
 
             .block {
                 display: flex;
-                padding: 30px 0px;
+                padding: 38px 0px 38px 45px;
                 position: relative;
                 align-items: center;
 
@@ -2250,6 +2043,7 @@ main {
                     height: 1px;
                     background-color: $br-gray;
                     bottom: 0;
+                    left: 0;
                 }
 
                 &:hover {
@@ -2273,9 +2067,10 @@ main {
                     }
 
                     &.time {
-                        padding: 0px 40px;
-                        position: relative;
+                        padding: 0px 45px;
                         letter-spacing: 2px;
+                        border-left: 1px solid $br-gray;
+                        border-right: 1px solid $br-gray;
 
                         @media screen and (max-width:1100px) {
                             padding: 0px 50px 0px 0px;
@@ -2304,24 +2099,23 @@ main {
                         }
                     }
 
-                    &.sort {
-                        width: 58px;
-                        min-width: 58px;
-                        padding: 0px 20px;
-                        text-align: right;
-                        letter-spacing: 7px;
-                        font-weight: $fw-600;
-                        box-sizing: unset;
-                        border-left: 1px solid $br-gray;
-                        border-right: 1px solid $br-gray;
+                    // &.sort {
+                    //     width: 58px;
+                    //     min-width: 58px;
+                    //     padding: 0px 20px;
+                    //     text-align: right;
+                    //     letter-spacing: 7px;
+                    //     font-weight: $fw-600;
+                    //     box-sizing: unset;
 
-                        @media screen and (max-width:576px) {
-                            padding: 0px 15px;
-                        }
-                    }
+
+                    //     @media screen and (max-width:576px) {
+                    //         padding: 0px 15px;
+                    //     }
+                    // }
 
                     &.text {
-                        padding-left: 35px;
+                        padding-left: 45px;
                         letter-spacing: 2px;
 
                         @media screen and (max-width:768px) {
