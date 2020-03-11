@@ -106,16 +106,6 @@ header {
                         @media(max-width:1400px) {
                             display: none;
                         }
-
-                        // padding: 2px 0px 2px 30px;
-
-                        // @media(min-width:1200px) {
-                        //     padding: 2px 17px;
-                        // }
-
-                        // @media(min-width:1600px) {
-                        //     padding: 2px 35px;
-                        // }
                     }
 
                     &:nth-child(5) {
@@ -166,7 +156,7 @@ header {
 
                     a {
                         color: $fc-black;
-                        // font-size: $fs-12;
+                        font-size: $fs-16;
                         font-weight: $fw-bold;
                         transition: .3s;
                         transition-timing-function: ease;

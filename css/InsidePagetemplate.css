@@ -279,7 +279,6 @@ header #topline nav ul li {
   display: inline-block;
   border-left: 1px #808080 solid;
   border-right: 0 #808080 solid;
-  width: 100%;
 }
 
 @media (max-width: 1400px) {
@@ -288,11 +287,35 @@ header #topline nav ul li {
   }
 }
 
+header #topline nav ul li:nth-child(-n + 5) {
+  padding: 0px 30px;
+}
+
 @media (max-width: 1400px) {
   header #topline nav ul li:nth-child(5) {
     border-left: 1px #808080 solid;
     border-right: 1px #808080 solid;
   }
+}
+
+header #topline nav ul li.nav-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #topline nav ul li.nav-icon a {
+  margin-left: 25px;
+}
+
+header #topline nav ul li.nav-icon a i {
+  font-size: 22px;
 }
 
 header #topline nav ul li.menu-btn-pc {
@@ -313,22 +336,6 @@ header #topline nav ul li.menu-btn-pc {
         -ms-flex-align: center;
             align-items: center;
   }
-}
-
-header #topline nav ul li.nav-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header #topline nav ul li.nav-icon a {
-  margin-left: 20px;
 }
 
 header #topline nav ul li.menu-btn-mob {
@@ -353,7 +360,7 @@ header #topline nav ul li a {
 
 @media (min-width: 1600px) {
   header #topline nav ul li a {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -363,12 +370,11 @@ header #topline nav ul li a:hover {
 }
 
 header #topline nav ul li a .cicle {
-  margin-top: 2px;
   position: relative;
-  width: 20px;
-  height: 20px;
-  border: 1.4px black solid;
-  border-radius: 25px;
+  min-width: 24px;
+  max-height: 24px;
+  border: 2px black solid;
+  border-radius: 50%;
 }
 
 header #topline nav ul li a .cicle:hover {
@@ -376,11 +382,11 @@ header #topline nav ul li a .cicle:hover {
 }
 
 header #topline nav ul li a .cicle .fa-info {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-40%, -50%);
-          transform: translate(-40%, -50%);
+  margin-left: 4px;
+  text-align: center;
+  font-size: 14px;
+  -webkit-transform: translate(-10%, -50%);
+          transform: translate(-10%, -50%);
 }
 
 @media (max-width: 1400px) {
