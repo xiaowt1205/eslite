@@ -27,6 +27,12 @@
                 @include text_style($fs-16, unset, center, 2px);
                 color: $fc-pure-gray;
 
+                &:hover{
+                    background-color: $bc-dark-brown-hover;
+                    color: $fc-white;
+
+                }
+
                 &.active {
                     background-color: $bc-dark-brown-hover;
                     color: $fc-white;
@@ -70,6 +76,7 @@
             }
 
             .answer {
+                line-height: 2;
                 overflow: hidden;
                 max-height: 0;
                 transition: 0.3s;
@@ -133,6 +140,18 @@
                 text-align: center;
                 border: 1px solid $bc-number-black;
                 padding: 10px 20px;
+
+                &:hover{
+
+                    background-color: $bc-number-black;
+                    
+                }
+
+                &:hover a {
+
+                    color: $fc-white;
+                }
+
 
                 a {
                     color: $fc-black;

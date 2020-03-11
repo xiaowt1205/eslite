@@ -10,8 +10,6 @@
 .btnGroup {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 20px;
-    border-bottom: 1px solid $fc-pure-gray;
 
     @media screen and (max-width:768px) {
         display: none;
@@ -24,6 +22,12 @@
             @include little_btn_style(105px, 40px, 8px, 8px, $black);
             @include text_style($fs-16, unset, center, 2px);
             color: $fc-pure-gray;
+
+            &:hover{
+                background-color: $bc-dark-brown-hover;
+                color: $fc-white;
+
+            }
 
             &.active {
                 background-color: $bc-dark-brown-hover;
@@ -39,9 +43,7 @@
 
     padding: 15px 0;
 
-    margin-top: 30px;
-
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     font-weight: bold;
 
     .dateName {
@@ -232,7 +234,7 @@
             }
 
             .loadingPoint {
-                @include text_style($fs-12, unset, center, unset);
+                @include text_style($fs-12, unset, center, 0);
                 margin: 0px 5px 5px;
                 width: 40px;
                 height: 30px;
@@ -304,6 +306,17 @@
             text-align: center;
             border: 1px solid $bc-number-black;
             padding: 10px 20px;
+
+            &:hover{
+
+                background-color: $bc-number-black;
+                
+            }
+
+            &:hover a {
+
+                color: $fc-white;
+            }
 
             a {
                 color: $fc-black;

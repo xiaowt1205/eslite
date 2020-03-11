@@ -147,8 +147,6 @@ a:active {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 20px;
-  border-bottom: 1px solid #4D4D4D;
 }
 
 @media screen and (max-width: 768px) {
@@ -174,6 +172,11 @@ a:active {
   color: #4D4D4D;
 }
 
+.btnGroup a .btnArea:hover {
+  background-color: #352E2C;
+  color: #FFFFFF;
+}
+
 .btnGroup a .btnArea.active {
   background-color: #352E2C;
   color: #FFFFFF;
@@ -182,8 +185,7 @@ a:active {
 .nameGroup {
   border: 2px solid #000000;
   padding: 15px 0;
-  margin-top: 30px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   font-weight: bold;
 }
 
@@ -406,7 +408,7 @@ a:active {
   font-size: 12px;
   font-weight: unset;
   text-align: center;
-  letter-spacing: unset;
+  letter-spacing: 0;
   margin: 0px 5px 5px;
   width: 40px;
   height: 30px;
@@ -477,6 +479,16 @@ a:active {
   text-align: center;
   border: 1px solid #333333;
   padding: 10px 20px;
+}
+
+.pageNumber ul .nextBTN:hover,
+.pageNumber ul .lastBTN:hover {
+  background-color: #333333;
+}
+
+.pageNumber ul .nextBTN:hover a,
+.pageNumber ul .lastBTN:hover a {
+  color: #FFFFFF;
 }
 
 .pageNumber ul .nextBTN a,
