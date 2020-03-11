@@ -174,6 +174,11 @@ a:active {
   color: #4D4D4D;
 }
 
+.question .btnGroup a .btnArea:hover {
+  background-color: #352E2C;
+  color: #FFFFFF;
+}
+
 .question .btnGroup a .btnArea.active {
   background-color: #352E2C;
   color: #FFFFFF;
@@ -223,6 +228,7 @@ a:active {
 }
 
 .question .QA-tab .QA .answer {
+  line-height: 2;
   overflow: hidden;
   max-height: 0;
   -webkit-transition: 0.3s;
@@ -284,6 +290,16 @@ a:active {
   text-align: center;
   border: 1px solid #333333;
   padding: 10px 20px;
+}
+
+.question .pageNumber ul .nextBTN:hover,
+.question .pageNumber ul .lastBTN:hover {
+  background-color: #333333;
+}
+
+.question .pageNumber ul .nextBTN:hover a,
+.question .pageNumber ul .lastBTN:hover a {
+  color: #FFFFFF;
 }
 
 .question .pageNumber ul .nextBTN a,

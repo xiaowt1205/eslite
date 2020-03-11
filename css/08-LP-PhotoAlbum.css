@@ -221,6 +221,16 @@ a:active {
   padding: 10px 20px;
 }
 
+.pageNumber ul .nextBTN:hover,
+.pageNumber ul .lastBTN:hover {
+  background-color: #333333;
+}
+
+.pageNumber ul .nextBTN:hover a,
+.pageNumber ul .lastBTN:hover a {
+  color: #FFFFFF;
+}
+
 .pageNumber ul .nextBTN a,
 .pageNumber ul .lastBTN a {
   color: #000000;
