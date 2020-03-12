@@ -7,7 +7,7 @@
 .btnGroup {
 
     .project {
-        @include btn_style(100%, 80px, 30px, 8px, $brown-hover, $brown-hover, $brown);
+        @include btn_style(780px, 80px, 30px, 8px, $light-brown, $brown-hover, $brown);
         @include text_style($fs-18, unset, unset, unset);
         color: $white;
         margin-bottom: 30px;
@@ -20,6 +20,10 @@
                 position: absolute;
                 bottom: 20%;
             }
+        }
+
+        .date {
+            transition: .2s;
         }
 
         &:hover {
