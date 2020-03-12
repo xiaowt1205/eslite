@@ -12,7 +12,7 @@
     <!-- font-awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <!-- google Fonts -->
-        <link
+    <link
         href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:200,300,400,500,600,700,900&display=swap&subset=chinese-traditional"
         rel="stylesheet">
     <!-- layout -->
@@ -24,7 +24,7 @@
 
     <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
 
-    <link rel="stylesheet" href="jqueryui/style.css">
+    <!-- <link rel="stylesheet" href="jqueryui/style.css"> -->
 
     <style>
 
@@ -849,14 +849,21 @@
                                 <div class="col-xl-9 col-12 form_input d-flex dateInput flex-wrap">
                                     <div class="w-100 d-flex start">
                                         <div class="period">起</div>
-                                        <input type="text" id="datepicker_start" class="datepicker"
-                                            placeholder="年 / 月 / 日">
+                                        <div class="w-100 position-relative">
+                                            <input type="text" id="datepicker_start" class="datepicker"
+                                                placeholder="年 / 月 / 日">
+                                            <i class="far fa-calendar-alt"></i>
+                                        </div>
                                         <div class="clearBTN">清除</div>
                                     </div>
                                     <div class="w-100 d-flex end">
                                         <div class="period">迄</div>
-                                        <input type="text" id="datepicker_end" class="datepicker"
-                                            placeholder="年 / 月 / 日">
+                                        <div class="w-100 position-relativeㄊ">
+                                            <input type="text" id="datepicker_end" class="datepicker"
+                                                placeholder="年 / 月 / 日">
+                                            <i class="far fa-calendar-alt"></i>
+                                        </div>
+
                                         <div class="clearBTN">清除</div>
                                     </div>
                                     <!-- <i class="far fa-calendar-alt"></i> -->

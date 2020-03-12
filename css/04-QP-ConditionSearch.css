@@ -28,7 +28,7 @@
 }
 
 .Connection_area .Connection_form .name {
-  font-size: 22px;
+  font-size: 18px;
   letter-spacing: 2px;
   padding-bottom: 30px;
 }
@@ -67,8 +67,9 @@
 
 .Connection_area .Connection_form .form_input > input {
   width: 100%;
+  height: 40px;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   outline-width: 0px none invert;
   border: 1px solid #000000;
   text-shadow: none;
@@ -111,12 +112,16 @@
 .Connection_area .Connection_form .form_input > ul li div {
   letter-spacing: 3px;
   padding-left: 10px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .Connection_area .Connection_form .form_input input,
 .Connection_area .Connection_form .form_input select {
   letter-spacing: 4px;
+}
+
+.Connection_area .Connection_form .dateInput {
+  position: relative;
 }
 
 .Connection_area .Connection_form .dateInput > .w-100:first-child {
@@ -130,24 +135,25 @@
 }
 
 .Connection_area .Connection_form .dateInput input {
+  height: 40px;
   padding: 10px 20px;
   border-radius: 5px;
   width: 100%;
   border: 1px solid black;
+  position: relative;
+}
+
+.Connection_area .Connection_form .dateInput i {
+  font-size: 22px;
+  opacity: 0.6;
+  position: absolute;
+  right: 15px;
+  top: 8px;
 }
 
 .Connection_area .Connection_form .dateInput .period {
   font-weight: bold;
   margin-right: 25px;
-}
-
-.Connection_area .Connection_form .dateInput .position-relative {
-  position: relative;
-}
-
-.Connection_area .Connection_form .dateInput .position-relative .fa-calendar-alt {
-  position: absolute;
-  right: 0;
 }
 
 .Connection_area .Connection_form .dateInput .clearBTN {
@@ -229,6 +235,7 @@
 
 .Connection_area .Connection_form select {
   width: 100%;
+  height: 40px;
   padding: 10px 20px;
   border-radius: 5px;
   margin-right: -20px;

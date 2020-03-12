@@ -172,6 +172,8 @@ a:active {
   text-align: center;
   letter-spacing: 2px;
   color: #4D4D4D;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .question .btnGroup a .btnArea:hover {
@@ -207,6 +209,8 @@ a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  line-height: 2;
+  letter-spacing: 2px;
 }
 
 .question .QA-tab .QA .query .fa-chevron-up {
@@ -233,6 +237,7 @@ a:active {
   max-height: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  letter-spacing: 1.5px;
 }
 
 .question .QA-tab .QA.active .fa-chevron-up {
@@ -290,6 +295,8 @@ a:active {
   text-align: center;
   border: 1px solid #333333;
   padding: 10px 20px;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .question .pageNumber ul .nextBTN:hover,
