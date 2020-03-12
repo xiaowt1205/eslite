@@ -23,7 +23,6 @@
 
     <!-- page css  -->
     <link rel="stylesheet" href="./css/index.css">
-
 </head>
 
 <body>
@@ -31,7 +30,7 @@
     <header class="index_nav">
         <div id="topline" class="container-fluid">
             <div class="row">
-                <div class="col-lg-6 col-xl-4">
+                <div class="col-4 col-lg-5 col-xl-4 logo_area">
                     <div class="container-fluid">
                         <div class="row d-flex justify-content-center">
                             <div class="col-6">
@@ -43,8 +42,8 @@
                         </div>
                     </div>
                 </div>
-                <nav class="col-lg-6 col-xl-7  d-flex justify-content-end align-items-center">
-                    <ul class="d-flex">
+                <nav class="col-7 col-lg-6 col-xl-7 justify-content-end align-items-center">
+                    <ul>
                         <li><a href="">關於我們</a></li>
                         <li><a href="">閱讀分享計畫</a></li>
                         <li><a href="">青年培育計畫</a></li>
@@ -88,31 +87,28 @@
                 <div class="col-1 d-flex justify-content-center align-items-center">
                     <div class="menu-icon">
                         <ul class="modal-menu-toggle">
-                            <li class="menu-btn">
+                            <li class="menu-btn  menu-btn-pc">
+                                <a href="#">
+                                    <div class=""></div>
+                                </a>
+                            </li>
+                            <li class="menu-btn menu-btn-mob" data-toggle="modal" data-target="#mobile-menu">
                                 <a href="#">
                                     <div class=""></div>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <!-- <ul class="position-absolute d-block d-xl-none modal-menu-toggle">
-                        <li class="menu-btn" data-toggle="modal" data-target="#mobile-menu">
-                            <a href="#">
-                                <div class=""></div>
-                            </a>
-                        </li>
-                    </ul> -->
                 </div>
             </div>
         </div>
 
         <div id="headline" class="container-fluid">
-            <div class="row d-flex justify-content-center">
-                <div class="col-10 px-0">
+            <div class="row d-flex headline_area">
+                <div class="col-12 px-0">
                     <div class="container-fluid">
                         <div class="row swiper_block">
-                            <aside
-                                class="col-2 px-0 order-lg-1 order-xl-0 d-flex flex-xl-column justify-content-xl-between">
+                            <aside class="col-2 px-0 d-flex flex-xl-column justify-content-xl-between">
                                 <div class="swiper-group">
                                     <div class="swiper-pagination d-lg-flex d-none"></div>
                                 </div>
@@ -165,11 +161,11 @@
                                     </a>
                                 </div>
                             </aside>
-                            <div class="headline_swiper">
-                            <!-- <div class="col-lg-10 col-12 px-0"> -->
+                            <div class="headline_swiper px-0">
+                                <!-- <div class="col-lg-10 col-12 px-0"> -->
                                 <div class="banner">
                                     <!-- swiper -->
-                                    <div class="swiper-banner swiper-container">
+                                    <div class="swiper-banner swiper-container px-0">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <img class="w-100 h-100" src="./img/index/banner-1.jpg" alt="">
@@ -303,7 +299,7 @@
     <!-- menu -->
     <div class="menu">
         <div class="menu-container position-relative">
-            <div class="menu-btn menu-btn-pc position-absolute d-lg-block d-none">
+            <div class="menu-btn menu-btn-pc position-absolute">
                 <a href="#">
                     <div></div>
                 </a>
@@ -657,9 +653,14 @@
                     <button class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
+                    <!-- <div class="menu-btn menu-btn-pc">
+                        <a href="#">
+                            <div></div>
+                        </a>
+                    </div> -->
                 </div>
-                <div class="modal-collapse-group d-sm-flex justify-content-sm-center flex-sm-wrap">
-                    <div class="accordion w-100 text-sm-center" id="about-us">
+                <div class="modal-collapse-group">
+                    <div class="accordion" id="about-us">
                         <div id="about-us-heading" class="menu-title">
                             <a class="collapsed collapse-deco" data-toggle="collapse" data-target="#about-us-collapse"
                                 aria-expanded="true" aria-controls="about-us-collapse">
@@ -680,7 +681,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="accordion w-100 text-sm-center" id="study-plan">
+                    <div class="accordion" id="study-plan">
                         <div>
                             <div id="study-plan-heading" class="menu-title">
                                 <a class="collapsed collapse-deco" data-toggle="collapse"
@@ -821,7 +822,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion w-100 text-sm-center" id="youth-plan">
+                    <div class="accordion" id="youth-plan">
                         <div>
                             <div id="youth-plan-heading" class="menu-title">
                                 <a class="collapsed collapse-deco" data-toggle="collapse"
@@ -941,7 +942,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion w-100 text-sm-center" id="foundation-message">
+                    <div class="accordion" id="foundation-message">
                         <div id="foundation-message-heading" class="menu-title">
                             <a class="collapsed collapse-deco" data-toggle="collapse"
                                 data-target="#foundation-message-collapse" aria-expanded="true"
@@ -957,7 +958,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="accordion w-100 text-sm-center" id="FAQ">
+                    <div class="accordion" id="FAQ">
                         <div id="FAQ-heading" class="menu-title">
                             <a class="collapsed collapse-deco" data-toggle="collapse" data-target="#FAQ-collapse"
                                 aria-expanded="true" aria-controls="FAQ-collapse">
@@ -1012,55 +1013,41 @@
                                                     <span>受捐款單位</span>
                                                 </div>
                                             </div>
-                                            <a href="" class="btn-pc">
-                                                <div class="btn">我需要書</div>
-                                            </a>
                                             <div class="btn-moblie">
-                                                <p>總年度</p>
-                                                <p>總需求量</p>
-                                                <a href="">
-                                                    <div class="btn">我需要書</div>
-                                                </a>
+                                                <p>受捐款單位</p>
                                             </div>
                                         </div>
                                         <div class="business_area col-3 d-flex align-items-center">
                                             <div class="business_block">
                                                 <div class="business_text">
                                                     <span id="total_1">0</span>
-                                                    <span>受捐款單位</span>
+                                                    <span>總送出書籍</span>
                                                 </div>
                                             </div>
-                                            <a href="" class="btn-pc">
-                                                <div class="btn">我需要書</div>
-                                            </a>
                                             <div class="btn-moblie">
-                                                <p>總年度</p>
-                                                <p>總需求量</p>
-                                                <a href="">
-                                                    <div class="btn">我需要書</div>
-                                                </a>
+                                                <p>總送出書籍</p>
                                             </div>
                                         </div>
                                         <div class="business_area col-3 d-flex align-items-center">
                                             <div class="business_block">
                                                 <div class="business_text">
                                                     <span id="total_2">0</span>
-                                                    <span>受捐款單位</span>
+                                                    <span>總需求量</span>
                                                 </div>
                                             </div>
-                                            <a href="" class="btn-pc">
-                                                <div class="btn">我需要書</div>
-                                            </a>
                                             <div class="btn-moblie">
-                                                <p>總年度</p>
                                                 <p>總需求量</p>
-                                                <a href="">
-                                                    <div class="btn">我需要書</div>
-                                                </a>
                                             </div>
                                         </div>
                                     </div>
-
+                                    <div class="row btn-grop d-flex justify-content-center">
+                                        <a href="" class="btn-pc">
+                                            <div class="btn">我需要書</div>
+                                        </a>
+                                        <a href="" class="btn-pc">
+                                            <div class="btn">我要捐書</div>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="tab-pane fade" id="list-profile" role="tabpanel"
                                     aria-labelledby="list-profile-list">
@@ -1072,15 +1059,8 @@
                                                     <span>受捐款單位</span>
                                                 </div>
                                             </div>
-                                            <a href="" class="btn-pc">
-                                                <div class="btn">我需要書</div>
-                                            </a>
                                             <div class="btn-moblie">
-                                                <p>總年度</p>
                                                 <p>總需求量</p>
-                                                <a href="">
-                                                    <div class="btn">我需要書</div>
-                                                </a>
                                             </div>
                                         </div>
                                         <div class="business_area col-3 d-flex align-items-center">
@@ -1090,15 +1070,8 @@
                                                     <span>受捐款單位</span>
                                                 </div>
                                             </div>
-                                            <a href="" class="btn-pc">
-                                                <div class="btn">我需要書</div>
-                                            </a>
                                             <div class="btn-moblie">
-                                                <p>總年度</p>
                                                 <p>總需求量</p>
-                                                <a href="">
-                                                    <div class="btn">我需要書</div>
-                                                </a>
                                             </div>
                                         </div>
                                         <div class="business_area col-3 d-flex align-items-center">
@@ -1108,17 +1081,18 @@
                                                     <span>受捐款單位</span>
                                                 </div>
                                             </div>
-                                            <a href="" class="btn-pc">
-                                                <div class="btn">我需要書</div>
-                                            </a>
                                             <div class="btn-moblie">
-                                                <p>總年度</p>
                                                 <p>總需求量</p>
-                                                <a href="">
-                                                    <div class="btn">我需要書</div>
-                                                </a>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="row btn-grop d-flex justify-content-center">
+                                        <a href="" class="btn-pc">
+                                            <div class="btn">我需要書</div>
+                                        </a>
+                                        <a href="" class="btn-pc">
+                                            <div class="btn">我要捐書</div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -1300,6 +1274,7 @@
                     <div class="row d-flex flex-wrap news_area">
                         <div class="title_region col-3">
                             <h2>
+                                <!-- <span>What' s</span> -->
                                 <span>What'<span>s</span></span>
                                 <span>News.</span>
                             </h2>
