@@ -710,6 +710,7 @@ footer .footer_area .info_area .footer-info p span:nth-child(1) {
 @media screen and (max-width: 576px) {
   footer .footer_area .info_area .footer-info p {
     min-width: 240px;
+    margin-bottom: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
