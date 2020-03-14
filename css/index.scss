@@ -147,24 +147,6 @@ header {
                         align-items: center;
                     }
 
-
-                    &.menu-btn-pc {
-                        padding: 0px 15px;
-                        display: none;
-                        @include border-two-side(0px, 0px, $fc-gray, solid);
-
-                        @media(max-width:1400px) {
-                            display: flex;
-                            justify-content: flex-end;
-                            align-items: center;
-                        }
-                    }
-
-
-                    &.menu-btn-mob {
-                        display: none;
-                    }
-
                     a {
                         color: $fc-black;
                         font-size: $fs-12;
@@ -234,50 +216,68 @@ header {
         }
 
         .col-1 {
-            position: absolute;
-            z-index: 3;
-            right: 0;
-            top: 50%;
-            transform: translate(-15px, -50%);
+            @media (max-width:768px) {
+                position: absolute;
+                z-index: 3;
+                right: 0;
+                top: 50%;
+                transform: translate(-15px, -50%);
+            }
 
-            .menu-btn-mob {
-                display: none;
+            .menu-icon {
+                position: relative;
+                display: flex;
+                // justify-content: center;
 
-                @media screen and (max-width:576px) {
-                    display: block;
+                @media (max-width:1200px) {
+                    justify-content: flex-end;
+                }
+
+                @media (max-width:576px) {
+                    position: absolute;
+                    top: 50%;
+                    right: 15px;
+                    transform: translateY(-50%);
+                }
+
+                ul.modal-menu-toggle {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    .menu-btn-pc {
+                        padding: 0px 15px;
+                        // display: none;
+                        @include border-two-side(0px, 0px, $fc-gray, solid);
+
+                        @media(max-width:1400px) {
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                        }
+
+                        @media screen and (max-width:576px) {
+                            display: none;
+                        }
+                    }
+
+                    .menu-btn-mob {
+                        display: none;
+
+                        @media screen and (max-width:576px) {
+                            display: block;
+                        }
+                    }
+
                 }
             }
 
-            .menu-btn-pc {
-                @media screen and (max-width:576px) {
-                    display: none;
-                }
-            }
+
+
         }
     }
 
-    .menu-icon {
-        position: relative;
-        display: flex;
-        // justify-content: center;
 
-        @media (max-width:1200px) {
-            justify-content: flex-end;
-        }
-
-        @media (max-width:576px) {
-            position: absolute;
-            top: 50%;
-            right: 15px;
-            transform: translateY(-50%);
-        }
-
-        ul.modal-menu-toggle {
-            width: 100%;
-            display: flex;
-            align-items: center;
-        }
-    }
 
     #headline {
         padding: 0px 15px 75px;
@@ -2310,7 +2310,11 @@ main {
 }
 
 #Vendor {
-    padding: 0px 0px 110px;
+    padding: 0px 100px 110px;
+
+    @media screen and (max-width:1024px) {
+        padding: 0px 30px 110px;
+    }
 
     .content {
 
@@ -2323,8 +2327,6 @@ main {
         .vendor_area {
             position: relative;
             width: 100%;
-            padding-right: 100px;
-            padding-left: 100px;
 
             @media screen and (max-width:1024px) {
                 padding: 0px 30px;
@@ -2338,12 +2340,12 @@ main {
                 position: absolute;
                 padding: 20px 0px;
                 top: 50%;
-                left: 0px;
-                transform: translate(0%, -50%);
+                left: -20px;
+                transform: translate(-100%, -50%);
                 transition: all 2s;
 
-                @media screen and (max-width:1330px) {
-                    left: 30px;
+                @media screen and (max-width:1200px) {
+                    left: -5px;
                 }
 
                 .arrow_button {
@@ -2370,14 +2372,13 @@ main {
                 position: absolute;
                 padding: 20px 0px;
                 top: 50%;
-                right: 0px;
-                transform: translate(0%, -50%);
+                right: -20px;
+                transform: translate(100%, -50%);
                 transition: all 2s;
 
-                @media screen and (max-width:1330px) {
-                    right: 30px;
+                @media screen and (max-width:1200px) {
+                    right: -5px;
                 }
-
                 .arrow_button {
                     &::after {
                         content: '';
@@ -2438,10 +2439,6 @@ main {
                 transform: translate(0%, 100%);
                 transition: all 2s;
 
-                @media screen and (max-width:1330px) {
-                    left: 30px;
-                }
-
                 .arrow_button {
                     &::before {
                         content: '';
@@ -2469,10 +2466,6 @@ main {
                 right: 0px;
                 transform: translate(0%, -50%);
                 transition: all 2s;
-
-                @media screen and (max-width:1330px) {
-                    right: 30px;
-                }
 
                 .arrow_button {
                     &::after {
