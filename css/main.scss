@@ -434,6 +434,7 @@ footer {
             color: $fc-white;
             letter-spacing: 2px;
             margin-bottom: 10px;
+
             @media screen and (max-width:576px) {
                 font-size: $fs-12;
             }
@@ -521,19 +522,29 @@ footer {
 
                 p {
                     min-width: 286px;
-                    @media screen and (max-width:576px) {
-                        min-width: 240px;
-                        display: flex;
-                        justify-content: space-between;
-                        &:nth-last-child(1){
-                            margin: auto;
-                            min-width: 170px;
-                            width: 170px;
+
+                    span {
+                        &:nth-child(1) {
+                            margin-right: 50px;
                         }
                     }
-                    span{
-                        &:nth-child(2){
-                            display: none;
+
+                    @media screen and (max-width:576px) {
+                        min-width: 240px;
+                        margin-bottom: 10px;
+                        display: flex;
+                        justify-content: space-between;
+
+                        &:nth-child(n+2) {
+                            margin: 0px auto 5px;
+                            min-width: 200px;
+                            width: 200px;
+                        }
+
+                        &:nth-last-child(1) {
+                            margin: 0px auto 5px;
+                            min-width: 170px;
+                            width: 170px;
                         }
                     }
                 }
@@ -614,9 +625,11 @@ footer {
                         margin-left: 0;
                         margin-right: 20px;
                     }
+
                     @media screen and (max-width:576px) {
                         margin: 0px 7.5px;
                     }
+
                     // @media (max-width:992px) {
 
                     //     margin: 10px 10px 0 10px;
@@ -633,6 +646,33 @@ footer {
                 }
             }
         }
+    }
+}
+
+.go_to_top {
+    position: fixed;
+    z-index: 5;
+    bottom: 30px;
+    right: 30px;
+
+    .fa-chevron-circle-up {
+        font-size: $fs-76;
+        border-radius: 50%;
+        box-shadow: 3px 3px 5px -1px $fc-666666-gray;
+
+        @media screen and (max-width:1600px) {
+            font-size: $fs-48;
+        }
+
+        @media screen and (max-width:576px) {
+            font-size: $fs-32;
+        }
+
+        // &::before {
+        //     background-color: $white;
+        //     
+        //     
+        // }
     }
 }
 
