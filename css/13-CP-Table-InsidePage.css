@@ -13,6 +13,7 @@
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 80px;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 992px) {
@@ -77,6 +78,8 @@
   padding-left: 30px;
   font-size: 16px;
   margin-bottom: 60px;
+  font-size: 14px;
+  font-weight: 800;
 }
 
 .area_table .message_area > div {

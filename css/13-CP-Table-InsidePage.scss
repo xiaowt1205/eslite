@@ -13,6 +13,7 @@
         margin-left: 0px;
         margin-right: 0px;
         margin-bottom: 80px;
+        font-size: 14px;
 
         @media screen and (max-width:992px) {
             margin-bottom: 25px;
@@ -68,6 +69,8 @@
         padding-left: 30px;
         font-size: $fs-16;
         margin-bottom: 60px;
+        font-size: 14px;
+        font-weight: 800;
 
         &>div {
             display: flex;
