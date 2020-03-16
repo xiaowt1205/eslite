@@ -1,7 +1,11 @@
 @import "./_variables.scss";
 @import "./_function.scss";
 
-
+main{
+    &.container{
+        padding-bottom:40px;
+    }
+}
 .area_picture {
     padding-bottom: 30px;
 
@@ -15,6 +19,8 @@
 
     .text {
         width: 100%;
+        font-weight: 700;
+        font-size: 14px;
 
         p {
             margin-bottom: 35px;
@@ -51,17 +57,23 @@
         position: relative;
 
         .photo {
+            margin-bottom: 40px;
             &>div {
                 margin-bottom: 16px;
+                
+                @media (min-width:992px){
+                    padding-left: 8px;
+                    padding-right:8px;
+                }
             }
         }
 
         .img {
             width: 100%;
-            height: 100px;
+            height: 120px;
             min-height: 100px;
-            max-height: 100px;
-            background-color: green;
+            max-height: 120px;
+            background-color: #665F5F;
         }
 
         .modal {
@@ -93,7 +105,8 @@
     .message_area {
         position: relative;
         padding-left: 30px;
-        font-size: $fs-16;
+        font-size: $fs-14;
+        font-weight: 700;
         margin-bottom: 60px;
 
         &>div {
@@ -171,7 +184,7 @@
 
 
 .customization-swiper-bg {
-    @include region(100%, 100vh, rgba(0, 0, 0, 0.9));
+    @include region(100%, 100vh, rgba(20, 14, 12, 0.9));
     position: fixed;
     top: 0;
     left: 0;
