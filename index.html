@@ -1468,6 +1468,9 @@
                             <p>版權所有聲明</p>
                         </div>
                         <div class="icon_block px-0">
+                            <div class="icon-bg"><a href="">
+                                    <div class="mail-icon"><img src="./img/icon/emaill.png" alt=""></div>
+                                </a></div>
                             <div class="icon-bg"><a href=""><i class="fab fa-youtube"></i></a></div>
                             <div class="icon-bg"><a href=""><i class="fab fa-facebook-f"></i></a></div>
                         </div>
@@ -1478,12 +1481,11 @@
         </div>
     </footer>
 
-    <div class="go_to_top">
-        <i class="fas fa-chevron-circle-up"></i>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+    <a class="go_to_top" id="BackTop">
+        <img src="./img/icon/top.png" alt="">
+    </a>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
@@ -1503,7 +1505,7 @@
             dynamicNumberCounter(400, "total_1", 600000);
             dynamicNumberCounter(400, "total_2", 15000);
             dynamicNumberCounter(400, "year_0", 400000);
-            dynamicNumberCounter(400, "year_1",  600000);
+            dynamicNumberCounter(400, "year_1", 600000);
             dynamicNumberCounter(400, "year_2", 15000);
             // dynamicNumberCounter(scrollTop Position(Num), element's id(String) , Target Number(Num))
             // ex) dynamicNumberCounter(400, "test", 64);
@@ -1511,11 +1513,21 @@
 
     </script>
     <script>
+        $("#BackTop").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 500);
+        });
+        var btn = $('#BackTop');
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+    </script>
+    <script>
         $('.aside-btn-title').click(function () {
-
             $(this).toggleClass('active')
-
-
         })
     </script>
 </body>

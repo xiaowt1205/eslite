@@ -140,6 +140,11 @@ a:active {
   font-family: 'Noto Serif TC', serif;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 .menu {
   display: none;
   position: fixed;
@@ -709,7 +714,7 @@ footer .footer_area .info_area .footer-info p span:nth-child(1) {
 
 @media screen and (max-width: 576px) {
   footer .footer_area .info_area .footer-info p span:nth-child(1) {
-    margin-right: 0px;
+    margin-right: 50px;
   }
 }
 
@@ -802,9 +807,9 @@ footer .footer_area .icon_area .content {
 @media screen and (min-width: 1201px) {
   footer .footer_area .icon_area .content {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 66.666667%;
-            flex: 0 0 66.666667%;
-    max-width: 66.666667%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
     margin: 0;
   }
 }
@@ -819,9 +824,9 @@ footer .footer_area .icon_area .icon_block {
 @media screen and (min-width: 1201px) {
   footer .footer_area .icon_area .icon_block {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 33.333333%;
-            flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
@@ -865,30 +870,36 @@ footer .footer_area .icon_area .icon_block .icon-bg i {
   color: #231815;
 }
 
+footer .footer_area .icon_area .icon_block .icon-bg .mail-icon {
+  min-width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .go_to_top {
+  cursor: pointer;
   position: fixed;
   z-index: 5;
   bottom: 30px;
   right: 30px;
+  -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
 }
 
-.go_to_top .fa-chevron-circle-up {
-  font-size: 76px;
-  border-radius: 50%;
-  -webkit-box-shadow: 3px 3px 5px -1px #666666;
-          box-shadow: 3px 3px 5px -1px #666666;
-}
-
-@media screen and (max-width: 1600px) {
-  .go_to_top .fa-chevron-circle-up {
-    font-size: 48px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .go_to_top .fa-chevron-circle-up {
-    font-size: 32px;
-  }
+.go_to_top.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 @-webkit-keyframes menu-fadeIn {

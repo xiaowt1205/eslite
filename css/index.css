@@ -2948,7 +2948,8 @@ tr #News .container_1600 .content_text .button span:hover {
 }
 
 #Vendor .content .vendor_area img {
-  height: 30px;
+  max-width: 100%;
+  max-height: 30px;
 }
 
 #Vendor .content .vendor_area .swiper-slide {

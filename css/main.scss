@@ -7,6 +7,10 @@
     font-family: 'Noto Serif TC', serif;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
 
 .menu {
     display: none;
@@ -526,8 +530,9 @@ footer {
                     span {
                         &:nth-child(1) {
                             margin-right: 50px;
+
                             @media screen and (max-width:576px) {
-                                margin-right: 0px;
+                                margin-right: 50px;
                             }
                         }
                     }
@@ -596,8 +601,8 @@ footer {
                 margin-bottom: 15px;
 
                 @media screen and (min-width:1201px) {
-                    flex: 0 0 66.666667%;
-                    max-width: 66.666667%;
+                    flex: 0 0 50%;
+                    max-width: 50%;
                     margin: 0;
                 }
 
@@ -608,8 +613,8 @@ footer {
                 display: flex;
 
                 @media screen and (min-width:1201px) {
-                    flex: 0 0 33.333333%;
-                    max-width: 33.333333%;
+                    flex: 0 0 50%;
+                    max-width: 50%;
                 }
 
                 @media screen and (max-width:576px) {
@@ -633,11 +638,6 @@ footer {
                         margin: 0px 7.5px;
                     }
 
-                    // @media (max-width:992px) {
-
-                    //     margin: 10px 10px 0 10px;
-                    // }
-
                     i {
                         position: absolute;
                         top: 50%;
@@ -646,6 +646,14 @@ footer {
                         font-size: $fs-27;
                         color: $main-color-dark;
                     }
+
+                    .mail-icon {
+                        min-width: 40px;
+                        height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
             }
         }
@@ -653,29 +661,20 @@ footer {
 }
 
 .go_to_top {
+    cursor: pointer;
     position: fixed;
     z-index: 5;
     bottom: 30px;
     right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
 
-    .fa-chevron-circle-up {
-        font-size: $fs-76;
-        border-radius: 50%;
-        box-shadow: 3px 3px 5px -1px $fc-666666-gray;
-
-        @media screen and (max-width:1600px) {
-            font-size: $fs-48;
-        }
-
-        @media screen and (max-width:576px) {
-            font-size: $fs-32;
-        }
-
-        // &::before {
-        //     background-color: $white;
-        //     
-        //     
-        // }
+    &.show {
+        opacity: 1;
+        visibility: visible;
     }
 }
 
