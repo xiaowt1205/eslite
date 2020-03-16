@@ -48,6 +48,14 @@ header #topline nav ul li {
   letter-spacing: 2px;
 }
 
+@media (min-width: 576px) and (max-width: 992px) {
+  .container {
+    max-width: unset;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
