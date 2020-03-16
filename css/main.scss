@@ -526,6 +526,9 @@ footer {
                     span {
                         &:nth-child(1) {
                             margin-right: 50px;
+                            @media screen and (max-width:576px) {
+                                margin-right: 0px;
+                            }
                         }
                     }
 

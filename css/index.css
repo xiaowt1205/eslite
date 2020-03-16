@@ -1439,16 +1439,17 @@ main .bg {
 }
 
 #Statistics .container_1600 .statistics_area .content .business_area .business_block .business_text span:nth-child(1) {
-  font-size: 76px;
+  font-size: 45px;
   font-weight: bold;
-  padding-bottom: 5px;
+  padding-bottom: 13px;
   position: relative;
-  letter-spacing: 10px;
+  letter-spacing: 7px;
 }
 
 @media screen and (max-width: 1024px) {
   #Statistics .container_1600 .statistics_area .content .business_area .business_block .business_text span:nth-child(1) {
-    font-size: 62px;
+    font-size: 45px;
+    letter-spacing: 4px;
   }
 }
 
@@ -1469,7 +1470,7 @@ main .bg {
   content: '';
   position: absolute;
   width: 80px;
-  height: 2px;
+  height: 6px;
   background-color: #231815;
   bottom: 0;
   left: 50%;
@@ -1487,7 +1488,7 @@ main .bg {
   content: '個';
   position: absolute;
   font-size: 24px;
-  bottom: 15px;
+  bottom: 8px;
   right: 0;
   -webkit-transform: translate(90%, -10%);
           transform: translate(90%, -10%);
@@ -1805,9 +1806,9 @@ main .bg {
 
 @media screen and (max-width: 576px) {
   #Plan .content .card .text h2 {
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 4px;
-    min-width: 72px;
+    min-width: 90px;
   }
 }
 

@@ -890,7 +890,7 @@ main {
                     }
                 }
 
-                .icon {
+               .icon {
                     margin-left: auto;
                     margin-bottom: 7px;
                     display: flex;
@@ -1055,14 +1055,15 @@ main {
                             color: #321C07;
 
                             & span:nth-child(1) {
-                                font-size: $fs-76;
+                                font-size: $fs-45;
                                 font-weight: $fw-bold;
-                                padding-bottom: 5px;
+                                padding-bottom: 13px;
                                 position: relative;
-                                letter-spacing: 10px;
+                                letter-spacing: 7px;
 
                                 @media screen and (max-width:1024px) {
-                                    font-size: $fs-62;
+                                    font-size: $fs-45;
+                                    letter-spacing: 4px;
                                 }
 
                                 @media screen and (max-width:992px) {
@@ -1078,7 +1079,7 @@ main {
                                     content: '';
                                     position: absolute;
                                     width: 80px;
-                                    height: 2px;
+                                    height: 6px;
                                     background-color: $bc-brown;
                                     bottom: 0;
                                     left: 50%;
@@ -1093,7 +1094,7 @@ main {
                                     content: '個';
                                     position: absolute;
                                     font-size: $fs-24;
-                                    bottom: 15px;
+                                    bottom: 8px;
                                     right: 0;
                                     transform: translate(90%, -10%);
 
@@ -1387,9 +1388,9 @@ main {
                     min-width: 136px;
 
                     @media screen and (max-width:576px) {
-                        font-size: $fs-14;
+                        font-size: $fs-18;
                         letter-spacing: 4px;
-                        min-width: 72px;
+                        min-width: 90px;
                     }
 
                     &::after {
