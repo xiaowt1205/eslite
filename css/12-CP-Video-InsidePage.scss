@@ -15,8 +15,10 @@
 
     .text {
         width: 100%;
-
-        font-weight: 600;
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: $fs-14;
+        letter-spacing: 2.5px;
 
         p {
             margin-bottom: 35px;
@@ -30,7 +32,6 @@
         }
 
         .text_link {
-            margin-bottom: 35px;
             line-height: 30px;
 
             @media screen and (max-width:992px) {
