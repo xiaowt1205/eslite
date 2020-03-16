@@ -368,7 +368,16 @@ header #topline nav ul li a:hover {
 header #topline nav ul li a .cicle {
   position: relative;
   min-width: 24px;
-  max-height: 24px;
+  min-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 2px black solid;
   border-radius: 50%;
 }
@@ -381,15 +390,6 @@ header #topline nav ul li a .cicle .fa-info {
   margin-left: 4px;
   text-align: center;
   font-size: 14px;
-  -webkit-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
-}
-
-@media screen and (max-width: 1600px) {
-  header #topline nav ul li a .cicle .fa-info {
-    -webkit-transform: translate(-5%, -5%);
-            transform: translate(-5%, -5%);
-  }
 }
 
 @media (max-width: 1400px) {
@@ -717,34 +717,35 @@ header #headline .headline_area .swiper_block aside .aside-btn-group a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  width: 63px;
+  position: relative;
+  overflow: hidden;
+  border-left: 1px #FFFFFF solid;
+  border-right: 0 #FFFFFF solid;
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1320px) {
   header #headline .headline_area .swiper_block aside .aside-btn-group a {
-    width: unset;
-  }
-}
-
-@media (max-width: 992px) {
-  header #headline .headline_area .swiper_block aside .aside-btn-group a {
-    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-btn {
-  position: relative;
+  width: 63px;
   text-align: end;
-  border-left: 1px #FFFFFF solid;
-  border-right: 0 #FFFFFF solid;
-  letter-spacing: 8px;
+  letter-spacing: 5px;
   color: #FFFFFF;
   font-size: 16px;
-  padding: 5px;
-  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
+  header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-btn:hover {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (max-width: 1320px) {
   header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-btn:hover {
     width: 450px;
   }
@@ -779,19 +780,31 @@ header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-bt
 
 @media (min-width: 992px) {
   header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-btn {
-    padding: 0 15px;
     -webkit-writing-mode: unset;
     -ms-writing-mode: unset;
         writing-mode: unset;
   }
 }
 
+@media screen and (max-width: 1320px) {
+  header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-btn {
+    width: unset;
+    padding: 0px 15px;
+  }
+}
+
 @media (min-width: 1200px) {
   header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-btn {
-    position: absolute;
-    height: 100%;
-    font-size: 20px;
-    padding: 5px 15px;
+    font-size: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
         writing-mode: vertical-rl;
@@ -848,6 +861,12 @@ header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-bt
   }
 }
 
+@media screen and (max-width: 1320px) {
+  header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-btn .gradient-mask .aside-sub-btn-group {
+    padding: 0px 30px;
+  }
+}
+
 header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-btn .gradient-mask .aside-sub-btn-group .aside-sub-btn {
   -webkit-transition: .3s;
   transition: .3s;
@@ -867,6 +886,10 @@ header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-bt
 
 header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-btn:hover .gradient-mask .aside-sub-btn-group {
   opacity: 1;
+}
+
+header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-btn a {
+  position: relative;
 }
 
 header #headline .headline_area .swiper_block .headline_swiper {
@@ -1173,7 +1196,7 @@ main .bg {
   font-weight: 700;
   letter-spacing: 13px;
   margin: auto 0px 0px;
-  padding-left: 30px;
+  padding-left: 40px;
 }
 
 @media screen and (max-width: 576px) {
@@ -1248,8 +1271,13 @@ main .bg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: bold;
-  min-width: 250px;
+  min-width: 255px;
+  max-height: 40PX;
   padding: 10px 0px;
   margin-top: auto;
   background-color: #FFFFFF;
@@ -1436,6 +1464,8 @@ main .bg {
           align-items: center;
   margin-top: -15px;
   color: #321C07;
+  -webkit-transform: translateY(17%);
+          transform: translateY(17%);
 }
 
 #Statistics .container_1600 .statistics_area .content .business_area .business_block .business_text span:nth-child(1) {
@@ -1488,10 +1518,10 @@ main .bg {
   content: '個';
   position: absolute;
   font-size: 24px;
-  bottom: 8px;
+  bottom: 0;
   right: 0;
-  -webkit-transform: translate(90%, -10%);
-          transform: translate(90%, -10%);
+  -webkit-transform: translate(90%, -55%);
+          transform: translate(90%, -55%);
 }
 
 @media screen and (max-width: 768px) {
@@ -1502,7 +1532,7 @@ main .bg {
 }
 
 #Statistics .container_1600 .statistics_area .content .business_area .business_block .business_text :nth-child(2) {
-  padding-top: 20px;
+  padding-top: 15px;
   font-size: 24px;
   letter-spacing: 3px;
 }
@@ -1677,7 +1707,7 @@ main .bg {
 
 #Plan .title_region h2 {
   position: relative;
-  font-size: 67px;
+  font-size: 68px;
   font-weight: 700;
   letter-spacing: 1.5px;
   padding-bottom: 25px;
@@ -1693,8 +1723,8 @@ main .bg {
 
 #Plan .title_region h2::after {
   content: '';
-  width: 120%;
-  height: 2px;
+  width: 330px;
+  height: 3px;
   background-color: #000000;
   position: absolute;
   bottom: 0;
@@ -1793,7 +1823,7 @@ main .bg {
 
 #Plan .content .card .text h2 {
   font-size: 27px;
-  font-weight: 700;
+  font-weight: 900;
   color: #000000;
   text-align: center;
   letter-spacing: 7px;
@@ -1880,6 +1910,15 @@ main .bg {
   border: 1.5px solid #000000;
   text-align: center;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -1921,7 +1960,7 @@ main .bg {
 }
 
 #Plan .content .card .text .button span {
-  letter-spacing: 5px;
+  letter-spacing: 1.5px;
   font-size: 16px;
   color: #000000;
 }
@@ -1956,21 +1995,6 @@ main .bg {
   width: 100%;
   height: 170px;
   overflow: hidden;
-}
-
-#Plan .content .card .Plan_bg::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-color: #23181565;
-  z-index: 2;
-  -webkit-transition: all 2s;
-  transition: all 2s;
 }
 
 #Plan .content .card .Plan_bg::after {
@@ -2952,9 +2976,52 @@ tr #News .container_1600 .content_text .button span:hover {
   max-height: 30px;
 }
 
-#Vendor .content .vendor_area .swiper-slide {
-  border-left: 0px #000000 solid;
-  border-right: 2px #000000 solid;
+#Vendor .content .vendor_area .swiper-line {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+#Vendor .content .vendor_area .swiper-line .line1 {
+  position: absolute;
+  z-index: 3;
+  width: 2px;
+  height: 100%;
+  background-color: #000000;
+  margin-left: -15px;
+  top: 0;
+  left: 25%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+#Vendor .content .vendor_area .swiper-line .line2 {
+  position: absolute;
+  z-index: 3;
+  width: 2px;
+  height: 100%;
+  background-color: #000000;
+  margin-left: -15px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+#Vendor .content .vendor_area .swiper-line .line3 {
+  position: absolute;
+  z-index: 3;
+  width: 2px;
+  height: 100%;
+  background-color: #000000;
+  margin-left: -15px;
+  top: 0;
+  left: 75%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 #Vendor .content .vendor_area-mob {
