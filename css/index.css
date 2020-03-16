@@ -1388,6 +1388,7 @@ main .bg {
   margin: 0px;
   border-radius: 500px;
   border: 10px solid #544747;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1413,6 +1414,10 @@ main .bg {
   border: 12px solid #6a4945;
   -webkit-box-shadow: 0 0 10px #000000;
           box-shadow: 0 0 10px #000000;
+}
+
+#Statistics .container_1600 .statistics_area .content .business_area .business_block:hover .business_icon .fa-play {
+  display: block;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1563,6 +1568,21 @@ main .bg {
     font-size: 24px;
     display: none;
   }
+}
+
+#Statistics .container_1600 .statistics_area .content .business_area .business_block .business_icon {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+}
+
+#Statistics .container_1600 .statistics_area .content .business_area .business_block .business_icon .fa-play {
+  display: none;
+  -webkit-transform: rotate(-150deg);
+          transform: rotate(-150deg);
+  font-size: 27px;
 }
 
 #Statistics .container_1600 .statistics_area .content .business_area .btn-moblie {

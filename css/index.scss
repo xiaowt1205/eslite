@@ -433,7 +433,7 @@ header {
                             overflow: hidden;
                             @include border-two-side(1px, 0, $fc-white, solid);
 
-                            
+
                             @media screen and (max-width:1320px) {
                                 align-items: center;
                             }
@@ -448,6 +448,7 @@ header {
                                 @media(max-width:1200px) {
                                     &:hover {
                                         width: 450px;
+
                                         @media screen and (max-width:1320px) {
                                             width: 450px;
                                         }
@@ -518,10 +519,6 @@ header {
                                         display: none;
                                     }
 
-                                    // @media screen and (max-width:1320px) {
-                                    //     padding: 0px 30px;
-                                    // }
-
                                     .aside-sub-btn-group {
                                         opacity: 0;
                                         transition-timing-function: ease-in;
@@ -534,6 +531,7 @@ header {
                                             transform: translate(0%, -50%);
                                             width: 150%;
                                         }
+
                                         @media screen and (max-width:1320px) {
                                             padding: 0px 30px;
                                         }
@@ -651,9 +649,6 @@ header {
                 }
             }
         }
-
-
-
     }
 
     .mobile-aside {
@@ -703,10 +698,7 @@ header {
                     }
                 }
             }
-
-
         }
-
     }
 }
 
@@ -983,6 +975,7 @@ main {
                         margin: 0px;
                         border-radius: 500px;
                         border: 10px solid $br-brown;
+                        position: relative;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
@@ -995,6 +988,11 @@ main {
                         &:hover {
                             border: 12px solid $br-brown-hover;
                             box-shadow: 0 0 10px $br-shadow;
+                            .business_icon {
+                                .fa-play {
+                                    display: block;
+                                }
+                            }
                         }
 
                         @media screen and (max-width:1200px) {
@@ -1028,7 +1026,6 @@ main {
                             height: 90px;
                             border: 2px solid $br-brown;
                         }
-
 
                         .business_text {
                             display: flex;
@@ -1087,8 +1084,6 @@ main {
                                         bottom: 8px;
                                     }
                                 }
-
-
                             }
 
                             & :nth-child(2) {
@@ -1111,6 +1106,20 @@ main {
                                 }
                             }
                         }
+
+                        .business_icon {
+                            position: absolute;
+                            top: 25%;
+                            left: 50%;
+                            transform: translate(-50%, -100%);
+
+                            .fa-play {
+                                display: none;
+                                transform: rotate(-150deg);
+                                font-size: $fs-27;
+                            }
+
+                        }
                     }
 
                     .btn-moblie {
@@ -1132,9 +1141,6 @@ main {
                             letter-spacing: 2px;
                         }
                     }
-
-
-
                 }
             }
 
@@ -1612,7 +1618,6 @@ main {
             }
         }
 
-
         @media screen and (max-width:992px) {
             margin-bottom: unset;
         }
@@ -1642,7 +1647,6 @@ main {
                     }
                 }
             }
-
 
             &::before {
                 content: '';
@@ -1691,7 +1695,6 @@ main {
                     border-radius: 15px;
 
                     i {
-                        // font-size: $fs-24;
                         color: $fc-white;
                     }
                 }
@@ -1913,9 +1916,6 @@ main {
             }
         }
     }
-
-
-
 }
 
 #News {
@@ -2198,7 +2198,6 @@ main {
                 }
             }
         }
-
     }
 
     .adornment {
@@ -2219,7 +2218,6 @@ main {
             bottom: 13px;
             box-shadow: 0 -10px 20px -5px #888888, 0 10px 20px -5px #888888, 10px 0 20px -5px #888888;
         }
-
     }
 
     .news_bg {
@@ -2390,32 +2388,6 @@ main {
                     left: 75%;
                     transform: translateX(50%);
                 }
-
-                // &::before {
-                //     content: '';
-                //     position: absolute;
-                //     z-index: 3;
-                //     width: 2px;
-                //     height: 100%;
-                //     background-color: $black;
-                //     margin-left: -15px;
-                //     top: 0;
-                //     left: 50%;
-                //     transform: translateX(-75%);
-                // }
-
-                // &::after {
-                //     content: '';
-                //     position: absolute;
-                //     z-index: 3;
-                //     width: 2px;
-                //     height: 100%;
-                //     background-color: $black;
-                //     margin-left: -15px;
-                //     top: 0;
-                //     left: 75%;
-                //     transform: translateX(-50%);
-                // }
             }
         }
 
