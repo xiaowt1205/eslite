@@ -68,7 +68,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .four .text_area {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -141,7 +141,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .five .text_area {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -171,6 +171,7 @@
 }
 
 .five .text_area .text_block {
+  font-weight: 900;
   width: 60%;
   font-size: 14px;
   text-indent: 40px;

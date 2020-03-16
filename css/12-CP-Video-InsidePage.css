@@ -15,7 +15,10 @@
 
 .area_video .text {
   width: 100%;
-  font-weight: 600;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.5px;
 }
 
 .area_video .text p {
@@ -32,7 +35,6 @@
 }
 
 .area_video .text .text_link {
-  margin-bottom: 35px;
   line-height: 30px;
 }
 

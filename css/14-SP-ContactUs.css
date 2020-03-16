@@ -3,6 +3,8 @@
   padding-bottom: 30px;
   margin-bottom: 30px;
   text-align: justify;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -20,7 +22,7 @@
 }
 
 .Connection_area .Connection_form {
-  margin-bottom: 150px;
+  margin-bottom: 5px;
 }
 
 .Connection_area .Connection_form .name {
@@ -35,6 +37,7 @@
   padding: 0px 0px 0px 20px;
   position: relative;
   line-height: 24px;
+  font-size: 18px;
 }
 
 .Connection_area .Connection_form .name > div::before {
@@ -48,7 +51,7 @@
 }
 
 .Connection_area .Connection_form .form_input {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -141,6 +144,7 @@
   color: #231815;
   width: 220px;
   margin-right: 20px;
+  border: 1px solid #231815;
 }
 
 .Connection_area .Connection_form .form_btn input:hover {

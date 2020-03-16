@@ -6,6 +6,8 @@
         padding-bottom: 30px;
         margin-bottom: 30px;
         text-align: justify;
+        font-weight: 700;
+        font-size: 14px;
 
         @media screen and (max-width:1200px) {
             border-bottom: 1px solid $br-black;
@@ -22,7 +24,7 @@
 
 
     .Connection_form {
-        margin-bottom: 150px;
+        margin-bottom: 5px;
 
         .name {
             font-size: $fs-22;
@@ -35,6 +37,7 @@
                 padding: 0px 0px 0px 20px;
                 position: relative;
                 line-height: 24px;
+                font-size: 18px;
 
                 &::before {
                     content: '';
@@ -49,7 +52,7 @@
         }
 
         .form_input {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
 
             @media screen and (max-width:1200px) {
                 margin-bottom: 40px;
@@ -122,6 +125,7 @@
                 @include font_hover($bc-brown, $fc-white);
                 width: 220px;
                 margin-right: 20px;
+                border: 1px solid $bc-brown;
 
                 @media screen and (max-width:1400px) {
                     width: 50%;

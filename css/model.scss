@@ -49,6 +49,11 @@ a {
 
 
 .container {
+    @media(min-width:576px) and (max-width:992px) {
+        max-width: unset;
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     @media(min-width:1024px) {
         max-width: 1024px;
