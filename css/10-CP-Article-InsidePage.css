@@ -11,7 +11,7 @@
   text-indent: 40px;
   letter-spacing: 4px;
   text-align: justify;
-  padding: 70px 0px 60px 0;
+  padding: 70px 0px 40px 0;
 }
 
 .two .text_area .text_block p {
@@ -200,6 +200,8 @@ table.table_area {
   border-collapse: collapse;
   width: 100%;
   text-align: center;
+  font-size: 14px;
+  font-weight: 800;
 }
 
 table.table_area tr {
@@ -271,6 +273,7 @@ table.table_area td {
 
 .picture_area .text_title {
   padding: 50px 0px;
+  font-weight: 900;
 }
 
 .picture_area .picture_block {
@@ -375,7 +378,8 @@ table.table_area td {
 .message_area {
   position: relative;
   padding-left: 30px;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 700;
   margin-bottom: 60px;
 }
 
@@ -449,6 +453,7 @@ table.table_area td {
 
 .area_annex .text_title {
   padding: 50px 0px;
+  font-weight: 900;
 }
 
 .area_annex .text_block {
@@ -519,6 +524,7 @@ table.table_area td {
 .area_link .text_title {
   padding: 50px 0px;
   width: 100%;
+  font-weight: 900;
 }
 
 .area_link .link_area {
