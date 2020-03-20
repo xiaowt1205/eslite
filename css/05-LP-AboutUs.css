@@ -148,7 +148,7 @@ a:active {
   max-width: 780px;
   max-height: 80px;
   padding: 30px 25px;
-  border-radius: 8px;
+  border-radius: 13px;
   background-color: #6a4945;
   border: 1px solid #665252;
   -webkit-transition: .3s;
@@ -257,11 +257,12 @@ a:active {
 }
 
 .btnGroup .project .date p {
-  font-size: 10px;
+  font-size: 14px;
+  line-height: 15px;
 }
 
 .btnGroup .project .date p:nth-last-child(1) {
-  -webkit-transform: scale(0.85);
-          transform: scale(0.85);
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
 }
 /*# sourceMappingURL=05-LP-AboutUs.css.map */

@@ -367,13 +367,7 @@ header #topline nav ul li a {
 
 @media (min-width: 1200px) {
   header #topline nav ul li a {
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 1700px) {
-  header #topline nav ul li a {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -762,7 +756,7 @@ header #headline .headline_area .swiper_block aside .aside-btn-group a {
 
 header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-btn {
   width: 63px;
-  text-align: end;
+  text-align: start;
   letter-spacing: 5px;
   color: #FFFFFF;
   font-size: 16px;
@@ -824,7 +818,7 @@ header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-bt
 
 @media (min-width: 1200px) {
   header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-btn {
-    font-size: 15px;
+    font-size: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -890,7 +884,7 @@ header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-bt
     left: 0;
     -webkit-transform: translate(0%, -50%);
             transform: translate(0%, -50%);
-    width: 150%;
+    width: 100%;
     padding: 0px 30px;
   }
 }
@@ -912,8 +906,23 @@ header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-bt
   top: 0;
 }
 
+@media (max-width: 1024px) {
+  header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-btn:hover .gradient-mask {
+    background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  }
+}
+
 header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-btn:hover .gradient-mask .aside-sub-btn-group {
   opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-btn:hover .gradient-mask .aside-sub-btn-group {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 
 header #headline .headline_area .swiper_block aside .aside-btn-group a .aside-btn a {
@@ -1651,8 +1660,7 @@ main .bg {
 }
 
 #Statistics .container_1600 .statistics_area .btn-grop .btn-pc {
-  padding: 0px 15px;
-  margin-bottom: 55px;
+  margin: 0px 30px 55px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1669,13 +1677,21 @@ main .bg {
 
 #Statistics .container_1600 .statistics_area .btn-grop .btn-pc .btn {
   width: 320px;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: bold;
   font-size: 18px;
-  padding: 10px 0px;
-  background-color: #E4E4E4;
+  background-color: #8A8075;
   border-radius: 50px;
-  border: 1px solid #544747;
-  color: #231815;
+  color: #FFFFFF;
   letter-spacing: 3px;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -1683,7 +1699,6 @@ main .bg {
 
 #Statistics .container_1600 .statistics_area .btn-grop .btn-pc .btn:hover {
   background-color: #544747;
-  color: #FFFFFF;
 }
 
 @media screen and (max-width: 768px) {
@@ -1796,6 +1811,7 @@ main .bg {
 
 #Plan .title_region p {
   font-size: 33px;
+  font-weight: 700;
   width: 100%;
   margin: 0;
   padding: 20px 0px;
@@ -1849,6 +1865,7 @@ main .bg {
 }
 
 #Plan .content .card {
+  max-width: 1050px;
   margin-bottom: 55px;
   background-size: 100%;
   background-position: center;
@@ -1887,6 +1904,8 @@ main .bg {
   position: relative;
   padding: 0px;
   min-width: 136px;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 @media screen and (max-width: 576px) {
@@ -1911,11 +1930,12 @@ main .bg {
 
 #Plan .content .card .text p {
   font-size: 18px;
-  color: #000000;
-  letter-spacing: 5px;
+  color: #4D4D4D;
+  letter-spacing: 1px;
+  font-weight: 600;
   padding: 0px 0px 0px 20px;
-  margin-top: 5px;
-  vertical-align: bottom;
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
 }
 
 @media screen and (max-width: 768px) {
@@ -1942,6 +1962,7 @@ main .bg {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  padding: 0px 23px;
 }
 
 @media screen and (max-width: 576px) {
@@ -1953,13 +1974,12 @@ main .bg {
 #Plan .content .card .text .area .block {
   width: 100%;
   height: 1px;
-  margin-bottom: 5px;
   background-color: #000000;
 }
 
 #Plan .content .card .text .button {
   width: 200px;
-  height: 30px;
+  height: 38px;
   padding: 0;
   background-color: transparent;
   border: 1.5px solid #000000;
@@ -2017,6 +2037,7 @@ main .bg {
 #Plan .content .card .text .button span {
   letter-spacing: 1.5px;
   font-size: 16px;
+  font-weight: 700;
   color: #000000;
 }
 
@@ -2128,6 +2149,7 @@ main .bg {
 
 #Video .title_region p {
   font-size: 33px;
+  font-weight: 700;
   width: 100%;
   margin: 0;
   padding: 20px 0px;
@@ -2587,6 +2609,7 @@ main .bg {
   position: relative;
   width: 250px;
   font-size: 67px;
+  font-weight: 700;
   padding-bottom: 35px;
   margin: 0;
 }
@@ -2655,6 +2678,7 @@ main .bg {
 #News .container_1600 .title_region .title_block p {
   min-width: 235px;
   font-size: 33px;
+  font-weight: 700;
   width: 100%;
   margin: 0;
   padding: 40px 0px 0px;

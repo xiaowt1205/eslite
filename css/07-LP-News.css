@@ -379,7 +379,7 @@ a:active {
   font-size: 12px;
   letter-spacing: 1px;
   padding-right: 9px;
-  border-right: 1px solid #666666;
+  border-right: 2px solid #666666;
 }
 
 .news_list .news .loadingarea {

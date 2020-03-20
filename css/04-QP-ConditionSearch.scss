@@ -23,7 +23,6 @@
     }
 
     .Connection_form {
-        margin-bottom: 150px;
 
         .name {
             font-size: $fs-18;
@@ -41,10 +40,11 @@
                 &::before {
                     content: '';
                     position: absolute;
-                    top: 0;
+                    top: 50%;
                     left: 0;
-                    width: 10px;
-                    height: 100%;
+                    width: 8px;
+                    height: 17px;
+                    transform: translate(0%, -50%);
                     background-color: $bc-brown;
                 }
             }
@@ -110,6 +110,7 @@
 
         .dateInput {
             position: relative;
+
             &>.w-100 {
                 &:first-child {
                     margin-bottom: 40px;
@@ -126,13 +127,13 @@
                 border-radius: 5px;
                 width: 100%;
                 border: 1px solid black;
-                position:relative;
+                position: relative;
             }
 
-            i{
+            i {
                 font-size: $fs-22;
                 opacity: 0.6;
-                position:absolute;
+                position: absolute;
                 right: 15px;
                 top: 8px;
             }
@@ -143,17 +144,18 @@
             }
 
             .clearBTN {
-                width: 100px;
-                height: 100%;
+                min-width: 100px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 letter-spacing: 5px;
                 background-color: $fc-pure-gray;
                 border-radius: 5px;
                 color: $fc-white;
                 font-size: $fs-14;
                 font-weight: bold;
-                text-align: center;
                 margin-left: 25px;
-                line-height: 49px;
 
                 @media (max-width:992px) {
                     display: none;

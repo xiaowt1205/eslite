@@ -7,7 +7,7 @@
 .btnGroup {
 
     .project {
-        @include btn_style(780px, 80px, 30px, 8px, $light-brown, $brown-hover, $brown);
+        @include btn_style(780px, 80px, 30px, 13px, $light-brown, $brown-hover, $brown);
         @include text_style($fs-18, unset, unset, unset);
         color: $white;
         margin-bottom: 30px;
@@ -82,10 +82,10 @@
             }
 
             p {
-                font-size: $fs-10;
-
+                font-size: $fs-14;
+                line-height: 15px;
                 &:nth-last-child(1) {
-                    transform: scale(0.85);
+                    transform: scale(0.75);
                 }
             }
         }

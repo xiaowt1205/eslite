@@ -176,21 +176,21 @@ a:active {
   border-radius: 8px;
   border: 1px solid #000000;
   font-size: 16px;
-  font-weight: unset;
+  font-weight: 700;
   text-align: center;
   letter-spacing: 2px;
-  color: #4D4D4D;
+  color: #000000;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
 .question .btnGroup a .btnArea:hover {
-  background-color: #352E2C;
+  background-color: #000000;
   color: #FFFFFF;
 }
 
 .question .btnGroup a .btnArea.active {
-  background-color: #352E2C;
+  background-color: #000000;
   color: #FFFFFF;
 }
 
@@ -299,6 +299,7 @@ a:active {
 
 .question .pageNumber ul .nextBTN,
 .question .pageNumber ul .lastBTN {
+  cursor: pointer;
   width: 106px;
   text-align: center;
   border: 1px solid #333333;

@@ -671,6 +671,9 @@ footer {
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
+    border-radius: 50%;
+    overflow: hidden;
+    // box-shadow: 0 20px 22px -30px $bc-brown;
 
     &.show {
         opacity: 1;

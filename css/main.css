@@ -903,6 +903,8 @@ footer .footer_area .icon_area .icon_block .icon-bg .mail-icon {
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .go_to_top.show {

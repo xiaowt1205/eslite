@@ -8,7 +8,7 @@
 
     .project {
         @include btn_style(100%, 130px, 45px, 8px, $light-brown-Transparent, $light-brown-Transparent, $brown);
-        @include text_style($fs-24, unset, center, 4px);
+        @include text_style($fs-24,$fw-500, center, 4px);
         color: $white;
         margin-bottom: 30px;
 
