@@ -298,7 +298,6 @@ body {
     a {
         div {
             position: relative;
-            // top: 5px;
             width: 60px;
             height: 30px;
             transform-origin: center;
@@ -309,15 +308,11 @@ body {
                 width: 30px;
             }
 
-            @media(max-width: 992px) {
-                // top: 0;
-            }
-
             &::before {
                 content: ' ';
                 position: absolute;
                 left: 0;
-                top: 20%;
+                top: 10%;
                 width: 60px;
                 height: 2px;
                 background-color: $fc-black;
@@ -673,7 +668,6 @@ footer {
     z-index: 1000;
     border-radius: 50%;
     overflow: hidden;
-    // box-shadow: 0 20px 22px -30px $bc-brown;
 
     &.show {
         opacity: 1;

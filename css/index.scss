@@ -11,11 +11,20 @@
 
 header {
     position: relative;
+    padding: 0px 80px;
+    width: 100%;
+    overflow: hidden;
     z-index: 2;
 
+    @media (max-width:1680px) {
+        padding: 0px 0px 0px 80px;
+    }
+
+    @media (max-width:768px) {
+        padding: 0px;
+    }
+
     #topline {
-        position: relative;
-        overflow: hidden;
         padding: 68px 15px 45px;
 
         @media (max-width:1200px) {
@@ -27,8 +36,6 @@ header {
         }
 
         .row {
-            position: relative;
-
             @media (max-width:768px) {
 
                 .logo_area {
@@ -39,6 +46,8 @@ header {
         }
 
         .area {
+            padding: 0px;
+
             @media (max-width:1200px) {
                 flex: 0 0 100%;
                 max-width: 100%;
@@ -55,12 +64,7 @@ header {
                 }
 
                 img {
-                    width: 100%;
-                    margin: 0 auto;
-
-                    @media (max-width:1200px) {
-                        width: 300px;
-                    }
+                    width: 292px;
                 }
             }
         }
@@ -73,15 +77,14 @@ header {
         }
 
         nav {
-            position: relative;
             display: flex;
-            padding: 0px;
+            position: unset;
 
-            @media (max-width:768px) {
-                display: none;
-            }
+            // @media (max-width:768px) {
+            //     display: none;
+            // }
 
-            @media screen and (max-width:576px) {
+            @media screen and (max-width:768px) {
                 position: absolute;
                 right: 15px;
                 flex: 0 0 25%;
@@ -90,6 +93,8 @@ header {
                 top: 50%;
                 transform: translateY(-50%);
             }
+
+            @media (min-width: 1200px) {}
 
             ul {
                 width: 100%;
@@ -216,13 +221,19 @@ header {
             }
         }
 
-        .col-1 {
+        .menu-area {
+            margin-right: -130px;
+            // position: absolute;
+            // top: 68px;
+            // right: 0px;
+            width: 130px;
+
+            @media (max-width:1680px) {
+                margin-right: 0;
+            }
+
             @media (max-width:768px) {
-                position: absolute;
                 z-index: 3;
-                right: 0;
-                top: 50%;
-                transform: translate(-15px, -50%);
             }
 
             .menu-icon {
@@ -255,6 +266,10 @@ header {
                             align-items: center;
                         }
 
+                        @media(max-width:1200px) {
+                            margin-left: 30px;
+                        }
+
                         @media screen and (max-width:576px) {
                             display: none;
                         }
@@ -273,22 +288,25 @@ header {
     }
 
     #headline {
-        padding: 0px 15px 75px;
+        position: relative;
+        margin: 0 auto;
+        max-width: 1600px;
+        padding: 0px 0px 75px;
 
         @media(max-width:1200px) {
-            padding: 0px 15px 40px;
+            padding: 0px 0px 40px;
         }
 
         @media(max-width:768px) {
-            padding: 0px 15px;
+            padding: 0px;
         }
 
 
         .headline_area {
-            justify-content: center;
-
             .swiper_block {
+                display: flex;
                 justify-content: flex-start;
+                width: 100%;
 
                 @media screen and (max-width:1200px) {
                     position: relative;
@@ -299,9 +317,9 @@ header {
                     flex-direction: column;
                 }
 
-                aside {
+                .Menu_list {
+                    width: 248px;
                     position: relative;
-                    margin-left: 8.333333%;
                     order: 0;
 
                     @media screen and (max-width:1024px) {
@@ -320,6 +338,7 @@ header {
 
                     @media(min-width:1200px) {
                         margin-top: 0;
+                        margin-left: 10px;
                     }
 
                     .swiper-group {
@@ -337,7 +356,11 @@ header {
                             width: 320px;
                             position: absolute;
                             top: 20px;
-                            left: 60px;
+                            left: 248px;
+                        }
+
+                        @media screen and (max-width:1024px) {
+                            left: 0px;
                         }
                     }
 
@@ -350,7 +373,7 @@ header {
                         }
 
                         .link-icon {
-                            width: 252px;
+                            width: 100%;
                             display: flex;
                             flex-direction: column;
 
@@ -379,7 +402,6 @@ header {
                             display: flex;
                             align-items: center;
                             position: unset;
-                            margin-left: 15px;
                         }
 
                     }
@@ -421,13 +443,16 @@ header {
                     }
 
                     .aside-btn-group {
+                        display: flex;
                         height: 100%;
                         position: relative;
-                        margin-left: 10px;
 
                         @media(max-width:992px) {
-                            background-color: #857D7D;
                             padding: 25px 0 15px 0;
+                        }
+
+                        @media(max-width:768px) {
+                            display: none;
                         }
 
                         a {
@@ -443,23 +468,24 @@ header {
                             }
 
                             .aside-btn {
-                                width: 63px;
+                                width: 62px;
+                                padding: 15px 0px;
                                 text-align: start;
                                 letter-spacing: 5px;
                                 color: $fc-white;
                                 font-size: $fs-16;
 
-                                @media(max-width:1200px) {
+                                @media(max-width:1024px) {
                                     &:hover {
                                         width: 450px;
 
-                                        @media screen and (max-width:1320px) {
-                                            width: 450px;
+                                        @media screen and (max-width:1024px) {
+                                            width: 415px;
                                         }
                                     }
                                 }
 
-                                @media(max-width:992px) {
+                                @media(max-width:768px) {
                                     writing-mode: unset;
                                     @include border-two-side(0px, 0, $fc-white, solid);
                                     padding: 0;
@@ -481,23 +507,19 @@ header {
                                     }
                                 }
 
-                                @media(min-width:992px) {
-                                    -webkit-writing-mode: unset;
+                                @media screen and (max-width:1024px) {
+                                    width: 126px;
+                                    padding: 0px 15px;
                                     writing-mode: unset;
                                 }
 
-                                @media screen and (max-width:1320px) {
-                                    width: unset;
-                                    padding: 0px 15px;
-                                }
-
-                                @media(min-width:1200px) {
+                                @media(min-width:1025px) {
                                     font-size: $fs-20;
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-                                    -webkit-writing-mode: vertical-rl;
                                     writing-mode: vertical-rl;
+                                    height: 130px;
                                 }
 
                                 .gradient-mask {
@@ -515,11 +537,11 @@ header {
                                     font-size: $fs-16;
                                     overflow: hidden;
 
-                                    @media(min-width:1200px) {
+                                    @media(min-width:1025px) {
                                         padding-top: 5px;
                                     }
 
-                                    @media(max-width:992px) {
+                                    @media(max-width:768px) {
                                         display: none;
                                     }
 
@@ -579,39 +601,15 @@ header {
                 }
 
                 .headline_swiper {
-                    max-width: 1260px;
+                    max-width: 1340px;
 
-                    @media screen and (max-width:1700px) {
-                        width: calc(100% - 25%);
+                    @media screen and (max-width:1680px) {
+                        width: calc(100% - 248px);
                     }
 
-                    @media screen and (max-width:1200px) {
-                        width: calc(100% - 30%);
-                    }
-
-                    @media screen and (max-width:1024px) {
-                        width: calc(100% - 8.333333%);
-                        margin-left: 8.333333%;
-                    }
-
-                    @media screen and (max-width:768px) {
+                    @media screen and (max-width:1680px) {
                         width: 100%;
-                        margin-left: 0%;
                     }
-                }
-            }
-
-            .aside-bg {
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: -10;
-                width: 36.5%;
-                height: 100%;
-                background-color: $main-color;
-
-                @media screen and (max-width:1200px) {
-                    width: calc(100% - 120px);
                 }
             }
 
@@ -653,6 +651,12 @@ header {
     }
 
     .mobile-aside {
+        display: none;
+
+        @media (max-width:768px) {
+            display: block;
+        }
+
         .accordion {
             .aside-btn-title {
                 position: relative;
@@ -699,6 +703,25 @@ header {
                     }
                 }
             }
+        }
+    }
+
+    .aside-bg {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+        width: 36.5%;
+        height: 100%;
+        background-color: $main-color;
+
+        @media screen and (max-width:1200px) {
+            width: calc(100% - 120px);
+        }
+
+        @media screen and (max-width:768px) {
+            display: none;
         }
     }
 }
