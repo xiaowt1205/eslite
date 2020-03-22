@@ -16,10 +16,14 @@
             text-indent: 40px;
             letter-spacing: 4px;
             text-align: justify;
-            padding: 70px 0px 40px 0;
+            padding: 50px 0px;
 
             p {
                 margin-bottom: 20px;
+
+                &:nth-last-child(1) {
+                    margin-bottom: 0px;
+                }
             }
         }
 
@@ -47,10 +51,12 @@
             text-align: justify;
             padding: 0px 0px 50px 0;
 
-
-
             p {
                 margin-bottom: 20px;
+
+                &:nth-last-child(1) {
+                    margin-bottom: 0px;
+                }
             }
         }
 
@@ -97,7 +103,6 @@
             text-indent: 40px;
             letter-spacing: 4px;
             text-align: justify;
-            padding: 0px 10px;
 
             @media screen and (max-width:1300px) {
                 width: 100%;
@@ -155,7 +160,6 @@
             text-indent: 40px;
             letter-spacing: 4px;
             text-align: justify;
-            padding: 0px 10px;
 
             @media screen and (max-width:1300px) {
                 width: 100%;
@@ -200,6 +204,7 @@ table.table_area {
             width: 25%;
             padding: 10px 20px;
             letter-spacing: 3px;
+            font-size: $fs-14;
         }
     }
 
@@ -287,15 +292,7 @@ table.table_area {
                 top: 120%;
                 left: 40%;
                 transform: translate(-100%, 0%);
-                // left: 0px;
-                // transform: translate(-50%, -50%);
             }
-
-            // @media screen and (max-width:576px) {
-            //     left: 40%;
-            //     transform: translate(-100%, -50%);
-            // }
-
 
             .arrow_button {
                 &::before {
@@ -322,13 +319,6 @@ table.table_area {
                 top: 120%;
                 right: 40%;
                 transform: translate(100%, 0%);
-                //     right: 0px;
-                //     transform: translate(50%, -50%);
-            }
-
-            @media screen and (max-width:576px) {
-                // right: 40%;
-                // transform: translate(100%, -50%);
             }
 
             .arrow_button {
@@ -409,11 +399,16 @@ table.table_area {
     .firtst_data {
         &>div {
             &>p {
-                letter-spacing: 15px;
+                font-weight: $fw-bold;
+                font-size: $fs-14;
+                letter-spacing: 14px;
             }
         }
 
         &>p {
+            font-weight: $fw-bold;
+            font-size: $fs-14;
+            letter-spacing: 2px;
             padding-left: 20px;
         }
     }
@@ -421,11 +416,16 @@ table.table_area {
     .new_data {
         &>div {
             &>p {
+                font-weight: $fw-bold;
+                font-size: $fs-14;
                 letter-spacing: 2.7px;
             }
         }
 
         &>p {
+            font-weight: $fw-bold;
+            font-size: $fs-14;
+            letter-spacing: 2px;
             padding-left: 20px;
         }
     }
@@ -433,11 +433,16 @@ table.table_area {
     .click_point {
         &>div {
             &>p {
+                font-weight: $fw-bold;
+                font-size: $fs-14;
                 letter-spacing: 2.7px;
             }
         }
 
         &>p {
+            font-weight: $fw-bold;
+            font-size: $fs-14;
+            letter-spacing: 2px;
             padding-left: 20px;
         }
     }
@@ -512,14 +517,12 @@ table.table_area {
                 margin-right: 0px;
             }
 
-
             .text_block {
                 p {
                     font-size: $fs-18;
                     transition: .5s;
                 }
             }
-
 
             &:hover {
                 .text_block {
@@ -532,7 +535,6 @@ table.table_area {
         }
 
         .text_block {
-            // width: 300px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -546,15 +548,13 @@ table.table_area {
             p {
                 width: 100%;
                 padding: 25px;
-                background-color: $bc-white;
+                background-color: transparent;
                 text-align: center;
                 letter-spacing: 5px;
                 white-space: nowrap;
             }
-
         }
     }
-
 }
 
 th {

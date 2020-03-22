@@ -16,15 +16,16 @@
 .area_video .text {
   width: 100%;
   margin-bottom: 50px;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 14px;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
 }
 
 .area_video .text p {
   margin-bottom: 35px;
   line-height: 30px;
   width: 100%;
+  text-align: justify;
 }
 
 @media screen and (max-width: 992px) {

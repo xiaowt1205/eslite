@@ -13,20 +13,22 @@ main.container {
   }
 }
 
-.area_picture > div {
+.area_picture > div.row {
   margin: 0px;
 }
 
 .area_picture .text {
   width: 100%;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 14px;
+  letter-spacing: 2px;
 }
 
 .area_picture .text p {
   margin-bottom: 35px;
   line-height: 30px;
   width: 100%;
+  text-align: justify;
 }
 
 @media screen and (max-width: 992px) {
@@ -62,11 +64,11 @@ main.container {
 }
 
 .area_picture .picture_block .photo {
-  margin-bottom: 40px;
+  margin: 0px -8px 32px;
 }
 
 .area_picture .picture_block .photo > div {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 992px) {

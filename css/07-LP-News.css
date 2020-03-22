@@ -186,7 +186,8 @@ a:active {
 }
 
 .btnGroup a .btnArea.active {
-  background-color: #352E2C;
+  font-weight: 700;
+  background-color: #000000;
   color: #FFFFFF;
 }
 
@@ -237,8 +238,7 @@ a:active {
   border-bottom: 2px solid #808080;
 }
 
-.news_list .news .date {
-  min-width: 130px;
+.news_list .news .date_area {
   max-height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -254,7 +254,7 @@ a:active {
 }
 
 @media (max-width: 992px) {
-  .news_list .news .date {
+  .news_list .news .date_area {
     width: unset;
     color: #666666;
     font-size: 12px;
@@ -267,7 +267,11 @@ a:active {
   }
 }
 
-.news_list .news .date span {
+.news_list .news .date_area .data {
+  padding-right: 30px;
+}
+
+.news_list .news .date_area .title {
   font-size: 12px;
   color: #666666;
   font-weight: bold;
@@ -383,7 +387,7 @@ a:active {
 }
 
 .news_list .news .loadingarea {
-  min-width: 165px;
+  min-width: 175px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,7 +398,7 @@ a:active {
       align-self: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 16px 0px 16px 15px;
+  padding: 16px 0px 16px 25px;
   margin: 0px -5.5px 0px 0px;
 }
 

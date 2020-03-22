@@ -11,11 +11,15 @@
   text-indent: 40px;
   letter-spacing: 4px;
   text-align: justify;
-  padding: 70px 0px 40px 0;
+  padding: 50px 0px;
 }
 
 .two .text_area .text_block p {
   margin-bottom: 20px;
+}
+
+.two .text_area .text_block p:nth-last-child(1) {
+  margin-bottom: 0px;
 }
 
 .three .text_area {
@@ -49,6 +53,10 @@
 
 .three .text_area .text_block p {
   margin-bottom: 20px;
+}
+
+.three .text_area .text_block p:nth-last-child(1) {
+  margin-bottom: 0px;
 }
 
 .four .text_area {
@@ -103,7 +111,6 @@
   text-indent: 40px;
   letter-spacing: 4px;
   text-align: justify;
-  padding: 0px 10px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -177,7 +184,6 @@
   text-indent: 40px;
   letter-spacing: 4px;
   text-align: justify;
-  padding: 0px 10px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -221,6 +227,7 @@ table.table_area tr td {
   width: 25%;
   padding: 10px 20px;
   letter-spacing: 3px;
+  font-size: 14px;
 }
 
 table.table_area th,
@@ -424,26 +431,41 @@ table.table_area td {
 }
 
 .message_area .firtst_data > div > p {
-  letter-spacing: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 14px;
 }
 
 .message_area .firtst_data > p {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 2px;
   padding-left: 20px;
 }
 
 .message_area .new_data > div > p {
+  font-weight: bold;
+  font-size: 14px;
   letter-spacing: 2.7px;
 }
 
 .message_area .new_data > p {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 2px;
   padding-left: 20px;
 }
 
 .message_area .click_point > div > p {
+  font-weight: bold;
+  font-size: 14px;
   letter-spacing: 2.7px;
 }
 
 .message_area .click_point > p {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 2px;
   padding-left: 20px;
 }
 
@@ -578,7 +600,7 @@ table.table_area td {
 .area_link .link_area .text_block p {
   width: 100%;
   padding: 25px;
-  background-color: #FFFFFF;
+  background-color: transparent;
   text-align: center;
   letter-spacing: 5px;
   white-space: nowrap;

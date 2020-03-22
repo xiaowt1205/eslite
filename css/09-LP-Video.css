@@ -224,6 +224,8 @@ a:active {
 
 .cardBox .title {
   margin: 15px 0;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .pageNumber {

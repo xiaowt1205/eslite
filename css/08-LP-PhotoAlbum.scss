@@ -29,11 +29,18 @@
     }
 
     .date {
+        font-weight: $fw-700;
+        color: $pure-gray;
         margin: 15px 0;
+        letter-spacing: 2px;
     }
 
     .title {
         height: 50px;
+        font-weight: $fw-700;
+        color: $black;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
         display: -webkit-box;
         -webkit-line-clamp: 2; //行數
         -webkit-box-orient: vertical;

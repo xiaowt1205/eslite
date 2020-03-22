@@ -1,11 +1,12 @@
 @import "./_variables.scss";
 @import "./_function.scss";
 
-main{
-    &.container{
-        padding-bottom:40px;
+main {
+    &.container {
+        padding-bottom: 40px;
     }
 }
+
 .area_picture {
     padding-bottom: 30px;
 
@@ -13,20 +14,21 @@ main{
         padding-bottom: 25px;
     }
 
-    &>div {
+    &>div.row {
         margin: 0px;
     }
 
     .text {
         width: 100%;
-        font-weight: 700;
-        font-size: 14px;
+        font-weight: $fw-bold;
+        font-size:$fs-14;
+        letter-spacing: 2px;
 
         p {
             margin-bottom: 35px;
             line-height: 30px;
             width: 100%;
-
+            text-align: justify;
             @media screen and (max-width:992px) {
                 letter-spacing: 5px;
                 text-align: justify;
@@ -57,13 +59,14 @@ main{
         position: relative;
 
         .photo {
-            margin-bottom: 40px;
+            margin: 0px -8px 32px;
+
             &>div {
-                margin-bottom: 16px;
-                
-                @media (min-width:992px){
+                margin-bottom: 15px;
+
+                @media (min-width:992px) {
                     padding-left: 8px;
-                    padding-right:8px;
+                    padding-right: 8px;
                 }
             }
         }

@@ -16,14 +16,15 @@
     .text {
         width: 100%;
         margin-bottom: 50px;
-        font-weight: 700;
+        font-weight: $fw-bold;
         font-size: $fs-14;
-        letter-spacing: 2.5px;
+        letter-spacing: 2px;
 
         p {
             margin-bottom: 35px;
             line-height: 30px;
             width: 100%;
+            text-align: justify;
 
             @media screen and (max-width:992px) {
                 letter-spacing: 5px;
