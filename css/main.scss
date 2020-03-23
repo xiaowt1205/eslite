@@ -298,7 +298,6 @@ body {
     a {
         div {
             position: relative;
-            // top: 5px;
             width: 60px;
             height: 30px;
             transform-origin: center;
@@ -309,15 +308,11 @@ body {
                 width: 30px;
             }
 
-            @media(max-width: 992px) {
-                // top: 0;
-            }
-
             &::before {
                 content: ' ';
                 position: absolute;
                 left: 0;
-                top: 20%;
+                top: 10%;
                 width: 60px;
                 height: 2px;
                 background-color: $fc-black;
@@ -529,10 +524,27 @@ footer {
 
                     span {
                         &:nth-child(1) {
-                            margin-right: 50px;
+                            padding-right: 25px;
+                            position: relative;
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 1px;
+                                height: 100%;
+                                background-color: $white;
+                            }
 
                             @media screen and (max-width:576px) {
-                                margin-right: 50px;
+                                padding-right: 15px;
+                            }
+                        }
+                        &:nth-child(2) {
+                            padding-left: 25px;
+
+                            @media screen and (max-width:576px) {
+                                padding-left: 15px;
                             }
                         }
                     }
@@ -673,7 +685,6 @@ footer {
     z-index: 1000;
     border-radius: 50%;
     overflow: hidden;
-    // box-shadow: 0 20px 22px -30px $bc-brown;
 
     &.show {
         opacity: 1;

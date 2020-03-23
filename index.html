@@ -28,12 +28,12 @@
 <body>
     <!-- index nav -->
     <header class="index_nav">
-        <div id="topline" class="container-fluid">
-            <div class="row">
-                <div class="col-4 col-lg-5 col-xl-4 logo_area">
+        <div id="topline">
+            <div class="row d-flex justify-content-between">
+                <div class="col-3 logo_area">
                     <div class="container-fluid">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-6 area">
+                        <div class="row d-flex justify-content-start">
+                            <div class="col-9 area">
                                 <div class="logo">
                                     <img class="d-none d-lg-block" src="./img/index/logo-white.png" alt="">
                                     <img class="d-block d-lg-none" src="./img/index/logo-black.svg" alt="">
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                 </div>
-                <nav class="col-7 col-lg-6 col-xl-7 justify-content-end align-items-center">
+                <nav class="col-9 px-0 justify-content-end">
                     <ul>
                         <li><a href="">關於我們</a></li>
                         <li><a href="">閱讀分享計畫</a></li>
@@ -63,125 +63,119 @@
                             </a>
                         </li>
                     </ul>
-                </nav>
-                <div class="col-1 d-flex justify-content-center align-items-center">
-                    <div class="menu-icon">
-                        <ul class="modal-menu-toggle">
-                            <li class="menu-btn menu-btn-pc">
-                                <a href="#">
-                                    <div class=""></div>
-                                </a>
-                            </li>
-                            <li class="menu-btn menu-btn-mob" data-toggle="modal" data-target="#mobile-menu">
-                                <a href="#">
-                                    <div class=""></div>
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="menu-area d-flex px-0 justify-content-center align-items-start">
+                        <div class="menu-icon">
+                            <ul class="modal-menu-toggle">
+                                <li class="menu-btn menu-btn-pc">
+                                    <a href="#">
+                                        <div class=""></div>
+                                    </a>
+                                </li>
+                                <li class="menu-btn menu-btn-mob" data-toggle="modal" data-target="#mobile-menu">
+                                    <a href="#">
+                                        <div class=""></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
+                </nav>
             </div>
         </div>
 
-        <div id="headline" class="container-fluid">
-            <div class="row d-flex headline_area">
-                <div class="col-12 px-0">
-                    <div class="container-fluid">
-                        <div class="row swiper_block">
-                            <aside class="col-2 px-0 d-flex flex-xl-column justify-content-xl-between">
-                                <div class="swiper-group">
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                                <div class="link-icon-group">
-                                    <div class="link-icon">
-                                        <a href="#"><i class="fab fa-youtube"></i></a>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <div id="headline">
+            <div class="headline_area">
+                <div class="swiper_block">
+                    <aside class="Menu_list d-flex flex-xl-column justify-content-xl-between">
+                        <div class="swiper-group">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="link-icon-group">
+                            <div class="link-icon">
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                        <div class="aside-btn-group justify-content-center">
+                            <a href="#">
+                                <div class="aside-btn">
+                                    支持計畫
+                                    <div class="gradient-mask">
+                                        <div class="aside-sub-btn-group d-flex">
+                                            <div class="aside-sub-btn">支持計畫</div>\
+                                            <div class="aside-sub-btn">支持計畫</div>\
+                                            <div class="aside-sub-btn">支持計畫</div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="aside-btn-group d-none d-lg-flex justify-content-center">
-                                    <a href="#">
-                                        <div class="aside-btn">
-                                            支持計畫
-                                            <div class="gradient-mask">
-                                                <div class="aside-sub-btn-group d-flex">
-                                                    <div class="aside-sub-btn">支持計畫</div>\
-                                                    <div class="aside-sub-btn">支持計畫</div>\
-                                                    <div class="aside-sub-btn">支持計畫</div>
-                                                </div>
-                                            </div>
+                            </a>
+                            <a href="#">
+                                <div class="aside-btn">
+                                    加入志工
+                                    <div class="gradient-mask">
+                                        <div class="aside-sub-btn-group d-flex">
+                                            <div class="aside-sub-btn">加入志工</div>\
+                                            <div class="aside-sub-btn">加入志工</div>\
+                                            <div class="aside-sub-btn">加入志工</div>
                                         </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="aside-btn">
-                                            加入志工
-                                            <div class="gradient-mask">
-                                                <div class="aside-sub-btn-group d-flex">
-                                                    <div class="aside-sub-btn">加入志工</div>\
-                                                    <div class="aside-sub-btn">加入志工</div>\
-                                                    <div class="aside-sub-btn">加入志工</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="aside-btn">
-                                            申請書籍
-                                            <div class="gradient-mask">
-                                                <div class="aside-sub-btn-group d-flex">
-                                                    <div class="aside-sub-btn">申請書籍</div>\
-                                                    <div class="aside-sub-btn">申請書籍</div>\
-                                                    <div class="aside-sub-btn">申請書籍</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="aside-btn">
-                                            第四類別
-                                            <div class="gradient-mask">
-                                                <div class="aside-sub-btn-group d-flex">
-                                                    <div class="aside-sub-btn">第四類別</div>\
-                                                    <div class="aside-sub-btn">第四類別</div>\
-                                                    <div class="aside-sub-btn">第四類別</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
+                                    </div>
                                 </div>
-                            </aside>
-                            <div class="headline_swiper px-0">
-                                <div class="banner">
-                                    <!-- swiper -->
-                                    <div class="swiper-banner swiper-container px-0">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <img class="w-100 h-100" src="./img/index/banner-1.jpg" alt="">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img class="w-100 h-100" src="./img/index/banner-2.jpg" alt="">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img class="w-100 h-100" src="./img/index/banner-3.jpg" alt="">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img class="w-100 h-100" src="./img/index/banner-2.jpg" alt="">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img class="w-100 h-100" src="./img/index/banner-1.jpg" alt="">
-                                            </div>
+                            </a>
+                            <a href="#">
+                                <div class="aside-btn">
+                                    申請書籍
+                                    <div class="gradient-mask">
+                                        <div class="aside-sub-btn-group d-flex">
+                                            <div class="aside-sub-btn">申請書籍</div>\
+                                            <div class="aside-sub-btn">申請書籍</div>\
+                                            <div class="aside-sub-btn">申請書籍</div>
                                         </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="aside-btn">
+                                    第四類別
+                                    <div class="gradient-mask">
+                                        <div class="aside-sub-btn-group d-flex">
+                                            <div class="aside-sub-btn">第四類別</div>\
+                                            <div class="aside-sub-btn">第四類別</div>\
+                                            <div class="aside-sub-btn">第四類別</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </aside>
+                    <div class="headline_swiper px-0">
+                        <div class="banner">
+                            <!-- swiper -->
+                            <div class="swiper-banner swiper-container px-0">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="w-100 h-100" src="./img/index/banner-1.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="w-100 h-100" src="./img/index/banner-2.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="w-100 h-100" src="./img/index/banner-3.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="w-100 h-100" src="./img/index/banner-2.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="w-100 h-100" src="./img/index/banner-1.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
 
-                <div class="aside-bg d-lg-block d-none"></div>
 
                 <!-- mobile-aside -->
-                <div class="mobile-aside col d-block d-lg-none justify-content-center">
+                <div class="mobile-aside col justify-content-center">
                     <div class="accordion" id="aside-btn-1">
                         <div class="aside-btn-group">
                             <div class="aside-btn-title text-center active">
@@ -281,6 +275,7 @@
                 </div>
             </div>
         </div>
+        <div class="aside-bg"></div>
     </header>
 
     <!-- menu -->
@@ -976,18 +971,43 @@
                                     data-toggle="list" href="#list-home" role="tab" aria-controls="home">
                                     <p class="year_books">總年度書籍量</p>
                                 </a>
-                                <a class="list-group-item list-group-item-action" id="list-profile-list"
-                                    data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
-                                    <p class="year_books sum">今年度書籍量</p>
-                                </a>
                             </div>
-
                         </div>
                         <div class="col-12">
                             <div class="tab-content" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="list-home" role="tabpanel"
                                     aria-labelledby="list-home-list">
-                                    <div class="row content d-flex justify-content-xl-around">
+                                    <div class="content">
+                                        <div class="business_area">
+                                            <div class="business_block">
+                                                <div class="business_text">
+                                                    <span id="total_0">0</span>
+                                                    <span>受捐款單位</span>
+                                                </div>
+                                                <div class="business_icon">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                            <div class="btn-moblie">
+                                                <p>受捐款單位</p>
+                                            </div>
+                                        </div>
+                                        <div class="business_area">
+                                            <div class="business_block">
+                                                <div class="business_text">
+                                                    <span id="total_1">0</span>
+                                                    <span>受捐款單位</span>
+                                                </div>
+                                                <div class="business_icon">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                            <div class="btn-moblie">
+                                                <p>受捐款單位</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="row content d-flex justify-content-xl-around">
                                         <div class="business_area col-3 d-flex align-items-center">
                                             <div class="business_block">
                                                 <div class="business_text">
@@ -1030,62 +1050,7 @@
                                                 <p>總需求量</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row btn-grop d-flex justify-content-center">
-                                        <a href="" class="btn-pc">
-                                            <div class="btn">我需要書</div>
-                                        </a>
-                                        <a href="" class="btn-pc">
-                                            <div class="btn">我要捐書</div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="list-profile" role="tabpanel"
-                                    aria-labelledby="list-profile-list">
-                                    <div class="row content d-flex justify-content-xl-around">
-                                        <div class="business_area col-3 d-flex align-items-center">
-                                            <div class="business_block">
-                                                <div class="business_text">
-                                                    <span id="year_0">0</span>
-                                                    <span>受捐款單位</span>
-                                                </div>
-                                                <div class="business_icon">
-                                                    <i class="fas fa-play"></i>
-                                                </div>
-                                            </div>
-                                            <div class="btn-moblie">
-                                                <p>總需求量</p>
-                                            </div>
-                                        </div>
-                                        <div class="business_area col-3 d-flex align-items-center">
-                                            <div class="business_block">
-                                                <div class="business_text">
-                                                    <span id="year_1">0</span>
-                                                    <span>受捐款單位</span>
-                                                </div>
-                                                <div class="business_icon">
-                                                    <i class="fas fa-play"></i>
-                                                </div>
-                                            </div>
-                                            <div class="btn-moblie">
-                                                <p>總需求量</p>
-                                            </div>
-                                        </div>
-                                        <div class="business_area col-3 d-flex align-items-center">
-                                            <div class="business_block">
-                                                <div class="business_text">
-                                                    <span id="year_2">0</span>
-                                                    <span>受捐款單位</span>
-                                                </div>
-                                                <div class="business_icon">
-                                                    <i class="fas fa-play"></i>
-                                                </div>
-                                            </div>
-                                            <div class="btn-moblie">
-                                                <p>總需求量</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </div> -->
                                     <div class="row btn-grop d-flex justify-content-center">
                                         <a href="" class="btn-pc">
                                             <div class="btn">我需要書</div>
@@ -1366,11 +1331,6 @@
                         <div class="arrow_button-prev">
                             <div class="arrow_button"></div>
                         </div>
-                        <div class="swiper-line">
-                            <div class="line1"></div>
-                            <div class="line2"></div>
-                            <div class="line3"></div>
-                        </div>
                     </div>
                     <div class="vendor_area-mob">
                         <div class="swiper-container">
@@ -1471,12 +1431,12 @@
                     <div class="footer-info">
                         <p>11073台北市信義區菸廠路88號4F之7</p>
                         <p>
-                            <span>連絡電話</span>
-                            <span>+886-2-6636-9888</span>
+                            <span>電　　話</span>
+                            <span>02-6636-9888</span>
                         </p>
                         <p>
                             <span>傳　　真</span>
-                            <span>+886-2-6636-1230</span>
+                            <span>02-6636-1230</span>
                         </p>
                         <p>
                             <span>統一編號</span>
