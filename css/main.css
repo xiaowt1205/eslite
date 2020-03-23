@@ -898,8 +898,8 @@ footer .footer_area .icon_area .icon_block .icon-bg .mail-icon {
   z-index: 5;
   bottom: 30px;
   right: 30px;
-  -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
-  transition: background-color .3s, opacity .5s, visibility .5s;
+  -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
+  transition: background-color .3s, opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;

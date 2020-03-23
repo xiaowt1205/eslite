@@ -72,7 +72,6 @@
                 -webkit-appearance: none;
                 -webkit-user-select: text;
                 outline-color: transparent;
-                box-shadow: none;
             }
 
             &>ul {
@@ -188,6 +187,7 @@
                 padding: 10px 0px;
                 background-color: $fc-white;
                 margin-right: 20px;
+                border: 2px solid $black;
 
                 &:hover {
                     background-color: $bc-brown;

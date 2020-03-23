@@ -506,23 +506,36 @@ table.table_area td {
   background-color: unset;
 }
 
+.area_annex .text_block:hover {
+  background-color: #000000;
+}
+
+.area_annex .text_block:hover p {
+  color: #FFFFFF;
+}
+
+.area_annex .text_block:hover hr {
+  background-color: #FFFFFF;
+}
+
+.area_annex .text_block:hover .text_btn .btn {
+  background-color: #FFFFFF;
+}
+
 .area_annex .text_block p {
+  min-width: 200px;
   font-size: 18px;
   font-weight: unset;
   text-align: unset;
   letter-spacing: 3px;
 }
 
-.area_annex .text_block p::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 25%;
-  width: 200%;
-  height: 1px;
-  background-color: rgba(128, 128, 128, 0.1);
+.area_annex .text_block hr {
+  width: 100%;
+}
+
+.area_annex .text_block .text_btn {
+  margin-left: 15px;
 }
 
 .area_annex .text_block .text_btn .btn {
