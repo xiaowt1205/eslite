@@ -25,13 +25,16 @@ header {
     }
 
     #topline {
-        padding: 68px 15px 45px;
+        margin: 0 auto;
+        max-width: 1600px;
+        padding: 68px 15px 45px 0px;
 
         @media (max-width:1200px) {
-            padding: 40px 30px 45px;
+            padding: 40px 30px 45px 0px;
         }
 
-        @media (max-width:576px) {
+        @media (max-width:768px) {
+            position: relative;
             padding: 35px 0px;
         }
 
@@ -54,7 +57,7 @@ header {
             }
 
             .logo {
-                @media (max-width:576px) {
+                @media (max-width:768px) {
                     width: 100%;
                     max-width: 200px;
                     min-width: unset;
@@ -65,6 +68,7 @@ header {
 
                 img {
                     width: 292px;
+
                 }
             }
         }
@@ -78,11 +82,12 @@ header {
 
         nav {
             display: flex;
+            align-items: flex-start;
             position: unset;
 
-            // @media (max-width:768px) {
-            //     display: none;
-            // }
+            @media screen and (max-width:1200px) {
+                align-items: center;
+            }
 
             @media screen and (max-width:768px) {
                 position: absolute;
@@ -93,8 +98,6 @@ header {
                 top: 50%;
                 transform: translateY(-50%);
             }
-
-            @media (min-width: 1200px) {}
 
             ul {
                 width: 100%;
@@ -122,7 +125,11 @@ header {
                             padding: 0px 25px;
                         }
 
-                        @media(max-width:1260px) {
+                        @media screen and (max-width:1200px) {
+                            padding: 0px 20px;
+                        }
+
+                        @media(max-width:1200px) {
                             display: none;
                         }
                     }
@@ -161,13 +168,13 @@ header {
 
                     a {
                         color: $fc-black;
-                        font-size: $fs-12;
+                        font-size: $fs-16;
                         font-weight: $fw-bold;
                         transition: .3s;
                         transition-timing-function: ease;
 
-                        @media(min-width:1200px) {
-                            font-size: $fs-16;
+                        @media(max-width:1600px) {
+                            font-size: $fs-14;
                         }
 
 
@@ -223,9 +230,6 @@ header {
 
         .menu-area {
             margin-right: -130px;
-            // position: absolute;
-            // top: 68px;
-            // right: 0px;
             width: 130px;
 
             @media (max-width:1680px) {
@@ -339,6 +343,10 @@ header {
                     @media(min-width:1200px) {
                         margin-top: 0;
                         margin-left: 10px;
+                    }
+
+                    @media screen and (max-width:1200px) {
+                        margin-top: 0;
                     }
 
                     .swiper-group {
@@ -716,7 +724,11 @@ header {
         height: 100%;
         background-color: $main-color;
 
-        @media screen and (max-width:1200px) {
+        @media screen and (max-width:1024px) {
+            width: 41.5%;
+        }
+
+        @media screen and (max-width:1024px) {
             width: calc(100% - 120px);
         }
 
@@ -960,9 +972,9 @@ main {
 
             .content {
                 padding: 85px 0px;
-                position: relative;
                 z-index: 2;
                 display: flex;
+                justify-content: center;
                 border-top: 2px $black solid;
                 border-bottom: 2px $black solid;
 
@@ -973,27 +985,11 @@ main {
                 @media screen and (max-width:576px) {
                     padding: 20px 0px;
                     border-top: 0px $black solid;
-
-                    &>div {
-                        flex: 0 0 100%;
-                        max-width: 100%;
-                    }
                 }
 
                 .business_area {
-                    flex: 0 0 25%;
-                    max-width: 25%;
                     flex-direction: column;
-
-                    @media screen and (max-width:1200px) {
-                        flex: 0 0 33.333333%;
-                        max-width: 33.333333%;
-                    }
-
-                    @media screen and (max-width:576px) {
-                        justify-content: center;
-                        margin-bottom: 30px;
-                    }
+                    margin: 0px 42px;
 
                     .business_block {
                         background-color: $white;
@@ -1005,8 +1001,8 @@ main {
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        width: 320px;
-                        height: 320px;
+                        width: 340px;
+                        height: 340px;
                         transition: .3s;
                         transition-timing-function: ease-in-out;
 
@@ -1021,36 +1017,28 @@ main {
                             }
                         }
 
-                        @media screen and (max-width:1200px) {
-                            width: 280px;
-                            height: 280px;
+                        @media screen and (max-width:1600px) {
+                            width: 300px;
+                            height: 300px;
                         }
 
                         @media screen and (max-width:1024px) {
-                            width: 240px;
-                            height: 240px;
-                        }
-
-                        @media screen and (max-width:992px) {
-                            width: 200px;
-                            height: 200px;
-                        }
-
-                        @media screen and (max-width:826px) {
-                            width: 160px;
-                            height: 160px;
+                            width: 250px;
+                            height: 250px;
                         }
 
                         @media screen and (max-width:768px) {
-                            width: 100px;
-                            height: 100px;
-                            margin-bottom: 15px;
+                            width: 200px;
+                            height: 200px;
                         }
-
                         @media screen and (max-width:576px) {
                             width: 90px;
                             height: 90px;
                             border: 2px solid $br-brown;
+                            &:hover {
+                                border: 3px solid $br-brown-hover;
+                                box-shadow: 0 0 5px $br-shadow;
+                            }
                         }
 
                         .business_text {
@@ -1081,6 +1069,10 @@ main {
                                     font-size: $fs-24;
                                     letter-spacing: 3px;
                                 }
+                                @media screen and (max-width:576px) {
+                                    font-size: $fs-14;
+                                    letter-spacing: 1px;
+                                }
 
                                 &::before {
                                     content: '';
@@ -1108,6 +1100,9 @@ main {
                                     @media screen and (max-width:768px) {
                                         font-size: $fs-10;
                                         bottom: 8px;
+                                    }
+                                    @media screen and (max-width:576px) {
+                                        bottom: 4px;
                                     }
                                 }
                             }
@@ -1143,6 +1138,9 @@ main {
                                 display: none;
                                 transform: rotate(-150deg);
                                 font-size: $fs-27;
+                                @media screen and (max-width:576px) {
+                                    font-size: $fs-14;
+                                }
                             }
 
                         }
@@ -1156,7 +1154,13 @@ main {
                         }
 
                         p {
+                            text-align: center;
+                            padding: 15px 0px;
                             letter-spacing: 2px;
+                            @media screen and (max-width:576px) {
+                                font-size: $fs-14;
+                                font-weight:$fw-bold ;
+                            }
                         }
 
                         .btn {
@@ -1167,7 +1171,9 @@ main {
                             letter-spacing: 2px;
                         }
                     }
+
                 }
+
             }
 
             .btn-grop {
@@ -2296,6 +2302,24 @@ main {
                 display: none;
             }
 
+            .swiper-slide {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    right: -5px;
+                    height: 100%;
+                    height: 44px;
+                    width: 2px;
+                    background-color: $black;
+
+                    @media screen and (max-width:1300px) {
+                        right: -10px;
+                    }
+                }
+            }
+
             .arrow_button-prev {
                 position: absolute;
                 padding: 20px 0px;
@@ -2373,52 +2397,56 @@ main {
 
             img {
                 max-width: 100%;
-                max-height: 30px;
+                // max-height: 30px;
             }
 
-            .swiper-line {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                z-index: -1;
-                transform: translateY(-100%);
-
-                .line1 {
-                    position: absolute;
-                    z-index: 3;
-                    width: 2px;
-                    height: 100%;
-                    background-color: $black;
-                    margin-left: -15px;
-                    top: 0;
-                    left: 25%;
-                    transform: translateX(50%);
-                }
-
-                .line2 {
-                    position: absolute;
-                    z-index: 3;
-                    width: 2px;
-                    height: 100%;
-                    background-color: $black;
-                    margin-left: -15px;
-                    top: 0;
-                    left: 50%;
-                    transform: translateX(50%);
-                }
-
-                .line3 {
-                    position: absolute;
-                    z-index: 3;
-                    width: 2px;
-                    height: 100%;
-                    background-color: $black;
-                    margin-left: -15px;
-                    top: 0;
-                    left: 75%;
-                    transform: translateX(50%);
-                }
+            #Vendor .content .vendor_area .swiper-slide-active~.swiper-slide:nth-child(4) {
+                // background-color: red;
             }
+
+            // .swiper-line {
+            //     position: relative;
+            //     width: 100%;
+            //     height: 100%;
+            //     z-index: -1;
+            //     transform: translateY(-100%);
+
+            //     .line1 {
+            //         position: absolute;
+            //         z-index: 3;
+            //         width: 2px;
+            //         height: 100%;
+            //         background-color: $black;
+            //         margin-left: -15px;
+            //         top: 0;
+            //         left: 25%;
+            //         transform: translateX(50%);
+            //     }
+
+            //     .line2 {
+            //         position: absolute;
+            //         z-index: 3;
+            //         width: 2px;
+            //         height: 100%;
+            //         background-color: $black;
+            //         margin-left: -15px;
+            //         top: 0;
+            //         left: 50%;
+            //         transform: translateX(50%);
+            //     }
+
+            //     .line3 {
+            //         position: absolute;
+            //         z-index: 3;
+            //         width: 2px;
+            //         height: 100%;
+            //         background-color: $black;
+            //         margin-left: -15px;
+            //         top: 0;
+            //         left: 75%;
+            //         transform: translateX(50%);
+            //     }
+            // }
         }
 
         .vendor_area-mob {

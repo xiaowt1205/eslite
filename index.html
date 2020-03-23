@@ -28,9 +28,9 @@
 <body>
     <!-- index nav -->
     <header class="index_nav">
-        <div id="topline" class="container">
+        <div id="topline">
             <div class="row d-flex justify-content-between">
-                <div class="col-4 col-lg-5 col-xl-4 logo_area">
+                <div class="col-3 logo_area">
                     <div class="container-fluid">
                         <div class="row d-flex justify-content-start">
                             <div class="col-9 area">
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                 </div>
-                <nav class="col-8 col-lg-6 col-xl-8 px-0 justify-content-end align-items-start ">
+                <nav class="col-9 px-0 justify-content-end">
                     <ul>
                         <li><a href="">關於我們</a></li>
                         <li><a href="">閱讀分享計畫</a></li>
@@ -971,18 +971,43 @@
                                     data-toggle="list" href="#list-home" role="tab" aria-controls="home">
                                     <p class="year_books">總年度書籍量</p>
                                 </a>
-                                <a class="list-group-item list-group-item-action" id="list-profile-list"
-                                    data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
-                                    <p class="year_books sum">今年度書籍量</p>
-                                </a>
                             </div>
-
                         </div>
                         <div class="col-12">
                             <div class="tab-content" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="list-home" role="tabpanel"
                                     aria-labelledby="list-home-list">
-                                    <div class="row content d-flex justify-content-xl-around">
+                                    <div class="content">
+                                        <div class="business_area">
+                                            <div class="business_block">
+                                                <div class="business_text">
+                                                    <span id="total_0">0</span>
+                                                    <span>受捐款單位</span>
+                                                </div>
+                                                <div class="business_icon">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                            <div class="btn-moblie">
+                                                <p>受捐款單位</p>
+                                            </div>
+                                        </div>
+                                        <div class="business_area">
+                                            <div class="business_block">
+                                                <div class="business_text">
+                                                    <span id="total_1">0</span>
+                                                    <span>受捐款單位</span>
+                                                </div>
+                                                <div class="business_icon">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                            <div class="btn-moblie">
+                                                <p>受捐款單位</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="row content d-flex justify-content-xl-around">
                                         <div class="business_area col-3 d-flex align-items-center">
                                             <div class="business_block">
                                                 <div class="business_text">
@@ -1025,62 +1050,7 @@
                                                 <p>總需求量</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row btn-grop d-flex justify-content-center">
-                                        <a href="" class="btn-pc">
-                                            <div class="btn">我需要書</div>
-                                        </a>
-                                        <a href="" class="btn-pc">
-                                            <div class="btn">我要捐書</div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="list-profile" role="tabpanel"
-                                    aria-labelledby="list-profile-list">
-                                    <div class="row content d-flex justify-content-xl-around">
-                                        <div class="business_area col-3 d-flex align-items-center">
-                                            <div class="business_block">
-                                                <div class="business_text">
-                                                    <span id="year_0">0</span>
-                                                    <span>受捐款單位</span>
-                                                </div>
-                                                <div class="business_icon">
-                                                    <i class="fas fa-play"></i>
-                                                </div>
-                                            </div>
-                                            <div class="btn-moblie">
-                                                <p>總需求量</p>
-                                            </div>
-                                        </div>
-                                        <div class="business_area col-3 d-flex align-items-center">
-                                            <div class="business_block">
-                                                <div class="business_text">
-                                                    <span id="year_1">0</span>
-                                                    <span>受捐款單位</span>
-                                                </div>
-                                                <div class="business_icon">
-                                                    <i class="fas fa-play"></i>
-                                                </div>
-                                            </div>
-                                            <div class="btn-moblie">
-                                                <p>總需求量</p>
-                                            </div>
-                                        </div>
-                                        <div class="business_area col-3 d-flex align-items-center">
-                                            <div class="business_block">
-                                                <div class="business_text">
-                                                    <span id="year_2">0</span>
-                                                    <span>受捐款單位</span>
-                                                </div>
-                                                <div class="business_icon">
-                                                    <i class="fas fa-play"></i>
-                                                </div>
-                                            </div>
-                                            <div class="btn-moblie">
-                                                <p>總需求量</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </div> -->
                                     <div class="row btn-grop d-flex justify-content-center">
                                         <a href="" class="btn-pc">
                                             <div class="btn">我需要書</div>
@@ -1361,11 +1331,6 @@
                         <div class="arrow_button-prev">
                             <div class="arrow_button"></div>
                         </div>
-                        <div class="swiper-line">
-                            <div class="line1"></div>
-                            <div class="line2"></div>
-                            <div class="line3"></div>
-                        </div>
                     </div>
                     <div class="vendor_area-mob">
                         <div class="swiper-container">
@@ -1466,12 +1431,12 @@
                     <div class="footer-info">
                         <p>11073台北市信義區菸廠路88號4F之7</p>
                         <p>
-                            <span>連絡電話</span>
-                            <span>+886-2-6636-9888</span>
+                            <span>電　　話</span>
+                            <span>02-6636-9888</span>
                         </p>
                         <p>
                             <span>傳　　真</span>
-                            <span>+886-2-6636-1230</span>
+                            <span>02-6636-1230</span>
                         </p>
                         <p>
                             <span>統一編號</span>

@@ -717,12 +717,33 @@ footer .footer_area .info_area .footer-info p {
 }
 
 footer .footer_area .info_area .footer-info p span:nth-child(1) {
-  margin-right: 50px;
+  padding-right: 25px;
+  position: relative;
+}
+
+footer .footer_area .info_area .footer-info p span:nth-child(1)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #FFFFFF;
 }
 
 @media screen and (max-width: 576px) {
   footer .footer_area .info_area .footer-info p span:nth-child(1) {
-    margin-right: 50px;
+    padding-right: 15px;
+  }
+}
+
+footer .footer_area .info_area .footer-info p span:nth-child(2) {
+  padding-left: 25px;
+}
+
+@media screen and (max-width: 576px) {
+  footer .footer_area .info_area .footer-info p span:nth-child(2) {
+    padding-left: 15px;
   }
 }
 
