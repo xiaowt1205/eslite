@@ -93,10 +93,6 @@ header {
                     justify-content: flex-end;
                 }
 
-                // @media(max-width:1200px) {
-                //     display: none;
-                // }
-
                 @media(max-width:576px) {
                     height: 20px;
                 }
@@ -133,10 +129,9 @@ header {
                         }
                     }
 
-                    &:nth-child(5) {
-                        @media(max-width:1500px) {
-                            @include border-two-side(1px, 1px, $fc-gray, solid);
-                        }
+                    &:nth-child(7) {
+                        @include border-two-side(0, 0, $fc-gray, solid);
+                        display: none;
                     }
 
                     &.nav-icon {
@@ -186,7 +181,7 @@ header {
                         }
 
                         @media(min-width:1600px) {
-                            font-size: $fs-18;
+                            font-size: $fs-16;
                         }
 
                         &:hover {

@@ -319,11 +319,10 @@ header #topline nav ul li:nth-child(-n + 5) {
   }
 }
 
-@media (max-width: 1500px) {
-  header #topline nav ul li:nth-child(5) {
-    border-left: 1px #808080 solid;
-    border-right: 1px #808080 solid;
-  }
+header #topline nav ul li:nth-child(7) {
+  border-left: 0 #808080 solid;
+  border-right: 0 #808080 solid;
+  display: none;
 }
 
 header #topline nav ul li.nav-icon {
@@ -396,7 +395,7 @@ header #topline nav ul li a {
 
 @media (min-width: 1600px) {
   header #topline nav ul li a {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
