@@ -67,8 +67,16 @@ header {
                 }
 
                 img {
-                    width: 292px;
+                    max-width: 320px;
+                    width: 140%;
 
+                    @media screen and (max-width:1200px) {
+                        width: 260px;
+                    }
+
+                    @media screen and (max-width:768px) {
+                        width: 150px;
+                    }
                 }
             }
         }
@@ -120,6 +128,7 @@ header {
 
                     &:nth-child(-n + 5) {
                         padding: 0px 30px;
+                        font-size: $fs-16;
 
                         @media screen and (max-width:1660px) {
                             padding: 0px 25px;
@@ -127,9 +136,10 @@ header {
 
                         @media screen and (max-width:1200px) {
                             padding: 0px 20px;
+                            font-size: $fs-14;
                         }
 
-                        @media(max-width:1200px) {
+                        @media(max-width:1024px) {
                             display: none;
                         }
                     }
@@ -336,6 +346,8 @@ header {
                         order: 1;
                     }
 
+                    @media screen and (max-width:768px) {}
+
                     @media(min-width:992px) {
                         margin-top: 35px;
                     }
@@ -370,6 +382,33 @@ header {
                         @media screen and (max-width:1024px) {
                             left: 0px;
                         }
+
+                        @media screen and (max-width:768px) {
+                            top: unset;
+                            bottom: 0px;
+                            margin-bottom: 0px;
+                            height: 30px;
+                        }
+
+                        @media screen and (max-width:768px) {
+                            width: 100%;
+                        }
+
+                        .swiper-pagination {
+                            @media screen and (max-width:768px) {
+                                justify-content: center;
+                            }
+
+                            span {
+                                margin: 0px 15px;
+
+                                @media screen and (max-width:768px) {
+                                    margin: 0px 5px;
+                                }
+                            }
+
+                        }
+
                     }
 
                     .link-icon-group {
@@ -404,11 +443,10 @@ header {
                     .swiper-pagination {
                         display: flex;
                         position: absolute;
+                        width: 252px;
+                        align-items: center;
 
                         @media(min-width:1200px) {
-                            width: 252px;
-                            display: flex;
-                            align-items: center;
                             position: unset;
                         }
 
@@ -432,6 +470,7 @@ header {
                         }
 
                         &.swiper-pagination-bullet-active {
+                            background-color: $black;
 
                             @media(min-width:992px) {
                                 border: 1.5px solid $main-color;
@@ -455,7 +494,7 @@ header {
                         height: 100%;
                         position: relative;
 
-                        @media(max-width:992px) {
+                        @media(max-width:1024px) {
                             padding: 25px 0 15px 0;
                         }
 
@@ -724,8 +763,8 @@ header {
         height: 100%;
         background-color: $main-color;
 
-        @media screen and (max-width:1024px) {
-            width: 41.5%;
+        @media screen and (max-width:1200px) {
+            width: 33.5%;
         }
 
         @media screen and (max-width:1024px) {
@@ -991,6 +1030,18 @@ main {
                     flex-direction: column;
                     margin: 0px 42px;
 
+                    @media screen and (max-width:1200px) {
+                        margin: 0px 30px;
+                    }
+
+                    @media screen and (max-width:768px) {
+                        margin: 0px 15px;
+                    }
+
+                    @media screen and (max-width:576px) {
+                        margin: 0px 7.5px;
+                    }
+
                     .business_block {
                         background-color: $white;
                         margin: 0px;
@@ -1031,10 +1082,12 @@ main {
                             width: 200px;
                             height: 200px;
                         }
+
                         @media screen and (max-width:576px) {
-                            width: 90px;
-                            height: 90px;
+                            width: 140px;
+                            height: 140px;
                             border: 2px solid $br-brown;
+
                             &:hover {
                                 border: 3px solid $br-brown-hover;
                                 box-shadow: 0 0 5px $br-shadow;
@@ -1069,9 +1122,9 @@ main {
                                     font-size: $fs-24;
                                     letter-spacing: 3px;
                                 }
+
                                 @media screen and (max-width:576px) {
                                     font-size: $fs-14;
-                                    letter-spacing: 1px;
                                 }
 
                                 &::before {
@@ -1101,7 +1154,9 @@ main {
                                         font-size: $fs-10;
                                         bottom: 8px;
                                     }
+
                                     @media screen and (max-width:576px) {
+                                        right: -3px;
                                         bottom: 4px;
                                     }
                                 }
@@ -1138,6 +1193,7 @@ main {
                                 display: none;
                                 transform: rotate(-150deg);
                                 font-size: $fs-27;
+
                                 @media screen and (max-width:576px) {
                                     font-size: $fs-14;
                                 }
@@ -1157,9 +1213,10 @@ main {
                             text-align: center;
                             padding: 15px 0px;
                             letter-spacing: 2px;
+
                             @media screen and (max-width:576px) {
                                 font-size: $fs-14;
-                                font-weight:$fw-bold ;
+                                font-weight: $fw-bold;
                             }
                         }
 
@@ -1365,7 +1422,6 @@ main {
 
         .card {
             max-width: 1050px;
-
             margin-bottom: 55px;
             background-size: 100%;
             background-position: center;
@@ -1457,7 +1513,7 @@ main {
                     height: 38px;
                     padding: 0;
                     background-color: $bc-Transparent;
-                    border: 1.5px solid $br-black;
+                    border: 1px solid $br-black;
                     text-align: center;
                     position: relative;
                     display: flex;
@@ -2304,7 +2360,7 @@ main {
 
             .swiper-slide {
                 position: relative;
-
+                display: flex;
                 &::before {
                     content: '';
                     position: absolute;
@@ -2317,6 +2373,9 @@ main {
                     @media screen and (max-width:1300px) {
                         right: -10px;
                     }
+                }
+                a{
+                    margin: 0 auto;
                 }
             }
 
@@ -2396,8 +2455,8 @@ main {
             }
 
             img {
-                max-width: 100%;
-                // max-height: 30px;
+                // max-width: 100%;
+                max-height: 30px;
             }
 
             #Vendor .content .vendor_area .swiper-slide-active~.swiper-slide:nth-child(4) {

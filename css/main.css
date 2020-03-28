@@ -230,10 +230,6 @@ body {
   margin-top: -15px;
 }
 
-.menu .menu-container .menu-title ul .menu-content {
-  margin-bottom: 10px;
-}
-
 .menu .menu-container .menu-title ul .menu-content.collapse-content {
   color: #FFFFFF;
   font-size: 14px;
@@ -288,6 +284,10 @@ body {
 
 .menu .menu-container .menu-title ul .menu-content a:hover {
   opacity: 1;
+}
+
+.menu .menu-container .menu-title ul li {
+  margin-bottom: 10px;
 }
 
 .menu .menu-container .menu-title .drop-down .collapse-body {
@@ -525,19 +525,13 @@ body {
 
 .mobile-aside .accordion {
   width: 100%;
-}
-
-.mobile-aside .accordion .aside-btn-group .aside-btn-title > div {
-  color: #FFFFFF;
-  letter-spacing: 2px;
   position: relative;
-  padding: 10px 0px;
 }
 
-.mobile-aside .accordion .aside-btn-group .aside-btn-title > div::after {
+.mobile-aside .accordion::after {
   content: '';
   position: absolute;
-  width: 180px;
+  width: 80%;
   height: 1px;
   background-color: #FFFFFF;
   bottom: 0px;
@@ -546,7 +540,36 @@ body {
           transform: translateX(-50%);
 }
 
+@media screen and (max-width: 576px) {
+  .mobile-aside .accordion::after {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-aside .accordion .aside-btn-group {
+    padding: 15px 0px;
+  }
+}
+
+.mobile-aside .accordion .aside-btn-group .aside-btn-title {
+  font-size: 16px;
+}
+
+.mobile-aside .accordion .aside-btn-group .aside-btn-title > div {
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  padding: 10px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-aside .accordion .aside-btn-group .aside-btn-title > div {
+    padding: 0px;
+  }
+}
+
 .mobile-aside .accordion .aside-btn-group .aside-sub-btn {
+  font-size: 14px;
   margin-top: 8px;
   text-align: center;
   color: #FFFFFF;
@@ -921,11 +944,15 @@ footer .footer_area .icon_area .icon_block .icon-bg .mail-icon {
   right: 30px;
   -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
   transition: background-color .3s, opacity .5s, visibility .5s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
   border-radius: 50%;
   overflow: hidden;
+  -webkit-box-shadow: 0px 0px 15px -5px #000000;
+          box-shadow: 0px 0px 15px -5px #000000;
 }
 
 .go_to_top.show {
