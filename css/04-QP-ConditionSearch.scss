@@ -181,13 +181,14 @@
             }
 
             input {
-                @include text_style($fs-16, unset, center, 3px);
+                @include text_style($fs-16, $fw-700, center, 3px);
                 @include font_hover($bc-brown, $fc-white);
                 width: 220px;
                 padding: 10px 0px;
-                background-color: $fc-white;
+                background-color: transparent;
                 margin-right: 20px;
-                border: 2px solid $black;
+                border: 1px solid $black;
+                transition: 0.3s;
 
                 &:hover {
                     background-color: $bc-brown;

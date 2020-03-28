@@ -77,15 +77,11 @@
 }
 
 .pageNumber {
-    position: relative;
     width: 100%;
-    height: 100px;
+    padding: 25px 0px;
 
     ul {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        flex-wrap: wrap;
 
         .number {
             &:first-child {
@@ -112,34 +108,43 @@
             }
         }
 
-        .nextBTN,
-        .lastBTN {
-            width: 106px;
-            text-align: center;
-            border: 1px solid $bc-number-black;
-            padding: 10px 20px;
+        .BTN {
+            margin: 25px 0px;
 
-            a {
+            .nextBTN,
+            .lastBTN {
+                padding: 10px 20px;
+                border: 1px solid $bc-number-black;
+                text-align: center;
                 color: $fc-black;
+                font-weight: $fw-700;
+                transition: .3s;
+
+                &:hover {
+                    color: $white;
+                    background-color: $bc-number-black;
+                }
             }
-        }
 
-        .nextBTN {
-            margin-left: 20px;
-        }
+            .nextBTN {
+                margin-left: 20px;
+            }
 
-        .lastBTN {
-            margin-left: 10px;
+            .lastBTN {
+                margin-left: 10px;
+            }
         }
     }
 
     .more {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        cursor: pointer;
         border: 1px solid $bc-number-black;
-        padding: 10px 50px;
-
+        width: 130px;
+        height: 30px;
+        font-size: $fs-14;
+        font-weight:$fw-700;
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
 }

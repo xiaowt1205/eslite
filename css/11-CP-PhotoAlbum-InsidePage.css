@@ -21,23 +21,13 @@ main.container {
   width: 100%;
   font-size: 14px;
   font-weight: 600;
-  text-align: unset;
+  text-align: justify;
   letter-spacing: 4px;
   line-height: 1.5;
 }
 
 .area_picture .text p {
   margin-bottom: 35px;
-  line-height: 30px;
-  width: 100%;
-  text-align: justify;
-}
-
-@media screen and (max-width: 992px) {
-  .area_picture .text p {
-    letter-spacing: 5px;
-    text-align: justify;
-  }
 }
 
 .area_picture .text .text_link {

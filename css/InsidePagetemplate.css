@@ -580,8 +580,7 @@ main.container {
 }
 
 .insidePageTitle {
-  -webkit-transform: translateY(70px);
-          transform: translateY(70px);
+  padding-top: 70px;
 }
 
 @media screen and (max-width: 768px) {

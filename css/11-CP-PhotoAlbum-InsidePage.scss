@@ -20,18 +20,11 @@ main {
 
     .text {
         width: 100%;
-        @include text_style($fs-14,$fw-600,unset,4px);
+        @include text_style($fs-14,$fw-600,justify,4px);
         line-height: 1.5;
 
         p {
             margin-bottom: 35px;
-            line-height: 30px;
-            width: 100%;
-            text-align: justify;
-            @media screen and (max-width:992px) {
-                letter-spacing: 5px;
-                text-align: justify;
-            }
         }
 
         .text_link {

@@ -11,11 +11,9 @@
         }
 
         .text_block {
-            font-weight: 900;
-            font-size: $fs-14;
+            @include text_style($fs-14, $fw-600, justify, 4px);
+            line-height: 1.5;
             text-indent: 40px;
-            letter-spacing: 4px;
-            text-align: justify;
             padding: 50px 0px;
 
             p {
@@ -44,12 +42,11 @@
         }
 
         .text_block {
-            font-weight: 900;
-            font-size: $fs-14;
+            @include text_style($fs-14, $fw-600, justify, 4px);
+            line-height: 1.5;
             text-indent: 40px;
-            letter-spacing: 4px;
-            text-align: justify;
             padding: 0px 0px 50px 0;
+
             p {
                 margin-bottom: 20px;
 
@@ -95,12 +92,12 @@
         }
 
         .text_block {
-            font-weight: 900;
+            @include text_style($fs-14, $fw-600, justify, 4px);
+            line-height: 1.5;
             width: 60%;
-            font-size: $fs-14;
             text-indent: 40px;
-            letter-spacing: 4px;
-            text-align: justify;
+
+
 
             @media screen and (max-width:1400px) {
                 width: 100%;
@@ -152,7 +149,7 @@
         }
 
         .text_block {
-            @include text_style($fs-14,$fw-600,justify,4px);
+            @include text_style($fs-14, $fw-600, justify, 4px);
             width: 60%;
             text-indent: 40px;
             line-height: 1.5;
@@ -261,9 +258,12 @@ table.table_area {
 .picture_area {
     .text_title {
         padding: 100px 0px 50px;
-        font-weight: $fw-700;
+        
         @media screen and (max-width:576px) {
             padding: 40px 0px 30px;
+        }
+        h2{
+            font-weight: $fw-700;
         }
     }
 
@@ -356,7 +356,7 @@ table.table_area {
 .message_area {
     position: relative;
     padding-left: 30px;
-    @include text_style($fs-14,$fw-600,unset,4px);
+    @include text_style($fs-14, $fw-600, unset, 4px);
     margin-bottom: 60px;
 
     &>div {
@@ -433,10 +433,13 @@ table.table_area {
 
 .area_annex {
     .text_title {
-        padding: 100px 0px 50px;
-        font-weight:$fw-700;
+        padding: 70px 0px 40px;
+
         @media screen and (max-width:576px) {
             padding: 40px 0px 30px;
+        }
+        h2{
+            font-weight: $fw-700;
         }
     }
 
@@ -449,30 +452,38 @@ table.table_area {
         position: relative;
         overflow: hidden;
         margin-bottom: 15px;
-        &:hover{
+
+        &:hover {
             background-color: $black;
-            p{
+
+            p {
                 color: $white;
             }
-            hr{
+
+            hr {
                 background-color: $white;
             }
-            .text_btn{
-                .btn{
+
+            .text_btn {
+                .btn {
                     background-color: $white;
                 }
 
             }
         }
+
         p {
             min-width: 200px;
             @include text_style($fs-18, $fw-700, unset, 3px);
         }
-        hr{
+
+        hr {
             width: 100%;
         }
+
         .text_btn {
             margin-left: 15px;
+
             .btn {
                 min-width: 60px;
                 max-width: 60px;
@@ -489,11 +500,14 @@ table.table_area {
     flex-direction: column;
 
     .text_title {
-        padding: 100px 0px 50px;
+        padding: 70px 0px 40px;
         width: 100%;
-        font-weight: $fw-700;
+
         @media screen and (max-width:576px) {
             padding: 40px 0px 30px;
+        }
+        h2{
+            font-weight: $fw-700;
         }
     }
 
@@ -505,6 +519,9 @@ table.table_area {
             margin-right: 15px;
             margin-bottom: 15px;
 
+            &:nth-last-child(1){
+                margin-bottom: 100px;
+            }
             @media screen and (max-width:768px) {
                 width: 100%;
                 margin-right: 0px;

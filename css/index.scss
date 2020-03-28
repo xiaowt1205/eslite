@@ -877,6 +877,9 @@ main {
                         }
 
                         @media screen and (max-width:768px) {
+                            text-align: center;
+                            font-size: $fs-30;
+                            letter-spacing: 1px;
                             position: relative;
                         }
 
@@ -914,11 +917,15 @@ main {
                         margin: auto 0px 0px;
                         padding-left: 40px;
 
+                        @media screen and (max-width:768px) {
+                            padding-left: 15px;
+                        }
+
                         @media screen and (max-width:576px) {
                             font-size: $fs-14;
                             text-align: center;
                             padding: 20px 0px 10px;
-                            padding-left: 15px;
+
                         }
                     }
                 }
@@ -1026,6 +1033,10 @@ main {
                     border-top: 0px $black solid;
                 }
 
+                @media screen and (max-width:414px) {
+                    border-bottom: 0px $black solid;
+                }
+
                 .business_area {
                     flex-direction: column;
                     margin: 0px 42px;
@@ -1039,7 +1050,7 @@ main {
                     }
 
                     @media screen and (max-width:576px) {
-                        margin: 0px 7.5px;
+                        margin: 0px 10px;
                     }
 
                     .business_block {
@@ -1084,14 +1095,19 @@ main {
                         }
 
                         @media screen and (max-width:576px) {
-                            width: 140px;
-                            height: 140px;
+                            width: 165px;
+                            height: 165px;
                             border: 2px solid $br-brown;
 
                             &:hover {
                                 border: 3px solid $br-brown-hover;
                                 box-shadow: 0 0 5px $br-shadow;
                             }
+                        }
+
+                        @media screen and (max-width:375px) {
+                            width: 140px;
+                            height: 140px;
                         }
 
                         .business_text {
@@ -1110,8 +1126,8 @@ main {
                                 letter-spacing: 7px;
 
                                 @media screen and (max-width:1024px) {
-                                    font-size: $fs-45;
-                                    letter-spacing: 4px;
+                                    margin-left: -20px;
+                                    letter-spacing: 3px;
                                 }
 
                                 @media screen and (max-width:992px) {
@@ -1120,11 +1136,10 @@ main {
 
                                 @media screen and (max-width:768px) {
                                     font-size: $fs-24;
-                                    letter-spacing: 3px;
                                 }
 
                                 @media screen and (max-width:576px) {
-                                    font-size: $fs-14;
+                                    font-size: $fs-30;
                                 }
 
                                 &::before {
@@ -1136,6 +1151,10 @@ main {
                                     bottom: 0;
                                     left: 50%;
                                     transform: translateX(-50%);
+
+                                    @media screen and (max-width:1024px) {
+                                        margin-left: 10px;
+                                    }
 
                                     @media screen and (max-width:768px) {
                                         width: 35px;
@@ -1150,6 +1169,10 @@ main {
                                     right: 0;
                                     transform: translate(90%, -55%);
 
+                                    @media screen and (max-width:1024px) {
+                                        right: -5px;
+                                    }
+
                                     @media screen and (max-width:768px) {
                                         font-size: $fs-10;
                                         bottom: 8px;
@@ -1157,7 +1180,7 @@ main {
 
                                     @media screen and (max-width:576px) {
                                         right: -3px;
-                                        bottom: 4px;
+                                        bottom: 10px;
                                     }
                                 }
                             }
@@ -1165,6 +1188,7 @@ main {
                             & :nth-child(2) {
                                 padding-top: 15px;
                                 font-size: $fs-24;
+                                font-weight: $fw-700;
                                 letter-spacing: 3px;
 
                                 @media screen and (max-width:1024px) {
@@ -1177,8 +1201,8 @@ main {
                                 }
 
                                 @media screen and (max-width:768px) {
-                                    font-size: $fs-24;
-                                    display: none;
+                                    // font-size: $fs-24;
+                                    // display: none;
                                 }
                             }
                         }
@@ -1241,6 +1265,10 @@ main {
                     flex-direction: column;
                 }
 
+                @media screen and (max-width:414px) {
+                    padding: 10px 0px 53px;
+                }
+
                 .btn-pc {
                     margin: 0px 30px 55px;
 
@@ -1272,12 +1300,12 @@ main {
                         }
 
                         @media screen and (max-width:768px) {
-                            width: 250px;
-                            border-radius: 8px;
+                            width: 164px;
+                            height: 32px;
+                            border-radius: 50px;
                         }
 
                         @media screen and (max-width:576px) {
-                            width: 180px;
                             margin-bottom: 5px;
                         }
                     }
@@ -1456,17 +1484,6 @@ main {
                         font-size: $fs-18;
                         letter-spacing: 4px;
                         min-width: 90px;
-                    }
-
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        bottom: 0;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        width: 120px;
-                        height: 3px;
-                        background-color: $fc-white;
                     }
                 }
 
@@ -1836,6 +1853,11 @@ main {
             transform: translate(-50%, -50%);
             z-index: 3;
 
+            @media screen and (max-width:768px) {
+                height: 100%;
+                padding: 65px 70px 0px;
+            }
+
             @media screen and (max-width:576px) {
                 position: relative;
                 padding: 40px 0px;
@@ -1847,6 +1869,7 @@ main {
                 p {
                     font-size: $fs-32;
                     color: $fc-white;
+                    font-weight: $fw-700;
                     text-align: center;
                     letter-spacing: 7px;
                     padding: 0px 0px 30px;
@@ -1891,6 +1914,7 @@ main {
                 padding: 25px 50px;
                 border: 2px solid $fc-white;
                 border-radius: 15px;
+                margin-bottom: 50px;
 
                 @media screen and (max-width:576px) {
                     display: none;
@@ -1900,8 +1924,6 @@ main {
                     font-size: $fs-24;
                     color: $fc-white;
                 }
-
-                margin-bottom: 55px;
             }
 
             .content {
@@ -1910,6 +1932,10 @@ main {
                     letter-spacing: 1.8px;
                     text-align: justify;
                     line-height: 35px;
+
+                    @media screen and (max-width:768px) {
+                        font-size: $fs-13;
+                    }
 
                     @media screen and (max-width:576px) {
                         font-size: $fs-12;
@@ -2251,6 +2277,10 @@ main {
                             line-height: 30px;
                             font-size: $fs-16;
                         }
+
+                        @media screen and (max-width:414px) {
+                            font-size: $fs-14;
+                        }
                     }
                 }
             }
@@ -2282,7 +2312,7 @@ main {
                         font-size: $fs-10;
                     }
 
-                    tr &:hover {
+                    &:hover {
                         color: $fc-white;
                         border: 1px solid $fc-white;
                         background-color: $bc-black;
@@ -2361,6 +2391,7 @@ main {
             .swiper-slide {
                 position: relative;
                 display: flex;
+
                 &::before {
                     content: '';
                     position: absolute;
@@ -2374,7 +2405,8 @@ main {
                         right: -10px;
                     }
                 }
-                a{
+
+                a {
                     margin: 0 auto;
                 }
             }

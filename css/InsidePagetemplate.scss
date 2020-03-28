@@ -265,6 +265,7 @@ main {
 .imgSize {
     min-width: 81px;
     margin: 0px 35px 0 37px;
+    // transform: translateY(-55px);
 
     @media screen and (max-width:1200px) {
         margin: 0px 15px;
@@ -317,7 +318,7 @@ main {
 }
 
 .insidePageTitle {
-    transform: translateY(70px);
+    padding-top: 70px;
 
     @media screen and (max-width:768px) {
         display: none;

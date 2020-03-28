@@ -194,17 +194,13 @@ a:active {
 }
 
 .pageNumber {
-  position: relative;
   width: 100%;
-  height: 100px;
+  padding: 25px 0px;
 }
 
 .pageNumber ul {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .pageNumber ul .number:first-child a {
@@ -228,44 +224,49 @@ a:active {
   color: #FFFFFF;
 }
 
-.pageNumber ul .nextBTN,
-.pageNumber ul .lastBTN {
-  width: 106px;
-  text-align: center;
-  border: 1px solid #333333;
-  padding: 10px 20px;
+.pageNumber ul .BTN {
+  margin: 25px 0px;
 }
 
-.pageNumber ul .nextBTN:hover,
-.pageNumber ul .lastBTN:hover {
+.pageNumber ul .BTN .nextBTN,
+.pageNumber ul .BTN .lastBTN {
+  padding: 10px 20px;
+  border: 1px solid #333333;
+  text-align: center;
+  color: #000000;
+  font-weight: 700;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.pageNumber ul .BTN .nextBTN:hover,
+.pageNumber ul .BTN .lastBTN:hover {
+  color: #FFFFFF;
   background-color: #333333;
 }
 
-.pageNumber ul .nextBTN:hover a,
-.pageNumber ul .lastBTN:hover a {
-  color: #FFFFFF;
-}
-
-.pageNumber ul .nextBTN a,
-.pageNumber ul .lastBTN a {
-  color: #000000;
-}
-
-.pageNumber ul .nextBTN {
+.pageNumber ul .BTN .nextBTN {
   margin-left: 20px;
 }
 
-.pageNumber ul .lastBTN {
+.pageNumber ul .BTN .lastBTN {
   margin-left: 10px;
 }
 
 .pageNumber .more {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  cursor: pointer;
   border: 1px solid #333333;
-  padding: 10px 50px;
+  width: 130px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 /*# sourceMappingURL=08-LP-PhotoAlbum.css.map */

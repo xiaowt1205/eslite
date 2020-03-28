@@ -203,15 +203,17 @@
 
 .Connection_area .Connection_form .form_btn input {
   font-size: 16px;
-  font-weight: unset;
+  font-weight: 700;
   text-align: center;
   letter-spacing: 3px;
   color: #231815;
   width: 220px;
   padding: 10px 0px;
-  background-color: #FFFFFF;
+  background-color: transparent;
   margin-right: 20px;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .Connection_area .Connection_form .form_btn input:hover {

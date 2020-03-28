@@ -7,6 +7,12 @@
     box-sizing: border-box;
 }
 
+.phoneStyleTitle {
+    @media (max-width:768px) {
+        margin-bottom: 30px;
+    }
+}
+
 .question {
 
     .btnGroup {
@@ -15,6 +21,7 @@
 
         a {
             margin: 0px 20px 17px 0px;
+            font-weight: $fw-700;
 
             &:nth-last-child(1) {
                 margin-bottom: 30px;
@@ -24,7 +31,7 @@
                 margin: 0px 10px 10px 0px;
 
                 &:nth-last-child(1) {
-                    margin-bottom: 10px;
+                    margin-bottom: 20px;
                 }
             }
 
@@ -123,16 +130,12 @@
     }
 
     .pageNumber {
-        position: relative;
         width: 100%;
-        height: 100px;
-
+        padding: 25px 0px;
+    
         ul {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-
+            flex-wrap: wrap;
+    
             .number {
                 &:first-child {
                     a {
@@ -140,7 +143,7 @@
                         color: $fc-white;
                     }
                 }
-
+    
                 a {
                     display: block;
                     width: 25px;
@@ -150,57 +153,52 @@
                     text-align: center;
                     border-radius: 50%;
                     font-weight: bold;
-
+    
                     &:hover {
                         background-color: $bc-number-black;
                         color: $fc-white;
                     }
                 }
             }
-
-            .nextBTN,
-            .lastBTN {
-                cursor: pointer;
-                width: 106px;
-                text-align: center;
-                border: 1px solid $bc-number-black;
-                padding: 10px 20px;
-                transition: .3s;
-
-                &:hover {
-
-                    background-color: $bc-number-black;
-
-                }
-
-                &:hover a {
-
-                    color: $fc-white;
-                }
-
-
-                a {
+    
+            .BTN {
+                margin: 25px 0px;
+    
+                .nextBTN,
+                .lastBTN {
+                    padding: 10px 20px;
+                    border: 1px solid $bc-number-black;
+                    text-align: center;
                     color: $fc-black;
+                    font-weight: $fw-700;
+                    transition: .3s;
+    
+                    &:hover {
+                        color: $white;
+                        background-color: $bc-number-black;
+                    }
                 }
-            }
-
-            .nextBTN {
-                margin-left: 20px;
-            }
-
-            .lastBTN {
-                margin-left: 10px;
+    
+                .nextBTN {
+                    margin-left: 20px;
+                }
+    
+                .lastBTN {
+                    margin-left: 10px;
+                }
             }
         }
-
+    
         .more {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            cursor: pointer;
             border: 1px solid $bc-number-black;
-            padding: 10px 50px;
-
+            width: 130px;
+            height: 30px;
+            font-size: $fs-14;
+            font-weight:$fw-700;
+            display: flex;
+            justify-content: center;
+            align-content: center;
         }
     }
 }

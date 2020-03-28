@@ -6,11 +6,12 @@
 }
 
 .two .text_area .text_block {
-  font-weight: 900;
   font-size: 14px;
-  text-indent: 40px;
-  letter-spacing: 4px;
+  font-weight: 600;
   text-align: justify;
+  letter-spacing: 4px;
+  line-height: 1.5;
+  text-indent: 40px;
   padding: 50px 0px;
 }
 
@@ -43,11 +44,12 @@
 }
 
 .three .text_area .text_block {
-  font-weight: 900;
   font-size: 14px;
-  text-indent: 40px;
-  letter-spacing: 4px;
+  font-weight: 600;
   text-align: justify;
+  letter-spacing: 4px;
+  line-height: 1.5;
+  text-indent: 40px;
   padding: 0px 0px 50px 0;
 }
 
@@ -105,12 +107,13 @@
 }
 
 .four .text_area .text_block {
-  font-weight: 900;
-  width: 60%;
   font-size: 14px;
-  text-indent: 40px;
-  letter-spacing: 4px;
+  font-weight: 600;
   text-align: justify;
+  letter-spacing: 4px;
+  line-height: 1.5;
+  width: 60%;
+  text-indent: 40px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -281,13 +284,16 @@ table.table_area td {
 
 .picture_area .text_title {
   padding: 100px 0px 50px;
-  font-weight: 700;
 }
 
 @media screen and (max-width: 576px) {
   .picture_area .text_title {
     padding: 40px 0px 30px;
   }
+}
+
+.picture_area .text_title h2 {
+  font-weight: 700;
 }
 
 .picture_area .picture_block {
@@ -464,14 +470,17 @@ table.table_area td {
 }
 
 .area_annex .text_title {
-  padding: 100px 0px 50px;
-  font-weight: 700;
+  padding: 70px 0px 40px;
 }
 
 @media screen and (max-width: 576px) {
   .area_annex .text_title {
     padding: 40px 0px 30px;
   }
+}
+
+.area_annex .text_title h2 {
+  font-weight: 700;
 }
 
 .area_annex .text_block {
@@ -552,15 +561,18 @@ table.table_area td {
 }
 
 .area_link .text_title {
-  padding: 100px 0px 50px;
+  padding: 70px 0px 40px;
   width: 100%;
-  font-weight: 700;
 }
 
 @media screen and (max-width: 576px) {
   .area_link .text_title {
     padding: 40px 0px 30px;
   }
+}
+
+.area_link .text_title h2 {
+  font-weight: 700;
 }
 
 .area_link .link_area {
@@ -574,6 +586,10 @@ table.table_area td {
 .area_link .link_area a {
   margin-right: 15px;
   margin-bottom: 15px;
+}
+
+.area_link .link_area a:nth-last-child(1) {
+  margin-bottom: 100px;
 }
 
 @media screen and (max-width: 768px) {

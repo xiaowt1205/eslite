@@ -149,6 +149,12 @@ a:active {
           box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+  .phoneStyleTitle {
+    margin-bottom: 30px;
+  }
+}
+
 .question .btnGroup {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,6 +165,7 @@ a:active {
 
 .question .btnGroup a {
   margin: 0px 20px 17px 0px;
+  font-weight: 700;
 }
 
 .question .btnGroup a:nth-last-child(1) {
@@ -170,7 +177,7 @@ a:active {
     margin: 0px 10px 10px 0px;
   }
   .question .btnGroup a:nth-last-child(1) {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 
@@ -277,17 +284,13 @@ a:active {
 }
 
 .question .pageNumber {
-  position: relative;
   width: 100%;
-  height: 100px;
+  padding: 25px 0px;
 }
 
 .question .pageNumber ul {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .question .pageNumber ul .number:first-child a {
@@ -311,47 +314,49 @@ a:active {
   color: #FFFFFF;
 }
 
-.question .pageNumber ul .nextBTN,
-.question .pageNumber ul .lastBTN {
-  cursor: pointer;
-  width: 106px;
-  text-align: center;
-  border: 1px solid #333333;
+.question .pageNumber ul .BTN {
+  margin: 25px 0px;
+}
+
+.question .pageNumber ul .BTN .nextBTN,
+.question .pageNumber ul .BTN .lastBTN {
   padding: 10px 20px;
+  border: 1px solid #333333;
+  text-align: center;
+  color: #000000;
+  font-weight: 700;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
-.question .pageNumber ul .nextBTN:hover,
-.question .pageNumber ul .lastBTN:hover {
+.question .pageNumber ul .BTN .nextBTN:hover,
+.question .pageNumber ul .BTN .lastBTN:hover {
+  color: #FFFFFF;
   background-color: #333333;
 }
 
-.question .pageNumber ul .nextBTN:hover a,
-.question .pageNumber ul .lastBTN:hover a {
-  color: #FFFFFF;
-}
-
-.question .pageNumber ul .nextBTN a,
-.question .pageNumber ul .lastBTN a {
-  color: #000000;
-}
-
-.question .pageNumber ul .nextBTN {
+.question .pageNumber ul .BTN .nextBTN {
   margin-left: 20px;
 }
 
-.question .pageNumber ul .lastBTN {
+.question .pageNumber ul .BTN .lastBTN {
   margin-left: 10px;
 }
 
 .question .pageNumber .more {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  cursor: pointer;
   border: 1px solid #333333;
-  padding: 10px 50px;
+  width: 130px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 /*# sourceMappingURL=06-LP-Question.css.map */
