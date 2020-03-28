@@ -19,9 +19,11 @@ main.container {
 
 .area_picture .text {
   width: 100%;
-  font-weight: bold;
   font-size: 14px;
-  letter-spacing: 2px;
+  font-weight: 600;
+  text-align: unset;
+  letter-spacing: 4px;
+  line-height: 1.5;
 }
 
 .area_picture .text p {
@@ -113,7 +115,9 @@ main.container {
   position: relative;
   padding-left: 30px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
+  text-align: unset;
+  letter-spacing: 4px;
   margin-bottom: 60px;
 }
 

@@ -31,15 +31,15 @@
     .date {
         font-weight: $fw-700;
         color: $pure-gray;
-        margin: 15px 0;
-        letter-spacing: 2px;
+        margin: 8px 0 5px;
+        letter-spacing: 4px;
     }
 
     .title {
         height: 50px;
         font-weight: $fw-700;
         color: $black;
-        letter-spacing: 2px;
+        letter-spacing: 4px;
         margin-bottom: 30px;
         display: -webkit-box;
         -webkit-line-clamp: 2; //行數

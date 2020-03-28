@@ -177,15 +177,15 @@ a:active {
 .cardBox .date {
   font-weight: 700;
   color: #4D4D4D;
-  margin: 15px 0;
-  letter-spacing: 2px;
+  margin: 8px 0 5px;
+  letter-spacing: 4px;
 }
 
 .cardBox .title {
   height: 50px;
   font-weight: 700;
   color: #000000;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   margin-bottom: 30px;
   display: -webkit-box;
   -webkit-line-clamp: 2;

@@ -11,17 +11,31 @@
     display: flex;
     flex-wrap: wrap;
 
-    @media screen and (max-width:768px) {
-        display: none;
-    }
-
     a {
-        margin: 0px 20px 30px 0px;
+        margin: 0px 20px 17px 0px;
+
+        &:nth-last-child(1) {
+            margin-bottom: 30px;
+        }
+
+        @media (max-width:768px) {
+            margin: 0px 10px 10px 0px;
+
+            &:nth-last-child(1) {
+                margin-bottom: 10px;
+            }
+        }
 
         .btnArea {
-            @include little_btn_style(105px, 40px, 8px, 8px, $black);
             @include text_style($fs-16, unset, center, 2px);
+            padding: 10px 30px;
+            border-radius: 8px;
+            border: 1px solid $black;
             color: $fc-pure-gray;
+
+            @media (max-width:768px) {
+                padding: 5px 10px;
+            }
 
             &:hover {
                 background-color: $bc-dark-brown-hover;
@@ -41,39 +55,38 @@
 .nameGroup {
 
     border: 2px solid $fc-black;
-
     padding: 15px 0;
-
     letter-spacing: 4px;
     font-weight: bold;
+    display: flex;
+
+    @media (max-width:1024px) {
+        display: none;
+    }
 
     .dateName {
-
         min-width: 130px;
-
         text-align: center;
     }
 
     .themeName {
-
         display: flex;
         justify-content: center;
         flex-grow: 1;
-
         text-align: center;
     }
 
     .placeName {
-
-        width: 175px;
-
+        min-width: 175px;
         text-align: center;
+
+        @media (max-width:1400px) {
+            min-width: 100px;
+        }
     }
 
     .loadingPointName {
-
         min-width: 165px;
-
         text-align: center;
     }
 }
@@ -83,10 +96,22 @@
     font-weight: bold;
     letter-spacing: 2px;
 
+    &>:nth-child(1) {
+        @media (max-width:1024px) {
+            border-top: 2px solid $fc-gray;
+        }
+    }
+
     .news {
         width: 100%;
         min-height: 90px;
         border-bottom: 2px solid $fc-gray;
+        display: flex;
+
+        @media (max-width:1024px) {
+            display: block;
+            padding: 25px 0px;
+        }
 
         .date_area {
             max-height: 90px;
@@ -96,14 +121,18 @@
             letter-spacing: 2px;
             color: $fc-gray;
 
-            @media (max-width:992px) {
+
+            @media (max-width:1024px) {
                 width: unset;
                 color: $fc-666666-gray;
-                font-size: $fs-12;
+                font-size: $fs-16;
                 font-weight: bold;
-                padding-top: 30px;
-                padding-bottom: 15px;
+                padding: 0px 0px 15px;
                 justify-content: flex-start;
+            }
+
+            @media (max-width:768px) {
+                font-size: $fs-14;
             }
 
             .data {
@@ -111,7 +140,6 @@
             }
 
             .title {
-
                 font-size: $fs-12;
                 color: $fc-666666-gray;
                 font-weight: bold;
@@ -122,8 +150,17 @@
 
                 padding: 0 15px;
                 margin-left: 15px;
-            }
+                display: none;
 
+                @media (max-width:1024px) {
+                    font-size: $fs-16;
+                    display: block;
+                }
+
+                @media (max-width:768px) {
+                    font-size: $fs-14;
+                }
+            }
         }
 
         .theme {
@@ -136,7 +173,7 @@
             text-align: center;
             position: relative;
 
-            @media (min-width: 992px) {
+            @media (min-width: 1024px) {
                 display: flex;
             }
 
@@ -164,6 +201,17 @@
         .themePhoneName {
             font-size: $fs-14;
             letter-spacing: 2px;
+            display: none;
+
+            @media (max-width:1024px) {
+                font-size: $fs-16;
+                padding-bottom: 15px;
+                display: block;
+            }
+
+            @media (max-width:768px) {
+                font-size: $fs-14;
+            }
         }
 
         .place {
@@ -175,7 +223,11 @@
             text-align: center;
             position: relative;
 
-            @media (min-width: 992px) {
+            @media (max-width:1400px) {
+                min-width: 100px;
+            }
+
+            @media (min-width: 1024px) {
                 display: flex;
             }
 
@@ -188,7 +240,6 @@
                 top: 50%;
                 transform: translateY(-50%);
             }
-
         }
 
         .placePhoneName {
@@ -197,22 +248,21 @@
             font-weight: bold;
             padding: 10px 0;
             letter-spacing: 4px;
+            display: none;
 
             span {
                 padding: 0 9px;
                 border-left: 1px solid $fc-666666-gray;
             }
 
-        }
+            @media (max-width:1024px) {
+                font-size: $fs-14;
+                display: block;
+                padding: 0px 0px 13px;
+            }
 
-        .loadingPointPhoneName {
-
-            span {
-                color: $fc-666666-gray;
+            @media (max-width:768px) {
                 font-size: $fs-12;
-                letter-spacing: 1px;
-                padding-right: 9px;
-                border-right: 2px solid $fc-666666-gray;
             }
         }
 
@@ -225,39 +275,93 @@
             padding: 16px 0px 16px 25px;
             margin: 0px -5.5px 0px 0px;
 
-            @media (max-width:992px) {
+            span {
+                display: none;
+                color: $fc-666666-gray;
+                font-size: $fs-15;
+                letter-spacing: 1px;
+                padding-right: 9px;
+                align-items: center;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: 0px;
+                    transform: translateY(-50%);
+                    background-color: $fc-666666-gray;
+                    width: 2px;
+                    height: 80%;
+
+                }
+
+                @media (max-width:1024px) {
+                    display: flex;
+                }
+
+                @media (max-width:768px) {
+                    margin-bottom: 10px;
+                }
+            }
+
+            @media (max-width:1024px) {
                 flex-wrap: nowrap;
                 justify-content: flex-start;
                 margin-left: 0;
                 border-bottom: none;
-                padding: 15px 0 30px 0;
-                margin: 0px -7.5px;
+                padding: 0;
+                margin: 0px;
+            }
+
+            @media (max-width:768px) {
+                flex-wrap: wrap;
+            }
+
+            >div {
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                flex-wrap: wrap;
+
+                @media (max-width:768px) {
+                    width: 100%;
+                    justify-content: flex-start;
+
+                    & :nth-child(1) {
+                        margin-left: 0px;
+                    }
+                }
+
             }
 
             .loadingPoint {
                 @include text_style($fs-12, unset, center, 0);
                 margin: 0px 5px 5px;
-                width: 40px;
-                height: 30px;
-                padding: 5px;
-                border: 1px solid $fc-gray;
-                color: $fc-black;
 
-                @media (max-width:992px) {
-                    min-height: 20px;
-                    font-size: $fs-12;
-                    color: $fc-666666-gray;
-                    font-weight: bold;
+                @media (max-width:1024px) {
+                    margin: 0px 5px;
                 }
 
-                &:hover {
-                    border: 1px solid $fc-white;
-                    background-color: $fc-black;
-                    color: $fc-white;
+                a {
+                    width: 40px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $fc-black;
+                    border: 1px solid $fc-gray;
 
-                    @media (max-width:992px) {
+                    @media (max-width:1024px) {
+                        min-height: 20px;
+                        font-size: $fs-12;
+                        color: $fc-666666-gray;
+                        font-weight: bold;
+                    }
 
-                        background-color: $fc-666666-gray;
+                    &:hover {
+                        background-color: $fc-black;
+                        color: $white;
                     }
                 }
             }
@@ -266,16 +370,11 @@
 }
 
 .pageNumber {
-    position: relative;
     width: 100%;
-    height: 100px;
+    padding: 25px 0px;
 
     ul {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
+        flex-wrap: wrap;
         .number {
             &:first-child {
                 a {
@@ -301,45 +400,33 @@
             }
         }
 
-        .nextBTN,
-        .lastBTN {
-            width: 106px;
-            text-align: center;
-            border: 1px solid $bc-number-black;
-            padding: 10px 20px;
-
-            &:hover {
-
-                background-color: $bc-number-black;
-
-            }
-
-            &:hover a {
-
-                color: $fc-white;
-            }
-
-            a {
+        .BTN {
+            margin: 25px 0px;
+            .nextBTN,
+            .lastBTN {
+                padding: 10px 20px;
+                border: 1px solid $bc-number-black;
+                text-align: center;
                 color: $fc-black;
+
+                &:hover {
+                    color: $fc-white;
+                    background-color: $bc-number-black;
+                }
             }
-        }
 
-        .nextBTN {
-            margin-left: 20px;
-        }
+            .nextBTN {
+                margin-left: 20px;
+            }
 
-        .lastBTN {
-            margin-left: 10px;
+            .lastBTN {
+                margin-left: 10px;
+            }
         }
     }
 
     .more {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         border: 1px solid $bc-number-black;
         padding: 10px 50px;
-
     }
 }

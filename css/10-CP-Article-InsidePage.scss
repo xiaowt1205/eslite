@@ -67,10 +67,9 @@
         display: flex;
         padding: 50px 0px;
 
-        @media screen and (max-width:1300px) {
+        @media screen and (max-width:1400px) {
             flex-direction: column;
             padding: 0px;
-
         }
 
         @media (max-width:1024px) {
@@ -83,7 +82,7 @@
             background-color: $bc-brown-hover;
             margin-right: 50px;
 
-            @media screen and (max-width:1300px) {
+            @media screen and (max-width:1400px) {
                 width: 100%;
                 margin-right: 0px;
                 margin-bottom: 35px;
@@ -103,7 +102,7 @@
             letter-spacing: 4px;
             text-align: justify;
 
-            @media screen and (max-width:1300px) {
+            @media screen and (max-width:1400px) {
                 width: 100%;
                 margin-bottom: 35px;
             }
@@ -153,12 +152,10 @@
         }
 
         .text_block {
-            font-weight: 900;
+            @include text_style($fs-14,$fw-600,justify,4px);
             width: 60%;
-            font-size: $fs-14;
             text-indent: 40px;
-            letter-spacing: 4px;
-            text-align: justify;
+            line-height: 1.5;
 
             @media screen and (max-width:1300px) {
                 width: 100%;
@@ -184,7 +181,7 @@ table.table_area {
     width: 100%;
     text-align: center;
     font-size: $fs-14;
-    font-weight: 800;
+    font-weight: $fw-600;
 
 
     tr {
@@ -263,8 +260,11 @@ table.table_area {
 
 .picture_area {
     .text_title {
-        padding: 50px 0px;
-        font-weight: 900;
+        padding: 100px 0px 50px;
+        font-weight: $fw-700;
+        @media screen and (max-width:576px) {
+            padding: 40px 0px 30px;
+        }
     }
 
     .picture_block {
@@ -356,8 +356,7 @@ table.table_area {
 .message_area {
     position: relative;
     padding-left: 30px;
-    font-size: $fs-14;
-    font-weight: 700;
+    @include text_style($fs-14,$fw-600,unset,4px);
     margin-bottom: 60px;
 
     &>div {
@@ -398,16 +397,11 @@ table.table_area {
     .firtst_data {
         &>div {
             &>p {
-                font-weight: $fw-bold;
-                font-size: $fs-14;
-                letter-spacing: 14px;
+                letter-spacing: 15px;
             }
         }
 
         &>p {
-            font-weight: $fw-bold;
-            font-size: $fs-14;
-            letter-spacing: 2px;
             padding-left: 20px;
         }
     }
@@ -415,16 +409,11 @@ table.table_area {
     .new_data {
         &>div {
             &>p {
-                font-weight: $fw-bold;
-                font-size: $fs-14;
                 letter-spacing: 2.7px;
             }
         }
 
         &>p {
-            font-weight: $fw-bold;
-            font-size: $fs-14;
-            letter-spacing: 2px;
             padding-left: 20px;
         }
     }
@@ -432,27 +421,23 @@ table.table_area {
     .click_point {
         &>div {
             &>p {
-                font-weight: $fw-bold;
-                font-size: $fs-14;
                 letter-spacing: 2.7px;
             }
         }
 
         &>p {
-            font-weight: $fw-bold;
-            font-size: $fs-14;
-            letter-spacing: 2px;
             padding-left: 20px;
         }
     }
 }
 
 .area_annex {
-    margin-bottom: 50px;
-
     .text_title {
-        padding: 50px 0px;
-        font-weight: 900;
+        padding: 100px 0px 50px;
+        font-weight:$fw-700;
+        @media screen and (max-width:576px) {
+            padding: 40px 0px 30px;
+        }
     }
 
     .text_block {
@@ -481,7 +466,7 @@ table.table_area {
         }
         p {
             min-width: 200px;
-            @include text_style($fs-18, unset, unset, 3px);
+            @include text_style($fs-18, $fw-700, unset, 3px);
         }
         hr{
             width: 100%;
@@ -500,14 +485,16 @@ table.table_area {
 }
 
 .area_link {
-    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
 
     .text_title {
-        padding: 50px 0px;
+        padding: 100px 0px 50px;
         width: 100%;
-        font-weight: 900;
+        font-weight: $fw-700;
+        @media screen and (max-width:576px) {
+            padding: 40px 0px 30px;
+        }
     }
 
     .link_area {

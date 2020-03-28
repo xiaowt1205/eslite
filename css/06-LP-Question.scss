@@ -12,31 +12,43 @@
     .btnGroup {
         display: flex;
         flex-wrap: wrap;
-        padding-top: 20px;
-        border-bottom: 1px solid $fc-pure-gray;
-
-        @media screen and (max-width:768px) {
-            display: none;
-        }
 
         a {
-            margin: 0px 20px 30px 0px;
+            margin: 0px 20px 17px 0px;
+
+            &:nth-last-child(1) {
+                margin-bottom: 30px;
+            }
+
+            @media (max-width:768px) {
+                margin: 0px 10px 10px 0px;
+
+                &:nth-last-child(1) {
+                    margin-bottom: 10px;
+                }
+            }
 
             .btnArea {
-                @include little_btn_style(120px, 42px, 8px, 8px, $black);
-                @include text_style($fs-16, $fw-700, center, 2px);
-                color: $black;
-                transition: .3s;
+                @include text_style($fs-16, unset, center, 2px);
+                padding: 10px 30px;
+                border-radius: 8px;
+                border: 1px solid $black;
+                color: $fc-pure-gray;
 
-                &:hover{
-                    background-color:$black;
+                @media (max-width:768px) {
+                    padding: 5px 10px;
+                }
+
+                &:hover {
+                    background-color: $bc-dark-brown-hover;
                     color: $fc-white;
 
                 }
 
                 &.active {
+                    font-weight: $fw-700;
                     background-color: $black;
-                    color: $fc-white;
+                    color: $white;
                 }
             }
         }
@@ -47,6 +59,12 @@
 
         &.active {
             display: block;
+        }
+
+        &>:nth-child(1) {
+            @media (max-width:1024px) {
+                border-top: 1px solid $fc-pure-gray;
+            }
         }
 
         .QA {
@@ -149,10 +167,10 @@
                 padding: 10px 20px;
                 transition: .3s;
 
-                &:hover{
+                &:hover {
 
                     background-color: $bc-number-black;
-                    
+
                 }
 
                 &:hover a {

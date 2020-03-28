@@ -6,16 +6,16 @@
         padding-bottom: 30px;
         margin-bottom: 30px;
         text-align: justify;
-        font-weight:$fw-bold;
+        font-weight: $fw-600;
         font-size: $fs-14;
+        letter-spacing: 4px;
+        line-height: 1.5;
 
         @media screen and (max-width:1200px) {
             border-bottom: 1px solid $br-black;
         }
 
         p {
-            letter-spacing: 2px;
-
             &.text {
                 text-indent: 30px;
             }
@@ -37,7 +37,8 @@
                 padding: 0px 0px 0px 20px;
                 position: relative;
                 line-height: 24px;
-                font-size: 18px;
+                font-size: $fs-18;
+                font-weight: $fw-700;
 
                 &::before {
                     content: '';
@@ -66,6 +67,8 @@
                 width: 100%;
                 padding: 10px 20px;
                 border-radius: 5px;
+                font-size: $fs-14;
+                letter-spacing: 4px;
                 outline-width: 0px none invert;
                 border: 1px solid $br-black;
                 text-shadow: none;
@@ -123,7 +126,7 @@
 
             input {
                 @include text_style($fs-16, unset, center, 3px);
-                @include btn_style(220px, unset, 10px, unset, unset, $white, $brown);
+                @include btn_style(220px, unset, 10px, unset, unset, transparent, $brown);
                 @include font_hover($bc-brown, $fc-white);
                 width: 220px;
                 margin-right: 20px;
@@ -146,6 +149,8 @@
             padding: 10px 20px;
             border-radius: 5px;
             resize: none;
+            font-size: $fs-14;
+            letter-spacing: 4px;
         }
 
         select {
@@ -160,7 +165,8 @@
             background-repeat: no-repeat;
             background-position-x: 96%;
             background-position-y: center;
-
+            font-size: $fs-14;
+            letter-spacing: 4px;
 
             & option:nth-child(1) {
                 border-top-left-radius: 5px;
@@ -171,6 +177,8 @@
                 line-height: 30px;
                 width: 100%;
                 padding: 10px 20px;
+                font-size: $fs-14;
+                letter-spacing: 4px;
             }
         }
     }

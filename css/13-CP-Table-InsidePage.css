@@ -77,10 +77,11 @@
 .area_table .message_area {
   position: relative;
   padding-left: 30px;
-  font-size: 16px;
-  margin-bottom: 60px;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 600;
+  text-align: unset;
+  letter-spacing: 4px;
+  margin-bottom: 60px;
 }
 
 .area_table .message_area > div {

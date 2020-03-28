@@ -15,10 +15,11 @@
 
 .area_video .text {
   width: 100%;
-  margin-bottom: 50px;
-  font-weight: bold;
+  margin-bottom: 45px;
   font-size: 14px;
-  letter-spacing: 2px;
+  font-weight: 600;
+  text-align: unset;
+  letter-spacing: 4px;
 }
 
 .area_video .text p {
@@ -90,7 +91,9 @@
   position: relative;
   padding-left: 30px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
+  text-align: unset;
+  letter-spacing: 4px;
   margin-bottom: 60px;
 }
 

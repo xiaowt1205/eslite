@@ -20,9 +20,8 @@ main {
 
     .text {
         width: 100%;
-        font-weight: $fw-bold;
-        font-size:$fs-14;
-        letter-spacing: 2px;
+        @include text_style($fs-14,$fw-600,unset,4px);
+        line-height: 1.5;
 
         p {
             margin-bottom: 35px;
@@ -108,8 +107,7 @@ main {
     .message_area {
         position: relative;
         padding-left: 30px;
-        font-size: $fs-14;
-        font-weight: 700;
+        @include text_style($fs-14,$fw-600,unset,4px);
         margin-bottom: 60px;
 
         &>div {

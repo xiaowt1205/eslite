@@ -57,27 +57,23 @@
                                 <i class="fas fa-search"></i>
                             </a>
                         </li>
-                        <li class="menu-btn menu-btn-mob" data-toggle="modal" data-target="#mobile-menu">
-                            <a href="#">
-                                <div class=""></div>
-                            </a>
-                        </li>
-                        <li class="menu-btn menu-btn-pc">
-                            <a href="#">
-                                <div class=""></div>
-                            </a>
+                        <li class="menu-area d-flex px-0 justify-content-center align-items-start">
+                            <div class="menu-icon">
+                                <ul class="modal-menu-toggle">
+                                    <li class="menu-btn menu-btn-pc">
+                                        <a href="#">
+                                            <div class=""></div>
+                                        </a>
+                                    </li>
+                                    <li class="menu-btn menu-btn-mob" data-toggle="modal" data-target="#mobile-menu">
+                                        <a href="#">
+                                            <div class=""></div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
-                    <!-- position-absolute -->
-                    <div class="menu-icon">
-                        <ul class="modal-menu-toggle">
-                            <li class="menu-btn">
-                                <a href="#">
-                                    <div class=""></div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                 </nav>
             </div>
         </div>
@@ -819,7 +815,7 @@
                 <!-- 平板版的title結束 -->
 
                 <!-- 內頁起點 -->
-                <div class="col-12">
+                <div class="col-12 px-0">
                     <div class="btnGroup">
                         <a href="#">
                             <div class="btnArea tab-btn active">全部</div>
@@ -840,7 +836,7 @@
                             <div class="btnArea tab-btn">全部</div>
                         </a>
                     </div>
-                    <div class="nameGroup d-lg-flex d-none w-100">
+                    <div class="nameGroup w-100">
                         <div class="dateName">時間</div>
                         <div class="themeName">活動名稱</div>
                         <div class="placeName">地點</div>
@@ -848,35 +844,38 @@
                     </div>
                     <div class="news_list">
                         <!-- event modal start -->
-                        <div class="news d-block d-lg-flex">
+                        <div class="news">
                             <div class="date_area">
                                 <span class="data">2018.09.30</span>
-                                <span class="title d-lg-none">消息</span>
+                                <span class="title">消息</span>
                             </div>
                             <div class="theme">書送希望點亮角落</div>
-                            <div class="themePhoneName d-lg-none">帶一本看不懂的書回台灣！邀你捐書助移
+                            <div class="themePhoneName">帶一本看不懂的書回台灣！邀你捐書助移
                                 工解思鄉之苦</div>
                             <div class="place">指定地點</div>
-                            <div class="placePhoneName d-lg-none">
+                            <div class="placePhoneName">
                                 地點
                                 <span>有巢氏房屋民生敦北店</span>
                             </div>
-                            <div class="loadingPointPhoneName"><span class="d-lg-none">附件下載</span></div>
                             <div class="loadingarea">
-                                <div class="loadingPoint"><a href="">PDF</a></div>
-                                <div class="loadingPoint"><a href="">XML</a></div>
-                                <div class="loadingPoint"><a href="">odt</a></div>
-                                <div class="loadingPoint"><a href="">doc</a></div>
-                                <div class="loadingPoint"><a href="">ods</a></div>
-                                <div class="loadingPoint"><a href="">odp</a></div>
+                                <span>附件下載</span>
+                                <div>
+                                    <div class="loadingPoint"><a href="">PDF</a></div>
+                                    <div class="loadingPoint"><a href="">XML</a></div>
+                                    <div class="loadingPoint"><a href="">odt</a></div>
+                                    <div class="loadingPoint"><a href="">doc</a></div>
+                                    <div class="loadingPoint"><a href="">ods</a></div>
+                                    <div class="loadingPoint"><a href="">odp</a></div>
+
+                                </div>
                             </div>
                         </div>
 
                         <!-- event modal end -->
                     </div>
 
-                    <nav class="pageNumber">
-                        <ul class="d-sm-flex justify-content-center  align-items-center d-none">
+                    <nav class="pageNumber d-flex justify-content-center  align-items-center">
+                        <ul class="d-sm-flex d-none justify-content-center align-items-center">
                             <li class="number"><a href="">1</a></li>
                             <li class="number"><a href="">2</a></li>
                             <li class="number"><a href="">3</a></li>
@@ -884,12 +883,12 @@
                             <li class="number"><a href="">5</a></li>
                             <li class="number"><a href="">6</a></li>
                             <li class="number"><a href="">7</a></li>
-                            <li class="nextBTN"><a href="">下一頁</a></li>
-                            <li class="lastBTN"><a href="">最後一頁</a></li>
+                            <li class="BTN">
+                                <a class="nextBTN" href="">下一頁</a>
+                                <a class="lastBTN" href="">最後一頁</a>
+                            </li>
                         </ul>
-
                         <div class="more d-sm-none">更多消息</div>
-
                     </nav>
                 </div>
                 <!-- 內頁終點 -->

@@ -8,7 +8,7 @@ main.container {
 }
 
 .Guide_area .area {
-  width: 230px;
+  max-width: 230px;
 }
 
 @media (max-width: 768px) {

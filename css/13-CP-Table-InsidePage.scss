@@ -68,10 +68,8 @@
     .message_area {
         position: relative;
         padding-left: 30px;
-        font-size: $fs-16;
+        @include text_style($fs-14,$fw-600,unset,4px);
         margin-bottom: 60px;
-        font-size: 14px;
-        font-weight: 800;
 
         &>div {
             display: flex;
