@@ -3061,15 +3061,15 @@ main .bg {
 #News .adornment .block {
   position: absolute;
   width: 100%;
-  height: 120%;
+  height: 101%;
   -webkit-transform: skewY(1deg);
           transform: skewY(1deg);
   background-color: #FFFFFF;
   -webkit-transform-origin: center;
           transform-origin: center;
   bottom: 13px;
-  -webkit-box-shadow: 0 -10px 20px -5px #888888, 0 10px 20px -5px #888888, 10px 0 20px -5px #888888;
-          box-shadow: 0 -10px 20px -5px #888888, 0 10px 20px -5px #888888, 10px 0 20px -5px #888888;
+  -webkit-box-shadow: 8px 8px 9px -3px #888888;
+          box-shadow: 8px 8px 9px -3px #888888;
 }
 
 #News .news_bg {

@@ -589,7 +589,7 @@ header {
                                         padding-top: 5px;
                                     }
 
-                                    @media (max-width:1024px){
+                                    @media (max-width:1024px) {
                                         top: 0%;
                                     }
 
@@ -2338,12 +2338,12 @@ main {
         .block {
             position: absolute;
             width: 100%;
-            height: 120%;
+            height: 101%;
             transform: skewY(1deg);
             background-color: $fc-white;
             transform-origin: center;
             bottom: 13px;
-            box-shadow: 0 -10px 20px -5px #888888, 0 10px 20px -5px #888888, 10px 0 20px -5px #888888;
+            box-shadow: 8px 8px 9px -3px #888888;
         }
     }
 
