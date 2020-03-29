@@ -365,8 +365,20 @@ header #topline nav ul li.menu-area .menu-icon .menu-btn-pc {
   }
 }
 
+@media (max-width: 576px) {
+  header #topline nav ul li.menu-area .menu-icon .menu-btn-pc {
+    display: none;
+  }
+}
+
 header #topline nav ul li.menu-area .menu-icon .menu-btn-mob {
   display: none;
+}
+
+@media (max-width: 576px) {
+  header #topline nav ul li.menu-area .menu-icon .menu-btn-mob {
+    display: block;
+  }
 }
 
 header #topline nav ul li a {
