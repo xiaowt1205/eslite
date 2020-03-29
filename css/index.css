@@ -539,7 +539,7 @@ header #topline .menu-area .menu-icon ul.modal-menu-toggle .menu-btn-pc {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   header #topline .menu-area .menu-icon ul.modal-menu-toggle .menu-btn-pc {
     display: none;
   }
@@ -549,7 +549,7 @@ header #topline .menu-area .menu-icon ul.modal-menu-toggle .menu-btn-mob {
   display: none;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   header #topline .menu-area .menu-icon ul.modal-menu-toggle .menu-btn-mob {
     display: block;
   }
