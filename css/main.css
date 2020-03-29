@@ -377,6 +377,19 @@ body {
 
 .modal .modal-content .modal-collapse-group {
   padding: 25px 40px 0 40px;
+  position: relative;
+}
+
+.modal .modal-content .modal-collapse-group::after {
+  content: ' ';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 280px;
+  height: 1px;
+  background-color: white;
 }
 
 .modal .modal-content .modal-collapse-group .accordion {
@@ -436,6 +449,56 @@ body {
 .modal .modal-content .modal-collapse-group .accordion .collapse-deco.collapsed::before {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+.modal .modal-content .modal-footer {
+  border: none;
+  padding: 30px 0 0 0;
+}
+
+.modal .modal-content .modal-footer a .circle {
+  width: 28px;
+  height: 28px;
+  border: 1.5px #FFFFFF solid;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 20px;
+}
+
+.modal .modal-content .modal-footer a .circle i {
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.modal .modal-content .modal-footer a i {
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.modal .modal-content .modal-footer a.modal-menu-search i {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.modal .modal-content .modal-footer a.modal-menu-search input {
+  -webkit-transition: .3s;
+  transition: .3s;
+  width: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.modal .modal-content .modal-footer a.modal-menu-search:hover i {
+  margin-left: 10px;
+}
+
+.modal .modal-content .modal-footer a.modal-menu-search:hover input {
+  min-width: 150px;
+  border: 1px white solid;
 }
 
 .menu-btn a div {
