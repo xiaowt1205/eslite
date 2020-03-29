@@ -20,7 +20,7 @@
     <!-- layout -->
     <link rel="stylesheet" href="./css/main.css">
     <!-- page css  -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/index.css">
 
     <style>
 
@@ -31,132 +31,169 @@
 
 <body>
     <!-- index nav -->
-    <header>
-        <div id="topline" class="container">
-            <div class="row no-gutters">
-                <div class="col-lg-6 col-xl-4">
-                    <div class="logo">
-                        <img class="d-none d-lg-block" src="./img/index/logo-white.png" alt="">
-                        <img class="d-block d-lg-none" src="./img/index/logo-black.svg" alt="">
-                    </div>
-                </div>
-                <nav class="col-lg-6 col-xl-8">
-                    <ul class="d-none d-xl-flex justify-content-end">
-                        <li><a href="">關於我們</a></li>
-                        <li><a href="">閱讀分享計畫</a></li>
-                        <li><a href="">青年培育計畫</a></li>
-                        <li><a href="">基金會訊息</a></li>
-                        <li><a href="">FAQ</a></li>
-                        <li class="nav-icon"><a href=""><i class="fas fa-share-alt"></i></a></li>
-                        <li class="nav-icon"><a href="">
-                                <div class="cicle"><i class="fas fa-info"></i></div>
-                            </a></li>
-                        <li class="nav-icon"><a href=""><i class="fas fa-search"></i></a></li>
-                        <li class="menu-btn menu-btn-pc ">
-                            <a href="#">
-                                <div class=""></div>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="position-absolute d-block d-xl-none modal-menu-toggle">
-                        <li  class="menu-btn" data-toggle="modal" data-target="#mobile-menu">
-                            <a href="#">
-                                <div class=""></div>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div id="headline" class="container">
-            <div class="row no-gutters align-items-end">
-                <aside class="col-lg-12 col-xl-2 order-lg-1 order-xl-0 d-flex flex-xl-column justify-content-xl-end">
-                    <div class="swiper-pagination d-lg-flex d-none"></div>
-                    <a href="#" class="link-icon" style="margin-left:-9px;"><i class="fab fa-youtube"></i></a>
-                    <a href="#" class="link-icon" style="margin-left:-6px;"><i class="fab fa-facebook-f"></i></a>
-                    <div class="aside-btn-group d-none d-lg-flex">
-                        <a href="#">
-                            <div class="aside-btn">支持計畫<div class="gradient-mask">
-                                    <div class="aside-sub-btn-group d-flex">
-                                        <div class="aside-sub-btn">支持計畫</div>\
-                                        <div class="aside-sub-btn">支持計畫</div>\
-                                        <div class="aside-sub-btn">支持計畫</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="aside-btn">加入志工<div class="gradient-mask">
-                                    <div class="aside-sub-btn-group d-flex">
-                                        <div class="aside-sub-btn">加入志工</div>\
-                                        <div class="aside-sub-btn">加入志工</div>\
-                                        <div class="aside-sub-btn">加入志工</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="aside-btn">申請書籍<div class="gradient-mask">
-                                    <div class="aside-sub-btn-group d-flex">
-                                        <div class="aside-sub-btn">申請書籍</div>\
-                                        <div class="aside-sub-btn">申請書籍</div>\
-                                        <div class="aside-sub-btn">申請書籍</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="aside-btn">第四類別<div class="gradient-mask">
-                                    <div class="aside-sub-btn-group d-flex">
-                                        <div class="aside-sub-btn">第四類別</div>\
-                                        <div class="aside-sub-btn">第四類別</div>\
-                                        <div class="aside-sub-btn">第四類別</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                </aside>
-                <div class="col-lg-12 col-xl-10">
-                    <div class="banner">
-                        <!-- swiper -->
-                        <div class="swiper-banner swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img class="w-100 h-100" src="./img/index/banner-1.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="w-100 h-100" src="./img/index/banner-2.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="w-100 h-100" src="./img/index/banner-1.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="w-100 h-100" src="./img/index/banner-2.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="w-100 h-100" src="./img/index/banner-1.jpg" alt="">
+    <header class="index_nav">
+        <div id="topline">
+            <div class="row d-flex justify-content-between">
+                <div class="col-3 logo_area">
+                    <div class="container-fluid">
+                        <div class="row d-flex justify-content-start">
+                            <div class="col-9 area">
+                                <div class="logo">
+                                    <img class="d-none d-lg-block" src="./img/index/logo-white.png" alt="">
+                                    <img class="d-block d-lg-none" src="./img/index/logo-black.svg" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="aside-bg d-lg-block d-none"></div>
+                <nav class="col-9 px-0 justify-content-end">
+                    <ul>
+                        <li><a href="">關於我們</a></li>
+                        <li><a href="">閱讀分享計畫</a></li>
+                        <li><a href="">青年培育計畫</a></li>
+                        <li><a href="">基金會訊息</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li class="nav-icon">
+                            <a href="">
+                                <i class="fas fa-share-alt"></i>
+                            </a>
+                            <a href="">
+                                <div class="circle">
+                                    <i class="fas fa-info"></i>
+                                </div>
+                            </a>
+                            <a href="">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="menu-area d-flex px-0 justify-content-center align-items-start">
+                        <div class="menu-icon">
+                            <ul class="modal-menu-toggle">
+                                <li class="menu-btn menu-btn-pc">
+                                    <a href="#">
+                                        <div class=""></div>
+                                    </a>
+                                </li>
+                                <li class="menu-btn menu-btn-mob" data-toggle="modal" data-target="#mobile-menu">
+                                    <a href="#">
+                                        <div class=""></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
 
-                <!-- mobile-aside -->
-                <div class="mobile-aside col d-block d-lg-none justify-content-center">
-                    <div class="accordion" id="aside-btn-1">
-                        <div class="aside-btn-group">
-                            <div class="aside-btn-title text-center">
-                                <div  data-toggle="collapse" data-target="#aside-btn-1-collapse"
-                                    aria-expanded="true" aria-controls="aside-btn-1-collapse">
+        <div id="headline">
+            <div class="headline_area">
+                <div class="swiper_block">
+                    <aside class="Menu_list d-flex flex-xl-column justify-content-xl-between">
+                        <div class="swiper-group">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="link-icon-group">
+                            <div class="link-icon">
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                        <div class="aside-btn-group justify-content-center">
+                            <a href="#">
+                                <div class="aside-btn">
                                     支持計畫
+                                    <div class="gradient-mask">
+                                        <div class="aside-sub-btn-group d-flex">
+                                            <div class="aside-sub-btn">支持計畫</div>\
+                                            <div class="aside-sub-btn">支持計畫</div>\
+                                            <div class="aside-sub-btn">支持計畫</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="aside-btn">
+                                    加入志工
+                                    <div class="gradient-mask">
+                                        <div class="aside-sub-btn-group d-flex">
+                                            <div class="aside-sub-btn">加入志工</div>\
+                                            <div class="aside-sub-btn">加入志工</div>\
+                                            <div class="aside-sub-btn">加入志工</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="aside-btn">
+                                    申請書籍
+                                    <div class="gradient-mask">
+                                        <div class="aside-sub-btn-group d-flex">
+                                            <div class="aside-sub-btn">申請書籍</div>\
+                                            <div class="aside-sub-btn">申請書籍</div>\
+                                            <div class="aside-sub-btn">申請書籍</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="aside-btn">
+                                    第四類別
+                                    <div class="gradient-mask">
+                                        <div class="aside-sub-btn-group d-flex">
+                                            <div class="aside-sub-btn">第四類別</div>\
+                                            <div class="aside-sub-btn">第四類別</div>\
+                                            <div class="aside-sub-btn">第四類別</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </aside>
+                    <div class="headline_swiper px-0">
+                        <div class="banner">
+                            <!-- swiper -->
+                            <div class="swiper-banner swiper-container px-0">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="w-100 h-100" src="./img/index/banner-1.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="w-100 h-100" src="./img/index/banner-2.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="w-100 h-100" src="./img/index/banner-3.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="w-100 h-100" src="./img/index/banner-2.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="w-100 h-100" src="./img/index/banner-1.jpg" alt="">
+                                    </div>
                                 </div>
                             </div>
-                            <div id="aside-btn-1-collapse" class="collapse" data-parent="#aside-btn-1">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- mobile-aside -->
+                <div class="mobile-aside col justify-content-center">
+                    <div class="accordion" id="aside-btn-1">
+                        <div class="aside-btn-group">
+                            <div class="aside-btn-title text-center active">
+                                <div data-toggle="collapse" data-target="#aside-btn-1-collapse" aria-expanded="true"
+                                    aria-controls="aside-btn-1-collapse">
+                                    支持計畫
+                                    <div class="icon">
+                                        <i class="fas fa-chevron-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="aside-btn-1-collapse" class="collapse show" data-parent="#aside-btn-1">
                                 <a href="">
-                                    <div class="aside-sub-btn mt-3">支持計畫1</div>
+                                    <div class="aside-sub-btn">支持計畫1</div>
                                 </a>
                                 <a href="">
                                     <div class="aside-sub-btn">支持計畫2</div>
@@ -170,9 +207,12 @@
                     <div class="accordion" id="aside-btn-2">
                         <div class="aside-btn-group">
                             <div class="aside-btn-title text-center">
-                                <div  data-toggle="collapse" data-target="#aside-btn-2-collapse"
-                                    aria-expanded="true" aria-controls="aside-btn-2-collapse">
+                                <div data-toggle="collapse" data-target="#aside-btn-2-collapse" aria-expanded="true"
+                                    aria-controls="aside-btn-2-collapse">
                                     加入志工
+                                    <div class="icon">
+                                        <i class="fas fa-chevron-up"></i>
+                                    </div>
                                 </div>
                             </div>
                             <div id="aside-btn-2-collapse" class="collapse" data-parent="#aside-btn-2">
@@ -191,9 +231,12 @@
                     <div class="accordion" id="aside-btn-3">
                         <div class="aside-btn-group">
                             <div class="aside-btn-title text-center">
-                                <div  data-toggle="collapse" data-target="#aside-btn-3-collapse"
-                                    aria-expanded="true" aria-controls="aside-btn-3-collapse">
+                                <div data-toggle="collapse" data-target="#aside-btn-3-collapse" aria-expanded="true"
+                                    aria-controls="aside-btn-3-collapse">
                                     申請書籍
+                                    <div class="icon">
+                                        <i class="fas fa-chevron-up"></i>
+                                    </div>
                                 </div>
                             </div>
                             <div id="aside-btn-3-collapse" class="collapse" data-parent="#aside-btn-3">
@@ -212,9 +255,12 @@
                     <div class="accordion" id="aside-btn-4">
                         <div class="aside-btn-group">
                             <div class="aside-btn-title text-center">
-                                <div  data-toggle="collapse" data-target="#aside-btn-4-collapse"
-                                    aria-expanded="true" aria-controls="aside-btn-4-collapse">
+                                <div data-toggle="collapse" data-target="#aside-btn-4-collapse" aria-expanded="true"
+                                    aria-controls="aside-btn-4-collapse">
                                     第四類別
+                                    <div class="icon">
+                                        <i class="fas fa-chevron-up"></i>
+                                    </div>
                                 </div>
                             </div>
                             <div id="aside-btn-4-collapse" class="collapse" data-parent="#aside-btn-4">
@@ -233,12 +279,13 @@
                 </div>
             </div>
         </div>
+        <div class="aside-bg"></div>
     </header>
 
     <!-- menu -->
     <div class="menu">
         <div class="menu-container position-relative">
-            <div class="menu-btn menu-btn-pc position-absolute d-lg-block d-none">
+            <div class="menu-btn menu-btn-pc position-absolute">
                 <a href="#">
                     <div></div>
                 </a>
@@ -264,9 +311,9 @@
                             <div class="accordion" id="study-plan-1">
                                 <div>
                                     <div id="study-plan-heading-1">
-                                        <a class="menu-content collapse-content collapsed" 
-                                            data-toggle="collapse" data-target="#study-plan-collapse-1"
-                                            aria-expanded="true" aria-controls="study-plan-collapse-1">
+                                        <a class="menu-content collapse-content collapsed" data-toggle="collapse"
+                                            data-target="#study-plan-collapse-1" aria-expanded="true"
+                                            aria-controls="study-plan-collapse-1">
                                             閱讀分享計畫
                                         </a>
                                     </div>
@@ -288,9 +335,9 @@
                             <div class="accordion" id="study-plan-2">
                                 <div>
                                     <div id="study-plan-heading-2">
-                                        <a class="menu-content collapse-content collapsed" 
-                                            data-toggle="collapse" data-target="#study-plan-collapse-2"
-                                            aria-expanded="true" aria-controls="study-plan-collapse-2">
+                                        <a class="menu-content collapse-content collapsed" data-toggle="collapse"
+                                            data-target="#study-plan-collapse-2" aria-expanded="true"
+                                            aria-controls="study-plan-collapse-2">
                                             個人/團體捐書
                                         </a>
                                     </div>
@@ -311,9 +358,9 @@
                             <div class="accordion" id="study-plan-3">
                                 <div>
                                     <div id="study-plan-heading-3">
-                                        <a class="menu-content collapse-content collapsed" 
-                                            data-toggle="collapse" data-target="#study-plan-collapse-3"
-                                            aria-expanded="true" aria-controls="study-plan-collapse-3">
+                                        <a class="menu-content collapse-content collapsed" data-toggle="collapse"
+                                            data-target="#study-plan-collapse-3" aria-expanded="true"
+                                            aria-controls="study-plan-collapse-3">
                                             郵寄捐書
                                         </a>
                                     </div>
@@ -335,9 +382,9 @@
                             <div class="accordion" id="study-plan-4">
                                 <div>
                                     <div id="study-plan-heading-4">
-                                        <a class="menu-content collapse-content collapsed" 
-                                            data-toggle="collapse" data-target="#study-plan-collapse-4"
-                                            aria-expanded="true" aria-controls="study-plan-collapse-4">
+                                        <a class="menu-content collapse-content collapsed" data-toggle="collapse"
+                                            data-target="#study-plan-collapse-4" aria-expanded="true"
+                                            aria-controls="study-plan-collapse-4">
                                             書籍申請
                                         </a>
                                     </div>
@@ -360,9 +407,9 @@
                             <div class="accordion" id="study-plan-5">
                                 <div>
                                     <div id="study-plan-heading-5">
-                                        <a class="menu-content collapse-content collapsed" 
-                                            data-toggle="collapse" data-target="#study-plan-collapse-5"
-                                            aria-expanded="true" aria-controls="study-plan-collapse-5">
+                                        <a class="menu-content collapse-content collapsed" data-toggle="collapse"
+                                            data-target="#study-plan-collapse-5" aria-expanded="true"
+                                            aria-controls="study-plan-collapse-5">
                                             閱讀分享志工
                                         </a>
                                     </div>
@@ -386,9 +433,9 @@
                             <div class="accordion" id="study-plan-6">
                                 <div>
                                     <div id="study-plan-heading-6">
-                                        <a class="menu-content collapse-content collapsed" 
-                                            data-toggle="collapse" data-target="#study-plan-collapse-6"
-                                            aria-expanded="true" aria-controls="study-plan-collapse-6">
+                                        <a class="menu-content collapse-content collapsed" data-toggle="collapse"
+                                            data-target="#study-plan-collapse-6" aria-expanded="true"
+                                            aria-controls="study-plan-collapse-6">
                                             沿線閱讀
                                         </a>
                                     </div>
@@ -410,9 +457,9 @@
                             <div class="accordion" id="study-plan-7">
                                 <div>
                                     <div id="study-plan-heading-7">
-                                        <a class="menu-content collapse-content collapsed" 
-                                            data-toggle="collapse" data-target="#study-plan-collapse-7"
-                                            aria-expanded="true" aria-controls="study-plan-collapse-7">
+                                        <a class="menu-content collapse-content collapsed" data-toggle="collapse"
+                                            data-target="#study-plan-collapse-7" aria-expanded="true"
+                                            aria-controls="study-plan-collapse-7">
                                             合作據點介紹
                                         </a>
                                     </div>
@@ -442,9 +489,9 @@
                             <div class="accordion" id="youth-plan-1">
                                 <div>
                                     <div id="youth-plan-heading-1">
-                                        <a class="menu-content collapse-content collapsed" 
-                                            data-toggle="collapse" data-target="#youth-plan-collapse-1"
-                                            aria-expanded="true" aria-controls="youth-plan-collapse-1">
+                                        <a class="menu-content collapse-content collapsed" data-toggle="collapse"
+                                            data-target="#youth-plan-collapse-1" aria-expanded="true"
+                                            aria-controls="youth-plan-collapse-1">
                                             青年培育計畫
                                         </a>
                                     </div>
@@ -466,9 +513,9 @@
                             <div class="accordion" id="youth-plan-2">
                                 <div>
                                     <div id="youth-plan-heading-2">
-                                        <a class="menu-content collapse-content collapsed" 
-                                            data-toggle="collapse" data-target="#youth-plan-collapse-2"
-                                            aria-expanded="true" aria-controls="youth-plan-collapse-2">
+                                        <a class="menu-content collapse-content collapsed" data-toggle="collapse"
+                                            data-target="#youth-plan-collapse-2" aria-expanded="true"
+                                            aria-controls="youth-plan-collapse-2">
                                             璞玉計畫
                                         </a>
                                     </div>
@@ -490,9 +537,9 @@
                             <div class="accordion" id="youth-plan-3">
                                 <div>
                                     <div id="youth-plan-heading-3">
-                                        <a class="menu-content collapse-content collapsed" 
-                                            data-toggle="collapse" data-target="#youth-plan-collapse-3"
-                                            aria-expanded="true" aria-controls="youth-plan-collapse-3">
+                                        <a class="menu-content collapse-content collapsed" data-toggle="collapse"
+                                            data-target="#youth-plan-collapse-3" aria-expanded="true"
+                                            aria-controls="youth-plan-collapse-3">
                                             申請成為學員
                                         </a>
                                     </div>
@@ -514,9 +561,9 @@
                             <div class="accordion" id="youth-plan-4">
                                 <div>
                                     <div id="youth-plan-heading-4">
-                                        <a class="menu-content collapse-content collapsed" 
-                                            data-toggle="collapse" data-target="#youth-plan-collapse-4"
-                                            aria-expanded="true" aria-controls="youth-plan-collapse-4">
+                                        <a class="menu-content collapse-content collapsed" data-toggle="collapse"
+                                            data-target="#youth-plan-collapse-4" aria-expanded="true"
+                                            aria-controls="youth-plan-collapse-4">
                                             申請成為隊輔
                                         </a>
                                     </div>
@@ -539,9 +586,9 @@
                             <div class="accordion" id="youth-plan-5">
                                 <div>
                                     <div id="youth-plan-heading-5">
-                                        <a class="menu-content collapse-content collapsed" 
-                                            data-toggle="collapse" data-target="#youth-plan-collapse-5"
-                                            aria-expanded="true" aria-controls="youth-plan-collapse-5">
+                                        <a class="menu-content collapse-content collapsed" data-toggle="collapse"
+                                            data-target="#youth-plan-collapse-5" aria-expanded="true"
+                                            aria-controls="youth-plan-collapse-5">
                                             志工隊
                                         </a>
                                     </div>
@@ -906,6 +953,20 @@
                             </a>
                         </div>
                     </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <a href="">
+                        <i class="fas fa-share-alt"></i>
+                    </a>
+                    <a href="">
+                        <div class="circle">
+                            <i class="fas fa-info"></i>
+                        </div>
+                    </a>
+                    <a class="modal-menu-search d-flex align-items-center flex-row-reverse"   href="#">
+                        <i class="fas fa-search"></i>
+                        <input type="text">
+                    </a>
                 </div>
             </div>
         </div>
