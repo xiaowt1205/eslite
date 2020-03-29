@@ -1317,13 +1317,6 @@ main .bg {
   }
 }
 
-@media screen and (max-width: 576px) {
-  #Statistics .container_1600 .statistics_area .title_region .title_block h2 {
-    font-size: 24px;
-    letter-spacing: 6px;
-  }
-}
-
 #Statistics .container_1600 .statistics_area .title_region .title_block h2::after {
   content: '';
   display: none;
@@ -1825,9 +1818,9 @@ main .bg {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   #Statistics .container_1600 .statistics_area .btn-grop .btn-pc {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
 }
 
@@ -1862,6 +1855,8 @@ main .bg {
     width: 164px;
     height: 32px;
     border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
   }
 }
 
@@ -2598,7 +2593,7 @@ main .bg {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
   #Video .player_pc .player {
     display: none;
   }
@@ -2608,7 +2603,7 @@ main .bg {
   display: none;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
   #Video .player-mobile .player {
     display: block;
   }

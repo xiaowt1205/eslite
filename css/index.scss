@@ -888,11 +888,6 @@ main {
                             position: relative;
                         }
 
-                        @media screen and (max-width:576px) {
-                            font-size: $fs-24;
-                            letter-spacing: 6px;
-                        }
-
                         &::after {
                             content: '';
                             display: none;
@@ -1280,10 +1275,12 @@ main {
                     @media screen and (max-width:1200px) {
                         margin-bottom: 5px;
                     }
-
-                    @media screen and (max-width:576px) {
-                        margin-bottom: 5px;
+                    @media screen and (max-width:768px) {
+                        margin-bottom: 15px;
                     }
+                    // @media screen and (max-width:576px) {
+                    //     margin-bottom: 5px;
+                    // }
 
                     .btn {
                         width: 320px;
@@ -1308,6 +1305,8 @@ main {
                             width: 164px;
                             height: 32px;
                             border-radius: 50px;
+                            font-weight: $fw-600;
+                            font-size: $fs-14;
                         }
 
                         @media screen and (max-width:576px) {
@@ -1957,7 +1956,7 @@ main {
 
     .player_pc {
         .player {
-            @media screen and (max-width:576px) {
+            @media screen and (max-width:600px) {
                 display: none;
             }
         }
@@ -1967,7 +1966,7 @@ main {
         .player {
             display: none;
 
-            @media screen and (max-width:576px) {
+            @media screen and (max-width:600px) {
                 display: block;
             }
         }

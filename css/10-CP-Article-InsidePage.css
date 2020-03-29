@@ -144,10 +144,11 @@
 
 @media screen and (max-width: 1300px) {
   .five .text_area {
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px;
   }
 }
 
@@ -155,7 +156,6 @@
   .five .text_area {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 0px 0px;
   }
 }
 

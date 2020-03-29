@@ -325,7 +325,7 @@ a:active {
   padding-right: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .news_list .news .date_area .data {
     padding-right: 00px;
   }
@@ -346,6 +346,7 @@ a:active {
 @media (max-width: 1024px) {
   .news_list .news .date_area .title {
     font-size: 16px;
+    margin-left: 18px;
     display: block;
   }
 }
@@ -353,7 +354,6 @@ a:active {
 @media (max-width: 768px) {
   .news_list .news .date_area .title {
     font-size: 14px;
-    margin-left: 18px;
   }
 }
 

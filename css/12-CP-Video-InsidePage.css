@@ -53,6 +53,12 @@
   position: relative;
 }
 
+@media screen and (max-width: 768px) {
+  .area_video .video_block {
+    border-radius: 20px;
+  }
+}
+
 .area_video .video_block video {
   width: 100%;
 }

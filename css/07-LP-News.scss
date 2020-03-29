@@ -145,7 +145,7 @@
             .data {
                 padding-right: 30px;
 
-                @media (max-width:768px) {
+                @media (max-width:1024px) {
                     padding-right: 00px;
                 }
             }
@@ -165,12 +165,13 @@
 
                 @media (max-width:1024px) {
                     font-size: $fs-16;
+                    margin-left: 18px;
                     display: block;
                 }
 
                 @media (max-width:768px) {
                     font-size: $fs-14;
-                    margin-left: 18px;
+                    
                 }
             }
         }
