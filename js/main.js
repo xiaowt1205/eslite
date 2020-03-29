@@ -22,3 +22,12 @@ $('.collapse').on('show.bs.collapse', function () {
     });
 });
 
+
+var btn = $('#BackTop');
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
+});

@@ -521,6 +521,7 @@ header {
                                 letter-spacing: 5px;
                                 color: $fc-white;
                                 font-size: $fs-16;
+                                transition: .5s;
 
                                 @media(max-width:1024px) {
                                     &:hover {
@@ -586,6 +587,10 @@ header {
 
                                     @media(min-width:1025px) {
                                         padding-top: 5px;
+                                    }
+
+                                    @media (max-width:1024px){
+                                        top: 0%;
                                     }
 
                                     @media(max-width:768px) {

@@ -861,6 +861,8 @@ header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .asi
   letter-spacing: 5px;
   color: #FFFFFF;
   font-size: 16px;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 @media (max-width: 1024px) {
@@ -953,6 +955,12 @@ header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .asi
 @media (min-width: 1025px) {
   header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn .gradient-mask {
     padding-top: 5px;
+  }
+}
+
+@media (max-width: 1024px) {
+  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn .gradient-mask {
+    top: 0%;
   }
 }
 

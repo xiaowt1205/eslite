@@ -1419,9 +1419,10 @@
         </div>
     </footer>
 
-    <a class="go_to_top" id="BackTop">
+    <a href="#" class="go_to_top" id="BackTop">
         <img src="./img/icon/top.png" alt="">
     </a>
+    
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -1451,17 +1452,7 @@
 
     </script>
     <script>
-        $("#BackTop").click(function () {
-            $("html, body").animate({ scrollTop: 0 }, 500);
-        });
-        var btn = $('#BackTop');
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 300) {
-                btn.addClass('show');
-            } else {
-                btn.removeClass('show');
-            }
-        });
+        
     </script>
     <script>
         $('.aside-btn-title').click(function () {
