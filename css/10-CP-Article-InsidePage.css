@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
-.two .text_area .picture {
+.two .text_area .picture img {
   width: 100%;
-  height: 40vh;
-  background-color: #665252;
 }
 
 .two .text_area .text_block {
@@ -34,13 +32,14 @@
 }
 
 .three .text_area .picture {
-  width: 100%;
-  height: 40vh;
-  background-color: #665252;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
   margin-bottom: 50px;
+}
+
+.three .text_area .picture img {
+  width: 100%;
 }
 
 .three .text_area .text_block {
@@ -68,42 +67,31 @@
   padding: 50px 0px;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 768px) {
   .four .text_area {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 0px;
   }
 }
 
-@media (max-width: 1024px) {
-  .four .text_area {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
 .four .text_area .picture {
-  width: 40%;
-  background-color: #665252;
   margin-right: 50px;
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 768px) {
   .four .text_area .picture {
-    width: 100%;
     margin-right: 0px;
     margin-bottom: 35px;
-    height: 40vh;
   }
 }
 
-@media (max-width: 576px) {
-  .four .text_area .picture {
-    min-height: 300px;
-  }
+.four .text_area .picture img {
+  width: 100%;
 }
 
 .four .text_area .text_block {
@@ -142,42 +130,31 @@
           flex-direction: row-reverse;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 768px) {
   .five .text_area {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 0px;
   }
 }
 
-@media (max-width: 1024px) {
-  .five .text_area {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
 .five .text_area .picture {
-  width: 40%;
-  background-color: #665252;
   margin-left: 50px;
 }
 
-@media screen and (max-width: 1300px) {
+@media (max-width: 768px) {
   .five .text_area .picture {
-    width: 100%;
     margin-left: 0px;
     margin-bottom: 35px;
-    height: 40vh;
   }
 }
 
-@media (max-width: 576px) {
-  .five .text_area .picture {
-    min-height: 300px;
-  }
+.five .text_area .picture img {
+  width: 100%;
 }
 
 .five .text_area .text_block {
