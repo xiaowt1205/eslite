@@ -1,0 +1,322 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.title .Note {
+  width: 100%;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.title .Note span::before {
+  content: '(僅提供JPG、PDF檔上傳，檔案大小限 10 MB)';
+  position: absolute;
+  bottom: -30px;
+}
+
+.title li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title li .icon {
+  height: 10px;
+  width: 20px;
+  background-color: #000000;
+}
+
+.title li:nth-child(2) {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1400px) {
+  .form_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form_btn {
+    padding: 0px 15px;
+  }
+}
+
+.form_btn input {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #231815;
+  width: 220px;
+  padding: 10px 0px;
+  background-color: transparent;
+  margin-right: 20px;
+  border: 1px solid #000000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.form_btn input:hover {
+  color: #FFFFFF;
+}
+
+.form_btn input:hover {
+  background-color: #231815;
+}
+
+.form_btn input:nth-child(1) {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .form_btn input:nth-child(1) {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .form_btn input:nth-child(2) {
+    width: calc(50% - 15px);
+    margin: 0px 15px 0px 0px;
+  }
+  .form_btn input:nth-child(3) {
+    width: calc(50% - 15px);
+    margin: 0px 0px 0px 15px;
+  }
+}
+
+.newitem {
+  max-width: 800px;
+  padding: 0px 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .newitem {
+    padding: 0px 15px;
+  }
+}
+
+.newitem .teacher {
+  padding: 0px 15px;
+}
+
+.newitem .teacher .title {
+  margin: 0px -15px;
+}
+
+.newitem .teacher .name {
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding-bottom: 30px;
+}
+
+.newitem .teacher .name > div {
+  letter-spacing: 4px;
+  padding: 0px 0px 0px 20px;
+  position: relative;
+  line-height: 24px;
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.newitem .teacher .name > div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 17px;
+  -webkit-transform: translate(0%, 5px);
+          transform: translate(0%, 5px);
+  background-color: #231815;
+}
+
+.newitem .teacher .form_input {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 992px) {
+  .newitem .teacher .form_input {
+    margin-bottom: 30px;
+  }
+}
+
+.newitem .teacher .form_input > input {
+  width: 100%;
+  height: 40px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline-width: 0px none invert;
+  border: 1px solid #000000;
+  text-shadow: none;
+  -webkit-appearance: none;
+  -webkit-user-select: text;
+  outline-color: transparent;
+  letter-spacing: 4px;
+}
+
+.newitem .student {
+  padding: 0px 15px;
+}
+
+.newitem .student .title {
+  margin: 0px -15px;
+}
+
+.newitem .content {
+  position: relative;
+  border-radius: 15px;
+  border: 1px solid #000000;
+  padding: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1400px) {
+  .newitem .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .newitem .content {
+    padding: 15px;
+  }
+}
+
+.newitem .content .name {
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding-bottom: 30px;
+}
+
+.newitem .content .name > div {
+  letter-spacing: 4px;
+  padding: 0px 0px 0px 20px;
+  position: relative;
+  line-height: 24px;
+  font-weight: 900;
+}
+
+.newitem .content .name > div::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 8px;
+  height: 17px;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  background-color: #231815;
+}
+
+.newitem .content .form_input {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 992px) {
+  .newitem .content .form_input {
+    margin-bottom: 30px;
+  }
+}
+
+.newitem .content .form_input > input {
+  width: 100%;
+  height: 40px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline-width: 0px none invert;
+  border: 1px solid #000000;
+  text-shadow: none;
+  -webkit-appearance: none;
+  -webkit-user-select: text;
+  outline-color: transparent;
+  letter-spacing: 4px;
+}
+
+@media screen and (max-width: 1400px) {
+  .block {
+    max-width: 100%;
+  }
+}
+
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media screen and (max-width: 1400px) {
+  .icon {
+    max-width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.icon input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: unset;
+  font-size: 24px;
+  margin: 15px 0px;
+}
+
+@media screen and (max-width: 1400px) {
+  .icon input {
+    margin: 0px 15px;
+  }
+}
+/*# sourceMappingURL=21-Application-InsidePage.css.map */
