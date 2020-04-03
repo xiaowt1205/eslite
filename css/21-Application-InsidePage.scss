@@ -3,38 +3,52 @@
 
 .title {
     display: flex;
+    margin-bottom: 45px;
+    flex-wrap: wrap;
 
+    // align-items: center;
     @media screen and (max-width:768px) {
         flex-direction: column;
-    }
-
-    .Note {
-        width: 100%;
-        position: relative;
-        margin-bottom: 50px;
-
-        span {
-            &::before {
-                content: '(僅提供JPG、PDF檔上傳，檔案大小限 10 MB)';
-                position: absolute;
-                bottom: -30px;
-            }
-        }
     }
 
     li {
         display: flex;
         align-items: center;
-
+        margin-right: 20px;
 
         .icon {
-            height: 10px;
-            width: 20px;
+            height: 3px;
+            width: 24px;
             background-color: $black;
         }
 
+        &:nth-child(1) {
+            @media screen and (max-width:768px) {
+                margin-bottom: 30px;
+            }
+        }
+
         &:nth-child(2) {
-            font-size: $fs-16;
+            font-size: $fs-22;
+            font-weight: $fw-700;
+            letter-spacing: 5px;
+
+            @media screen and (max-width:768px) {
+                margin-bottom: 15px;
+            }
+        }
+
+        &.Note {
+            width: 100%;
+            font-size: $fs-14;
+            font-weight: $fw-700;
+            letter-spacing: 5px;
+            padding-left: 45px;
+            margin-top: 10px;
+
+            @media screen and (max-width:768px) {
+                margin-bottom: 30px;
+            }
         }
     }
 }
@@ -116,14 +130,14 @@
     padding: 0px 15px;
 
     @media screen and (max-width:768px) {
-        padding: 0px 15px;
+        padding: 0px;
     }
 
     .teacher {
         padding: 0px 15px;
 
         .title {
-            margin: 0px -15px;
+            margin: 0px -15px 45px;
         }
 
         .name {
@@ -183,7 +197,13 @@
         padding: 0px 15px;
 
         .title {
-            margin: 0px -15px;
+            margin: 0px -15px 45px;
+        }
+
+        .content {
+            @media screen and (max-width:768px) {
+                padding: 40px 20px 15px;
+            }
         }
     }
 
@@ -230,6 +250,12 @@
             }
         }
 
+        .add,
+        .del {
+            background-color: $black;
+            color: $white;
+        }
+
         .form_input {
 
             margin-bottom: 40px;
@@ -255,6 +281,194 @@
 
 
     }
+}
+
+.newelement {
+    .title {
+        margin-bottom: 20px;
+
+        li:nth-child(2) {
+            margin: 0px;
+        }
+    }
+
+    textarea {
+        width: 100%;
+        height: 90px;
+        resize: none;
+        border: 1px solid $black;
+        border-radius: 10px;
+        margin-bottom: 40px;
+
+        @media screen and (max-width:768px) {
+            height: 150px;
+        }
+    }
+
+    .Experience_status {
+        .Note {
+            padding: 35px 0px 25px;
+            width: 100%;
+            font-size: $fs-18;
+            font-weight: $fw-600;
+
+            @media screen and (max-width:768px) {
+                padding: 0px 0px 25px;
+            }
+
+            span {
+                &:nth-child(1) {
+                    position: relative;
+                    padding-right: 15px;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                        width: 2px;
+                        height: 20px;
+                        background-color: $black;
+                    }
+                }
+
+                &:nth-child(2) {
+                    padding-left: 15px;
+                }
+            }
+        }
+
+        .block {
+            border-radius: 15px;
+            border: 1px solid $black;
+            padding: 40px 50px 0px;
+            margin-bottom: 30px;
+
+            @media screen and (max-width:768px) {
+                margin-bottom: 40px;
+                padding: 15px;
+            }
+
+            .name {
+                font-size: $fs-18;
+                letter-spacing: 2px;
+                padding-bottom: 30px;
+
+                @media screen and (max-width:768px) {
+                    padding-bottom: 18px;
+                }
+
+                &>div {
+                    // min-width: 150px;
+                    letter-spacing: 4px;
+                    padding: 0px 0px 0px 20px;
+                    position: relative;
+                    line-height: 24px;
+                    font-weight: 900;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 8px;
+                        height: 17px;
+                        transform: translate(0%, 5px);
+                        background-color: $bc-brown;
+                    }
+                }
+
+                .two {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            .form_input {
+
+                margin-bottom: 40px;
+
+                @media (max-width:992px) {
+                    margin-bottom: 30px;
+                }
+
+                &>input {
+                    width: 100%;
+                    height: 40px;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    outline-width: 0px none invert;
+                    border: 1px solid $br-black;
+                    text-shadow: none;
+                    -webkit-appearance: none;
+                    -webkit-user-select: text;
+                    outline-color: transparent;
+                    letter-spacing: 4px;
+                }
+
+                &.data {
+                    display: flex;
+                    flex-wrap: nowrap;
+
+                    @media screen and (max-width:768px) {
+                        flex-wrap: wrap;
+
+                        &>input {
+                            width: 75%;
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    span {
+                        font-size: $fs-18;
+                        font-weight: $fw-600;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        min-width: 56px;
+
+                        @media screen and (max-width:768px) {
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .add {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 58px;
+
+            @media screen and (max-width:768px) {
+                justify-content: center;
+            }
+
+            input {
+                @include text_style($fs-16, $fw-700, center, 3px);
+                @include font_hover($bc-brown, $fc-white);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+                width: 200px;
+                height: 40px;
+                border: 1px solid $black;
+                border-radius: 50px;
+                transition: 0.3s;
+
+
+                &:hover {
+                    background-color: $bc-brown;
+                }
+            }
+        }
+    }
+
+
 }
 
 .block {

@@ -3,7 +3,7 @@
 
 .signin_title {
     display: flex;
-
+    margin-bottom: 45px;
     // align-items: center;
     @media screen and (max-width:768px) {
         flex-direction: column;
@@ -12,16 +12,36 @@
     li {
         display: flex;
         align-items: center;
-
+        margin-right: 20px;
 
         .icon {
-            height: 10px;
-            width: 20px;
+            height: 8px;
+            width: 50px;
             background-color: $black;
+        }
+        &:nth-child(1) {
+            @media screen and (max-width:768px) {
+                margin-bottom: 30px;
+            }
         }
 
         &:nth-child(2) {
-            font-size: $fs-16;
+            font-size: $fs-22;
+            font-weight: $fw-700;
+            letter-spacing: 5px;
+            @media screen and (max-width:768px) {
+                margin-bottom: 15px;
+            }
+        }
+
+        &:nth-child(3) {
+            font-size: $fs-14;
+            font-weight: $fw-700;
+            letter-spacing: 5px;
+            transform: translateY(4px);
+            @media screen and (max-width:768px) {
+                margin-bottom: 30px;
+            }
         }
     }
 }
@@ -37,10 +57,11 @@
     .content {
         border-radius: 15px;
         border: 1px solid $black;
-        padding: 50px;
+        padding: 40px 50px;
         margin-bottom: 30px;
 
         @media screen and (max-width:768px) {
+            margin-bottom: 40px;
             padding: 0px;
             border: 0px solid $black;
         }
@@ -49,7 +70,9 @@
             font-size: $fs-18;
             letter-spacing: 2px;
             padding-bottom: 30px;
-
+            @media screen and (max-width:768px) {
+                padding-bottom: 18px;
+            }
             &>div {
                 // min-width: 150px;
                 letter-spacing: 4px;
@@ -153,7 +176,7 @@
         }
 
         @media screen and (max-width:768px) {
-            padding: 0px 15px;
+            padding: 10px 15px;
         }
 
         input {
@@ -221,10 +244,11 @@
     .content {
         border-radius: 15px;
         border: 1px solid $black;
-        padding: 50px;
+        padding:40px 50px;
         margin-bottom: 30px;
 
         @media screen and (max-width:768px) {
+            margin-bottom: 40px;
             padding: 0px;
             border: 0px solid $black;
         }

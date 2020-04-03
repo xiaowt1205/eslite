@@ -1,9 +1,11 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
 .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 45px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media screen and (max-width: 768px) {
@@ -15,18 +17,6 @@
   }
 }
 
-.title .Note {
-  width: 100%;
-  position: relative;
-  margin-bottom: 50px;
-}
-
-.title .Note span::before {
-  content: '(僅提供JPG、PDF檔上傳，檔案大小限 10 MB)';
-  position: absolute;
-  bottom: -30px;
-}
-
 .title li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,16 +24,46 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 20px;
 }
 
 .title li .icon {
-  height: 10px;
-  width: 20px;
+  height: 3px;
+  width: 24px;
   background-color: #000000;
 }
 
+@media screen and (max-width: 768px) {
+  .title li:nth-child(1) {
+    margin-bottom: 30px;
+  }
+}
+
 .title li:nth-child(2) {
-  font-size: 16px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .title li:nth-child(2) {
+    margin-bottom: 15px;
+  }
+}
+
+.title li.Note {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  padding-left: 45px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .title li.Note {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -112,7 +132,7 @@
 
 @media screen and (max-width: 768px) {
   .newitem {
-    padding: 0px 15px;
+    padding: 0px;
   }
 }
 
@@ -121,7 +141,7 @@
 }
 
 .newitem .teacher .title {
-  margin: 0px -15px;
+  margin: 0px -15px 45px;
 }
 
 .newitem .teacher .name {
@@ -186,7 +206,13 @@
 }
 
 .newitem .student .title {
-  margin: 0px -15px;
+  margin: 0px -15px 45px;
+}
+
+@media screen and (max-width: 768px) {
+  .newitem .student .content {
+    padding: 40px 20px 15px;
+  }
 }
 
 .newitem .content {
@@ -241,6 +267,12 @@
   background-color: #231815;
 }
 
+.newitem .content .add,
+.newitem .content .del {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
 .newitem .content .form_input {
   margin-bottom: 40px;
 }
@@ -263,6 +295,234 @@
   -webkit-user-select: text;
   outline-color: transparent;
   letter-spacing: 4px;
+}
+
+.newelement .title {
+  margin-bottom: 20px;
+}
+
+.newelement .title li:nth-child(2) {
+  margin: 0px;
+}
+
+.newelement textarea {
+  width: 100%;
+  height: 90px;
+  resize: none;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .newelement textarea {
+    height: 150px;
+  }
+}
+
+.newelement .Experience_status .Note {
+  padding: 35px 0px 25px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .newelement .Experience_status .Note {
+    padding: 0px 0px 25px;
+  }
+}
+
+.newelement .Experience_status .Note span:nth-child(1) {
+  position: relative;
+  padding-right: 15px;
+}
+
+.newelement .Experience_status .Note span:nth-child(1)::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 2px;
+  height: 20px;
+  background-color: #000000;
+}
+
+.newelement .Experience_status .Note span:nth-child(2) {
+  padding-left: 15px;
+}
+
+.newelement .Experience_status .block {
+  border-radius: 15px;
+  border: 1px solid #000000;
+  padding: 40px 50px 0px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .newelement .Experience_status .block {
+    margin-bottom: 40px;
+    padding: 15px;
+  }
+}
+
+.newelement .Experience_status .block .name {
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .newelement .Experience_status .block .name {
+    padding-bottom: 18px;
+  }
+}
+
+.newelement .Experience_status .block .name > div {
+  letter-spacing: 4px;
+  padding: 0px 0px 0px 20px;
+  position: relative;
+  line-height: 24px;
+  font-weight: 900;
+}
+
+.newelement .Experience_status .block .name > div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 17px;
+  -webkit-transform: translate(0%, 5px);
+          transform: translate(0%, 5px);
+  background-color: #231815;
+}
+
+.newelement .Experience_status .block .name .two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.newelement .Experience_status .block .form_input {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 992px) {
+  .newelement .Experience_status .block .form_input {
+    margin-bottom: 30px;
+  }
+}
+
+.newelement .Experience_status .block .form_input > input {
+  width: 100%;
+  height: 40px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline-width: 0px none invert;
+  border: 1px solid #000000;
+  text-shadow: none;
+  -webkit-appearance: none;
+  -webkit-user-select: text;
+  outline-color: transparent;
+  letter-spacing: 4px;
+}
+
+.newelement .Experience_status .block .form_input.data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .newelement .Experience_status .block .form_input.data {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .newelement .Experience_status .block .form_input.data > input {
+    width: 75%;
+    margin-bottom: 15px;
+  }
+}
+
+.newelement .Experience_status .block .form_input.data span {
+  font-size: 18px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 56px;
+}
+
+@media screen and (max-width: 768px) {
+  .newelement .Experience_status .block .form_input.data span {
+    margin-bottom: 15px;
+  }
+}
+
+.newelement .Experience_status .add {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 58px;
+}
+
+@media screen and (max-width: 768px) {
+  .newelement .Experience_status .add {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.newelement .Experience_status .add input {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #231815;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  width: 200px;
+  height: 40px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.newelement .Experience_status .add input:hover {
+  color: #FFFFFF;
+}
+
+.newelement .Experience_status .add input:hover {
+  background-color: #231815;
 }
 
 @media screen and (max-width: 1400px) {
