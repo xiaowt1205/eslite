@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
 .title {
   display: -webkit-box;
@@ -120,6 +121,44 @@
     margin: 0px 15px 0px 0px;
   }
   .form_btn input:nth-child(3) {
+    width: calc(50% - 15px);
+    margin: 0px 0px 0px 15px;
+  }
+}
+
+.form_btn button {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #231815;
+  width: 220px;
+  padding: 10px 0px;
+  background-color: transparent;
+  margin-right: 20px;
+  border: 1px solid #000000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.form_btn button:hover {
+  color: #FFFFFF;
+}
+
+.form_btn button:hover {
+  background-color: #231815;
+}
+
+.form_btn button:nth-child(1) {
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .form_btn button:nth-child(1) {
+    width: calc(50% - 15px);
+    margin: 0px 15px 0px 0px;
+  }
+  .form_btn button:nth-child(2) {
     width: calc(50% - 15px);
     margin: 0px 0px 0px 15px;
   }
@@ -578,5 +617,733 @@
   .icon input {
     margin: 0px 15px;
   }
+}
+
+.Application_from .name {
+  font-size: 22px;
+  letter-spacing: 2px;
+  padding-bottom: 30px;
+}
+
+.Application_from .name > div {
+  min-width: 150px;
+  letter-spacing: 4px;
+  padding: 0px 0px 0px 20px;
+  position: relative;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.Application_from .name > div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 17px;
+  -webkit-transform: translate(0%, 5px);
+          transform: translate(0%, 5px);
+  background-color: #231815;
+}
+
+.Application_from .form_input {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .Application_from .form_input {
+    margin-bottom: 40px;
+  }
+  .Application_from .form_input .block {
+    margin-bottom: 20px;
+  }
+}
+
+.Application_from .form_input > input {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  letter-spacing: 4px;
+  outline-width: 0px none invert;
+  border: 1px solid #000000;
+  text-shadow: none;
+  -webkit-appearance: none;
+  -webkit-user-select: text;
+  outline-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.Application_from .form_input select.identity {
+  width: 110px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: -20px;
+  -webkit-appearance: none;
+  text-indent: 0.01px;
+  background-image: url("../img/icon/caret-down-solid.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position-x: 96%;
+  background-position-y: center;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+
+.Application_from .form_input select.identity option:nth-child(1) {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.Application_from .form_input select.identity option {
+  line-height: 30px;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+
+.Application_from .form_input select.area {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: -20px;
+  -webkit-appearance: none;
+  text-indent: 0.01px;
+  background-image: url("../img/icon/caret-down-solid.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position-x: 96%;
+  background-position-y: center;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+
+.Application_from .form_input select.area option:nth-child(1) {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.Application_from .form_input select.area option {
+  line-height: 30px;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+
+.Application_from .form_input img {
+  width: 100%;
+  border: 1px solid #000000;
+}
+
+@media screen and (max-width: 1200px) {
+  .Application_from .form_input img {
+    height: 40px;
+  }
+}
+
+.Application_from .form_input .icon {
+  width: 100px;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Application_from .form_input .icon i {
+  margin: 0px 2px;
+  padding: 7px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  background-color: #000000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.Application_from .form_input.two input:nth-child(1) {
+  margin-bottom: 40px;
+}
+
+.Application_from .form_input.identity_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Application_from .form_input.identity_area .identity {
+  margin-right: 40px;
+}
+
+.Application_from .form_input.identity_area input {
+  width: calc(100% - 150px);
+}
+
+@media screen and (max-width: 768px) {
+  .Application_from .form_input.identity_area input {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.Application_from .form_input > ul {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000000;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1200px) {
+  .Application_from .form_input > ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.Application_from .form_input > ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .Application_from .form_input > ul li {
+    margin-bottom: 20px;
+  }
+}
+
+.Application_from .form_input > ul li div {
+  min-width: 130px;
+  width: 130px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  padding-left: 10px;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .Application_from .form_input > ul li div {
+    margin-right: 10px;
+  }
+}
+
+.Application_from .form_input > ul li .run {
+  min-width: 160px;
+  width: 160px;
+}
+
+.Application_from .form_input > ul li .other {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 200px;
+}
+
+.Application_from .form_input > ul li .other span {
+  min-width: 50px;
+}
+
+.Application_from .dateInput {
+  position: relative;
+}
+
+.Application_from .dateInput input {
+  height: 40px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid black;
+  position: relative;
+}
+
+.Application_from .dateInput i {
+  font-size: 22px;
+  opacity: 0.6;
+  position: absolute;
+  right: 15px;
+  top: 8px;
+}
+
+.Application_from .dateInput .period {
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.Application_from .Privacy {
+  margin-bottom: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Application_from .Privacy p {
+  text-align: justify;
+  padding-left: 10px;
+  margin-top: -5px;
+}
+
+.StudentInformation_from .name {
+  font-size: 22px;
+  letter-spacing: 2px;
+  padding-bottom: 30px;
+}
+
+.StudentInformation_from .name > div {
+  min-width: 150px;
+  letter-spacing: 4px;
+  padding: 0px 0px 0px 20px;
+  position: relative;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.StudentInformation_from .name > div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 17px;
+  -webkit-transform: translate(0%, 5px);
+          transform: translate(0%, 5px);
+  background-color: #231815;
+}
+
+.StudentInformation_from .form_input {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .StudentInformation_from .form_input {
+    margin-bottom: 40px;
+  }
+  .StudentInformation_from .form_input .block {
+    margin-bottom: 20px;
+  }
+}
+
+.StudentInformation_from .form_input > input {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  letter-spacing: 4px;
+  outline-width: 0px none invert;
+  border: 1px solid #000000;
+  text-shadow: none;
+  -webkit-appearance: none;
+  -webkit-user-select: text;
+  outline-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.StudentInformation_from .form_input select.identity {
+  width: 110px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: -20px;
+  -webkit-appearance: none;
+  text-indent: 0.01px;
+  background-image: url("../img/icon/caret-down-solid.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position-x: 96%;
+  background-position-y: center;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+
+.StudentInformation_from .form_input select.identity option:nth-child(1) {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.StudentInformation_from .form_input select.identity option {
+  line-height: 30px;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+
+.StudentInformation_from .form_input select.area {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: -20px;
+  -webkit-appearance: none;
+  text-indent: 0.01px;
+  background-image: url("../img/icon/caret-down-solid.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position-x: 96%;
+  background-position-y: center;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+
+.StudentInformation_from .form_input select.area option:nth-child(1) {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.StudentInformation_from .form_input select.area option {
+  line-height: 30px;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+
+.StudentInformation_from .form_input select.grade {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: -20px;
+  -webkit-appearance: none;
+  text-indent: 0.01px;
+  background-image: url("../img/icon/caret-down-solid.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position-x: 96%;
+  background-position-y: center;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+
+.StudentInformation_from .form_input select.grade option:nth-child(1) {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.StudentInformation_from .form_input select.grade option {
+  line-height: 30px;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+
+.StudentInformation_from .form_input img {
+  width: 100%;
+  border: 1px solid #000000;
+}
+
+@media screen and (max-width: 1200px) {
+  .StudentInformation_from .form_input img {
+    height: 40px;
+  }
+}
+
+.StudentInformation_from .form_input .icon {
+  width: 100px;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.StudentInformation_from .form_input .icon i {
+  margin: 0px 2px;
+  padding: 7px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  background-color: #000000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.StudentInformation_from .form_input.two input:nth-child(1) {
+  margin-bottom: 40px;
+}
+
+.StudentInformation_from .form_input.identity_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.StudentInformation_from .form_input.identity_area .identity {
+  margin-right: 40px;
+}
+
+.StudentInformation_from .form_input.identity_area input {
+  width: calc(100% - 250px);
+}
+
+@media screen and (max-width: 768px) {
+  .StudentInformation_from .form_input.identity_area input {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.StudentInformation_from .form_input.identity_area button {
+  width: 210px;
+  height: 40px;
+  background-color: #231815;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .StudentInformation_from .form_input.identity_area button {
+    margin-top: 30px;
+  }
+}
+
+.StudentInformation_from .form_input > ul {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000000;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1200px) {
+  .StudentInformation_from .form_input > ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.StudentInformation_from .form_input > ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .StudentInformation_from .form_input > ul li {
+    margin-bottom: 20px;
+  }
+}
+
+.StudentInformation_from .form_input > ul li div {
+  min-width: 130px;
+  width: 130px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  padding-left: 10px;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .StudentInformation_from .form_input > ul li div {
+    margin-right: 10px;
+  }
+}
+
+.StudentInformation_from .form_input > ul li .run {
+  min-width: 160px;
+  width: 160px;
+}
+
+.StudentInformation_from .form_input > ul li .other {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 200px;
+}
+
+.StudentInformation_from .form_input > ul li .other span {
+  min-width: 50px;
+}
+
+.StudentInformation_from .form_input.school {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .StudentInformation_from .form_input.school {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.StudentInformation_from .form_input.school input {
+  width: calc(100% - 250px);
+}
+
+@media screen and (max-width: 768px) {
+  .StudentInformation_from .form_input.school input {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .StudentInformation_from .form_input.school select {
+    margin-right: 30px;
+  }
+}
+
+.StudentInformation_from .form_input.school .area {
+  width: 108px;
+  height: 40px;
+}
+
+.StudentInformation_from .form_input.school .grade {
+  width: 90px;
+  height: 40px;
+}
+
+.StudentInformation_from .dateInput {
+  position: relative;
+}
+
+.StudentInformation_from .dateInput input {
+  height: 40px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid black;
+  position: relative;
+}
+
+.StudentInformation_from .dateInput i {
+  font-size: 22px;
+  opacity: 0.6;
+  position: absolute;
+  right: 15px;
+  top: 8px;
+}
+
+.StudentInformation_from .dateInput .period {
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.StudentInformation_from .Privacy {
+  margin-bottom: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .StudentInformation_from .Privacy {
+    border-top: 1px solid #000000;
+    padding-top: 40px;
+  }
+}
+
+.StudentInformation_from .Privacy input {
+  -webkit-transform: translate(-30px, 42px);
+          transform: translate(-30px, 42px);
+}
+
+@media screen and (max-width: 768px) {
+  .StudentInformation_from .Privacy input {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+.StudentInformation_from .Privacy p {
+  width: 100%;
+  margin-left: -10px;
+  padding-top: 40px;
+  border-top: 1px solid #000000;
+  text-align: justify;
+  margin-top: -5px;
+}
+
+@media screen and (max-width: 768px) {
+  .StudentInformation_from .Privacy p {
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-left: 5px;
+    border-top: 0px solid #000000;
+  }
+}
+
+.StudentInformation_from .form_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .StudentInformation_from .form_btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.Misjudgment.name div {
+  color: #C5362D;
+}
+
+.Misjudgment.name div::before {
+  background-color: #C5362D;
+}
+
+.Misjudgment.form_input div {
+  position: relative;
+}
+
+.Misjudgment.form_input div::before {
+  content: '*未滿20歲';
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: 0;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  z-index: 5;
+  color: #C5362D;
+  letter-spacing: 5px;
+}
+
+.Misjudgment.form_input div input {
+  border: 2px solid #C5362D;
+  color: #C5362D;
 }
 /*# sourceMappingURL=21-Application-InsidePage.css.map */

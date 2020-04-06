@@ -1,6 +1,8 @@
 @import "./_variables.scss";
 @import "./_function.scss";
 
+
+// 重複性高的
 .title {
     display: flex;
     margin-bottom: 45px;
@@ -53,7 +55,6 @@
     }
 }
 
-
 .form_btn {
 
     @media screen and (max-width:1400px) {
@@ -101,28 +102,38 @@
             }
         }
     }
-}
+
+    button {
+        @include text_style($fs-16, $fw-700, center, 3px);
+        @include font_hover($bc-brown, $fc-white);
+        width: 220px;
+        padding: 10px 0px;
+        background-color: transparent;
+        margin-right: 20px;
+        border: 1px solid $black;
+        transition: 0.3s;
 
 
+        &:hover {
+            background-color: $bc-brown;
+        }
 
-.area {
+        &:nth-child(1) {
+            margin-right: 0px;
+        }
 
-    // .FileUpload {
-    //     width: 100%;
-    //     span {
-    //         height: 50px;
+        @media screen and (max-width:1200px) {
+            &:nth-child(1) {
+                width: calc(50% - 15px);
+                margin: 0px 15px 0px 0px;
+            }
 
-    //         &:nth-child(1) {
-    //             min-width: 70%;
-    //             background-color: #000000;
-    //         }
-
-    //         &:nth-last-child(1) {
-    //             min-width: 30%;
-    //             background-color: #000000;
-    //         }
-    //     }
-    // }
+            &:nth-child(2) {
+                width: calc(50% - 15px);
+                margin: 0px 0px 0px 15px;
+            }
+        }
+    }
 }
 
 .newitem {
@@ -502,5 +513,683 @@
         @media screen and (max-width:1400px) {
             margin: 0px 15px;
         }
+    }
+}
+
+// 重複性高的
+
+// 這別頁面修改
+.Application_from {
+
+    .name {
+        font-size: $fs-22;
+        letter-spacing: 2px;
+        padding-bottom: 30px;
+
+        &>div {
+            min-width: 150px;
+            letter-spacing: 4px;
+            padding: 0px 0px 0px 20px;
+            position: relative;
+            line-height: 24px;
+            font-size: $fs-18;
+            font-weight: $fw-700;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 8px;
+                height: 17px;
+                transform: translate(0%, 5px);
+                background-color: $bc-brown;
+            }
+        }
+    }
+
+    .form_input {
+        margin-bottom: 40px;
+
+        @media screen and (max-width:1200px) {
+            margin-bottom: 40px;
+
+            .block {
+                margin-bottom: 20px;
+            }
+        }
+
+        &>input {
+            width: 100%;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: $fs-14;
+            letter-spacing: 4px;
+            outline-width: 0px none invert;
+            border: 1px solid $br-black;
+            text-shadow: none;
+            -webkit-appearance: none;
+            -webkit-user-select: text;
+            outline-color: transparent;
+            box-shadow: none;
+        }
+
+        select {
+            &.identity {
+                width: 110px;
+                padding: 10px 20px;
+                border-radius: 5px;
+                margin-right: -20px;
+                -webkit-appearance: none;
+                text-indent: 0.01px;
+                background-image: url('../img/icon/caret-down-solid.svg');
+                background-size: 20px;
+                background-repeat: no-repeat;
+                background-position-x: 96%;
+                background-position-y: center;
+                font-size: $fs-14;
+                letter-spacing: 4px;
+
+                & option:nth-child(1) {
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+
+                option {
+                    line-height: 30px;
+                    width: 100%;
+                    padding: 10px 20px;
+                    font-size: $fs-14;
+                    letter-spacing: 4px;
+                }
+
+            }
+
+            &.area {
+                width: 100%;
+                padding: 10px 20px;
+                border-radius: 5px;
+                margin-right: -20px;
+                -webkit-appearance: none;
+                text-indent: 0.01px;
+                background-image: url('../img/icon/caret-down-solid.svg');
+                background-size: 20px;
+                background-repeat: no-repeat;
+                background-position-x: 96%;
+                background-position-y: center;
+                font-size: $fs-14;
+                letter-spacing: 4px;
+
+                & option:nth-child(1) {
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+
+                option {
+                    line-height: 30px;
+                    width: 100%;
+                    padding: 10px 20px;
+                    font-size: $fs-14;
+                    letter-spacing: 4px;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            border: 1px solid $br-black;
+
+            @media screen and (max-width:1200px) {
+                height: 40px;
+            }
+        }
+
+        .icon {
+            width: 100px;
+            font-size: $fs-18;
+            display: flex;
+            justify-content: space-around;
+
+            & i {
+                margin: 0px 2px;
+                padding: 7px;
+                border-radius: 50%;
+                color: $fc-white;
+                background-color: $bc-black;
+                align-items: center;
+                cursor: pointer;
+            }
+
+        }
+
+        &.two {
+            input {
+                &:nth-child(1) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+        &.identity_area {
+            display: flex;
+            flex-wrap: wrap;
+
+            .identity {
+                margin-right: 40px;
+            }
+
+            input {
+                width: calc(100% - 150px);
+
+                @media screen and (max-width:768px) {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+
+            }
+        }
+
+        &>ul {
+            padding-bottom: 20px;
+            border-bottom: 1px solid $br-black;
+            flex-wrap: wrap;
+
+
+            @media screen and (max-width:1200px) {
+                flex-wrap: wrap;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+
+                @media screen and (max-width:1200px) {
+                    // width: 50%;
+                    margin-bottom: 20px;
+                }
+
+                div {
+                    min-width: 130px;
+                    width: 130px;
+                    font-size: $fs-14;
+                    letter-spacing: 3px;
+                    padding-left: 10px;
+                    margin-right: 30px;
+
+                    @media screen and (max-width:768px) {
+                        margin-right: 10px;
+                    }
+                }
+
+                .run {
+                    min-width: 160px;
+                    width: 160px;
+                }
+
+                .other {
+                    display: flex;
+                    min-width: 200px;
+
+                    span {
+                        min-width: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    .dateInput {
+        position: relative;
+
+        input {
+            height: 40px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: 100%;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        i {
+            font-size: $fs-22;
+            opacity: 0.6;
+            position: absolute;
+            right: 15px;
+            top: 8px;
+        }
+
+        .period {
+            font-weight: bold;
+            margin-right: 25px;
+        }
+    }
+
+    .Privacy {
+        margin-bottom: 45px;
+        display: flex;
+
+        p {
+            text-align: justify;
+            padding-left: 10px;
+            margin-top: -5px;
+        }
+    }
+
+}
+
+.StudentInformation_from {
+
+    .name {
+        font-size: $fs-22;
+        letter-spacing: 2px;
+        padding-bottom: 30px;
+
+        &>div {
+            min-width: 150px;
+            letter-spacing: 4px;
+            padding: 0px 0px 0px 20px;
+            position: relative;
+            line-height: 24px;
+            font-size: $fs-18;
+            font-weight: $fw-700;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 8px;
+                height: 17px;
+                transform: translate(0%, 5px);
+                background-color: $bc-brown;
+            }
+        }
+    }
+
+    .form_input {
+        margin-bottom: 40px;
+
+        @media screen and (max-width:1200px) {
+            margin-bottom: 40px;
+
+            .block {
+                margin-bottom: 20px;
+            }
+        }
+
+        &>input {
+            width: 100%;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: $fs-14;
+            letter-spacing: 4px;
+            outline-width: 0px none invert;
+            border: 1px solid $br-black;
+            text-shadow: none;
+            -webkit-appearance: none;
+            -webkit-user-select: text;
+            outline-color: transparent;
+            box-shadow: none;
+        }
+
+        select {
+            &.identity {
+                width: 110px;
+                padding: 10px 20px;
+                border-radius: 5px;
+                margin-right: -20px;
+                -webkit-appearance: none;
+                text-indent: 0.01px;
+                background-image: url('../img/icon/caret-down-solid.svg');
+                background-size: 20px;
+                background-repeat: no-repeat;
+                background-position-x: 96%;
+                background-position-y: center;
+                font-size: $fs-14;
+                letter-spacing: 4px;
+
+                & option:nth-child(1) {
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+
+                option {
+                    line-height: 30px;
+                    width: 100%;
+                    padding: 10px 20px;
+                    font-size: $fs-14;
+                    letter-spacing: 4px;
+                }
+
+            }
+
+            &.area {
+                width: 100%;
+                padding: 10px 20px;
+                border-radius: 5px;
+                margin-right: -20px;
+                -webkit-appearance: none;
+                text-indent: 0.01px;
+                background-image: url('../img/icon/caret-down-solid.svg');
+                background-size: 20px;
+                background-repeat: no-repeat;
+                background-position-x: 96%;
+                background-position-y: center;
+                font-size: $fs-14;
+                letter-spacing: 4px;
+
+                & option:nth-child(1) {
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+
+                option {
+                    line-height: 30px;
+                    width: 100%;
+                    padding: 10px 20px;
+                    font-size: $fs-14;
+                    letter-spacing: 4px;
+                }
+            }
+
+            &.grade {
+                width: 100%;
+                padding: 10px 20px;
+                border-radius: 5px;
+                margin-right: -20px;
+                -webkit-appearance: none;
+                text-indent: 0.01px;
+                background-image: url('../img/icon/caret-down-solid.svg');
+                background-size: 20px;
+                background-repeat: no-repeat;
+                background-position-x: 96%;
+                background-position-y: center;
+                font-size: $fs-14;
+                letter-spacing: 4px;
+
+                & option:nth-child(1) {
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+
+                option {
+                    line-height: 30px;
+                    width: 100%;
+                    padding: 10px 20px;
+                    font-size: $fs-14;
+                    letter-spacing: 4px;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            border: 1px solid $br-black;
+
+            @media screen and (max-width:1200px) {
+                height: 40px;
+            }
+        }
+
+        .icon {
+            width: 100px;
+            font-size: $fs-18;
+            display: flex;
+            justify-content: space-around;
+
+            & i {
+                margin: 0px 2px;
+                padding: 7px;
+                border-radius: 50%;
+                color: $fc-white;
+                background-color: $bc-black;
+                align-items: center;
+                cursor: pointer;
+            }
+
+        }
+
+        &.two {
+            input {
+                &:nth-child(1) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+        &.identity_area {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .identity {
+                margin-right: 40px;
+            }
+
+            input {
+                width: calc(100% - 250px);
+
+                @media screen and (max-width:768px) {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+
+            }
+
+            button {
+                width: 210px;
+                height: 40px;
+                background-color: $brown;
+                color: $white;
+                font-size: $fs-14;
+                font-weight: $fw-600;
+                border: none;
+                border-radius: 5px;
+
+                @media screen and (max-width:768px) {
+                    margin-top: 30px;
+                }
+            }
+        }
+
+        &>ul {
+            padding-bottom: 20px;
+            border-bottom: 1px solid $br-black;
+            flex-wrap: wrap;
+
+
+            @media screen and (max-width:1200px) {
+                flex-wrap: wrap;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+
+                @media screen and (max-width:1200px) {
+                    // width: 50%;
+                    margin-bottom: 20px;
+                }
+
+                div {
+                    min-width: 130px;
+                    width: 130px;
+                    font-size: $fs-14;
+                    letter-spacing: 3px;
+                    padding-left: 10px;
+                    margin-right: 30px;
+
+                    @media screen and (max-width:768px) {
+                        margin-right: 10px;
+                    }
+                }
+
+                .run {
+                    min-width: 160px;
+                    width: 160px;
+                }
+
+                .other {
+                    display: flex;
+                    min-width: 200px;
+
+                    span {
+                        min-width: 50px;
+                    }
+                }
+            }
+        }
+
+        &.school {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            @media screen and (max-width:768px) {
+                justify-content: flex-start;
+            }
+
+            input {
+                width: calc(100% - 250px);
+
+                @media screen and (max-width:768px) {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+
+            }
+
+            select {
+                @media screen and (max-width:768px) {
+                    margin-right: 30px;
+                }
+            }
+
+            .area {
+                width: 108px;
+                height: 40px;
+            }
+
+            .grade {
+                width: 90px;
+                height: 40px;
+            }
+        }
+    }
+
+    .dateInput {
+        position: relative;
+
+        input {
+            height: 40px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: 100%;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        i {
+            font-size: $fs-22;
+            opacity: 0.6;
+            position: absolute;
+            right: 15px;
+            top: 8px;
+        }
+
+        .period {
+            font-weight: bold;
+            margin-right: 25px;
+        }
+    }
+
+    .Privacy {
+        margin-bottom: 45px;
+        display: flex;
+
+        @media screen and (max-width:768px) {
+            border-top: 1px solid $black;
+            padding-top: 40px;
+        }
+
+        input {
+            transform: translate(-30px, 42px);
+
+            @media screen and (max-width:768px) {
+                transform: translate(0px, 0px);
+            }
+
+        }
+
+        p {
+            width: 100%;
+            margin-left: -10px;
+            padding-top: 40px;
+            border-top: 1px solid $black;
+            text-align: justify;
+            margin-top: -5px;
+
+            @media screen and (max-width:768px) {
+                margin-left: 0px;
+                padding-top: 0px;
+                padding-left: 5px;
+                border-top: 0px solid $black;
+            }
+        }
+    }
+
+    .form_btn {
+        display: flex;
+        justify-content: flex-end;
+
+        @media screen and (max-width:768px) {
+            justify-content: center;
+        }
+    }
+}
+
+.StudentReadme_from {}
+
+// 這別頁面修改
+
+
+.Misjudgment {
+    &.name {
+        div {
+            color: $red;
+
+            &::before {
+                background-color: $red;
+            }
+        }
+    }
+
+    &.form_input {
+        div {
+            position: relative;
+
+            &::before {
+                content: '*未滿20歲';
+                height: 100%;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                right: 0;
+                transform: translateX(-50px);
+                z-index: 5;
+                color: $red;
+                letter-spacing: 5px;
+            }
+
+            input {
+                border: 2px solid $red;
+                color: $red;
+
+
+            }
+        }
+
     }
 }

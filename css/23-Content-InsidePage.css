@@ -230,6 +230,12 @@
           transform: translateY(-50%);
 }
 
+.Privacy .Privacy_title.mob .icon .fa-play {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: #231815;
+}
+
 .Privacy p {
   font-size: 14px;
   font-weight: 600;

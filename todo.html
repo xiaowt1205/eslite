@@ -1,87 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>todo</title>
 
     <style>
-        ul li{
+        ol {
+            display: flex;
+        }
+
+        ul {
+            width: 50%;
+        }
+
+        ul li {
             margin-bottom: 20px;
         }
 
-        a:visited{
+        a:visited {
             color: blue;
         }
     </style>
 </head>
+
 <body>
     <h3>現有頁面統計</h3>
-    <ul>
-        <li>index.html
-            <br>
-            <a href="./index.html" target="_block" >首頁</a>
-        </li>
-        <li>02-WebGuided.html
-            <br>
-            <a href="./02-WebGuided.html" target="_block" >網站導覽</a>
-        </li>
-        <li>03-NP-TeensTraining.html
-            <br>
-            <a href="./03-NP-TeensTraining.html" target="_block" >NP-青年培訓計畫</a>
-        </li>
-        <li>04-QP-ConditionSearch.html
-            <br>
-            <a href="./04-QP-ConditionSearch.html" target="_block" >QP-條件查詢</a>
-        </li>
-        <li>05-LP-AboutUs.html
-            <br>
-            <a href="./05-LP-AboutUs.html" target="_block" >LP-關於我們</a>
-        </li>
-        <li>06-LP-Question.html
-            <br>
-            <a href="./06-LP-Question.html" target="_block" >LP-常見問題</a>
-        </li>
-        <li>07-LP-News.html
-            <br>
-            <a href="./07-LP-News.html" target="_block" >LP-最新消息</a>
-        </li>
-        <li>08-LP-PhotoAlbum.html
-            <br>
-            <a href="./08-LP-PhotoAlbum.html" target="_block" >LP-相簿</a>
-        </li>
-        <li>09-LP-Video.html
-            <br>
-            <a href="./09-LP-Video.html" target="_block" >LP-影音</a>
-        </li>
-        <li>10-CP-Article-InsidePage-(top/bottom/left/right).html
-            <ul>
-                <li style="margin-bottom: 5px;"><a target="_block" href="./10-CP-Article-InsidePage-top.html">CP-圖(上)</a></li>
-                <li style="margin-bottom: 5px;"><a target="_block" href="./10-CP-Article-InsidePage-bottom.html">CP-圖(下)</a></li>
-                <li style="margin-bottom: 5px;"><a target="_block" href="./10-CP-Article-InsidePage-left.html">CP-圖(左)</a></li>
-                <li style="margin-bottom: 5px;"><a target="_block" href="./10-CP-Article-InsidePage-right.html">CP-圖(右)</a></li>
-            </ul>
-        </li>
-        <li>11-CP-PhotoAlbum-InsidePage.html
-            <br>
-            <a href="./11-CP-PhotoAlbum-InsidePage.html" target="_block" >CP-相簿內容頁</a>
-        </li>
-        <li>12-CP-Video-InsidePage.html
-            <br>
-            <a href="./12-CP-Video-InsidePage.html" target="_block" >CP-影音內容頁</a>
-        </li>
-        <li>13-CP-Table-InsidePage.html
-            <br>
-            <a href="./13-CP-Table-InsidePage.html" target="_block" >CP-表格內容頁</a>
-        </li>
-        <li>14-SP-ContactUs.html
-            <br>
-            <a href="./14-SP-ContactUs.html" target="_block" >SP-意見信箱 聯絡我們</a>
-        </li>
-        <li>InsidePagetemplate.html
-            <br>
-            <a href="./InsidePagetemplate.html" target="_block" >內頁樣板</a>
-        </li>
-    </ul>
+    <ol>
+
+
+        <ul>
+            <li>index.html
+                <br>
+                <a href="./index.html" target="_block">首頁</a>
+            </li>
+            <li>02-WebGuided.html
+                <br>
+                <a href="./02-WebGuided.html" target="_block">網站導覽</a>
+            </li>
+            <li>03-NP-TeensTraining.html
+                <br>
+                <a href="./03-NP-TeensTraining.html" target="_block">NP-青年培訓計畫</a>
+            </li>
+            <li>04-QP-ConditionSearch.html
+                <br>
+                <a href="./04-QP-ConditionSearch.html" target="_block">QP-條件查詢</a>
+            </li>
+            <li>05-LP-AboutUs.html
+                <br>
+                <a href="./05-LP-AboutUs.html" target="_block">LP-關於我們</a>
+            </li>
+            <li>06-LP-Question.html
+                <br>
+                <a href="./06-LP-Question.html" target="_block">LP-常見問題</a>
+            </li>
+            <li>07-LP-News.html
+                <br>
+                <a href="./07-LP-News.html" target="_block">LP-最新消息</a>
+            </li>
+            <li>08-LP-PhotoAlbum.html
+                <br>
+                <a href="./08-LP-PhotoAlbum.html" target="_block">LP-相簿</a>
+            </li>
+            <li>09-LP-Video.html
+                <br>
+                <a href="./09-LP-Video.html" target="_block">LP-影音</a>
+            </li>
+            <li>10-CP-Article-InsidePage-(top/bottom/left/right).html
+                <ul>
+                    <li style="margin-bottom: 5px;"><a target="_block"
+                            href="./10-CP-Article-InsidePage-top.html">CP-圖(上)</a></li>
+                    <li style="margin-bottom: 5px;"><a target="_block"
+                            href="./10-CP-Article-InsidePage-bottom.html">CP-圖(下)</a></li>
+                    <li style="margin-bottom: 5px;"><a target="_block"
+                            href="./10-CP-Article-InsidePage-left.html">CP-圖(左)</a></li>
+                    <li style="margin-bottom: 5px;"><a target="_block"
+                            href="./10-CP-Article-InsidePage-right.html">CP-圖(右)</a></li>
+                </ul>
+            </li>
+            <li>11-CP-PhotoAlbum-InsidePage.html
+                <br>
+                <a href="./11-CP-PhotoAlbum-InsidePage.html" target="_block">CP-相簿內容頁</a>
+            </li>
+            <li>12-CP-Video-InsidePage.html
+                <br>
+                <a href="./12-CP-Video-InsidePage.html" target="_block">CP-影音內容頁</a>
+            </li>
+            <li>13-CP-Table-InsidePage.html
+                <br>
+                <a href="./13-CP-Table-InsidePage.html" target="_block">CP-表格內容頁</a>
+            </li>
+            <li>14-SP-ContactUs.html
+                <br>
+                <a href="./14-SP-ContactUs.html" target="_block">SP-意見信箱 聯絡我們</a>
+            </li>
+            <li>InsidePagetemplate.html
+                <br>
+                <a href="./InsidePagetemplate.html" target="_block">內頁樣板</a>
+            </li>
+        </ul>
+        <ul>
+            <li>21-Application-InsidePage.html
+                <br>
+                <br>
+                <ul>
+                    <li>21-Application-InsidePage-0.html
+                        <br>
+                        <a href="./21-Application-InsidePage-0.html" target="_block">SP-意見信箱 聯絡我們</a>
+                    </li>
+                    <li>21-Application-InsidePage-0-select.html
+                        <br>
+                        <a href="./21-Application-InsidePage-0-select.html" target="_block">SP-意見信箱 聯絡我們</a>
+                    </li>
+                    <li>21-Application-InsidePage-1-StudentInformation.html
+                        <br>
+                        <a href="./21-Application-InsidePage-1-StudentInformation.html" target="_block">SP-意見信箱 聯絡我們</a>
+                    </li>
+                    <li>21-Application-InsidePage-1-StudentReadme_from.html
+                        <br>
+                        <!-- <a href="./21-Application-InsidePage-1-StudentReadme_from.html" target="_block">SP-意見信箱 聯絡我們</a> -->
+                    </li>
+                    <li>21-Application-InsidePage-2.html
+                        <br>
+                        <a href="./21-Application-InsidePage-2.html" target="_block">SP-意見信箱 聯絡我們</a>
+                    </li>
+                    <li>21-Application-InsidePage-3.html
+                        <br>
+                        <a href="./21-Application-InsidePage-3.html" target="_block">SP-意見信箱 聯絡我們</a>
+                    </li>
+                    <li>21-Application-InsidePage-4.html
+                        <br>
+                        <a href="./21-Application-InsidePage-4.html" target="_block">SP-意見信箱 聯絡我們</a>
+                    </li>
+                    <li>21-Application-InsidePage-5.html
+                        <br>
+                        <a href="./21-Application-InsidePage-5.html" target="_block">SP-意見信箱 聯絡我們</a>
+                    </li>
+                    <li>21-Application-InsidePage-6.html
+                        <br>
+                        <a href="./21-Application-InsidePage-6.html" target="_block">SP-意見信箱 聯絡我們</a>
+                    </li>
+                </ul>
+            </li>
+            <li>22-Form-InsidePage.html
+                <br>
+                <a href="./22-Form-InsidePage.html" target="_block">CP-影音內容頁</a>
+                <ul>
+                    <li>22-Form-InsidePage-Reply.html
+                        <br>
+                        <a href="./22-Form-InsidePage-Reply.html" target="_block">SP-意見信箱 聯絡我們</a>
+                    </li>
+                    <li>22-Form-InsidePage-Description.html
+                        <br>
+                        <a href="./22-Form-InsidePage-Description.html" target="_block">SP-意見信箱 聯絡我們</a>
+                    </li>
+                </ul>
+            </li>
+            <li>23-Content-InsidePage.html
+                <br>
+                <a href="./23-Content-InsidePage.html" target="_block">CP-表格內容頁</a>
+            </li>
+            <li>24-SignIn-InsidePage.html
+                <br>
+                <br>
+                <ul>
+                    <li>24-SignIn-InsidePage-login.html
+                        <br>
+                        <a href="./24-SignIn-InsidePage-login.html" target="_block">SP-意見信箱 聯絡我們</a>
+                    </li>
+                    <li>24-SignIn-InsidePage-forget.html
+                        <br>
+                        <a href="./24-SignIn-InsidePage-forget.html" target="_block">SP-意見信箱 聯絡我們</a>
+                    </li>
+                </ul>
+
+            </li>
+            <li>25-Delivery-InsidePage.html
+                <br>
+                <!-- <a href="./25-Delivery-InsidePage.html" target="_block">內頁樣板</a> -->
+            </li>
+        </ul>
+    </ol>
 </body>
+
 </html>
