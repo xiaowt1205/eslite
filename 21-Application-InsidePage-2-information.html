@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <!-- page css  -->
     <link rel="stylesheet" href="./css/InsidePagetemplate.css">
-    <link rel="stylesheet" href="./css/25-Delivery-InsidePage.css">
+    <link rel="stylesheet" href="./css/21-Application-InsidePage.css">
     <style>
 
 
@@ -830,245 +830,242 @@
                 <!-- 平板版的title結束 -->
 
                 <!-- 內頁起點 -->
-                <div class="Delivery">
-                    <div class="d-flex search">
-                        <div class="col-12">
-                            <ul class="title">
-                                <li>
-                                    <div class="icon"></div>
-                                </li>
-                                <li>篩選條件</li>
-                            </ul>
+                <div class="from">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                role="tab" aria-controls="pills-home" aria-selected="true">申請說明</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                role="tab" aria-controls="pills-profile" aria-selected="false">書籍申請系統</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab">
+                            <p class="text">
+                                只要您有空間妥善放置書籍，願為推廣閱讀盡一份心力，並以非營利為前提，不論是學校、部落、獄所、圖書館、社福單位或在地協會…等，都歡迎您透過下列的申請流程，選擇您需求的書籍箱數，經審核通過後，將依您的需求進行配送。（學校請統一以「校」為申請單位，若以班級申請將不受理。若您申請後未接到電子郵件回覆，請直接和我們聯繫。聯絡專線：02-6636
+                                9888）
+                            </p>
+                            <p class="text">
+                                申請的書籍將採「綜合類別」裝箱，我們會依照申請單位屬性的不同進行類別調整，以提供第一線申請單位更豐富多樣的閱讀資源，不論大朋友、小朋友都可以從箱中找到喜愛的書籍，一起徜徉書海之中，讓閱讀不設限，享受閱讀新樂趣！
+                            </p>
+                            <div class="col-12  form_btn px-0">
+                                <button>書如何申請</button>
+                            </div>
                         </div>
-                        <div class="col-xl-2 col-12 name">
-                            <div>單位名稱</div>
-                        </div>
-                        <div class="col-xl-9 col-12 form_input">
-                            <input type="text" name="phone" placeholder="">
-                        </div>
-                        <div class="col-xl-2 col-12 name">
-                            <div>單位屬性</div>
-                        </div>
-                        <div class="col-xl-9 col-12 form_input">
-                            <ul class="d-flex school">
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>國小</div>
-                                </li>
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>國中</div>
-                                </li>
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>高中職</div>
-                                </li>
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>民間團體</div>
-                                </li>
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>政府單位</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-xl-2 col-12 name">
-                            <div>類別</div>
-                        </div>
-                        <div class="col-xl-9 col-12 form_input">
-                            <ul class="d-flex Category">
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>一般</div>
-                                </li>
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>沿線</div>
-                                </li>
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>長期</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-xl-2 col-12 name">
-                            <div>狀態</div>
-                        </div>
-                        <div class="col-xl-9 col-12 form_input">
-                            <ul class="d-flex Delivery_status">
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>處理中(待寄送)</div>
-                                </li>
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>配送中(部分寄出)</div>
-                                </li>
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>已結案</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-xl-11 col-12 form_btn">
-                            <button>查詢</button>
-                            <div></div>
-                        </div>
-                    </div>
-                    <div class="d-flex Distribution_report">
-                        <div class="col-xl-11 col-12 form_btn">
-                            <button>取消</button>
-                            <button>儲存</button>
-                            <button class="Export">配送報表匯出</button>
-                        </div>
-                        <div class="col-xl-11 col-12 Delivery_Form">
-                            <ol>
-                                <ul>
-                                    <li class="date">
-                                        <span>標題</span>
-                                        <input type="text" name="phone" placeholder="">
-                                    </li>
-                                    <li class="date">
-                                        <span>預計配送日</span>
-                                        <input type="text" name="phone" placeholder="">
-                                    </li>
-                                    <li>
-                                        <span>預計配送箱數</span>
-                                        <input type="text" name="phone" placeholder="">
-                                    </li>
-                                    <li>
-                                        <span>預設狀態</span>
-                                        <select class="grade">
-                                            <option selected="true">未鎖定</option>
-                                            <option>處理中</option>
-                                            <option>配送中</option>
-                                            <option>已結案</option>
-                                        </select>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>目前已分類箱數：100</li>
-                                    <li>已分配本數：100</li>
-                                </ul>
-                            </ol>
-                            <table class="rwd-table">
-                                <thead>
-                                    <tr>
-                                        <th class="click">
-                                            <div>
-                                                <span>全選</span>
-                                            </div>
-                                        </th>
-                                        <th class="data">
-                                            <div>
-                                                <span>申請</span>
-                                                <span>日期</span>
-                                            </div>
-                                        </th>
-                                        <th class="status">
-                                            <div>
-                                                <span>狀態</span>
-                                            </div>
-                                        </th>
-                                        <th class="unit">
-                                            <div>
-                                                <span>申請單位</span>
-                                            </div>
-                                        </th>
-                                        <th class="Remarks">
-                                            <div>
-                                                <span>基金會備註</span>
-                                            </div>
-                                        </th>
-                                        <th class="demand">
-                                            <div>
-                                                <span>需求</span>
-                                                <span>箱數</span>
-                                            </div>
-                                        </th>
-                                        <th class="Deliverybox">
-                                            <div>
-                                                <span>配送</span>
-                                                <span>箱數</span>
-                                            </div>
-                                        </th>
-                                        <th class="Deliverybook">
-                                            <div>
-                                                <span>配送</span>
-                                                <span>本數</span>
-                                            </div>
-                                        </th>
-                                        <th class="Remaining">
-                                            <div>
-                                                <span>剩餘</span>
-                                                <span>箱數</span>
-                                            </div>
-                                        </th>
-                                        <th class="accumulation">
-                                            <div>
-                                                <span>累積</span>
-                                                <span>配送本數</span>
-                                            </div>
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td data-th="全選" class="click_area">
-                                            <div>
-                                                <input type="checkbox" id="myCheck">
-                                            </div>
-                                        </td>
-                                        <td data-th="申請日期" class="data_area">
-                                            <div>
-                                                <span>2019</span>
-                                                <span>12/11</span>
-                                            </div>
-                                        </td>
-                                        <td data-th="狀態">
-                                            <div>
-                                                <select id="">
-                                                    <option value="">處理中(待寄送)</option>
-                                                    <option value="">配送中(部分寄出)</option>
-                                                    <option value="">已結案</option>
-                                                </select>
-                                            </div>
-                                        </td>
-                                        <td data-th="申請單位">
-                                            <div>
-                                                <span>OOe國小</span>
-                                            </div>
-                                        </td>
-                                        <td data-th="基金會備註">
-                                            <div>
-                                                <span>
-                                                    全社區書可
-                                                </span>
-                                            </div>
-                                        </td>
-                                        <td data-th="需求箱數">
-                                            <div>
-                                                <input type="text">
-                                            </div>
-                                        </td>
-                                        <td data-th="配送箱數">
-                                            <div>
-                                                <input type="text">
-                                            </div>
-                                        </td>
-                                        <td data-th="配送本數">
-                                            <div>
-                                                <input type="text">
-                                            </div>
-                                        </td>
-                                        <td data-th="剩餘箱數">
-                                            <div>
-                                                <span>1</span>
-                                            </div>
-                                        </td>
-                                        <td data-th="累積配送本數">
-                                            <div>
-                                                <span>360000</span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">
+                            <div class="row justify-content-start">
+                                <div class="col-xl-2 col-12 name Editor">
+                                    <div>輸入單位統編</div>
+                                </div>
+                                <div class="col-xl-9 col-12 form_input identity_area">
+                                    <input type="tel" name="tel" placeholder="">
+                                    <button>查詢</button>
+                                </div>
+                            </div>
+                            <form action="" class="Information_from row justify-content-start">
+                                <div class="col-12">
+                                    <ul class="title">
+                                        <li>
+                                            <div class="icon"></div>
+                                        </li>
+                                        <li>基本資料</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xl-3 col-12 name need">
+                                    <div>統一編號</div>
+                                </div>
+                                <div class="col-xl-8 col-12 form_input">
+                                    <input type="text" name="name" placeholder="">
+                                </div>
+                                <div class="col-xl-3 col-12 name need">
+                                    <div>單位名稱</div>
+                                </div>
+                                <div class="col-xl-8 col-12 form_input ">
+                                    <input type="text" name="name" placeholder="">
+                                </div>
+                                <div class="col-xl-3 col-12 name need">
+                                    <div>申請單位電話</div>
+                                </div>
+                                <div class="col-xl-8 col-12 form_input">
+                                    <input type="text" name="name" placeholder="">
+                                </div>
+                                <div class="col-xl-3 col-12 name">
+                                    <div>單位地址</div>
+                                </div>
+                                <div class="col-xl-8 col-12 form_input address">
+                                    <select class="area">
+                                        <option selected="true">基隆市</option>
+                                        <option>臺北市</option>
+                                        <option>新北市</option>
+                                        <option>桃園市</option>
+                                        <option>臺中市</option>
+                                        <option>臺南市</option>
+                                        <option>高雄市</option>
+                                        <option>新竹縣</option>
+                                        <option>苗栗縣</option>
+                                        <option>彰化縣</option>
+                                        <option>南投縣</option>
+                                        <option>雲林縣</option>
+                                        <option>嘉義縣</option>
+                                        <option>屏東縣</option>
+                                        <option>宜蘭縣</option>
+                                        <option>花蓮縣</option>
+                                        <option>臺東縣</option>
+                                        <option>澎湖縣</option>
+                                        <option>金門縣</option>
+                                        <option>連江縣</option>
+                                        <option>新竹市</option>
+                                    </select>
+                                    <input type="text" name="phone" placeholder="">
+                                </div>
+                                <div class="col-xl-3 col-12 name need">
+                                    <div>單位備註</div>
+                                </div>
+                                <div class="col-xl-8 col-12 form_input">
+                                    <input type="text" name="phone  need" placeholder="如您為該單位的附屬機構/部門/團體，請於備註欄說明">
+                                </div>
+                                <div class="col-xl-3 col-12 name">
+                                    <div>聯絡人名稱</div>
+                                </div>
+                                <div class="col-xl-8 col-12 form_input">
+                                    <input type="tel" name="tel" placeholder="">
+                                </div>
+                                <div class="col-xl-3 col-12 name">
+                                    <div>聯絡人職稱</div>
+                                </div>
+                                <div class="col-xl-8 col-12 form_input">
+                                    <input type="tel" name="tel" placeholder="">
+                                </div>
+                                <div class="col-xl-3 col-12 name">
+                                    <div>聯絡人電話(日)</div>
+                                </div>
+                                <div class="col-xl-8 col-12 form_input">
+                                    <input type="text" name="phone" placeholder="">
+                                </div>
+                                <div class="col-xl-3 col-12 name">
+                                    <div>聯絡人手機</div>
+                                </div>
+                                <div class="col-xl-8 col-12 form_input">
+                                    <input type="text" name="phone" placeholder="ex.0988123123">
+                                </div>
+                                <div class="col-xl-3 col-12 name">
+                                    <div>聯絡人信箱</div>
+                                </div>
+                                <div class="col-xl-8 col-12 form_input Clear_content">
+                                    <input type="text" name="phone" placeholder="">
+                                    <button>清除</button>
+                                </div>
+                                <div class="col-xl-3 col-12 name">
+                                    <div>申請單位屬性</div>
+                                </div>
+                                <div class="col-xl-8 col-12 form_input">
+                                    <ul class="d-flex Application_radio">
+                                        <li><input type="radio" checked="checked" name="class_number" value="" />
+                                            <div>國小</div>
+                                        </li>
+                                        <li><input type="radio" checked="checked" name="class_number" value="" />
+                                            <div>國中</div>
+                                        </li>
+                                        <li><input type="radio" checked="checked" name="class_number" value="" />
+                                            <div>高中職</div>
+                                        </li>
+                                        <li><input type="radio" checked="checked" name="class_number" value="" />
+                                            <div>民間團體</div>
+                                        </li>
+                                        <li><input type="radio" checked="checked" name="class_number" value="" />
+                                            <div>政府單位</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xl-3 col-12 name">
+                                    <div>單位服務人數</div>
+                                </div>
+                                <div class="col-xl-8 col-12 form_input">
+                                    <input type="text" name="phone" placeholder="">
+                                </div>
+                                <div class="col-xl-3 col-12 name">
+                                    <div>讀者類型</div>
+                                </div>
+                                <div class="col-xl-8 col-12 form_input">
+                                    <ul class="d-flex Reader_radio">
+                                        <li><input type="radio" checked="checked" name="class_number" value="" />
+                                            <div>六歲以下幼兒</div>
+                                        </li>
+                                        <li><input type="radio" checked="checked" name="class_number" value="" />
+                                            <div>國小</div>
+                                        </li>
+                                        <li><input type="radio" checked="checked" name="class_number" value="" />
+                                            <div>國中</div>
+                                        </li>
+                                        <li><input type="radio" checked="checked" name="class_number" value="" />
+                                            <div>高中職</div>
+                                        </li>
+                                        <li><input type="radio" checked="checked" name="class_number" value="" />
+                                            <div>大學及研究生</div>
+                                        </li>
+                                        <li><input type="radio" checked="checked" name="class_number" value="" />
+                                            <div>社會人士</div>
+                                        </li>
+                                        <li><input type="radio" checked="checked" name="class_number" value="" />
+                                            <div>外籍人士</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12">
+                                    <ul class="title">
+                                        <li>
+                                            <div class="icon"></div>
+                                        </li>
+                                        <li>需求說明及箱數</li>
+                                    </ul>
+                                    <ul class="text_title">
+                                        <li>
+                                            <p>申請以「箱」為申請單位，每箱約有40-55本書（因開本大小而異）。</p>
+                                            <p>為讓書籍更有效使用與送達，單次申請箱數上限為5箱。</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xl-3 col-12 name need">
+                                    <div>需要幾箱</div>
+                                </div>
+                                <div class="col-xl-8 col-12 form_input">
+                                    <input type="text" name="name" placeholder="單次申請箱數上限為5箱">
+                                </div>
+                                <div class="col-xl-3 col-12 name need">
+                                    <div class="two">
+                                        <div>本次申請書籍</div>
+                                        <div>本次申請書籍</div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-8 col-12 form_input">
+                                    <input type="text" name="name" placeholder="">
+                                </div>
+                                <div class="col-xl-3 col-12 name need">
+                                    <div>是否有其他需求</div>
+                                </div>
+                                <div class="col-xl-8 col-12 form_input">
+                                    <textarea name="" id=""></textarea>
+                                </div>
+
+                                <div class="col-xl-3 col-12">
+                                </div>
+                                <div class="col-xl-8 col-12  form_btn">
+                                    <button>
+                                        取消
+                                    </button>
+                                    <button>
+                                        送出
+                                    </button>
+                                </div>
+
+                            </form>
                         </div>
                     </div>
                 </div>
-
-
                 <!-- 內頁終點 -->
             </section>
         </div>
