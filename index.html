@@ -58,9 +58,15 @@
                                     <i class="fas fa-info"></i>
                                 </div>
                             </a>
-                            <a href="">
-                                <i class="fas fa-search"></i>
+                            <!-- 04/08 新增功能 頭 -->
+                            <a class="search_box">
+                                <i class="fas fa-search search_icon"></i>
+                                <div class="search">
+                                    <input type="text">
+                                    <i class="fas fa-search"></i>
+                                </div>
                             </a>
+                            <!-- 04/08 新增功能 尾 -->
                         </li>
                     </ul>
                     <div class="menu-area d-flex px-0 justify-content-center align-items-start">
@@ -959,7 +965,7 @@
                             <i class="fas fa-info"></i>
                         </div>
                     </a>
-                    <a class="modal-menu-search d-flex align-items-center flex-row-reverse"   href="#">
+                    <a class="modal-menu-search d-flex align-items-center flex-row-reverse" href="#">
                         <i class="fas fa-search"></i>
                         <input type="text">
                     </a>
@@ -1465,9 +1471,13 @@
         }
 
     </script>
+    <!-- 04/08 新增功能 頭 -->
     <script>
-        
+        $('.search_icon').click(function () {
+            $('.search_box').toggleClass('active')
+        })
     </script>
+    <!-- 04/08 新增功能 尾 -->
     <script>
         $('.aside-btn-title').click(function () {
             $(this).toggleClass('active')

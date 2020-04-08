@@ -437,6 +437,59 @@ header #topline nav ul li a .circle .fa-info {
   font-size: 14px;
 }
 
+header #topline nav ul li .search_box {
+  position: relative;
+}
+
+header #topline nav ul li .search_box .search {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  width: 0px;
+  height: 40px;
+  background-color: #6a4945;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header #topline nav ul li .search_box .search input {
+  width: 0px;
+  height: 30px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border: 0px solid;
+}
+
+header #topline nav ul li .search_box .search i {
+  opacity: 0;
+  padding: 0px 5px 0px 10px;
+  color: #FFFFFF;
+}
+
+header #topline nav ul li .search_box.active .search {
+  width: 215px;
+  padding: 5px;
+}
+
+header #topline nav ul li .search_box.active .search input {
+  width: 165px;
+}
+
+header #topline nav ul li .search_box.active .search i {
+  opacity: 1;
+}
+
 @media (max-width: 1400px) {
   header #topline nav ul li.nav-icon {
     display: none;

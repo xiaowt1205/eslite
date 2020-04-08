@@ -52,7 +52,7 @@
 .signin_title li:nth-child(3) {
   font-size: 14px;
   font-weight: 700;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
 }
@@ -64,7 +64,7 @@
 }
 
 .login {
-  max-width: 800px;
+  max-width: 690px;
   padding: 0px 15px;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .login .content {
-  border-radius: 15px;
+  border-radius: 5px;
   border: 1px solid #000000;
   padding: 40px 50px;
   margin-bottom: 30px;
@@ -183,6 +183,8 @@
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  letter-spacing: 3px;
+  color: #4D4D4D;
 }
 
 @media screen and (max-width: 768px) {
@@ -283,7 +285,7 @@
 }
 
 .forget {
-  max-width: 800px;
+  max-width: 690px;
   padding: 0px 15px;
 }
 
@@ -294,7 +296,7 @@
 }
 
 .forget .content {
-  border-radius: 15px;
+  border-radius: 5px;
   border: 1px solid #000000;
   padding: 40px 50px;
   margin-bottom: 30px;

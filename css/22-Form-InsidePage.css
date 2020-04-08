@@ -112,7 +112,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .from .activity .news_list .news .area {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -191,7 +191,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .from .activity .news_list .news .area.datearea {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -200,7 +200,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .from .activity .news_list .news .area.classarea {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -867,6 +867,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #231815;
+  color: #FFFFFF;
 }
 
 @media (max-width: 1024px) {
@@ -921,7 +923,7 @@
 }
 
 .Reply .activity .news_list > :nth-child(2n) {
-  background-color: #80808060;
+  background-color: #23181510;
 }
 
 .Reply .activity .news_list > :nth-last-child(1) {
@@ -968,7 +970,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .Reply .activity .news_list .news .area {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1021,6 +1023,7 @@
 }
 
 .Reply .activity .news_list .news .area.activityarea {
+  padding: 0px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1047,6 +1050,10 @@
   }
 }
 
+.Reply .activity .news_list .news .area.datearea {
+  color: #808080;
+}
+
 @media screen and (max-width: 768px) {
   .Reply .activity .news_list .news .area.datearea {
     -webkit-box-ordinal-group: 4;
@@ -1067,6 +1074,9 @@
     padding: 0px 20px;
     border-left: 2px solid #808080;
     border-right: 2px solid #808080;
+  }
+  .Reply .activity .news_list .news .area.classarea span:nth-child(2) {
+    padding-left: 0px;
   }
 }
 
@@ -1092,6 +1102,10 @@
             order: 4;
     margin-bottom: 10px;
   }
+}
+
+.Reply .activity .news_list .news .area.Ingarea {
+  color: #938075;
 }
 
 .Reply .activity .news_list .news .area.Ingarea span:nth-child(2)::after {
@@ -1279,6 +1293,7 @@
   resize: none;
   font-size: 14px;
   letter-spacing: 4px;
+  border: 1px solid #000000;
 }
 
 .Sign_form select {
@@ -1295,6 +1310,7 @@
   background-position-y: center;
   font-size: 14px;
   letter-spacing: 4px;
+  border: 1px solid #000000;
 }
 
 .Sign_form select option:nth-child(1) {
