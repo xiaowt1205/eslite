@@ -1886,34 +1886,52 @@
 }
 
 .file_block {
-    .files {
-        // input[type="file"] {
-        //     width: 50px;
-        //     height: 30px;
-        //     background-color: #000000;
-        // }
-    }
-
     li {
         width: 100%;
         margin-bottom: 15px;
 
-        label {
-            width: 100%;
-            height: 30px;
-            display: flex;
-            justify-content: space-between;
-            margin: 0;
 
-            div {
-                width: calc(100% - 250px);
-                // background-color: $black;
-            }
-
-            span {
+        &.files {
+            .fileName{
+                width: calc(100% - 210px);
                 height: 30px;
-                width: 190px;
-                // background-color: $black;
+                border: 1px solid $pure-gray;
+                border-radius: 5px;
+                margin-right: 20px;
+                padding: 5px 10px;
+                font-size: $fs-12;
+            }
+            .inputBox{
+                width:190px;
+                height: 30px;
+                background-color: transparent;
+                border: 1px solid $pure-gray;
+                border-radius: 5px;
+                position: relative;
+
+                .inputText{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    font-size: $fs-14;
+                    font-weight: 900;
+                    color: $black;
+                    letter-spacing: 2px;
+                    transition: .3s;
+                }
+
+                input{
+                    opacity: 0;
+                }
+
+                &:hover{
+                    background-color: black;
+
+                    .inputText{
+                        color: $white;
+                    }
+                }
             }
         }
     }

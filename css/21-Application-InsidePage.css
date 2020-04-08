@@ -2148,25 +2148,49 @@
   margin-bottom: 15px;
 }
 
-.file_block li label {
-  width: 100%;
+.file_block li.files .fileName {
+  width: calc(100% - 210px);
   height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0;
+  border: 1px solid #4D4D4D;
+  border-radius: 5px;
+  margin-right: 20px;
+  padding: 5px 10px;
+  font-size: 12px;
 }
 
-.file_block li label div {
-  width: calc(100% - 250px);
-}
-
-.file_block li label span {
-  height: 30px;
+.file_block li.files .inputBox {
   width: 190px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #4D4D4D;
+  border-radius: 5px;
+  position: relative;
+}
+
+.file_block li.files .inputBox .inputText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 14px;
+  font-weight: 900;
+  color: #000000;
+  letter-spacing: 2px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.file_block li.files .inputBox input {
+  opacity: 0;
+}
+
+.file_block li.files .inputBox:hover {
+  background-color: black;
+}
+
+.file_block li.files .inputBox:hover .inputText {
+  color: #FFFFFF;
 }
 
 .Misjudgment.name div {
