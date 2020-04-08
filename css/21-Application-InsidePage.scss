@@ -57,352 +57,6 @@
     }
 }
 
-.newitem {
-    max-width: 800px;
-    padding: 0px 15px;
-
-    @media screen and (max-width:768px) {
-        padding: 0px;
-    }
-
-    .teacher {
-        padding: 0px 15px;
-
-        .title {
-            margin: 0px -15px 45px;
-        }
-
-        .name {
-            font-size: $fs-18;
-            letter-spacing: 2px;
-            padding-bottom: 30px;
-
-            &>div {
-                // min-width: 150px;
-                letter-spacing: 4px;
-                padding: 0px 0px 0px 20px;
-                position: relative;
-                line-height: 24px;
-                font-weight: 900;
-                display: flex;
-                flex-direction: column;
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 8px;
-                    height: 17px;
-                    transform: translate(0%, 5px);
-                    background-color: $bc-brown;
-                }
-            }
-        }
-
-        .form_input {
-
-            margin-bottom: 40px;
-
-            @media (max-width:992px) {
-                margin-bottom: 30px;
-            }
-
-            &>input {
-                width: 100%;
-                height: 40px;
-                padding: 10px 20px;
-                border-radius: 5px;
-                outline-width: 0px none invert;
-                border: 1px solid $br-black;
-                text-shadow: none;
-                -webkit-appearance: none;
-                -webkit-user-select: text;
-                outline-color: transparent;
-                letter-spacing: 4px;
-            }
-        }
-
-    }
-
-    .student {
-        padding: 0px 15px;
-
-        .title {
-            margin: 0px -15px 45px;
-        }
-
-        .content {
-            @media screen and (max-width:768px) {
-                padding: 40px 20px 15px;
-            }
-        }
-    }
-
-    .content {
-        position: relative;
-        border-radius: 15px;
-        border: 1px solid $black;
-        padding: 50px;
-        margin-bottom: 30px;
-
-        @media screen and (max-width:1400px) {
-            display: flex;
-            flex-direction: column;
-        }
-
-        @media screen and (max-width:768px) {
-            padding: 15px;
-        }
-
-        .name {
-            font-size: $fs-18;
-            letter-spacing: 2px;
-            padding-bottom: 30px;
-
-            &>div {
-                // min-width: 150px;
-                letter-spacing: 4px;
-                padding: 0px 0px 0px 20px;
-                position: relative;
-                line-height: 24px;
-                font-weight: 900;
-
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    top: 50%;
-                    left: 0;
-                    width: 8px;
-                    height: 17px;
-                    transform: translate(0%, -50%);
-                    background-color: $bc-brown;
-                }
-            }
-        }
-
-        .add,
-        .del {
-            background-color: $black;
-            color: $white;
-        }
-
-        .form_input {
-
-            margin-bottom: 40px;
-
-            @media (max-width:992px) {
-                margin-bottom: 30px;
-            }
-
-            &>input {
-                width: 100%;
-                height: 40px;
-                padding: 10px 20px;
-                border-radius: 5px;
-                outline-width: 0px none invert;
-                border: 1px solid $br-black;
-                text-shadow: none;
-                -webkit-appearance: none;
-                -webkit-user-select: text;
-                outline-color: transparent;
-                letter-spacing: 4px;
-            }
-        }
-
-
-    }
-}
-
-.newelement {
-    .title {
-        margin-bottom: 20px;
-
-        li:nth-child(2) {
-            margin: 0px;
-        }
-    }
-
-    textarea {
-        width: 100%;
-        height: 90px;
-        resize: none;
-        border: 1px solid $black;
-        border-radius: 10px;
-        margin-bottom: 40px;
-
-        @media screen and (max-width:768px) {
-            height: 150px;
-        }
-    }
-
-    .Experience_status {
-        .Note {
-            padding: 35px 0px 25px;
-            width: 100%;
-            font-size: $fs-18;
-            font-weight: $fw-600;
-
-            @media screen and (max-width:768px) {
-                padding: 0px 0px 25px;
-            }
-
-            span {
-                &:nth-child(1) {
-                    position: relative;
-                    padding-right: 15px;
-
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        top: 50%;
-                        right: 0;
-                        transform: translateY(-50%);
-                        width: 2px;
-                        height: 20px;
-                        background-color: $black;
-                    }
-                }
-
-                &:nth-child(2) {
-                    padding-left: 15px;
-                }
-            }
-        }
-
-        .block {
-            border-radius: 15px;
-            border: 1px solid $black;
-            padding: 40px 50px 0px;
-            margin-bottom: 30px;
-
-            @media screen and (max-width:768px) {
-                margin-bottom: 40px;
-                padding: 15px;
-            }
-
-            .name {
-                font-size: $fs-18;
-                letter-spacing: 2px;
-                padding-bottom: 30px;
-
-                @media screen and (max-width:768px) {
-                    padding-bottom: 18px;
-                }
-
-                &>div {
-                    // min-width: 150px;
-                    letter-spacing: 4px;
-                    padding: 0px 0px 0px 20px;
-                    position: relative;
-                    line-height: 24px;
-                    font-weight: 900;
-
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 8px;
-                        height: 17px;
-                        transform: translate(0%, 5px);
-                        background-color: $bc-brown;
-                    }
-                }
-
-                .two {
-                    display: flex;
-                    flex-direction: column;
-                }
-            }
-
-            .form_input {
-
-                margin-bottom: 40px;
-
-                @media (max-width:992px) {
-                    margin-bottom: 30px;
-                }
-
-                &>input {
-                    width: 100%;
-                    height: 40px;
-                    padding: 10px 20px;
-                    border-radius: 5px;
-                    outline-width: 0px none invert;
-                    border: 1px solid $br-black;
-                    text-shadow: none;
-                    -webkit-appearance: none;
-                    -webkit-user-select: text;
-                    outline-color: transparent;
-                    letter-spacing: 4px;
-                }
-
-                &.data {
-                    display: flex;
-                    flex-wrap: nowrap;
-
-                    @media screen and (max-width:768px) {
-                        flex-wrap: wrap;
-
-                        &>input {
-                            width: 75%;
-                            margin-bottom: 15px;
-                        }
-                    }
-
-                    span {
-                        font-size: $fs-18;
-                        font-weight: $fw-600;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        min-width: 56px;
-
-                        @media screen and (max-width:768px) {
-                            margin-bottom: 15px;
-                        }
-                    }
-
-                }
-            }
-        }
-
-        .add {
-            width: 100%;
-            display: flex;
-            justify-content: flex-start;
-            margin-bottom: 58px;
-
-            @media screen and (max-width:768px) {
-                justify-content: center;
-            }
-
-            input {
-                @include text_style($fs-16, $fw-700, center, 3px);
-                @include font_hover($bc-brown, $fc-white);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: transparent;
-                width: 200px;
-                height: 40px;
-                border: 1px solid $black;
-                border-radius: 50px;
-                transition: 0.3s;
-
-
-                &:hover {
-                    background-color: $bc-brown;
-                }
-            }
-        }
-    }
-
-
-}
-
 .block {
     @media screen and (max-width:1400px) {
         max-width: 100%;
@@ -420,7 +74,7 @@
         flex-direction: row;
     }
 
-    input {
+    button {
         display: flex;
         justify-content: center;
         align-content: center;
@@ -428,8 +82,8 @@
         height: 50px;
         border-radius: 50%;
         border: unset;
-        font-size: $fs-24;
-        margin: 15px 0px;
+        font-size: $fs-27;
+        margin: 10px 0px;
 
         @media screen and (max-width:1400px) {
             margin: 0px 15px;
@@ -517,6 +171,8 @@
         }
 
         select {
+            border: 1px solid black;
+
             &.identity {
                 width: 110px;
                 padding: 10px 20px;
@@ -531,6 +187,7 @@
                 background-position-y: center;
                 font-size: $fs-14;
                 letter-spacing: 4px;
+                border: 1px solid $br-black;
 
                 & option:nth-child(1) {
                     border-top-left-radius: 5px;
@@ -617,11 +274,11 @@
             flex-wrap: wrap;
 
             .identity {
-                margin-right: 40px;
+                margin-right: 16px;
             }
 
             input {
-                width: calc(100% - 150px);
+                width: calc(100% - 126px);
 
                 @media screen and (max-width:768px) {
                     width: 100%;
@@ -642,6 +299,9 @@
             }
 
             li {
+                font-size: $fs-14;
+                font-weight: $fw-700;
+                letter-spacing: 3px;
                 display: flex;
                 align-items: center;
                 margin-bottom: 20px;
@@ -685,7 +345,7 @@
         position: relative;
 
         input {
-            height: 40px;
+            height: 43px;
             padding: 10px 20px;
             border-radius: 5px;
             width: 100%;
@@ -710,6 +370,9 @@
     .Privacy {
         margin-bottom: 45px;
         display: flex;
+        font-size: $fs-14;
+        font-weight: $fw-700;
+        letter-spacing: 3px;
 
         p {
             text-align: justify;
@@ -776,6 +439,8 @@
         }
 
         select {
+            border: 1px solid $br-black;
+
             &.identity {
                 width: 110px;
                 padding: 10px 20px;
@@ -820,6 +485,7 @@
                 background-position-y: center;
                 font-size: $fs-14;
                 letter-spacing: 4px;
+                border: 1px solid $br-black;
 
                 & option:nth-child(1) {
                     border-top-left-radius: 5px;
@@ -928,6 +594,7 @@
                 font-weight: $fw-600;
                 border: none;
                 border-radius: 5px;
+                letter-spacing: 3px;
 
                 @media screen and (max-width:768px) {
                     margin-top: 30px;
@@ -1011,12 +678,12 @@
 
             .area {
                 width: 108px;
-                height: 40px;
+                height: 43px;
             }
 
             .grade {
                 width: 90px;
-                height: 40px;
+                height: 43px;
             }
         }
     }
@@ -1050,6 +717,9 @@
     .Privacy {
         margin-bottom: 45px;
         display: flex;
+        font-size: $fs-14;
+        font-weight: $fw-700;
+        letter-spacing: 3px;
 
         @media screen and (max-width:768px) {
             border-top: 1px solid $black;
@@ -1219,6 +889,364 @@
             width: 200px;
         }
     }
+}
+
+.newitem {
+    max-width: 800px;
+    padding: 0px 15px;
+
+    @media screen and (max-width:768px) {
+        padding: 0px;
+    }
+
+    .teacher {
+        padding: 0px 15px;
+
+        .title {
+            margin: 0px -15px 45px;
+        }
+
+        .name {
+            font-size: $fs-18;
+            letter-spacing: 2px;
+            padding-bottom: 30px;
+
+            &>div {
+                // min-width: 150px;
+                letter-spacing: 4px;
+                padding: 0px 0px 0px 20px;
+                position: relative;
+                line-height: 24px;
+                font-weight: 900;
+                display: flex;
+                flex-direction: column;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 8px;
+                    height: 17px;
+                    transform: translate(0%, 5px);
+                    background-color: $bc-brown;
+                }
+            }
+        }
+
+        .form_input {
+
+            margin-bottom: 40px;
+
+            @media (max-width:992px) {
+                margin-bottom: 30px;
+            }
+
+            &>input {
+                width: 100%;
+                height: 40px;
+                padding: 10px 20px;
+                border-radius: 5px;
+                outline-width: 0px none invert;
+                border: 1px solid $br-black;
+                text-shadow: none;
+                -webkit-appearance: none;
+                -webkit-user-select: text;
+                outline-color: transparent;
+                letter-spacing: 4px;
+            }
+        }
+
+    }
+
+    .student {
+        padding: 0px 15px;
+
+        .title {
+            margin: 20px -15px 30px;
+        }
+
+        .content {
+            @media screen and (max-width:768px) {
+                padding: 40px 20px 15px;
+            }
+        }
+    }
+
+    .content {
+        position: relative;
+        border-radius: 15px;
+        border: 1px solid $black;
+        padding: 50px 40px;
+        margin-bottom: 30px;
+        min-width: 810px;
+        max-height: 320px;
+
+        @media screen and (max-width:1400px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media screen and (max-width:768px) {
+            padding: 15px;
+        }
+
+        .name {
+            font-size: $fs-18;
+            letter-spacing: 2px;
+            padding-bottom: 30px;
+
+            &>div {
+                // min-width: 150px;
+                letter-spacing: 4px;
+                padding: 0px 0px 0px 20px;
+                position: relative;
+                line-height: 24px;
+                font-weight: 900;
+
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 8px;
+                    height: 17px;
+                    transform: translate(0%, -50%);
+                    background-color: $bc-brown;
+                }
+            }
+        }
+
+        .add,
+        .del {
+            background-color: $black;
+            color: $white;
+        }
+
+        .form_input {
+
+            margin-bottom: 20px;
+
+            @media (max-width:992px) {
+                margin-bottom: 30px;
+            }
+
+            &>input {
+                width: 100%;
+                height: 40px;
+                padding: 10px 20px;
+                border-radius: 5px;
+                outline-width: 0px none invert;
+                border: 1px solid $br-black;
+                text-shadow: none;
+                -webkit-appearance: none;
+                -webkit-user-select: text;
+                outline-color: transparent;
+                letter-spacing: 4px;
+            }
+        }
+
+
+    }
+}
+
+.newelement {
+    .title {
+        margin-bottom: 20px;
+
+        li {
+            .icon {
+                width: 50px;
+                height: 8px;
+            }
+        }
+
+        li:nth-child(2) {
+            margin: 0px;
+        }
+    }
+
+    textarea {
+        width: 100%;
+        max-width: 690px;
+        height: 90px;
+        resize: none;
+        border: 1px solid $black;
+        border-radius: 9px;
+        margin-bottom: 40px;
+
+        @media screen and (max-width:768px) {
+            height: 150px;
+        }
+    }
+
+    .Experience_status {
+        .Note {
+            padding: 35px 0px 25px;
+            width: 100%;
+            font-size: $fs-18;
+            font-weight: $fw-700;
+            letter-spacing: 3px;
+
+            @media screen and (max-width:768px) {
+                padding: 0px 0px 25px;
+            }
+
+            span {
+                &:nth-child(1) {
+                    position: relative;
+                    padding-right: 15px;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                        width: 2px;
+                        height: 20px;
+                        background-color: $black;
+                    }
+                }
+
+                &:nth-child(2) {
+                    padding-left: 15px;
+                }
+            }
+        }
+
+        .block {
+            max-width: 690px;
+            border-radius: 9px;
+            border: 1px solid $black;
+            padding: 40px 50px 0px;
+            margin-bottom: 30px;
+
+            @media screen and (max-width:768px) {
+                margin-bottom: 40px;
+                padding: 15px;
+            }
+
+            .name {
+                font-size: $fs-18;
+                letter-spacing: 2px;
+                padding-bottom: 30px;
+
+                @media screen and (max-width:768px) {
+                    padding-bottom: 18px;
+                }
+
+                &>div {
+                    // min-width: 150px;
+                    letter-spacing: 4px;
+                    padding: 0px 0px 0px 20px;
+                    position: relative;
+                    line-height: 24px;
+                    font-weight: 900;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 8px;
+                        height: 17px;
+                        transform: translate(0%, 5px);
+                        background-color: $bc-brown;
+                    }
+                }
+
+                .two {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            .form_input {
+
+                margin-bottom: 40px;
+
+                @media (max-width:992px) {
+                    margin-bottom: 30px;
+                }
+
+                &>input {
+                    width: 100%;
+                    height: 40px;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    outline-width: 0px none invert;
+                    border: 1px solid $br-black;
+                    text-shadow: none;
+                    -webkit-appearance: none;
+                    -webkit-user-select: text;
+                    outline-color: transparent;
+                    letter-spacing: 4px;
+                }
+
+                &.data {
+                    display: flex;
+                    flex-wrap: nowrap;
+
+                    @media screen and (max-width:768px) {
+                        flex-wrap: wrap;
+
+                        &>input {
+                            width: 75%;
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    span {
+                        font-size: $fs-18;
+                        font-weight: $fw-600;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        min-width: 56px;
+
+                        @media screen and (max-width:768px) {
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .add {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 58px;
+
+            @media screen and (max-width:768px) {
+                justify-content: center;
+            }
+
+            input {
+                @include text_style($fs-16, $fw-700, center, 3px);
+                @include font_hover($bc-brown, $fc-white);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+                width: 200px;
+                height: 40px;
+                border: 1px solid $black;
+                border-radius: 50px;
+                transition: 0.3s;
+
+
+                &:hover {
+                    background-color: $bc-brown;
+                }
+            }
+        }
+    }
+
+
 }
 
 .from {
@@ -1890,9 +1918,12 @@
         width: 100%;
         margin-bottom: 15px;
 
+        &.Note {
+            color: $fc-gray;
+        }
 
         &.files {
-            .fileName{
+            .fileName {
                 width: calc(100% - 210px);
                 height: 30px;
                 border: 1px solid $pure-gray;
@@ -1901,19 +1932,20 @@
                 padding: 5px 10px;
                 font-size: $fs-12;
             }
-            .inputBox{
-                width:190px;
+
+            .inputBox {
+                width: 190px;
                 height: 30px;
                 background-color: transparent;
                 border: 1px solid $pure-gray;
                 border-radius: 5px;
                 position: relative;
 
-                .inputText{
+                .inputText {
                     position: absolute;
                     top: 50%;
                     left: 50%;
-                    transform: translate(-50%,-50%);
+                    transform: translate(-50%, -50%);
                     font-size: $fs-14;
                     font-weight: 900;
                     color: $black;
@@ -1921,14 +1953,14 @@
                     transition: .3s;
                 }
 
-                input{
+                input {
                     opacity: 0;
                 }
 
-                &:hover{
+                &:hover {
                     background-color: black;
 
-                    .inputText{
+                    .inputText {
                         color: $white;
                     }
                 }
@@ -2050,7 +2082,7 @@
             border-radius: 50%;
             padding-top: 27px;
 
-            @media(max-width:576px){
+            @media(max-width:576px) {
                 width: 75px;
                 height: 75px;
                 padding-top: 12px;
@@ -2063,30 +2095,30 @@
                 border-bottom-left-radius: 50%;
             }
 
-            &:nth-child(-n+3){
+            &:nth-child(-n+3) {
                 padding-top: 20px;
 
-                @media(max-width:576px){
+                @media(max-width:576px) {
                     padding-top: 7px;
                 }
             }
 
-            p{
+            p {
                 text-align: center;
                 font-size: $fs-16;
                 color: $brown;
                 font-weight: 900;
 
-                @media(max-width:576px){
+                @media(max-width:576px) {
                     font-size: $fs-12;
                 }
-    
+
             }
 
-            &.active{
+            &.active {
                 background-color: $brown;
 
-                p{
+                p {
                     color: $white;
                 }
             }
@@ -2101,16 +2133,17 @@
             border-color: transparent transparent transparent $brown;
         }
 
-        @media(max-width: 1200px){
-            &.step-1{
+        @media(max-width: 1200px) {
+            &.step-1 {
                 left: 15px;
             }
-            &.step-2{
+
+            &.step-2 {
                 left: 15px;
             }
 
             &.step-3,
-            &.step-4{
+            &.step-4 {
                 left: unset;
                 right: 0px;
             }

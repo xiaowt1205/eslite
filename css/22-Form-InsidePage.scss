@@ -16,6 +16,8 @@
             letter-spacing: 4px;
             font-weight: bold;
             display: flex;
+            background-color: #231815;
+            color: $white;
 
             @media (max-width:1024px) {
                 display: none;
@@ -66,16 +68,8 @@
             }
 
             &>:nth-child(2n) {
-                background-color: $black-Transparent;
+                background-color: #23181510;
             }
-
-            // &>:nth-last-child(1) {
-            //     margin-bottom: 40px;
-
-            //     @media (max-width:768px) {
-            //         margin-bottom: 45px;
-            //     }
-            // }
 
             .news {
                 width: 100%;
@@ -164,6 +158,10 @@
                     }
 
                     &.datearea {
+                        span:nth-child(2) {
+                            color: $fc-gray;
+                        }
+
                         @media screen and (max-width:1024px) {
                             order: 3;
                             margin-bottom: 10px;
@@ -192,14 +190,14 @@
                     }
 
                     &.activityarea {
-                        @media screen and (max-width:768px) {
+                        @media screen and (max-width:1024px) {
                             order: 2;
                             margin-bottom: 20px;
                         }
                     }
 
                     &.takingarea {
-                        @media screen and (max-width:768px) {
+                        @media screen and (max-width:1024px) {
                             order: 4;
                             margin-bottom: 10px;
                         }
@@ -207,6 +205,8 @@
 
                     &.Ingarea {
                         span:nth-child(2) {
+                            color: #938075;
+
                             &::after {
                                 content: '';
                                 height: 0px;
@@ -214,7 +214,7 @@
                             }
                         }
 
-                        @media screen and (max-width:768px) {
+                        @media screen and (max-width:1024px) {
                             order: 5;
                         }
                     }
@@ -463,21 +463,24 @@
                 margin-bottom: 15px;
 
                 select {
-                    border: 1px solid $black;
+                    border: 2px solid $black;
                     font-size: $fs-14;
                     width: 162px;
                     height: 32px;
                     margin-left: 20px;
                     text-align: center;
                     text-align-last: center;
+                    border-right: 0.5px solid $black;
                 }
 
                 button {
-                    border: 1px solid $black;
+                    border: 2px solid $black;
                     font-size: $fs-14;
                     text-align: center;
                     width: 100px;
                     height: 32px;
+                    background-color: transparent;
+                    border-left: 0.5px solid $black;
 
                     @media screen and (max-width:768px) {
                         display: none;
@@ -494,6 +497,8 @@
             letter-spacing: 4px;
             font-weight: bold;
             display: flex;
+            background-color: #231815;
+            color: $white;
 
             @media (max-width:1024px) {
                 display: none;
@@ -535,7 +540,7 @@
             &>:nth-last-child(1) {
                 margin-bottom: 40px;
 
-                @media (max-width:768px) {
+                @media (max-width:1024px) {
                     margin-bottom: 45px;
                 }
             }
@@ -548,10 +553,6 @@
 
                 @media (max-width:1024px) {
                     flex-direction: column;
-                    padding: 25px 20px;
-                }
-
-                @media (max-width:768px) {
                     padding: 40px 20px;
                 }
 
@@ -563,7 +564,7 @@
                     min-width: 200px;
                     text-align: center;
 
-                    @media screen and (max-width:768px) {
+                    @media screen and (max-width:1024px) {
                         justify-content: flex-start;
                     }
 
@@ -623,12 +624,14 @@
                     }
 
                     &.datearea {
+                        span {
+                            &:nth-child(2) {
+                                color: $fc-gray;
+                            }
+                        }
 
                         @media screen and (max-width:1024px) {
                             justify-content: flex-start;
-                        }
-
-                        @media screen and (max-width:768px) {
                             order: 3;
                             margin-bottom: 10px;
                         }
@@ -638,9 +641,6 @@
 
                         @media screen and (max-width:1024px) {
                             justify-content: flex-start;
-                        }
-
-                        @media screen and (max-width:768px) {
                             order: 2;
                             margin-bottom: 10px;
                         }
@@ -658,16 +658,14 @@
 
                         @media screen and (max-width:1024px) {
                             justify-content: flex-start;
-                        }
-
-                        @media screen and (max-width:768px) {
                             order: 5;
                         }
 
                         button {
-                            background-color: $brown-hover;
+                            background-color: #231815;
                             color: $white;
                             border: 0px solid $white;
+                            letter-spacing: 3px;
                             width: 100px;
                             height: 30px;
                         }
@@ -686,6 +684,7 @@
         // align-items: center;
         @media screen and (max-width:768px) {
             flex-direction: column;
+            margin-bottom: 25px;
         }
 
         li {
@@ -780,6 +779,11 @@
                 @media (max-width:768px) {
                     margin-bottom: 45px;
                 }
+            }
+
+            @media (max-width:768px) {
+                width: calc(100% + 35px);
+                margin: 0px -20px;
             }
 
             .news {
@@ -879,6 +883,12 @@
                     }
 
                     &.classarea {
+                        @media screen and (max-width:1024px) {
+                            span:nth-child(2) {
+                                padding-left: 0px;
+                            }
+                        }
+
                         @media screen and (max-width:768px) {
                             order: 1;
                             margin-bottom: 15px;
@@ -887,10 +897,6 @@
                                 padding: 0px 20px;
                                 border-left: 2px solid $fc-gray;
                                 border-right: 2px solid $fc-gray;
-                            }
-
-                            span:nth-child(2) {
-                                padding-left: 0px;
                             }
                         }
 
@@ -904,6 +910,14 @@
                     }
 
                     &.activityarea {
+                        @media screen and (max-width:1024px) {
+                            padding: 0px;
+
+                            span:nth-child(2) {
+                                padding-left: 0px;
+                            }
+                        }
+
                         @media screen and (max-width:768px) {
                             order: 2;
                             margin-bottom: 20px;
