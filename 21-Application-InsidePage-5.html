@@ -779,9 +779,10 @@
                     <nav class="breadcrumbArea" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">首頁</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">網站導覽</li>
+                            <li class="breadcrumb-item"><a href="#">青年培育計畫</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">申請成為學員</li>
                         </ol>
-                        <div class="title">網站導覽</div>
+                        <div class="title">學生申請</div>
                     </nav>
                     <div class="btnArea">
                         <div class="back block">
@@ -823,13 +824,39 @@
                 <div class="w-100 flat" aria-label="breadcrumb">
                     <ol class="breadcrumb phoneStyle">
                         <li class="breadcrumb-item"><a href="#">首頁</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">分頁標題</li>
+                        <li class="breadcrumb-item"><a href="#">青年培育計畫</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">申請成為學員</li>
                     </ol>
-                    <h2 class="phoneStyleTitle">分頁標題</h2>
+                    <h2 class="phoneStyleTitle">學生申請</h2>
                 </div>
                 <!-- 平板版的title結束 -->
 
                 <!-- 內頁起點 -->
+                <div class="step-area">
+                    <div class="step-scroll d-flex align-items-center step-3">
+                        <div class="step">
+                            <p>1.</p>
+                            <p>學生</p>
+                            <p>基本資料</p>
+                        </div>
+                        <div class="arrow"></div>
+                        <div class="step">
+                            <p>2.</p>
+                            <p>學生個人</p>
+                            <p>自述表</p>
+                        </div>
+                        <div class="arrow"></div>
+                        <div class="step active">
+                            <p>3.</p>
+                            <p>檔案上傳</p>
+                        </div>
+                        <div class="arrow"></div>
+                        <div class="step">
+                            <p>4.</p>
+                            <p>申請完成</p>
+                        </div>
+                    </div>
+                </div>
                 <form action="">
                     <ol class="file_block">
                         <ul class="title">
@@ -838,11 +865,68 @@
                             </li>
                             <li>成績單</li>
                             <li class="Note">(僅提供JPG、PDF檔上傳，檔案大小限 10 MB)</li>
-                            <li class="files">
-                                <input type="file" id="filename" class="" name="filename" style="display: none;">
-                                <label class="FileUpload" id="" for="filename" type="file">
-                                    <!-- <span>選擇檔案</span> -->
-                                </label>
+                            <li class="files d-flex">
+                                <div class="fileName"></div>
+                                <div class="inputBox">
+                                    <div class="inputText">選擇檔案</div>
+                                    <input class="fileInput" type="file">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="title">
+                            <li>
+                                <div class="icon"></div>
+                            </li>
+                            <li>教師推薦函(第一位)</li>
+                            <li class="Note">(僅提供JPG、PDF檔上傳，檔案大小限 10 MB)</li>
+                            <li class="files d-flex">
+                                <div class="fileName"></div>
+                                <div class="inputBox">
+                                    <div class="inputText">選擇檔案</div>
+                                    <input class="fileInput" type="file">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="title">
+                            <li>
+                                <div class="icon"></div>
+                            </li>
+                            <li>教師推薦函(第二位)</li>
+                            <li class="Note">(僅提供JPG、PDF檔上傳，檔案大小限 10 MB)</li>
+                            <li class="files d-flex">
+                                <div class="fileName"></div>
+                                <div class="inputBox">
+                                    <div class="inputText">選擇檔案</div>
+                                    <input class="fileInput" type="file">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="title">
+                            <li>
+                                <div class="icon"></div>
+                            </li>
+                            <li>教師推薦函(第三位)</li>
+                            <li class="Note">(僅提供JPG、PDF檔上傳，檔案大小限 10 MB)</li>
+                            <li class="files d-flex">
+                                <div class="fileName"></div>
+                                <div class="inputBox">
+                                    <div class="inputText">選擇檔案</div>
+                                    <input class="fileInput" type="file">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="title">
+                            <li>
+                                <div class="icon"></div>
+                            </li>
+                            <li>其他補充資料(多檔)</li>
+                            <li class="Note">(僅提供JPG、PDF檔上傳，檔案大小限 10 MB)</li>
+                            <li class="files d-flex">
+                                <div class="fileName"></div>
+                                <div class="inputBox">
+                                    <div class="inputText">選擇檔案</div>
+                                    <input class="fileInput" type="file">
+                                </div>
                             </li>
                         </ul>
                     </ol>
@@ -924,9 +1008,9 @@
         crossorigin="anonymous"></script>
 
     <script src="./js/main.js"></script>
+    <script src="./js/Application_input.js"></script>
     <!-- page js -->
     <script>
-
         function showname() {
             var name = document.getElementsByClassName('files');
             alert('Selected file: ' + name.files.item(0).name);

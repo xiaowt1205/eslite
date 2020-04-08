@@ -1886,34 +1886,52 @@
 }
 
 .file_block {
-    .files {
-        // input[type="file"] {
-        //     width: 50px;
-        //     height: 30px;
-        //     background-color: #000000;
-        // }
-    }
-
     li {
         width: 100%;
         margin-bottom: 15px;
 
-        label {
-            width: 100%;
-            height: 30px;
-            display: flex;
-            justify-content: space-between;
-            margin: 0;
 
-            div {
-                width: calc(100% - 250px);
-                // background-color: $black;
-            }
-
-            span {
+        &.files {
+            .fileName{
+                width: calc(100% - 210px);
                 height: 30px;
-                width: 190px;
-                // background-color: $black;
+                border: 1px solid $pure-gray;
+                border-radius: 5px;
+                margin-right: 20px;
+                padding: 5px 10px;
+                font-size: $fs-12;
+            }
+            .inputBox{
+                width:190px;
+                height: 30px;
+                background-color: transparent;
+                border: 1px solid $pure-gray;
+                border-radius: 5px;
+                position: relative;
+
+                .inputText{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    font-size: $fs-14;
+                    font-weight: 900;
+                    color: $black;
+                    letter-spacing: 2px;
+                    transition: .3s;
+                }
+
+                input{
+                    opacity: 0;
+                }
+
+                &:hover{
+                    background-color: black;
+
+                    .inputText{
+                        color: $white;
+                    }
+                }
             }
         }
     }
@@ -2007,6 +2025,95 @@
             right: 0;
             color: $red;
 
+        }
+    }
+
+}
+
+.step-area {
+    margin-bottom: 40px;
+    padding: 0 15px;
+    overflow: hidden;
+    position: relative;
+    height: 120px;
+
+    .step-scroll {
+        position: absolute;
+        left: 15px;
+        top: 0;
+
+        .step {
+            width: 120px;
+            height: 120px;
+            border: 1px solid $brown;
+            background-color: transparent;
+            border-radius: 50%;
+            padding-top: 27px;
+
+            @media(max-width:576px){
+                width: 75px;
+                height: 75px;
+                padding-top: 12px;
+            }
+
+            &:first-child {
+                border-top-left-radius: 0;
+                border-top-right-radius: 50%;
+                border-bottom-right-radius: 50%;
+                border-bottom-left-radius: 50%;
+            }
+
+            &:nth-child(-n+3){
+                padding-top: 20px;
+
+                @media(max-width:576px){
+                    padding-top: 7px;
+                }
+            }
+
+            p{
+                text-align: center;
+                font-size: $fs-16;
+                color: $brown;
+                font-weight: 900;
+
+                @media(max-width:576px){
+                    font-size: $fs-12;
+                }
+    
+            }
+
+            &.active{
+                background-color: $brown;
+
+                p{
+                    color: $white;
+                }
+            }
+        }
+
+        .arrow {
+            margin: 0 20px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 25px 0 25px 25px;
+            border-color: transparent transparent transparent $brown;
+        }
+
+        @media(max-width: 1200px){
+            &.step-1{
+                left: 15px;
+            }
+            &.step-2{
+                left: 15px;
+            }
+
+            &.step-3,
+            &.step-4{
+                left: unset;
+                right: 0px;
+            }
         }
     }
 

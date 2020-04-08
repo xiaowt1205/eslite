@@ -2148,25 +2148,49 @@
   margin-bottom: 15px;
 }
 
-.file_block li label {
-  width: 100%;
+.file_block li.files .fileName {
+  width: calc(100% - 210px);
   height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0;
+  border: 1px solid #4D4D4D;
+  border-radius: 5px;
+  margin-right: 20px;
+  padding: 5px 10px;
+  font-size: 12px;
 }
 
-.file_block li label div {
-  width: calc(100% - 250px);
-}
-
-.file_block li label span {
-  height: 30px;
+.file_block li.files .inputBox {
   width: 190px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #4D4D4D;
+  border-radius: 5px;
+  position: relative;
+}
+
+.file_block li.files .inputBox .inputText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 14px;
+  font-weight: 900;
+  color: #000000;
+  letter-spacing: 2px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.file_block li.files .inputBox input {
+  opacity: 0;
+}
+
+.file_block li.files .inputBox:hover {
+  background-color: black;
+}
+
+.file_block li.files .inputBox:hover .inputText {
+  color: #FFFFFF;
 }
 
 .Misjudgment.name div {
@@ -2260,5 +2284,96 @@
   top: 0;
   right: 0;
   color: #C5362D;
+}
+
+.step-area {
+  margin-bottom: 40px;
+  padding: 0 15px;
+  overflow: hidden;
+  position: relative;
+  height: 120px;
+}
+
+.step-area .step-scroll {
+  position: absolute;
+  left: 15px;
+  top: 0;
+}
+
+.step-area .step-scroll .step {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #231815;
+  background-color: transparent;
+  border-radius: 50%;
+  padding-top: 27px;
+}
+
+@media (max-width: 576px) {
+  .step-area .step-scroll .step {
+    width: 75px;
+    height: 75px;
+    padding-top: 12px;
+  }
+}
+
+.step-area .step-scroll .step:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.step-area .step-scroll .step:nth-child(-n+3) {
+  padding-top: 20px;
+}
+
+@media (max-width: 576px) {
+  .step-area .step-scroll .step:nth-child(-n+3) {
+    padding-top: 7px;
+  }
+}
+
+.step-area .step-scroll .step p {
+  text-align: center;
+  font-size: 16px;
+  color: #231815;
+  font-weight: 900;
+}
+
+@media (max-width: 576px) {
+  .step-area .step-scroll .step p {
+    font-size: 12px;
+  }
+}
+
+.step-area .step-scroll .step.active {
+  background-color: #231815;
+}
+
+.step-area .step-scroll .step.active p {
+  color: #FFFFFF;
+}
+
+.step-area .step-scroll .arrow {
+  margin: 0 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 0 25px 25px;
+  border-color: transparent transparent transparent #231815;
+}
+
+@media (max-width: 1200px) {
+  .step-area .step-scroll.step-1 {
+    left: 15px;
+  }
+  .step-area .step-scroll.step-2 {
+    left: 15px;
+  }
+  .step-area .step-scroll.step-3, .step-area .step-scroll.step-4 {
+    left: unset;
+    right: 0px;
+  }
 }
 /*# sourceMappingURL=21-Application-InsidePage.css.map */
