@@ -1885,6 +1885,40 @@
 
 }
 
+.file_block {
+    .files {
+        // input[type="file"] {
+        //     width: 50px;
+        //     height: 30px;
+        //     background-color: #000000;
+        // }
+    }
+
+    li {
+        width: 100%;
+        margin-bottom: 15px;
+
+        label {
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+
+            div {
+                width: calc(100% - 250px);
+                // background-color: $black;
+            }
+
+            span {
+                height: 30px;
+                width: 190px;
+                // background-color: $black;
+            }
+        }
+    }
+}
+
 // 這別頁面修改
 
 

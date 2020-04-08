@@ -831,19 +831,18 @@
 
                 <!-- 內頁起點 -->
                 <form action="">
-                    <ol class="area">
+                    <ol class="file_block">
                         <ul class="title">
                             <li>
                                 <div class="icon"></div>
                             </li>
                             <li>成績單</li>
                             <li class="Note">(僅提供JPG、PDF檔上傳，檔案大小限 10 MB)</li>
-                            <li>
-                                <!-- <input type="file" id="filename" class="" name="" style="display: none;">
-                                <label class="FileUpload" id="" for="filename">
-                                    <span></span>
-                                    <span>選擇檔案</span>
-                                </label> -->
+                            <li class="files">
+                                <input type="file" id="filename" class="" name="filename" style="display: none;">
+                                <label class="FileUpload" id="" for="filename" type="file">
+                                    <!-- <span>選擇檔案</span> -->
+                                </label>
                             </li>
                         </ul>
                     </ol>
@@ -928,6 +927,12 @@
     <!-- page js -->
     <script>
 
+        function showname() {
+            var name = document.getElementsByClassName('files');
+            alert('Selected file: ' + name.files.item(0).name);
+            alert('Selected file: ' + name.files.item(0).size);
+            alert('Selected file: ' + name.files.item(0).type);
+        };
     </script>
 
 </body>
