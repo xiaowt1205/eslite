@@ -931,11 +931,18 @@
                             </ul>
                         </div>
                         <div class="col-xl-11 col-12 form_input">
-                            <input type="file" id="filename" class="" name="" style="display: none;">
-                            <label class="FileUpload" id="" for="filename">
-                                <span></span>
-                                <span>選擇檔案</span>
-                            </label>
+                            <ol class="file_block">
+                                <ul class="title">
+                                    <li class="files d-flex">
+                                        <div class="fileName"></div>
+                                        <div class="inputBox">
+                                            <div class="inputText">選擇檔案</div>
+                                            <input class="fileInput" type="file">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </ol>
+
                         </div>
                         <div class="col-xl-11 col-12 name">
                             <ul class="title">
@@ -953,15 +960,20 @@
                             </ul>
                         </div>
                         <div class="col-xl-11 col-12 form_input ">
-                            <div class="file_area">
-                                <label class="File_button" type="file" id="" name="filename">
-                                    <input id="filename" type="file" class="" for="filename" >
-                                    <span>選擇檔案</span>
-                                </label>
-                            </div>
+                            <ol class="file_block">
+                                <ul class="title">
+                                    <li class="files d-flex">
+                                        <div class="fileName"></div>
+                                        <div class="inputBox">
+                                            <div class="inputText">選擇檔案</div>
+                                            <input class="fileInput" type="file">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </ol>
                         </div>
                         <div class="col-xl-11 col-12 form_btn">
-                            <button>暫停</button>
+                            <button>儲存</button>
                             <button>下一步</button>
                         </div>
                     </div>
@@ -1038,6 +1050,7 @@
     <!-- page js -->
     <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="./js/Application_input.js"></script>
     <script>
 
     </script>
