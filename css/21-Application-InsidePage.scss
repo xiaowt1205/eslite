@@ -2145,7 +2145,8 @@
                 text-align: center;
                 font-size: $fs-16;
                 color: $brown;
-                font-weight: 900;
+                font-weight: 700;
+                letter-spacing: 2px;
 
                 @media(max-width:576px) {
                     font-size: $fs-12;
@@ -2167,7 +2168,7 @@
             width: 0;
             height: 0;
             border-style: solid;
-            border-width: 25px 0 25px 25px;
+            border-width: 16px 0 16px 16px;
             border-color: transparent transparent transparent $brown;
         }
 
