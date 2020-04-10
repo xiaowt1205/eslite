@@ -31,6 +31,10 @@
             .className {
                 min-width: 130px;
                 text-align: center;
+
+                @media screen and (max-width:1200px) {
+                    min-width: 100px;
+                }
             }
 
             .activityName {
@@ -43,11 +47,19 @@
             .takingName {
                 min-width: 130px;
                 text-align: center;
+
+                @media screen and (max-width:1200px) {
+                    min-width: 100px;
+                }
             }
 
             .IngName {
                 min-width: 130px;
                 text-align: center;
+
+                @media screen and (max-width:1200px) {
+                    min-width: 100px;
+                }
             }
         }
 
@@ -138,6 +150,7 @@
                     }
 
                     &.activityarea {
+                        padding: 0px 10px;
                         display: flex;
                         justify-content: center;
                         flex-grow: 1;
@@ -162,9 +175,14 @@
                             color: $fc-gray;
                         }
 
+                        @media screen and (max-width:1200px) {
+                            min-width: 100px;
+                        }
+
                         @media screen and (max-width:1024px) {
                             order: 3;
                             margin-bottom: 10px;
+                            color: #666666;
                         }
                     }
 
@@ -190,20 +208,32 @@
                     }
 
                     &.activityarea {
+                        padding: 0px 10px;
+
                         @media screen and (max-width:1024px) {
+                            padding: 0px;
                             order: 2;
                             margin-bottom: 20px;
                         }
                     }
 
                     &.takingarea {
+                        @media screen and (max-width:1200px) {
+                            min-width: 100px;
+                        }
+
                         @media screen and (max-width:1024px) {
+                            color: #666666;
                             order: 4;
                             margin-bottom: 10px;
                         }
                     }
 
                     &.Ingarea {
+                        @media screen and (max-width:1200px) {
+                            min-width: 100px;
+                        }
+
                         span:nth-child(2) {
                             color: #938075;
 
@@ -216,6 +246,35 @@
 
                         @media screen and (max-width:1024px) {
                             order: 5;
+                            margin-top: 10px;
+
+                            span {
+                                display: none;
+                            }
+                        }
+
+                        .btn-mob {
+                            display: none;
+                            width: 100%;
+                            height: 50px;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 25px;
+                            color: $brown;
+                            border: 1px solid $brown;
+                            background-color: transparent;
+                            font-size: $fs-16;
+                            letter-spacing: 3px;
+                            transition: 0.3s;
+
+                            &:hover {
+                                background-color: $brown;
+                                color: $white;
+                            }
+
+                            @media screen and (max-width:1024px) {
+                                display: flex;
+                            }
                         }
                     }
                 }
@@ -244,6 +303,12 @@
             .nav-link {
                 border-radius: 0px;
                 border: 1px solid $black;
+                transition: .3s;
+
+                &:hover {
+                    color: $white;
+                    background-color: $black;
+                }
             }
         }
     }
@@ -306,10 +371,16 @@
                 width: 200px;
                 height: 40px;
                 border-radius: 30px;
-                background-color: $brown;
-                color: $white;
+                background-color: transparent;
+                border: 1px solid $brown;
+                color: $brown;
                 box-shadow: none;
-                border: none;
+                transition: .3s;
+
+                &:hover {
+                    color: $white;
+                    background-color: $brown;
+                }
             }
 
         }
@@ -487,6 +558,15 @@
                     }
                 }
             }
+
+            button {
+                transition: 0.3s;
+
+                &:hover {
+                    color: $white;
+                    background-color: $black;
+                }
+            }
         }
     }
 
@@ -540,7 +620,7 @@
             &>:nth-last-child(1) {
                 margin-bottom: 40px;
 
-                @media (max-width:1024px) {
+                @media (max-width:1024 px) {
                     margin-bottom: 45px;
                 }
             }
@@ -738,6 +818,10 @@
             .className {
                 min-width: 130px;
                 text-align: center;
+
+                @media screen and (max-width:1200px) {
+                    min-width: 100px;
+                }
             }
 
             .activityName {
@@ -745,16 +829,29 @@
                 justify-content: center;
                 flex-grow: 1;
                 text-align: center;
+
+                // @media screen and (max-width:1200px) {
+                //     flex-grow: unset;
+                //     min-width: 130px;
+                // }
             }
 
             .takingName {
                 min-width: 130px;
                 text-align: center;
+
+                @media screen and (max-width:1200px) {
+                    min-width: 100px;
+                }
             }
 
             .IngName {
                 min-width: 130px;
                 text-align: center;
+
+                @media screen and (max-width:1200px) {
+                    min-width: 100px;
+                }
             }
         }
 
@@ -776,12 +873,12 @@
             &>:nth-last-child(1) {
                 margin-bottom: 40px;
 
-                @media (max-width:768px) {
+                @media (max-width:1024px) {
                     margin-bottom: 45px;
                 }
             }
 
-            @media (max-width:768px) {
+            @media (max-width:1024px) {
                 width: calc(100% + 35px);
                 margin: 0px -20px;
             }
@@ -876,20 +973,18 @@
                     &.datearea {
                         color: $fc-gray;
 
-                        @media screen and (max-width:768px) {
+                        @media screen and (max-width:1024px) {
                             order: 3;
                             margin-bottom: 10px;
                         }
                     }
 
                     &.classarea {
-                        @media screen and (max-width:1024px) {
-                            span:nth-child(2) {
-                                padding-left: 0px;
-                            }
+                        @media screen and (max-width:1200px) {
+                            min-width: 100px;
                         }
 
-                        @media screen and (max-width:768px) {
+                        @media screen and (max-width:1024px) {
                             order: 1;
                             margin-bottom: 15px;
 
@@ -905,29 +1000,38 @@
                                 display: none;
                             }
                         }
-
-
                     }
 
                     &.activityarea {
+                        padding: 0px 10px;
+
+                        @media screen and (max-width:1200px) {
+                            min-width: 130px;
+                        }
+
                         @media screen and (max-width:1024px) {
+                            margin-bottom: 20px;
                             padding: 0px;
+                            order: 2;
 
                             span:nth-child(2) {
                                 padding-left: 0px;
                             }
                         }
-
-                        @media screen and (max-width:768px) {
-                            order: 2;
-                            margin-bottom: 20px;
-                        }
                     }
 
                     &.takingarea {
-                        @media screen and (max-width:768px) {
+                        @media screen and (max-width:1200px) {
+                            min-width: 100px;
+                        }
+
+                        @media screen and (max-width:1024px) {
                             order: 4;
                             margin-bottom: 10px;
+
+                            span {
+                                color: #666666;
+                            }
                         }
                     }
 
@@ -942,8 +1046,16 @@
                             }
                         }
 
-                        @media screen and (max-width:768px) {
+                        @media screen and (max-width:1200px) {
+                            min-width: 100px;
+                        }
+
+                        @media screen and (max-width:1024px) {
                             order: 5;
+
+                            span:nth-child(1) {
+                                color: #666666;
+                            }
                         }
                     }
                 }

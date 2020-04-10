@@ -175,7 +175,6 @@
 
             @media screen and (max-width:768px) {
                 display: flex;
-                margin-bottom: 25px;
 
                 & span:nth-child(1) {
                     margin-bottom: 10px;
@@ -210,6 +209,11 @@
                 display: none;
             }
         }
+
+        &.text_mob {
+            margin-top: 25px;
+        }
+
     }
 }
 

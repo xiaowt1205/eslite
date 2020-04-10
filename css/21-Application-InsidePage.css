@@ -953,6 +953,10 @@
           flex-direction: column;
 }
 
+.StudentReadme_from .title li.file span:nth-child(2) {
+  color: #808080;
+}
+
 .StudentReadme_from .form_input {
   margin-bottom: 45px;
 }
@@ -1062,6 +1066,11 @@
   }
 }
 
+.newitem .title li .icon {
+  width: 50px;
+  height: 8px;
+}
+
 .newitem .teacher {
   padding: 0px 15px;
 }
@@ -1098,8 +1107,6 @@
   left: 0;
   width: 8px;
   height: 17px;
-  -webkit-transform: translate(0%, 5px);
-          transform: translate(0%, 5px);
   background-color: #231815;
 }
 
@@ -1146,7 +1153,7 @@
   border-radius: 15px;
   border: 1px solid #000000;
   padding: 50px 40px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   min-width: 810px;
   max-height: 320px;
 }
@@ -1197,6 +1204,8 @@
 
 .newitem .content .add,
 .newitem .content .del {
+  width: 40px;
+  height: 40px;
   background-color: #000000;
   color: #FFFFFF;
 }
@@ -1497,6 +1506,13 @@
 .from .nav-pills .nav-item .nav-link {
   border-radius: 0px;
   border: 1px solid #000000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.from .nav-pills .nav-item .nav-link:hover {
+  color: #FFFFFF;
+  background-color: #000000;
 }
 
 .from .form_btn {
@@ -1506,6 +1522,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {
@@ -2177,13 +2194,23 @@
   }
 }
 
+.file_block ul {
+  margin-bottom: 35px;
+}
+
 .file_block li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.file_block li:nth-child(n+3) {
   width: 100%;
-  margin-bottom: 15px;
 }
 
 .file_block li.Note {
   color: #808080;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .file_block li.files .fileName {
@@ -2229,6 +2256,11 @@
 
 .file_block li.files .inputBox:hover .inputText {
   color: #FFFFFF;
+}
+
+.file_block li.icon {
+  width: 50px;
+  height: 8px;
 }
 
 .Misjudgment.name div {

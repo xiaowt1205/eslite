@@ -812,6 +812,12 @@
                 display: flex;
                 align-items: flex-start;
                 flex-direction: column;
+
+                span {
+                    &:nth-child(2) {
+                        color: $fc-gray;
+                    }
+                }
             }
         }
     }
@@ -903,6 +909,15 @@
         padding: 0px;
     }
 
+    .title {
+        li {
+            .icon {
+                width: 50px;
+                height: 8px;
+            }
+        }
+    }
+
     .teacher {
         padding: 0px 15px;
 
@@ -932,7 +947,6 @@
                     left: 0;
                     width: 8px;
                     height: 17px;
-                    transform: translate(0%, 5px);
                     background-color: $bc-brown;
                 }
             }
@@ -982,7 +996,7 @@
         border-radius: 15px;
         border: 1px solid $black;
         padding: 50px 40px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         min-width: 810px;
         max-height: 320px;
 
@@ -1024,6 +1038,8 @@
 
         .add,
         .del {
+            width: 40px;
+            height: 40px;
             background-color: $black;
             color: $white;
         }
@@ -1050,8 +1066,6 @@
                 letter-spacing: 4px;
             }
         }
-
-
     }
 }
 
@@ -1268,8 +1282,6 @@
             justify-content: center;
         }
 
-
-
         .nav-item {
             width: 250px;
             height: 40px;
@@ -1286,7 +1298,12 @@
             .nav-link {
                 border-radius: 0px;
                 border: 1px solid $black;
+                transition: 0.3s;
 
+                &:hover {
+                    color: $white;
+                    background-color: $black;
+                }
             }
         }
     }
@@ -1294,6 +1311,7 @@
     .form_btn {
         display: flex;
         justify-content: flex-end;
+        font-weight: $fw-700;
 
         @media screen and (max-width:768px) {
             justify-content: center;
@@ -1918,15 +1936,26 @@
 }
 
 .file_block {
+    ul {
+        margin-bottom: 35px;
+    }
+
     li {
-        width: 100%;
-        margin-bottom: 15px;
+        font-size: $fs-14;
+        margin-bottom: 10px;
+
+        &:nth-child(n+3) {
+            width: 100%;
+        }
 
         &.Note {
             color: $fc-gray;
+            margin-top: 0px;
+            margin-bottom: 20px;
         }
 
         &.files {
+
             .fileName {
                 width: calc(100% - 210px);
                 height: 30px;
@@ -1969,6 +1998,11 @@
                     }
                 }
             }
+        }
+
+        &.icon {
+            width: 50px;
+            height: 8px;
         }
     }
 }
