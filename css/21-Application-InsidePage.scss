@@ -1,6 +1,9 @@
 @import "./_variables.scss";
 @import "./_function.scss";
 
+main.container {
+    overflow: hidden;
+}
 
 // 重複性高的
 .title {
@@ -97,16 +100,15 @@
         @include btn_style(220px, unset, 10px, unset, unset, transparent, $brown);
         @include font_hover($bc-brown, $fc-white);
         width: 220px;
-        margin-left: 20px;
+        // margin-left: 20px;
         border: 1px solid $bc-brown;
 
         @media screen and (max-width:1400px) {
-            width: 50%;
-            margin-left: 10px;
+            width: calc(50% - 10px);
 
-            &:nth-last-child(1) {
-                margin-left: 10px;
-                margin-right: 0px;
+            &:nth-child(3) {
+                max-width: 100%;
+                width: 100%;
             }
         }
     }
@@ -185,7 +187,7 @@
                 -webkit-appearance: none;
                 text-indent: 0.01px;
                 background-image: url('../img/icon/caret-down-solid.svg');
-                background-size: 20px;
+                background-size: 16px;
                 background-repeat: no-repeat;
                 background-position-x: calc(100% - 15px);
                 background-position-y: center;
@@ -483,7 +485,7 @@
                 -webkit-appearance: none;
                 text-indent: 0.01px;
                 background-image: url('../img/icon/caret-down-solid.svg');
-                background-size: 20px;
+                background-size: 16px;
                 background-repeat: no-repeat;
                 background-position-x: calc(100% - 15px);
                 background-position-y: center;
@@ -513,7 +515,7 @@
                 -webkit-appearance: none;
                 text-indent: 0.01px;
                 background-image: url('../img/icon/caret-down-solid.svg');
-                background-size: 20px;
+                background-size: 16px;
                 background-repeat: no-repeat;
                 background-position-x: calc(100% - 15px);
                 background-position-y: center;
@@ -764,6 +766,13 @@
             justify-content: center;
         }
     }
+
+    @media screen and (max-width:1400px) and (min-width:1200px) {
+        .col-xl-2 {
+            flex: 0 0 22%;
+            max-width: 22%;
+        }
+    }
 }
 
 .StudentReadme_from {
@@ -782,8 +791,8 @@
             align-items: center;
 
             .icon {
-                height: 8px;
-                width: 50px;
+                height: 3px;
+                width: 24px;
                 background-color: $black;
             }
 
@@ -877,8 +886,25 @@
         display: flex;
         justify-content: flex-end;
 
-        @media screen and (max-width:768px) {
-            justify-content: center;
+        button {
+            margin-left: 20px;
+
+            @media screen and (max-width:1400px) {
+                &:nth-child(1) {
+                    margin-left: 10px;
+                    margin-bottom: 15px;
+                }
+
+                &:nth-child(2) {
+                    margin-left: 10px;
+                    margin-right: 0px;
+                    margin-bottom: 15px;
+                }
+
+                &:nth-child(3) {
+                    margin-left: 0px;
+                }
+            }
         }
     }
 
@@ -1003,6 +1029,8 @@
         @media screen and (max-width:1400px) {
             display: flex;
             flex-direction: column;
+            min-width: unset;
+            max-height: unset;
         }
 
         @media screen and (max-width:768px) {
@@ -1042,6 +1070,10 @@
             height: 40px;
             background-color: $black;
             color: $white;
+
+            span {
+                margin-top: -5px;
+            }
         }
 
         .form_input {
@@ -1264,7 +1296,31 @@
         }
     }
 
+    .form_btn {
+        justify-content: start;
+        padding: 0px 15px;
 
+        button {
+            margin-right: 20px;
+
+            @media screen and (max-width:1400px) {
+                &:nth-child(1) {
+                    margin-right: 10px;
+                    margin-bottom: 15px;
+                }
+
+                &:nth-child(2) {
+                    margin-left: 10px;
+                    margin-right: 0px;
+                    margin-bottom: 15px;
+                }
+
+                &:nth-child(3) {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
 }
 
 .from {
@@ -1310,11 +1366,30 @@
 
     .form_btn {
         display: flex;
-        justify-content: flex-end;
+        justify-content: start;
+        padding: 0px 15px;
         font-weight: $fw-700;
 
-        @media screen and (max-width:768px) {
-            justify-content: center;
+        button {
+            margin-left: 20px;
+
+            @media screen and (max-width:1400px) {
+                &:nth-child(1) {
+                    margin-right: 10px;
+                    margin-left: 0px;
+                    margin-bottom: 15px;
+                }
+
+                &:nth-child(2) {
+                    margin-left: 10px;
+                    margin-bottom: 15px;
+                }
+
+                &:nth-child(3) {
+                    margin-left: 0px;
+                }
+
+            }
         }
     }
 
@@ -1450,6 +1525,15 @@
     }
 
     .Information_from {
+        .title {
+            li {
+                .icon {
+                    width: 50px;
+                    height: 8px;
+                }
+            }
+        }
+
         .text_title {
             font-size: $fs-14;
             font-weight: $fw-600;
@@ -1557,7 +1641,7 @@
                     -webkit-appearance: none;
                     text-indent: 0.01px;
                     background-image: url('../img/icon/caret-down-solid.svg');
-                    background-size: 20px;
+                    background-size: 16px;
                     background-repeat: no-repeat;
                     background-position-x: calc(100% - 15px);
                     background-position-y: center;
@@ -1935,77 +2019,117 @@
 
 }
 
-.file_block {
-    ul {
-        margin-bottom: 35px;
-    }
+.file_area {
 
-    li {
-        font-size: $fs-14;
-        margin-bottom: 10px;
 
-        &:nth-child(n+3) {
-            width: 100%;
+    .file_block {
+        ul {
+            margin-bottom: 35px;
         }
 
-        &.Note {
-            color: $fc-gray;
-            margin-top: 0px;
-            margin-bottom: 20px;
-        }
+        li {
+            font-size: $fs-14;
+            margin-bottom: 10px;
 
-        &.files {
-
-            .fileName {
-                width: calc(100% - 210px);
-                height: 30px;
-                border: 1px solid $pure-gray;
-                border-radius: 5px;
-                margin-right: 20px;
-                padding: 5px 10px;
-                font-size: $fs-12;
+            &:nth-child(2) {
+                font-size: $fs-16;
             }
 
-            .inputBox {
-                width: 190px;
-                height: 30px;
-                background-color: transparent;
-                border: 1px solid $pure-gray;
-                border-radius: 5px;
-                position: relative;
+            &:nth-child(n+3) {
+                width: 100%;
+            }
 
-                .inputText {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    font-size: $fs-14;
-                    font-weight: 900;
-                    color: $black;
-                    letter-spacing: 2px;
-                    transition: .3s;
+            &.Note {
+                color: $fc-gray;
+                margin-top: 0px;
+                margin-bottom: 20px;
+            }
+
+            &.files {
+
+                .fileName {
+                    width: calc(100% - 210px);
+                    height: 30px;
+                    border: 1px solid $pure-gray;
+                    border-radius: 5px;
+                    margin-right: 20px;
+                    padding: 5px 10px;
+                    font-size: $fs-12;
                 }
 
-                input {
-                    opacity: 0;
-                }
-
-                &:hover {
-                    background-color: black;
+                .inputBox {
+                    width: 190px;
+                    height: 30px;
+                    background-color: transparent;
+                    border: 1px solid $pure-gray;
+                    border-radius: 5px;
+                    position: relative;
 
                     .inputText {
-                        color: $white;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: $fs-14;
+                        font-weight: 900;
+                        color: $black;
+                        letter-spacing: 2px;
+                        transition: .3s;
+                    }
+
+                    input {
+                        opacity: 0;
+                    }
+
+                    &:hover {
+                        background-color: black;
+
+                        .inputText {
+                            color: $white;
+                        }
                     }
                 }
             }
-        }
 
-        &.icon {
-            width: 50px;
-            height: 8px;
+            &.icon {
+                width: 50px;
+                height: 8px;
+            }
+        }
+    }
+
+    .form_btn {
+        justify-content: start;
+        padding: 0px 15px;
+
+
+        button {
+            margin-left: 20px;
+
+            @media screen and (max-width:1400px) {
+                &:nth-child(1) {
+                    max-width: calc(50% - 10px);
+                    margin-left: 0px;
+                    max-width: 50%;
+                    margin-right: 10px;
+                    margin-bottom: 15px;
+                }
+
+                &:nth-child(2) {
+                    max-width: calc(50% - 10px);
+                    margin-left: 10px;
+                    margin-right: 0px;
+                    margin-bottom: 15px;
+                }
+
+                &:nth-child(3) {
+                    margin-left: 0px;
+                }
+            }
         }
     }
 }
+
 
 // 這別頁面修改
 

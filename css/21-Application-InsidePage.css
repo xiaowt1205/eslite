@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
+main.container {
+  overflow: hidden;
+}
+
 .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,7 +144,6 @@
   transition: .3s;
   color: #231815;
   width: 220px;
-  margin-left: 20px;
   border: 1px solid #231815;
 }
 
@@ -154,12 +157,11 @@
 
 @media screen and (max-width: 1400px) {
   .form_btn button {
-    width: 50%;
-    margin-left: 10px;
+    width: calc(50% - 10px);
   }
-  .form_btn button:nth-last-child(1) {
-    margin-left: 10px;
-    margin-right: 0px;
+  .form_btn button:nth-child(3) {
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -236,7 +238,7 @@
   -webkit-appearance: none;
   text-indent: 0.01px;
   background-image: url("../img/icon/caret-down-solid.svg");
-  background-size: 20px;
+  background-size: 16px;
   background-repeat: no-repeat;
   background-position-x: calc(100% - 15px);
   background-position-y: center;
@@ -551,7 +553,7 @@
   -webkit-appearance: none;
   text-indent: 0.01px;
   background-image: url("../img/icon/caret-down-solid.svg");
-  background-size: 20px;
+  background-size: 16px;
   background-repeat: no-repeat;
   background-position-x: calc(100% - 15px);
   background-position-y: center;
@@ -581,7 +583,7 @@
   -webkit-appearance: none;
   text-indent: 0.01px;
   background-image: url("../img/icon/caret-down-solid.svg");
-  background-size: 20px;
+  background-size: 16px;
   background-repeat: no-repeat;
   background-position-x: calc(100% - 15px);
   background-position-y: center;
@@ -880,6 +882,15 @@
   }
 }
 
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+  .StudentInformation_from .col-xl-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 22%;
+            flex: 0 0 22%;
+    max-width: 22%;
+  }
+}
+
 .StudentReadme_from .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -908,8 +919,8 @@
 }
 
 .StudentReadme_from .title li .icon {
-  height: 8px;
-  width: 50px;
+  height: 3px;
+  width: 24px;
   background-color: #000000;
 }
 
@@ -1026,11 +1037,22 @@
           justify-content: flex-end;
 }
 
-@media screen and (max-width: 768px) {
-  .StudentReadme_from .form_btn {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+.StudentReadme_from .form_btn button {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .StudentReadme_from .form_btn button:nth-child(1) {
+    margin-left: 10px;
+    margin-bottom: 15px;
+  }
+  .StudentReadme_from .form_btn button:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+  .StudentReadme_from .form_btn button:nth-child(3) {
+    margin-left: 0px;
   }
 }
 
@@ -1167,6 +1189,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    min-width: unset;
+    max-height: unset;
   }
 }
 
@@ -1208,6 +1232,11 @@
   height: 40px;
   background-color: #000000;
   color: #FFFFFF;
+}
+
+.newitem .content .add span,
+.newitem .content .del span {
+  margin-top: -5px;
 }
 
 .newitem .content .form_input {
@@ -1470,6 +1499,32 @@
   background-color: #231815;
 }
 
+.newelement .form_btn {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 0px 15px;
+}
+
+.newelement .form_btn button {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .newelement .form_btn button:nth-child(1) {
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+  .newelement .form_btn button:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+  .newelement .form_btn button:nth-child(3) {
+    margin-right: 0px;
+  }
+}
+
 .from .text {
   font-size: 14px;
   font-weight: 600;
@@ -1519,17 +1574,29 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 0px 15px;
   font-weight: 700;
 }
 
-@media screen and (max-width: 768px) {
-  .from .form_btn {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+.from .form_btn button {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .from .form_btn button:nth-child(1) {
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+  }
+  .from .form_btn button:nth-child(2) {
+    margin-left: 10px;
+    margin-bottom: 15px;
+  }
+  .from .form_btn button:nth-child(3) {
+    margin-left: 0px;
   }
 }
 
@@ -1686,6 +1753,11 @@
   }
 }
 
+.from .Information_from .title li .icon {
+  width: 50px;
+  height: 8px;
+}
+
 .from .Information_from .text_title {
   font-size: 14px;
   font-weight: 600;
@@ -1800,7 +1872,7 @@
   -webkit-appearance: none;
   text-indent: 0.01px;
   background-image: url("../img/icon/caret-down-solid.svg");
-  background-size: 20px;
+  background-size: 16px;
   background-repeat: no-repeat;
   background-position-x: calc(100% - 15px);
   background-position-y: center;
@@ -2194,26 +2266,30 @@
   }
 }
 
-.file_block ul {
+.file_area .file_block ul {
   margin-bottom: 35px;
 }
 
-.file_block li {
+.file_area .file_block li {
   font-size: 14px;
   margin-bottom: 10px;
 }
 
-.file_block li:nth-child(n+3) {
+.file_area .file_block li:nth-child(2) {
+  font-size: 16px;
+}
+
+.file_area .file_block li:nth-child(n+3) {
   width: 100%;
 }
 
-.file_block li.Note {
+.file_area .file_block li.Note {
   color: #808080;
   margin-top: 0px;
   margin-bottom: 20px;
 }
 
-.file_block li.files .fileName {
+.file_area .file_block li.files .fileName {
   width: calc(100% - 210px);
   height: 30px;
   border: 1px solid #4D4D4D;
@@ -2223,7 +2299,7 @@
   font-size: 12px;
 }
 
-.file_block li.files .inputBox {
+.file_area .file_block li.files .inputBox {
   width: 190px;
   height: 30px;
   background-color: transparent;
@@ -2232,7 +2308,7 @@
   position: relative;
 }
 
-.file_block li.files .inputBox .inputText {
+.file_area .file_block li.files .inputBox .inputText {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2246,21 +2322,51 @@
   transition: .3s;
 }
 
-.file_block li.files .inputBox input {
+.file_area .file_block li.files .inputBox input {
   opacity: 0;
 }
 
-.file_block li.files .inputBox:hover {
+.file_area .file_block li.files .inputBox:hover {
   background-color: black;
 }
 
-.file_block li.files .inputBox:hover .inputText {
+.file_area .file_block li.files .inputBox:hover .inputText {
   color: #FFFFFF;
 }
 
-.file_block li.icon {
+.file_area .file_block li.icon {
   width: 50px;
   height: 8px;
+}
+
+.file_area .form_btn {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 0px 15px;
+}
+
+.file_area .form_btn button {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .file_area .form_btn button:nth-child(1) {
+    max-width: calc(50% - 10px);
+    margin-left: 0px;
+    max-width: 50%;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+  .file_area .form_btn button:nth-child(2) {
+    max-width: calc(50% - 10px);
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+  .file_area .form_btn button:nth-child(3) {
+    margin-left: 0px;
+  }
 }
 
 .Misjudgment.name div {

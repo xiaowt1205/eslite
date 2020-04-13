@@ -154,11 +154,11 @@
 
                 span {
                     &:nth-child(1) {
-                        transform: translateY(-5px);
+                        transform: translateY(2px);
                     }
 
                     &:nth-last-child(1) {
-                        transform: translateY(5px);
+                        transform: translateY(2px);
                     }
 
                     @media screen and (max-width:768px) {
@@ -187,10 +187,10 @@
             padding: 10px 15px;
         }
 
-        input {
+        button {
             @include text_style($fs-16, $fw-700, center, 3px);
             @include font_hover($bc-brown, $fc-white);
-            width: 220px;
+            width: 200px;
             padding: 10px 0px;
             background-color: transparent;
             margin-right: 20px;
