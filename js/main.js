@@ -13,8 +13,6 @@ $('.menu-btn-pc').click(function () {
     }
 })
 
-
-
     
 $('.collapse').on('show.bs.collapse', function () {
     $('.pc-collapse').each(function () {
@@ -31,3 +29,13 @@ $(window).scroll(function () {
         btn.removeClass('show');
     }
 });
+
+if($('.pageNumber .number').length >= 1){
+    $('.pageNumber .number').each(function(index){
+        $(this).click(function(){
+            $('.pageNumber .number').removeClass('active')
+            $(this).addClass('active')
+        })
+        
+    })  
+}

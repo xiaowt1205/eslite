@@ -784,6 +784,79 @@ footer {
     }
 }
 
+.pageNumber {
+    width: 100%;
+    padding: 25px 0px;
+
+    ul {
+        flex-wrap: wrap;
+
+        .number {
+            &.active{
+                a {
+                    background-color: $bc-number-black;
+                    color: $fc-white;
+                }
+            }
+
+            a {
+                display: block;
+                width: 25px;
+                height: 25px;
+                color: $fc-black;
+                background-color: unset;
+                text-align: center;
+                border-radius: 50%;
+                font-weight: bold;
+
+                &:hover {
+                    background-color: $bc-number-black;
+                    color: $fc-white;
+                }
+            }
+        }
+
+        .BTN {
+            margin: 25px 0px;
+
+            .nextBTN,
+            .lastBTN {
+                padding: 10px 20px;
+                border: 1px solid $bc-number-black;
+                text-align: center;
+                color: $fc-black;
+                font-weight: $fw-700;
+                transition: .3s;
+
+                &:hover {
+                    color: $white;
+                    background-color: $bc-number-black;
+                }
+            }
+
+            .nextBTN {
+                margin-left: 20px;
+            }
+
+            .lastBTN {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .more {
+        cursor: pointer;
+        border: 1px solid $bc-number-black;
+        width: 130px;
+        height: 30px;
+        font-size: $fs-14;
+        font-weight: $fw-700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @keyframes menu-fadeIn {
     from {
         opacity: 0;

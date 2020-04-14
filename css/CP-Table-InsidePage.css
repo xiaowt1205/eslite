@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
+.area_table {
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .area_table {
+    padding-bottom: 25px;
+  }
+}
+
+.area_table > div {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 80px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 992px) {
+  .area_table > div {
+    margin-bottom: 25px;
+  }
+}
+
+.area_table .text {
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-align: center;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  padding: 25px 0px;
+}
+
+@media screen and (max-width: 992px) {
+  .area_table .text {
+    border-left: 1px solid #000000;
+  }
+}
+
+.area_table .text:nth-child(1) {
+  border-top: 1px solid #000000;
+}
+
+.area_table .text:nth-child(2) {
+  border-top: 1px solid #000000;
+}
+
+@media screen and (max-width: 992px) {
+  .area_table .text:nth-child(2) {
+    border-top: unset;
+  }
+}
+
+.area_table .text:nth-child(2n+1) {
+  font-weight: bold;
+  border-left: 1px solid #000000;
+}
+
+@media screen and (max-width: 992px) {
+  .area_table .text:nth-child(2n+1) {
+    padding: 10px 5px 5px;
+    border-top: 1px solid #000000;
+  }
+}
+
+.area_table .text:nth-child(2n) {
+  color: #808080;
+}
+
+@media screen and (max-width: 992px) {
+  .area_table .text:nth-child(2n) {
+    padding: 20px 5px 25px;
+    margin-bottom: 15px;
+  }
+}
+
+.area_table .message_area {
+  position: relative;
+  padding-left: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: unset;
+  letter-spacing: 4px;
+  margin-bottom: 60px;
+}
+
+.area_table .message_area > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.5px 0px;
+}
+
+.area_table .message_area > div > div {
+  width: 110px;
+  padding-right: 20px;
+  white-space: nowrap;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+  position: relative;
+}
+
+.area_table .message_area > div > div::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 15px;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #231815;
+}
+
+.area_table .message_area::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 5px;
+  height: 75px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #231815;
+}
+
+.area_table .message_area .firtst_data > div > p {
+  letter-spacing: 15px;
+}
+
+.area_table .message_area .firtst_data > p {
+  padding-left: 20px;
+}
+
+.area_table .message_area .new_data > div > p {
+  letter-spacing: 2.7px;
+}
+
+.area_table .message_area .new_data > p {
+  padding-left: 20px;
+}
+
+.area_table .message_area .click_point > div > p {
+  letter-spacing: 2.7px;
+}
+
+.area_table .message_area .click_point > p {
+  padding-left: 20px;
+}
+/*# sourceMappingURL=CP-Table-InsidePage.css.map */

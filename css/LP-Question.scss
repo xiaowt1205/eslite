@@ -1,0 +1,130 @@
+@import "./model.scss";
+@import "./_variables.scss";
+@import "./_function.scss";
+
+
+* {
+    box-sizing: border-box;
+}
+
+.phoneStyleTitle {
+    @media (max-width:768px) {
+        margin-bottom: 30px;
+    }
+}
+
+.question {
+
+    .btnGroup {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            margin: 0px 20px 17px 0px;
+            font-weight: $fw-700;
+
+            &:nth-last-child(1) {
+                margin-bottom: 30px;
+            }
+
+            @media (max-width:768px) {
+                margin: 0px 10px 10px 0px;
+
+                &:nth-last-child(1) {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .btnArea {
+                @include text_style($fs-16, unset, center, 2px);
+                padding: 10px 30px;
+                border-radius: 8px;
+                border: 1px solid $black;
+                color: $fc-pure-gray;
+
+                @media (max-width:768px) {
+                    padding: 5px 10px;
+                }
+
+                &:hover {
+                    background-color: $bc-dark-brown-hover;
+                    color: $fc-white;
+
+                }
+
+                &.active {
+                    font-weight: $fw-700;
+                    background-color: $black;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .QA-tab {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        &>:nth-child(1) {
+            @media (max-width:1024px) {
+                border-top: 1px solid $fc-pure-gray;
+            }
+        }
+
+        .QA {
+            padding: 20px 15px 20px 0px;
+            border-bottom: 1px solid $fc-pure-gray;
+            cursor: pointer;
+
+            .query {
+                font-weight: bold;
+                font-size: $fs-18;
+                display: flex;
+                align-items: center;
+                line-height: 2;
+                letter-spacing: 2px;
+
+
+                .fa-chevron-up {
+                    transition: .5s;
+                    margin-left: 20px;
+                }
+
+                @media screen and (max-width:576px) {
+                    flex-direction: column;
+
+                    span {
+                        padding-bottom: 20px;
+                    }
+                }
+
+
+            }
+
+            .answer {
+                line-height: 2;
+                overflow: hidden;
+                max-height: 0;
+                transition: 0.3s;
+                letter-spacing: 1.5px;
+
+            }
+
+            &.active {
+                .fa-chevron-up {
+                    transform: rotate(180deg);
+                }
+
+                .answer {
+                    transition-timing-function: ease-in-out;
+                    transition: 1s;
+                    max-height: 400px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
