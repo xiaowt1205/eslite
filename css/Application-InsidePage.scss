@@ -1381,12 +1381,13 @@ main.container {
     }
 }
 
-.from {
+.books_form {
     .text {
         font-size: $fs-14;
         font-weight: $fw-600;
         letter-spacing: 2px;
         padding: 0px 0px 50px;
+        max-width: 810px;
     }
 
     .nav-pills {
@@ -1427,6 +1428,7 @@ main.container {
         justify-content: start;
         padding: 0px 15px;
         font-weight: $fw-700;
+        max-width: 810px;
 
         button {
             margin-left: 20px;

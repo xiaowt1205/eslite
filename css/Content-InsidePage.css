@@ -217,7 +217,7 @@
     display: flex;
   }
   .Privacy .Privacy_title.mob span:nth-child(1) {
-    margin-bottom: 10px;
+    margin-bottom: 3px;
   }
 }
 

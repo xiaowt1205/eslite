@@ -1577,26 +1577,27 @@ main.container {
   }
 }
 
-.from .text {
+.books_form .text {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
   padding: 0px 0px 50px;
+  max-width: 810px;
 }
 
-.from .nav-pills {
+.books_form .nav-pills {
   margin-bottom: 50px;
 }
 
 @media screen and (max-width: 768px) {
-  .from .nav-pills {
+  .books_form .nav-pills {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
 
-.from .nav-pills .nav-item {
+.books_form .nav-pills .nav-item {
   width: 250px;
   height: 40px;
   font-size: 18px;
@@ -1605,24 +1606,24 @@ main.container {
   text-align: center;
 }
 
-.from .nav-pills .nav-item .active {
+.books_form .nav-pills .nav-item .active {
   color: #FFFFFF;
   background-color: #231815;
 }
 
-.from .nav-pills .nav-item .nav-link {
+.books_form .nav-pills .nav-item .nav-link {
   border-radius: 0px;
   border: 1px solid #000000;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.from .nav-pills .nav-item .nav-link:hover {
+.books_form .nav-pills .nav-item .nav-link:hover {
   color: #FFFFFF;
   background-color: #000000;
 }
 
-.from .form_btn {
+.books_form .form_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1631,42 +1632,43 @@ main.container {
           justify-content: start;
   padding: 0px 15px;
   font-weight: 700;
+  max-width: 810px;
 }
 
-.from .form_btn button {
+.books_form .form_btn button {
   margin-left: 20px;
 }
 
 @media screen and (max-width: 1400px) {
-  .from .form_btn button:nth-child(1) {
+  .books_form .form_btn button:nth-child(1) {
     margin-right: 10px;
     margin-left: 0px;
     margin-bottom: 15px;
   }
-  .from .form_btn button:nth-child(2) {
+  .books_form .form_btn button:nth-child(2) {
     margin-left: 10px;
     margin-bottom: 15px;
   }
-  .from .form_btn button:nth-child(3) {
+  .books_form .form_btn button:nth-child(3) {
     margin-left: 0px;
   }
 }
 
-.from .name {
+.books_form .name {
   font-size: 22px;
   letter-spacing: 2px;
   padding-bottom: 30px;
 }
 
 @media (min-width: 1200px) {
-  .from .name {
+  .books_form .name {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 25%;
             flex: 0 0 25%;
   }
 }
 
-.from .name > div {
+.books_form .name > div {
   min-width: 150px;
   letter-spacing: 4px;
   padding: 0px 0px 0px 20px;
@@ -1676,7 +1678,7 @@ main.container {
   font-weight: 700;
 }
 
-.from .name > div::before {
+.books_form .name > div::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1688,11 +1690,11 @@ main.container {
   background-color: #231815;
 }
 
-.from .name.Editor > div {
+.books_form .name.Editor > div {
   letter-spacing: 3px;
 }
 
-.from .form_input {
+.books_form .form_input {
   margin-bottom: 40px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -1701,15 +1703,15 @@ main.container {
 }
 
 @media screen and (max-width: 1200px) {
-  .from .form_input {
+  .books_form .form_input {
     margin-bottom: 40px;
   }
-  .from .form_input .block {
+  .books_form .form_input .block {
     margin-bottom: 20px;
   }
 }
 
-.from .form_input > input {
+.books_form .form_input > input {
   width: 100%;
   padding: 10px 20px;
   border-radius: 5px;
@@ -1725,18 +1727,18 @@ main.container {
           box-shadow: none;
 }
 
-.from .form_input img {
+.books_form .form_input img {
   width: 100%;
   border: 1px solid #000000;
 }
 
 @media screen and (max-width: 1200px) {
-  .from .form_input img {
+  .books_form .form_input img {
     height: 40px;
   }
 }
 
-.from .form_input .icon {
+.books_form .form_input .icon {
   width: 100px;
   font-size: 18px;
   display: -webkit-box;
@@ -1746,7 +1748,7 @@ main.container {
       justify-content: space-around;
 }
 
-.from .form_input .icon i {
+.books_form .form_input .icon i {
   margin: 0px 2px;
   padding: 7px;
   border-radius: 50%;
@@ -1758,7 +1760,7 @@ main.container {
   cursor: pointer;
 }
 
-.from .form_input.identity_area {
+.books_form .form_input.identity_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1769,26 +1771,26 @@ main.container {
       flex-wrap: wrap;
 }
 
-.from .form_input.identity_area > div {
+.books_form .form_input.identity_area > div {
   width: 100%;
 }
 
-.from .form_input.identity_area .identity {
+.books_form .form_input.identity_area .identity {
   margin-right: 40px;
 }
 
-.from .form_input.identity_area input {
+.books_form .form_input.identity_area input {
   width: calc(100% - 250px);
 }
 
 @media screen and (max-width: 768px) {
-  .from .form_input.identity_area input {
+  .books_form .form_input.identity_area input {
     width: 100%;
     margin-top: 10px;
   }
 }
 
-.from .form_input.identity_area button {
+.books_form .form_input.identity_area button {
   width: 210px;
   height: 40px;
   background-color: #231815;
@@ -1800,33 +1802,33 @@ main.container {
 }
 
 @media screen and (max-width: 768px) {
-  .from .form_input.identity_area button {
+  .books_form .form_input.identity_area button {
     margin-top: 30px;
   }
 }
 
-.from .Information_from .title li .icon {
+.books_form .Information_from .title li .icon {
   width: 50px;
   height: 8px;
 }
 
-.from .Information_from .text_title {
+.books_form .Information_from .text_title {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 3px;
 }
 
-.from .Information_from .text_title li {
+.books_form .Information_from .text_title li {
   margin-bottom: 30px;
 }
 
-.from .Information_from .name {
+.books_form .Information_from .name {
   font-size: 22px;
   letter-spacing: 2px;
   padding-bottom: 30px;
 }
 
-.from .Information_from .name > div {
+.books_form .Information_from .name > div {
   min-width: 150px;
   letter-spacing: 4px;
   padding: 0px 0px 0px 20px;
@@ -1836,7 +1838,7 @@ main.container {
   font-weight: 700;
 }
 
-.from .Information_from .name > div::before {
+.books_form .Information_from .name > div::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1848,7 +1850,7 @@ main.container {
   background-color: #231815;
 }
 
-.from .Information_from .name > div.two {
+.books_form .Information_from .name > div.two {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1858,20 +1860,20 @@ main.container {
           flex-direction: column;
 }
 
-.from .Information_from .form_input {
+.books_form .Information_from .form_input {
   margin-bottom: 40px;
 }
 
 @media screen and (max-width: 1200px) {
-  .from .Information_from .form_input {
+  .books_form .Information_from .form_input {
     margin-bottom: 40px;
   }
-  .from .Information_from .form_input .block {
+  .books_form .Information_from .form_input .block {
     margin-bottom: 20px;
   }
 }
 
-.from .Information_from .form_input > input {
+.books_form .Information_from .form_input > input {
   width: 100%;
   padding: 10px 20px;
   border-radius: 5px;
@@ -1887,7 +1889,7 @@ main.container {
           box-shadow: none;
 }
 
-.from .Information_from .form_input select.identity {
+.books_form .Information_from .form_input select.identity {
   width: 110px;
   padding: 10px 20px;
   border-radius: 5px;
@@ -1903,12 +1905,12 @@ main.container {
   letter-spacing: 4px;
 }
 
-.from .Information_from .form_input select.identity option:nth-child(1) {
+.books_form .Information_from .form_input select.identity option:nth-child(1) {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-.from .Information_from .form_input select.identity option {
+.books_form .Information_from .form_input select.identity option {
   line-height: 30px;
   width: 100%;
   padding: 10px 20px;
@@ -1916,7 +1918,7 @@ main.container {
   letter-spacing: 4px;
 }
 
-.from .Information_from .form_input select.area {
+.books_form .Information_from .form_input select.area {
   width: 100%;
   padding: 10px 20px;
   border-radius: 5px;
@@ -1932,12 +1934,12 @@ main.container {
   letter-spacing: 4px;
 }
 
-.from .Information_from .form_input select.area option:nth-child(1) {
+.books_form .Information_from .form_input select.area option:nth-child(1) {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-.from .Information_from .form_input select.area option {
+.books_form .Information_from .form_input select.area option {
   line-height: 30px;
   width: 100%;
   padding: 10px 20px;
@@ -1945,7 +1947,7 @@ main.container {
   letter-spacing: 4px;
 }
 
-.from .Information_from .form_input select.grade {
+.books_form .Information_from .form_input select.grade {
   width: 100%;
   padding: 10px 20px;
   border-radius: 5px;
@@ -1961,12 +1963,12 @@ main.container {
   letter-spacing: 4px;
 }
 
-.from .Information_from .form_input select.grade option:nth-child(1) {
+.books_form .Information_from .form_input select.grade option:nth-child(1) {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-.from .Information_from .form_input select.grade option {
+.books_form .Information_from .form_input select.grade option {
   line-height: 30px;
   width: 100%;
   padding: 10px 20px;
@@ -1974,18 +1976,18 @@ main.container {
   letter-spacing: 4px;
 }
 
-.from .Information_from .form_input img {
+.books_form .Information_from .form_input img {
   width: 100%;
   border: 1px solid #000000;
 }
 
 @media screen and (max-width: 1200px) {
-  .from .Information_from .form_input img {
+  .books_form .Information_from .form_input img {
     height: 40px;
   }
 }
 
-.from .Information_from .form_input .icon {
+.books_form .Information_from .form_input .icon {
   width: 100px;
   font-size: 18px;
   display: -webkit-box;
@@ -1995,7 +1997,7 @@ main.container {
       justify-content: space-around;
 }
 
-.from .Information_from .form_input .icon i {
+.books_form .Information_from .form_input .icon i {
   margin: 0px 2px;
   padding: 7px;
   border-radius: 50%;
@@ -2007,11 +2009,11 @@ main.container {
   cursor: pointer;
 }
 
-.from .Information_from .form_input.two input:nth-child(1) {
+.books_form .Information_from .form_input.two input:nth-child(1) {
   margin-bottom: 40px;
 }
 
-.from .Information_from .form_input.identity_area {
+.books_form .Information_from .form_input.identity_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2022,22 +2024,22 @@ main.container {
       flex-wrap: wrap;
 }
 
-.from .Information_from .form_input.identity_area .identity {
+.books_form .Information_from .form_input.identity_area .identity {
   margin-right: 40px;
 }
 
-.from .Information_from .form_input.identity_area input {
+.books_form .Information_from .form_input.identity_area input {
   width: calc(100% - 250px);
 }
 
 @media screen and (max-width: 768px) {
-  .from .Information_from .form_input.identity_area input {
+  .books_form .Information_from .form_input.identity_area input {
     width: 100%;
     margin-top: 10px;
   }
 }
 
-.from .Information_from .form_input.identity_area button {
+.books_form .Information_from .form_input.identity_area button {
   width: 210px;
   height: 40px;
   background-color: #231815;
@@ -2049,12 +2051,12 @@ main.container {
 }
 
 @media screen and (max-width: 768px) {
-  .from .Information_from .form_input.identity_area button {
+  .books_form .Information_from .form_input.identity_area button {
     margin-top: 30px;
   }
 }
 
-.from .Information_from .form_input.Clear_content {
+.books_form .Information_from .form_input.Clear_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2065,22 +2067,22 @@ main.container {
       flex-wrap: wrap;
 }
 
-.from .Information_from .form_input.Clear_content .identity {
+.books_form .Information_from .form_input.Clear_content .identity {
   margin-right: 40px;
 }
 
-.from .Information_from .form_input.Clear_content input {
+.books_form .Information_from .form_input.Clear_content input {
   width: calc(100% - 120px);
 }
 
 @media screen and (max-width: 768px) {
-  .from .Information_from .form_input.Clear_content input {
+  .books_form .Information_from .form_input.Clear_content input {
     width: 100%;
     margin-top: 10px;
   }
 }
 
-.from .Information_from .form_input.Clear_content button {
+.books_form .Information_from .form_input.Clear_content button {
   width: 100px;
   height: 40px;
   background-color: #231815;
@@ -2092,12 +2094,12 @@ main.container {
 }
 
 @media screen and (max-width: 768px) {
-  .from .Information_from .form_input.Clear_content button {
+  .books_form .Information_from .form_input.Clear_content button {
     margin-top: 30px;
   }
 }
 
-.from .Information_from .form_input .Application_radio {
+.books_form .Information_from .form_input .Application_radio {
   padding-bottom: 20px;
   border-bottom: 1px solid #000000;
   -ms-flex-wrap: wrap;
@@ -2108,13 +2110,13 @@ main.container {
 }
 
 @media screen and (max-width: 1200px) {
-  .from .Information_from .form_input .Application_radio {
+  .books_form .Information_from .form_input .Application_radio {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-.from .Information_from .form_input .Application_radio li {
+.books_form .Information_from .form_input .Application_radio li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2123,11 +2125,11 @@ main.container {
           align-items: center;
 }
 
-.from .Information_from .form_input .Application_radio li input {
+.books_form .Information_from .form_input .Application_radio li input {
   margin-right: 15px;
 }
 
-.from .Information_from .form_input .Reader_radio {
+.books_form .Information_from .form_input .Reader_radio {
   padding-bottom: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -2139,13 +2141,13 @@ main.container {
 }
 
 @media screen and (max-width: 1200px) {
-  .from .Information_from .form_input .Reader_radio {
+  .books_form .Information_from .form_input .Reader_radio {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-.from .Information_from .form_input .Reader_radio li {
+.books_form .Information_from .form_input .Reader_radio li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2155,15 +2157,15 @@ main.container {
   padding: 0px 10px;
 }
 
-.from .Information_from .form_input .Reader_radio li input {
+.books_form .Information_from .form_input .Reader_radio li input {
   margin-right: 15px;
 }
 
-.from .Information_from .form_input .Reader_radio li div {
+.books_form .Information_from .form_input .Reader_radio li div {
   letter-spacing: 5px;
 }
 
-.from .Information_from .form_input .Reader_radio::before {
+.books_form .Information_from .form_input .Reader_radio::before {
   position: absolute;
   bottom: 0px;
   content: '';
@@ -2175,7 +2177,7 @@ main.container {
   background-color: #000000;
 }
 
-.from .Information_from .form_input.address {
+.books_form .Information_from .form_input.address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2187,40 +2189,40 @@ main.container {
 }
 
 @media screen and (max-width: 768px) {
-  .from .Information_from .form_input.address {
+  .books_form .Information_from .form_input.address {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
 }
 
-.from .Information_from .form_input.address input {
+.books_form .Information_from .form_input.address input {
   width: calc(100% - 130px);
 }
 
 @media screen and (max-width: 768px) {
-  .from .Information_from .form_input.address input {
+  .books_form .Information_from .form_input.address input {
     width: 100%;
     margin-top: 10px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .from .Information_from .form_input.address select {
+  .books_form .Information_from .form_input.address select {
     margin-right: 30px;
   }
 }
 
-.from .Information_from .form_input.address .area {
+.books_form .Information_from .form_input.address .area {
   width: 108px;
   height: 40px;
 }
 
-.from .Information_from .dateInput {
+.books_form .Information_from .dateInput {
   position: relative;
 }
 
-.from .Information_from .dateInput input {
+.books_form .Information_from .dateInput input {
   height: 40px;
   padding: 10px 20px;
   border-radius: 5px;
@@ -2229,7 +2231,7 @@ main.container {
   position: relative;
 }
 
-.from .Information_from .dateInput i {
+.books_form .Information_from .dateInput i {
   font-size: 22px;
   opacity: 0.6;
   position: absolute;
@@ -2237,12 +2239,12 @@ main.container {
   top: 8px;
 }
 
-.from .Information_from .dateInput .period {
+.books_form .Information_from .dateInput .period {
   font-weight: bold;
   margin-right: 25px;
 }
 
-.from .Information_from .Privacy {
+.books_form .Information_from .Privacy {
   margin-bottom: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2250,25 +2252,25 @@ main.container {
 }
 
 @media screen and (max-width: 768px) {
-  .from .Information_from .Privacy {
+  .books_form .Information_from .Privacy {
     border-top: 1px solid #000000;
     padding-top: 40px;
   }
 }
 
-.from .Information_from .Privacy input {
+.books_form .Information_from .Privacy input {
   -webkit-transform: translate(-30px, 42px);
           transform: translate(-30px, 42px);
 }
 
 @media screen and (max-width: 768px) {
-  .from .Information_from .Privacy input {
+  .books_form .Information_from .Privacy input {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
   }
 }
 
-.from .Information_from .Privacy p {
+.books_form .Information_from .Privacy p {
   width: 100%;
   margin-left: -10px;
   padding-top: 40px;
@@ -2278,7 +2280,7 @@ main.container {
 }
 
 @media screen and (max-width: 768px) {
-  .from .Information_from .Privacy p {
+  .books_form .Information_from .Privacy p {
     margin-left: 0px;
     padding-top: 0px;
     padding-left: 5px;
@@ -2286,7 +2288,7 @@ main.container {
   }
 }
 
-.from .Information_from .form_btn {
+.books_form .Information_from .form_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2296,14 +2298,14 @@ main.container {
 }
 
 @media screen and (max-width: 768px) {
-  .from .Information_from .form_btn {
+  .books_form .Information_from .form_btn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
 
-.from textarea {
+.books_form textarea {
   width: 100%;
   height: 90px;
   resize: none;
@@ -2313,7 +2315,7 @@ main.container {
 }
 
 @media screen and (max-width: 768px) {
-  .from textarea {
+  .books_form textarea {
     height: 150px;
   }
 }
