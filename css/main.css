@@ -232,10 +232,6 @@ body {
   padding-bottom: 15px;
 }
 
-.menu .menu-container .menu-title ul {
-  margin-top: -15px;
-}
-
 .menu .menu-container .menu-title ul .menu-content.collapse-content {
   color: #FFFFFF;
   font-size: 14px;
@@ -293,11 +289,11 @@ body {
 }
 
 .menu .menu-container .menu-title ul li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .menu .menu-container .menu-title .drop-down .collapse-body {
-  padding: 10px 0 15px 0;
+  padding: 5px 0 15px 0;
 }
 
 .menu .menu-container .menu-title .drop-down li a {
