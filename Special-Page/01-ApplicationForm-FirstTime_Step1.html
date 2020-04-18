@@ -15,14 +15,15 @@
     <link
         href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:200,300,400,500,600,700,900&display=swap&subset=chinese-traditional"
         rel="stylesheet">
+    <!-- jquery-ui -->
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+
     <!-- layout -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <!-- page css  -->
-    <link rel="stylesheet" href="./css/InsidePagetemplate.css">
-    <link rel="stylesheet" href="./css/SignIn-InsidePage.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/Application-InsidePage.css">
     <style>
-
-
 
     </style>
 </head>
@@ -33,7 +34,7 @@
             <div class="row">
                 <div class="col-3">
                     <div class="logo">
-                        <img src="./img/index/logo-black.svg" alt="">
+                        <img src="../img/index/logo-black.svg" alt="">
                     </div>
                 </div>
                 <nav class="col-9">
@@ -87,7 +88,7 @@
                 </a>
             </div>
             <div class="logo d-lg-none d-block">
-                <img class="w-100" src="./img/index/logo-white-no_deco.png" alt="">
+                <img class="w-100" src="../img/index/logo-white-no_deco.png" alt="">
             </div>
             <ul class="d-flex justify-content-end flex-wrap">
                 <li class="menu-title"><a href="">
@@ -430,7 +431,7 @@
             <div class="modal-content">
                 <div class="modal-top">
                     <div class="logo">
-                        <img class="w-100" src="./img/index/logo-white-no_deco.png" alt="">
+                        <img class="w-100" src="../img/index/logo-white-no_deco.png" alt="">
                     </div>
                     <button class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -773,15 +774,16 @@
         <div class="row position-relative align-items-start">
             <aside class="offset-1 col-2 breadcrumbblock">
                 <div>
-                    <img class="imgSize" src="./img/index/logo.svg" alt="">
+                    <img class="imgSize" src="../img/index/logo.svg" alt="">
                 </div>
                 <div class="insidePageTitle">
                     <nav class="breadcrumbArea" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">首頁</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">網站導覽</li>
+                            <li class="breadcrumb-item"><a href="#">青年培育計畫</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">申請成為學員</li>
                         </ol>
-                        <div class="title">網站導覽</div>
+                        <div class="title">學生申請</div>
                     </nav>
                     <div class="btnArea">
                         <div class="back block">
@@ -823,55 +825,177 @@
                 <div class="w-100 flat" aria-label="breadcrumb">
                     <ol class="breadcrumb phoneStyle">
                         <li class="breadcrumb-item"><a href="#">首頁</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">分頁標題</li>
+                        <li class="breadcrumb-item"><a href="#">青年培育計畫</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">申請成為學員</li>
                     </ol>
-                    <h2 class="phoneStyleTitle">分頁標題</h2>
+                    <h2 class="phoneStyleTitle">學生申請</h2>
                 </div>
                 <!-- 平板版的title結束 -->
 
                 <!-- 內頁起點 -->
-                <div class="login_content">
-                    <ul class="signin_title">
-                        <li>
-                            <div class="icon"></div>
-                        </li>
-                        <li>登入</li>
-                    </ul>
-
-                    <form action="" class="login">
-                        <div class="row justify-content-end content">
-                            <div class="col-xl-2 col-12 name">
-                                <div>帳號</div>
-                            </div>
-                            <div class="col-xl-10 col-12 form_input">
-                                <input type="text" name="title_name" placeholder="身分證字號 / 外籍人士護照號">
-                            </div>
-                            <div class="col-xl-2 col-12 name">
-                                <div>密碼</div>
-                            </div>
-                            <div class="col-xl-10 col-12 form_input">
-                                <input type="text" name="title_name" placeholder="範例：0911123123">
-                            </div>
-                            <div class="col-xl-10 col-12 robot">
-                                <img src="./img/test/norobot.jpg" alt="" class="">
-                                <div class="title">
-                                    <span>
-                                        等待顯示綠色勾勾後
-                                    </span>
-                                    <span>再點選會員登入</span>
-                                </div>
-                            </div>
+                <div class="step-area">
+                    <div class="step-scroll d-flex align-items-center step-1">
+                        <div class="step active">
+                            <p>1.</p>
+                            <p>學生</p>
+                            <p>基本資料</p>
                         </div>
-                        <div class="row d-flex justify-content-end form_btn">
-                            <button>會員登入</button>
-                            <button>忘記密碼</button>
-                            <button>首次申請</button>
-                            <!-- <input type="submit" value="">
-                            <input type="submit" value="">
-                            <input type="reset" value=""> -->
+                        <div class="arrow"></div>
+                        <div class="step">
+                            <p>2.</p>
+                            <p>學生個人</p>
+                            <p>自述表</p>
                         </div>
-                    </form>
+                        <div class="arrow"></div>
+                        <div class="step">
+                            <p>3.</p>
+                            <p>檔案上傳</p>
+                        </div>
+                        <div class="arrow"></div>
+                        <div class="step">
+                            <p>4.</p>
+                            <p>申請完成</p>
+                        </div>
+                    </div>
                 </div>
+                <form action="" class="StudentInformation_from col-12">
+                    <div class="row justify-content-start">
+                        <div class="col-xl-2 col-12 name">
+                            <div>姓名</div>
+                        </div>
+                        <div class="col-xl-9 col-12 form_input">
+                            <input type="text" name="name" placeholder="">
+                        </div>
+                        <div class="col-xl-2 col-12 name">
+                            <div>身分證字號</div>
+                        </div>
+                        <div class="col-xl-9 col-12 form_input identity_area">
+                            <input type="tel" name="tel" placeholder="身分證號(帳號)">
+                            <button>確認帳號是否重複</button>
+                        </div>
+                        <div class="col-xl-2 col-12 name">
+                            <div>密碼</div>
+                        </div>
+                        <div class="col-xl-9 col-12 form_input two">
+                            <input type="email" name="email" placeholder="輸入密碼">
+                            <input type="email" name="email" placeholder="再次確認密碼">
+                        </div>
+                        <div class="col-xl-2 col-12 name">
+                            <div>電子信箱</div>
+                        </div>
+                        <div class="col-xl-9 col-12 form_input">
+                            <input type="email" name="email" placeholder="">
+                        </div>
+                        <div class="col-xl-2 col-12 name">
+                            <div>就讀學校</div>
+                        </div>
+                        <div class="col-xl-9 col-12 form_input school">
+                            <select class="area">
+                                <option selected="true">基隆市</option>
+                                <option>臺北市</option>
+                                <option>新北市</option>
+                                <option>桃園市</option>
+                                <option>臺中市</option>
+                                <option>臺南市</option>
+                                <option>高雄市</option>
+                                <option>新竹縣</option>
+                                <option>苗栗縣</option>
+                                <option>彰化縣</option>
+                                <option>南投縣</option>
+                                <option>雲林縣</option>
+                                <option>嘉義縣</option>
+                                <option>屏東縣</option>
+                                <option>宜蘭縣</option>
+                                <option>花蓮縣</option>
+                                <option>臺東縣</option>
+                                <option>澎湖縣</option>
+                                <option>金門縣</option>
+                                <option>連江縣</option>
+                                <option>新竹市</option>
+                            </select>
+                            <select class="grade">
+                                <option selected="true">國小</option>
+                                <option>國中</option>
+                                <option>高中</option>
+                            </select>
+                            <input type="text" name="phone" placeholder="">
+                        </div>
+                        <div class="col-xl-2 col-12 name">
+                            <div>年級</div>
+                        </div>
+                        <div class="col-xl-9 col-12 form_input">
+                            <input type="text" name="phone" placeholder="">
+                        </div>
+                        <div class="col-xl-2 col-12 name">
+                            <div>室內電話</div>
+                        </div>
+                        <div class="col-xl-9 col-12 form_input">
+                            <input type="tel" name="tel" placeholder="">
+                        </div>
+                        <div class="col-xl-2 col-12 name">
+                            <div>行動電話</div>
+                        </div>
+                        <div class="col-xl-9 col-12 form_input">
+                            <input type="tel" name="tel" placeholder="範例：0911123123">
+                        </div>
+                        <div class="col-xl-2 col-12 name">
+                            <div>出生年月日</div>
+                        </div>
+                        <div class="col-xl-9 col-12 form_input dateInput">
+                            <div class="w-100 position-relative data_btn">
+                                <input type="text" id="datepicker" class="datepicker" placeholder="年 / 月 / 日">
+                                <i class="far fa-calendar-alt"></i>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-12 name">
+                            <div>用餐選擇</div>
+                        </div>
+                        <div class="col-xl-9 col-12 form_input">
+                            <select class="area">
+                                <option selected="true">請選擇</option>
+                                <option>臺北市</option>
+                                <option>新北市</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-2 col-12 name">
+                            <div>緊急聯絡人</div>
+                        </div>
+                        <div class="col-xl-9 col-12 form_input">
+                            <input type="text" name="phone" placeholder="">
+                        </div>
+                        <div class="col-xl-2 col-12 name">
+                            <div>關係</div>
+                        </div>
+                        <div class="col-xl-9 col-12 form_input">
+                            <input type="text" name="phone" placeholder="">
+                        </div>
+                        <div class="col-xl-2 col-12 name">
+                            <div>
+                                <span>緊急連絡人</span>
+                                <span>電話</span>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-12 form_input">
+                            <input type="text" name="phone" placeholder="">
+                        </div>
+                    </div>
+                    <div class="row justify-content-start">
+                        <div class="col-xl-2 col-12">
+                        </div>
+                        <div class="col-xl-9 col-12 Privacy">
+                            <input type="radio" checked="checked" name="Privacy_Policy" value="" />
+                            <p>
+                                我已仔細閱讀並明瞭「隱私權條款」等所載內容及其意義，茲同意該等條款規定，並願遵守網站現今、嗣後規範的各種規則。
+                            </p>
+                        </div>
+
+                        <div class="col-xl-2 col-12">
+                        </div>
+                        <div class="col-xl-9 col-12  form_btn">
+                            <button>下一步</button>
+                        </div>
+                    </div>
+                </form>
                 <!-- 內頁終點 -->
             </section>
         </div>
@@ -883,7 +1007,7 @@
             <div class="row footer_area">
                 <div class="col-xl-3 logo_area px-0">
                     <div class="logo">
-                        <img class="w-100" src="./img/index/logo-white.png" alt="">
+                        <img class="w-100" src="../img/index/logo-white.png" alt="">
                     </div>
                 </div>
                 <div class="col-xl-5 info_area">
@@ -911,7 +1035,7 @@
                         </div>
                         <div class="icon_block px-0">
                             <div class="icon-bg"><a href="">
-                                    <div class="mail-icon"><img src="./img/icon/emaill.png" alt=""></div>
+                                    <div class="mail-icon"><img src="../img/icon/emaill.png" alt=""></div>
                                 </a></div>
                             <div class="icon-bg"><a href=""><i class="fab fa-youtube"></i></a></div>
                             <div class="icon-bg"><a href=""><i class="fab fa-facebook-f"></i></a></div>
@@ -927,7 +1051,7 @@
     </div>
 
     <a href="#" class="go_to_top" id="BackTop">
-        <img src="./img/icon/top.png" alt="">
+        <img src="../img/icon/top.png" alt="">
     </a>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -940,10 +1064,22 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-    <script src="./js/main.js"></script>
+    <script src="../js/main.js"></script>
     <!-- page js -->
+    <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
     <script>
 
+    </script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker({
+                dateFormat: 'yy/mm/dd'
+            });
+        });
+        $('.data_btn .clearBTN').click(function () {
+            $('#datepicker').val("");
+        })
     </script>
 
 </body>

@@ -12,15 +12,13 @@
     <!-- font-awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <!-- google Fonts -->
-        <link
+    <link
         href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:200,300,400,500,600,700,900&display=swap&subset=chinese-traditional"
         rel="stylesheet">
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <!-- layout -->
     <link rel="stylesheet" href="./css/main.css">
     <!-- page css  -->
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/template.css">
 
     <style>
 
@@ -30,24 +28,16 @@
 </head>
 
 <body>
-    <!-- index nav -->
-    <header class="index_nav">
-        <div id="topline">
-            <div class="row d-flex justify-content-between">
-                <div class="col-3 logo_area">
-                    <div class="container-fluid">
-                        <div class="row d-flex justify-content-start">
-                            <div class="col-9 area">
-                                <div class="logo">
-                                    <img class="d-none d-lg-block" src="./img/index/logo-white.png" alt="">
-                                    <img class="d-block d-lg-none" src="./img/index/logo-black.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
+    <header>
+        <div id="topline" class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="logo">
+                        <img src="./img/index/logo-black.svg" alt="">
                     </div>
                 </div>
-                <nav class="col-9 px-0 justify-content-end">
-                    <ul>
+                <nav class="col-9">
+                    <ul class="d-flex">
                         <li><a href="">關於我們</a></li>
                         <li><a href="">閱讀分享計畫</a></li>
                         <li><a href="">青年培育計畫</a></li>
@@ -58,7 +48,7 @@
                                 <i class="fas fa-share-alt"></i>
                             </a>
                             <a href="">
-                                <div class="circle">
+                                <div class="cicle">
                                     <i class="fas fa-info"></i>
                                 </div>
                             </a>
@@ -66,220 +56,26 @@
                                 <i class="fas fa-search"></i>
                             </a>
                         </li>
+                        <li class="menu-area d-flex px-0 justify-content-center align-items-start">
+                            <div class="menu-icon">
+                                <ul class="modal-menu-toggle">
+                                    <li class="menu-btn menu-btn-pc">
+                                        <a href="#">
+                                            <div class=""></div>
+                                        </a>
+                                    </li>
+                                    <li class="menu-btn menu-btn-mob" data-toggle="modal" data-target="#mobile-menu">
+                                        <a href="#">
+                                            <div class=""></div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
-                    <div class="menu-area d-flex px-0 justify-content-center align-items-start">
-                        <div class="menu-icon">
-                            <ul class="modal-menu-toggle">
-                                <li class="menu-btn menu-btn-pc">
-                                    <a href="#">
-                                        <div class=""></div>
-                                    </a>
-                                </li>
-                                <li class="menu-btn menu-btn-mob" data-toggle="modal" data-target="#mobile-menu">
-                                    <a href="#">
-                                        <div class=""></div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </nav>
             </div>
         </div>
-
-        <div id="headline">
-            <div class="headline_area">
-                <div class="swiper_block">
-                    <aside class="Menu_list d-flex flex-xl-column justify-content-xl-between">
-                        <div class="swiper-group">
-                            <div class="swiper-pagination"></div>
-                        </div>
-                        <div class="link-icon-group">
-                            <div class="link-icon">
-                                <a href="#"><i class="fab fa-youtube"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            </div>
-                        </div>
-                        <div class="aside-btn-group justify-content-center">
-                            <a href="#">
-                                <div class="aside-btn">
-                                    支持計畫
-                                    <div class="gradient-mask">
-                                        <div class="aside-sub-btn-group d-flex">
-                                            <div class="aside-sub-btn">支持計畫</div>\
-                                            <div class="aside-sub-btn">支持計畫</div>\
-                                            <div class="aside-sub-btn">支持計畫</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="aside-btn">
-                                    加入志工
-                                    <div class="gradient-mask">
-                                        <div class="aside-sub-btn-group d-flex">
-                                            <div class="aside-sub-btn">加入志工</div>\
-                                            <div class="aside-sub-btn">加入志工</div>\
-                                            <div class="aside-sub-btn">加入志工</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="aside-btn">
-                                    申請書籍
-                                    <div class="gradient-mask">
-                                        <div class="aside-sub-btn-group d-flex">
-                                            <div class="aside-sub-btn">申請書籍</div>\
-                                            <div class="aside-sub-btn">申請書籍</div>\
-                                            <div class="aside-sub-btn">申請書籍</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="aside-btn">
-                                    第四類別
-                                    <div class="gradient-mask">
-                                        <div class="aside-sub-btn-group d-flex">
-                                            <div class="aside-sub-btn">第四類別</div>\
-                                            <div class="aside-sub-btn">第四類別</div>\
-                                            <div class="aside-sub-btn">第四類別</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </aside>
-                    <div class="headline_swiper px-0">
-                        <div class="banner">
-                            <!-- swiper -->
-                            <div class="swiper-banner swiper-container px-0">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img class="w-100 h-100" src="./img/index/banner-1.jpg" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="w-100 h-100" src="./img/index/banner-2.jpg" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="w-100 h-100" src="./img/index/banner-3.jpg" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="w-100 h-100" src="./img/index/banner-2.jpg" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="w-100 h-100" src="./img/index/banner-1.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- mobile-aside -->
-                <div class="mobile-aside col justify-content-center">
-                    <div class="accordion" id="aside-btn-1">
-                        <div class="aside-btn-group">
-                            <div class="aside-btn-title text-center active">
-                                <div data-toggle="collapse" data-target="#aside-btn-1-collapse" aria-expanded="true"
-                                    aria-controls="aside-btn-1-collapse">
-                                    支持計畫
-                                    <div class="icon">
-                                        <i class="fas fa-chevron-up"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="aside-btn-1-collapse" class="collapse show" data-parent="#aside-btn-1">
-                                <a href="">
-                                    <div class="aside-sub-btn">支持計畫1</div>
-                                </a>
-                                <a href="">
-                                    <div class="aside-sub-btn">支持計畫2</div>
-                                </a>
-                                <a href="">
-                                    <div class="aside-sub-btn">支持計畫3</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion" id="aside-btn-2">
-                        <div class="aside-btn-group">
-                            <div class="aside-btn-title text-center">
-                                <div data-toggle="collapse" data-target="#aside-btn-2-collapse" aria-expanded="true"
-                                    aria-controls="aside-btn-2-collapse">
-                                    加入志工
-                                    <div class="icon">
-                                        <i class="fas fa-chevron-up"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="aside-btn-2-collapse" class="collapse" data-parent="#aside-btn-2">
-                                <a href="">
-                                    <div class="aside-sub-btn mt-3">加入志工1</div>
-                                </a>
-                                <a href="">
-                                    <div class="aside-sub-btn">加入志工2</div>
-                                </a>
-                                <a href="">
-                                    <div class="aside-sub-btn">加入志工3</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion" id="aside-btn-3">
-                        <div class="aside-btn-group">
-                            <div class="aside-btn-title text-center">
-                                <div data-toggle="collapse" data-target="#aside-btn-3-collapse" aria-expanded="true"
-                                    aria-controls="aside-btn-3-collapse">
-                                    申請書籍
-                                    <div class="icon">
-                                        <i class="fas fa-chevron-up"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="aside-btn-3-collapse" class="collapse" data-parent="#aside-btn-3">
-                                <a href="">
-                                    <div class="aside-sub-btn mt-3">申請書籍1</div>
-                                </a>
-                                <a href="">
-                                    <div class="aside-sub-btn">申請書籍2</div>
-                                </a>
-                                <a href="">
-                                    <div class="aside-sub-btn">申請書籍3</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion" id="aside-btn-4">
-                        <div class="aside-btn-group">
-                            <div class="aside-btn-title text-center">
-                                <div data-toggle="collapse" data-target="#aside-btn-4-collapse" aria-expanded="true"
-                                    aria-controls="aside-btn-4-collapse">
-                                    第四類別
-                                    <div class="icon">
-                                        <i class="fas fa-chevron-up"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="aside-btn-4-collapse" class="collapse" data-parent="#aside-btn-4">
-                                <a href="">
-                                    <div class="aside-sub-btn mt-4">第四類別1</div>
-                                </a>
-                                <a href="">
-                                    <div class="aside-sub-btn">第四類別2</div>
-                                </a>
-                                <a href="">
-                                    <div class="aside-sub-btn">第四類別3</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="aside-bg"></div>
     </header>
 
     <!-- menu -->
@@ -973,8 +769,71 @@
     </div>
 
     <!-- main content -->
-    <main>
+    <main class="container">
+        <div class="row position-relative align-items-start">
+            <aside class="offset-1 col-2 breadcrumbblock">
+                <div>
+                    <img class="imgSize" src="./img/index/logo.svg" alt="">
+                </div>
+                <div class="insidePageTitle">
+                    <nav class="breadcrumbArea" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">網站導覽</li>
+                        </ol>
+                        <div class="title">網站導覽</div>
+                    </nav>
+                    <div class="btnArea">
+                        <div class="back block">
+                            <a href="">
+                                <div class="size">
+                                    <span>回</span>
+                                    <span>上一頁</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="print block">
+                            <a href="">
+                                <div class="size">
+                                    <span>友善</span>
+                                    <span>列印</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="iconGroup d-xl-flex">
+                        <div class="icon">
+                            <a href="">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
 
+            <!-- page content -->
+            <section class="col-9 pageContent">
+
+                <!-- 平板版的title -->
+                <div class="w-100 flat" aria-label="breadcrumb">
+                    <ol class="breadcrumb phoneStyle">
+                        <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">分頁標題</li>
+                    </ol>
+                    <h2 class="phoneStyleTitle">分頁標題</h2>
+                </div>
+                <!-- 平板版的title結束 -->
+
+                <!-- 內頁起點 -->
+
+                <!-- 內頁終點 -->
+            </section>
+        </div>
     </main>
 
     <!-- footer -->
@@ -1022,7 +881,13 @@
         </div>
     </footer>
 
+    <div class="Page-BG">
+        <div></div>
+    </div>
 
+    <a href="#" class="go_to_top" id="BackTop">
+        <img src="./img/icon/top.png" alt="">
+    </a>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -1033,23 +898,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
     <script src="./js/main.js"></script>
-
     <!-- page js -->
-    <script src="./js/index.js"></script>
-
-
     <script>
-
-
-        window.onscroll = function () {
-            // dynamicNumberCounter(scrollTop Position(Num), element's id(String) , Target Number(Num))
-            // ex) dynamicNumberCounter(400, "test", 64);
-        }
-
-
 
     </script>
 

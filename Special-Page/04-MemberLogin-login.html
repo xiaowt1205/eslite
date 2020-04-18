@@ -16,10 +16,10 @@
         href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:200,300,400,500,600,700,900&display=swap&subset=chinese-traditional"
         rel="stylesheet">
     <!-- layout -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <!-- page css  -->
-    <link rel="stylesheet" href="./css/InsidePagetemplate.css">
-    <link rel="stylesheet" href="./css/Delivery-InsidePage.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/SignIn-InsidePage.css">
     <style>
 
 
@@ -33,7 +33,7 @@
             <div class="row">
                 <div class="col-3">
                     <div class="logo">
-                        <img src="./img/index/logo-black.svg" alt="">
+                        <img src="../img/index/logo-black.svg" alt="">
                     </div>
                 </div>
                 <nav class="col-9">
@@ -87,7 +87,7 @@
                 </a>
             </div>
             <div class="logo d-lg-none d-block">
-                <img class="w-100" src="./img/index/logo-white-no_deco.png" alt="">
+                <img class="w-100" src="../img/index/logo-white-no_deco.png" alt="">
             </div>
             <ul class="d-flex justify-content-end flex-wrap">
                 <li class="menu-title"><a href="">
@@ -430,7 +430,7 @@
             <div class="modal-content">
                 <div class="modal-top">
                     <div class="logo">
-                        <img class="w-100" src="./img/index/logo-white-no_deco.png" alt="">
+                        <img class="w-100" src="../img/index/logo-white-no_deco.png" alt="">
                     </div>
                     <button class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -773,15 +773,15 @@
         <div class="row position-relative align-items-start">
             <aside class="offset-1 col-2 breadcrumbblock">
                 <div>
-                    <img class="imgSize" src="./img/index/logo.svg" alt="">
+                    <img class="imgSize" src="../img/index/logo.svg" alt="">
                 </div>
                 <div class="insidePageTitle">
                     <nav class="breadcrumbArea" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">首頁</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">網站導覽</li>
+                            <li class="breadcrumb-item active" aria-current="page">閱讀分享計畫</li>
                         </ol>
-                        <div class="title">網站導覽</div>
+                        <div class="title">閱讀分享志工</div>
                     </nav>
                     <div class="btnArea">
                         <div class="back block">
@@ -830,245 +830,48 @@
                 <!-- 平板版的title結束 -->
 
                 <!-- 內頁起點 -->
-                <div class="Delivery">
-                    <div class="d-flex search">
-                        <div class="col-12">
-                            <ul class="title">
-                                <li>
-                                    <div class="icon"></div>
-                                </li>
-                                <li>篩選條件</li>
-                            </ul>
+                <div class="login_content">
+                    <ul class="signin_title">
+                        <li>
+                            <div class="icon"></div>
+                        </li>
+                        <li>登入</li>
+                    </ul>
+
+                    <form action="" class="login">
+                        <div class="row justify-content-end content">
+                            <div class="col-xl-2 col-12 name">
+                                <div>帳號</div>
+                            </div>
+                            <div class="col-xl-10 col-12 form_input">
+                                <input type="text" name="title_name" placeholder="身分證字號 / 外籍人士護照號">
+                            </div>
+                            <div class="col-xl-2 col-12 name">
+                                <div>密碼</div>
+                            </div>
+                            <div class="col-xl-10 col-12 form_input">
+                                <input type="text" name="title_name" placeholder="範例：0911123123">
+                            </div>
+                            <div class="col-xl-10 col-12 robot">
+                                <img src="../img/test/norobot.jpg" alt="" class="">
+                                <div class="title">
+                                    <span>
+                                        等待顯示綠色勾勾後
+                                    </span>
+                                    <span>再點選會員登入</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-xl-2 col-12 name">
-                            <div>單位名稱</div>
+                        <div class="row d-flex justify-content-end form_btn">
+                            <button>會員登入</button>
+                            <button>忘記密碼</button>
+                            <button>首次申請</button>
+                            <!-- <input type="submit" value="">
+                            <input type="submit" value="">
+                            <input type="reset" value=""> -->
                         </div>
-                        <div class="col-xl-9 col-12 form_input">
-                            <input type="text" name="phone" placeholder="">
-                        </div>
-                        <div class="col-xl-2 col-12 name">
-                            <div>單位屬性</div>
-                        </div>
-                        <div class="col-xl-9 col-12 form_input">
-                            <ul class="d-flex school">
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>國小</div>
-                                </li>
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>國中</div>
-                                </li>
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>高中職</div>
-                                </li>
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>民間團體</div>
-                                </li>
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>政府單位</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-xl-2 col-12 name">
-                            <div>類別</div>
-                        </div>
-                        <div class="col-xl-9 col-12 form_input">
-                            <ul class="d-flex Category">
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>一般</div>
-                                </li>
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>沿線</div>
-                                </li>
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>長期</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-xl-2 col-12 name">
-                            <div>狀態</div>
-                        </div>
-                        <div class="col-xl-9 col-12 form_input">
-                            <ul class="d-flex Delivery_status">
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>處理中(待寄送)</div>
-                                </li>
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>配送中(部分寄出)</div>
-                                </li>
-                                <li><input type="radio" checked="checked" name="class_number" value="" />
-                                    <div>已結案</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-xl-11 col-12 form_btn">
-                            <button>查詢</button>
-                            <div></div>
-                        </div>
-                    </div>
-                    <div class="d-flex Distribution_report">
-                        <div class="col-xl-11 col-12 form_btn">
-                            <button>取消</button>
-                            <button>儲存</button>
-                            <button class="Export">配送報表匯出</button>
-                        </div>
-                        <div class="col-xl-11 col-12 Delivery_Form">
-                            <ol>
-                                <ul>
-                                    <li class="date">
-                                        <span>標題</span>
-                                        <input type="text" name="phone" placeholder="">
-                                    </li>
-                                    <li class="date">
-                                        <span>預計配送日</span>
-                                        <input type="text" name="phone" placeholder="">
-                                    </li>
-                                    <li>
-                                        <span>預計配送箱數</span>
-                                        <input type="text" name="phone" placeholder="">
-                                    </li>
-                                    <li>
-                                        <span>預設狀態</span>
-                                        <select class="grade">
-                                            <option selected="true">未鎖定</option>
-                                            <option>處理中</option>
-                                            <option>配送中</option>
-                                            <option>已結案</option>
-                                        </select>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>目前已分類箱數：100</li>
-                                    <li>已分配本數：100</li>
-                                </ul>
-                            </ol>
-                            <table class="rwd-table">
-                                <thead>
-                                    <tr>
-                                        <th class="click">
-                                            <div>
-                                                <span>全選</span>
-                                            </div>
-                                        </th>
-                                        <th class="data">
-                                            <div>
-                                                <span>申請</span>
-                                                <span>日期</span>
-                                            </div>
-                                        </th>
-                                        <th class="status">
-                                            <div>
-                                                <span>狀態</span>
-                                            </div>
-                                        </th>
-                                        <th class="unit">
-                                            <div>
-                                                <span>申請單位</span>
-                                            </div>
-                                        </th>
-                                        <th class="Remarks">
-                                            <div>
-                                                <span>基金會備註</span>
-                                            </div>
-                                        </th>
-                                        <th class="demand">
-                                            <div>
-                                                <span>需求</span>
-                                                <span>箱數</span>
-                                            </div>
-                                        </th>
-                                        <th class="Deliverybox">
-                                            <div>
-                                                <span>配送</span>
-                                                <span>箱數</span>
-                                            </div>
-                                        </th>
-                                        <th class="Deliverybook">
-                                            <div>
-                                                <span>配送</span>
-                                                <span>本數</span>
-                                            </div>
-                                        </th>
-                                        <th class="Remaining">
-                                            <div>
-                                                <span>剩餘</span>
-                                                <span>箱數</span>
-                                            </div>
-                                        </th>
-                                        <th class="accumulation">
-                                            <div>
-                                                <span>累積</span>
-                                                <span>配送本數</span>
-                                            </div>
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td data-th="全選" class="click_area">
-                                            <div>
-                                                <input type="checkbox" id="myCheck">
-                                            </div>
-                                        </td>
-                                        <td data-th="申請日期" class="data_area">
-                                            <div>
-                                                <span>2019</span>
-                                                <span>12/11</span>
-                                            </div>
-                                        </td>
-                                        <td data-th="狀態">
-                                            <div>
-                                                <select id="">
-                                                    <option value="">處理中(待寄送)</option>
-                                                    <option value="">配送中(部分寄出)</option>
-                                                    <option value="">已結案</option>
-                                                </select>
-                                            </div>
-                                        </td>
-                                        <td data-th="申請單位">
-                                            <div>
-                                                <span>OOe國小</span>
-                                            </div>
-                                        </td>
-                                        <td data-th="基金會備註">
-                                            <div>
-                                                <span>
-                                                    全社區書可
-                                                </span>
-                                            </div>
-                                        </td>
-                                        <td data-th="需求箱數">
-                                            <div>
-                                                <input type="text">
-                                            </div>
-                                        </td>
-                                        <td data-th="配送箱數">
-                                            <div>
-                                                <input type="text">
-                                            </div>
-                                        </td>
-                                        <td data-th="配送本數">
-                                            <div>
-                                                <input type="text">
-                                            </div>
-                                        </td>
-                                        <td data-th="剩餘箱數">
-                                            <div>
-                                                <span>1</span>
-                                            </div>
-                                        </td>
-                                        <td data-th="累積配送本數">
-                                            <div>
-                                                <span>360000</span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                    </form>
                 </div>
-
-
                 <!-- 內頁終點 -->
             </section>
         </div>
@@ -1080,7 +883,7 @@
             <div class="row footer_area">
                 <div class="col-xl-3 logo_area px-0">
                     <div class="logo">
-                        <img class="w-100" src="./img/index/logo-white.png" alt="">
+                        <img class="w-100" src="../img/index/logo-white.png" alt="">
                     </div>
                 </div>
                 <div class="col-xl-5 info_area">
@@ -1108,7 +911,7 @@
                         </div>
                         <div class="icon_block px-0">
                             <div class="icon-bg"><a href="">
-                                    <div class="mail-icon"><img src="./img/icon/emaill.png" alt=""></div>
+                                    <div class="mail-icon"><img src="../img/icon/emaill.png" alt=""></div>
                                 </a></div>
                             <div class="icon-bg"><a href=""><i class="fab fa-youtube"></i></a></div>
                             <div class="icon-bg"><a href=""><i class="fab fa-facebook-f"></i></a></div>
@@ -1124,7 +927,7 @@
     </div>
 
     <a href="#" class="go_to_top" id="BackTop">
-        <img src="./img/icon/top.png" alt="">
+        <img src="../img/icon/top.png" alt="">
     </a>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -1137,7 +940,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-    <script src="./js/main.js"></script>
+    <script src="../js/main.js"></script>
     <!-- page js -->
     <script>
 

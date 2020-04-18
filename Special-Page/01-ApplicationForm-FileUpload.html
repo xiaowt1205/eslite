@@ -16,10 +16,10 @@
         href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:200,300,400,500,600,700,900&display=swap&subset=chinese-traditional"
         rel="stylesheet">
     <!-- layout -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <!-- page css  -->
-    <link rel="stylesheet" href="./css/InsidePagetemplate.css">
-    <link rel="stylesheet" href="./css/SignIn-InsidePage.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/Application-InsidePage.css">
     <style>
 
 
@@ -33,7 +33,7 @@
             <div class="row">
                 <div class="col-3">
                     <div class="logo">
-                        <img src="./img/index/logo-black.svg" alt="">
+                        <img src="../img/index/logo-black.svg" alt="">
                     </div>
                 </div>
                 <nav class="col-9">
@@ -87,7 +87,7 @@
                 </a>
             </div>
             <div class="logo d-lg-none d-block">
-                <img class="w-100" src="./img/index/logo-white-no_deco.png" alt="">
+                <img class="w-100" src="../img/index/logo-white-no_deco.png" alt="">
             </div>
             <ul class="d-flex justify-content-end flex-wrap">
                 <li class="menu-title"><a href="">
@@ -430,7 +430,7 @@
             <div class="modal-content">
                 <div class="modal-top">
                     <div class="logo">
-                        <img class="w-100" src="./img/index/logo-white-no_deco.png" alt="">
+                        <img class="w-100" src="../img/index/logo-white-no_deco.png" alt="">
                     </div>
                     <button class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -773,15 +773,16 @@
         <div class="row position-relative align-items-start">
             <aside class="offset-1 col-2 breadcrumbblock">
                 <div>
-                    <img class="imgSize" src="./img/index/logo.svg" alt="">
+                    <img class="imgSize" src="../img/index/logo.svg" alt="">
                 </div>
                 <div class="insidePageTitle">
                     <nav class="breadcrumbArea" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">首頁</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">網站導覽</li>
+                            <li class="breadcrumb-item"><a href="#">青年培育計畫</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">申請成為學員</li>
                         </ol>
-                        <div class="title">網站導覽</div>
+                        <div class="title">學生申請</div>
                     </nav>
                     <div class="btnArea">
                         <div class="back block">
@@ -823,42 +824,118 @@
                 <div class="w-100 flat" aria-label="breadcrumb">
                     <ol class="breadcrumb phoneStyle">
                         <li class="breadcrumb-item"><a href="#">首頁</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">分頁標題</li>
+                        <li class="breadcrumb-item"><a href="#">青年培育計畫</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">申請成為學員</li>
                     </ol>
-                    <h2 class="phoneStyleTitle">分頁標題</h2>
+                    <h2 class="phoneStyleTitle">學生申請</h2>
                 </div>
                 <!-- 平板版的title結束 -->
 
                 <!-- 內頁起點 -->
-                <div class="login_content">
-                    <ul class="signin_title">
-                        <li>
-                            <div class="icon"></div>
-                        </li>
-                        <li>忘記密碼</li>
-                        <li>請輸入帳號及電子郵件資訊</li>
-                    </ul>
-
-                    <form action="" class="forget">
-                        <div class="row justify-content-end content">
-                            <div class="col-xl-2 col-12 name">
-                                <div>帳號</div>
-                            </div>
-                            <div class="col-xl-10 col-12 form_input">
-                                <input type="text" name="title_name" placeholder="身分證字號 / 外籍人士護照號">
-                            </div>
-                            <div class="col-xl-2 col-12 name">
-                                <div>信箱</div>
-                            </div>
-                            <div class="col-xl-10 col-12 form_input">
-                                <input type="text" name="title_name" placeholder="">
-                            </div>
+                <div class="step-area">
+                    <div class="step-scroll d-flex align-items-center step-3">
+                        <div class="step">
+                            <p>1.</p>
+                            <p>學生</p>
+                            <p>基本資料</p>
                         </div>
-                        <div class="row d-flex justify-content-end form_btn">
-                            <input type="reset" value="寄發密碼確認郵件">
+                        <div class="arrow"></div>
+                        <div class="step">
+                            <p>2.</p>
+                            <p>學生個人</p>
+                            <p>自述表</p>
                         </div>
-                    </form>
+                        <div class="arrow"></div>
+                        <div class="step active">
+                            <p>3.</p>
+                            <p>檔案上傳</p>
+                        </div>
+                        <div class="arrow"></div>
+                        <div class="step">
+                            <p>4.</p>
+                            <p>申請完成</p>
+                        </div>
+                    </div>
                 </div>
+                <form action="" class="file_area">
+                    <ol class="file_block">
+                        <ul class="title">
+                            <li>
+                                <div class="icon"></div>
+                            </li>
+                            <li>成績單</li>
+                            <li class="Note">(僅提供JPG、PDF檔上傳，檔案大小限 10 MB)</li>
+                            <li class="files d-flex">
+                                <div class="fileName"></div>
+                                <div class="inputBox">
+                                    <div class="inputText">選擇檔案</div>
+                                    <input class="fileInput" type="file">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="title">
+                            <li>
+                                <div class="icon"></div>
+                            </li>
+                            <li>教師推薦函(第一位)</li>
+                            <li class="Note">(僅提供JPG、PDF檔上傳，檔案大小限 10 MB)</li>
+                            <li class="files d-flex">
+                                <div class="fileName"></div>
+                                <div class="inputBox">
+                                    <div class="inputText">選擇檔案</div>
+                                    <input class="fileInput" type="file">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="title">
+                            <li>
+                                <div class="icon"></div>
+                            </li>
+                            <li>教師推薦函(第二位)</li>
+                            <li class="Note">(僅提供JPG、PDF檔上傳，檔案大小限 10 MB)</li>
+                            <li class="files d-flex">
+                                <div class="fileName"></div>
+                                <div class="inputBox">
+                                    <div class="inputText">選擇檔案</div>
+                                    <input class="fileInput" type="file">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="title">
+                            <li>
+                                <div class="icon"></div>
+                            </li>
+                            <li>教師推薦函(第三位)</li>
+                            <li class="Note">(僅提供JPG、PDF檔上傳，檔案大小限 10 MB)</li>
+                            <li class="files d-flex">
+                                <div class="fileName"></div>
+                                <div class="inputBox">
+                                    <div class="inputText">選擇檔案</div>
+                                    <input class="fileInput" type="file">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="title">
+                            <li>
+                                <div class="icon"></div>
+                            </li>
+                            <li>其他補充資料(多檔)</li>
+                            <li class="Note">(僅提供JPG、PDF檔上傳，檔案大小限 10 MB)</li>
+                            <li class="files d-flex">
+                                <div class="fileName"></div>
+                                <div class="inputBox">
+                                    <div class="inputText">選擇檔案</div>
+                                    <input class="fileInput" type="file">
+                                </div>
+                            </li>
+                        </ul>
+                    </ol>
+                    <div class="row d-flex justify-content-end form_btn">
+                        <button>上一步</button>
+                        <button>儲存</button>
+                        <button>送出邀請</button>
+                    </div>
+                </form>
                 <!-- 內頁終點 -->
             </section>
         </div>
@@ -870,7 +947,7 @@
             <div class="row footer_area">
                 <div class="col-xl-3 logo_area px-0">
                     <div class="logo">
-                        <img class="w-100" src="./img/index/logo-white.png" alt="">
+                        <img class="w-100" src="../img/index/logo-white.png" alt="">
                     </div>
                 </div>
                 <div class="col-xl-5 info_area">
@@ -898,7 +975,7 @@
                         </div>
                         <div class="icon_block px-0">
                             <div class="icon-bg"><a href="">
-                                    <div class="mail-icon"><img src="./img/icon/emaill.png" alt=""></div>
+                                    <div class="mail-icon"><img src="../img/icon/emaill.png" alt=""></div>
                                 </a></div>
                             <div class="icon-bg"><a href=""><i class="fab fa-youtube"></i></a></div>
                             <div class="icon-bg"><a href=""><i class="fab fa-facebook-f"></i></a></div>
@@ -914,7 +991,7 @@
     </div>
 
     <a href="#" class="go_to_top" id="BackTop">
-        <img src="./img/icon/top.png" alt="">
+        <img src="../img/icon/top.png" alt="">
     </a>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -927,10 +1004,16 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-    <script src="./js/main.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/Application_input.js"></script>
     <!-- page js -->
     <script>
-
+        function showname() {
+            var name = document.getElementsByClassName('files');
+            alert('Selected file: ' + name.files.item(0).name);
+            alert('Selected file: ' + name.files.item(0).size);
+            alert('Selected file: ' + name.files.item(0).type);
+        };
     </script>
 
 </body>
