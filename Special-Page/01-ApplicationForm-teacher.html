@@ -890,7 +890,7 @@
                             </li>
                             <li>推薦學生名單</li>
                         </ul>
-                        <div class="row content">
+                        <div class="row content student-list">
                             <div class="col-10 block px-md-0">
                                 <div class="row justify-content-start mx-0">
                                     <div class="col-xl-3 col-12 name px-md-0">
@@ -917,15 +917,14 @@
                                     <div class="col-xl-9 col-12 form_input px-md-0">
                                         <input type="text" name="title_name" placeholder="">
                                     </div>
-
                                 </div>
                             </div>
                             <div class="col-2 icon px-0">
-                                <button class="add"><span>＋</span></button>
-                                <button class="del"><span>－</span></button>
+                                <button type='button' class="add" onclick="addStudentList()"><span>＋</span></button>
+                                <button type='button' class="del" onclick="delStudentList(0)"><span>－</span></button>
                             </div>
                         </div>
-                        <div class="row content">
+                        <div class="row content student-list">
                             <div class="col-10 block px-md-0">
                                 <div class="row justify-content-start mx-0">
                                     <div class="col-xl-3 col-12 name px-md-0">
@@ -956,8 +955,8 @@
                                 </div>
                             </div>
                             <div class="col-2 icon px-0">
-                                <button class="add"><span>＋</span></button>
-                                <button class="del"><span>－</span></button>
+                                <button type='button' class="add" onclick="addStudentList()"><span>＋</span></button>
+                                <button type='button' class="del" onclick="delStudentList(1)"><span>－</span></button>
                             </div>
                         </div>
                     </div>
@@ -1036,9 +1035,9 @@
 
     <script src="../js/main.js"></script>
     <!-- page js -->
-    <script>
+    <script src="../js/studentList.js"></script>
 
-    </script>
+   
 
 </body>
 
