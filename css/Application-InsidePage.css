@@ -1315,6 +1315,16 @@ main.container {
   letter-spacing: 4px;
 }
 
+.newitem .form_w {
+  min-width: 810px;
+}
+
+@media screen and (max-width: 1400px) {
+  .newitem .form_w {
+    min-width: unset;
+  }
+}
+
 .newelement .title {
   margin-bottom: 20px;
 }
@@ -2322,6 +2332,10 @@ main.container {
 
 .file_area .file_block ul {
   margin-bottom: 35px;
+}
+
+.file_area .file_block ul.title {
+  margin-bottom: 0;
 }
 
 .file_area .file_block li {

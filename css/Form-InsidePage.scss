@@ -995,6 +995,9 @@
     padding: 0px;
     margin-bottom: 5px;
 
+    ol{
+        max-width: 830px;
+    }
     .name {
         font-size: $fs-22;
         letter-spacing: 2px;
@@ -1098,7 +1101,7 @@
         display: flex;
         justify-content: flex-end;
 
-        input {
+        button {
             @include text_style($fs-16, unset, center, 3px);
             @include btn_style(220px, unset, 10px, unset, unset, transparent, $brown);
             @include font_hover($bc-brown, $fc-white);

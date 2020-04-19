@@ -52,11 +52,6 @@
 
 .login {
     max-width: 690px;
-    padding: 0px 15px;
-
-    @media screen and (max-width:768px) {
-        padding: 0px;
-    }
 
     .content {
         border-radius: 5px;
@@ -243,11 +238,6 @@
 
 .forget {
     max-width: 690px;
-    padding: 0px 15px;
-
-    @media screen and (max-width:768px) {
-        padding: 0px;
-    }
 
     .content {
         border-radius: 5px;

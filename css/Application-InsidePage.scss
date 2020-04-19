@@ -1157,6 +1157,15 @@ main.container {
             }
         }
     }
+
+    .form_w {
+        min-width: 810px;
+
+        @media screen and (max-width:1400px) {
+            min-width: unset;
+        }
+    }
+
 }
 
 .newelement {
@@ -2085,6 +2094,10 @@ main.container {
     .file_block {
         ul {
             margin-bottom: 35px;
+
+            &.title {
+                margin-bottom: 0;
+            }
         }
 
         li {

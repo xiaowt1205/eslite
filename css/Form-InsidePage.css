@@ -1214,6 +1214,10 @@
   margin-bottom: 5px;
 }
 
+.Sign_form ol {
+  max-width: 830px;
+}
+
 .Sign_form .name {
   font-size: 22px;
   letter-spacing: 2px;
@@ -1335,7 +1339,7 @@
           justify-content: flex-end;
 }
 
-.Sign_form .form_btn input {
+.Sign_form .form_btn button {
   font-size: 16px;
   font-weight: unset;
   text-align: center;
@@ -1354,20 +1358,20 @@
   border: 1px solid #231815;
 }
 
-.Sign_form .form_btn input:hover {
+.Sign_form .form_btn button:hover {
   background-color: #231815;
 }
 
-.Sign_form .form_btn input:hover {
+.Sign_form .form_btn button:hover {
   color: #FFFFFF;
 }
 
 @media screen and (max-width: 1400px) {
-  .Sign_form .form_btn input {
+  .Sign_form .form_btn button {
     width: 50%;
     margin-left: 10px;
   }
-  .Sign_form .form_btn input:nth-last-child(1) {
+  .Sign_form .form_btn button:nth-last-child(1) {
     margin-left: 10px;
     margin-right: 0px;
   }
