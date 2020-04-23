@@ -12,7 +12,7 @@ main.container {
     flex-wrap: wrap;
 
     // align-items: center;
-    @media screen and (max-width:768px) {
+    @media (max-width:768px) {
         flex-direction: column;
     }
 
@@ -30,7 +30,7 @@ main.container {
         &:nth-child(1) {
             margin-right: 20px;
 
-            @media screen and (max-width:768px) {
+            @media (max-width:768px) {
                 margin-bottom: 30px;
             }
         }
@@ -40,7 +40,7 @@ main.container {
             font-weight: $fw-700;
             letter-spacing: 5px;
 
-            @media screen and (max-width:768px) {
+            @media (max-width:768px) {
                 margin-bottom: 15px;
             }
         }
@@ -53,7 +53,7 @@ main.container {
             padding-left: 45px;
             margin-top: 10px;
 
-            @media screen and (max-width:768px) {
+            @media (max-width:768px) {
                 margin-bottom: 30px;
             }
         }
@@ -61,7 +61,7 @@ main.container {
 }
 
 .block {
-    @media screen and (max-width:1400px) {
+    @media (max-width:1400px) {
         max-width: 100%;
     }
 }
@@ -72,7 +72,7 @@ main.container {
     justify-content: center;
     align-items: flex-end;
 
-    @media screen and (max-width:1400px) {
+    @media (max-width:1400px) {
         max-width: 100%;
         flex-direction: row;
     }
@@ -88,7 +88,7 @@ main.container {
         font-size: $fs-27;
         margin: 10px 0px;
 
-        @media screen and (max-width:1400px) {
+        @media (max-width:1400px) {
             margin: 0px 15px;
         }
     }
@@ -102,13 +102,21 @@ main.container {
         width: 220px;
         // margin-left: 20px;
         border: 1px solid $bc-brown;
-
-        @media screen and (max-width:1400px) {
-            width: calc(50% - 10px);
-
-            &:nth-child(3) {
-                max-width: 100%;
-                width: 100%;
+        margin: 0 0 0 15px !important;
+        @media (max-width:1400px) {
+            max-width: 200px;
+        }
+        @media (max-width:992px) {
+            max-width: unset;
+            width: 100%;
+            margin: 0 !important;
+            &:nth-child(1){
+                margin:0 15px 15px 0 !important;
+                width: calc(50% - 7.5px);
+            }
+            &:nth-child(2){
+                margin:0 0 15px 0 !important;
+                width: calc(50% - 7.5px);
             }
         }
     }
@@ -149,7 +157,7 @@ main.container {
     .form_input {
         margin-bottom: 40px;
 
-        @media screen and (max-width:1200px) {
+        @media (max-width:1200px) {
             margin-bottom: 40px;
 
             .block {
@@ -244,7 +252,7 @@ main.container {
             width: 100%;
             border: 1px solid $br-black;
 
-            @media screen and (max-width:1200px) {
+            @media (max-width:1200px) {
                 height: 40px;
             }
         }
@@ -286,7 +294,7 @@ main.container {
             input {
                 width: calc(100% - 126px);
 
-                @media screen and (max-width:768px) {
+                @media (max-width:768px) {
                     width: 100%;
                     margin-top: 10px;
                 }
@@ -300,7 +308,7 @@ main.container {
             flex-wrap: wrap;
 
 
-            @media screen and (max-width:1200px) {
+            @media (max-width:1200px) {
                 flex-wrap: wrap;
             }
 
@@ -312,7 +320,7 @@ main.container {
                 align-items: center;
                 margin-bottom: 20px;
 
-                @media screen and (max-width:1200px) {
+                @media (max-width:1200px) {
                     // width: 50%;
                     margin-bottom: 20px;
                 }
@@ -325,7 +333,7 @@ main.container {
                     padding-left: 10px;
                     margin-right: 30px;
 
-                    @media screen and (max-width:768px) {
+                    @media (max-width:768px) {
                         margin-right: 10px;
                     }
                 }
@@ -421,7 +429,7 @@ main.container {
     .form_input {
         margin-bottom: 40px;
 
-        @media screen and (max-width:1200px) {
+        @media (max-width:1200px) {
             margin-bottom: 40px;
 
             .block {
@@ -541,7 +549,7 @@ main.container {
             width: 100%;
             border: 1px solid $br-black;
 
-            @media screen and (max-width:1200px) {
+            @media (max-width:1200px) {
                 height: 40px;
             }
         }
@@ -584,7 +592,7 @@ main.container {
             input {
                 width: calc(100% - 250px);
 
-                @media screen and (max-width:768px) {
+                @media (max-width:768px) {
                     width: 100%;
                     margin-top: 10px;
                 }
@@ -602,7 +610,7 @@ main.container {
                 border-radius: 5px;
                 letter-spacing: 3px;
 
-                @media screen and (max-width:768px) {
+                @media (max-width:768px) {
                     margin-top: 30px;
                 }
             }
@@ -614,7 +622,7 @@ main.container {
             flex-wrap: wrap;
 
 
-            @media screen and (max-width:1200px) {
+            @media (max-width:1200px) {
                 flex-wrap: wrap;
             }
 
@@ -623,7 +631,7 @@ main.container {
                 align-items: center;
                 margin-bottom: 20px;
 
-                @media screen and (max-width:1200px) {
+                @media (max-width:1200px) {
                     // width: 50%;
                     margin-bottom: 20px;
                 }
@@ -636,7 +644,7 @@ main.container {
                     padding-left: 10px;
                     margin-right: 30px;
 
-                    @media screen and (max-width:768px) {
+                    @media (max-width:768px) {
                         margin-right: 10px;
                     }
                 }
@@ -662,14 +670,14 @@ main.container {
             flex-wrap: wrap;
             justify-content: space-between;
 
-            @media screen and (max-width:768px) {
+            @media (max-width:768px) {
                 justify-content: flex-start;
             }
 
             input {
                 width: calc(100% - 250px);
 
-                @media screen and (max-width:768px) {
+                @media (max-width:768px) {
                     width: 100%;
                     margin-top: 10px;
                 }
@@ -677,7 +685,7 @@ main.container {
             }
 
             select {
-                @media screen and (max-width:768px) {
+                @media (max-width:768px) {
                     margin-right: 30px;
                 }
             }
@@ -727,7 +735,7 @@ main.container {
         font-weight: $fw-700;
         letter-spacing: 3px;
 
-        @media screen and (max-width:768px) {
+        @media (max-width:768px) {
             border-top: 1px solid $black;
             padding-top: 40px;
         }
@@ -735,7 +743,7 @@ main.container {
         input {
             transform: translate(-30px, 42px);
 
-            @media screen and (max-width:768px) {
+            @media (max-width:768px) {
                 transform: translate(0px, 0px);
             }
 
@@ -749,7 +757,7 @@ main.container {
             text-align: justify;
             margin-top: -5px;
 
-            @media screen and (max-width:768px) {
+            @media (max-width:768px) {
                 margin-left: 0px;
                 padding-top: 0px;
                 padding-left: 5px;
@@ -762,12 +770,12 @@ main.container {
         display: flex;
         justify-content: flex-end;
 
-        @media screen and (max-width:768px) {
+        @media (max-width:768px) {
             justify-content: center;
         }
     }
 
-    @media screen and (max-width:1400px) and (min-width:1200px) {
+    @media (max-width:1400px) and (min-width:1200px) {
         .col-xl-2 {
             flex: 0 0 22%;
             max-width: 22%;
@@ -782,7 +790,7 @@ main.container {
         margin-bottom: 25px;
 
         // align-items: center;
-        @media screen and (max-width:768px) {
+        @media (max-width:768px) {
             flex-direction: column;
         }
 
@@ -801,7 +809,7 @@ main.container {
                 margin-right: 20px;
                 align-items: flex-start;
 
-                @media screen and (max-width:768px) {
+                @media (max-width:768px) {
                     margin-bottom: 30px;
                 }
             }
@@ -812,7 +820,7 @@ main.container {
                 letter-spacing: 5px;
                 text-align: justify;
 
-                @media screen and (max-width:768px) {
+                @media (max-width:768px) {
                     margin-bottom: 15px;
                 }
             }
@@ -834,7 +842,7 @@ main.container {
     .form_input {
         margin-bottom: 45px;
 
-        @media screen and (max-width:1200px) {
+        @media (max-width:1200px) {
             margin-bottom: 40px;
 
             .block {
@@ -849,7 +857,7 @@ main.container {
             border: 1px solid $black;
             border-radius: 10px;
 
-            @media screen and (max-width:768px) {
+            @media (max-width:768px) {
                 height: 150px;
             }
         }
@@ -858,7 +866,7 @@ main.container {
             width: 100%;
             border: 1px solid $br-black;
 
-            @media screen and (max-width:1200px) {
+            @media (max-width:1200px) {
                 height: 40px;
             }
         }
@@ -889,7 +897,7 @@ main.container {
         button {
             margin-left: 20px;
 
-            @media screen and (max-width:1400px) {
+            @media (max-width:1400px) {
                 &:nth-child(1) {
                     margin-left: 10px;
                     margin-bottom: 15px;
@@ -989,7 +997,7 @@ main.container {
     max-width: 800px;
     padding: 0px 15px;
 
-    @media screen and (max-width:768px) {
+    @media (max-width:768px) {
         padding: 0px;
     }
 
@@ -1069,7 +1077,7 @@ main.container {
         }
 
         .content {
-            @media screen and (max-width:768px) {
+            @media (max-width:768px) {
                 padding: 40px 20px 15px;
             }
         }
@@ -1084,14 +1092,14 @@ main.container {
         min-width: 810px;
         max-height: 320px;
 
-        @media screen and (max-width:1400px) {
+        @media (max-width:1400px) {
             display: flex;
             flex-direction: column;
             min-width: unset;
             max-height: unset;
         }
 
-        @media screen and (max-width:768px) {
+        @media (max-width:768px) {
             padding: 15px;
         }
 
@@ -1161,7 +1169,7 @@ main.container {
     .form_w {
         min-width: 810px;
 
-        @media screen and (max-width:1400px) {
+        @media (max-width:1400px) {
             min-width: unset;
         }
     }
@@ -1193,7 +1201,7 @@ main.container {
         border-radius: 9px;
         margin-bottom: 40px;
 
-        @media screen and (max-width:768px) {
+        @media (max-width:768px) {
             height: 150px;
         }
     }
@@ -1206,7 +1214,7 @@ main.container {
             font-weight: $fw-700;
             letter-spacing: 3px;
 
-            @media screen and (max-width:768px) {
+            @media (max-width:768px) {
                 padding: 0px 0px 25px;
             }
 
@@ -1240,7 +1248,7 @@ main.container {
             padding: 40px 50px 0px;
             margin-bottom: 30px;
 
-            @media screen and (max-width:768px) {
+            @media (max-width:768px) {
                 margin-bottom: 40px;
                 padding: 15px;
             }
@@ -1250,7 +1258,7 @@ main.container {
                 letter-spacing: 2px;
                 padding-bottom: 30px;
 
-                @media screen and (max-width:768px) {
+                @media (max-width:768px) {
                     padding-bottom: 18px;
                 }
 
@@ -1306,7 +1314,7 @@ main.container {
                     display: flex;
                     flex-wrap: nowrap;
 
-                    @media screen and (max-width:768px) {
+                    @media (max-width:768px) {
                         flex-wrap: wrap;
 
                         &>input {
@@ -1323,7 +1331,7 @@ main.container {
                         align-items: center;
                         min-width: 56px;
 
-                        @media screen and (max-width:768px) {
+                        @media (max-width:768px) {
                             margin-bottom: 15px;
                         }
                     }
@@ -1338,7 +1346,7 @@ main.container {
             justify-content: flex-start;
             margin-bottom: 58px;
 
-            @media screen and (max-width:768px) {
+            @media (max-width:768px) {
                 justify-content: center;
             }
 
@@ -1370,7 +1378,7 @@ main.container {
         button {
             margin-right: 20px;
 
-            @media screen and (max-width:1400px) {
+            @media (max-width:1400px) {
                 &:nth-child(1) {
                     margin-right: 10px;
                     margin-bottom: 15px;
@@ -1401,10 +1409,6 @@ main.container {
 
     .nav-pills {
         margin-bottom: 50px;
-
-        @media screen and (max-width:768px) {
-            justify-content: center;
-        }
 
         .nav-item {
             width: 250px;
@@ -1442,7 +1446,7 @@ main.container {
         button {
             margin-left: 20px;
 
-            @media screen and (max-width:1400px) {
+            @media (max-width:1400px) {
                 &:nth-child(1) {
                     margin-right: 10px;
                     margin-left: 0px;
@@ -1503,7 +1507,7 @@ main.container {
         margin-bottom: 40px;
         flex-direction: row;
 
-        @media screen and (max-width:1200px) {
+        @media (max-width:1200px) {
             margin-bottom: 40px;
 
             .block {
@@ -1530,7 +1534,7 @@ main.container {
             width: 100%;
             border: 1px solid $br-black;
 
-            @media screen and (max-width:1200px) {
+            @media (max-width:1200px) {
                 height: 40px;
             }
         }
@@ -1555,8 +1559,12 @@ main.container {
 
         &.identity_area {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             flex-wrap: wrap;
+
+            @media (max-width:1200px) {
+                justify-content: space-between;
+            }   
 
             &>div {
                 width: 100%;
@@ -1569,7 +1577,7 @@ main.container {
             input {
                 width: calc(100% - 250px);
 
-                @media screen and (max-width:768px) {
+                @media (max-width:768px) {
                     width: 100%;
                     margin-top: 10px;
                 }
@@ -1585,8 +1593,12 @@ main.container {
                 font-weight: $fw-600;
                 border: none;
                 border-radius: 5px;
+                margin-left: 15px;
+                @media (max-width:1200px) {
+                    margin-left: 0px;
+                }   
 
-                @media screen and (max-width:768px) {
+                @media (max-width:768px) {
                     margin-top: 30px;
                 }
             }
@@ -1648,7 +1660,7 @@ main.container {
         .form_input {
             margin-bottom: 40px;
 
-            @media screen and (max-width:1200px) {
+            @media (max-width:1200px) {
                 margin-bottom: 40px;
 
                 .block {
@@ -1765,7 +1777,7 @@ main.container {
                 width: 100%;
                 border: 1px solid $br-black;
 
-                @media screen and (max-width:1200px) {
+                @media (max-width:1200px) {
                     height: 40px;
                 }
             }
@@ -1808,7 +1820,7 @@ main.container {
                 input {
                     width: calc(100% - 250px);
 
-                    @media screen and (max-width:768px) {
+                    @media (max-width:768px) {
                         width: 100%;
                         margin-top: 10px;
                     }
@@ -1825,7 +1837,7 @@ main.container {
                     border: none;
                     border-radius: 5px;
 
-                    @media screen and (max-width:768px) {
+                    @media (max-width:768px) {
                         margin-top: 30px;
                     }
                 }
@@ -1843,7 +1855,7 @@ main.container {
                 input {
                     width: calc(100% - 120px);
 
-                    @media screen and (max-width:768px) {
+                    @media (max-width:768px) {
                         width: 100%;
                         margin-top: 10px;
                     }
@@ -1860,7 +1872,7 @@ main.container {
                     border: none;
                     border-radius: 5px;
 
-                    @media screen and (max-width:768px) {
+                    @media (max-width:768px) {
                         margin-top: 30px;
                     }
                 }
@@ -1873,7 +1885,7 @@ main.container {
                 justify-content: space-between;
 
 
-                @media screen and (max-width:1200px) {
+                @media (max-width:1200px) {
                     flex-wrap: wrap;
                 }
 
@@ -1893,7 +1905,7 @@ main.container {
                 //         flex-direction: column;
                 //         margin-bottom: 20px;
 
-                //         @media screen and (max-width:1200px) {
+                //         @media (max-width:1200px) {
                 //             // width: 50%;
                 //             margin-bottom: 20px;
                 //         }
@@ -1906,7 +1918,7 @@ main.container {
                 //             padding-left: 10px;
                 //             margin-right: 30px;
 
-                //             @media screen and (max-width:768px) {
+                //             @media (max-width:768px) {
                 //                 margin-right: 10px;
                 //             }
                 //         }
@@ -1937,7 +1949,7 @@ main.container {
                 position: relative;
 
 
-                @media screen and (max-width:1200px) {
+                @media (max-width:1200px) {
                     flex-wrap: wrap;
                 }
 
@@ -1973,14 +1985,14 @@ main.container {
                 flex-wrap: wrap;
                 justify-content: space-between;
 
-                @media screen and (max-width:768px) {
+                @media (max-width:768px) {
                     justify-content: flex-start;
                 }
 
                 input {
                     width: calc(100% - 130px);
 
-                    @media screen and (max-width:768px) {
+                    @media (max-width:768px) {
                         width: 100%;
                         margin-top: 10px;
                     }
@@ -1988,7 +2000,9 @@ main.container {
                 }
 
                 select {
-                    @media screen and (max-width:768px) {
+                    border: 1px solid $black;
+
+                    @media (max-width:768px) {
                         margin-right: 30px;
                     }
                 }
@@ -2030,7 +2044,7 @@ main.container {
             margin-bottom: 45px;
             display: flex;
 
-            @media screen and (max-width:768px) {
+            @media (max-width:768px) {
                 border-top: 1px solid $black;
                 padding-top: 40px;
             }
@@ -2038,7 +2052,7 @@ main.container {
             input {
                 transform: translate(-30px, 42px);
 
-                @media screen and (max-width:768px) {
+                @media (max-width:768px) {
                     transform: translate(0px, 0px);
                 }
 
@@ -2052,7 +2066,7 @@ main.container {
                 text-align: justify;
                 margin-top: -5px;
 
-                @media screen and (max-width:768px) {
+                @media (max-width:768px) {
                     margin-left: 0px;
                     padding-top: 0px;
                     padding-left: 5px;
@@ -2065,7 +2079,7 @@ main.container {
             display: flex;
             justify-content: flex-end;
 
-            @media screen and (max-width:768px) {
+            @media (max-width:768px) {
                 justify-content: center;
             }
         }
@@ -2081,7 +2095,7 @@ main.container {
         border-radius: 10px;
         margin-bottom: 40px;
 
-        @media screen and (max-width:768px) {
+        @media (max-width:768px) {
             height: 150px;
         }
     }
@@ -2116,6 +2130,9 @@ main.container {
                 color: $fc-gray;
                 margin-top: 0px;
                 margin-bottom: 20px;
+                @media (max-width:576px) {
+                    padding: 0;
+                }
             }
 
             &.files {
@@ -2128,6 +2145,11 @@ main.container {
                     margin-right: 20px;
                     padding: 5px 10px;
                     font-size: $fs-12;
+
+                    @media (max-width:576px) {
+                        width: 100%;
+                        margin:0 0 15px 0;
+                    }
                 }
 
                 .inputBox {
@@ -2179,7 +2201,7 @@ main.container {
         button {
             margin-left: 20px;
 
-            @media screen and (max-width:1400px) {
+            @media (max-width:1400px) {
                 &:nth-child(1) {
                     max-width: calc(50% - 10px);
                     margin-left: 0px;

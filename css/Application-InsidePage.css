@@ -13,7 +13,7 @@ main.container {
       flex-wrap: wrap;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .title {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -41,7 +41,7 @@ main.container {
   margin-right: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .title li:nth-child(1) {
     margin-bottom: 30px;
   }
@@ -53,7 +53,7 @@ main.container {
   letter-spacing: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .title li:nth-child(2) {
     margin-bottom: 15px;
   }
@@ -68,13 +68,13 @@ main.container {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .title li.Note {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
   .block {
     max-width: 100%;
   }
@@ -96,7 +96,7 @@ main.container {
           align-items: flex-end;
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
   .icon {
     max-width: 100%;
     -webkit-box-orient: horizontal;
@@ -123,7 +123,7 @@ main.container {
   margin: 10px 0px;
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
   .icon button {
     margin: 0px 15px;
   }
@@ -145,6 +145,7 @@ main.container {
   color: #231815;
   width: 220px;
   border: 1px solid #231815;
+  margin: 0 0 0 15px !important;
 }
 
 .form_btn button:hover {
@@ -155,13 +156,25 @@ main.container {
   color: #FFFFFF;
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
   .form_btn button {
-    width: calc(50% - 10px);
+    max-width: 200px;
   }
-  .form_btn button:nth-child(3) {
-    max-width: 100%;
+}
+
+@media (max-width: 992px) {
+  .form_btn button {
+    max-width: unset;
     width: 100%;
+    margin: 0 !important;
+  }
+  .form_btn button:nth-child(1) {
+    margin: 0 15px 15px 0 !important;
+    width: calc(50% - 7.5px);
+  }
+  .form_btn button:nth-child(2) {
+    margin: 0 0 15px 0 !important;
+    width: calc(50% - 7.5px);
   }
 }
 
@@ -197,7 +210,7 @@ main.container {
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .Application_from .form_input {
     margin-bottom: 40px;
   }
@@ -294,7 +307,7 @@ main.container {
   border: 1px solid #000000;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .Application_from .form_input img {
     height: 40px;
   }
@@ -342,7 +355,7 @@ main.container {
   width: calc(100% - 126px);
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .Application_from .form_input.identity_area input {
     width: 100%;
     margin-top: 10px;
@@ -356,7 +369,7 @@ main.container {
       flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .Application_from .form_input > ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -376,7 +389,7 @@ main.container {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .Application_from .form_input > ul li {
     margin-bottom: 20px;
   }
@@ -391,7 +404,7 @@ main.container {
   margin-right: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .Application_from .form_input > ul li div {
     margin-right: 10px;
   }
@@ -487,7 +500,7 @@ main.container {
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .StudentInformation_from .form_input {
     margin-bottom: 40px;
   }
@@ -609,7 +622,7 @@ main.container {
   border: 1px solid #000000;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .StudentInformation_from .form_input img {
     height: 40px;
   }
@@ -660,7 +673,7 @@ main.container {
   width: calc(100% - 250px);
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .StudentInformation_from .form_input.identity_area input {
     width: 100%;
     margin-top: 10px;
@@ -679,7 +692,7 @@ main.container {
   letter-spacing: 3px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .StudentInformation_from .form_input.identity_area button {
     margin-top: 30px;
   }
@@ -692,7 +705,7 @@ main.container {
       flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .StudentInformation_from .form_input > ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -709,7 +722,7 @@ main.container {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .StudentInformation_from .form_input > ul li {
     margin-bottom: 20px;
   }
@@ -724,7 +737,7 @@ main.container {
   margin-right: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .StudentInformation_from .form_input > ul li div {
     margin-right: 10px;
   }
@@ -757,7 +770,7 @@ main.container {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .StudentInformation_from .form_input.school {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -769,14 +782,14 @@ main.container {
   width: calc(100% - 250px);
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .StudentInformation_from .form_input.school input {
     width: 100%;
     margin-top: 10px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .StudentInformation_from .form_input.school select {
     margin-right: 30px;
   }
@@ -828,7 +841,7 @@ main.container {
   letter-spacing: 3px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .StudentInformation_from .Privacy {
     border-top: 1px solid #000000;
     padding-top: 40px;
@@ -840,7 +853,7 @@ main.container {
           transform: translate(-30px, 42px);
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .StudentInformation_from .Privacy input {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
@@ -856,7 +869,7 @@ main.container {
   margin-top: -5px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .StudentInformation_from .Privacy p {
     margin-left: 0px;
     padding-top: 0px;
@@ -874,7 +887,7 @@ main.container {
           justify-content: flex-end;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .StudentInformation_from .form_btn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -882,7 +895,7 @@ main.container {
   }
 }
 
-@media screen and (max-width: 1400px) and (min-width: 1200px) {
+@media (max-width: 1400px) and (min-width: 1200px) {
   .StudentInformation_from .col-xl-2 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 22%;
@@ -900,7 +913,7 @@ main.container {
   margin-bottom: 25px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .StudentReadme_from .title {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -932,7 +945,7 @@ main.container {
           align-items: flex-start;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .StudentReadme_from .title li:nth-child(1) {
     margin-bottom: 30px;
   }
@@ -945,7 +958,7 @@ main.container {
   text-align: justify;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .StudentReadme_from .title li:nth-child(2) {
     margin-bottom: 15px;
   }
@@ -972,7 +985,7 @@ main.container {
   margin-bottom: 45px;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .StudentReadme_from .form_input {
     margin-bottom: 40px;
   }
@@ -989,7 +1002,7 @@ main.container {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .StudentReadme_from .form_input textarea {
     height: 150px;
   }
@@ -1000,7 +1013,7 @@ main.container {
   border: 1px solid #000000;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .StudentReadme_from .form_input img {
     height: 40px;
   }
@@ -1041,7 +1054,7 @@ main.container {
   margin-left: 20px;
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
   .StudentReadme_from .form_btn button:nth-child(1) {
     margin-left: 10px;
     margin-bottom: 15px;
@@ -1134,7 +1147,7 @@ main.container {
   padding: 0px 15px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .newitem {
     padding: 0px;
   }
@@ -1216,7 +1229,7 @@ main.container {
   margin: 20px -15px 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .newitem .student .content {
     padding: 40px 20px 15px;
   }
@@ -1232,7 +1245,7 @@ main.container {
   max-height: 320px;
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
   .newitem .content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1246,7 +1259,7 @@ main.container {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .newitem .content {
     padding: 15px;
   }
@@ -1319,7 +1332,7 @@ main.container {
   min-width: 810px;
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
   .newitem .form_w {
     min-width: unset;
   }
@@ -1348,7 +1361,7 @@ main.container {
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .newelement textarea {
     height: 150px;
   }
@@ -1362,7 +1375,7 @@ main.container {
   letter-spacing: 3px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .newelement .Experience_status .Note {
     padding: 0px 0px 25px;
   }
@@ -1397,7 +1410,7 @@ main.container {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .newelement .Experience_status .block {
     margin-bottom: 40px;
     padding: 15px;
@@ -1410,7 +1423,7 @@ main.container {
   padding-bottom: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .newelement .Experience_status .block .name {
     padding-bottom: 18px;
   }
@@ -1478,7 +1491,7 @@ main.container {
       flex-wrap: nowrap;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .newelement .Experience_status .block .form_input.data {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1504,7 +1517,7 @@ main.container {
   min-width: 56px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .newelement .Experience_status .block .form_input.data span {
     margin-bottom: 15px;
   }
@@ -1521,7 +1534,7 @@ main.container {
   margin-bottom: 58px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .newelement .Experience_status .add {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1572,7 +1585,7 @@ main.container {
   margin-right: 20px;
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
   .newelement .form_btn button:nth-child(1) {
     margin-right: 10px;
     margin-bottom: 15px;
@@ -1597,14 +1610,6 @@ main.container {
 
 .books_form .nav-pills {
   margin-bottom: 50px;
-}
-
-@media screen and (max-width: 768px) {
-  .books_form .nav-pills {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 
 .books_form .nav-pills .nav-item {
@@ -1649,7 +1654,7 @@ main.container {
   margin-left: 20px;
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
   .books_form .form_btn button:nth-child(1) {
     margin-right: 10px;
     margin-left: 0px;
@@ -1712,7 +1717,7 @@ main.container {
           flex-direction: row;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .books_form .form_input {
     margin-bottom: 40px;
   }
@@ -1742,7 +1747,7 @@ main.container {
   border: 1px solid #000000;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .books_form .form_input img {
     height: 40px;
   }
@@ -1774,11 +1779,19 @@ main.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+  .books_form .form_input.identity_area {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .books_form .form_input.identity_area > div {
@@ -1793,7 +1806,7 @@ main.container {
   width: calc(100% - 250px);
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .books_form .form_input.identity_area input {
     width: 100%;
     margin-top: 10px;
@@ -1809,9 +1822,16 @@ main.container {
   font-weight: 600;
   border: none;
   border-radius: 5px;
+  margin-left: 15px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 1200px) {
+  .books_form .form_input.identity_area button {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
   .books_form .form_input.identity_area button {
     margin-top: 30px;
   }
@@ -1874,7 +1894,7 @@ main.container {
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .books_form .Information_from .form_input {
     margin-bottom: 40px;
   }
@@ -1991,7 +2011,7 @@ main.container {
   border: 1px solid #000000;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .books_form .Information_from .form_input img {
     height: 40px;
   }
@@ -2042,7 +2062,7 @@ main.container {
   width: calc(100% - 250px);
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .books_form .Information_from .form_input.identity_area input {
     width: 100%;
     margin-top: 10px;
@@ -2060,7 +2080,7 @@ main.container {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .books_form .Information_from .form_input.identity_area button {
     margin-top: 30px;
   }
@@ -2085,7 +2105,7 @@ main.container {
   width: calc(100% - 120px);
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .books_form .Information_from .form_input.Clear_content input {
     width: 100%;
     margin-top: 10px;
@@ -2103,7 +2123,7 @@ main.container {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .books_form .Information_from .form_input.Clear_content button {
     margin-top: 30px;
   }
@@ -2119,7 +2139,7 @@ main.container {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .books_form .Information_from .form_input .Application_radio {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2150,7 +2170,7 @@ main.container {
   position: relative;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .books_form .Information_from .form_input .Reader_radio {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2198,7 +2218,7 @@ main.container {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .books_form .Information_from .form_input.address {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -2210,14 +2230,18 @@ main.container {
   width: calc(100% - 130px);
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .books_form .Information_from .form_input.address input {
     width: 100%;
     margin-top: 10px;
   }
 }
 
-@media screen and (max-width: 768px) {
+.books_form .Information_from .form_input.address select {
+  border: 1px solid #000000;
+}
+
+@media (max-width: 768px) {
   .books_form .Information_from .form_input.address select {
     margin-right: 30px;
   }
@@ -2261,7 +2285,7 @@ main.container {
   display: flex;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .books_form .Information_from .Privacy {
     border-top: 1px solid #000000;
     padding-top: 40px;
@@ -2273,7 +2297,7 @@ main.container {
           transform: translate(-30px, 42px);
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .books_form .Information_from .Privacy input {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
@@ -2289,7 +2313,7 @@ main.container {
   margin-top: -5px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .books_form .Information_from .Privacy p {
     margin-left: 0px;
     padding-top: 0px;
@@ -2307,7 +2331,7 @@ main.container {
           justify-content: flex-end;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .books_form .Information_from .form_btn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2324,7 +2348,7 @@ main.container {
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .books_form textarea {
     height: 150px;
   }
@@ -2357,6 +2381,12 @@ main.container {
   margin-bottom: 20px;
 }
 
+@media (max-width: 576px) {
+  .file_area .file_block li.Note {
+    padding: 0;
+  }
+}
+
 .file_area .file_block li.files .fileName {
   width: calc(100% - 210px);
   height: 30px;
@@ -2365,6 +2395,13 @@ main.container {
   margin-right: 20px;
   padding: 5px 10px;
   font-size: 12px;
+}
+
+@media (max-width: 576px) {
+  .file_area .file_block li.files .fileName {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
 }
 
 .file_area .file_block li.files .inputBox {
@@ -2418,7 +2455,7 @@ main.container {
   margin-left: 20px;
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
   .file_area .form_btn button:nth-child(1) {
     max-width: calc(50% - 10px);
     margin-left: 0px;
