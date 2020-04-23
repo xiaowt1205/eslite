@@ -184,7 +184,7 @@ main.container {
   padding-bottom: 30px;
 }
 
-.Application_from .name > div {
+.Application_from .name > label {
   min-width: 150px;
   letter-spacing: 4px;
   padding: 0px 0px 0px 20px;
@@ -194,7 +194,7 @@ main.container {
   font-weight: 700;
 }
 
-.Application_from .name > div::before {
+.Application_from .name > label::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1683,7 +1683,7 @@ main.container {
   }
 }
 
-.books_form .name > div {
+.books_form .name > label {
   min-width: 150px;
   letter-spacing: 4px;
   padding: 0px 0px 0px 20px;
@@ -1693,7 +1693,7 @@ main.container {
   font-weight: 700;
 }
 
-.books_form .name > div::before {
+.books_form .name > label::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1705,7 +1705,7 @@ main.container {
   background-color: #231815;
 }
 
-.books_form .name.Editor > div {
+.books_form .name.Editor > label {
   letter-spacing: 3px;
 }
 
@@ -1726,7 +1726,7 @@ main.container {
   }
 }
 
-.books_form .form_input > input {
+.books_form .form_input > button {
   width: 100%;
   padding: 10px 20px;
   border-radius: 5px;

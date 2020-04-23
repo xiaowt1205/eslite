@@ -831,7 +831,8 @@
 
                 <!-- 內頁起點 -->
                 <div class="books_form">
-                    <ul class="nav nav-pills justify-content-lg-start justify-content-center flex-wrap flex-sm-nowrap" id="pills-tab" role="tablist">
+                    <ul class="nav nav-pills justify-content-lg-start justify-content-center flex-wrap flex-sm-nowrap"
+                        id="pills-tab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
                                 role="tab" aria-controls="pills-home" aria-selected="true">申請說明</a>
@@ -855,21 +856,22 @@
                                 <button>書如何申請</button>
                             </div>
                         </div>
+                        <!-- 04-23 表單修正 -->
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
                             aria-labelledby="pills-profile-tab">
                             <div class="row justify-content-start">
-                                <div class="col-12 name">
-                                    <div>輸入單位統編</div>
+                                <div class="col-xl-2 col-12 name Editor">
+                                    <label for="inputunit">輸入單位統編</label>
                                 </div>
-
                                 <!-- 新增.prompt   以提示  " 貴單位於三個月內曾申請書籍且未結案 " -->
                                 <!-- <div class="col-xl-9 col-12 form_input identity_area prompt"> -->
-                                <div class="col-xl-9 col-12 form_input identity_area ">
-                                    <input type="tel" name="tel" placeholder="">
-                                    <button>查詢</button>
+                                <div class="col-xl-9 col-12 form_input identity_area">
+                                    <input type="number" id="inputunit" name="number" placeholder="">
+                                    <button type="submit">查詢</button>
                                 </div>
                             </div>
                         </div>
+                        <!-- 04-23 表單修正 -->
                     </div>
                 </div>
                 <!-- 內頁終點 -->

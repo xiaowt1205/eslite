@@ -103,19 +103,23 @@ main.container {
         // margin-left: 20px;
         border: 1px solid $bc-brown;
         margin: 0 0 0 15px !important;
+
         @media (max-width:1400px) {
             max-width: 200px;
         }
+
         @media (max-width:992px) {
             max-width: unset;
             width: 100%;
             margin: 0 !important;
-            &:nth-child(1){
-                margin:0 15px 15px 0 !important;
+
+            &:nth-child(1) {
+                margin: 0 15px 15px 0 !important;
                 width: calc(50% - 7.5px);
             }
-            &:nth-child(2){
-                margin:0 0 15px 0 !important;
+
+            &:nth-child(2) {
+                margin: 0 0 15px 0 !important;
                 width: calc(50% - 7.5px);
             }
         }
@@ -127,12 +131,13 @@ main.container {
 // 這別頁面修改
 .Application_from {
 
+    //04-23 表單修正 
     .name {
         font-size: $fs-22;
         letter-spacing: 2px;
         padding-bottom: 30px;
 
-        &>div {
+        &>label {
             min-width: 150px;
             letter-spacing: 4px;
             padding: 0px 0px 0px 20px;
@@ -355,6 +360,7 @@ main.container {
         }
     }
 
+    //04-23 表單修正
     .dateInput {
         position: relative;
 
@@ -1436,6 +1442,7 @@ main.container {
         }
     }
 
+    //04-23 表單修正
     .form_btn {
         display: flex;
         justify-content: start;
@@ -1475,7 +1482,7 @@ main.container {
             flex: 0 0 25%;
         }
 
-        &>div {
+        &>label {
             min-width: 150px;
             letter-spacing: 4px;
             padding: 0px 0px 0px 20px;
@@ -1497,7 +1504,7 @@ main.container {
         }
 
         &.Editor {
-            &>div {
+            &>label {
                 letter-spacing: 3px;
             }
         }
@@ -1515,7 +1522,7 @@ main.container {
             }
         }
 
-        &>input {
+        &>button {
             width: 100%;
             padding: 10px 20px;
             border-radius: 5px;
@@ -1564,7 +1571,7 @@ main.container {
 
             @media (max-width:1200px) {
                 justify-content: space-between;
-            }   
+            }
 
             &>div {
                 width: 100%;
@@ -1594,9 +1601,10 @@ main.container {
                 border: none;
                 border-radius: 5px;
                 margin-left: 15px;
+
                 @media (max-width:1200px) {
                     margin-left: 0px;
-                }   
+                }
 
                 @media (max-width:768px) {
                     margin-top: 30px;
@@ -1605,6 +1613,7 @@ main.container {
         }
     }
 
+    //04-23 表單修正
     .Information_from {
         .title {
             li {
@@ -2130,6 +2139,7 @@ main.container {
                 color: $fc-gray;
                 margin-top: 0px;
                 margin-bottom: 20px;
+
                 @media (max-width:576px) {
                     padding: 0;
                 }
@@ -2148,7 +2158,7 @@ main.container {
 
                     @media (max-width:576px) {
                         width: 100%;
-                        margin:0 0 15px 0;
+                        margin: 0 0 15px 0;
                     }
                 }
 

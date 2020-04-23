@@ -767,7 +767,7 @@
             </div>
         </div>
     </div>
- 
+
     <!-- main content -->
     <main class="container">
         <div class="row position-relative align-items-start">
@@ -828,10 +828,11 @@
                     <h2 class="phoneStyleTitle">分頁標題</h2>
                 </div>
                 <!-- 平板版的title結束 -->
-
+                <!-- 04-23 表單修正 -->
                 <!-- 內頁起點 -->
                 <div class="books_form">
-                    <ul class="nav nav-pills justify-content-lg-start justify-content-center flex-wrap flex-sm-nowrap" id="pills-tab" role="tablist">
+                    <ul class="nav nav-pills justify-content-lg-start justify-content-center flex-wrap flex-sm-nowrap"
+                        id="pills-tab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
                                 aria-controls="pills-home" aria-selected="true">申請說明</a>
@@ -858,11 +859,11 @@
                             aria-labelledby="pills-profile-tab">
                             <div class="row justify-content-start">
                                 <div class="col-xl-2 col-12 name Editor">
-                                    <div>輸入單位統編</div>
+                                    <label for="inputunit">輸入單位統編</label>
                                 </div>
                                 <div class="col-xl-9 col-12 form_input identity_area">
-                                    <input type="tel" name="tel" placeholder="">
-                                    <button>查詢</button>
+                                    <input type="number" id="inputunit" name="number" placeholder="">
+                                    <button type="submit">查詢</button>
                                 </div>
                             </div>
 
@@ -897,8 +898,7 @@
                                     </ul>
                                     <ul class="row justify-content-start">
                                         <li class="col-xl-3 col-12 name need">
-                                            <label for="Information_unittel"></label>
-                                            <div>申請單位電話</div>
+                                            <label for="Information_unittel">申請單位電話</label>
                                         </li>
                                         <li class="col-xl-8 col-12 form_input">
                                             <input id="Information_unittel" type="tel" name="tel" placeholder="">
@@ -937,8 +937,7 @@
                                     </ul>
                                     <ul class="row justify-content-start">
                                         <li class="col-xl-3 col-12 name need">
-                                            <label for="Information_unitremarks"></label>
-                                            <div>單位備註</div>
+                                            <label for="Information_unitremarks">單位備註</label>
                                         </li>
                                         <li class="col-xl-8 col-12 form_input">
                                             <input id="Information_unitremarks" type="text" name="text"
@@ -963,8 +962,7 @@
                                     </ul>
                                     <ul class="row justify-content-start">
                                         <li class="col-xl-3 col-12 name need">
-                                            <label for="Contactperson_phone"></label>
-                                            <div>聯絡人電話(日)</div>
+                                            <label for="Contactperson_phone">聯絡人電話(日)</label>
                                         </li>
                                         <li class="col-xl-8 col-12 form_input">
                                             <input id="Contactperson_phone" type="phone" name="phone" placeholder="">
@@ -975,7 +973,8 @@
                                             <label for="Contactperson_cellphone">聯絡人手機</label>
                                         </li>
                                         <li class="col-xl-8 col-12 form_input">
-                                            <input id="Contactperson_cellphone" type="phone" name="phone" placeholder="ex.0988123123">
+                                            <input id="Contactperson_cellphone" type="phone" name="phone"
+                                                placeholder="ex.0988123123">
                                         </li>
                                     </ul>
 
@@ -990,28 +989,28 @@
                                     </ul>
                                     <ul class="row justify-content-start">
                                         <li class="col-xl-3 col-12 name need">
-                                            <div>申請單位屬性</div>
+                                            <label for="Unitattribute">申請單位屬性</label>
                                         </li>
                                         <li class="col-xl-8 col-12 form_input">
                                             <ul class="d-flex Application_radio">
-                                                <li><input type="radio" checked="checked" name="class_number"
-                                                        value="" />
+                                                <li><input type="radio" checked="checked" id="Unitattribute"
+                                                        name="class_number" value="" />
                                                     <div>國小</div>
                                                 </li>
-                                                <li><input type="radio" checked="checked" name="class_number"
-                                                        value="" />
+                                                <li><input type="radio" checked="checked" id="Unitattribute"
+                                                        name="class_number" value="" />
                                                     <div>國中</div>
                                                 </li>
-                                                <li><input type="radio" checked="checked" name="class_number"
-                                                        value="" />
+                                                <li><input type="radio" checked="checked" id="Unitattribute"
+                                                        name="class_number" value="" />
                                                     <div>高中職</div>
                                                 </li>
-                                                <li><input type="radio" checked="checked" name="class_number"
-                                                        value="" />
+                                                <li><input type="radio" checked="checked" id="Unitattribute"
+                                                        name="class_number" value="" />
                                                     <div>民間團體</div>
                                                 </li>
-                                                <li><input type="radio" checked="checked" name="class_number"
-                                                        value="" />
+                                                <li><input type="radio" checked="checked" id="Unitattribute"
+                                                        name="class_number" value="" />
                                                     <div>政府單位</div>
                                                 </li>
                                             </ul>
@@ -1019,44 +1018,44 @@
                                     </ul>
                                     <ul class="row justify-content-start">
                                         <li class="col-xl-3 col-12 name need">
-                                            <div>單位服務人數</div>
+                                            <label for="Unitpeople">單位服務人數</label>
                                         </li>
                                         <li class="col-xl-8 col-12 form_input">
-                                            <input type="text" name="phone" placeholder="">
+                                            <input id="Unitpeople" type="text" name="phone" placeholder="">
                                         </li>
                                     </ul>
                                     <ul class="row justify-content-start">
                                         <li class="col-xl-3 col-12 name need">
-                                            <div>讀者類型</div>
+                                            <label for="Readertype">讀者類型</label>
                                         </li>
                                         <li class="col-xl-8 col-12 form_input">
                                             <ul class="d-flex Reader_radio">
-                                                <li><input type="radio" checked="checked" name="class_number"
-                                                        value="" />
+                                                <li><input type="radio" id="Readertype" checked="checked"
+                                                        name="class_number" value="" />
                                                     <div>六歲以下幼兒</div>
                                                 </li>
-                                                <li><input type="radio" checked="checked" name="class_number"
-                                                        value="" />
+                                                <li><input type="radio" id="Readertype" checked="checked"
+                                                        name="class_number" value="" />
                                                     <div>國小</div>
                                                 </li>
-                                                <li><input type="radio" checked="checked" name="class_number"
-                                                        value="" />
+                                                <li><input type="radio" id="Readertype" checked="checked"
+                                                        name="class_number" value="" />
                                                     <div>國中</div>
                                                 </li>
-                                                <li><input type="radio" checked="checked" name="class_number"
-                                                        value="" />
+                                                <li><input type="radio" id="Readertype" checked="checked"
+                                                        name="class_number" value="" />
                                                     <div>高中職</div>
                                                 </li>
-                                                <li><input type="radio" checked="checked" name="class_number"
-                                                        value="" />
+                                                <li><input type="radio" id="Readertype" checked="checked"
+                                                        name="class_number" value="" />
                                                     <div>大學及研究生</div>
                                                 </li>
-                                                <li><input type="radio" checked="checked" name="class_number"
-                                                        value="" />
+                                                <li><input type="radio" id="Readertype" checked="checked"
+                                                        name="class_number" value="" />
                                                     <div>社會人士</div>
                                                 </li>
-                                                <li><input type="radio" checked="checked" name="class_number"
-                                                        value="" />
+                                                <li><input type="radio" id="Readertype" checked="checked"
+                                                        name="class_number" value="" />
                                                     <div>外籍人士</div>
                                                 </li>
                                             </ul>
@@ -1080,39 +1079,39 @@
                                     </ul>
                                     <ul class="row justify-content-start">
                                         <li class="col-xl-3 col-12 name need">
-                                            <div>需要幾箱</div>
+                                            <label for="Needbox">需要幾箱</label>
                                         </li>
                                         <li class="col-xl-8 col-12 form_input">
-                                            <input type="text" name="name" placeholder="單次申請箱數上限為5箱">
+                                            <input type="text" id="Needbox" name="name" placeholder="單次申請箱數上限為5箱">
                                         </li>
                                     </ul>
                                     <ul class="row justify-content-start">
                                         <li class="col-xl-3 col-12 name need">
-                                            <div class="two">
+                                            <label for="nowbooks" class="two">
                                                 <div>本次申請書籍</div>
                                                 <div>使用規劃</div>
-                                            </div>
+                                            </label>
                                         </li>
                                         <li class="col-xl-8 col-12 form_input">
-                                            <input type="text" name="name" placeholder="">
+                                            <input type="text" id="nowbooks" name="name" placeholder="">
                                         </li>
                                     </ul>
                                     <ul class="row justify-content-start">
                                         <li class="col-xl-3 col-12 name need">
-                                            <div>是否有其他需求</div>
+                                            <label for="orderneed">是否有其他需求</label>
                                         </li>
                                         <li class="col-xl-8 col-12 form_input">
-                                            <textarea name="" id=""></textarea>
+                                            <textarea name="" id="orderneed"></textarea>
                                         </li>
                                     </ul>
                                     <ul class="row justify-content-start">
                                         <li class="col-xl-3 col-12">
                                         </li>
                                         <li class="col-xl-8 col-12 form_btn">
-                                            <button>
+                                            <button type="reset">
                                                 取消
                                             </button>
-                                            <button>
+                                            <button type="submit">
                                                 送出
                                             </button>
                                         </li>
@@ -1124,6 +1123,7 @@
                     </div>
                 </div>
                 <!-- 內頁終點 -->
+                <!-- 04-23 表單修正 -->
             </section>
         </div>
     </main>
