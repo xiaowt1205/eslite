@@ -6,7 +6,7 @@
     margin-bottom: 45px;
 
     // align-items: center;
-    @media screen and (max-width:768px) {
+    @media (max-width:768px) {
         flex-direction: column;
     }
 
@@ -22,7 +22,7 @@
         }
 
         &:nth-child(1) {
-            @media screen and (max-width:768px) {
+            @media (max-width:768px) {
                 margin-bottom: 30px;
             }
         }
@@ -32,7 +32,7 @@
             font-weight: $fw-700;
             letter-spacing: 5px;
 
-            @media screen and (max-width:768px) {
+            @media (max-width:768px) {
                 margin-bottom: 15px;
             }
         }
@@ -43,7 +43,7 @@
             letter-spacing: 3px;
             transform: translateY(4px);
 
-            @media screen and (max-width:768px) {
+            @media (max-width:768px) {
                 margin-bottom: 30px;
             }
         }
@@ -59,7 +59,7 @@
         padding: 40px 50px;
         margin-bottom: 30px;
 
-        @media screen and (max-width:768px) {
+        @media (max-width:768px) {
             margin-bottom: 40px;
             padding: 0px;
             border: 0px solid $black;
@@ -70,7 +70,7 @@
             letter-spacing: 2px;
             padding-bottom: 30px;
 
-            @media screen and (max-width:768px) {
+            @media (max-width:768px) {
                 padding-bottom: 18px;
             }
 
@@ -121,7 +121,7 @@
         .robot {
             display: flex;
 
-            @media screen and (max-width:768px) {
+            @media (max-width:768px) {
                 flex-direction: row;
                 flex-wrap: wrap;
             }
@@ -129,7 +129,7 @@
             img {
                 width: 250px;
 
-                @media screen and (max-width:768px) {
+                @media (max-width:768px) {
                     margin-bottom: 30px;
                 }
             }
@@ -142,7 +142,7 @@
                 letter-spacing: 3px;
                 color: $pure-gray;
 
-                @media screen and (max-width:768px) {
+                @media (max-width:768px) {
                     padding-left: 0px;
                     flex-direction: row;
                 }
@@ -156,7 +156,7 @@
                         transform: translateY(2px);
                     }
 
-                    @media screen and (max-width:768px) {
+                    @media (max-width:768px) {
                         &:nth-child(1) {
                             transform: translateY(0px);
                         }
@@ -174,11 +174,11 @@
 
     .form_btn {
 
-        @media screen and (max-width:1400px) {
+        @media (max-width:1400px) {
             display: flex;
         }
 
-        @media screen and (max-width:768px) {
+        @media (max-width:768px) {
             padding: 10px 15px;
         }
 
@@ -206,7 +206,7 @@
                 margin-right: auto;
             }
 
-            @media screen and (max-width:1200px) {
+            @media (max-width:1200px) {
                 &:nth-child(1) {
                     order: 0;
                     width: 100%;
@@ -245,7 +245,7 @@
         padding: 40px 50px;
         margin-bottom: 30px;
 
-        @media screen and (max-width:768px) {
+        @media (max-width:768px) {
             margin-bottom: 40px;
             padding: 0px;
             border: 0px solid $black;
@@ -312,11 +312,11 @@
 
     .form_btn {
 
-        @media screen and (max-width:1400px) {
+        @media (max-width:1400px) {
             display: flex;
         }
 
-        @media screen and (max-width:768px) {
+        @media (max-width:768px) {
             padding: 0px 15px;
         }
 
@@ -338,7 +338,7 @@
                 margin-left: auto;
             }
 
-            @media screen and (max-width:1200px) {
+            @media (max-width:1200px) {
                 &:nth-child(1) {
                     width: 100%;
                 }
