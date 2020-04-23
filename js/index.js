@@ -22,7 +22,7 @@ var footer_swiper = new Swiper('.vendor_area .swiper-container', {
         prevEl: '.vendor_area .arrow_button-prev',
     },
 });
- 
+
 
 
 
@@ -70,3 +70,26 @@ function dynamicNumberCounter(scrollPos, id, setNum) {
         }
     }
 }
+
+// 04-21 首頁移進來
+
+window.onscroll = function () {
+    dynamicNumberCounter(400, "total_0", 400000);
+    dynamicNumberCounter(400, "total_1", 600000);
+    dynamicNumberCounter(400, "total_2", 15000);
+    dynamicNumberCounter(400, "year_0", 400000);
+    dynamicNumberCounter(400, "year_1", 600000);
+    dynamicNumberCounter(400, "year_2", 15000);
+    // dynamicNumberCounter(scrollTop Position(Num), element's id(String) , Target Number(Num))
+    // ex) dynamicNumberCounter(400, "test", 64);
+}
+
+$('.aside-btn-title').click(function () {
+    $(this).toggleClass('active')
+})
+
+$('.search_icon').click(function () {
+    $('.search_box').toggleClass('active')
+})
+
+// 04-21 首頁移進來

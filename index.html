@@ -15,14 +15,14 @@
     <link
         href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:200,300,400,500,600,700,900&display=swap&subset=chinese-traditional"
         rel="stylesheet">
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <!-- layout -->
+    <!-- navbar layout -->
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/model.css">
+
 
     <!-- page css  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/model.css">
 </head>
 
 <body>
@@ -1427,11 +1427,19 @@
                             <p>版權所有聲明</p>
                         </div>
                         <div class="icon_block px-0">
-                            <div class="icon-bg"><a href="">
+                            <a href="">
+                                <div class="icon-bg">
                                     <div class="mail-icon"><img src="./img/icon/emaill.png" alt=""></div>
-                                </a></div>
-                            <div class="icon-bg"><a href=""><i class="fab fa-youtube"></i></a></div>
-                            <div class="icon-bg"><a href=""><i class="fab fa-facebook-f"></i></a></div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="icon-bg">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="icon-bg"><i class="fab fa-facebook-f"></i></div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1451,38 +1459,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
     <script src="./js/main.js"></script>
 
     <!-- page js -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="./js/index.js"></script>
 
-    <script>
-        window.onscroll = function () {
-            dynamicNumberCounter(400, "total_0", 400000);
-            dynamicNumberCounter(400, "total_1", 600000);
-            dynamicNumberCounter(400, "total_2", 15000);
-            dynamicNumberCounter(400, "year_0", 400000);
-            dynamicNumberCounter(400, "year_1", 600000);
-            dynamicNumberCounter(400, "year_2", 15000);
-            // dynamicNumberCounter(scrollTop Position(Num), element's id(String) , Target Number(Num))
-            // ex) dynamicNumberCounter(400, "test", 64);
-        }
-
-    </script>
-    <!-- 04/08 新增功能 頭 -->
-    <script>
-        $('.search_icon').click(function () {
-            $('.search_box').toggleClass('active')
-        })
-    </script>
-    <!-- 04/08 新增功能 尾 -->
-    <script>
-        $('.aside-btn-title').click(function () {
-            $(this).toggleClass('active')
-        })
-    </script>
 </body>
 
 </html>

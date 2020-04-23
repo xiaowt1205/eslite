@@ -29,7 +29,7 @@
             letter-spacing: 2px;
             padding-bottom: 30px;
 
-            &>div {
+            &>label {
                 min-width: 150px;
                 letter-spacing: 4px;
                 padding: 0px 0px 0px 20px;
@@ -180,7 +180,7 @@
                 display: flex;
             }
 
-            input {
+            button {
                 @include text_style($fs-16, $fw-700, center, 3px);
                 @include font_hover($bc-brown, $fc-white);
                 width: 220px;

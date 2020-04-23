@@ -820,7 +820,7 @@
                     </div>
                 </div>
             </aside>
-
+            <!-- 04-22 修正表單 -->
             <!-- page content -->
             <section class="col-9 pageContent">
 
@@ -835,116 +835,114 @@
                 <!-- 平板版的title結束 -->
 
                 <!-- 內頁起點 -->
-                <div class="Connection_area">
-                    <div class="row justify-content-end">
-                        <form action="" class="Connection_form col-12">
-                            <div class="row justify-content-start">
-                                <div class="col-xl-2 col-12 name">
-                                    <div>標題</div>
-                                </div>
-                                <div class="col-xl-9 col-12 form_input">
-                                    <input type="text" name="title_name" placeholder="請輸入標題">
-                                </div>
+                <div class="Connection_area row justify-content-end">
+                    <form action="" method="POST" class="Connection_form col-12">
+                        <div class="row justify-content-start">
+                            <div class="col-xl-2 col-12 name">
+                                <label for="#title">標題</label>
                             </div>
-                            <div class="row justify-content-start">
-                                <div class="col-xl-2 col-12 name">
-                                    <div>內容</div>
-                                </div>
-                                <div class="col-xl-9 col-12 form_input">
-                                    <select>
-                                        <option>分類一</option>
-                                        <option selected="true">分類二</option>
-                                        <option>分類三</option>
-                                        <option>分類四</option>
-                                    </select>
-                                </div>
+                            <div class="col-xl-9 col-12 form_input">
+                                <input id="title" type="text" name="title_name" placeholder="請輸入標題">
                             </div>
-                            <div class="row justify-content-start">
-                                <div class="col-xl-2 col-12 name">
-                                    <div>張貼日</div>
-                                </div>
-                                <div class="col-xl-9 col-12 form_input d-flex dateInput flex-wrap">
-                                    <div class="w-100 d-flex start">
-                                        <div class="period">起</div>
-                                        <div class="w-100 position-relative">
-                                            <input type="text" id="datepicker_start" class="datepicker"
-                                                placeholder="年 / 月 / 日">
-                                            <i class="far fa-calendar-alt"></i>
-                                        </div>
-                                        <div class="clearBTN">清除</div>
+                        </div>
+                        <div class="row justify-content-start">
+                            <div class="col-xl-2 col-12 name">
+                                <label for="#content">內容</label>
+                            </div>
+                            <div class="col-xl-9 col-12 form_input">
+                                <select id="content" name="content">
+                                    <option selected="true">分類一</option>
+                                    <option>分類二</option>
+                                    <option>分類三</option>
+                                    <option>分類四</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row justify-content-start">
+                            <div class="col-xl-2 col-12 name">
+                                <label for="">張貼日</label>
+                            </div>
+                            <div class="col-xl-9 col-12 form_input d-flex dateInput flex-wrap">
+                                <div class="w-100 d-flex start">
+                                    <label for="#datepicker_start" class="period">起</label>
+                                    <div class="w-100 position-relative">
+                                        <input type="text" id="datepicker_start" class="datepicker"
+                                            placeholder="年 / 月 / 日" name="start">
+                                        <i class="far fa-calendar-alt"></i>
                                     </div>
-                                    <div class="w-100 d-flex end">
-                                        <div class="period">迄</div>
-                                        <div class="w-100 position-relative">
-                                            <input type="text" id="datepicker_end" class="datepicker"
-                                                placeholder="年 / 月 / 日">
-                                            <i class="far fa-calendar-alt"></i>
-                                        </div>
-
-                                        <div class="clearBTN">清除</div>
+                                    <div class="clearBTN">清除</div>
+                                </div>
+                                <div class="w-100 d-flex end">
+                                    <label for="#datepicker_end" class="period">迄</label>
+                                    <div class="w-100 position-relative">
+                                        <input type="text" id="datepicker_end" class="datepicker"
+                                            placeholder="年 / 月 / 日" name="end">
+                                        <i class="far fa-calendar-alt"></i>
                                     </div>
-                                    <!-- <i class="far fa-calendar-alt"></i> -->
+                                    <div class="clearBTN">清除</div>
                                 </div>
                             </div>
-                            <div class="row justify-content-start">
-                                <div class="col-xl-2 col-12 name">
-                                    <div>主旨</div>
-                                </div>
-                                <div class="col-xl-9 col-12 form_input">
-                                    <ul class="d-flex">
-                                        <li><input type="radio" checked="checked" name="Option_number" value="" />
-                                            <div> 選項一</div>
-                                        </li>
-                                        <li><input type="radio" checked="checked" name="Option_number" value="" />
-                                            <div> 選項二</div>
-                                        </li>
-                                        <li><input type="radio" checked="checked" name="Option_number" value="" />
-                                            <div> 選項三</div>
-                                        </li>
-                                        <li><input type="radio" checked="checked" name="Option_number" value="" />
-                                            <div> 選項四</div>
-                                        </li>
-                                        <li><input type="radio" checked="checked" name="Option_number" value="" />
-                                            <div> 選項五</div>
-                                        </li>
-                                    </ul>
-                                </div>
+                        </div>
+                        <div class="row justify-content-start">
+                            <div class="col-xl-2 col-12 name">
+                                <label for="#subject">主旨</label>
                             </div>
-                            <div class="row justify-content-start">
-                                <div class="col-xl-2 col-12 name">
-                                    <div>分類項目</div>
-                                </div>
-                                <div class="col-xl-9 col-12 form_input">
-                                    <ul class="d-flex">
-                                        <li><input type="radio" checked="checked" name="class_number" value="" />
-                                            <div>A</div>
-                                        </li>
-                                        <li><input type="radio" checked="checked" name="class_number" value="" />
-                                            <div>B</div>
-                                        </li>
-                                        <li><input type="radio" checked="checked" name="class_number" value="" />
-                                            <div>C</div>
-                                        </li>
-                                        <li><input type="radio" checked="checked" name="class_number" value="" />
-                                            <div>D</div>
-                                        </li>
-                                        <li><input type="radio" checked="checked" name="class_number" value="" />
-                                            <div>E</div>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="col-xl-9 col-12 form_input">
+                                <ul class="d-flex">
+                                    <li><input id="subject" type="radio" checked="checked" name="Option_number"
+                                            value="選項一">
+                                        <div> 選項一</div>
+                                    </li>
+                                    <li><input id="subject" type="radio" name="Option_number" value="選項二">
+                                        <div> 選項二</div>
+                                    </li>
+                                    <li><input id="subject" type="radio" name="Option_number" value="選項三">
+                                        <div> 選項三</div>
+                                    </li>
+                                    <li><input id="subject" type="radio" name="Option_number" value="選項四">
+                                        <div> 選項四</div>
+                                    </li>
+                                    <li><input id="subject" type="radio" name="Option_number" value="選項五">
+                                        <div> 選項五</div>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="row justify-content-start">
-                                <div class="col-xl-11 col-12 d-flex justify-content-end form_btn">
-                                    <input type="submit" value="送出資料">
-                                    <input type="reset" value="重新填寫">
-                                </div>
+                        </div>
+                        <div class="row justify-content-start">
+                            <div class="col-xl-2 col-12 name">
+                                <label for="#items">分類項目</label>
                             </div>
-                        </form>
-                    </div>
+                            <div class="col-xl-9 col-12 form_input">
+                                <ul class="d-flex">
+                                    <li><input id="items" type="radio" checked="checked" name="class_number" value="A">
+                                        <div>A</div>
+                                    </li>
+                                    <li><input id="items" type="radio" name="class_number" value="B">
+                                        <div>B</div>
+                                    </li>
+                                    <li><input id="items" type="radio" name="class_number" value="C">
+                                        <div>C</div>
+                                    </li>
+                                    <li><input id="items" type="radio" name="class_number" value="D">
+                                        <div>D</div>
+                                    </li>
+                                    <li><input id="items" type="radio" name="class_number" value="E">
+                                        <div>E</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row justify-content-start">
+                            <div class="col-xl-11 col-12 d-flex justify-content-end form_btn">
+                                <button type="submit">送出資料</button>
+                                <button class="reset" type="reset">重新填寫</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <!-- 內頁終點 -->
             </section>
+            <!-- 04-22 修正表單 -->
         </div>
     </main>
 
@@ -953,9 +951,9 @@
         <div class="container">
             <div class="row footer_area">
                 <div class="col-xl-3 logo_area px-0">
-                    <div class="logo">
+                    <a href="#" title="回首頁" aria-label="回首頁" class="logo">
                         <img class="w-100" src="./img/index/logo-white.png" alt="">
-                    </div>
+                    </a>
                 </div>
                 <div class="col-xl-5 info_area">
                     <div class="footer-info">
@@ -981,11 +979,19 @@
                             <p>版權所有聲明</p>
                         </div>
                         <div class="icon_block px-0">
-                            <div class="icon-bg"><a href="">
+                            <a href="">
+                                <div class="icon-bg">
                                     <div class="mail-icon"><img src="./img/icon/emaill.png" alt=""></div>
-                                </a></div>
-                            <div class="icon-bg"><a href=""><i class="fab fa-youtube"></i></a></div>
-                            <div class="icon-bg"><a href=""><i class="fab fa-facebook-f"></i></a></div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="icon-bg">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="icon-bg"><i class="fab fa-facebook-f"></i></div>
+                            </a>
                         </div>
                     </div>
                 </div>

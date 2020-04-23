@@ -29,7 +29,7 @@
   padding-bottom: 30px;
 }
 
-.Connection_area .Connection_form .name > div {
+.Connection_area .Connection_form .name > label {
   min-width: 150px;
   letter-spacing: 4px;
   padding: 0px 0px 0px 20px;
@@ -38,7 +38,7 @@
   font-weight: 900;
 }
 
-.Connection_area .Connection_form .name > div::before {
+.Connection_area .Connection_form .name > label::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -201,7 +201,7 @@
   }
 }
 
-.Connection_area .Connection_form .form_btn input {
+.Connection_area .Connection_form .form_btn button {
   font-size: 16px;
   font-weight: 700;
   text-align: center;
@@ -216,24 +216,24 @@
   transition: 0.3s;
 }
 
-.Connection_area .Connection_form .form_btn input:hover {
+.Connection_area .Connection_form .form_btn button:hover {
   color: #FFFFFF;
 }
 
-.Connection_area .Connection_form .form_btn input:hover {
+.Connection_area .Connection_form .form_btn button:hover {
   background-color: #231815;
 }
 
-.Connection_area .Connection_form .form_btn input:nth-last-child(1) {
+.Connection_area .Connection_form .form_btn button:nth-last-child(1) {
   margin-right: 0px;
 }
 
 @media screen and (max-width: 1400px) {
-  .Connection_area .Connection_form .form_btn input {
+  .Connection_area .Connection_form .form_btn button {
     width: 50%;
     margin-right: 10px;
   }
-  .Connection_area .Connection_form .form_btn input:nth-last-child(1) {
+  .Connection_area .Connection_form .form_btn button:nth-last-child(1) {
     margin-left: 10px;
     margin-right: 0px;
   }

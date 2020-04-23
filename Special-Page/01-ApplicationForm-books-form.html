@@ -767,7 +767,7 @@
             </div>
         </div>
     </div>
-
+ 
     <!-- main content -->
     <main class="container">
         <div class="row position-relative align-items-start">
@@ -881,34 +881,35 @@
                                     </ul>
                                     <ul class="row justify-content-start">
                                         <li class="col-xl-3 col-12 name need">
-                                            <div>統一編號</div>
+                                            <label for="Information_Unite">統一編號</label>
                                         </li>
                                         <li class="col-xl-8 col-12 form_input">
-                                            <input type="text" name="name" placeholder="">
+                                            <input id="Information_Unite" type="number" name="number" placeholder="">
                                         </li>
                                     </ul>
                                     <ul class="row justify-content-start">
                                         <li class="col-xl-3 col-12 name need">
-                                            <div>單位名稱</div>
+                                            <label for="Information_unitname">單位名稱</label>
                                         </li>
                                         <li class="col-xl-8 col-12 form_input">
-                                            <input type="text" name="name" placeholder="">
+                                            <input id="Information_unitname" type="name" name="name" placeholder="">
                                         </li>
                                     </ul>
                                     <ul class="row justify-content-start">
                                         <li class="col-xl-3 col-12 name need">
+                                            <label for="Information_unittel"></label>
                                             <div>申請單位電話</div>
                                         </li>
                                         <li class="col-xl-8 col-12 form_input">
-                                            <input type="text" name="name" placeholder="">
+                                            <input id="Information_unittel" type="tel" name="tel" placeholder="">
                                         </li>
                                     </ul>
                                     <ul class="row justify-content-start">
                                         <li class="col-xl-3 col-12 name need">
-                                            <div>單位地址</div>
+                                            <label for="Information_unitadress">單位地址</label>
                                         </li>
                                         <li class="col-xl-8 col-12 form_input address">
-                                            <select class="area">
+                                            <select id="Information_unitadress" class="area">
                                                 <option selected="true">基隆市</option>
                                                 <option>臺北市</option>
                                                 <option>新北市</option>
@@ -931,57 +932,59 @@
                                                 <option>連江縣</option>
                                                 <option>新竹市</option>
                                             </select>
-                                            <input type="text" name="phone" placeholder="">
-                                        </li>
-                                    </ul>
-                                    <ul class="row justify-content-start">
-                                        <li class="col-xl-3 col-12 name need">
-                                            <div>單位備註</div>
-                                        </li>
-                                        <li class="col-xl-8 col-12 form_input">
-                                            <input type="text" name="phone  need"
-                                                placeholder="如您為該單位的附屬機構/部門/團體，請於備註欄說明">
-                                        </li>
-                                    </ul>
-                                    <ul class="row justify-content-start">
-                                        <li class="col-xl-3 col-12 name need">
-                                            <div>聯絡人名稱</div>
-                                        </li>
-                                        <li class="col-xl-8 col-12 form_input">
-                                            <input type="tel" name="tel" placeholder="">
-                                        </li>
-                                    </ul>
-                                    <ul class="row justify-content-start">
-                                        <li class="col-xl-3 col-12 name need">
-                                            <div>聯絡人職稱</div>
-                                        </li>
-                                        <li class="col-xl-8 col-12 form_input">
                                             <input type="text" name="text" placeholder="">
                                         </li>
                                     </ul>
                                     <ul class="row justify-content-start">
                                         <li class="col-xl-3 col-12 name need">
-                                            <div>聯絡人電話(日)</div>
+                                            <label for="Information_unitremarks"></label>
+                                            <div>單位備註</div>
                                         </li>
                                         <li class="col-xl-8 col-12 form_input">
-                                            <input type="text" name="phone" placeholder="">
+                                            <input id="Information_unitremarks" type="text" name="text"
+                                                placeholder="如您為該單位的附屬機構/部門/團體，請於備註欄說明">
                                         </li>
                                     </ul>
                                     <ul class="row justify-content-start">
                                         <li class="col-xl-3 col-12 name need">
-                                            <div>聯絡人手機</div>
+                                            <label for="Contactperson_name">聯絡人名稱</label>
                                         </li>
                                         <li class="col-xl-8 col-12 form_input">
-                                            <input type="text" name="phone" placeholder="ex.0988123123">
+                                            <input id="Contactperson_name" type="name" name="name" placeholder="">
+                                        </li>
+                                    </ul>
+                                    <ul class="row justify-content-start">
+                                        <li class="col-xl-3 col-12 name need">
+                                            <label for="Contactperson_job">聯絡人職稱</label>
+                                        </li>
+                                        <li class="col-xl-8 col-12 form_input">
+                                            <input id="Contactperson_job" type="text" name="text" placeholder="">
+                                        </li>
+                                    </ul>
+                                    <ul class="row justify-content-start">
+                                        <li class="col-xl-3 col-12 name need">
+                                            <label for="Contactperson_phone"></label>
+                                            <div>聯絡人電話(日)</div>
+                                        </li>
+                                        <li class="col-xl-8 col-12 form_input">
+                                            <input id="Contactperson_phone" type="phone" name="phone" placeholder="">
+                                        </li>
+                                    </ul>
+                                    <ul class="row justify-content-start">
+                                        <li class="col-xl-3 col-12 name need">
+                                            <label for="Contactperson_cellphone">聯絡人手機</label>
+                                        </li>
+                                        <li class="col-xl-8 col-12 form_input">
+                                            <input id="Contactperson_cellphone" type="phone" name="phone" placeholder="ex.0988123123">
                                         </li>
                                     </ul>
 
                                     <ul class="row justify-content-start">
                                         <li class="col-xl-3 col-12 name need">
-                                            <div>聯絡人信箱</div>
+                                            <label for="Contactperson_email">聯絡人信箱</label>
                                         </li>
                                         <li class="col-xl-8 col-12 form_input Clear_content">
-                                            <input type="text" name="phone" placeholder="">
+                                            <input id="Contactperson_email" type="email" name="email" placeholder="">
                                             <button>清除</button>
                                         </li>
                                     </ul>
@@ -1130,9 +1133,9 @@
         <div class="container">
             <div class="row footer_area">
                 <div class="col-xl-3 logo_area px-0">
-                    <div class="logo">
-                        <img class="w-100" src="../img/index/logo-white.png" alt="">
-                    </div>
+                    <a href="#" title="回首頁" aria-label="回首頁" class="logo">
+                        <img class="w-100" src="./img/index/logo-white.png" alt="">
+                    </a>
                 </div>
                 <div class="col-xl-5 info_area">
                     <div class="footer-info">
@@ -1158,11 +1161,19 @@
                             <p>版權所有聲明</p>
                         </div>
                         <div class="icon_block px-0">
-                            <div class="icon-bg"><a href="">
-                                    <div class="mail-icon"><img src="../img/icon/emaill.png" alt=""></div>
-                                </a></div>
-                            <div class="icon-bg"><a href=""><i class="fab fa-youtube"></i></a></div>
-                            <div class="icon-bg"><a href=""><i class="fab fa-facebook-f"></i></a></div>
+                            <a href="">
+                                <div class="icon-bg">
+                                    <div class="mail-icon"><img src="./img/icon/emaill.png" alt=""></div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="icon-bg">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="icon-bg"><i class="fab fa-facebook-f"></i></div>
+                            </a>
                         </div>
                     </div>
                 </div>
