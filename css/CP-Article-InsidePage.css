@@ -289,6 +289,10 @@ table.table_area td {
   background-color: black;
 }
 
+.picture_area .picture_block .pic img {
+  width: 100%;
+}
+
 .picture_area .picture_block .arrow_button-prev {
   position: absolute;
   padding: 20px 0px;
