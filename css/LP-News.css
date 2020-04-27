@@ -288,6 +288,7 @@ a:active {
 }
 
 .news_list .news .date_area {
+  min-width: 135px;
   max-height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;

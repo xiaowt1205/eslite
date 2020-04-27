@@ -121,13 +121,14 @@
         }
 
         .date_area {
+            min-width: 135px;
+
             max-height: 90px;
             display: flex;
             align-items: center;
             justify-content: center;
             letter-spacing: 2px;
             color: $fc-gray;
-
 
             @media (max-width:1024px) {
                 width: unset;
