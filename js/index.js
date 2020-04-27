@@ -1,4 +1,7 @@
 var swiper = new Swiper('.banner .swiper-banner', {
+    autoplay: {
+        delay: 5000,
+    },
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -65,10 +68,14 @@ function dynamicNumberCounter(scrollPos, id, setNum) {
                 } else {
                     num += percent_num;
                 }
-                inner.innerHTML = num
+                inner.innerHTML = numberWithCommas(num)
             }, AddNumdelay);
         }
     }
+}
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 // 04-21 首頁移進來
@@ -76,12 +83,6 @@ function dynamicNumberCounter(scrollPos, id, setNum) {
 window.onscroll = function () {
     dynamicNumberCounter(400, "total_0", 400000);
     dynamicNumberCounter(400, "total_1", 600000);
-    dynamicNumberCounter(400, "total_2", 15000);
-    dynamicNumberCounter(400, "year_0", 400000);
-    dynamicNumberCounter(400, "year_1", 600000);
-    dynamicNumberCounter(400, "year_2", 15000);
-    // dynamicNumberCounter(scrollTop Position(Num), element's id(String) , Target Number(Num))
-    // ex) dynamicNumberCounter(400, "test", 64);
 }
 
 $('.aside-btn-title').click(function () {

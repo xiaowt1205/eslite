@@ -23,51 +23,42 @@ header {
             padding: 35px 0px;
         }
 
-        .col-3 {
-            @media screen and (max-width:576px) {
-                flex: 0 0 100%;
-                max-width: 100%;
+       
+        .logo {
+            width: 0px;
+
+            @media (max-width:576px) {
+                width: 100%;
+                max-width: 200px;
+                min-width: unset;
+                display: flex;
+                justify-content: center;
+                position: relative;
             }
 
-            .logo {
+            img {
+                display: none;
                 width: 0px;
 
                 @media (max-width:576px) {
+                    display: block;
                     width: 100%;
-                    max-width: 200px;
-                    min-width: unset;
-                    display: flex;
-                    justify-content: center;
-                    margin: auto;
-                }
-
-                img {
-                    display: none;
-                    width: 0px;
-
-                    @media (max-width:576px) {
-                        display: block;
-                        width: 100%;
-                        height: 30px;
-                    }
+                    height: 30px;
+                    position: absolute;
+                    left: 50vw;
+                    top: 50%;
+                    transform: translate(-50% , -50%);
                 }
             }
         }
+        
 
         nav {
             padding: 0px 8.333333333%;
             position: relative;
-            flex: 0 0 75%;
-            max-width: calc(75% - 11px);
 
-            @media screen and (max-width:576px) {
-                position: absolute;
-                right: 15px;
-                flex: 0 0 25%;
-                max-width: 25%;
-                padding: 0px;
-                top: 50%;
-                transform: translateY(-50%);
+            @media(max-width:576px) {
+                padding: 0px 15px;
             }
 
             ul {
@@ -79,7 +70,11 @@ header {
                 }
 
                 @media(max-width:576px) {
-                    height: 20px;
+                    height: 30px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 30px;
                 }
 
                 li {
