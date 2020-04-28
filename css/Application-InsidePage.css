@@ -2658,4 +2658,26 @@ main.container {
     right: 0px;
   }
 }
+
+@media (max-width: 576px) {
+  .step-area .step-scroll .step {
+    margin-right: 20px;
+  }
+  .step-area .step-scroll .step:last-child {
+    margin-right: 0;
+  }
+  .step-area .step-scroll .arrow {
+    display: none;
+    margin: 0 20px 0 0;
+  }
+  .step-area .step-scroll.step-1 .arrow:nth-child(2) {
+    display: block;
+  }
+  .step-area .step-scroll.step-2 .arrow:nth-child(4) {
+    display: block;
+  }
+  .step-area .step-scroll.step-3 .arrow:nth-child(6), .step-area .step-scroll.step-4 .arrow:nth-child(6) {
+    display: block;
+  }
+}
 /*# sourceMappingURL=Application-InsidePage.css.map */
