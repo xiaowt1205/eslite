@@ -171,6 +171,31 @@
     }
 }
 
+.multiple-pic{
+    .text_area{
+        padding: 50px 0px;
+        .text-around{
+            margin-bottom: 40px;
+            @media (max-width:768px){
+                margin-bottom: 30px;
+            }
+            img{
+                float: right;
+                margin-left: 15px;
+                height: 200px;
+
+                @media (max-width:768px){
+                    margin-left: 0;
+                    margin-bottom: 10px;
+                    height: unset;
+                    float: unset;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
 // 03-30修正-尾
 
 // 共有不會個別調整

@@ -208,6 +208,36 @@
   margin: 0;
 }
 
+.multiple-pic .text_area {
+  padding: 50px 0px;
+}
+
+.multiple-pic .text_area .text-around {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .multiple-pic .text_area .text-around {
+    margin-bottom: 30px;
+  }
+}
+
+.multiple-pic .text_area .text-around img {
+  float: right;
+  margin-left: 15px;
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .multiple-pic .text_area .text-around img {
+    margin-left: 0;
+    margin-bottom: 10px;
+    height: unset;
+    float: unset;
+    width: 100%;
+  }
+}
+
 table.table_area {
   border: 1px solid #4D4D4D;
   border-collapse: collapse;
