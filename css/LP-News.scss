@@ -151,7 +151,8 @@
     
                 .date {
                     padding-right: 30px;
-    
+                    min-width: 135px;
+
                     @media (max-width:1024px) {
                         padding-right: 00px;
                     }

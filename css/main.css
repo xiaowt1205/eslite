@@ -706,10 +706,35 @@ body {
   color: #FFFFFF;
 }
 
+.pageNumber ul .total-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  color: #808080;
+  margin-right: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 1400px) {
+  .pageNumber ul .total-data {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .pageNumber ul .total-data {
+    display: none;
+  }
+}
+
 .pageNumber ul .BTN {
   margin: 25px 0px;
 }
 
+.pageNumber ul .BTN .firstBTN,
 .pageNumber ul .BTN .nextBTN,
 .pageNumber ul .BTN .lastBTN {
   padding: 10px 20px;
@@ -721,10 +746,15 @@ body {
   transition: .3s;
 }
 
+.pageNumber ul .BTN .firstBTN:hover,
 .pageNumber ul .BTN .nextBTN:hover,
 .pageNumber ul .BTN .lastBTN:hover {
   color: #FFFFFF;
   background-color: #333333;
+}
+
+.pageNumber ul .BTN .firstBTN {
+  margin-right: 20px;
 }
 
 .pageNumber ul .BTN .nextBTN {
@@ -736,9 +766,15 @@ body {
 }
 
 .pageNumber .more {
+  min-width: 130px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.pageNumber .more > div {
   cursor: pointer;
   border: 1px solid #333333;
-  width: 130px;
+  width: 100%;
   height: 30px;
   font-size: 14px;
   font-weight: 700;

@@ -338,6 +338,7 @@ a:active {
 
 .news_list .news a .date_area .date {
   padding-right: 30px;
+  min-width: 135px;
 }
 
 @media (max-width: 1024px) {

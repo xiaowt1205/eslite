@@ -546,9 +546,26 @@ body {
             }
         }
 
+        .total-data{
+            display: flex;
+            font-size: $fs-16;
+            color: #808080;
+            margin-right: 20px;
+            justify-content: center;
+
+            @media (max-width:1400px){
+                width: 100%;
+            }
+
+            @media (max-width:1024px){
+                display: none;
+            }
+        }
+
         .BTN {
             margin: 25px 0px;
 
+            .firstBTN,
             .nextBTN,
             .lastBTN {
                 padding: 10px 20px;
@@ -564,6 +581,10 @@ body {
                 }
             }
 
+            .firstBTN{
+                margin-right: 20px;
+            }
+
             .nextBTN {
                 margin-left: 20px;
             }
@@ -574,16 +595,22 @@ body {
         }
     }
 
-    .more {
-        cursor: pointer;
-        border: 1px solid $bc-number-black;
-        width: 130px;
-        height: 30px;
-        font-size: $fs-14;
-        font-weight: $fw-700;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .more{
+        min-width: 130px;
+        max-width: 300px;
+        width: 100%;
+
+        &>div {
+            cursor: pointer;
+            border: 1px solid $bc-number-black;
+            width: 100%;
+            height: 30px;
+            font-size: $fs-14;
+            font-weight: $fw-700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 
