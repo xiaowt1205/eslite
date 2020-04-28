@@ -16,8 +16,11 @@ header {
 
     #topline {
         position: relative;
-        overflow: hidden;
         padding: 60px 0px;
+
+        @media (max-width:1200px) {
+            overflow: hidden;
+        }
 
         @media (max-width:576px) {
             padding: 35px 0px;
@@ -61,7 +64,7 @@ header {
                 padding: 0px 15px;
             }
 
-            ul {
+            &>ul {
                 height: 30px;
                 justify-content: flex-end;
 
@@ -77,7 +80,104 @@ header {
                     right: 30px;
                 }
 
-                li {
+                &>li {
+                    position: relative;
+                    z-index: 99;
+
+                    &>ul{
+                        background-color: $bc-white;
+                        width: 240px;
+                        max-height: 0px;
+                        overflow: hidden;
+                        transition: .3s;
+                        transition-timing-function: ease-out;
+                        position: absolute;
+                        top: 100%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        z-index: 99;
+                        padding:0;
+                        border-bottom-right-radius: 10px;
+                        border-bottom-left-radius: 10px;
+
+                        &>li{
+                            margin-bottom: 10px;
+
+                            a{
+                                font-size: $fs-14;
+                                color: $light-brown;
+                                
+                                &.collapse-deco {
+                                    position: relative;
+                                    transition: .3s;
+                                    transition-timing-function: ease-in-out;
+                
+                                    &::after,
+                                    &::before {
+                                        content: ' ';
+                                        position: absolute;
+                                        right: -20px;
+                                        top: 10px;
+                                        width: 8px;
+                                        height: 1.5px;
+                                        background-color:rgba(55,55,55,1);
+                                        opacity: 0.6;
+                                    }
+                
+                                    &::before {
+                                        transform: rotate(90deg);
+                                        transition: 0.3s;
+                                    }
+                                }
+                            }
+
+                            &>ul{
+                                width: 100%;
+                                max-height: 0px;
+                                overflow: hidden;
+                                transition: .3s;
+                                transition-timing-function: ease-out;
+
+                                li{
+                                    
+                                    margin-bottom: 5px;
+
+                                    a{
+                                        color:rgba(55,55,55,0.5);
+                                        font-size: $fs-12;
+                                    }
+                                }
+                            }
+
+                            &:hover{
+                                &>ul{
+                                    max-height: 300px;
+                                    padding: 10px 0 0px 0;
+                                    transition: .3s;
+                                    transition-timing-function: ease-in;
+                                }
+                                &>a{
+                                    &.collapse-deco {
+                                        &::before {
+                                            transform: rotate(0deg);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover{
+                        &>ul{
+                            max-height: 600px;
+                            padding: 35px 0 25px 0;
+                            transition: .3s;
+                            z-index: 11;
+                            transition-timing-function: ease-in;
+                        }
+                    }
+
+                    
                     @extend %letter-spacing;
                     text-align: center;
                     display: inline-block;
@@ -105,6 +205,7 @@ header {
                     &:nth-child(7) {
                         @include border-two-side(0, 0, $fc-gray, solid);
                         display: none;
+                        position: unset;
                     }
 
                     &.nav-icon {

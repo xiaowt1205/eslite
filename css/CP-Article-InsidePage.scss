@@ -176,6 +176,12 @@
         padding: 50px 0px;
         .text-around{
             margin-bottom: 40px;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: justify;
+            letter-spacing: 4px;
+            line-height: 1.5;
+            
             @media (max-width:768px){
                 margin-bottom: 30px;
             }

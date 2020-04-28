@@ -44,7 +44,7 @@ a:active {
   color: #000000;
 }
 
-header #topline nav ul li {
+header #topline nav > ul > li {
   letter-spacing: 2px;
 }
 
@@ -170,8 +170,13 @@ header {
 
 header #topline {
   position: relative;
-  overflow: hidden;
   padding: 60px 0px;
+}
+
+@media (max-width: 1200px) {
+  header #topline {
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 576px) {
@@ -228,7 +233,7 @@ header #topline nav {
   }
 }
 
-header #topline nav ul {
+header #topline nav > ul {
   height: 30px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -236,7 +241,7 @@ header #topline nav ul {
 }
 
 @media (max-width: 1024px) {
-  header #topline nav ul {
+  header #topline nav > ul {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -244,7 +249,7 @@ header #topline nav ul {
 }
 
 @media (max-width: 576px) {
-  header #topline nav ul {
+  header #topline nav > ul {
     height: 30px;
     position: absolute;
     top: 50%;
@@ -254,7 +259,9 @@ header #topline nav ul {
   }
 }
 
-header #topline nav ul li {
+header #topline nav > ul > li {
+  position: relative;
+  z-index: 99;
   text-align: center;
   display: inline-block;
   border-left: 1px #808080 solid;
@@ -267,36 +274,135 @@ header #topline nav ul li {
           align-items: center;
 }
 
-header #topline nav ul li:nth-child(-n + 5) {
+header #topline nav > ul > li > ul {
+  background-color: #FFFFFF;
+  width: 240px;
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 99;
+  padding: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+header #topline nav > ul > li > ul > li {
+  margin-bottom: 10px;
+}
+
+header #topline nav > ul > li > ul > li a {
+  font-size: 14px;
+  color: #665252;
+}
+
+header #topline nav > ul > li > ul > li a.collapse-deco {
+  position: relative;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+header #topline nav > ul > li > ul > li a.collapse-deco::after, header #topline nav > ul > li > ul > li a.collapse-deco::before {
+  content: ' ';
+  position: absolute;
+  right: -20px;
+  top: 10px;
+  width: 8px;
+  height: 1.5px;
+  background-color: #373737;
+  opacity: 0.6;
+}
+
+header #topline nav > ul > li > ul > li a.collapse-deco::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header #topline nav > ul > li > ul > li > ul {
+  width: 100%;
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+header #topline nav > ul > li > ul > li > ul li {
+  margin-bottom: 5px;
+}
+
+header #topline nav > ul > li > ul > li > ul li a {
+  color: rgba(55, 55, 55, 0.5);
+  font-size: 12px;
+}
+
+header #topline nav > ul > li > ul > li:hover > ul {
+  max-height: 300px;
+  padding: 10px 0 0px 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
+
+header #topline nav > ul > li > ul > li:hover > a.collapse-deco::before {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+header #topline nav > ul > li:hover > ul {
+  max-height: 600px;
+  padding: 35px 0 25px 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: 11;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
+
+header #topline nav > ul > li:nth-child(-n + 5) {
   padding: 0px 30px;
   font-size: 16px;
 }
 
 @media (max-width: 1660px) {
-  header #topline nav ul li:nth-child(-n + 5) {
+  header #topline nav > ul > li:nth-child(-n + 5) {
     padding: 0px 25px;
   }
 }
 
 @media (max-width: 1200px) {
-  header #topline nav ul li:nth-child(-n + 5) {
+  header #topline nav > ul > li:nth-child(-n + 5) {
     padding: 0px 20px;
   }
 }
 
 @media (max-width: 1200px) {
-  header #topline nav ul li:nth-child(-n + 5) {
+  header #topline nav > ul > li:nth-child(-n + 5) {
     display: none;
   }
 }
 
-header #topline nav ul li:nth-child(7) {
+header #topline nav > ul > li:nth-child(7) {
   border-left: 0 #808080 solid;
   border-right: 0 #808080 solid;
   display: none;
+  position: unset;
 }
 
-header #topline nav ul li.nav-icon {
+header #topline nav > ul > li.nav-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,31 +414,31 @@ header #topline nav ul li.nav-icon {
           align-items: center;
 }
 
-header #topline nav ul li.nav-icon a {
+header #topline nav > ul > li.nav-icon a {
   margin-left: 25px;
 }
 
-header #topline nav ul li.nav-icon a i {
+header #topline nav > ul > li.nav-icon a i {
   font-size: 22px;
 }
 
 @media (max-width: 1400px) {
-  header #topline nav ul li.nav-icon {
+  header #topline nav > ul > li.nav-icon {
     display: none;
   }
 }
 
-header #topline nav ul li.menu-area {
+header #topline nav > ul > li.menu-area {
   display: none;
 }
 
-header #topline nav ul li.menu-area .menu-icon .menu-btn-pc {
+header #topline nav > ul > li.menu-area .menu-icon .menu-btn-pc {
   border-left: 0px #808080 solid;
   border-right: 0px #808080 solid;
 }
 
 @media (max-width: 1500px) {
-  header #topline nav ul li.menu-area .menu-icon .menu-btn-pc {
+  header #topline nav > ul > li.menu-area .menu-icon .menu-btn-pc {
     padding-left: 30px;
     display: block;
     display: -webkit-box;
@@ -348,28 +454,28 @@ header #topline nav ul li.menu-area .menu-icon .menu-btn-pc {
 }
 
 @media (max-width: 1200px) {
-  header #topline nav ul li.menu-area .menu-icon .menu-btn-pc {
+  header #topline nav > ul > li.menu-area .menu-icon .menu-btn-pc {
     padding-left: 0px;
   }
 }
 
 @media (max-width: 992px) {
-  header #topline nav ul li.menu-area .menu-icon .menu-btn-pc {
+  header #topline nav > ul > li.menu-area .menu-icon .menu-btn-pc {
     display: none;
   }
 }
 
-header #topline nav ul li.menu-area .menu-icon .menu-btn-mob {
+header #topline nav > ul > li.menu-area .menu-icon .menu-btn-mob {
   display: none;
 }
 
 @media (max-width: 992px) {
-  header #topline nav ul li.menu-area .menu-icon .menu-btn-mob {
+  header #topline nav > ul > li.menu-area .menu-icon .menu-btn-mob {
     display: block;
   }
 }
 
-header #topline nav ul li a {
+header #topline nav > ul > li a {
   color: #000000;
   font-size: 12px;
   font-weight: bold;
@@ -380,23 +486,23 @@ header #topline nav ul li a {
 }
 
 @media (min-width: 1200px) {
-  header #topline nav ul li a {
+  header #topline nav > ul > li a {
     font-size: 14px;
   }
 }
 
 @media (min-width: 1600px) {
-  header #topline nav ul li a {
+  header #topline nav > ul > li a {
     font-size: 16px;
   }
 }
 
-header #topline nav ul li a:hover {
+header #topline nav > ul > li a:hover {
   color: #978475;
   text-decoration: none;
 }
 
-header #topline nav ul li a .cicle {
+header #topline nav > ul > li a .cicle {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,11 +519,11 @@ header #topline nav ul li a .cicle {
   border-radius: 50%;
 }
 
-header #topline nav ul li a .cicle:hover {
+header #topline nav > ul > li a .cicle:hover {
   border: 1.4px #978475 solid;
 }
 
-header #topline nav ul li a .cicle .fa-info {
+header #topline nav > ul > li a .cicle .fa-info {
   margin-left: 1px;
   text-align: center;
   font-size: 14px;
