@@ -172,6 +172,7 @@ a:active {
   background-color: black;
   background-size: cover;
   background-position: center center;
+  overflow: hidden;
 }
 
 .cardBox .photo img {

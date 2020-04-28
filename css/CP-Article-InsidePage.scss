@@ -5,15 +5,19 @@
 .two {
     .text_area {
         .picture {
+            margin-bottom: 50px;
+            height: 395px;
+            text-align: center;
+            overflow: hidden;
+
             img {
-                width: 100%;
+                height: 100%;
             }
         }
-
+        
         .text_block {
             @include text_style($fs-14, $fw-600, justify, 4px);
             line-height: 1.5;
-            text-indent: 40px;
             padding: 50px 0px;
 
             p {
@@ -36,16 +40,17 @@
         .picture {
             order: 1;
             margin-bottom: 50px;
+            height: 395px;
+            text-align: center;
+            overflow: hidden;
 
             img {
-                width: 100%;
+                height: 100%;
             }
         }
-
         .text_block {
             @include text_style($fs-14, $fw-600, justify, 4px);
             line-height: 1.5;
-            text-indent: 40px;
             padding: 0px 0px 50px 0;
 
             p {
@@ -77,10 +82,17 @@
             @media (max-width:768px) {
                 margin-right: 0px;
                 margin-bottom: 35px;
+                height: 395px;
+                text-align: center;
+                overflow: hidden;
             }
 
             img {
                 width: 100%;
+                @media (max-width:768px) {
+                    width: unset;
+                    height: 100%;
+                }
             }
         }
 
@@ -88,7 +100,6 @@
             @include text_style($fs-14, $fw-600, justify, 4px);
             line-height: 1.5;
             width: 60%;
-            text-indent: 40px;
 
             @media screen and (max-width:1400px) {
                 width: 100%;
@@ -123,18 +134,25 @@
 
             @media (max-width:768px) {
                 margin-left: 0px;
-                margin-bottom: 35px;
+                margin-bottom: 35px;        
+                height: 395px;
+                text-align: center;
+                overflow: hidden;
             }
 
             img {
                 width: 100%;
+
+                @media (max-width:768px) {
+                    width: unset;
+                    height: 100%;
+                }
             }
         }
 
         .text_block {
             @include text_style($fs-14, $fw-600, justify, 4px);
             width: 60%;
-            text-indent: 40px;
             line-height: 1.5;
 
             @media screen and (max-width:1300px) {
@@ -262,7 +280,6 @@ table.table_area {
         .pic {
             width: 100%;
             height: 150px;
-            background-color: black;
 
             img{
                 width: 100%;

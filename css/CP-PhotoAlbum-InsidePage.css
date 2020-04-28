@@ -76,6 +76,11 @@ main.container {
   min-height: 100px;
   max-height: 120px;
   background-color: #665F5F;
+  overflow: hidden;
+}
+
+.area_picture .picture_block .img img {
+  width: 100%;
 }
 
 .area_picture .picture_block .modal {
