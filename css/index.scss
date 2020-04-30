@@ -215,55 +215,7 @@ header {
                             }
                         }
                     }
-                    // 04/08 新增功能 頭
-                    .search_box {
-                        position: relative;
-
-                        .search {
-                            position: absolute;
-                            right: 0;
-                            bottom: -10px;
-                            width: 0px;
-                            height: 40px;
-                            background-color: $brown-hover;
-
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            transform: translateY(100%);
-                            transition: .3s;
-
-                            input {
-                                width: 0px;
-                                height: 30px;
-                                transition: .3s;
-                                border: 0px solid;
-                            }
-
-                            i {
-                                opacity: 0;
-                                padding: 0px 5px 0px 10px;
-                                color: $white;
-                            }
-
-                        }
-
-                        &.active {
-                            .search {
-                                width: 215px;
-                                padding: 5px;
-
-                                input {
-                                    width: 165px;
-                                }
-
-                                i {
-                                    opacity: 1;
-                                }
-                            }
-                        }
-                    }
-                    // 04/08 新增功能 尾
+ 
                     &.nav-icon {
                         @media (max-width:1400px) {
                             display: none;

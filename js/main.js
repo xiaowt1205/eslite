@@ -39,3 +39,9 @@ if($('.pageNumber .number').length >= 1){
         
     })  
 }
+
+
+
+$('.search_icon').click(function () {
+    $('.search_box').toggleClass('active')
+})

@@ -89,8 +89,4 @@ $('.aside-btn-title').click(function () {
     $(this).toggleClass('active')
 })
 
-$('.search_icon').click(function () {
-    $('.search_box').toggleClass('active')
-})
-
 // 04-21 首頁移進來
