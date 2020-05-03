@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <!-- page css  -->
     <link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/Donation-information.css">
     <style>
 
 
@@ -936,8 +937,370 @@
                 <!-- 平板版的title結束 -->
 
                 <!-- 內頁起點 -->
-                <div class="">
+                <div class="Donation-information">
+                    <div class="remind">
+                        <p>
+                            1. 請詳細填寫您真實的個人基本資料，本會將保密您的個人資料。
+                        </p>
+                        <p>
+                            2. 若您在捐款過程中有任何問題，請來電(02)6636-9888，謝謝您。
+                        </p>
+                    </div>
+                    <form action="" class="Donation_from">
+                        <ol>
+                            <ul class="row justify-content-start title">
+                                <li>
+                                    <div class="icon"></div>
+                                </li>
+                                <li>捐款者資料</li>
+                            </ul>
+                            <ul class="row justify-content-start">
+                                <li class="col-xl-2 col-12 name">
+                                    <div>捐款金額</div>
+                                </li>
+                                <li class="col-xl-9 col-12 form_input cost">
+                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="cost_option1"> 500
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="cost_option2"> 1000
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="cost_option3"> 5000
+                                        </label>
+                                        <label class="btn">
+                                            <input type="radio" name="options" id="cost_option4"> 10000
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="row justify-content-start">
+                                <li class="col-xl-2 col-12 name">
+                                    <div>輸入捐款金額</div>
+                                </li>
+                                <li class="col-xl-9 col-12 form_input">
+                                    <input type="number" name="Donation_cost" placeholder="最低捐款額度NT.100">
+                                </li>
+                            </ul>
+                            <ul class="row justify-content-start">
+                                <li class="col-xl-2 col-12 name">
+                                    <div>
+                                        <span>姓名</span>
+                                        <span>(或公司/團體)</span>
+                                    </div>
+                                </li>
+                                <li class="col-xl-9 col-12 form_input">
+                                    <input type="name" name="name" placeholder="請輸入姓名或公司/團體">
+                                </li>
+                            </ul>
+                            <ul class="row justify-content-start">
+                                <li class="col-xl-2 col-12 name">
+                                    <div>
+                                        <span>身分證字號/</span>
+                                        <span>或統一編號</span>
+                                    </div>
+                                </li>
+                                <li class="col-xl-9 col-12 form_input">
+                                    <input type="text" name="text" placeholder="請輸入身份證字號/居留證號碼(或統一編號)">
+                                </li>
+                            </ul>
+                            <ul class="row justify-content-start">
+                                <li class="col-xl-2 col-12 name">
+                                    <div>
+                                        戶籍地址
+                                    </div>
+                                </li>
+                                <li class="col-xl-9 col-12 form_input">
+                                    <input type="text" name="text" placeholder="請輸入戶籍地址">
+                                </li>
+                            </ul>
+                            <ul class="row justify-content-start">
+                                <li class="col-xl-2 col-12 name">
+                                    <div>
+                                        電子信箱
+                                    </div>
+                                </li>
+                                <li class="col-xl-9 col-12 form_input">
+                                    <input type="email" name="email" placeholder="請輸入電子信箱">
+                                </li>
+                            </ul>
+                            <ul class="row justify-content-start">
+                                <li class="col-xl-2 col-12 name">
+                                    <div>
+                                        連絡電話
+                                    </div>
+                                </li>
+                                <li class="col-xl-9 col-12 form_input">
+                                    <input type="tel" name="tel" placeholder="請輸入連絡電話">
+                                </li>
+                            </ul>
+                            <ul class="row justify-content-start">
+                                <li class="col-xl-2 col-12 name">
+                                </li>
+                                <li class="col-xl-9 col-12 form_input">
+                                    <div class="statement">
+                                        <p>
+                                            【捐款資訊公開聲明】
+                                        </p>
+                                        <p>
+                                            配合《財團法人法》第二十五條規定，本會將於此網站將「捐贈者姓名」及「捐贈金額」列表公開徵信。
+                                        </p>
+                                        <ul class="d-flex Donation_radio">
+                                            <li>本人</li>
+                                            <li><input type="radio" checked="checked" id="Unitattribute"
+                                                    name="class_number" value="" />
+                                                <div>同意</div>
+                                            </li>
+                                            <li><input type="radio" checked="checked" id="Unitattribute"
+                                                    name="class_number" value="" />
+                                                <div>不同意</div>
+                                            </li>
+                                            <li>
+                                                公開捐贈人名稱
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
 
+
+                            <ul class="row justify-content-start title">
+                                <li>
+                                    <div class="icon"></div>
+                                </li>
+                                <li>捐款收據</li>
+                            </ul>
+                            <ul class="row justify-content-start">
+                                <li class="col-xl-2 col-12 name">
+                                    <div>
+                                        是否需要收據
+                                    </div>
+                                </li>
+                                <li class="col-xl-9 col-12 form_input">
+                                    <ul class="nav nav-pills" id="need-tab" role="tablist">
+                                        <li class="nav-item m-0 ">
+                                            <a class="nav-link pl-0 active" id="need-home-tab" data-toggle="pill"
+                                                href="#need-home" role="tab" aria-controls="need-home"
+                                                aria-selected="true">
+                                                <input type="radio" name="sex" value="male">
+                                                需要
+                                            </a>
+                                        </li>
+                                        <li class="nav-item m-0">
+                                            <a class="nav-link" id="need-profile-tab" data-toggle="pill"
+                                                href="#need-profile" role="tab" aria-controls="need-profile"
+                                                aria-selected="false">
+                                                <input type="radio" name="sex" value="male">
+                                                不需要
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content pt-3" id="need-tabContent">
+                                        <div class="tab-pane fade read show active" id="need-home" role="tabpanel"
+                                            aria-labelledby="need-home-tab">
+                                        </div>
+                                        <div class="tab-pane fade read" id="need-profile" role="tabpanel"
+                                            aria-labelledby="need-profile-tab">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="row justify-content-start">
+                                <li class="col-xl-2 col-12 name">
+                                    <div>
+                                        捐款金額
+                                    </div>
+                                </li>
+                                <li class="col-xl-9 col-12 form_input">
+                                    <input type="text" name="text" placeholder="500">
+                                </li>
+                            </ul>
+                            <ul class="row justify-content-start">
+                                <li class="col-xl-2 col-12 name">
+                                    <div>
+                                        <span>姓名</span>
+                                        <span>(或公司/團體)</span>
+                                    </div>
+                                </li>
+                                <li class="col-xl-9 col-12 form_input">
+                                    <input type="name" name="name" placeholder="凌網科技股份有限公司">
+                                </li>
+                            </ul>
+                            <ul class="row justify-content-start">
+                                <li class="col-xl-2 col-12 name">
+                                    <div>
+                                        <span>身分證字號/</span>
+                                        <span>或統一編號</span>
+                                    </div>
+                                </li>
+                                <li class="col-xl-9 col-12 form_input">
+                                    <input type="text" name="text" placeholder="16541333">
+                                </li>
+                            </ul>
+                            <ul class="row justify-content-start">
+                                <li class="col-xl-2 col-12 name">
+                                    <div>
+                                        收據類型
+                                    </div>
+                                </li>
+                                <li class="col-xl-9 col-12 form_input">
+                                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                        <li class="nav-item m-0 ">
+                                            <a class="nav-link pl-0 active" id="pills-Electronic-tab" data-toggle="pill"
+                                                href="#pills-Electronic" role="tab" aria-controls="pills-Electronic"
+                                                aria-selected="true">
+                                                <input type="radio" name="sex" value="male">
+                                                電子發票
+                                            </a>
+                                        </li>
+                                        <li class="nav-item m-0">
+                                            <a class="nav-link" id="pills-books-tab" data-toggle="pill"
+                                                href="#pills-books" role="tab" aria-controls="pills-books"
+                                                aria-selected="false">
+                                                <input type="radio" name="sex" value="male">
+                                                紙本收據
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content pt-3" id="pills-tabContent">
+                                        <div class="tab-pane fade read form_input show active" id="pills-Electronic"
+                                            role="tabpanel" aria-labelledby="pills-Electronic-tab">
+                                            <input type="email" name="email" placeholder="請輸入電子信箱">
+                                        </div>
+                                        <div class="tab-pane fade read  form_input" id="pills-books" role="tabpanel"
+                                            aria-labelledby="pills-books-tab">
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+
+
+
+
+                            <ul class="row justify-content-start title">
+                                <li>
+                                    <div class="icon"></div>
+                                </li>
+                                <li>捐款方式</li>
+                            </ul>
+                            <ul class="row justify-content-start">
+                                <li class="col-xl-2 col-12 name">
+                                    <div>
+                                        捐款方式
+                                    </div>
+                                </li>
+                                <li class="col-xl-9 col-12 form_input">
+                                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                        <li class="nav-item m-0 ">
+                                            <a class="nav-link pl-0 active" id="pills-home-tab" data-toggle="pill"
+                                                href="#pills-home" role="tab" aria-controls="pills-home"
+                                                aria-selected="true">
+                                                <input type="radio" name="sex" value="male">
+                                                信用卡授權
+                                            </a>
+                                        </li>
+                                        <li class="nav-item m-0">
+                                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill"
+                                                href="#pills-profile" role="tab" aria-controls="pills-profile"
+                                                aria-selected="false">
+                                                <input type="radio" name="sex" value="male">
+                                                ATM金融轉帳
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content pt-3" id="pills-tabContent">
+                                        <div class="tab-pane fade read show active" id="pills-home" role="tabpanel"
+                                            aria-labelledby="pills-home-tab">
+                                            請接續完成信用卡授權資料填寫，本次捐款是否成功，請向您的發卡銀行進行確認。
+                                        </div>
+                                        <div class="tab-pane fade read" id="pills-profile" role="tabpanel"
+                                            aria-labelledby="pills-profile-tab">
+                                            <p>
+                                                您所提供之匯款資料系統將保留10天，請您於10天內依據以下帳戶資訊完成轉帳。捐贈收據將於確認入帳後14個工作天內寄出。
+                                            </p>
+                                            <p>
+                                                (如系統查無資料之捐款，本會將以「善心人士」之名義進行徵信。)收到捐贈收據前，請您妥善保存轉帳收據。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+
+
+
+                            <ul class="row justify-content-start">
+                                <li class="col-xl-2 col-12 name">
+                                    <div>
+                                        匯款戶名
+                                    </div>
+                                </li>
+                                <li class="col-xl-9 col-12 form_input">
+                                    <input type="name" name="name" placeholder="凌網科技股份有限公司">
+                                </li>
+                            </ul>
+                            <ul class="row justify-content-start">
+                                <li class="col-xl-2 col-12 name">
+                                    <div>
+                                        匯款銀行
+                                    </div>
+                                </li>
+                                <li class="col-xl-9 col-12 form_input">
+                                    <input type="name" name="name" placeholder="凌網科技股份有限公司">
+                                </li>
+                            </ul>
+                            <ul class="row justify-content-start">
+                                <li class="col-xl-2 col-12 name">
+                                    <div>
+                                        <span>匯款帳號</span>
+                                        <span>後五碼</span>
+                                    </div>
+                                </li>
+                                <li class="col-xl-9 col-12 form_input">
+                                    <input type="text" name="text" placeholder="請輸入帳號後五碼">
+                                </li>
+                            </ul>
+                            <ul class="row justify-content-start">
+                                <li class="col-xl-2 col-12 name">
+                                    <div>
+                                        捐款金額
+                                    </div>
+                                </li>
+                                <li class="col-xl-9 col-12 form_input">
+                                    <input type="text" name="text placeholder="">
+                                </li>
+                            </ul>
+
+
+
+                            <ul class=" row justify-content-start">
+                                <li class="col-xl-2 col-12"></li>
+                                <li class="col-xl-9 col-12 Privacy">
+                                    <div>
+                                        <input type="radio" checked="checked" name="Privacy_Donation" value="" />
+                                        <p>
+                                            本人知悉上述捐款方式入帳後皆無法申請退款。
+                                        </p>
+                                    </div>
+                                    <div>
+
+                                        <input type="radio" checked="checked" name="Privacy_yes" value="" />
+                                        <p>
+
+                                            當您勾選後，即視同您已同意遵守本網站個人隱私權政策及交易安全宣告與其他有關著作權、版權、商標專用權、網路智慧財產權等之法律規定。
+                                        </p>
+                                    </div>
+
+                                </li>
+                                <li class="col-xl-2 col-12"></li>
+                                <li class="col-xl-9 col-12  form_btn">
+                                    <button>送出</button>
+                                </li>
+                            </ul>
+                        </ol>
+                    </form>
 
                 </div>
                 <!-- 內頁終點 -->
@@ -974,8 +1337,12 @@
                 <div class="icon_area">
                     <div class="row d-flex justify-content-center mx-0">
                         <div class="content px-0">
-                            <a href=""><p>個人資料保護管理政策</p></a>
-                            <a href=""><p>版權所有聲明</p></a>
+                            <a href="">
+                                <p>個人資料保護管理政策</p>
+                            </a>
+                            <a href="">
+                                <p>版權所有聲明</p>
+                            </a>
                         </div>
                         <div class="icon_block px-0">
                             <a href="">
