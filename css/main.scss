@@ -5,11 +5,56 @@
 
 * {
     font-family: 'Noto Serif TC', serif;
+    box-sizing: border-box;
 }
 
 html,
 body {
     scroll-behavior: smooth;
+    margin: 0;
+}
+
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: $fc-black;
+
+    &:hover {
+        color: $hc-brown;
+        text-decoration: none;
+    }
+
+    &:active {
+        color: $fc-black;
+    }
+}
+
+.padding-none {
+    padding: 0;
+}
+
+.modal-dialog {
+    max-width: 1000px;
 }
 
 nav{
