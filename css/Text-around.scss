@@ -1,0 +1,104 @@
+@import "./_variables.scss";
+@import "./_function.scss";
+
+
+
+.text_area{
+    
+    &>p{
+
+        img{
+            margin-right: 50px;
+            width: 100px;
+            margin-bottom: 10px;
+            float: left;
+            clear: both;
+        }
+        text-align: justify;
+        letter-spacing: 2px;
+        font-size: $fs-14;
+        line-height: 25px;
+        margin-bottom: 50px;
+    }
+}
+.video_area{
+    margin-bottom: 100px;
+}
+
+.message_area {
+    position: relative;
+    padding-left: 30px;
+    @include text_style($fs-14, $fw-600, unset, 4px);
+    margin-bottom: 60px;
+
+    &>div {
+        display: flex;
+        padding: 2.5px 0px;
+
+        &>div {
+            width: 110px;
+            padding-right: 20px;
+            white-space: nowrap;
+            box-sizing: unset;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 1px;
+                height: 15px;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                background-color: $bc-brown;
+            }
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 5px;
+        height: 75px;
+        transform: translateY(-50%);
+        background-color: $bc-brown;
+    }
+
+    .firtst_data {
+        &>div {
+            &>p {
+                letter-spacing: 15px;
+            }
+        }
+
+        &>p {
+            padding-left: 20px;
+        }
+    }
+
+    .new_data {
+        &>div {
+            &>p {
+                letter-spacing: 2.7px;
+            }
+        }
+
+        &>p {
+            padding-left: 20px;
+        }
+    }
+
+    .click_point {
+        &>div {
+            &>p {
+                letter-spacing: 2.7px;
+            }
+        }
+
+        &>p {
+            padding-left: 20px;
+        }
+    }
+}

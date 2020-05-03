@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
+.text_area > p {
+  text-align: justify;
+  letter-spacing: 2px;
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+
+.text_area > p img {
+  margin-right: 50px;
+  width: 100px;
+  margin-bottom: 10px;
+  float: left;
+  clear: both;
+}
+
+.video_area {
+  margin-bottom: 100px;
+}
+
+.message_area {
+  position: relative;
+  padding-left: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: unset;
+  letter-spacing: 4px;
+  margin-bottom: 60px;
+}
+
+.message_area > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.5px 0px;
+}
+
+.message_area > div > div {
+  width: 110px;
+  padding-right: 20px;
+  white-space: nowrap;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+  position: relative;
+}
+
+.message_area > div > div::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 15px;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #231815;
+}
+
+.message_area::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 5px;
+  height: 75px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #231815;
+}
+
+.message_area .firtst_data > div > p {
+  letter-spacing: 15px;
+}
+
+.message_area .firtst_data > p {
+  padding-left: 20px;
+}
+
+.message_area .new_data > div > p {
+  letter-spacing: 2.7px;
+}
+
+.message_area .new_data > p {
+  padding-left: 20px;
+}
+
+.message_area .click_point > div > p {
+  letter-spacing: 2.7px;
+}
+
+.message_area .click_point > p {
+  padding-left: 20px;
+}
+/*# sourceMappingURL=Text-around.css.map */
