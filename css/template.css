@@ -1,49 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-ol {
-  padding: 0;
-  margin: 0;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-p {
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: #000000;
-}
-
-a:hover {
-  color: #886D6A;
-  text-decoration: none;
-}
-
-a:active {
-  color: #000000;
-}
-
 header #topline nav > ul > li {
   letter-spacing: 2px;
 }
@@ -138,14 +94,6 @@ header #topline nav > ul > li {
   .container_1140 {
     max-width: unset;
   }
-}
-
-.padding-none {
-  padding: 0;
-}
-
-.modal-dialog {
-  max-width: 1000px;
 }
 
 header {
