@@ -20,11 +20,6 @@
     <!-- page css  -->
     <link rel="stylesheet" href="../css/template.css">
     <link rel="stylesheet" href="../css/Donation-information.css">
-    <style>
-
-
-
-    </style>
 </head>
 
 <body>
@@ -955,88 +950,89 @@
                                 <li>捐款者資料</li>
                             </ul>
                             <ul class="row justify-content-start">
-                                <li class="col-xl-2 col-12 name">
+                                <li class="col-xl-3 col-12 name">
                                     <div>捐款金額</div>
                                 </li>
                                 <li class="col-xl-9 col-12 form_input cost">
                                     <div class="btn-group-toggle" data-toggle="buttons">
                                         <label class="btn">
-                                            <input type="radio" name="options" id="cost_option1"> 500
+                                            <input type="radio" name="options" value="500" id="cost_option1"> 500
                                         </label>
                                         <label class="btn">
-                                            <input type="radio" name="options" id="cost_option2"> 1000
+                                            <input type="radio" name="options" value="1000" id="cost_option2"> 1000
                                         </label>
                                         <label class="btn">
-                                            <input type="radio" name="options" id="cost_option3"> 5000
+                                            <input type="radio" name="options" value="5000" id="cost_option3"> 5000
                                         </label>
                                         <label class="btn">
-                                            <input type="radio" name="options" id="cost_option4"> 10000
+                                            <input type="radio" name="options" value="10000" id="cost_option4"> 10000
                                         </label>
                                     </div>
                                 </li>
                             </ul>
                             <ul class="row justify-content-start">
-                                <li class="col-xl-2 col-12 name">
+                                <li class="col-xl-3 col-12 name">
                                     <div>輸入捐款金額</div>
                                 </li>
                                 <li class="col-xl-9 col-12 form_input">
-                                    <input type="number" name="Donation_cost" placeholder="最低捐款額度NT.100">
+                                    <input type="number" name="Donation_cost" id="Donation_cost"
+                                        placeholder="最低捐款額度NT.100">
                                 </li>
                             </ul>
                             <ul class="row justify-content-start">
-                                <li class="col-xl-2 col-12 name">
+                                <li class="col-xl-3 col-12 name">
                                     <div>
                                         <span>姓名</span>
                                         <span>(或公司/團體)</span>
                                     </div>
                                 </li>
                                 <li class="col-xl-9 col-12 form_input">
-                                    <input type="name" name="name" placeholder="請輸入姓名或公司/團體">
+                                    <input type="name" name="name" class="getName" placeholder="請輸入姓名或公司/團體">
                                 </li>
                             </ul>
                             <ul class="row justify-content-start">
-                                <li class="col-xl-2 col-12 name">
+                                <li class="col-xl-3 col-12 name">
                                     <div>
                                         <span>身分證字號/</span>
                                         <span>或統一編號</span>
                                     </div>
                                 </li>
                                 <li class="col-xl-9 col-12 form_input">
-                                    <input type="text" name="text" placeholder="請輸入身份證字號/居留證號碼(或統一編號)">
+                                    <input type="text" name="text" class="getIdNumber" placeholder="請輸入身份證字號/居留證號碼(或統一編號)">
                                 </li>
                             </ul>
                             <ul class="row justify-content-start">
-                                <li class="col-xl-2 col-12 name">
+                                <li class="col-xl-3 col-12 name">
                                     <div>
                                         戶籍地址
                                     </div>
                                 </li>
                                 <li class="col-xl-9 col-12 form_input">
-                                    <input type="text" name="text" placeholder="請輸入戶籍地址">
+                                    <input type="text" name="text" class="getAddress" placeholder="請輸入戶籍地址">
                                 </li>
                             </ul>
                             <ul class="row justify-content-start">
-                                <li class="col-xl-2 col-12 name">
+                                <li class="col-xl-3 col-12 name">
                                     <div>
                                         電子信箱
                                     </div>
                                 </li>
                                 <li class="col-xl-9 col-12 form_input">
-                                    <input type="email" name="email" placeholder="請輸入電子信箱">
+                                    <input type="email" name="email" class="getEmail" placeholder="請輸入電子信箱">
                                 </li>
                             </ul>
                             <ul class="row justify-content-start">
-                                <li class="col-xl-2 col-12 name">
+                                <li class="col-xl-3 col-12 name">
                                     <div>
                                         連絡電話
                                     </div>
                                 </li>
                                 <li class="col-xl-9 col-12 form_input">
-                                    <input type="tel" name="tel" placeholder="請輸入連絡電話">
+                                    <input type="tel" name="tel" class="getTel" placeholder="請輸入連絡電話">
                                 </li>
                             </ul>
                             <ul class="row justify-content-start">
-                                <li class="col-xl-2 col-12 name">
+                                <li class="col-xl-3 col-12 name">
                                 </li>
                                 <li class="col-xl-9 col-12 form_input">
                                     <div class="statement">
@@ -1048,12 +1044,10 @@
                                         </p>
                                         <ul class="d-flex Donation_radio">
                                             <li>本人</li>
-                                            <li><input type="radio" checked="checked" id="Unitattribute"
-                                                    name="class_number" value="" />
+                                            <li><input type="radio" checked="checked" name="class_number" value="" />
                                                 <div>同意</div>
                                             </li>
-                                            <li><input type="radio" checked="checked" id="Unitattribute"
-                                                    name="class_number" value="" />
+                                            <li><input type="radio" checked="checked" name="class_number" value="" />
                                                 <div>不同意</div>
                                             </li>
                                             <li>
@@ -1072,109 +1066,27 @@
                                 <li>捐款收據</li>
                             </ul>
                             <ul class="row justify-content-start">
-                                <li class="col-xl-2 col-12 name">
+                                <li class="col-xl-3 col-12 name">
                                     <div>
                                         是否需要收據
                                     </div>
                                 </li>
                                 <li class="col-xl-9 col-12 form_input">
-                                    <ul class="nav nav-pills" id="need-tab" role="tablist">
-                                        <li class="nav-item m-0 ">
-                                            <a class="nav-link pl-0 active" id="need-home-tab" data-toggle="pill"
-                                                href="#need-home" role="tab" aria-controls="need-home"
-                                                aria-selected="true">
-                                                <input type="radio" name="sex" value="male">
-                                                需要
-                                            </a>
+                                    <ul class="d-flex align-items-center">
+                                        <li class="nav-item mr-3 mb-0">
+                                            <label class="mb-0" for=""><input type="radio" name="Receipt_needed"
+                                                    value="yes" >需要</label>
                                         </li>
                                         <li class="nav-item m-0">
-                                            <a class="nav-link" id="need-profile-tab" data-toggle="pill"
-                                                href="#need-profile" role="tab" aria-controls="need-profile"
-                                                aria-selected="false">
-                                                <input type="radio" name="sex" value="male">
-                                                不需要
-                                            </a>
+                                            <label class="mb-0" for=""><input type="radio" name="Receipt_needed"
+                                                    value="no" checked>不需要</label>
                                         </li>
                                     </ul>
-                                    <div class="tab-content pt-3" id="need-tabContent">
-                                        <div class="tab-pane fade read show active" id="need-home" role="tabpanel"
-                                            aria-labelledby="need-home-tab">
-                                        </div>
-                                        <div class="tab-pane fade read" id="need-profile" role="tabpanel"
-                                            aria-labelledby="need-profile-tab">
-                                        </div>
-                                    </div>
                                 </li>
                             </ul>
-                            <ul class="row justify-content-start">
-                                <li class="col-xl-2 col-12 name">
-                                    <div>
-                                        捐款金額
-                                    </div>
-                                </li>
-                                <li class="col-xl-9 col-12 form_input">
-                                    <input type="text" name="text" placeholder="500">
-                                </li>
-                            </ul>
-                            <ul class="row justify-content-start">
-                                <li class="col-xl-2 col-12 name">
-                                    <div>
-                                        <span>姓名</span>
-                                        <span>(或公司/團體)</span>
-                                    </div>
-                                </li>
-                                <li class="col-xl-9 col-12 form_input">
-                                    <input type="name" name="name" placeholder="凌網科技股份有限公司">
-                                </li>
-                            </ul>
-                            <ul class="row justify-content-start">
-                                <li class="col-xl-2 col-12 name">
-                                    <div>
-                                        <span>身分證字號/</span>
-                                        <span>或統一編號</span>
-                                    </div>
-                                </li>
-                                <li class="col-xl-9 col-12 form_input">
-                                    <input type="text" name="text" placeholder="16541333">
-                                </li>
-                            </ul>
-                            <ul class="row justify-content-start">
-                                <li class="col-xl-2 col-12 name">
-                                    <div>
-                                        收據類型
-                                    </div>
-                                </li>
-                                <li class="col-xl-9 col-12 form_input">
-                                    <!-- 點擊這邊的選項要做切換 -->
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="Receipt_type"
-                                            id="Receipt_type1" value="option1" checked>
-                                        <label class="form-check-label" for="Receipt_type1">
-                                            電子發票
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="Receipt_type"
-                                            id="Receipt_type2" value="option2">
-                                        <label class="form-check-label" for="Receipt_type2">
-                                            紙本收據
-                                        </label>
-                                    </div>
-                                    <!-- 點擊這邊的選項要做切換 -->
-                                    <!-- 0503 需要切換的東西 -->
-                                    <div class="tab-content pt-3" id="pills-tabContent">
-                                        <div class="tab-pane fade read form_input show active" id="pills-Electronic"
-                                            role="tabpanel" aria-labelledby="pills-Electronic-tab">
-                                            <input type="email" name="email" placeholder="請輸入電子信箱">
-                                        </div>
-                                        <div class="tab-pane fade read  form_input" id="pills-books" role="tabpanel"
-                                            aria-labelledby="pills-books-tab">
-                                        </div>
-                                    </div>
-                                    <!-- 0503 需要切換的東西 -->
-                                </li>
-                            </ul>
-
+                            <div class="need_receipt">
+                             
+                            </div>
                             <ul class="row justify-content-start title">
                                 <li>
                                     <div class="icon"></div>
@@ -1182,13 +1094,12 @@
                                 <li>捐款方式</li>
                             </ul>
                             <ul class="row justify-content-start">
-                                <li class="col-xl-2 col-12 name">
+                                <li class="col-xl-3 col-12 name">
                                     <div>
                                         捐款方式
                                     </div>
                                 </li>
                                 <li class="col-xl-9 col-12 form_input">
-                                    <!-- 點擊這邊的選項要做切換 -->
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="Donation_method"
                                             id="Donation_method1" value="option1" checked>
@@ -1203,15 +1114,11 @@
                                             ATM金融轉帳
                                         </label>
                                     </div>
-                                    <!-- 點擊這邊的選項要做切換 -->
-                                    <!-- 0503 需要切換的東西 -->
-                                    <div class="tab-content pt-3" id="pills-tabContent">
-                                        <div class="tab-pane fade read show active" id="pills-home" role="tabpanel"
-                                            aria-labelledby="pills-home-tab">
+                                    <div class="">
+                                        <div class="read credit">
                                             請接續完成信用卡授權資料填寫，本次捐款是否成功，請向您的發卡銀行進行確認。
                                         </div>
-                                        <div class="tab-pane fade read" id="pills-profile" role="tabpanel"
-                                            aria-labelledby="pills-profile-tab">
+                                        <div class="read atm d-none">
                                             <p>
                                                 您所提供之匯款資料系統將保留10天，請您於10天內依據以下帳戶資訊完成轉帳。捐贈收據將於確認入帳後14個工作天內寄出。
                                             </p>
@@ -1220,79 +1127,32 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <!-- 0503 需要切換的東西 -->
-
                                 </li>
                             </ul>
+                            <div class="atm_info">
 
-
-                            <!-- 0503 需要切換的東西 -->
-
-                            <ul class="row justify-content-start">
-                                <li class="col-xl-2 col-12 name">
-                                    <div>
-                                        匯款戶名
-                                    </div>
-                                </li>
-                                <li class="col-xl-9 col-12 form_input">
-                                    <input type="name" name="name" placeholder="凌網科技股份有限公司">
-                                </li>
-                            </ul>
-                            <ul class="row justify-content-start">
-                                <li class="col-xl-2 col-12 name">
-                                    <div>
-                                        匯款銀行
-                                    </div>
-                                </li>
-                                <li class="col-xl-9 col-12 form_input">
-                                    <input type="name" name="name" placeholder="凌網科技股份有限公司">
-                                </li>
-                            </ul>
-                            <ul class="row justify-content-start">
-                                <li class="col-xl-2 col-12 name">
-                                    <div>
-                                        <span>匯款帳號</span>
-                                        <span>後五碼</span>
-                                    </div>
-                                </li>
-                                <li class="col-xl-9 col-12 form_input">
-                                    <input type="text" name="text" placeholder="請輸入帳號後五碼">
-                                </li>
-                            </ul>
-                            <ul class="row justify-content-start">
-                                <li class="col-xl-2 col-12 name">
-                                    <div>
-                                        捐款金額
-                                    </div>
-                                </li>
-                                <li class="col-xl-9 col-12 form_input">
-                                    <input type="text" name="text placeholder="">
-                                </li>
-                            </ul>
-                            <!-- 0503 需要切換的東西 -->
-
+                            </div>
                             <ul class=" row justify-content-start">
-                                <li class="col-xl-2 col-12"></li>
+                                <li class="col-xl-3 col-12"></li>
                                 <li class="col-xl-9 col-12 Privacy">
                                     <div>
-                                        <input type="radio" checked="checked" name="Privacy_Donation" value="" />
+                                        <input type="radio" name="Privacy_Donation" value="" />
                                         <p>
                                             本人知悉上述捐款方式入帳後皆無法申請退款。
                                         </p>
                                     </div>
                                     <div>
 
-                                        <input type="radio" checked="checked" name="Privacy_yes" value="" />
+                                        <input type="radio" name="Privacy_yes" value="" required />
                                         <p>
-
                                             當您勾選後，即視同您已同意遵守本網站個人隱私權政策及交易安全宣告與其他有關著作權、版權、商標專用權、網路智慧財產權等之法律規定。
                                         </p>
                                     </div>
 
                                 </li>
-                                <li class="col-xl-2 col-12"></li>
+                                <li class="col-xl-3 col-12"></li>
                                 <li class="col-xl-9 col-12  form_btn">
-                                    <button>送出</button>
+                                    <button type="submit">送出</button>
                                 </li>
                             </ul>
                         </ol>
@@ -1381,9 +1241,7 @@
 
     <script src="../js/main.js"></script>
     <!-- page js -->
-    <script>
-
-    </script>
+    <script src="../js/donation.js"></script>
 
 </body>
 
