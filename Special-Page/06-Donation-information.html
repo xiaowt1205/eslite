@@ -1145,24 +1145,23 @@
                                     </div>
                                 </li>
                                 <li class="col-xl-9 col-12 form_input">
-                                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                                        <li class="nav-item m-0 ">
-                                            <a class="nav-link pl-0 active" id="pills-Electronic-tab" data-toggle="pill"
-                                                href="#pills-Electronic" role="tab" aria-controls="pills-Electronic"
-                                                aria-selected="true">
-                                                <input type="radio" name="sex" value="male">
-                                                電子發票
-                                            </a>
-                                        </li>
-                                        <li class="nav-item m-0">
-                                            <a class="nav-link" id="pills-books-tab" data-toggle="pill"
-                                                href="#pills-books" role="tab" aria-controls="pills-books"
-                                                aria-selected="false">
-                                                <input type="radio" name="sex" value="male">
-                                                紙本收據
-                                            </a>
-                                        </li>
-                                    </ul>
+                                    <!-- 點擊這邊的選項要做切換 -->
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Receipt_type"
+                                            id="Receipt_type1" value="option1" checked>
+                                        <label class="form-check-label" for="Receipt_type1">
+                                            電子發票
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Receipt_type"
+                                            id="Receipt_type2" value="option2">
+                                        <label class="form-check-label" for="Receipt_type2">
+                                            紙本收據
+                                        </label>
+                                    </div>
+                                    <!-- 點擊這邊的選項要做切換 -->
+                                    <!-- 0503 需要切換的東西 -->
                                     <div class="tab-content pt-3" id="pills-tabContent">
                                         <div class="tab-pane fade read form_input show active" id="pills-Electronic"
                                             role="tabpanel" aria-labelledby="pills-Electronic-tab">
@@ -1172,12 +1171,9 @@
                                             aria-labelledby="pills-books-tab">
                                         </div>
                                     </div>
-
+                                    <!-- 0503 需要切換的東西 -->
                                 </li>
                             </ul>
-
-
-
 
                             <ul class="row justify-content-start title">
                                 <li>
@@ -1192,24 +1188,23 @@
                                     </div>
                                 </li>
                                 <li class="col-xl-9 col-12 form_input">
-                                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                                        <li class="nav-item m-0 ">
-                                            <a class="nav-link pl-0 active" id="pills-home-tab" data-toggle="pill"
-                                                href="#pills-home" role="tab" aria-controls="pills-home"
-                                                aria-selected="true">
-                                                <input type="radio" name="sex" value="male">
-                                                信用卡授權
-                                            </a>
-                                        </li>
-                                        <li class="nav-item m-0">
-                                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill"
-                                                href="#pills-profile" role="tab" aria-controls="pills-profile"
-                                                aria-selected="false">
-                                                <input type="radio" name="sex" value="male">
-                                                ATM金融轉帳
-                                            </a>
-                                        </li>
-                                    </ul>
+                                    <!-- 點擊這邊的選項要做切換 -->
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Donation_method"
+                                            id="Donation_method1" value="option1" checked>
+                                        <label class="form-check-label" for="Donation_method1">
+                                            信用卡授權
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Donation_method"
+                                            id="Donation_method2" value="option2">
+                                        <label class="form-check-label" for="Donation_method2">
+                                            ATM金融轉帳
+                                        </label>
+                                    </div>
+                                    <!-- 點擊這邊的選項要做切換 -->
+                                    <!-- 0503 需要切換的東西 -->
                                     <div class="tab-content pt-3" id="pills-tabContent">
                                         <div class="tab-pane fade read show active" id="pills-home" role="tabpanel"
                                             aria-labelledby="pills-home-tab">
@@ -1225,11 +1220,13 @@
                                             </p>
                                         </div>
                                     </div>
+                                    <!-- 0503 需要切換的東西 -->
+
                                 </li>
                             </ul>
 
 
-
+                            <!-- 0503 需要切換的東西 -->
 
                             <ul class="row justify-content-start">
                                 <li class="col-xl-2 col-12 name">
@@ -1272,8 +1269,7 @@
                                     <input type="text" name="text placeholder="">
                                 </li>
                             </ul>
-
-
+                            <!-- 0503 需要切換的東西 -->
 
                             <ul class=" row justify-content-start">
                                 <li class="col-xl-2 col-12"></li>
