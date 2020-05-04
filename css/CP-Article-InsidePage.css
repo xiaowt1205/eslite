@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
 .two .text_area .picture {
   margin-bottom: 50px;
-  height: 395px;
+  min-height: 395px;
   text-align: center;
   overflow: hidden;
 }
 
 .two .text_area .picture img {
-  height: 100%;
+  width: 100%;
 }
 
 .two .text_area .text_block {
@@ -42,13 +42,13 @@
       -ms-flex-order: 1;
           order: 1;
   margin-bottom: 50px;
-  height: 395px;
+  min-height: 395px;
   text-align: center;
   overflow: hidden;
 }
 
 .three .text_area .picture img {
-  height: 100%;
+  width: 100%;
 }
 
 .three .text_area .text_block {
@@ -167,7 +167,7 @@
   .five .text_area .picture {
     margin-left: 0px;
     margin-bottom: 35px;
-    height: 395px;
+    min-height: 395px;
     text-align: center;
     overflow: hidden;
   }
