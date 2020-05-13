@@ -1222,6 +1222,7 @@ header .aside-bg {
 }
 
 main {
+  overflow: hidden;
   position: relative;
 }
 
@@ -1421,13 +1422,13 @@ main .bg {
   }
 }
 
-#Statistics .container_1600 .statistics_area .title_region #list-tab .active .year_books {
+#Statistics .container_1600 .statistics_area .title_region .year_books {
   background-color: #231815;
   color: #FFFFFF;
 }
 
-#Statistics .container_1600 .statistics_area .title_region #list-tab .active .year_books:nth-child(1) {
-  border-right: 1px solid #231815;
+#Statistics .container_1600 .statistics_area .title_region .year_books:nth-child(1) {
+  border: 1px solid #231815;
 }
 
 #Statistics .container_1600 .statistics_area .title_region .icon {
@@ -1465,16 +1466,6 @@ main .bg {
 
 #Statistics .container_1600 .statistics_area .title_region .icon > a {
   display: contents;
-}
-
-#Statistics .container_1600 .statistics_area .title_region .icon a:nth-child(1) .year_books {
-  border-right: 1px solid #FFFFFF;
-}
-
-@media screen and (max-width: 1200px) {
-  #Statistics .container_1600 .statistics_area .title_region .icon a:nth-child(1) .year_books {
-    border: 1px solid #231815;
-  }
 }
 
 #Statistics .container_1600 .statistics_area .title_region .icon .year_books {
@@ -2282,7 +2273,7 @@ main .bg {
 }
 
 #Plan .content .card:hover .Plan_bg::before {
-  background-color: #23181590;
+  background-color: rgba(35, 24, 21, 0.565);
 }
 
 #Plan .content .card:hover .Plan_bg::after {
@@ -2460,7 +2451,7 @@ main .bg {
   top: 0;
   left: 0;
   z-index: 2;
-  background-color: #23181571;
+  background-color: rgba(35, 24, 21, 0.443);
 }
 
 @media screen and (max-width: 576px) {

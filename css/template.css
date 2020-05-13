@@ -850,7 +850,11 @@ main.container {
   font-weight: 900;
 }
 
-.Page-BG {
+.Page_area {
+  position: absolute;
+}
+
+.Page_area .Page-BG {
   position: fixed;
   top: 58%;
   right: 0;
@@ -863,7 +867,7 @@ main.container {
   background-repeat: no-repeat;
 }
 
-.Page-BG div {
+.Page_area .Page-BG div {
   position: fixed;
   top: 30.5%;
   right: 0;

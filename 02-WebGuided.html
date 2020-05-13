@@ -1128,9 +1128,12 @@
         </div>
     </footer>
 
-    <div class="Page-BG">
-        <div></div>
+    <div class="Page_area">
+        <div class="Page-BG">
+            <div></div>
+        </div>
     </div>
+
 
     <a href="#" class="go_to_top" id="BackTop">
         <img src="./img/icon/top.png" alt="">
@@ -1165,17 +1168,17 @@
             $(window).resize(function () {
                 if ($(window).width() < 992) {
                     $('.collapse-deco').addClass('_close')
-                }else{
-                    $('.collapse-deco').removeClass('_close')   
+                } else {
+                    $('.collapse-deco').removeClass('_close')
                 }
             });
         });
 
-        
-        $('.collapse-deco').each(function(index){
-            $(this).click(function(){
+
+        $('.collapse-deco').each(function (index) {
+            $(this).click(function () {
                 $(this).toggleClass('_close')
-                
+
             })
         })
     </script>

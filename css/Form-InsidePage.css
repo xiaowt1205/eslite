@@ -598,7 +598,7 @@
 }
 
 .Description .stage .news_list > :nth-child(2n) {
-  background-color: #80808060;
+  background-color: rgba(128, 128, 128, 0.376);
 }
 
 .Description .stage .news_list > :nth-last-child(1) {

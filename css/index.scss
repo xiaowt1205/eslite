@@ -685,6 +685,7 @@ header {
                                     @media(min-width:1025px) {
                                         padding: 0px 0px 150px;
                                     }
+
                                     // 0512-修正
 
                                     @media (max-width:1024px) {
@@ -706,6 +707,7 @@ header {
                                         @media(min-width:1025px) {
                                             flex-direction: row-reverse;
                                         }
+
                                         // 0512-修正
 
                                         @media(max-width:1024px) {
@@ -887,6 +889,8 @@ header {
 }
 
 main {
+    // 05-14 修改
+    overflow: hidden;
     position: relative;
 
     .bg {
@@ -1034,17 +1038,12 @@ main {
                     }
                 }
 
+                .year_books {
+                    background-color: $bc-brown;
+                    color: $bc-white;
 
-                #list-tab {
-                    .active {
-                        .year_books {
-                            background-color: $bc-brown;
-                            color: $bc-white;
-
-                            &:nth-child(1) {
-                                border-right: 1px solid $bc-brown;
-                            }
-                        }
+                    &:nth-child(1) {
+                        border: 1px solid $bc-brown;
                     }
                 }
 
@@ -1068,14 +1067,6 @@ main {
 
                     &>a {
                         display: contents;
-                    }
-
-                    & a:nth-child(1) .year_books {
-                        border-right: 1px solid $bc-white;
-
-                        @media screen and (max-width:1200px) {
-                            border: 1px solid $bc-brown;
-                        }
                     }
 
                     .year_books {
@@ -1303,11 +1294,6 @@ main {
                                     font-size: $fs-18;
                                     padding-top: 10px;
                                 }
-
-                                @media screen and (max-width:768px) {
-                                    // font-size: $fs-24;
-                                    // display: none;
-                                }
                             }
                         }
 
@@ -1329,20 +1315,6 @@ main {
 
                         }
                     }
-
-                    // 0512-修正(移除)
-                    // &:nth-child(2) {
-                    //     .business_block {
-                    //         .business_text {
-                    //             & span:nth-child(1) {
-                    //                 &::after {
-                    //                     content: '籍';
-                    //                 }
-                    //             }
-                    //         }
-                    //     }
-                    // }
-                    // 0512-修正(移除)
 
                     .btn-moblie {
                         display: none;

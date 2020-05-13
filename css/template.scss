@@ -26,7 +26,7 @@ header {
             padding: 35px 0px;
         }
 
-       
+
         .logo {
             width: 0px;
 
@@ -50,11 +50,11 @@ header {
                     position: absolute;
                     left: 50vw;
                     top: 50%;
-                    transform: translate(-50% , -50%);
+                    transform: translate(-50%, -50%);
                 }
             }
         }
-        
+
 
         nav {
             padding: 0px 8.333333333%;
@@ -84,7 +84,7 @@ header {
                     position: relative;
                     z-index: 99;
 
-                    &>ul{
+                    &>ul {
                         background-color: $bc-white;
                         width: 240px;
                         max-height: 0px;
@@ -96,22 +96,22 @@ header {
                         left: 50%;
                         transform: translateX(-50%);
                         z-index: 99;
-                        padding:0;
+                        padding: 0;
                         border-bottom-right-radius: 10px;
                         border-bottom-left-radius: 10px;
 
-                        &>li{
+                        &>li {
                             margin-bottom: 10px;
 
-                            a{
+                            a {
                                 font-size: $fs-14;
                                 color: $light-brown;
-                                
+
                                 &.collapse-deco {
                                     position: relative;
                                     transition: .3s;
                                     transition-timing-function: ease-in-out;
-                
+
                                     &::after,
                                     &::before {
                                         content: ' ';
@@ -120,10 +120,10 @@ header {
                                         top: 10px;
                                         width: 8px;
                                         height: 1.5px;
-                                        background-color:rgba(55,55,55,1);
+                                        background-color: rgba(55, 55, 55, 1);
                                         opacity: 0.6;
                                     }
-                
+
                                     &::before {
                                         transform: rotate(90deg);
                                         transition: 0.3s;
@@ -131,32 +131,33 @@ header {
                                 }
                             }
 
-                            &>ul{
+                            &>ul {
                                 width: 100%;
                                 max-height: 0px;
                                 overflow: hidden;
                                 transition: .3s;
                                 transition-timing-function: ease-out;
 
-                                li{
-                                    
+                                li {
+
                                     margin-bottom: 5px;
 
-                                    a{
-                                        color:rgba(55,55,55,0.5);
+                                    a {
+                                        color: rgba(55, 55, 55, 0.5);
                                         font-size: $fs-12;
                                     }
                                 }
                             }
 
-                            &:hover{
-                                &>ul{
+                            &:hover {
+                                &>ul {
                                     max-height: 300px;
                                     padding: 10px 0 0px 0;
                                     transition: .3s;
                                     transition-timing-function: ease-in;
                                 }
-                                &>a{
+
+                                &>a {
                                     &.collapse-deco {
                                         &::before {
                                             transform: rotate(0deg);
@@ -167,8 +168,8 @@ header {
                         }
                     }
 
-                    &:hover{
-                        &>ul{
+                    &:hover {
+                        &>ul {
                             max-height: 600px;
                             padding: 35px 0 25px 0;
                             transition: .3s;
@@ -177,7 +178,7 @@ header {
                         }
                     }
 
-                    
+
                     @extend %letter-spacing;
                     text-align: center;
                     display: inline-block;
@@ -601,31 +602,36 @@ main {
     font-weight: 900;
 }
 
-.Page-BG {
-    position: fixed;
-    top: 58%;
-    right: 0;
-    z-index: -10;
-    width: 100%;
-    height: 40vh;
-    background-image: url('../img/page-bg-1.png');
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    div {
+.Page_area {
+    position: absolute;
+    .Page-BG {
         position: fixed;
-        top: 30.5%;
+        top: 58%;
         right: 0;
         z-index: -10;
         width: 100%;
-        height: 25vh;
-        background-image: url('../img/page-bg-2.png');
-        background-position: left;
+        height: 40vh;
+        background-image: url('../img/page-bg-1.png');
+        background-position: right;
         background-size: contain;
         background-repeat: no-repeat;
+
+        div {
+            position: fixed;
+            top: 30.5%;
+            right: 0;
+            z-index: -10;
+            width: 100%;
+            height: 25vh;
+            background-image: url('../img/page-bg-2.png');
+            background-position: left;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
 }
+
+
 
 footer {
     width: 100%;
