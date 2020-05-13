@@ -123,6 +123,12 @@
   overflow: hidden;
 }
 
+@media (max-width: 991px) {
+  .cardBox .photo {
+    height: auto;
+  }
+}
+
 .cardBox .photo img {
   width: 100%;
 }

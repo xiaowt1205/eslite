@@ -349,6 +349,18 @@ table.table_area td {
   height: 150px;
 }
 
+@media screen and (max-width: 768px) {
+  .picture_area .picture_block .pic {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .picture_area .picture_block .pic {
+    height: 250px;
+  }
+}
+
 .picture_area .picture_block .pic img {
   width: 100%;
 }
