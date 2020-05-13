@@ -27,7 +27,14 @@
         background-size: cover;
         background-position: center center;
         overflow: hidden;
-        img{
+
+        //05-13修正
+        @media (max-width:991px) {
+            height: auto;
+        }
+        //05-13修正
+        
+        img {
             width: 100%;
         }
     }

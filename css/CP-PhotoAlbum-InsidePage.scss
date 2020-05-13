@@ -196,9 +196,12 @@ main {
     }
 
     .customization-swiper-content {
-        position: relative;
-        @include region(100%, 800px, unset);
-        padding: 0px 150px;
+        // 05/13 修正XX位置
+        position: absolute;
+        @include region(100%, 100%, unset);
+        max-height: 800px;
+        // 05/13 修正XX位置
+        padding: 50px 150px;
         max-width: 1300px;
 
         @media screen and (max-width:768px) {
