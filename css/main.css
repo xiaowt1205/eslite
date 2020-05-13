@@ -905,8 +905,8 @@ footer .footer_area .info_area .footer-info p span:nth-child(2) {
   }
   footer .footer_area .info_area .footer-info p:nth-child(n+2) {
     margin: 0px auto 5px;
-    min-width: 200px;
     width: 200px;
+    min-width: 220px;
   }
   footer .footer_area .info_area .footer-info p:nth-last-child(1) {
     margin: 0px auto 5px;

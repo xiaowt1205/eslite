@@ -215,14 +215,14 @@ header {
                             }
                         }
                     }
- 
+
                     &.nav-icon {
                         @media (max-width:1400px) {
                             display: none;
                         }
                     }
 
-                    &>ul{
+                    &>ul {
                         background-color: $bc-white;
                         width: 240px;
                         max-height: 0px;
@@ -234,22 +234,22 @@ header {
                         left: 50%;
                         transform: translateX(-50%);
                         z-index: 10;
-                        padding:0;
+                        padding: 0;
                         border-bottom-right-radius: 10px;
                         border-bottom-left-radius: 10px;
 
-                        &>li{
+                        &>li {
                             margin-bottom: 10px;
 
-                            a{
+                            a {
                                 font-size: $fs-14;
                                 color: $light-brown;
-                                
+
                                 &.collapse-deco {
                                     position: relative;
                                     transition: .3s;
                                     transition-timing-function: ease-in-out;
-                
+
                                     &::after,
                                     &::before {
                                         content: ' ';
@@ -258,10 +258,10 @@ header {
                                         top: 10px;
                                         width: 8px;
                                         height: 1.5px;
-                                        background-color:rgba(55,55,55,1);
+                                        background-color: rgba(55, 55, 55, 1);
                                         opacity: 0.6;
                                     }
-                
+
                                     &::before {
                                         transform: rotate(90deg);
                                         transition: 0.3s;
@@ -269,32 +269,33 @@ header {
                                 }
                             }
 
-                            &>ul{
+                            &>ul {
                                 width: 100%;
                                 max-height: 0px;
                                 overflow: hidden;
                                 transition: .3s;
                                 transition-timing-function: ease-out;
 
-                                li{
-                                    
+                                li {
+
                                     margin-bottom: 5px;
 
-                                    a{
-                                        color:rgba(55,55,55,0.5);
+                                    a {
+                                        color: rgba(55, 55, 55, 0.5);
                                         font-size: $fs-12;
                                     }
                                 }
                             }
 
-                            &:hover{
-                                &>ul{
+                            &:hover {
+                                &>ul {
                                     max-height: 300px;
                                     padding: 10px 0 0px 0;
                                     transition: .3s;
                                     transition-timing-function: ease-in;
                                 }
-                                &>a{
+
+                                &>a {
                                     &.collapse-deco {
                                         &::before {
                                             transform: rotate(0deg);
@@ -305,8 +306,8 @@ header {
                         }
                     }
 
-                    &:hover{
-                        &>ul{
+                    &:hover {
+                        &>ul {
                             max-height: 600px;
                             padding: 35px 0 25px 0;
                             transition: .3s;
@@ -680,9 +681,12 @@ header {
                                     font-size: $fs-16;
                                     overflow: hidden;
 
+                                    // 0512-修正
                                     @media(min-width:1025px) {
-                                        padding-top: 5px;
+                                        padding: 0px 0px 150px;
                                     }
+
+                                    // 0512-修正
 
                                     @media (max-width:1024px) {
                                         top: 0%;
@@ -698,6 +702,13 @@ header {
                                         opacity: 0;
                                         transition-timing-function: ease-in;
                                         transition: 1s;
+
+                                        // 0512-修正
+                                        @media(min-width:1025px) {
+                                            flex-direction: row-reverse;
+                                        }
+
+                                        // 0512-修正
 
                                         @media(max-width:1024px) {
                                             position: absolute;
@@ -1255,7 +1266,7 @@ main {
                                         width: 35px;
                                     }
                                 }
-                                
+
                                 &::after {
                                     content: '冊';
                                     position: absolute;
@@ -1321,17 +1332,19 @@ main {
                         }
                     }
 
-                    &:nth-child(2){
-                        .business_block{
-                            .business_text{
-                                & span:nth-child(1) {
-                                    &::after {
-                                        content: '籍';
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    // 0512-修正(移除)
+                    // &:nth-child(2) {
+                    //     .business_block {
+                    //         .business_text {
+                    //             & span:nth-child(1) {
+                    //                 &::after {
+                    //                     content: '籍';
+                    //                 }
+                    //             }
+                    //         }
+                    //     }
+                    // }
+                    // 0512-修正(移除)
 
                     .btn-moblie {
                         display: none;
@@ -2499,6 +2512,41 @@ main {
 
             @media screen and (max-width:576px) {
                 display: none;
+            }
+
+            .swiper-wrapper {
+                a {
+                    width: 100%;
+                    height: 30px;
+                }
+
+                & :nth-child(1) {
+                    a {
+                        background-image: url(../img/icon/eslite-LOGO.png);
+                    }
+                }
+
+                & :nth-child(2) {
+                    a {
+                        background-image: url(../img/icon/eslite-FoundationforClrureandArts.png);
+                    }
+                }
+
+                & :nth-child(3) {
+                    a {
+                        background-image: url(../img/icon/eslite-FoundationforClrureandArts.png);
+                    }
+                }
+
+                & :nth-child(4) {
+                    a {
+                        background-image: url(../img/icon/eslite-MEET.png);
+                    }
+                }
+
+                & :nth-child(5) {}
+
+                & :nth-child(6) {}
             }
 
             .swiper-slide {

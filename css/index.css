@@ -1001,7 +1001,7 @@ header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .asi
 
 @media (min-width: 1025px) {
   header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn .gradient-mask {
-    padding-top: 5px;
+    padding: 0px 0px 150px;
   }
 }
 
@@ -1027,6 +1027,15 @@ header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .asi
           transition-timing-function: ease-in;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+@media (min-width: 1025px) {
+  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn .gradient-mask .aside-sub-btn-group {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1800,10 +1809,6 @@ main .bg {
   #Statistics .container_1600 .statistics_area .content .business_area .business_block .business_icon .fa-play {
     font-size: 14px;
   }
-}
-
-#Statistics .container_1600 .statistics_area .content .business_area:nth-child(2) .business_block .business_text span:nth-child(1)::after {
-  content: '籍';
 }
 
 #Statistics .container_1600 .statistics_area .content .business_area .btn-moblie {
@@ -3170,6 +3175,27 @@ main .bg {
   #Vendor .content .vendor_area {
     display: none;
   }
+}
+
+#Vendor .content .vendor_area .swiper-wrapper a {
+  width: 100%;
+  height: 30px;
+}
+
+#Vendor .content .vendor_area .swiper-wrapper :nth-child(1) a {
+  background-image: url(../img/icon/eslite-LOGO.png);
+}
+
+#Vendor .content .vendor_area .swiper-wrapper :nth-child(2) a {
+  background-image: url(../img/icon/eslite-FoundationforClrureandArts.png);
+}
+
+#Vendor .content .vendor_area .swiper-wrapper :nth-child(3) a {
+  background-image: url(../img/icon/eslite-FoundationforClrureandArts.png);
+}
+
+#Vendor .content .vendor_area .swiper-wrapper :nth-child(4) a {
+  background-image: url(../img/icon/eslite-MEET.png);
 }
 
 #Vendor .content .vendor_area .swiper-slide {
