@@ -65,14 +65,11 @@ main {
 
         .img {
             width: 100%;
-            height: 120px;
-            min-height: 100px;
-            max-height: 120px;
-            overflow: hidden;
+            height: 125px;
+            max-height: 125px;
 
-            img{
-                width: 100%;
-            }
+            background-size: cover;
+            background-position: center;
         }
 
         .modal {

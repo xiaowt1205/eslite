@@ -72,14 +72,10 @@ main.container {
 
 .area_picture .picture_block .img {
   width: 100%;
-  height: 120px;
-  min-height: 100px;
-  max-height: 120px;
-  overflow: hidden;
-}
-
-.area_picture .picture_block .img img {
-  width: 100%;
+  height: 125px;
+  max-height: 125px;
+  background-size: cover;
+  background-position: center;
 }
 
 .area_picture .picture_block .modal {
