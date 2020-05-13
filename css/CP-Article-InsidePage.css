@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
+ul,
+li {
+  list-style: unset !important;
+}
+
 .two .text_area .picture {
   margin-bottom: 50px;
   min-height: 395px;
@@ -230,7 +235,7 @@
 .multiple-pic .text_area .text-around img {
   float: right;
   margin-left: 15px;
-  height: 200px;
+  width: 250px;
 }
 
 @media (max-width: 768px) {

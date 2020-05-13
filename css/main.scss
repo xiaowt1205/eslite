@@ -744,11 +744,17 @@ footer {
                         &:nth-child(n+2) {
                             margin: 0px auto 5px;
                             width: 200px;
+
+
                             // 0512修正
-                            //02
+
+                            //02 ↓↓
                             // min-width: 200px;
-                            // +886
+
+
+                            //+886 ↓↓
                             min-width: 220px;
+
                             // 0512修正
                         }
 

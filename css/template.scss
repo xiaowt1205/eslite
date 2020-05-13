@@ -374,7 +374,7 @@ main {
 }
 
 .imgSize {
-    min-width: 81px;
+    width: 81px;
     margin: 0px 35px 0 37px;
 
     @media (max-width:1200px) {
@@ -429,6 +429,7 @@ main {
 
 .insidePageTitle {
     padding-top: 70px;
+    height: 632px;
 
     @media (max-width:768px) {
         display: none;
@@ -445,12 +446,11 @@ main {
         &::after {
             content: '';
             height: 300%;
-            width: 2px;
-            background-color: black;
+            width: 1.5px;
+            background-color: rgba(0, 0, 0, 0.7);
             position: absolute;
             bottom: 5px;
             left: calc(50% - 8px);
-            transform: scaleX(0.5);
         }
 
         .breadcrumb {

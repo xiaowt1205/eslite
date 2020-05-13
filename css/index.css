@@ -3223,6 +3223,9 @@ main .bg {
 
 #Vendor .content .vendor_area .swiper-slide a {
   margin: 0 auto;
+  background-position: 30%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #Vendor .content .vendor_area .arrow_button-prev {

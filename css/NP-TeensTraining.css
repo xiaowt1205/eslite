@@ -97,8 +97,8 @@
   max-height: 130px;
   padding: 45px 25px;
   border-radius: 8px;
-  background-color: #665252ed;
-  border: 1px solid #665252ed;
+  background-color: rgba(102, 82, 82, 0.929);
+  border: 1px solid rgba(102, 82, 82, 0.929);
   -webkit-transition: .3s;
   transition: .3s;
   font-size: 24px;

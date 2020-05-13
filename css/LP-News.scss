@@ -114,6 +114,7 @@
         min-height: 90px;
         border-bottom: 2px solid $fc-gray;
         display: flex;
+        padding:10px;
 
         @media (max-width:1024px) {
             display: block;
@@ -128,7 +129,6 @@
                 width: auto;
             }
             .date_area {
-                max-height: 90px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -186,7 +186,6 @@
     
             .theme {
                 width: 100%;
-                max-height: 90px;
                 padding: 0px 15px;
                 display: flex;
     
@@ -237,7 +236,6 @@
     
             .place {
                 min-width: 175px;
-                max-height: 90px;
                 display: flex;
                 align-items: center;
                 justify-content: center;

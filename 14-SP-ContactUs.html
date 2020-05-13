@@ -952,7 +952,7 @@
                                 <label for="connection_name">聯絡人名字</label>
                             </div>
                             <div class="col-xl-10 col-12 form_input">
-                                <input id="connection_name" type="text" name="name" placeholder="請輸入您的真實姓名">
+                                <input id="connection_name" type="text" name="name" placeholder="請輸入您的真實姓名" required>
                             </div>
                         </div>
                         <div class="row justify-content-end">
@@ -960,7 +960,7 @@
                                 <label for="connection_tel">聯絡電話</label>
                             </div>
                             <div class="col-xl-10 col-12 form_input">
-                                <input id="connection_tel" type="tel" name="tel" placeholder="請輸入您的電話號碼">
+                                <input id="connection_tel" type="tel" name="tel" placeholder="請輸入您的電話號碼" required>
                             </div>
                         </div>
                         <div class="row justify-content-end">
@@ -968,7 +968,7 @@
                                 <label for="connection_email">EMAIL</label>
                             </div>
                             <div class="col-xl-10 col-12 form_input">
-                                <input id="connection_email" type="email" name="email" placeholder="請輸入您的電子郵件">
+                                <input id="connection_email" type="email" name="email" placeholder="請輸入您的電子郵件" required>
                             </div>
                         </div>
                         <div class="row justify-content-end">
@@ -976,7 +976,7 @@
                                 <label for="connection_problem" name="connection_problem">問題類別</label>
                             </div>
                             <div class="col-xl-10 col-12 form_input">
-                                <select id="connection_problem">
+                                <select id="connection_problem" required>
                                     <option>一般問題</option>
                                     <option selected="true">我想要捐書</option>
                                     <option>成為捐輸書</option>
@@ -989,7 +989,7 @@
                             </div>
                             <div class="col-xl-10 col-12 form_input">
                                 <textarea id="connection_explanation textarea" name="textarea" rows="6"
-                                    placeholder="請輸入您的意見內容"></textarea>
+                                    placeholder="請輸入您的意見內容" required></textarea>
                             </div>
                         </div>
                         <div class="row justify-content-end">
@@ -1006,7 +1006,7 @@
                                         <i class="fas fa-sync-alt"></i>
                                     </div>
                                     <div class="col-xl-6 col-12 block">
-                                        <input id="connection_verification" type="text" name="name" placeholder="請填驗證碼">
+                                        <input id="connection_verification" type="text" name="name" placeholder="請填驗證碼" required>
                                     </div>
                                 </div>
                             </div>

@@ -1,6 +1,11 @@
 @import "./_variables.scss";
 @import "./_function.scss";
 
+ul,
+li{
+    list-style: unset !important;
+}
+
 // 03-30修正-頭
 .two {
     .text_area {

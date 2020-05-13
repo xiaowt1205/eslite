@@ -2569,6 +2569,9 @@ main {
 
                 a {
                     margin: 0 auto;
+                    background-position: 30%;
+                    background-repeat: no-repeat;
+                    background-size: contain;
                 }
             }
 
@@ -2651,54 +2654,6 @@ main {
                 // max-width: 100%;
                 max-height: 30px;
             }
-
-            #Vendor .content .vendor_area .swiper-slide-active~.swiper-slide:nth-child(4) {
-                // background-color: red;
-            }
-
-            // .swiper-line {
-            //     position: relative;
-            //     width: 100%;
-            //     height: 100%;
-            //     z-index: -1;
-            //     transform: translateY(-100%);
-
-            //     .line1 {
-            //         position: absolute;
-            //         z-index: 3;
-            //         width: 2px;
-            //         height: 100%;
-            //         background-color: $black;
-            //         margin-left: -15px;
-            //         top: 0;
-            //         left: 25%;
-            //         transform: translateX(50%);
-            //     }
-
-            //     .line2 {
-            //         position: absolute;
-            //         z-index: 3;
-            //         width: 2px;
-            //         height: 100%;
-            //         background-color: $black;
-            //         margin-left: -15px;
-            //         top: 0;
-            //         left: 50%;
-            //         transform: translateX(50%);
-            //     }
-
-            //     .line3 {
-            //         position: absolute;
-            //         z-index: 3;
-            //         width: 2px;
-            //         height: 100%;
-            //         background-color: $black;
-            //         margin-left: -15px;
-            //         top: 0;
-            //         left: 75%;
-            //         transform: translateX(50%);
-            //     }
-            // }
         }
 
         .vendor_area-mob {
