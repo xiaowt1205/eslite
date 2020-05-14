@@ -2516,9 +2516,13 @@ main {
 
                 a {
                     margin: 0 auto;
+
+                    // 05-14 修改 開始
                     background-position: 30%;
                     background-repeat: no-repeat;
                     background-size: contain;
+                    // 05-14 修改 結束
+
                 }
             }
 
@@ -2617,21 +2621,18 @@ main {
             .swiper-container {
                 margin-bottom: 20px;
 
+                // 05-14 修改 開始
                 .swiper-wrapper{
                     .swiper-slide{
                         a{
                             display: block;
                             width: 100%;
 
-                            // 05-14 修改 開始
-
                             //解法1
                             height: 30px;
 
                             //解法2
-                            //height: 50px;
-
-                            // 05-14 修改 結束
+                            // height: 50px;
 
                             background-size: contain;
                             background-position: center;
@@ -2639,6 +2640,7 @@ main {
                         }
                     }
                 }
+                 // 05-14 修改 結束
             }
 
             .arrow_button-prev {
