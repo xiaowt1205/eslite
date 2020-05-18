@@ -889,8 +889,9 @@ header {
 }
 
 main {
-    // 05-14 修改
+    // 05-14 修改 開始
     overflow: hidden;
+    // 05-14 修改 結束
     position: relative;
 
     .bg {
@@ -1038,6 +1039,7 @@ main {
                     }
                 }
 
+                // 05-14 修改 開始
                 .year_books {
                     background-color: $bc-brown;
                     color: $bc-white;
@@ -1046,6 +1048,7 @@ main {
                         border: 1px solid $bc-brown;
                     }
                 }
+                // 05-14 修改 結束
 
                 .icon {
                     margin-left: auto;
@@ -2321,6 +2324,7 @@ main {
                 p {
                     margin: 0px;
                     font-size: $fs-18;
+                    
 
                     @media screen and (max-width:576px) {
                         font-size: $fs-12;
@@ -2331,6 +2335,11 @@ main {
                         letter-spacing: 2px;
                         border-left: 1px solid $br-gray;
                         border-right: 1px solid $br-gray;
+
+                        // 05-14修改 - 開始
+                        min-width: 190px;
+                        text-align: center;
+                        // 05-14修改 - 結束
 
                         @media screen and (max-width:576px) {
                             padding: 0px 10px;
@@ -2485,34 +2494,6 @@ main {
                     width: 100%;
                     height: 30px;
                 }
-
-                & :nth-child(1) {
-                    a {
-                        background-image: url(../img/icon/eslite-LOGO.png);
-                    }
-                }
-
-                & :nth-child(2) {
-                    a {
-                        background-image: url(../img/icon/eslite-FoundationforClrureandArts.png);
-                    }
-                }
-
-                & :nth-child(3) {
-                    a {
-                        background-image: url(../img/icon/eslite-FoundationforClrureandArts.png);
-                    }
-                }
-
-                & :nth-child(4) {
-                    a {
-                        background-image: url(../img/icon/eslite-MEET.png);
-                    }
-                }
-
-                & :nth-child(5) {}
-
-                & :nth-child(6) {}
             }
 
             .swiper-slide {
@@ -2535,9 +2516,13 @@ main {
 
                 a {
                     margin: 0 auto;
+
+                    // 05-14 修改 開始
                     background-position: 30%;
                     background-repeat: no-repeat;
                     background-size: contain;
+                    // 05-14 修改 結束
+
                 }
             }
 
@@ -2635,6 +2620,27 @@ main {
 
             .swiper-container {
                 margin-bottom: 20px;
+
+                // 05-14 修改 開始
+                .swiper-wrapper{
+                    .swiper-slide{
+                        a{
+                            display: block;
+                            width: 100%;
+
+                            //解法1
+                            height: 30px;
+
+                            //解法2
+                            // height: 50px;
+
+                            background-size: contain;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                }
+                 // 05-14 修改 結束
             }
 
             .arrow_button-prev {
@@ -2702,10 +2708,6 @@ main {
                 @media screen and (max-width:1200px) {
                     margin: auto;
                 }
-            }
-
-            img {
-                width: 100%;
             }
         }
     }
