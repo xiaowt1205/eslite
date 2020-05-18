@@ -723,13 +723,6 @@ footer .footer_area {
 
 @media screen and (max-width: 576px) {
   footer .footer_area {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     max-width: 240px;
   }
 }
@@ -774,12 +767,6 @@ footer .footer_area p {
 
 footer .footer_area .logo_area .logo img {
   max-width: 270px;
-}
-
-@media screen and (max-width: 576px) {
-  footer .footer_area .logo_area .logo img {
-    max-width: 130px;
-  }
 }
 
 footer .footer_area .info_area {
