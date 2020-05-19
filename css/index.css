@@ -675,6 +675,12 @@ header #headline .headline_area .swiper_block .Menu_list {
   }
 }
 
+@media screen and (max-width: 768px) {
+  header #headline .headline_area .swiper_block .Menu_list {
+    position: static;
+  }
+}
+
 @media (min-width: 992px) {
   header #headline .headline_area .swiper_block .Menu_list {
     margin-top: 35px;
@@ -729,15 +735,10 @@ header #headline .headline_area .swiper_block .Menu_list .swiper-group {
 
 @media screen and (max-width: 768px) {
   header #headline .headline_area .swiper_block .Menu_list .swiper-group {
-    top: unset;
+    top: auto;
     bottom: 0px;
     margin-bottom: 0px;
     height: 30px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  header #headline .headline_area .swiper_block .Menu_list .swiper-group {
     width: 100%;
   }
 }
@@ -747,6 +748,9 @@ header #headline .headline_area .swiper_block .Menu_list .swiper-group {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
@@ -1447,7 +1451,7 @@ main .bg {
   #Statistics .container_1600 .statistics_area .title_region .icon {
     padding: 20px 0px 0px;
     margin-bottom: 40px;
-    margin-left: unset;
+    margin-left: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2391,7 +2395,7 @@ main .bg {
 
 @media screen and (max-width: 992px) {
   #Video .player {
-    margin-bottom: unset;
+    margin-bottom: 0;
   }
 }
 
@@ -2543,11 +2547,11 @@ main .bg {
 
 @media screen and (max-width: 576px) {
   #Video .player .player_content {
-    position: relative;
     padding: 40px 0px;
-    left: unset;
-    -webkit-transform: unset;
-            transform: unset;
+    position: static;
+    left: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 
@@ -3031,7 +3035,7 @@ main .bg {
   #News .container_1600 .content_text .block p.text {
     margin-top: 15px;
     width: 100%;
-    padding-left: unset;
+    padding-left: 0;
   }
 }
 

@@ -442,7 +442,11 @@ header {
                         order: 1;
                     }
 
-                    @media screen and (max-width:768px) {}
+                    @media screen and (max-width:768px) {
+                        // 05-19修改  開始
+                        position: static;
+                        // 05-19修改  結束
+                    }
 
                     @media(min-width:992px) {
                         margin-top: 35px;
@@ -480,19 +484,25 @@ header {
                         }
 
                         @media screen and (max-width:768px) {
-                            top: unset;
+                            top: auto;
                             bottom: 0px;
                             margin-bottom: 0px;
                             height: 30px;
-                        }
 
-                        @media screen and (max-width:768px) {
+                            // 05-19修改  開始
                             width: 100%;
+                            // 05-19修改  結束
+
+
                         }
 
                         .swiper-pagination {
                             @media screen and (max-width:768px) {
                                 justify-content: center;
+                                // 05-19修改  開始
+                                left: 50%;
+                                transform: translateX(-50%);
+                                // 05-19修改  結束
                             }
 
                             span {
@@ -1059,7 +1069,7 @@ main {
                     @media screen and (max-width:1200px) {
                         padding: 20px 0px 0px;
                         margin-bottom: 40px;
-                        margin-left: unset;
+                        margin-left: 0;
                         align-items: center;
                     }
 
@@ -1823,7 +1833,7 @@ main {
         }
 
         @media screen and (max-width:992px) {
-            margin-bottom: unset;
+            margin-bottom: 0;
         }
 
         .play_img {
@@ -1954,10 +1964,14 @@ main {
             }
 
             @media screen and (max-width:576px) {
-                position: relative;
                 padding: 40px 0px;
-                left: unset;
-                transform: unset;
+
+                //05-19調整 開始
+                position: static;
+                left: 0;
+                transform: translate(0,0);
+                //05-19調整 結束
+
             }
 
             .text {
@@ -2371,7 +2385,7 @@ main {
                         @media screen and (max-width:768px) {
                             margin-top: 15px;
                             width: 100%;
-                            padding-left: unset;
+                            padding-left: 0;
                         }
 
                         @media screen and (max-width:576px) {
