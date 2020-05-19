@@ -501,7 +501,7 @@
 
 @media (max-width: 1024px) {
   .news_list .news .loadingarea {
-    max-width: unset;
+    max-width: 100%;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-pack: start;
@@ -552,12 +552,6 @@
   text-align: center;
   letter-spacing: 0;
   margin: 0px 5px 5px;
-}
-
-@media (max-width: 1024px) {
-  .news_list .news .loadingarea .loadingPoint {
-    margin: 0px 5px;
-  }
 }
 
 .news_list .news .loadingarea .loadingPoint a {

@@ -86,13 +86,18 @@
                 align-items: center;
                 line-height: 2;
                 letter-spacing: 2px;
+                
 
 
                 .fa-chevron-up {
                     transition: .5s;
                     margin-left: 20px;
                 }
-
+                // 0519 修正開始
+                span{
+                    width: 100%;
+                }
+                // 0519 修正結束
                 @media screen and (max-width:576px) {
                     flex-direction: column;
 

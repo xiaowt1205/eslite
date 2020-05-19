@@ -551,9 +551,9 @@ main {
 
 @media (max-width: 576px) {
   main {
-    margin-top: unset;
+    margin-top: 0px;
     padding: 20px 15px 115px;
-    min-height: calc(100vh - 452px);
+    min-height: 100vh;
   }
 }
 
@@ -680,21 +680,8 @@ main.container {
           flex-direction: column;
 }
 
-.insidePageTitle .breadcrumbArea::after {
-  content: '';
-  height: 300%;
-  width: 1.5px;
-  background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  bottom: 5px;
-  left: calc(50% - 8px);
-}
-
 .insidePageTitle .breadcrumbArea .breadcrumb {
-  background: unset;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  background-color: transparent;
   color: #000000;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
@@ -704,6 +691,17 @@ main.container {
   margin: 0;
   padding: 0px 15px;
   font-weight: 800;
+  position: relative;
+}
+
+.insidePageTitle .breadcrumbArea .breadcrumb::after {
+  content: "";
+  height: 500%;
+  width: 1.5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 5px;
+  right: 0;
 }
 
 .insidePageTitle .breadcrumbArea .breadcrumb .breadcrumb-item:nth-last-child(1) {
@@ -814,7 +812,7 @@ main.container {
 
 .phoneStyle {
   width: 100%;
-  background: unset;
+  background-color: transparent;
   font-size: 14px;
   text-decoration: unset;
   padding: 0px;
