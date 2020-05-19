@@ -208,7 +208,6 @@ header #topline nav > ul {
 }
 
 header #topline nav > ul > li {
-  position: relative;
   z-index: 99;
   text-align: center;
   display: inline-block;
@@ -564,7 +563,9 @@ main.container {
 }
 
 .imgSize {
-  width: 81px;
+  width: 100%;
+  min-width: 81px;
+  max-width: 81px;
   margin: 0px 35px 0 37px;
 }
 

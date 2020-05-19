@@ -81,9 +81,10 @@ header {
                 }
 
                 &>li {
-                    position: relative;
+                    // 0519 修改開始
                     z-index: 99;
 
+                    // 0519 修改結束
                     &>ul {
                         background-color: $bc-white;
                         width: 240px;
@@ -375,9 +376,12 @@ main {
 }
 
 .imgSize {
-    width: 81px;
+    // 0519 修改開始
+    width: 100%;
+    min-width: 81px;
+    max-width: 81px;
     margin: 0px 35px 0 37px;
-
+    // 0519 修改結束
     @media (max-width:1200px) {
         margin: 0px 15px;
     }
@@ -604,6 +608,7 @@ main {
 
 .Page_area {
     position: absolute;
+
     .Page-BG {
         position: fixed;
         top: 58%;
