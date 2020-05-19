@@ -196,6 +196,10 @@
   margin-left: 20px;
 }
 
+.question .QA-tab .QA .query span {
+  width: 100%;
+}
+
 @media screen and (max-width: 576px) {
   .question .QA-tab .QA .query {
     -webkit-box-orient: vertical;

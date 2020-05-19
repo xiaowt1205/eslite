@@ -362,12 +362,13 @@ main {
     @media (max-width:1024px) {
         min-height: calc(100vh - 294px);
     }
-
+    // 0519 修改開始
     @media (max-width:576px) {
-        margin-top: unset;
+        margin-top: 0px;
         padding: 20px 15px 115px;
-        min-height: calc(100vh - 452px);
+        min-height: 100vh;
     }
+    // 0519 修改結束
 
     &.container {
         padding-left: 15px;
@@ -381,6 +382,7 @@ main {
     min-width: 81px;
     max-width: 81px;
     margin: 0px 35px 0 37px;
+
     // 0519 修改結束
     @media (max-width:1200px) {
         margin: 0px 15px;
@@ -451,20 +453,13 @@ main {
         position: relative;
         display: flex;
         flex-direction: column;
-
-        &::after {
-            content: '';
-            height: 300%;
-            width: 1.5px;
-            background-color: rgba(0, 0, 0, 0.7);
-            position: absolute;
-            bottom: 5px;
-            left: calc(50% - 8px);
-        }
+        // 0519-修改開始
+        // 移除after
+        // 0519-修改結束
 
         .breadcrumb {
-            background: unset;
-            display: inline-flex;
+            // 0519-修改開始
+            background-color: transparent;
             color: $fc-black;
             writing-mode: vertical-lr;
             font-size: $fs-18;
@@ -472,8 +467,18 @@ main {
             margin: 0;
             padding: 0px 15px;
             font-weight: 800;
+            position: relative;
 
-
+            &::after {
+                content: "";
+                height: 500%;
+                width: 1.5px;
+                background-color: rgba(0, 0, 0, 0.7);
+                position: absolute;
+                bottom: 5px;
+                right: 0;
+            }
+            // 0519-修改結束
             & .breadcrumb-item:nth-last-child(1) {
                 position: relative;
             }
@@ -569,7 +574,9 @@ main {
 
 .phoneStyle {
     width: 100%;
-    background: unset;
+    // 0519-修改開始
+    background-color: transparent;
+    // 0519-修改結束
     font-size: $fs-14;
     text-decoration: unset;
     padding: 0px;

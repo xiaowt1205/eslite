@@ -19,7 +19,7 @@
 
     a {
         margin: 0px 20px 17px 0px;
-        font-weight:$fw-700 ;
+        font-weight: $fw-700;
 
         &:nth-last-child(1) {
             margin-bottom: 30px;
@@ -114,28 +114,30 @@
         min-height: 90px;
         border-bottom: 2px solid $fc-gray;
         display: flex;
-        padding:10px;
+        padding: 10px;
 
         @media (max-width:1024px) {
             display: block;
             padding: 25px 0px;
         }
 
-        a{
+        a {
             width: 100%;
             display: flex;
+
             @media (max-width:1024px) {
                 display: block;
                 width: auto;
             }
+
             .date_area {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 letter-spacing: 2px;
                 color: $fc-gray;
-    
-    
+
+
                 @media (max-width:1024px) {
                     width: unset;
                     color: $fc-666666-gray;
@@ -144,11 +146,11 @@
                     padding: 0px 0px 15px;
                     justify-content: flex-start;
                 }
-    
+
                 @media (max-width:768px) {
                     font-size: $fs-14;
                 }
-    
+
                 .date {
                     padding-right: 30px;
                     min-width: 135px;
@@ -157,43 +159,43 @@
                         padding-right: 00px;
                     }
                 }
-    
+
                 .title {
                     font-size: $fs-12;
                     color: $fc-666666-gray;
                     font-weight: bold;
                     letter-spacing: 4px;
-    
+
                     border-left: 1px solid $fc-666666-gray;
                     border-right: 1px solid $fc-666666-gray;
-    
+
                     padding: 0 15px;
                     margin-left: 15px;
                     display: none;
-    
+
                     @media (max-width:1024px) {
                         font-size: $fs-16;
                         margin-left: 18px;
                         display: block;
                     }
-    
+
                     @media (max-width:768px) {
                         font-size: $fs-14;
-                        
+
                     }
                 }
             }
-    
+
             .theme {
                 width: 100%;
                 padding: 0px 15px;
                 display: flex;
-    
+
                 align-items: center;
                 justify-content: center;
                 text-align: center;
                 position: relative;
-    
+
                 &::before {
                     content: '';
                     height: 20px;
@@ -203,7 +205,7 @@
                     transform: translateY(-50%);
                     border: 1px solid $fc-gray;
                 }
-    
+
                 &::after {
                     content: '';
                     height: 20px;
@@ -213,7 +215,7 @@
                     transform: translateY(-50%);
                     border: 1px solid $fc-gray;
                 }
-    
+
                 @media (max-width: 1024px) {
                     font-size: $fs-16;
                     padding-bottom: 15px;
@@ -222,18 +224,18 @@
                     display: block;
                     letter-spacing: 2px;
                     margin-bottom: 15px;
-    
+
                     &::before,
                     &::after {
                         border: none;
                     }
                 }
-    
+
                 @media (max-width:768px) {
                     font-size: $fs-14;
                 }
             }
-    
+
             .place {
                 min-width: 175px;
                 display: flex;
@@ -241,7 +243,7 @@
                 justify-content: center;
                 text-align: center;
                 position: relative;
-    
+
                 &::after {
                     content: '';
                     height: 20px;
@@ -251,13 +253,13 @@
                     top: 50%;
                     transform: translateY(-50%);
                 }
-    
+
                 @media (max-width:1400px) {
                     min-width: 100px;
                     color: #666666;
                 }
-    
-                @media (max-width:1024px){
+
+                @media (max-width:1024px) {
                     min-width: unset;
                     height: 22px;
                     text-align: left;
@@ -265,9 +267,9 @@
                     margin-bottom: 15px;
                     font-size: $fs-12;
                     color: $fc-666666-gray;
-    
-                    &::before{
-                        content:'地點';
+
+                    &::before {
+                        content: '地點';
                         height: 100%;
                         width: 40px;
                         font-size: $fs-12;
@@ -278,13 +280,13 @@
                         border-right: solid 2px $fc-666666-gray;
                         margin-right: 10px;
                     }
-    
+
                     &::after {
                         content: '';
                         height: 20px;
                         border: none;
                     }
-                }     
+                }
             }
         }
 
@@ -329,7 +331,9 @@
             }
 
             @media (max-width:1024px) {
-                max-width: unset;
+                // 0520 修正開始
+                max-width: 100%;
+                // 0520 修正結束
                 flex-wrap: nowrap;
                 justify-content: flex-start;
                 margin-left: 0;
@@ -362,10 +366,9 @@
                 @include text_style($fs-12, unset, center, 0);
                 margin: 0px 5px 5px;
 
-                @media (max-width:1024px) {
-                    margin: 0px 5px;
-                }
-
+                // 0520 修正開始
+                //移除 @media (max-width:1024px) 
+                // 0520 修正開始
                 a {
                     width: 40px;
                     height: 30px;
