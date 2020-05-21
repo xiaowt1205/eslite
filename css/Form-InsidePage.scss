@@ -162,7 +162,7 @@
                         justify-content: space-around;
                         padding: 15px 0;
 
-                        &::after{
+                        &::after {
                             content: '';
                             height: 20px;
                             border: 1px solid $fc-gray;
@@ -181,8 +181,8 @@
                         .start-date {
                             font-size: $fs-12;
 
-                            &::after{
-                                content:'起'
+                            &::after {
+                                content: '起'
                             }
 
                             @media (max-width:1024px) {
@@ -193,19 +193,21 @@
                         .end-date {
                             font-size: $fs-12;
 
-                            &::after{
-                                content:'止'
+                            &::after {
+                                content: '止'
                             }
                         }
 
-                        span{
+                        span {
+
                             &:nth-child(2),
-                            &:nth-child(3){
+                            &:nth-child(3) {
                                 color: $fc-gray;
                             }
                         }
+
                         //05-21新增 結束
-                        
+
                         @media (max-width:1024px) {
                             order: 3;
                             margin-bottom: 10px;
@@ -214,7 +216,7 @@
                             //05-21新增 開始
                             flex-direction: row;
                             justify-content: flex-start;
-                            padding:0;
+                            padding: 0;
                             //05-21新增 結束
                         }
                     }
@@ -231,6 +233,7 @@
                             top: 50%;
                             transform: translateY(-50%);
                         }
+
                         //05-21新增 結束
 
                         @media (max-width:1024px) {
@@ -380,11 +383,13 @@
                 box-shadow: none;
                 transition: .3s;
                 margin-left: auto;
+
                 &:hover {
                     color: $white;
                     background-color: $brown;
                 }
             }
+
             // 05-21修改 結束
 
         }
@@ -808,6 +813,7 @@
                 width: calc(100% + 35px);
                 margin: 0px -20px;
             }
+
             .news {
                 width: 100%;
                 min-height: 90px;
@@ -887,7 +893,7 @@
                         justify-content: space-around;
                         padding: 15px 0;
 
-                        &::after{
+                        &::after {
                             content: '';
                             height: 20px;
                             border: 1px solid $fc-gray;
@@ -906,8 +912,8 @@
                         .start-date {
                             font-size: $fs-12;
 
-                            &::after{
-                                content:'起'
+                            &::after {
+                                content: '起'
                             }
 
                             @media (max-width:1024px) {
@@ -918,20 +924,21 @@
                         .end-date {
                             font-size: $fs-12;
 
-                            &::after{
-                                content:'止'
+                            &::after {
+                                content: '止'
                             }
                         }
 
-                        span{
+                        span {
+
                             &:nth-child(2),
-                            &:nth-child(3){
+                            &:nth-child(3) {
                                 color: $fc-gray;
                             }
                         }
-                        
+
                         //05-21新增 結束
-                        
+
                         @media (max-width:1024px) {
                             order: 3;
                             margin-bottom: 10px;
@@ -940,7 +947,7 @@
                             //05-21新增 開始
                             flex-direction: row;
                             justify-content: flex-start;
-                            padding:0;
+                            padding: 0;
                             //05-21新增 結束
                         }
                     }
@@ -957,6 +964,7 @@
                             top: 50%;
                             transform: translateY(-50%);
                         }
+
                         //05-21新增 結束
 
                         @media (max-width:1024px) {
@@ -1059,9 +1067,10 @@
     padding: 0px;
     margin-bottom: 5px;
 
-    ol{
+    ol {
         max-width: 830px;
     }
+
     .name {
         font-size: $fs-22;
         letter-spacing: 2px;
@@ -1226,3 +1235,93 @@
     }
 
 }
+
+// 05-21 修改
+.prompt {
+    .name {
+
+        label,
+        div {
+            color: $red;
+
+            &::before {
+                background-color: $red;
+            }
+        }
+
+        .title {
+            .icon {
+                background-color: $red;
+            }
+
+            li,
+            .file {
+                color: $red;
+            }
+        }
+
+        div {
+            color: $red !important;
+
+            &::before {
+                background-color: $red !important;
+            }
+        }
+
+    }
+
+
+    .form_input {
+        margin-bottom: 50px;
+
+        div {
+            position: relative;
+            color: $fc-red;
+
+            &.Inquire {
+                display: flex;
+                justify-content: space-between;
+
+                &::before {
+                    content: '*貴單位於三個月內曾申請書籍且未結案。';
+                    height: 100%;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    transform: translateY(100%);
+                    left: 0;
+                    z-index: 5;
+                    color: $red;
+                    letter-spacing: 5px;
+                }
+            }
+        }
+
+        input {
+            &.error {
+                background-color: $pure-gray;
+                color: $white;
+            }
+        }
+
+        label,textarea,
+        input,
+        select,
+        .fileName {
+            border: 2px solid $red !important;
+            color: $fc-red!important;
+        }
+
+        .prompt_text {
+            font-size: $fs-18;
+            color: $fc-red;
+            letter-spacing: 3px;
+            position: absolute;
+            bottom: -5px;
+            transform: translateY(100%);
+            margin-left: 20px;
+        }
+    }
+}
+
+// 05-21 修改

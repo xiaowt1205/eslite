@@ -4,6 +4,12 @@ main.container {
   overflow: hidden;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2474,42 +2480,43 @@ main.container {
   }
 }
 
-.prompt.name div {
+.prompt .name label,
+.prompt .name div {
   color: #C5362D;
 }
 
-.prompt.name div::before {
+.prompt .name label::before,
+.prompt .name div::before {
   background-color: #C5362D;
 }
 
-.prompt.form_input div {
+.prompt .name .title .icon {
+  background-color: #C5362D;
+}
+
+.prompt .name .title li,
+.prompt .name .title .file {
+  color: #C5362D;
+}
+
+.prompt .name div {
+  color: #C5362D !important;
+}
+
+.prompt .name div::before {
+  background-color: #C5362D !important;
+}
+
+.prompt .form_input {
+  margin-bottom: 50px;
+}
+
+.prompt .form_input div {
   position: relative;
-}
-
-.prompt.form_input div.data_btn::before {
-  content: '*未滿20歲';
-  height: 100%;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  right: 0;
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-  z-index: 5;
-  color: #C5362D;
-  letter-spacing: 5px;
-}
-
-.prompt.form_input div input {
-  border: 2px solid #C5362D;
   color: #C5362D;
 }
 
-.prompt.form_input div.Inquire {
+.prompt .form_input div.Inquire {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2518,7 +2525,7 @@ main.container {
           justify-content: space-between;
 }
 
-.prompt.form_input div.Inquire::before {
+.prompt .form_input div.Inquire::before {
   content: '*貴單位於三個月內曾申請書籍且未結案。';
   height: 100%;
   position: absolute;
@@ -2536,9 +2543,28 @@ main.container {
   letter-spacing: 5px;
 }
 
-.prompt.form_input input.error {
+.prompt .form_input input.error {
   background-color: #4D4D4D;
   color: #FFFFFF;
+}
+
+.prompt .form_input textarea,
+.prompt .form_input input,
+.prompt .form_input select,
+.prompt .form_input .fileName {
+  border: 2px solid #C5362D !important;
+  color: #C5362D;
+}
+
+.prompt .form_input .prompt_text {
+  font-size: 18px;
+  color: #C5362D;
+  letter-spacing: 3px;
+  position: absolute;
+  bottom: -5px;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  margin-left: 20px;
 }
 
 .need div.two {

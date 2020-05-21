@@ -974,20 +974,31 @@
                                 <input type="email" name="email" placeholder="再次確認密碼">
                             </li>
                         </ul>
-                        <!-- 未滿20歲 -->
-                        <!-- <ul class="row justify-content-start prompt"> -->
-                        <ul class="row justify-content-start">
+
+
+                        <!-- 05-21 新增 開始 -->
+                        <!-- 在 ul 加上 .prompt 顯示下方提示文字 -->
+                        <!-- 在 .form_input 結尾前加上 <div class="prompt_text"> 文字內容 </div> -->
+                        <ul class="row justify-content-start prompt">
                             <li class="col-xl-2 col-12 name">
                                 <div>生日</div>
                             </li>
                             <li class="col-xl-9 col-12 form_input">
-                                <div class="w-100 position-relative dateInput">
+                                <div class="w-100 position-relative dateInput data_btn">
                                     <input type="text" id="datepicker" class="datepicker"
                                         placeholder="年 / 月 / 日 　ｅｘ﹒1 9 8 5 0 6 1 1">
                                     <i class="far fa-calendar-alt"></i>
                                 </div>
+                                <!-- 下方提示文字 -->
+                                <div class="prompt_text">
+                                    * 未滿20歲
+                                </div>
+                                <!-- 下方提示文字 -->
                             </li>
                         </ul>
+                        <!-- 05-21 新增 結束 -->
+
+
                         <ul class="row justify-content-start">
                             <li class="col-xl-2 col-12 name">
                                 <div>行動電話</div>
@@ -1158,7 +1169,7 @@
             <div></div>
         </div>
     </div>
-    
+
     <a href="#" class="go_to_top" id="BackTop">
         <img src="../img/icon/top.png" alt="">
     </a>

@@ -94,6 +94,7 @@
             @media (max-width:1200px) {
                 margin-bottom: 40px;
                 padding-left: 15px;
+
                 .block {
                     margin-bottom: 20px;
                 }
@@ -539,10 +540,104 @@
     }
 }
 
-.mask{
+.mask {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
 }
+
+// 05-21 修改
+
+.prompt {
+    .name {
+
+        label,
+        div {
+            color: $red;
+
+            &::before {
+                background-color: $red;
+            }
+        }
+
+        .title {
+            .icon {
+                background-color: $red;
+            }
+
+            li,
+            .file {
+                color: $red;
+            }
+        }
+
+        div {
+            color: $red !important;
+
+            &::before {
+                background-color: $red !important;
+            }
+        }
+
+    }
+
+
+    .form_input {
+        margin-bottom: 50px;
+
+        div {
+            position: relative;
+            color: $fc-red;
+
+            &.Inquire {
+                display: flex;
+                justify-content: space-between;
+
+                &::before {
+                    content: '*貴單位於三個月內曾申請書籍且未結案。';
+                    height: 100%;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    transform: translateY(100%);
+                    left: 0;
+                    z-index: 5;
+                    color: $red;
+                    letter-spacing: 5px;
+                }
+            }
+        }
+
+        input {
+            &.error {
+                background-color: $pure-gray;
+                color: $white;
+            }
+        }
+
+        label,
+        textarea,
+        input,
+        select,
+        .fileName {
+            border: 2px solid $red !important;
+            color: $fc-red;
+        }
+
+        .prompt_text {
+            font-size: $fs-18;
+            color: $fc-red;
+            letter-spacing: 3px;
+            position: absolute;
+            bottom: -5px;
+            transform: translateY(100%);
+            margin-left: 20px;
+        }
+    }
+
+
+}
+
+// 05-21 修改

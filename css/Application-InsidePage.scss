@@ -5,6 +5,15 @@ main.container {
     overflow: hidden;
 }
 
+// 05-21 修改
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+// 05-21 修改
+
 // 重複性高的
 .title {
     display: flex;
@@ -2239,7 +2248,9 @@ main.container {
 // 這別頁面修改
 
 .prompt {
-    &.name {
+    .name {
+
+        label,
         div {
             color: $red;
 
@@ -2247,32 +2258,34 @@ main.container {
                 background-color: $red;
             }
         }
-    }
 
-    &.form_input {
-        div {
-            position: relative;
-
-            &.data_btn {
-                &::before {
-                    content: '*未滿20歲';
-                    height: 100%;
-                    position: absolute;
-                    display: flex;
-                    align-items: center;
-                    right: 0;
-                    transform: translateX(-50px);
-                    z-index: 5;
-                    color: $red;
-                    letter-spacing: 5px;
-                }
+        .title {
+            .icon {
+                background-color: $red;
             }
 
-
-            input {
-                border: 2px solid $red;
+            li,
+            .file {
                 color: $red;
             }
+        }
+
+        div {
+            color: $red!important;
+            &::before {
+                background-color: $red!important;
+            }
+        }
+
+    }
+
+    // 05-21 修改
+    .form_input {
+        margin-bottom: 50px;
+
+        div {
+            position: relative;
+            color: $fc-red;
 
             &.Inquire {
                 display: flex;
@@ -2299,8 +2312,30 @@ main.container {
                 color: $white;
             }
         }
+
+        textarea,
+        input,
+        select,
+        .fileName {
+            border: 2px solid $red !important;
+            color: $fc-red;
+        }
+
+        .prompt_text {
+            font-size: $fs-18;
+            color: $fc-red;
+            letter-spacing: 3px;
+            position: absolute;
+            bottom: -5px;
+            transform: translateY(100%);
+            margin-left: 20px;
+        }
     }
+
+    // 05-21 修改
 }
+
+
 
 .need {
     div {
@@ -2415,39 +2450,41 @@ main.container {
                 right: 0px;
             }
         }
+
         @media(max-width: 576px) {
-            .step{
+            .step {
                 margin-right: 20px;
-                &:last-child{
+
+                &:last-child {
                     margin-right: 0;
                 }
             }
 
-            .arrow{
+            .arrow {
                 display: none;
                 margin: 0 20px 0 0;
             }
 
             &.step-1 {
-                .arrow{
-                    &:nth-child(2){
+                .arrow {
+                    &:nth-child(2) {
                         display: block;
                     }
                 }
             }
 
             &.step-2 {
-                .arrow{
-                    &:nth-child(4){
+                .arrow {
+                    &:nth-child(4) {
                         display: block;
                     }
                 }
             }
 
-            &.step-3, 
-            &.step-4{
-                .arrow{
-                    &:nth-child(6){
+            &.step-3,
+            &.step-4 {
+                .arrow {
+                    &:nth-child(6) {
                         display: block;
                     }
                 }
