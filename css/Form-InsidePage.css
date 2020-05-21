@@ -227,7 +227,6 @@
 }
 
 .from .activity .news_list .news .area.datearea .start-date {
-  color: #808080;
   font-size: 12px;
 }
 
@@ -242,12 +241,15 @@
 }
 
 .from .activity .news_list .news .area.datearea .end-date {
-  color: #808080;
   font-size: 12px;
 }
 
 .from .activity .news_list .news .area.datearea .end-date::after {
   content: '止';
+}
+
+.from .activity .news_list .news .area.datearea span:nth-child(2), .from .activity .news_list .news .area.datearea span:nth-child(3) {
+  color: #808080;
 }
 
 @media (max-width: 1024px) {
@@ -1100,7 +1102,6 @@
 }
 
 .Reply .activity .news_list .news .area.datearea .start-date {
-  color: #808080;
   font-size: 12px;
 }
 
@@ -1115,12 +1116,15 @@
 }
 
 .Reply .activity .news_list .news .area.datearea .end-date {
-  color: #808080;
   font-size: 12px;
 }
 
 .Reply .activity .news_list .news .area.datearea .end-date::after {
   content: '止';
+}
+
+.Reply .activity .news_list .news .area.datearea span:nth-child(2), .Reply .activity .news_list .news .area.datearea span:nth-child(3) {
+  color: #808080;
 }
 
 @media (max-width: 1024px) {

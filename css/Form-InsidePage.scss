@@ -179,7 +179,6 @@
                         }
 
                         .start-date {
-                            color: $fc-gray;
                             font-size: $fs-12;
 
                             &::after{
@@ -192,11 +191,17 @@
                         }
 
                         .end-date {
-                            color: $fc-gray;
                             font-size: $fs-12;
 
                             &::after{
                                 content:'止'
+                            }
+                        }
+
+                        span{
+                            &:nth-child(2),
+                            &:nth-child(3){
+                                color: $fc-gray;
                             }
                         }
                         //05-21新增 結束
@@ -899,7 +904,6 @@
                         }
 
                         .start-date {
-                            color: $fc-gray;
                             font-size: $fs-12;
 
                             &::after{
@@ -912,13 +916,20 @@
                         }
 
                         .end-date {
-                            color: $fc-gray;
                             font-size: $fs-12;
 
                             &::after{
                                 content:'止'
                             }
                         }
+
+                        span{
+                            &:nth-child(2),
+                            &:nth-child(3){
+                                color: $fc-gray;
+                            }
+                        }
+                        
                         //05-21新增 結束
                         
                         @media (max-width:1024px) {
@@ -1040,184 +1051,6 @@
                     }
                 }
             }
-
-            // .news {
-            //     width: 100%;
-            //     min-height: 90px;
-            //     border-bottom: 2px solid $fc-gray;
-            //     display: flex;
-
-            //     @media (max-width:1024px) {
-            //         flex-direction: column;
-            //         padding: 25px 20px;
-            //     }
-
-            //     .area {
-            //         position: relative;
-            //         display: flex;
-            //         align-items: center;
-            //         justify-content: center;
-            //         min-width: 130px;
-            //         text-align: center;
-
-            //         @media (max-width:1024px) {
-            //             justify-content: flex-start;
-            //         }
-
-            //         span:nth-child(1) {
-            //             display: none;
-
-            //             @media (max-width:1024px) {
-            //                 display: block;
-            //                 padding-right: 15px;
-            //                 position: relative;
-
-            //                 &::after {
-            //                     content: '';
-            //                     height: 20px;
-            //                     border: 1px solid $fc-gray;
-            //                     position: absolute;
-            //                     right: 0;
-            //                     top: 50%;
-            //                     transform: translateY(-50%);
-            //                 }
-            //             }
-            //         }
-
-            //         span:nth-child(2) {
-
-            //             &::after {
-            //                 content: '';
-            //                 height: 20px;
-            //                 border: 1px solid $fc-gray;
-            //                 position: absolute;
-            //                 right: 0;
-            //                 top: 50%;
-            //                 transform: translateY(-50%);
-            //             }
-
-            //             @media (max-width:1024px) {
-            //                 padding-left: 15px;
-
-            //                 &::after {
-            //                     content: '';
-            //                     height: 0px;
-            //                     border: 0px solid $fc-gray;
-            //                 }
-            //             }
-            //         }
-
-            //         &.activityarea {
-            //             padding: 0px 10px;
-            //             display: flex;
-            //             justify-content: center;
-            //             flex-grow: 1;
-            //             text-align: center;
-
-            //             @media (max-width:1024px) {
-            //                 justify-content: flex-start;
-
-            //                 span:nth-child(1) {
-            //                     display: none;
-            //                 }
-
-            //                 span:nth-child(2) {
-            //                     padding-left: 0px;
-            //                 }
-            //             }
-
-            //         }
-
-            //         &.datearea {
-            //             color: $fc-gray;
-
-            //             @media (max-width:1024px) {
-            //                 order: 3;
-            //                 margin-bottom: 10px;
-            //             }
-            //         }
-
-            //         &.classarea {
-            //             @media (max-width:1200px) {
-            //                 min-width: 100px;
-            //             }
-
-            //             @media (max-width:1024px) {
-            //                 order: 1;
-            //                 margin-bottom: 15px;
-
-            //                 span:nth-child(2) {
-            //                     padding: 0px 20px;
-            //                     border-left: 2px solid $fc-gray;
-            //                     border-right: 2px solid $fc-gray;
-            //                 }
-            //             }
-
-            //             span:nth-child(1) {
-            //                 @media (max-width:1024px) {
-            //                     display: none;
-            //                 }
-            //             }
-            //         }
-
-            //         &.activityarea {
-            //             padding: 0px 10px;
-
-            //             @media (max-width:1200px) {
-            //                 min-width: 130px;
-            //             }
-
-            //             @media (max-width:1024px) {
-            //                 margin-bottom: 20px;
-            //                 padding: 0px;
-            //                 order: 2;
-
-            //                 span:nth-child(2) {
-            //                     padding-left: 0px;
-            //                 }
-            //             }
-            //         }
-
-            //         &.takingarea {
-            //             @media (max-width:1200px) {
-            //                 min-width: 100px;
-            //             }
-
-            //             @media (max-width:1024px) {
-            //                 order: 4;
-            //                 margin-bottom: 10px;
-
-            //                 span {
-            //                     color: #666666;
-            //                 }
-            //             }
-            //         }
-
-            //         &.Ingarea {
-            //             color: #938075;
-
-            //             span:nth-child(2) {
-            //                 &::after {
-            //                     content: '';
-            //                     height: 0px;
-            //                     border: 0px solid $fc-gray;
-            //                 }
-            //             }
-
-            //             @media (max-width:1200px) {
-            //                 min-width: 100px;
-            //             }
-
-            //             @media (max-width:1024px) {
-            //                 order: 5;
-
-            //                 span:nth-child(1) {
-            //                     color: #666666;
-            //                 }
-            //             }
-            //         }
-            //     }
-            // }
         }
     }
 }
