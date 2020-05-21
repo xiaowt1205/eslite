@@ -209,6 +209,7 @@ header #topline nav > ul {
 
 header #topline nav > ul > li {
   z-index: 99;
+  position: relative;
   text-align: center;
   display: inline-block;
   border-left: 1px #808080 solid;

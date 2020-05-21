@@ -83,6 +83,7 @@ header {
                 &>li {
                     // 0519 修改開始
                     z-index: 99;
+                    position: relative;
 
                     // 0519 修改結束
                     &>ul {
