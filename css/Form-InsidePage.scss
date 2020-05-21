@@ -385,6 +385,17 @@
                     background-color: $brown;
                 }
             }
+
+            .logout{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                a{
+                    width: 100px;
+                    margin: 0 0 0 30px;
+                }
+            }
             // 05-21修改 結束
 
         }
