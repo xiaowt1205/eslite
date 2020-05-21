@@ -128,24 +128,8 @@
 
                     span:nth-child(2) {
 
-                        &::after {
-                            content: '';
-                            height: 20px;
-                            border: 1px solid $fc-gray;
-                            position: absolute;
-                            right: 0;
-                            top: 50%;
-                            transform: translateY(-50%);
-                        }
-
                         @media (max-width:1024px) {
                             padding-left: 15px;
-
-                            &::after {
-                                content: '';
-                                height: 0px;
-                                border: 0px solid $fc-gray;
-                            }
                         }
                     }
 
@@ -171,22 +155,79 @@
                     }
 
                     &.datearea {
-                        span:nth-child(2) {
+
+                        //05-21新增 開始
+
+                        flex-direction: column;
+                        justify-content: space-around;
+                        padding: 15px 0;
+
+                        &::after{
+                            content: '';
+                            height: 20px;
+                            border: 1px solid $fc-gray;
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+
+                            @media (max-width:1024px) {
+                                content: '';
+                                height: 0px;
+                                border: 0px solid $fc-gray;
+                            }
+                        }
+
+                        .start-date {
                             color: $fc-gray;
+                            font-size: $fs-12;
+
+                            &::after{
+                                content:'起'
+                            }
+
+                            @media (max-width:1024px) {
+                                margin-right: 15px;
+                            }
                         }
 
-                        @media (max-width:1200px) {
-                            min-width: 100px;
-                        }
+                        .end-date {
+                            color: $fc-gray;
+                            font-size: $fs-12;
 
+                            &::after{
+                                content:'止'
+                            }
+                        }
+                        //05-21新增 結束
+                        
                         @media (max-width:1024px) {
                             order: 3;
                             margin-bottom: 10px;
                             color: #666666;
+
+                            //05-21新增 開始
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            padding:0;
+                            //05-21新增 結束
                         }
                     }
 
                     &.classarea {
+
+                        //05-21新增 開始
+                        &::after {
+                            content: '';
+                            height: 20px;
+                            border: 1px solid $fc-gray;
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                        //05-21新增 結束
+
                         @media (max-width:1024px) {
                             order: 1;
                             margin-bottom: 15px;
@@ -318,7 +359,8 @@
         .quantity {
             margin-bottom: 30px;
 
-            button {
+            // 05-21修改 開始
+            a {
                 font-size: $fs-16;
                 font-weight: $fw-600;
                 display: flex;
@@ -338,6 +380,7 @@
                     background-color: $brown;
                 }
             }
+            // 05-21修改 結束
 
         }
     }
@@ -712,11 +755,6 @@
                 justify-content: center;
                 flex-grow: 1;
                 text-align: center;
-
-                // @media (max-width:1200px) {
-                //     flex-grow: unset;
-                //     min-width: 130px;
-                // }
             }
 
             .takingName {

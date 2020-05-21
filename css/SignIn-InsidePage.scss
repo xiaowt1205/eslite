@@ -182,7 +182,8 @@
             padding: 10px 15px;
         }
 
-        button {
+        // 05-21修改 開始
+        a {
             @include text_style($fs-16, $fw-700, center, 3px);
             @include font_hover($bc-brown, $fc-white);
             width: 200px;
@@ -232,6 +233,8 @@
                 //      }
             }
         }
+        // 05-21修改 結束
+
     }
 
 }
