@@ -801,14 +801,6 @@
                 background-color: #23181510;
             }
 
-            &>:nth-last-child(1) {
-                margin-bottom: 40px;
-
-                @media (max-width:1024px) {
-                    margin-bottom: 45px;
-                }
-            }
-
             @media (max-width:1024px) {
                 width: calc(100% + 35px);
                 margin: 0px -20px;
