@@ -1051,8 +1051,8 @@ footer .footer_area .icon_area .icon_block .icon-bg .mail-icon {
   z-index: 5;
   bottom: 30px;
   right: 30px;
-  -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
-  transition: background-color .3s, opacity .5s, visibility .5s;
+  -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
+  transition: background-color .3s, opacity .5s, visibility .5s;
   -webkit-transition-timing-function: linear;
           transition-timing-function: linear;
   opacity: 0;
@@ -1181,6 +1181,45 @@ footer .footer_area .icon_area .icon_block .icon-bg .mail-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.input_btn_style {
+  font-size: 16px;
+  font-weight: unset;
+  text-align: center;
+  letter-spacing: 3px;
+  max-width: 220px;
+  max-height: unset;
+  padding: 10px 25px;
+  border-radius: unset;
+  background-color: transparent;
+  border: 1px solid unset;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #231815;
+  width: 220px;
+  margin-right: 20px;
+  border: 1px solid #231815;
+  cursor: pointer;
+}
+
+.input_btn_style:hover {
+  background-color: #231815;
+}
+
+.input_btn_style:hover {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1400px) {
+  .input_btn_style {
+    width: 50%;
+    margin-right: 10px;
+  }
+  .input_btn_style:nth-last-child(1) {
+    margin-left: 10px;
+    margin-right: 0px;
+  }
 }
 
 @-webkit-keyframes menu-fadeIn {
