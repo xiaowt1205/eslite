@@ -183,6 +183,44 @@
   }
 }
 
+.Connection_area .Connection_form .form_btn input {
+  font-size: 16px;
+  font-weight: unset;
+  text-align: center;
+  letter-spacing: 3px;
+  max-width: 220px;
+  max-height: unset;
+  padding: 10px 25px;
+  border-radius: unset;
+  background-color: transparent;
+  border: 1px solid unset;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #231815;
+  width: 220px;
+  margin-right: 20px;
+  border: 1px solid #231815;
+}
+
+.Connection_area .Connection_form .form_btn input:hover {
+  background-color: #231815;
+}
+
+.Connection_area .Connection_form .form_btn input:hover {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1400px) {
+  .Connection_area .Connection_form .form_btn input {
+    width: 50%;
+    margin-right: 10px;
+  }
+  .Connection_area .Connection_form .form_btn input:nth-last-child(1) {
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+}
+
 .Connection_area .Connection_form textarea {
   width: 100%;
   padding: 10px 20px;
