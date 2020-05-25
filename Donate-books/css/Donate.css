@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
 .Smartcabinet ul.text {
   list-style-type: disc;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .Smartcabinet ul.text li {
