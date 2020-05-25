@@ -185,9 +185,28 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .Application_from .name {
-  font-size: 22px;
   letter-spacing: 2px;
   padding-bottom: 30px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.Application_from .name > div {
+  position: relative;
+  padding-left: 20px;
+  min-width: 150px;
+}
+
+.Application_from .name > div::before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 8px;
+  height: 17px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #231815;
 }
 
 .Application_from .name > label {
