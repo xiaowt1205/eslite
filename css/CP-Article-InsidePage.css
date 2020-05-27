@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
-ul,
-li {
-  list-style: unset !important;
+main ul,
+main li,
+main ol {
+  list-style: unset;
+  list-style-position: inside;
 }
 
 .two .text_area .picture {
