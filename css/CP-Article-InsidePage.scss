@@ -3,11 +3,18 @@
 
 //05-27調整 開始
 main{
+    ol,
     ul,
-    li,
-    ol{
-        list-style: unset;
+    li
+    {
+        list-style-type: unset;
         list-style-position: inside;
+    }
+
+    ol{
+        li{
+            list-style-type: decimal;
+        }
     }
 }
 //05-27調整 結束

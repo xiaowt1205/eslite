@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
+main ol,
 main ul,
-main li,
-main ol {
-  list-style: unset;
+main li {
+  list-style-type: unset;
   list-style-position: inside;
+}
+
+main ol li {
+  list-style-type: decimal;
 }
 
 .two .text_area .picture {
