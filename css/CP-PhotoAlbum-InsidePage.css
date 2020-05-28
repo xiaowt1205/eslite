@@ -73,9 +73,21 @@ main.container {
 .area_picture .picture_block .img {
   width: 100%;
   height: 125px;
-  max-height: 125px;
   background-size: cover;
   background-position: center;
+  display: block;
+  border: 1px solid rgba(102, 82, 82, 0.2);
+  position: relative;
+}
+
+.area_picture .picture_block .img img {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .area_picture .picture_block .modal {
@@ -422,5 +434,22 @@ main.container {
 
 .customization-swiper-bg .customization-swiper-content .swiper-content .block_swiper .gallery-thumbs {
   height: 100%;
+}
+
+.customization-swiper-bg .customization-swiper-content .swiper-content .swiper-slide div {
+  border: 1px solid rgba(102, 82, 82, 0.2);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.customization-swiper-bg .customization-swiper-content .swiper-content .swiper-slide div img {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=CP-PhotoAlbum-InsidePage.css.map */
