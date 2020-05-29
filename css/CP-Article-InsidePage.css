@@ -1,12 +1,28 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
-main ol,
-main ul,
-main li {
+.two ol,
+.two ul,
+.two li,
+.three ol,
+.three ul,
+.three li,
+.four ol,
+.four ul,
+.four li,
+.five ol,
+.five ul,
+.five li,
+.multiple-pic ol,
+.multiple-pic ul,
+.multiple-pic li {
   list-style-type: unset;
   list-style-position: inside;
 }
 
-main ol li {
+.two ol li,
+.three ol li,
+.four ol li,
+.five ol li,
+.multiple-pic ol li {
   list-style-type: decimal;
 }
 

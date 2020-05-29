@@ -1,8 +1,12 @@
 @import "./_variables.scss";
 @import "./_function.scss";
 
-//05-27調整 開始
-main{
+//05-29調整 開始
+.two,
+.three,
+.four,
+.five,
+.multiple-pic{
     ol,
     ul,
     li
@@ -17,7 +21,7 @@ main{
         }
     }
 }
-//05-27調整 結束
+//05-29調整 結束
 
 .two {
     .text_area {
