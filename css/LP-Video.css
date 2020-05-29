@@ -116,7 +116,7 @@
 
 .cardBox .photo {
   width: 100%;
-  height: 160px;
+  height: 200px;
   background-color: black;
   background-size: contain;
   background-position: center center;
@@ -127,8 +127,8 @@
 .cardBox .photo .mask {
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(transparent));
-  background-image: linear-gradient(top, #000000, transparent);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), transparent);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
