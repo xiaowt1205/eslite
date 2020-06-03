@@ -1679,7 +1679,7 @@ main .bg {
 }
 
 #Statistics .container_1600 .statistics_area .content .business_area .business_block .business_text span:nth-child(1) {
-  font-size: 45px;
+  font-size: 36px;
   font-weight: bold;
   padding-bottom: 13px;
   position: relative;
@@ -1695,19 +1695,26 @@ main .bg {
 
 @media screen and (max-width: 992px) {
   #Statistics .container_1600 .statistics_area .content .business_area .business_block .business_text span:nth-child(1) {
-    font-size: 48px;
+    font-size: 32px;
   }
 }
 
 @media screen and (max-width: 768px) {
   #Statistics .container_1600 .statistics_area .content .business_area .business_block .business_text span:nth-child(1) {
     font-size: 24px;
+    font-weight: 800;
   }
 }
 
 @media screen and (max-width: 576px) {
   #Statistics .container_1600 .statistics_area .content .business_area .business_block .business_text span:nth-child(1) {
-    font-size: 30px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #Statistics .container_1600 .statistics_area .content .business_area .business_block .business_text span:nth-child(1) {
+    font-size: 14px;
   }
 }
 
@@ -1761,7 +1768,7 @@ main .bg {
 @media screen and (max-width: 576px) {
   #Statistics .container_1600 .statistics_area .content .business_area .business_block .business_text span:nth-child(1)::after {
     right: -3px;
-    bottom: 10px;
+    bottom: 5px;
   }
 }
 

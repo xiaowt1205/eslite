@@ -1227,7 +1227,7 @@ main {
                             transform: translateY(17%);
 
                             & span:nth-child(1) {
-                                font-size: $fs-45;
+                                font-size: $fs-36;
                                 font-weight: $fw-bold;
                                 padding-bottom: 13px;
                                 position: relative;
@@ -1239,15 +1239,20 @@ main {
                                 }
 
                                 @media screen and (max-width:992px) {
-                                    font-size: $fs-48;
+                                    font-size: $fs-32;
                                 }
 
                                 @media screen and (max-width:768px) {
                                     font-size: $fs-24;
+                                    font-weight: 800;
                                 }
 
                                 @media screen and (max-width:576px) {
-                                    font-size: $fs-30;
+                                    font-size: $fs-20;
+                                }
+
+                                @media screen and (max-width:375px) {
+                                    font-size: $fs-14;
                                 }
 
                                 &::before {
@@ -1288,7 +1293,7 @@ main {
 
                                     @media screen and (max-width:576px) {
                                         right: -3px;
-                                        bottom: 10px;
+                                        bottom: 5px;
                                     }
                                 }
                             }
