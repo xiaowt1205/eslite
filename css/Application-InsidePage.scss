@@ -12,58 +12,42 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
-// 05-21 修改
+.name {
+    font-size: $fs-22;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
 
-.title {
-    display: flex;
-    margin-bottom: 45px;
-    flex-wrap: wrap;
+    &>label {
+        min-width: 150px;
+        letter-spacing: 4px;
+        padding: 0px 0px 0px 20px;
+        position: relative;
+        line-height: 24px;
+        font-size: $fs-18;
+        font-weight: $fw-700;
 
-    // align-items: center;
-    @media (max-width:768px) {
-        flex-direction: column;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 17px;
+            transform: translate(0%, 5px);
+            background-color: $bc-brown;
+        }
     }
 
-    li {
-        display: flex;
-        align-items: center;
+    .Note {
+        width: 100%;
+        font-size: $fs-14;
+        font-weight: $fw-700;
+        letter-spacing: 5px;
+        padding-left: 45px;
+        margin-top: 10px;
 
-
-        .icon {
-            height: 3px;
-            width: 24px;
-            background-color: $black;
-        }
-
-        &:nth-child(1) {
-            margin-right: 20px;
-
-            @media (max-width:768px) {
-                margin-bottom: 30px;
-            }
-        }
-
-        &:nth-child(2) {
-            font-size: $fs-22;
-            font-weight: $fw-700;
-            letter-spacing: 5px;
-
-            @media (max-width:768px) {
-                margin-bottom: 15px;
-            }
-        }
-
-        &.Note {
-            width: 100%;
-            font-size: $fs-14;
-            font-weight: $fw-700;
-            letter-spacing: 5px;
-            padding-left: 45px;
-            margin-top: 10px;
-
-            @media (max-width:768px) {
-                margin-bottom: 30px;
-            }
+        @media (max-width:768px) {
+            margin-bottom: 30px;
         }
     }
 }
@@ -137,7 +121,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .Application_from {
 
-   
+
     .name {
         letter-spacing: 2px;
         padding-bottom: 30px;
@@ -146,14 +130,14 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: $fs-18;
         font-weight: 700;
 
-        &>div{
+        &>div {
             position: relative;
             padding-left: 20px;
             min-width: 150px;
 
-            &::before{
+            &::before {
                 content: " ";
-    
+
                 position: absolute;
                 top: 50%;
                 left: 0;
@@ -164,6 +148,7 @@ input[type=number]::-webkit-outer-spin-button {
                 background-color: #231815;
             }
         }
+
         // 05-25修改 開始
 
         &>label {
@@ -789,56 +774,18 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .StudentReadme_from {
-    .title {
-        display: flex;
-        flex-wrap: nowrap;
-        margin-bottom: 25px;
+    .name {
+        &>label {
+            font-size: $fs-14;
+            font-weight: $fw-700;
+            letter-spacing: 5px;
+            text-align: justify;
+            padding: 0px 0px 0px 45px;
 
-        @media (max-width:768px) {
-            flex-direction: column;
-        }
-
-        li {
-            display: flex;
-            align-items: center;
-
-            .icon {
-                height: 3px;
+            &::before {
+                transform: translate(0%, 10px);
                 width: 24px;
-                background-color: $black;
-            }
-
-            &:nth-child(1) {
-                padding-top: 7px;
-                margin-right: 20px;
-                align-items: flex-start;
-
-                @media (max-width:768px) {
-                    margin-bottom: 30px;
-                }
-            }
-
-            &:nth-child(2) {
-                font-size: $fs-14;
-                font-weight: $fw-700;
-                letter-spacing: 5px;
-                text-align: justify;
-
-                @media (max-width:768px) {
-                    margin-bottom: 15px;
-                }
-            }
-
-            &.file {
-                display: flex;
-                align-items: flex-start;
-                flex-direction: column;
-
-                span {
-                    &:nth-child(2) {
-                        color: $fc-gray;
-                    }
-                }
+                height: 3px;
             }
         }
     }
@@ -2064,69 +2011,31 @@ input[type=number]::-webkit-outer-spin-button {
 
 // 06/03修改
 // 重複使用
-.name {
-    font-size: $fs-22;
-    letter-spacing: 2px;
-    padding-bottom: 30px;
 
-    &>label {
-        min-width: 150px;
-        letter-spacing: 4px;
-        padding: 0px 0px 0px 20px;
-        position: relative;
-        line-height: 24px;
-        font-size: $fs-18;
-        font-weight: $fw-700;
 
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 8px;
-            height: 17px;
-            transform: translate(0%, 5px);
-            background-color: $bc-brown;
-        }
-    }
-}
 // 06/03修改
 // 上傳檔案
 .file_area {
 
     .file_block {
-        ul {
+        &>ul {
             margin-bottom: 35px;
 
-            &.title {
-                margin-bottom: 0;
+            .name {
+                &>label {
+                    padding: 0px 0px 0px 45px;
+
+                    &::before {
+                        transform: translate(0%, 10px);
+                        width: 24px;
+                        height: 3px;
+                    }
+                }
             }
         }
 
         li {
-            font-size: $fs-14;
-            margin-bottom: 10px;
-
-            &:nth-child(2) {
-                font-size: $fs-16;
-            }
-
-            &:nth-child(n+3) {
-                width: 100%;
-            }
-
-            &.Note {
-                color: $fc-gray;
-                margin-top: 0px;
-                margin-bottom: 20px;
-
-                @media (max-width:576px) {
-                    padding: 0;
-                }
-            }
-
             &.files {
-
                 .fileName {
                     width: calc(100% - 210px);
                     height: 30px;
@@ -2176,11 +2085,10 @@ input[type=number]::-webkit-outer-spin-button {
                 }
             }
 
-            // 05-28調整 開始
-            &.lastFile{
+            &.lastFile {
                 display: none;
 
-                &.active{
+                &.active {
                     font-size: $fs-12;
                     font-weight: 700;
                     margin-top: 10px;
@@ -2193,7 +2101,8 @@ input[type=number]::-webkit-outer-spin-button {
                     cursor: default;
                     display: inline-block;
                 }
-                & .delete{
+
+                & .delete {
                     width: 16px;
                     height: 16px;
                     background-color: gray;
@@ -2207,26 +2116,20 @@ input[type=number]::-webkit-outer-spin-button {
                     position: absolute;
                     cursor: pointer;
 
-                    &:hover{
+                    &:hover {
                         background-color: black;
                     }
 
-                    &::after{
+                    &::after {
                         content: "✕";
                         color: white;
                         font-size: $fs-12;
                         position: absolute;
                         top: 50%;
                         left: 50%;
-                        transform: translate(-48%,-52%);
+                        transform: translate(-48%, -52%);
                     }
                 }
-            }
-            // 05-28調整 結束
-
-            &.icon {
-                width: 50px;
-                height: 8px;
             }
         }
     }
@@ -2266,30 +2169,20 @@ input[type=number]::-webkit-outer-spin-button {
 .prompt {
     .name {
 
-        label,
-        div {
-            color: $red;
-
-            &::before {
-                background-color: $red;
-            }
-        }
-
-        .title {
-            .icon {
-                background-color: $red;
-            }
-
-            li,
-            .file {
-                color: $red;
-            }
-        }
-
-        div {
+        &>label,
+        &>div {
             color: $red!important;
+
             &::before {
                 background-color: $red!important;
+            }
+        }
+
+        div {
+            color: $red !important;
+
+            &::before {
+                background-color: $red !important;
             }
         }
 
@@ -2350,8 +2243,6 @@ input[type=number]::-webkit-outer-spin-button {
 
     // 05-21 修改
 }
-
-
 
 .need {
     div {
