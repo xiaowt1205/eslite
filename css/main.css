@@ -397,6 +397,10 @@ nav .search_box.active .search i {
   background-color: #FFFFFF;
 }
 
+.menu a {
+  color: inherit;
+}
+
 .modal {
   background-color: rgba(35, 24, 21, 0.9);
 }
@@ -560,6 +564,10 @@ nav .search_box.active .search i {
   border: 1px white solid;
 }
 
+.modal a {
+  color: inherit;
+}
+
 .menu-btn a div {
   position: relative;
   width: 60px;
@@ -702,6 +710,10 @@ footer {
   width: 100%;
   padding: 50px 15px;
   background-color: #231815;
+}
+
+footer a {
+  color: inherit;
 }
 
 footer .footer_area {

@@ -297,6 +297,10 @@ nav{
             background-color: $fc-white;
         }
     }
+
+    a{
+        color: inherit;
+    }
 }
 
 .modal {
@@ -462,6 +466,10 @@ nav{
             }
         }
     }
+
+    a{
+        color: inherit;
+    }
 }
 
 .menu-btn {
@@ -593,6 +601,9 @@ footer {
     padding: 50px 15px;
     background-color: $main-color-dark;
 
+     a{
+        color: inherit;
+    }
 
     .footer_area {
         max-width: 1140px;
