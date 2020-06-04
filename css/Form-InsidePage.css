@@ -1272,7 +1272,7 @@
   padding-bottom: 30px;
 }
 
-.Sign_form .name > div {
+.Sign_form .name > label {
   min-width: 150px;
   letter-spacing: 4px;
   padding: 0px 22px 0px 20px;
@@ -1282,7 +1282,7 @@
   font-weight: 700;
 }
 
-.Sign_form .name > div::before {
+.Sign_form .name > label::before {
   content: '';
   position: absolute;
   top: 0;

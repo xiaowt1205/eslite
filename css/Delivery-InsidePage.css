@@ -83,7 +83,7 @@
   padding-bottom: 30px;
 }
 
-.Delivery .search .name > div {
+.Delivery .search .name > label {
   min-width: 150px;
   letter-spacing: 4px;
   padding: 0px 0px 0px 20px;
@@ -93,7 +93,7 @@
   font-weight: 700;
 }
 
-.Delivery .search .name > div::before {
+.Delivery .search .name > label::before {
   content: '';
   position: absolute;
   top: 0;

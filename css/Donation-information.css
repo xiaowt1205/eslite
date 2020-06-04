@@ -64,7 +64,7 @@
   padding-bottom: 30px;
 }
 
-.Donation-information .Donation_from .name > div {
+.Donation-information .Donation_from .name > label {
   min-width: 155px;
   letter-spacing: 4px;
   padding: 0px 0px 0px 20px;
@@ -81,7 +81,7 @@
   font-weight: 700;
 }
 
-.Donation-information .Donation_from .name > div::before {
+.Donation-information .Donation_from .name > label::before {
   content: '';
   position: absolute;
   top: 0;
@@ -93,7 +93,7 @@
   background-color: #231815;
 }
 
-.Donation-information .Donation_from .name > div span {
+.Donation-information .Donation_from .name > label span {
   min-width: 156px;
 }
 

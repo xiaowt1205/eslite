@@ -432,33 +432,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .StudentInformation_from {
 
-    .name {
-        font-size: $fs-22;
-        letter-spacing: 2px;
-        padding-bottom: 30px;
-
-        &>div {
-            min-width: 150px;
-            letter-spacing: 4px;
-            padding: 0px 0px 0px 20px;
-            position: relative;
-            line-height: 24px;
-            font-size: $fs-18;
-            font-weight: $fw-700;
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 8px;
-                height: 17px;
-                transform: translate(0%, 5px);
-                background-color: $bc-brown;
-            }
-        }
-    }
-
     .form_input {
         margin-bottom: 40px;
 
@@ -2089,6 +2062,35 @@ input[type=number]::-webkit-outer-spin-button {
 
 }
 
+// 06/03修改
+// 重複使用
+.name {
+    font-size: $fs-22;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+
+    &>label {
+        min-width: 150px;
+        letter-spacing: 4px;
+        padding: 0px 0px 0px 20px;
+        position: relative;
+        line-height: 24px;
+        font-size: $fs-18;
+        font-weight: $fw-700;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 17px;
+            transform: translate(0%, 5px);
+            background-color: $bc-brown;
+        }
+    }
+}
+// 06/03修改
 // 上傳檔案
 .file_area {
 
@@ -2260,7 +2262,6 @@ input[type=number]::-webkit-outer-spin-button {
         }
     }
 }
-
 
 .prompt {
     .name {

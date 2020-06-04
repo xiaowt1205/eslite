@@ -95,7 +95,7 @@
   }
 }
 
-.login .content .name > div {
+.login .content .name > label {
   letter-spacing: 4px;
   padding: 0px 0px 0px 20px;
   position: relative;
@@ -103,7 +103,7 @@
   font-weight: 900;
 }
 
-.login .content .name > div::before {
+.login .content .name > label::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -307,7 +307,7 @@
   padding-bottom: 0px;
 }
 
-.forget .content .name > div {
+.forget .content .name > label {
   letter-spacing: 4px;
   padding: 0px 0px 0px 20px;
   position: relative;
@@ -315,7 +315,7 @@
   font-weight: 900;
 }
 
-.forget .content .name > div::before {
+.forget .content .name > label::before {
   content: '';
   position: absolute;
   top: 50%;
