@@ -65,36 +65,6 @@
             border: 0px solid $black;
         }
 
-        .name {
-            font-size: $fs-18;
-            letter-spacing: 2px;
-            padding-bottom: 30px;
-
-            @media (max-width:768px) {
-                padding-bottom: 18px;
-            }
-
-            &>label {
-                // min-width: 150px;
-                letter-spacing: 4px;
-                padding: 0px 0px 0px 20px;
-                position: relative;
-                line-height: 24px;
-                font-weight: 900;
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    top: 50%;
-                    left: 0;
-                    width: 8px;
-                    height: 17px;
-                    transform: translate(0%, -50%);
-                    background-color: $bc-brown;
-                }
-            }
-        }
-
         .form_input {
 
             margin-bottom: 40px;
@@ -255,38 +225,6 @@
             border: 0px solid $black;
         }
 
-        .name {
-            font-size: $fs-18;
-            letter-spacing: 2px;
-            padding-bottom: 30px;
-
-            &:nth-last-child(1) {
-                padding-bottom: 0px;
-            }
-
-            &>label {
-                // min-width: 150px;
-                letter-spacing: 4px;
-                padding: 0px 0px 0px 20px;
-                position: relative;
-                line-height: 24px;
-                font-weight: 900;
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    top: 50%;
-                    left: 0;
-                    width: 8px;
-                    height: 17px;
-                    transform: translate(0%, -50%);
-                    background-color: $bc-brown;
-                }
-            }
-        }
-
-
-
         .form_input {
 
             margin-bottom: 40px;
@@ -348,95 +286,3 @@
         }
     }
 }
-
-// 05-21 修改
-.prompt {
-    .name {
-
-        label,
-        div {
-            color: $red;
-
-            &::before {
-                background-color: $red;
-            }
-        }
-
-        .title {
-            .icon {
-                background-color: $red;
-            }
-
-            li,
-            .file {
-                color: $red;
-            }
-        }
-
-        div {
-            color: $red !important;
-
-            &::before {
-                background-color: $red !important;
-            }
-        }
-
-    }
-
-
-    .form_input {
-        margin-bottom: 50px;
-
-        div {
-            position: relative;
-            color: $fc-red;
-
-            &.Inquire {
-                display: flex;
-                justify-content: space-between;
-
-                &::before {
-                    content: '*貴單位於三個月內曾申請書籍且未結案。';
-                    height: 100%;
-                    position: absolute;
-                    display: flex;
-                    align-items: center;
-                    transform: translateY(100%);
-                    left: 0;
-                    z-index: 5;
-                    color: $red;
-                    letter-spacing: 5px;
-                }
-            }
-        }
-
-        input {
-            &.error {
-                background-color: $pure-gray;
-                color: $white;
-            }
-        }
-
-        textarea,
-        input,
-        select,
-        .fileName {
-            border: 2px solid $red !important;
-            color: $fc-red;
-        }
-
-        .prompt_text {
-            font-size: $fs-18;
-            color: $fc-red;
-            letter-spacing: 3px;
-            position: absolute;
-            bottom: -5px;
-            transform: translateY(100%);
-            margin-left: 20px;
-        }
-    }
-
-
-}
-
-// 05-21 修改

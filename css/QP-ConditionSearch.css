@@ -23,33 +23,6 @@
   text-indent: 30px;
 }
 
-.Connection_area .Connection_form .name {
-  font-size: 18px;
-  letter-spacing: 2px;
-  padding-bottom: 30px;
-}
-
-.Connection_area .Connection_form .name > label {
-  min-width: 150px;
-  letter-spacing: 4px;
-  padding: 0px 0px 0px 20px;
-  position: relative;
-  line-height: 24px;
-  font-weight: 900;
-}
-
-.Connection_area .Connection_form .name > label::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 8px;
-  height: 17px;
-  -webkit-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
-  background-color: #231815;
-}
-
 .Connection_area .Connection_form .form_input {
   margin-bottom: 40px;
 }

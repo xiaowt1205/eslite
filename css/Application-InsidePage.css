@@ -10,49 +10,6 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-.name {
-  font-size: 22px;
-  letter-spacing: 2px;
-  padding-bottom: 30px;
-}
-
-.name > label {
-  min-width: 150px;
-  letter-spacing: 4px;
-  padding: 0px 0px 0px 20px;
-  position: relative;
-  line-height: 24px;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.name > label::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 8px;
-  height: 17px;
-  -webkit-transform: translate(0%, 5px);
-          transform: translate(0%, 5px);
-  background-color: #231815;
-}
-
-.name .Note {
-  width: 100%;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 5px;
-  padding-left: 45px;
-  margin-top: 10px;
-}
-
-@media (max-width: 768px) {
-  .name .Note {
-    margin-bottom: 30px;
-  }
-}
-
 @media (max-width: 1400px) {
   .block {
     max-width: 100%;
@@ -155,53 +112,6 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0 0 15px 0 !important;
     width: calc(50% - 7.5px);
   }
-}
-
-.Application_from .name {
-  letter-spacing: 2px;
-  padding-bottom: 30px;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.Application_from .name > div {
-  position: relative;
-  padding-left: 20px;
-  min-width: 150px;
-}
-
-.Application_from .name > div::before {
-  content: " ";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 8px;
-  height: 17px;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  background-color: #231815;
-}
-
-.Application_from .name > label {
-  min-width: 150px;
-  letter-spacing: 4px;
-  padding: 0px 0px 0px 20px;
-  position: relative;
-  line-height: 24px;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.Application_from .name > label::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 8px;
-  height: 17px;
-  -webkit-transform: translate(0%, 5px);
-          transform: translate(0%, 5px);
-  background-color: #231815;
 }
 
 .Application_from .form_input {
@@ -872,21 +782,6 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 
-.StudentReadme_from .name > label {
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 5px;
-  text-align: justify;
-  padding: 0px 0px 0px 45px;
-}
-
-.StudentReadme_from .name > label::before {
-  -webkit-transform: translate(0%, 10px);
-          transform: translate(0%, 10px);
-  width: 24px;
-  height: 3px;
-}
-
 .StudentReadme_from .form_input {
   margin-bottom: 45px;
 }
@@ -1059,48 +954,31 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 
-.newitem .title li .icon {
-  width: 50px;
-  height: 8px;
-}
-
-.newitem .teacher {
-  padding: 0px 15px;
-}
-
-.newitem .teacher .title {
-  margin: 0px -15px 45px;
-}
-
-.newitem .teacher .name {
-  font-size: 18px;
-  letter-spacing: 2px;
-  padding-bottom: 30px;
-}
-
-.newitem .teacher .name > div {
+.newitem .title {
+  margin-left: -15px;
+  min-width: 150px;
   letter-spacing: 4px;
-  padding: 0px 0px 0px 20px;
+  padding: 0px 0px 45px 45px;
   position: relative;
   line-height: 24px;
-  font-weight: 900;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  font-size: 18px;
+  font-weight: 700;
 }
 
-.newitem .teacher .name > div::before {
+.newitem .title::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 8px;
-  height: 17px;
+  width: 32px;
+  height: 8px;
+  -webkit-transform: translate(0%, 10px);
+          transform: translate(0%, 10px);
   background-color: #231815;
+}
+
+.newitem .teacher {
+  padding: 0px 15px;
 }
 
 .newitem .teacher .form_input {
@@ -1128,10 +1006,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .newitem .student {
   padding: 0px 15px;
-}
-
-.newitem .student .title {
-  margin: 20px -15px 30px;
 }
 
 @media (max-width: 768px) {
@@ -1168,32 +1042,6 @@ input[type=number]::-webkit-outer-spin-button {
   .newitem .content {
     padding: 15px;
   }
-}
-
-.newitem .content .name {
-  font-size: 18px;
-  letter-spacing: 2px;
-  padding-bottom: 30px;
-}
-
-.newitem .content .name > div {
-  letter-spacing: 4px;
-  padding: 0px 0px 0px 20px;
-  position: relative;
-  line-height: 24px;
-  font-weight: 900;
-}
-
-.newitem .content .name > div::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 8px;
-  height: 17px;
-  -webkit-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
-  background-color: #231815;
 }
 
 .newitem .content .add,
@@ -1319,48 +1167,6 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 40px;
     padding: 15px;
   }
-}
-
-.newelement .Experience_status .block .name {
-  font-size: 18px;
-  letter-spacing: 2px;
-  padding-bottom: 30px;
-}
-
-@media (max-width: 768px) {
-  .newelement .Experience_status .block .name {
-    padding-bottom: 18px;
-  }
-}
-
-.newelement .Experience_status .block .name > div {
-  letter-spacing: 4px;
-  padding: 0px 0px 0px 20px;
-  position: relative;
-  line-height: 24px;
-  font-weight: 900;
-}
-
-.newelement .Experience_status .block .name > div::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 8px;
-  height: 17px;
-  -webkit-transform: translate(0%, 5px);
-          transform: translate(0%, 5px);
-  background-color: #231815;
-}
-
-.newelement .Experience_status .block .name .two {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .newelement .Experience_status .block .form_input {
@@ -1572,46 +1378,6 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 
-.books_form .name {
-  font-size: 22px;
-  letter-spacing: 2px;
-  padding-bottom: 30px;
-}
-
-@media (min-width: 1200px) {
-  .books_form .name {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 25%;
-            flex: 0 0 25%;
-  }
-}
-
-.books_form .name > label {
-  min-width: 150px;
-  letter-spacing: 4px;
-  padding: 0px 0px 0px 20px;
-  position: relative;
-  line-height: 24px;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.books_form .name > label::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 8px;
-  height: 17px;
-  -webkit-transform: translate(0%, 5px);
-          transform: translate(0%, 5px);
-  background-color: #231815;
-}
-
-.books_form .name.Editor > label {
-  letter-spacing: 3px;
-}
-
 .books_form .form_input {
   margin-bottom: 40px;
   -webkit-box-orient: horizontal;
@@ -1752,44 +1518,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .books_form .Information_from .text_title li {
   margin-bottom: 30px;
-}
-
-.books_form .Information_from .name {
-  font-size: 22px;
-  letter-spacing: 2px;
-  padding-bottom: 30px;
-}
-
-.books_form .Information_from .name > div {
-  min-width: 150px;
-  letter-spacing: 4px;
-  padding: 0px 0px 0px 20px;
-  position: relative;
-  line-height: 24px;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.books_form .Information_from .name > div::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 8px;
-  height: 17px;
-  -webkit-transform: translate(0%, 5px);
-          transform: translate(0%, 5px);
-  background-color: #231815;
-}
-
-.books_form .Information_from .name > div.two {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .books_form .Information_from .form_input {
@@ -2402,84 +2130,6 @@ input[type=number]::-webkit-outer-spin-button {
   .file_area .form_btn button:nth-child(3) {
     margin-left: 0px;
   }
-}
-
-.prompt .name > label,
-.prompt .name > div {
-  color: #C5362D !important;
-}
-
-.prompt .name > label::before,
-.prompt .name > div::before {
-  background-color: #C5362D !important;
-}
-
-.prompt .name div {
-  color: #C5362D !important;
-}
-
-.prompt .name div::before {
-  background-color: #C5362D !important;
-}
-
-.prompt .form_input {
-  margin-bottom: 50px;
-}
-
-.prompt .form_input div {
-  position: relative;
-  color: #C5362D;
-}
-
-.prompt .form_input div.Inquire {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.prompt .form_input div.Inquire::before {
-  content: '*貴單位於三個月內曾申請書籍且未結案。';
-  height: 100%;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  left: 0;
-  z-index: 5;
-  color: #C5362D;
-  letter-spacing: 5px;
-}
-
-.prompt .form_input input.error {
-  background-color: #4D4D4D;
-  color: #FFFFFF;
-}
-
-.prompt .form_input textarea,
-.prompt .form_input input,
-.prompt .form_input select,
-.prompt .form_input .fileName {
-  border: 2px solid #C5362D !important;
-  color: #C5362D;
-}
-
-.prompt .form_input .prompt_text {
-  font-size: 18px;
-  color: #C5362D;
-  letter-spacing: 3px;
-  position: absolute;
-  bottom: -5px;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  margin-left: 20px;
 }
 
 .need div.two {

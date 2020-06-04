@@ -917,3 +917,119 @@ footer {
         }
     }
 }
+
+.name {
+    font-size: $fs-22;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+
+    &>label {
+        min-width: 150px;
+        letter-spacing: 4px;
+        padding: 0px 0px 0px 20px;
+        position: relative;
+        line-height: 24px;
+        font-size: $fs-18;
+        font-weight: $fw-700;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 17px;
+            transform: translate(0%, 5px);
+            background-color: $bc-brown;
+        }
+    }
+
+    .Note {
+        width: 100%;
+        font-size: $fs-14;
+        font-weight: $fw-700;
+        letter-spacing: 5px;
+        padding-left: 45px;
+        margin-top: 10px;
+
+        @media (max-width:768px) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.prompt {
+    .name {
+
+        &>label,
+        &>div {
+            color: $red!important;
+
+            &::before {
+                background-color: $red!important;
+            }
+        }
+
+        div {
+            color: $red !important;
+
+            &::before {
+                background-color: $red !important;
+            }
+        }
+
+    }
+
+    .form_input {
+        margin-bottom: 50px;
+
+        div {
+            position: relative;
+            color: $fc-red;
+
+            &.Inquire {
+                display: flex;
+                justify-content: space-between;
+
+                &::before {
+                    content: '*貴單位於三個月內曾申請書籍且未結案。';
+                    height: 100%;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    transform: translateY(100%);
+                    left: 0;
+                    z-index: 5;
+                    color: $red;
+                    letter-spacing: 5px;
+                }
+            }
+        }
+
+        input {
+            &.error {
+                background-color: $pure-gray;
+                color: $white;
+            }
+        }
+
+        textarea,
+        input,
+        select,
+        .fileName {
+            border: 2px solid $red !important;
+            color: $fc-red;
+        }
+
+        .prompt_text {
+            font-size: $fs-18;
+            color: $fc-red;
+            letter-spacing: 3px;
+            position: absolute;
+            bottom: -5px;
+            transform: translateY(100%);
+            margin-left: 20px;
+        }
+    }
+    
+}

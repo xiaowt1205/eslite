@@ -77,34 +77,6 @@
   }
 }
 
-.Delivery .search .name {
-  font-size: 22px;
-  letter-spacing: 2px;
-  padding-bottom: 30px;
-}
-
-.Delivery .search .name > label {
-  min-width: 150px;
-  letter-spacing: 4px;
-  padding: 0px 0px 0px 20px;
-  position: relative;
-  line-height: 24px;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.Delivery .search .name > label::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 8px;
-  height: 17px;
-  -webkit-transform: translate(0%, 5px);
-          transform: translate(0%, 5px);
-  background-color: #231815;
-}
-
 .Delivery .search .form_input {
   margin-bottom: 40px;
 }

@@ -23,33 +23,6 @@
     }
 
     .Connection_form {
-
-        .name {
-            font-size: $fs-18;
-            letter-spacing: 2px;
-            padding-bottom: 30px;
-
-            &>label {
-                min-width: 150px;
-                letter-spacing: 4px;
-                padding: 0px 0px 0px 20px;
-                position: relative;
-                line-height: 24px;
-                font-weight: 900;
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    top: 50%;
-                    left: 0;
-                    width: 8px;
-                    height: 17px;
-                    transform: translate(0%, -50%);
-                    background-color: $bc-brown;
-                }
-            }
-        }
-
         .form_input {
             margin-bottom: 40px;
 
@@ -71,7 +44,6 @@
                 text-shadow: none;
                 -webkit-appearance: none;
                 -webkit-user-select: text;
-                 
             }
 
             &>ul {

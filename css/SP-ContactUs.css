@@ -23,40 +23,6 @@
   margin-bottom: 5px;
 }
 
-.Connection_area .Connection_form .name {
-  font-size: 22px;
-  letter-spacing: 2px;
-  padding-bottom: 30px;
-}
-
-@media screen and (max-width: 1400px) and (min-width: 1200px) {
-  .Connection_area .Connection_form .name {
-    max-width: 30%;
-  }
-}
-
-.Connection_area .Connection_form .name > label {
-  min-width: 150px;
-  letter-spacing: 4px;
-  padding: 0px 0px 0px 20px;
-  position: relative;
-  line-height: 24px;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.Connection_area .Connection_form .name > label::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 8px;
-  height: 17px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background-color: #231815;
-}
-
 .Connection_area .Connection_form .form_input {
   margin-bottom: 40px;
 }
