@@ -923,10 +923,11 @@ footer {
     letter-spacing: 2px;
     padding-bottom: 30px;
 
-    &>label {
+    &>label,
+    &>div {
         min-width: 150px;
         letter-spacing: 4px;
-        padding: 0px 0px 0px 20px;
+        padding: 0px 22px 0px 20px;
         position: relative;
         line-height: 24px;
         font-size: $fs-18;
@@ -942,7 +943,20 @@ footer {
             transform: translate(0%, 5px);
             background-color: $bc-brown;
         }
+
+        &.required-star{
+            &::after{
+                content: '*';
+                color: red;
+                font-size: $fs-22;
+
+                position: absolute;
+                right: 10px;
+                top: 0px;
+            }
+        }
     }
+
 
     .Note {
         width: 100%;

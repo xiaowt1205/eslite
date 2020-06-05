@@ -1245,17 +1245,19 @@ footer .footer_area .icon_area .icon_block .icon-bg .mail-icon {
   padding-bottom: 30px;
 }
 
-.name > label {
+.name > label,
+.name > div {
   min-width: 150px;
   letter-spacing: 4px;
-  padding: 0px 0px 0px 20px;
+  padding: 0px 22px 0px 20px;
   position: relative;
   line-height: 24px;
   font-size: 18px;
   font-weight: 700;
 }
 
-.name > label::before {
+.name > label::before,
+.name > div::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1265,6 +1267,16 @@ footer .footer_area .icon_area .icon_block .icon-bg .mail-icon {
   -webkit-transform: translate(0%, 5px);
           transform: translate(0%, 5px);
   background-color: #231815;
+}
+
+.name > label.required-star::after,
+.name > div.required-star::after {
+  content: '*';
+  color: red;
+  font-size: 22px;
+  position: absolute;
+  right: 10px;
+  top: 0px;
 }
 
 .name .Note {
