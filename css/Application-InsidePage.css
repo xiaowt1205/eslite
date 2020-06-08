@@ -114,32 +114,48 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 
-.Application_from .form_input {
-  margin-bottom: 40px;
-}
-
-@media (max-width: 1200px) {
-  .Application_from .form_input {
-    margin-bottom: 40px;
-  }
-  .Application_from .form_input .block {
-    margin-bottom: 20px;
-  }
-}
-
-.Application_from .form_input > input {
-  width: 100%;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 14px;
+.Information_from .title {
+  min-width: 150px;
   letter-spacing: 4px;
-  outline-width: 0px none invert;
-  border: 1px solid #000000;
-  text-shadow: none;
-  -webkit-appearance: none;
-  -webkit-user-select: text;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  padding: 0px 0px 45px 45px;
+  position: relative;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.Information_from .title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 8px;
+  -webkit-transform: translate(0%, 10px);
+          transform: translate(0%, 10px);
+  background-color: #231815;
+}
+
+.Application_content .title {
+  min-width: 150px;
+  letter-spacing: 4px;
+  padding: 0px 0px 45px 45px;
+  position: relative;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.Application_content .title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 8px;
+  -webkit-transform: translate(0%, 10px);
+          transform: translate(0%, 10px);
+  background-color: #231815;
 }
 
 .Application_from .form_input select {
@@ -152,106 +168,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 .Application_from .form_input select.identity {
   width: 110px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-right: -20px;
-  -webkit-appearance: none;
-  text-indent: 0.01px;
-  background-image: url("../img/icon/caret-down-solid.svg");
   background-size: 16px;
-  background-repeat: no-repeat;
   background-position-x: calc(100% - 15px);
-  background-position-y: center;
-  font-size: 14px;
-  letter-spacing: 4px;
-  border: 1px solid #000000;
-}
-
-.Application_from .form_input select.identity option:nth-child(1) {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.Application_from .form_input select.identity option {
-  line-height: 30px;
-  width: 100%;
-  padding: 10px 20px;
-  font-size: 14px;
-  letter-spacing: 4px;
 }
 
 .Application_from .form_input select.area {
-  width: 100%;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-right: -20px;
-  -webkit-appearance: none;
-  text-indent: 0.01px;
-  background-image: url("../img/icon/caret-down-solid.svg");
-  background-size: 20px;
-  background-repeat: no-repeat;
   background-position-x: calc(100% - 15px);
-  background-position-y: center;
-  font-size: 14px;
-  letter-spacing: 4px;
-}
-
-.Application_from .form_input select.area option:nth-child(1) {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.Application_from .form_input select.area option {
-  line-height: 30px;
-  width: 100%;
-  padding: 10px 20px;
-  font-size: 14px;
-  letter-spacing: 4px;
-}
-
-.Application_from .form_input img {
-  width: 100%;
-  border: 1px solid #000000;
-}
-
-@media (max-width: 1200px) {
-  .Application_from .form_input img {
-    height: 40px;
-  }
-}
-
-.Application_from .form_input .icon {
-  width: 100px;
-  font-size: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.Application_from .form_input .icon i {
-  margin: 0px 2px;
-  padding: 7px;
-  border-radius: 50%;
-  color: #FFFFFF;
-  background-color: #000000;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-}
-
-.Application_from .form_input.two input:nth-child(1) {
-  margin-bottom: 40px;
-}
-
-.Application_from .form_input.identity_area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .Application_from .form_input.identity_area .identity {
@@ -265,34 +187,18 @@ input[type=number]::-webkit-outer-spin-button {
 @media (max-width: 768px) {
   .Application_from .form_input.identity_area input {
     width: 100%;
-    margin-top: 10px;
   }
 }
 
 .Application_from .form_input > ul {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #000000;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-@media (max-width: 1200px) {
-  .Application_from .form_input > ul {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
 }
 
 .Application_from .form_input > ul li {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 3px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 20px;
 }
 
@@ -305,8 +211,6 @@ input[type=number]::-webkit-outer-spin-button {
 .Application_from .form_input > ul li div {
   min-width: 130px;
   width: 130px;
-  font-size: 14px;
-  letter-spacing: 3px;
   padding-left: 10px;
   margin-right: 30px;
 }
@@ -375,10 +279,6 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: -5px;
 }
 
-.StudentInformation_from .form_input {
-  margin-bottom: 40px;
-}
-
 @media (max-width: 1200px) {
   .StudentInformation_from .form_input {
     margin-bottom: 40px;
@@ -388,215 +288,12 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 
-.StudentInformation_from .form_input > input {
-  width: 100%;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 14px;
-  letter-spacing: 4px;
-  outline-width: 0px none invert;
-  border: 1px solid #000000;
-  text-shadow: none;
-  -webkit-appearance: none;
-  -webkit-user-select: text;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.StudentInformation_from .form_input select {
-  border: 1px solid #000000;
-}
-
-.StudentInformation_from .form_input select.identity {
-  width: 110px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-right: -20px;
-  -webkit-appearance: none;
-  text-indent: 0.01px;
-  background-image: url("../img/icon/caret-down-solid.svg");
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position-x: 96%;
-  background-position-y: center;
-  font-size: 14px;
-  letter-spacing: 4px;
-}
-
-.StudentInformation_from .form_input select.identity option:nth-child(1) {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.StudentInformation_from .form_input select.identity option {
-  line-height: 30px;
-  width: 100%;
-  padding: 10px 20px;
-  font-size: 14px;
-  letter-spacing: 4px;
-}
-
-.StudentInformation_from .form_input select.area {
-  width: 100%;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-right: -20px;
-  -webkit-appearance: none;
-  text-indent: 0.01px;
-  background-image: url("../img/icon/caret-down-solid.svg");
+.StudentInformation_from .form_input select.area, .StudentInformation_from .form_input select.grade {
   background-size: 16px;
-  background-repeat: no-repeat;
   background-position-x: calc(100% - 15px);
-  background-position-y: center;
-  font-size: 14px;
-  letter-spacing: 4px;
-  border: 1px solid #000000;
-}
-
-.StudentInformation_from .form_input select.area option:nth-child(1) {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.StudentInformation_from .form_input select.area option {
-  line-height: 30px;
-  width: 100%;
-  padding: 10px 20px;
-  font-size: 14px;
-  letter-spacing: 4px;
-}
-
-.StudentInformation_from .form_input select.grade {
-  width: 100%;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-right: -20px;
-  -webkit-appearance: none;
-  text-indent: 0.01px;
-  background-image: url("../img/icon/caret-down-solid.svg");
-  background-size: 16px;
-  background-repeat: no-repeat;
-  background-position-x: calc(100% - 15px);
-  background-position-y: center;
-  font-size: 14px;
-  letter-spacing: 4px;
-}
-
-.StudentInformation_from .form_input select.grade option:nth-child(1) {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.StudentInformation_from .form_input select.grade option {
-  line-height: 30px;
-  width: 100%;
-  padding: 10px 20px;
-  font-size: 14px;
-  letter-spacing: 4px;
-}
-
-.StudentInformation_from .form_input img {
-  width: 100%;
-  border: 1px solid #000000;
-}
-
-@media (max-width: 1200px) {
-  .StudentInformation_from .form_input img {
-    height: 40px;
-  }
-}
-
-.StudentInformation_from .form_input .icon {
-  width: 100px;
-  font-size: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.StudentInformation_from .form_input .icon i {
-  margin: 0px 2px;
-  padding: 7px;
-  border-radius: 50%;
-  color: #FFFFFF;
-  background-color: #000000;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-}
-
-.StudentInformation_from .form_input.two input:nth-child(1) {
-  margin-bottom: 40px;
-}
-
-.StudentInformation_from .form_input.identity_area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.StudentInformation_from .form_input.identity_area .identity {
-  margin-right: 40px;
-}
-
-.StudentInformation_from .form_input.identity_area input {
-  width: calc(100% - 250px);
-}
-
-@media (max-width: 768px) {
-  .StudentInformation_from .form_input.identity_area input {
-    width: 100%;
-    margin-top: 10px;
-  }
-}
-
-.StudentInformation_from .form_input.identity_area button {
-  width: 210px;
-  height: 40px;
-  background-color: #231815;
-  color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 600;
-  border: none;
-  border-radius: 5px;
-  letter-spacing: 3px;
-}
-
-@media (max-width: 768px) {
-  .StudentInformation_from .form_input.identity_area button {
-    margin-top: 30px;
-  }
-}
-
-.StudentInformation_from .form_input > ul {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #000000;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-@media (max-width: 1200px) {
-  .StudentInformation_from .form_input > ul {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
 }
 
 .StudentInformation_from .form_input > ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 20px;
 }
 
@@ -609,9 +306,6 @@ input[type=number]::-webkit-outer-spin-button {
 .StudentInformation_from .form_input > ul li div {
   min-width: 130px;
   width: 130px;
-  font-size: 14px;
-  letter-spacing: 3px;
-  padding-left: 10px;
   margin-right: 30px;
 }
 
@@ -782,66 +476,6 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 
-.StudentReadme_from .form_input {
-  margin-bottom: 45px;
-}
-
-@media (max-width: 1200px) {
-  .StudentReadme_from .form_input {
-    margin-bottom: 40px;
-  }
-  .StudentReadme_from .form_input .block {
-    margin-bottom: 20px;
-  }
-}
-
-.StudentReadme_from .form_input textarea {
-  width: 100%;
-  height: 90px;
-  resize: none;
-  border: 1px solid #000000;
-  border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-  .StudentReadme_from .form_input textarea {
-    height: 150px;
-  }
-}
-
-.StudentReadme_from .form_input img {
-  width: 100%;
-  border: 1px solid #000000;
-}
-
-@media (max-width: 1200px) {
-  .StudentReadme_from .form_input img {
-    height: 40px;
-  }
-}
-
-.StudentReadme_from .form_input .icon {
-  width: 100px;
-  font-size: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.StudentReadme_from .form_input .icon i {
-  margin: 0px 2px;
-  padding: 7px;
-  border-radius: 50%;
-  color: #FFFFFF;
-  background-color: #000000;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-}
-
 .StudentReadme_from .form_btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -981,29 +615,6 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 0px 15px;
 }
 
-.newitem .teacher .form_input {
-  margin-bottom: 40px;
-}
-
-@media (max-width: 992px) {
-  .newitem .teacher .form_input {
-    margin-bottom: 30px;
-  }
-}
-
-.newitem .teacher .form_input > input {
-  width: 100%;
-  height: 40px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  outline-width: 0px none invert;
-  border: 1px solid #000000;
-  text-shadow: none;
-  -webkit-appearance: none;
-  -webkit-user-select: text;
-  letter-spacing: 4px;
-}
-
 .newitem .student {
   padding: 0px 15px;
 }
@@ -1065,19 +676,6 @@ input[type=number]::-webkit-outer-spin-button {
   .newitem .content .form_input {
     margin-bottom: 30px;
   }
-}
-
-.newitem .content .form_input > input {
-  width: 100%;
-  height: 40px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  outline-width: 0px none invert;
-  border: 1px solid #000000;
-  text-shadow: none;
-  -webkit-appearance: none;
-  -webkit-user-select: text;
-  letter-spacing: 4px;
 }
 
 .newitem .form_w {
@@ -1167,29 +765,6 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 40px;
     padding: 15px;
   }
-}
-
-.newelement .Experience_status .block .form_input {
-  margin-bottom: 40px;
-}
-
-@media (max-width: 992px) {
-  .newelement .Experience_status .block .form_input {
-    margin-bottom: 30px;
-  }
-}
-
-.newelement .Experience_status .block .form_input > input {
-  width: 100%;
-  height: 40px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  outline-width: 0px none invert;
-  border: 1px solid #000000;
-  text-shadow: none;
-  -webkit-appearance: none;
-  -webkit-user-select: text;
-  letter-spacing: 4px;
 }
 
 .newelement .Experience_status .block .form_input.data {
@@ -1379,7 +954,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .books_form .form_input {
-  margin-bottom: 40px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1396,7 +970,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .books_form .form_input > button {
-  width: 100%;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 14px;
@@ -1410,48 +983,10 @@ input[type=number]::-webkit-outer-spin-button {
           box-shadow: none;
 }
 
-.books_form .form_input img {
-  width: 100%;
-  border: 1px solid #000000;
-}
-
-@media (max-width: 1200px) {
-  .books_form .form_input img {
-    height: 40px;
-  }
-}
-
-.books_form .form_input .icon {
-  width: 100px;
-  font-size: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.books_form .form_input .icon i {
-  margin: 0px 2px;
-  padding: 7px;
-  border-radius: 50%;
-  color: #FFFFFF;
-  background-color: #000000;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-}
-
 .books_form .form_input.identity_area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 @media (max-width: 1200px) {
@@ -1466,30 +1001,7 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
 }
 
-.books_form .form_input.identity_area .identity {
-  margin-right: 40px;
-}
-
-.books_form .form_input.identity_area input {
-  width: calc(100% - 250px);
-}
-
-@media (max-width: 768px) {
-  .books_form .form_input.identity_area input {
-    width: 100%;
-    margin-top: 10px;
-  }
-}
-
 .books_form .form_input.identity_area button {
-  width: 210px;
-  height: 40px;
-  background-color: #231815;
-  color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 600;
-  border: none;
-  border-radius: 5px;
   margin-left: 15px;
 }
 
@@ -1505,11 +1017,6 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 
-.books_form .Information_from .title li .icon {
-  width: 50px;
-  height: 8px;
-}
-
 .books_form .Information_from .text_title {
   font-size: 14px;
   font-weight: 600;
@@ -1520,199 +1027,18 @@ input[type=number]::-webkit-outer-spin-button {
   margin-bottom: 30px;
 }
 
-.books_form .Information_from .form_input {
-  margin-bottom: 40px;
-}
-
-@media (max-width: 1200px) {
-  .books_form .Information_from .form_input {
-    margin-bottom: 40px;
-  }
-  .books_form .Information_from .form_input .block {
-    margin-bottom: 20px;
-  }
-}
-
-.books_form .Information_from .form_input > input {
-  width: 100%;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 14px;
-  letter-spacing: 4px;
-  outline-width: 0px none invert;
-  border: 1px solid #000000;
-  text-shadow: none;
-  -webkit-appearance: none;
-  -webkit-user-select: text;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
 .books_form .Information_from .form_input select.identity {
   width: 110px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-right: -20px;
-  -webkit-appearance: none;
-  text-indent: 0.01px;
-  background-image: url("../img/icon/caret-down-solid.svg");
-  background-size: 20px;
-  background-repeat: no-repeat;
   background-position-x: calc(100% - 15px);
-  background-position-y: center;
-  font-size: 14px;
-  letter-spacing: 4px;
-}
-
-.books_form .Information_from .form_input select.identity option:nth-child(1) {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.books_form .Information_from .form_input select.identity option {
-  line-height: 30px;
-  width: 100%;
-  padding: 10px 20px;
-  font-size: 14px;
-  letter-spacing: 4px;
 }
 
 .books_form .Information_from .form_input select.area {
-  width: 100%;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-right: -20px;
-  -webkit-appearance: none;
-  text-indent: 0.01px;
-  background-image: url("../img/icon/caret-down-solid.svg");
   background-size: 16px;
-  background-repeat: no-repeat;
   background-position-x: calc(100% - 15px);
-  background-position-y: center;
-  font-size: 14px;
-  letter-spacing: 4px;
-}
-
-.books_form .Information_from .form_input select.area option:nth-child(1) {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.books_form .Information_from .form_input select.area option {
-  line-height: 30px;
-  width: 100%;
-  padding: 10px 20px;
-  font-size: 14px;
-  letter-spacing: 4px;
 }
 
 .books_form .Information_from .form_input select.grade {
-  width: 100%;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-right: -20px;
-  -webkit-appearance: none;
-  text-indent: 0.01px;
-  background-image: url("../img/icon/caret-down-solid.svg");
-  background-size: 20px;
-  background-repeat: no-repeat;
   background-position-x: calc(100% - 15px);
-  background-position-y: center;
-  font-size: 14px;
-  letter-spacing: 4px;
-}
-
-.books_form .Information_from .form_input select.grade option:nth-child(1) {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.books_form .Information_from .form_input select.grade option {
-  line-height: 30px;
-  width: 100%;
-  padding: 10px 20px;
-  font-size: 14px;
-  letter-spacing: 4px;
-}
-
-.books_form .Information_from .form_input img {
-  width: 100%;
-  border: 1px solid #000000;
-}
-
-@media (max-width: 1200px) {
-  .books_form .Information_from .form_input img {
-    height: 40px;
-  }
-}
-
-.books_form .Information_from .form_input .icon {
-  width: 100px;
-  font-size: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.books_form .Information_from .form_input .icon i {
-  margin: 0px 2px;
-  padding: 7px;
-  border-radius: 50%;
-  color: #FFFFFF;
-  background-color: #000000;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-}
-
-.books_form .Information_from .form_input.two input:nth-child(1) {
-  margin-bottom: 40px;
-}
-
-.books_form .Information_from .form_input.identity_area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.books_form .Information_from .form_input.identity_area .identity {
-  margin-right: 40px;
-}
-
-.books_form .Information_from .form_input.identity_area input {
-  width: calc(100% - 250px);
-}
-
-@media (max-width: 768px) {
-  .books_form .Information_from .form_input.identity_area input {
-    width: 100%;
-    margin-top: 10px;
-  }
-}
-
-.books_form .Information_from .form_input.identity_area button {
-  width: 210px;
-  height: 40px;
-  background-color: #231815;
-  color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 600;
-  border: none;
-  border-radius: 5px;
-}
-
-@media (max-width: 768px) {
-  .books_form .Information_from .form_input.identity_area button {
-    margin-top: 30px;
-  }
 }
 
 .books_form .Information_from .form_input.Clear_content {

@@ -363,12 +363,14 @@ main {
     @media (max-width:1024px) {
         min-height: calc(100vh - 294px);
     }
+
     // 0519 修改開始
     @media (max-width:576px) {
         margin-top: 0px;
         padding: 20px 15px 115px;
         min-height: 100vh;
     }
+
     // 0519 修改結束
 
     &.container {
@@ -479,6 +481,7 @@ main {
                 bottom: 5px;
                 right: 0;
             }
+
             // 0519-修改結束
             & .breadcrumb-item:nth-last-child(1) {
                 position: relative;
@@ -944,8 +947,8 @@ footer {
             background-color: $bc-brown;
         }
 
-        &.required-star{
-            &::after{
+        &.required-star {
+            &::after {
                 content: '*';
                 color: red;
                 font-size: $fs-22;
@@ -968,15 +971,278 @@ footer {
     }
 }
 
+// 06/08修正
+.form_input {
+    margin-bottom: 40px;
+
+    @media (max-width:992px) {
+        margin-bottom: 30px;
+
+        .block {
+            margin-bottom: 20px;
+        }
+    }
+
+    &>input {
+        width: 100%;
+        height: 40px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        outline-width: 0px none invert;
+        border: 1px solid $br-black;
+        text-shadow: none;
+        -webkit-appearance: none;
+        -webkit-user-select: text;
+        font-size: $fs-14;
+    }
+
+    &>ul {
+        padding-bottom: 20px;
+        border-bottom: 1px solid $br-black;
+
+        @media screen and (max-width:1200px) {
+            flex-wrap: wrap;
+        }
+
+        li {
+            width: 20%;
+            display: flex;
+            align-items: center;
+
+            @media screen and (max-width:1200px) {
+                width: 33.3333%;
+                margin-bottom: 20px;
+            }
+
+            div {
+                letter-spacing: 3px;
+                padding-left: 10px;
+                font-size: $fs-14;
+            }
+        }
+    }
+
+    input,
+    select {
+        letter-spacing: 4px;
+    }
+
+    select {
+        width: 100%;
+        height: 40px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-right: -20px;
+        -webkit-appearance: none;
+        text-indent: 0.01px;
+        background-image: url('../img/icon/caret-down-solid.svg');
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position-x: 96%;
+        background-position-y: center;
+        border: 1px solid $br-black;
+        font-size: $fs-14;
+
+        .select-selected {
+            background-color: $br-black;
+        }
+
+        & option:nth-child(1) {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        option {
+            background-color: $bc-graw;
+            line-height: 30px;
+            width: 100%;
+            padding: 10px 20px;
+            letter-spacing: 4px;
+            font-size: $fs-14;
+
+            &:hover:active {
+                background-color: $bc-dark-graw;
+            }
+
+            &:nth-child(1) {
+                border-top-left-radius: 50%;
+                border-top-right-radius: 50%;
+            }
+
+            &:nth-last-child(1) {
+                border-bottom-right-radius: 50%;
+                border-bottom-left-radius: 50%;
+            }
+        }
+    }
+
+    textarea {
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 5px;
+        resize: none;
+        font-size: $fs-14;
+        letter-spacing: 4px;
+
+        @media (max-width:768px) {
+            height: 150px;
+        }
+    }
+
+    &.dateInput {
+        position: relative;
+
+        &>.w-100 {
+            &:first-child {
+                margin-bottom: 40px;
+
+                @media(max-width: 992px) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        input {
+            height: 40px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: 100%;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        i {
+            font-size: $fs-22;
+            opacity: 0.6;
+            position: absolute;
+            right: 15px;
+            top: 8px;
+        }
+
+        .period {
+            font-weight: bold;
+            margin-right: 25px;
+        }
+
+        .clearBTN {
+            min-width: 100px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 5px;
+            background-color: $fc-pure-gray;
+            border-radius: 5px;
+            color: $fc-white;
+            font-size: $fs-14;
+            font-weight: bold;
+            margin-left: 25px;
+
+            @media (max-width:992px) {
+                display: none;
+            }
+        }
+    }
+
+    &.two {
+        input {
+            &:nth-child(1) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    &.identity_area {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .identity {
+            margin-right: 40px;
+        }
+
+        input {
+            width: calc(100% - 250px);
+
+            @media (max-width:768px) {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+        }
+
+        button {
+            width: 210px;
+            height: 40px;
+            background-color: $brown;
+            color: $white;
+            font-size: $fs-14;
+            font-weight: $fw-600;
+            border: none;
+            border-radius: 5px;
+
+            @media (max-width:768px) {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    // 驗證碼
+    #connection_verification {
+        margin-top: 20px;
+        width: 100%;
+        height: 40px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        outline-width: 0px none invert;
+        border: 1px solid $br-black;
+        text-shadow: none;
+        -webkit-appearance: none;
+        -webkit-user-select: text;
+        font-size: $fs-14;
+        box-shadow: none;
+    }
+
+    .icon {
+        width: 100px;
+        font-size: $fs-18;
+        display: flex;
+        justify-content: space-around;
+
+        & i {
+            margin: 0px 2px;
+            padding: 7px;
+            border-radius: 50%;
+            color: $fc-white;
+            background-color: $bc-black;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+
+    img {
+        width: 100%;
+        border: 1px solid $br-black;
+
+        @media screen and (max-width:1200px) {
+            height: 40px;
+        }
+    }
+
+    // 驗證碼
+}
+
+// 06/08修正
+
 .prompt {
     .name {
 
         &>label,
         &>div {
-            color: $red!important;
+            color: $red !important;
 
             &::before {
-                background-color: $red!important;
+                background-color: $red !important;
             }
         }
 
@@ -1041,5 +1307,5 @@ footer {
             margin-left: 20px;
         }
     }
-    
+
 }

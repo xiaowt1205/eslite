@@ -10,14 +10,12 @@
         margin-bottom: 40px;
     }
 
-
     .Donation_from {
 
         .title {
             display: flex;
             margin: 0px 0px 45px;
 
-            // align-items: center;
             @media (max-width:768px) {
                 flex-direction: column;
                 margin-bottom: 0px;
@@ -53,9 +51,8 @@
 
             .remind {}
         }
-
+        // 06/08修改
         .form_input {
-            margin-bottom: 40px;
             padding-left: 0;
 
             @media (max-width:1200px) {
@@ -67,128 +64,23 @@
                 }
             }
 
-            &>input {
-                width: 100%;
-                padding: 10px 20px;
-                border-radius: 5px;
-                font-size: $fs-14;
-                letter-spacing: 4px;
-                outline-width: 0px none invert;
-                border: 1px solid $br-black;
-                text-shadow: none;
-                -webkit-appearance: none;
-                -webkit-user-select: text;
-                 
-                box-shadow: none;
-            }
-
             select {
-                border: 1px solid black;
-
                 &.select-selected:after {
                     right: 15px;
                 }
 
                 &.identity {
                     width: 110px;
-                    padding: 10px 20px;
-                    border-radius: 5px;
-                    margin-right: -20px;
-                    -webkit-appearance: none;
-                    text-indent: 0.01px;
-                    background-image: url('../img/icon/caret-down-solid.svg');
                     background-size: 16px;
-                    background-repeat: no-repeat;
                     background-position-x: calc(100% - 15px);
-                    background-position-y: center;
-                    font-size: $fs-14;
-                    letter-spacing: 4px;
-                    border: 1px solid $br-black;
-
-                    & option:nth-child(1) {
-                        border-top-left-radius: 5px;
-                        border-top-right-radius: 5px;
-                    }
-
-                    option {
-                        line-height: 30px;
-                        width: 100%;
-                        padding: 10px 20px;
-                        font-size: $fs-14;
-                        letter-spacing: 4px;
-                    }
-
                 }
 
                 &.area {
-                    width: 100%;
-                    padding: 10px 20px;
-                    border-radius: 5px;
-                    margin-right: -20px;
-                    -webkit-appearance: none;
-                    text-indent: 0.01px;
-                    background-image: url('../img/icon/caret-down-solid.svg');
-                    background-size: 20px;
-                    background-repeat: no-repeat;
                     background-position-x: calc(100% - 15px);
-                    background-position-y: center;
-                    font-size: $fs-14;
-                    letter-spacing: 4px;
-
-                    & option:nth-child(1) {
-                        border-top-left-radius: 5px;
-                        border-top-right-radius: 5px;
-                    }
-
-                    option {
-                        line-height: 30px;
-                        width: 100%;
-                        padding: 10px 20px;
-                        font-size: $fs-14;
-                        letter-spacing: 4px;
-                    }
-                }
-            }
-
-            img {
-                width: 100%;
-                border: 1px solid $br-black;
-
-                @media (max-width:1200px) {
-                    height: 40px;
-                }
-            }
-
-            .icon {
-                width: 100px;
-                font-size: $fs-18;
-                display: flex;
-                justify-content: space-around;
-
-                & i {
-                    margin: 0px 2px;
-                    padding: 7px;
-                    border-radius: 50%;
-                    color: $fc-white;
-                    background-color: $bc-black;
-                    align-items: center;
-                    cursor: pointer;
-                }
-
-            }
-
-            &.two {
-                input {
-                    &:nth-child(1) {
-                        margin-bottom: 40px;
-                    }
                 }
             }
 
             &.identity_area {
-                display: flex;
-                flex-wrap: wrap;
-
                 .identity {
                     margin-right: 16px;
                 }
@@ -198,9 +90,7 @@
 
                     @media (max-width:768px) {
                         width: 100%;
-                        margin-top: 10px;
                     }
-
                 }
             }
 
@@ -255,7 +145,7 @@
                 }
             }
         }
-
+        // 06/08修改
         .statement {
             p:nth-child(1) {
                 font-size: $fs-20;

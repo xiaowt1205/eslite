@@ -78,34 +78,60 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
+// 06/08新增
+.Information_from {
+    .title {
+        min-width: 150px;
+        letter-spacing: 4px;
+        padding: 0px 0px 45px 45px;
+        position: relative;
+        line-height: 24px;
+        font-size: $fs-18;
+        font-weight: $fw-700;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 32px;
+            height: 8px;
+            transform: translate(0%, 10px);
+            background-color: $bc-brown;
+        }
+    }
+
+}
+
+.Application_content {
+    .title {
+        min-width: 150px;
+        letter-spacing: 4px;
+        padding: 0px 0px 45px 45px;
+        position: relative;
+        line-height: 24px;
+        font-size: $fs-18;
+        font-weight: $fw-700;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 32px;
+            height: 8px;
+            transform: translate(0%, 10px);
+            background-color: $bc-brown;
+        }
+    }
+}
+
+// 06/08新增
 
 .Application_from {
+
+    // 06/08修改
     .form_input {
-        margin-bottom: 40px;
-
-        @media (max-width:1200px) {
-            margin-bottom: 40px;
-
-            .block {
-                margin-bottom: 20px;
-            }
-        }
-
-        &>input {
-            width: 100%;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: $fs-14;
-            letter-spacing: 4px;
-            outline-width: 0px none invert;
-            border: 1px solid $br-black;
-            text-shadow: none;
-            -webkit-appearance: none;
-            -webkit-user-select: text;
-
-            box-shadow: none;
-        }
-
         select {
             border: 1px solid black;
 
@@ -115,104 +141,16 @@ input[type=number]::-webkit-outer-spin-button {
 
             &.identity {
                 width: 110px;
-                padding: 10px 20px;
-                border-radius: 5px;
-                margin-right: -20px;
-                -webkit-appearance: none;
-                text-indent: 0.01px;
-                background-image: url('../img/icon/caret-down-solid.svg');
                 background-size: 16px;
-                background-repeat: no-repeat;
                 background-position-x: calc(100% - 15px);
-                background-position-y: center;
-                font-size: $fs-14;
-                letter-spacing: 4px;
-                border: 1px solid $br-black;
-
-                & option:nth-child(1) {
-                    border-top-left-radius: 5px;
-                    border-top-right-radius: 5px;
-                }
-
-                option {
-                    line-height: 30px;
-                    width: 100%;
-                    padding: 10px 20px;
-                    font-size: $fs-14;
-                    letter-spacing: 4px;
-                }
-
             }
 
             &.area {
-                width: 100%;
-                padding: 10px 20px;
-                border-radius: 5px;
-                margin-right: -20px;
-                -webkit-appearance: none;
-                text-indent: 0.01px;
-                background-image: url('../img/icon/caret-down-solid.svg');
-                background-size: 20px;
-                background-repeat: no-repeat;
                 background-position-x: calc(100% - 15px);
-                background-position-y: center;
-                font-size: $fs-14;
-                letter-spacing: 4px;
-
-                & option:nth-child(1) {
-                    border-top-left-radius: 5px;
-                    border-top-right-radius: 5px;
-                }
-
-                option {
-                    line-height: 30px;
-                    width: 100%;
-                    padding: 10px 20px;
-                    font-size: $fs-14;
-                    letter-spacing: 4px;
-                }
-            }
-        }
-
-        img {
-            width: 100%;
-            border: 1px solid $br-black;
-
-            @media (max-width:1200px) {
-                height: 40px;
-            }
-        }
-
-        .icon {
-            width: 100px;
-            font-size: $fs-18;
-            display: flex;
-            justify-content: space-around;
-
-            & i {
-                margin: 0px 2px;
-                padding: 7px;
-                border-radius: 50%;
-                color: $fc-white;
-                background-color: $bc-black;
-                align-items: center;
-                cursor: pointer;
-            }
-
-        }
-
-        &.two {
-            input {
-                &:nth-child(1) {
-                    margin-bottom: 40px;
-                }
             }
         }
 
         &.identity_area {
-            display: flex;
-            flex-wrap: wrap;
-
             .identity {
                 margin-right: 16px;
             }
@@ -222,28 +160,17 @@ input[type=number]::-webkit-outer-spin-button {
 
                 @media (max-width:768px) {
                     width: 100%;
-                    margin-top: 10px;
                 }
-
             }
         }
 
         &>ul {
-            padding-bottom: 20px;
-            border-bottom: 1px solid $br-black;
             flex-wrap: wrap;
-
-
-            @media (max-width:1200px) {
-                flex-wrap: wrap;
-            }
 
             li {
                 font-size: $fs-14;
                 font-weight: $fw-700;
                 letter-spacing: 3px;
-                display: flex;
-                align-items: center;
                 margin-bottom: 20px;
 
                 @media (max-width:1200px) {
@@ -253,8 +180,6 @@ input[type=number]::-webkit-outer-spin-button {
                 div {
                     min-width: 130px;
                     width: 130px;
-                    font-size: $fs-14;
-                    letter-spacing: 3px;
                     padding-left: 10px;
                     margin-right: 30px;
 
@@ -279,6 +204,8 @@ input[type=number]::-webkit-outer-spin-button {
             }
         }
     }
+
+    // 06/08修改
 
     .dateInput {
         position: relative;
@@ -324,9 +251,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .StudentInformation_from {
 
+    // 06/08修改
     .form_input {
-        margin-bottom: 40px;
-
         @media (max-width:1200px) {
             margin-bottom: 40px;
 
@@ -335,198 +261,17 @@ input[type=number]::-webkit-outer-spin-button {
             }
         }
 
-        &>input {
-            width: 100%;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: $fs-14;
-            letter-spacing: 4px;
-            outline-width: 0px none invert;
-            border: 1px solid $br-black;
-            text-shadow: none;
-            -webkit-appearance: none;
-            -webkit-user-select: text;
-
-            box-shadow: none;
-        }
-
         select {
-            border: 1px solid $br-black;
 
-            &.identity {
-                width: 110px;
-                padding: 10px 20px;
-                border-radius: 5px;
-                margin-right: -20px;
-                -webkit-appearance: none;
-                text-indent: 0.01px;
-                background-image: url('../img/icon/caret-down-solid.svg');
-                background-size: 20px;
-                background-repeat: no-repeat;
-                background-position-x: 96%;
-                background-position-y: center;
-                font-size: $fs-14;
-                letter-spacing: 4px;
-
-                & option:nth-child(1) {
-                    border-top-left-radius: 5px;
-                    border-top-right-radius: 5px;
-                }
-
-                option {
-                    line-height: 30px;
-                    width: 100%;
-                    padding: 10px 20px;
-                    font-size: $fs-14;
-                    letter-spacing: 4px;
-                }
-
-            }
-
-            &.area {
-                width: 100%;
-                padding: 10px 20px;
-                border-radius: 5px;
-                margin-right: -20px;
-                -webkit-appearance: none;
-                text-indent: 0.01px;
-                background-image: url('../img/icon/caret-down-solid.svg');
-                background-size: 16px;
-                background-repeat: no-repeat;
-                background-position-x: calc(100% - 15px);
-                background-position-y: center;
-                font-size: $fs-14;
-                letter-spacing: 4px;
-                border: 1px solid $br-black;
-
-                & option:nth-child(1) {
-                    border-top-left-radius: 5px;
-                    border-top-right-radius: 5px;
-                }
-
-                option {
-                    line-height: 30px;
-                    width: 100%;
-                    padding: 10px 20px;
-                    font-size: $fs-14;
-                    letter-spacing: 4px;
-                }
-            }
-
+            &.area,
             &.grade {
-                width: 100%;
-                padding: 10px 20px;
-                border-radius: 5px;
-                margin-right: -20px;
-                -webkit-appearance: none;
-                text-indent: 0.01px;
-                background-image: url('../img/icon/caret-down-solid.svg');
                 background-size: 16px;
-                background-repeat: no-repeat;
                 background-position-x: calc(100% - 15px);
-                background-position-y: center;
-                font-size: $fs-14;
-                letter-spacing: 4px;
-
-                & option:nth-child(1) {
-                    border-top-left-radius: 5px;
-                    border-top-right-radius: 5px;
-                }
-
-                option {
-                    line-height: 30px;
-                    width: 100%;
-                    padding: 10px 20px;
-                    font-size: $fs-14;
-                    letter-spacing: 4px;
-                }
-            }
-        }
-
-        img {
-            width: 100%;
-            border: 1px solid $br-black;
-
-            @media (max-width:1200px) {
-                height: 40px;
-            }
-        }
-
-        .icon {
-            width: 100px;
-            font-size: $fs-18;
-            display: flex;
-            justify-content: space-around;
-
-            & i {
-                margin: 0px 2px;
-                padding: 7px;
-                border-radius: 50%;
-                color: $fc-white;
-                background-color: $bc-black;
-                align-items: center;
-                cursor: pointer;
-            }
-
-        }
-
-        &.two {
-            input {
-                &:nth-child(1) {
-                    margin-bottom: 40px;
-                }
-            }
-        }
-
-        &.identity_area {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-
-            .identity {
-                margin-right: 40px;
-            }
-
-            input {
-                width: calc(100% - 250px);
-
-                @media (max-width:768px) {
-                    width: 100%;
-                    margin-top: 10px;
-                }
-
-            }
-
-            button {
-                width: 210px;
-                height: 40px;
-                background-color: $brown;
-                color: $white;
-                font-size: $fs-14;
-                font-weight: $fw-600;
-                border: none;
-                border-radius: 5px;
-                letter-spacing: 3px;
-
-                @media (max-width:768px) {
-                    margin-top: 30px;
-                }
             }
         }
 
         &>ul {
-            padding-bottom: 20px;
-            border-bottom: 1px solid $br-black;
-            flex-wrap: wrap;
-
-
-            @media (max-width:1200px) {
-                flex-wrap: wrap;
-            }
-
             li {
-                display: flex;
-                align-items: center;
                 margin-bottom: 20px;
 
                 @media (max-width:1200px) {
@@ -536,9 +281,6 @@ input[type=number]::-webkit-outer-spin-button {
                 div {
                     min-width: 130px;
                     width: 130px;
-                    font-size: $fs-14;
-                    letter-spacing: 3px;
-                    padding-left: 10px;
                     margin-right: 30px;
 
                     @media (max-width:768px) {
@@ -598,6 +340,8 @@ input[type=number]::-webkit-outer-spin-button {
             }
         }
     }
+
+    // 06/08修改
 
     .dateInput {
         position: relative;
@@ -681,57 +425,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .StudentReadme_from {
-
-    .form_input {
-        margin-bottom: 45px;
-
-        @media (max-width:1200px) {
-            margin-bottom: 40px;
-
-            .block {
-                margin-bottom: 20px;
-            }
-        }
-
-        textarea {
-            width: 100%;
-            height: 90px;
-            resize: none;
-            border: 1px solid $black;
-            border-radius: 10px;
-
-            @media (max-width:768px) {
-                height: 150px;
-            }
-        }
-
-        img {
-            width: 100%;
-            border: 1px solid $br-black;
-
-            @media (max-width:1200px) {
-                height: 40px;
-            }
-        }
-
-        .icon {
-            width: 100px;
-            font-size: $fs-18;
-            display: flex;
-            justify-content: space-around;
-
-            & i {
-                margin: 0px 2px;
-                padding: 7px;
-                border-radius: 50%;
-                color: $fc-white;
-                background-color: $bc-black;
-                align-items: center;
-                cursor: pointer;
-            }
-
-        }
-    }
 
     .form_btn {
         display: flex;
@@ -845,6 +538,7 @@ input[type=number]::-webkit-outer-spin-button {
     @media (max-width:768px) {
         padding: 0px;
     }
+
     .title {
         margin-left: -15px;
         min-width: 150px;
@@ -869,29 +563,6 @@ input[type=number]::-webkit-outer-spin-button {
 
     .teacher {
         padding: 0px 15px;
-
-
-        .form_input {
-
-            margin-bottom: 40px;
-
-            @media (max-width:992px) {
-                margin-bottom: 30px;
-            }
-
-            &>input {
-                width: 100%;
-                height: 40px;
-                padding: 10px 20px;
-                border-radius: 5px;
-                outline-width: 0px none invert;
-                border: 1px solid $br-black;
-                text-shadow: none;
-                -webkit-appearance: none;
-                -webkit-user-select: text;
-                letter-spacing: 4px;
-            }
-        }
     }
 
     .student {
@@ -936,28 +607,16 @@ input[type=number]::-webkit-outer-spin-button {
             }
         }
 
+        // 06/08修正
         .form_input {
-
             margin-bottom: 20px;
 
             @media (max-width:992px) {
                 margin-bottom: 30px;
             }
-
-            &>input {
-                width: 100%;
-                height: 40px;
-                padding: 10px 20px;
-                border-radius: 5px;
-                outline-width: 0px none invert;
-                border: 1px solid $br-black;
-                text-shadow: none;
-                -webkit-appearance: none;
-                -webkit-user-select: text;
-
-                letter-spacing: 4px;
-            }
         }
+
+        // 06/08修正
     }
 
     .form_w {
@@ -969,6 +628,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
 }
+
 // 06/04修正
 
 .newelement {
@@ -1048,29 +708,8 @@ input[type=number]::-webkit-outer-spin-button {
                 padding: 15px;
             }
 
-
+            // 06/08修正
             .form_input {
-
-                margin-bottom: 40px;
-
-                @media (max-width:992px) {
-                    margin-bottom: 30px;
-                }
-
-                &>input {
-                    width: 100%;
-                    height: 40px;
-                    padding: 10px 20px;
-                    border-radius: 5px;
-                    outline-width: 0px none invert;
-                    border: 1px solid $br-black;
-                    text-shadow: none;
-                    -webkit-appearance: none;
-                    -webkit-user-select: text;
-
-                    letter-spacing: 4px;
-                }
-
                 &.data {
                     display: flex;
                     flex-wrap: nowrap;
@@ -1099,6 +738,8 @@ input[type=number]::-webkit-outer-spin-button {
 
                 }
             }
+
+            // 06/08修正
         }
 
         .add {
@@ -1227,9 +868,8 @@ input[type=number]::-webkit-outer-spin-button {
         }
     }
 
-
+    // 06/08修正
     .form_input {
-        margin-bottom: 40px;
         flex-direction: row;
 
         @media (max-width:1200px) {
@@ -1241,7 +881,6 @@ input[type=number]::-webkit-outer-spin-button {
         }
 
         &>button {
-            width: 100%;
             padding: 10px 20px;
             border-radius: 5px;
             font-size: $fs-14;
@@ -1251,41 +890,13 @@ input[type=number]::-webkit-outer-spin-button {
             text-shadow: none;
             -webkit-appearance: none;
             -webkit-user-select: text;
-
             box-shadow: none;
         }
 
-        img {
-            width: 100%;
-            border: 1px solid $br-black;
 
-            @media (max-width:1200px) {
-                height: 40px;
-            }
-        }
-
-        .icon {
-            width: 100px;
-            font-size: $fs-18;
-            display: flex;
-            justify-content: space-around;
-
-            & i {
-                margin: 0px 2px;
-                padding: 7px;
-                border-radius: 50%;
-                color: $fc-white;
-                background-color: $bc-black;
-                align-items: center;
-                cursor: pointer;
-            }
-
-        }
 
         &.identity_area {
-            display: flex;
             justify-content: flex-end;
-            flex-wrap: wrap;
 
             @media (max-width:1200px) {
                 justify-content: space-between;
@@ -1295,29 +906,7 @@ input[type=number]::-webkit-outer-spin-button {
                 width: 100%;
             }
 
-            .identity {
-                margin-right: 40px;
-            }
-
-            input {
-                width: calc(100% - 250px);
-
-                @media (max-width:768px) {
-                    width: 100%;
-                    margin-top: 10px;
-                }
-
-            }
-
             button {
-                width: 210px;
-                height: 40px;
-                background-color: $brown;
-                color: $white;
-                font-size: $fs-14;
-                font-weight: $fw-600;
-                border: none;
-                border-radius: 5px;
                 margin-left: 15px;
 
                 @media (max-width:1200px) {
@@ -1331,15 +920,9 @@ input[type=number]::-webkit-outer-spin-button {
         }
     }
 
+    // 06/08修正
+
     .Information_from {
-        .title {
-            li {
-                .icon {
-                    width: 50px;
-                    height: 8px;
-                }
-            }
-        }
 
         .text_title {
             font-size: $fs-14;
@@ -1351,190 +934,21 @@ input[type=number]::-webkit-outer-spin-button {
             }
         }
 
-
+        // 06/08修正(須留著)
         .form_input {
-            margin-bottom: 40px;
-
-            @media (max-width:1200px) {
-                margin-bottom: 40px;
-
-                .block {
-                    margin-bottom: 20px;
-                }
-            }
-
-            &>input {
-                width: 100%;
-                padding: 10px 20px;
-                border-radius: 5px;
-                font-size: $fs-14;
-                letter-spacing: 4px;
-                outline-width: 0px none invert;
-                border: 1px solid $br-black;
-                text-shadow: none;
-                -webkit-appearance: none;
-                -webkit-user-select: text;
-
-                box-shadow: none;
-            }
-
             select {
                 &.identity {
                     width: 110px;
-                    padding: 10px 20px;
-                    border-radius: 5px;
-                    margin-right: -20px;
-                    -webkit-appearance: none;
-                    text-indent: 0.01px;
-                    background-image: url('../img/icon/caret-down-solid.svg');
-                    background-size: 20px;
-                    background-repeat: no-repeat;
                     background-position-x: calc(100% - 15px);
-                    background-position-y: center;
-                    font-size: $fs-14;
-                    letter-spacing: 4px;
-
-                    & option:nth-child(1) {
-                        border-top-left-radius: 5px;
-                        border-top-right-radius: 5px;
-                    }
-
-                    option {
-                        line-height: 30px;
-                        width: 100%;
-                        padding: 10px 20px;
-                        font-size: $fs-14;
-                        letter-spacing: 4px;
-                    }
-
                 }
 
                 &.area {
-                    width: 100%;
-                    padding: 10px 20px;
-                    border-radius: 5px;
-                    margin-right: -20px;
-                    -webkit-appearance: none;
-                    text-indent: 0.01px;
-                    background-image: url('../img/icon/caret-down-solid.svg');
                     background-size: 16px;
-                    background-repeat: no-repeat;
                     background-position-x: calc(100% - 15px);
-                    background-position-y: center;
-                    font-size: $fs-14;
-                    letter-spacing: 4px;
-
-                    & option:nth-child(1) {
-                        border-top-left-radius: 5px;
-                        border-top-right-radius: 5px;
-                    }
-
-                    option {
-                        line-height: 30px;
-                        width: 100%;
-                        padding: 10px 20px;
-                        font-size: $fs-14;
-                        letter-spacing: 4px;
-                    }
                 }
 
                 &.grade {
-                    width: 100%;
-                    padding: 10px 20px;
-                    border-radius: 5px;
-                    margin-right: -20px;
-                    -webkit-appearance: none;
-                    text-indent: 0.01px;
-                    background-image: url('../img/icon/caret-down-solid.svg');
-                    background-size: 20px;
-                    background-repeat: no-repeat;
                     background-position-x: calc(100% - 15px);
-                    background-position-y: center;
-                    font-size: $fs-14;
-                    letter-spacing: 4px;
-
-                    & option:nth-child(1) {
-                        border-top-left-radius: 5px;
-                        border-top-right-radius: 5px;
-                    }
-
-                    option {
-                        line-height: 30px;
-                        width: 100%;
-                        padding: 10px 20px;
-                        font-size: $fs-14;
-                        letter-spacing: 4px;
-                    }
-                }
-            }
-
-            img {
-                width: 100%;
-                border: 1px solid $br-black;
-
-                @media (max-width:1200px) {
-                    height: 40px;
-                }
-            }
-
-            .icon {
-                width: 100px;
-                font-size: $fs-18;
-                display: flex;
-                justify-content: space-around;
-
-                & i {
-                    margin: 0px 2px;
-                    padding: 7px;
-                    border-radius: 50%;
-                    color: $fc-white;
-                    background-color: $bc-black;
-                    align-items: center;
-                    cursor: pointer;
-                }
-
-            }
-
-            &.two {
-                input {
-                    &:nth-child(1) {
-                        margin-bottom: 40px;
-                    }
-                }
-            }
-
-            &.identity_area {
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-
-                .identity {
-                    margin-right: 40px;
-                }
-
-                input {
-                    width: calc(100% - 250px);
-
-                    @media (max-width:768px) {
-                        width: 100%;
-                        margin-top: 10px;
-                    }
-
-                }
-
-                button {
-                    width: 210px;
-                    height: 40px;
-                    background-color: $brown;
-                    color: $white;
-                    font-size: $fs-14;
-                    font-weight: $fw-600;
-                    border: none;
-                    border-radius: 5px;
-
-                    @media (max-width:768px) {
-                        margin-top: 30px;
-                    }
                 }
             }
 
@@ -1667,6 +1081,7 @@ input[type=number]::-webkit-outer-spin-button {
             }
         }
 
+        // 06/08修正
         .dateInput {
             position: relative;
 
@@ -1752,7 +1167,6 @@ input[type=number]::-webkit-outer-spin-button {
             height: 150px;
         }
     }
-
 }
 
 // 06/03修改
@@ -1911,7 +1325,6 @@ input[type=number]::-webkit-outer-spin-button {
         }
     }
 }
-
 
 .need {
     div {
