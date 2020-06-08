@@ -46,8 +46,9 @@ var swiper = new Swiper('.vendor_area-mob .swiper-container', {
 });
 
 var doOnce = false;
+var statistics = document.querySelector("#Statistics")
 
-function dynamicNumberCounter(scrollPos, id, setNum) {
+function dynamicNumberCounter(id,setNum) {
     var inner = document.getElementById(id);
 
     var num = 0;
@@ -55,7 +56,9 @@ function dynamicNumberCounter(scrollPos, id, setNum) {
     var AddNumdelay = 50;
     var setNum = setNum;
 
-    if ((document.body.scrollTop >= scrollPos && document.body.scrollTop <= scrollPos + 150) || (document.documentElement.scrollTop >= scrollPos && document.documentElement.scrollTop <= scrollPos + 150)) {
+    // if ((document.body.scrollTop >= 400 && document.body.scrollTop <= 400 + 150) || (document.documentElement.scrollTop >= 400 && document.documentElement.scrollTop <= 400 + 150)) {
+    if (document.body.scrollTop >= pageY(statistics)|| document.documentElement.scrollTop >= pageY(statistics) - 100) {
+        console.log(document.documentElement.scrollTop+"  "+"  "+pageY(statistics));
         if (doOnce === false) {
             inner.innerHTML = 0
             set = setInterval(function () {
@@ -78,15 +81,17 @@ function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-// 04-21 首頁移進來
-
 window.onscroll = function () {
-    dynamicNumberCounter(400, "total_0", 400000);
-    dynamicNumberCounter(400, "total_1", 600000);
+    dynamicNumberCounter("total_0", 4100000);
+    dynamicNumberCounter("total_1", 600000);
 }
 
 $('.aside-btn-title').click(function () {
     $(this).toggleClass('active')
 })
 
-// 04-21 首頁移進來
+
+//06-08 get element position Y axis in page
+function pageY(elem) {
+    return elem.offsetParent ? elem.offsetTop + pageY(elem.offsetParent) : elem.offsetTop;
+}
