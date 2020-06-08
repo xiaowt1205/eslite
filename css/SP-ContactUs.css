@@ -27,12 +27,6 @@
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 1400px) and (min-width: 1200px) {
-  .Connection_area .Connection_form .form_input {
-    max-width: 70%;
-  }
-}
-
 @media screen and (max-width: 1200px) {
   .Connection_area .Connection_form .form_input {
     margin-bottom: 40px;
