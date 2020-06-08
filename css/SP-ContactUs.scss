@@ -28,13 +28,6 @@
 
         .form_input {
             margin-bottom: 40px;
-
-            //    05/04 修改 
-            @media screen and (max-width:1400px) and (min-width:1200px) {
-                max-width: 70%;
-            }
-
-            //    05/04 修改 
             @media screen and (max-width:1200px) {
                 margin-bottom: 40px;
 
