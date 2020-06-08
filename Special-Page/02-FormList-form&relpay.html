@@ -958,7 +958,6 @@
                             <div class="IngName">報名狀況</div>
                         </div>
                         <div class="news_list">
-                            <!-- event modal start -->
                             <div class="news">
                                 <div class="datearea area">
                                     <span>活動日期</span>
@@ -1045,8 +1044,6 @@
                                     <button class="btn-mob">登記候補</button>
                                 </div>
                             </div>
-                        
-                            <!-- event modal end -->
                         </div>
 
                         <!-- 05-22 新增 開始 -->
@@ -1071,7 +1068,7 @@
                                     <a class="lastBTN" href="">最後一頁</a>
                                 </li>
                             </ul>
-                            <a href=" " class=" more d-lg-none"><div>更多消息</div></a>
+                            <a class=" more d-lg-none" onclick="getData('form&replay')" ><div>更多消息</div></a>
                         </nav>
 
                         <!-- 05-22 新增 結束 -->
@@ -1219,9 +1216,10 @@
         <img src="../img/icon/top.png" alt="">
     </a>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
@@ -1230,10 +1228,7 @@
         crossorigin="anonymous"></script>
 
     <script src="../js/main.js"></script>
-    <!-- page js -->
-    <script>
-
-    </script>
+    <script src="../js/getData.js"></script>
 
 </body>
 

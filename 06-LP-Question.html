@@ -1019,7 +1019,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="QA-tab">
+                        <!-- <div class="QA-tab">
                             <div class="QA active">
                                 <div class="query">
                                     <span>
@@ -1246,7 +1246,7 @@
                                     答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <nav class="pageNumber d-flex justify-content-center  align-items-center">
                         <ul class="d-lg-flex d-none justify-content-center align-items-center">
@@ -1268,7 +1268,7 @@
                                 <a class="lastBTN" href="">最後一頁</a>
                             </li>
                         </ul>
-                        <a href=" " class=" more d-lg-none"><div>更多消息</div></a>
+                        <a class=" more d-lg-none" onclick="getData('Question')"><div>更多消息</div></a>
                     </nav>
                 </div>
                 <!-- 內頁終點 -->
@@ -1341,9 +1341,10 @@
         <img src="./img/icon/top.png" alt="">
     </a>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
@@ -1352,22 +1353,19 @@
         crossorigin="anonymous"></script>
 
     <script src="./js/main.js"></script>
-    <!-- page js -->
+    <script src="./js/getData.js"></script>
 
     <script>
         $('.tab-btn').click(function () {
-            let tab_index = $('.tab-btn').index(this)
+            // let tab_index = $('.tab-btn').index(this)
             $('.tab-btn').removeClass('active')
             $(this).addClass('active')
-            $('.QA-tab').removeClass('active')
-            $('.QA-tab').eq(tab_index).addClass('active')
+            // $('.QA-tab').removeClass('active')
+            // $('.QA-tab').eq(tab_index).addClass('active')
         })
 
         $('.QA').click(function () {
-
             $(this).toggleClass('active')
-
-
         })
     </script>
 
