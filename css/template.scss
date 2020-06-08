@@ -950,9 +950,9 @@ footer {
                 color: red;
                 font-size: $fs-22;
 
-                position: absolute;
-                right: 10px;
-                top: 0px;
+                // 06-08調整 開始
+                margin-left: 5px;
+                // 06-08調整 結束
             }
         }
     }
