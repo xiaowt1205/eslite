@@ -19,7 +19,6 @@ li.image_center {
 }
 
 .image {
-  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,5 +34,100 @@ li.image_center {
 .image img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.table {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.table .rwd-table {
+  background: #fff;
+  overflow: hidden;
+}
+
+.table .rwd-table tr:nth-of-type(2n) {
+  background: #eee;
+}
+
+.table .rwd-table {
+  min-width: 100%;
+}
+
+.table .rwd-table th {
+  display: none;
+}
+
+.table .rwd-table td {
+  display: block;
+}
+
+.table .rwd-table td:before {
+  content: attr(data-th) " : ";
+  font-weight: bold;
+  display: inline-block;
+}
+
+.table .rwd-table th,
+.table .rwd-table td:before {
+  color: #D20B2A;
+  font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+  .table .rwd-table td:before {
+    display: none;
+  }
+  .table .rwd-table th,
+  .table .rwd-table td {
+    display: table-cell;
+  }
+  .table .rwd-table th:first-child,
+  .table .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .table .rwd-table th:last-child,
+  .table .rwd-table td:last-child {
+    padding-right: 0;
+  }
+  .table tbody {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .table tbody tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .table tbody tr:nth-child(1) {
+    min-width: 88px;
+  }
+  .table tbody tr th,
+  .table tbody tr td {
+    width: 100%;
+  }
+  .table tbody tr .store {
+    padding: 0;
+    height: 270px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .table tbody tr .store img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 /*# sourceMappingURL=Send.css.map */
