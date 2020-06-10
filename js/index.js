@@ -58,7 +58,6 @@ function dynamicNumberCounter(id,setNum) {
 
     // if ((document.body.scrollTop >= 400 && document.body.scrollTop <= 400 + 150) || (document.documentElement.scrollTop >= 400 && document.documentElement.scrollTop <= 400 + 150)) {
     if (document.body.scrollTop >= pageY(statistics)|| document.documentElement.scrollTop >= pageY(statistics) - 100) {
-        console.log(document.documentElement.scrollTop+"  "+"  "+pageY(statistics));
         if (doOnce === false) {
             inner.innerHTML = 0
             set = setInterval(function () {
