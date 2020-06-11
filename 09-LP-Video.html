@@ -17,7 +17,7 @@
     <!-- font-awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <!-- google Fonts -->
-        <link
+    <link
         href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:200,300,400,500,600,700,900&display=swap&subset=chinese-traditional"
         rel="stylesheet">
     <!-- layout -->
@@ -872,7 +872,7 @@
                             <i class="fas fa-info"></i>
                         </div>
                     </a>
-                    <a class="modal-menu-search d-flex align-items-center flex-row-reverse"   href="#">
+                    <a class="modal-menu-search d-flex align-items-center flex-row-reverse" href="#">
                         <i class="fas fa-search"></i>
                         <input type="text">
                     </a>
@@ -1037,7 +1037,8 @@
                         </div>
                     </div>
                     <nav class="pageNumber d-flex justify-content-center  align-items-center">
-                        <ul class="d-lg-flex d-none justify-content-center align-items-center">
+                        <!-- 06-11修改 -->
+                        <ul class="d-flex justify-content-center align-items-center">
                             <li class="total-data">
                                 共3筆資料，第1/5頁，每頁顯示5筆
                             </li>
@@ -1053,10 +1054,13 @@
                             <li class="number"><a href="#">7</a></li>
                             <li class="BTN">
                                 <a class="nextBTN" href="">下一頁</a>
-                                <a class="lastBTN" href="">最後一頁</a>
+                                <a class="lastBTN d-none d-lg-inline" href="">最後一頁</a>
                             </li>
                         </ul>
-                        <a class=" more d-lg-none" onclick="getData('Video')"><div>更多消息</div></a>
+                        <!-- 06-11修改 -->
+                        <a class=" more d-none" onclick="getData('Video')">
+                            <div>更多消息</div>
+                        </a>
                     </nav>
                 </div>
                 <!-- 內頁終點 -->
@@ -1095,8 +1099,12 @@
                 <div class="icon_area">
                     <div class="row d-flex justify-content-center mx-0">
                         <div class="content px-0">
-                            <a href=""><p>個人資料保護管理政策</p></a>
-                            <a href=""><p>版權所有聲明</p></a>
+                            <a href="">
+                                <p>個人資料保護管理政策</p>
+                            </a>
+                            <a href="">
+                                <p>版權所有聲明</p>
+                            </a>
                         </div>
                         <div class="icon_block px-0">
                             <a href="">
@@ -1129,10 +1137,8 @@
         <img src="./img/icon/top.png" alt="">
     </a>
 
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
