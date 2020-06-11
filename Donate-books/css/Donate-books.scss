@@ -1,0 +1,505 @@
+#Freight{
+    ul.text {
+        list-style-type: disc;
+
+        li {
+            list-style: disc;
+            margin-left: 32px;
+
+            &.image {
+                margin-left: 0px;
+                list-style: none;
+            }
+        }
+    }
+
+    li {
+        &.image_center {
+            padding-top: 20px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    .image{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}
+
+#Send{
+    ul.text {
+    list-style-type: disc;
+
+    li {
+        list-style: disc;
+        margin-left: 32px;
+
+        &.image {
+            margin-left: 0px;
+            list-style: none;
+        }
+    }
+}
+
+    li {
+        &.image_center {
+            padding-top: 20px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+
+    .table{
+        width: 100%;
+        border: 1px solid black;
+
+
+        .rwd-table {
+            background: #fff;
+            overflow: hidden;
+        }
+
+        .rwd-table tr:nth-of-type(2n) {
+            background: #eee;
+        }
+
+        .rwd-table {
+            min-width: 100%;
+        }
+
+        .rwd-table th {
+            display: none;
+        }
+
+        .rwd-table td {
+            display: block;
+        }
+
+        .rwd-table td:before {
+            content: attr(data-th) " : ";
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .rwd-table th,
+        .rwd-table td:before {
+            color: #D20B2A;
+            font-weight: bold;
+        }
+
+
+        @media (min-width: 1200px) {
+            .rwd-table td:before {
+                display: none;
+            }
+
+            .rwd-table th,
+            .rwd-table td {
+                display: table-cell;
+            }
+
+            .rwd-table th:first-child,
+            .rwd-table td:first-child {
+                padding-left: 0;
+            }
+
+            .rwd-table th:last-child,
+            .rwd-table td:last-child {
+                padding-right: 0;
+            }
+
+            tbody{
+                display: flex;
+                align-items: flex-start;
+
+                tr{
+
+                    &:nth-child(1){
+                        min-width: 88px;
+                    }
+
+                    display: flex;
+                    flex-wrap: wrap;
+                    
+                    th,
+                    td{
+                        width: 100%;
+                    }
+                    .store{
+                        padding: 0;
+                        height: 270px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img{
+                            max-width: 100%;
+                            max-height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#Smartcabinet{
+    ul.text {
+        list-style-type: disc;
+        margin-bottom: 50px;
+
+        li {
+            list-style: disc;
+            margin-left: 32px;
+
+            &.image {
+                margin-left: 0px;
+                list-style: none;
+            }
+        }
+    }
+
+    li {
+        &.image_center {
+            padding-top: 20px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    img {
+        max-width: 700px;
+        width: 100%;
+
+        &.Donate_btn {
+            max-width: 300px;
+        }
+    }
+
+    .Description{
+
+        p{
+            &.title{
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+        }
+
+        .D_text-around{
+            display: flex;
+            justify-content: space-between;
+
+            .image{
+                    width: 200px;
+                    margin-left: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+
+                img{
+                    max-width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .D_block{
+            img{
+                margin:15px 0;
+            }
+            ul{
+                padding-left: 15px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+#Description{
+    ul.text {
+        list-style-type: disc;
+
+        li {
+            list-style: disc;
+            margin-left: 32px;
+
+            &.image {
+                margin-left: 0px;
+                list-style: none;
+            }
+        }
+    }
+
+    li {
+        &.image_center {
+            padding-top: 20px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    img {
+        max-width: 700px;
+        width: 100%;
+    }
+
+    p{
+        &.title{
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+    }
+
+    .D_text-around{
+        display: flex;
+        justify-content: space-between;
+
+        .image{
+                width: 200px;
+                margin-left: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+
+            img{
+                max-width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .D_block{
+        img{
+            margin:15px 0;
+        }
+        ul{
+            padding-left: 15px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+#Donatebooks-family{
+    ul.text {
+        list-style-type: disc;
+        margin-bottom: 50px;
+
+        li {
+            list-style: disc;
+            margin-left: 32px;
+
+            &.image {
+                margin-left: 0px;
+                list-style: none;
+            }
+        }
+    }
+
+    img {
+        max-width: 700px;
+        width: 100%;
+    }
+
+    ul.matter {
+        list-style-type: disc;
+        border: 1px solid #000000;
+        padding: 25px;
+
+        li {
+            list-style: decimal;
+            margin-left: 32px;
+        }
+    }
+
+    .form_btn {
+        @media screen and (max-width:1400px) {
+            display: flex;
+        }
+
+        button {
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 3px;
+            max-width: 220px;
+            padding: 10px 25px;
+            background-color:transparent;
+            transition: .3s;
+            color: #231815;
+            &:hover {
+                background-color:#6a4945;
+                color: #FFFFFF;
+            }
+            width: 220px;
+            margin-right: 20px;
+            border: 1px solid #231815;
+
+            @media screen and (max-width:1400px) {
+                width: 50%;
+                margin-right: 10px;
+
+                &:nth-last-child(1) {
+                    margin-left: 10px;
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+#Donatebooks-Hi-Life{
+    ul.text {
+        list-style-type: disc;
+        margin-bottom: 50px;
+
+        li {
+            list-style: disc;
+            margin-left: 32px;
+
+            &.image {
+                margin-left: 0px;
+                list-style: none;
+            }
+        }
+    }
+
+    img {
+        max-width: 700px;
+        width: 100%;
+    }
+
+    ul.matter {
+        list-style-type: disc;
+        border: 1px solid #000000;
+        padding: 25px;
+
+        li {
+            list-style: decimal;
+            margin-left: 32px;
+        }
+    }
+
+    .form_btn {
+        @media screen and (max-width:1400px) {
+            display: flex;
+        }
+
+        button {
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 3px;
+            max-width: 220px;
+            padding: 10px 25px;
+            background-color:transparent;
+            transition: .3s;
+            color: #231815;
+            &:hover {
+                background-color:#6a4945;
+                color: #FFFFFF;
+            }
+            width: 220px;
+            margin-right: 20px;
+            border: 1px solid #231815;
+
+            @media screen and (max-width:1400px) {
+                width: 50%;
+                margin-right: 10px;
+
+                &:nth-last-child(1) {
+                    margin-left: 10px;
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+#Donatebooks-seven{
+    ul.text {
+        list-style-type: disc;
+        margin-bottom: 50px;
+
+        li {
+            list-style: disc;
+            margin-left: 32px;
+
+            &.image {
+                margin-left: 0px;
+                list-style: none;
+            }
+        }
+    }
+
+    img {
+        max-width: 700px;
+        width: 100%;
+    }
+
+    ul.matter {
+        list-style-type: disc;
+        border: 1px solid #000000;
+        padding: 25px;
+
+        li {
+            list-style: decimal;
+            margin-left: 32px;
+        }
+    }
+
+    .form_btn {
+        @media screen and (max-width:1400px) {
+            display: flex;
+        }
+
+        button {
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 3px;
+            max-width: 220px;
+            padding: 10px 25px;
+            background-color:transparent;
+            transition: .3s;
+            color: #231815;
+            &:hover {
+                background-color:#6a4945;
+                color: #FFFFFF;
+            }
+            width: 220px;
+            margin-right: 20px;
+            border: 1px solid #231815;
+
+            @media screen and (max-width:1400px) {
+                width: 50%;
+                margin-right: 10px;
+
+                &:nth-last-child(1) {
+                    margin-left: 10px;
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}

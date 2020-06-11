@@ -1,0 +1,521 @@
+#Freight ul.text {
+  list-style-type: disc;
+}
+
+#Freight ul.text li {
+  list-style: disc;
+  margin-left: 32px;
+}
+
+#Freight ul.text li.image {
+  margin-left: 0px;
+  list-style: none;
+}
+
+#Freight li.image_center {
+  padding-top: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#Freight .image {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+#Freight .image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#Send ul.text {
+  list-style-type: disc;
+}
+
+#Send ul.text li {
+  list-style: disc;
+  margin-left: 32px;
+}
+
+#Send ul.text li.image {
+  margin-left: 0px;
+  list-style: none;
+}
+
+#Send li.image_center {
+  padding-top: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#Send .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+#Send .image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#Send .table {
+  width: 100%;
+  border: 1px solid black;
+}
+
+#Send .table .rwd-table {
+  background: #fff;
+  overflow: hidden;
+}
+
+#Send .table .rwd-table tr:nth-of-type(2n) {
+  background: #eee;
+}
+
+#Send .table .rwd-table {
+  min-width: 100%;
+}
+
+#Send .table .rwd-table th {
+  display: none;
+}
+
+#Send .table .rwd-table td {
+  display: block;
+}
+
+#Send .table .rwd-table td:before {
+  content: attr(data-th) " : ";
+  font-weight: bold;
+  display: inline-block;
+}
+
+#Send .table .rwd-table th,
+#Send .table .rwd-table td:before {
+  color: #D20B2A;
+  font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+  #Send .table .rwd-table td:before {
+    display: none;
+  }
+  #Send .table .rwd-table th,
+  #Send .table .rwd-table td {
+    display: table-cell;
+  }
+  #Send .table .rwd-table th:first-child,
+  #Send .table .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  #Send .table .rwd-table th:last-child,
+  #Send .table .rwd-table td:last-child {
+    padding-right: 0;
+  }
+  #Send .table tbody {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #Send .table tbody tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #Send .table tbody tr:nth-child(1) {
+    min-width: 88px;
+  }
+  #Send .table tbody tr th,
+  #Send .table tbody tr td {
+    width: 100%;
+  }
+  #Send .table tbody tr .store {
+    padding: 0;
+    height: 270px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #Send .table tbody tr .store img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+#Smartcabinet ul.text {
+  list-style-type: disc;
+  margin-bottom: 50px;
+}
+
+#Smartcabinet ul.text li {
+  list-style: disc;
+  margin-left: 32px;
+}
+
+#Smartcabinet ul.text li.image {
+  margin-left: 0px;
+  list-style: none;
+}
+
+#Smartcabinet li.image_center {
+  padding-top: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#Smartcabinet img {
+  max-width: 700px;
+  width: 100%;
+}
+
+#Smartcabinet img.Donate_btn {
+  max-width: 300px;
+}
+
+#Smartcabinet .Description p.title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+#Smartcabinet .Description .D_text-around {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#Smartcabinet .Description .D_text-around .image {
+  width: 200px;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#Smartcabinet .Description .D_text-around .image img {
+  max-width: 100%;
+  max-width: 100%;
+}
+
+#Smartcabinet .Description .D_block img {
+  margin: 15px 0;
+}
+
+#Smartcabinet .Description .D_block ul {
+  padding-left: 15px;
+  margin-bottom: 0;
+}
+
+#Description ul.text {
+  list-style-type: disc;
+}
+
+#Description ul.text li {
+  list-style: disc;
+  margin-left: 32px;
+}
+
+#Description ul.text li.image {
+  margin-left: 0px;
+  list-style: none;
+}
+
+#Description li.image_center {
+  padding-top: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#Description img {
+  max-width: 700px;
+  width: 100%;
+}
+
+#Description p.title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+#Description .D_text-around {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#Description .D_text-around .image {
+  width: 200px;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#Description .D_text-around .image img {
+  max-width: 100%;
+  max-width: 100%;
+}
+
+#Description .D_block img {
+  margin: 15px 0;
+}
+
+#Description .D_block ul {
+  padding-left: 15px;
+  margin-bottom: 0;
+}
+
+#Donatebooks-family ul.text {
+  list-style-type: disc;
+  margin-bottom: 50px;
+}
+
+#Donatebooks-family ul.text li {
+  list-style: disc;
+  margin-left: 32px;
+}
+
+#Donatebooks-family ul.text li.image {
+  margin-left: 0px;
+  list-style: none;
+}
+
+#Donatebooks-family img {
+  max-width: 700px;
+  width: 100%;
+}
+
+#Donatebooks-family ul.matter {
+  list-style-type: disc;
+  border: 1px solid #000000;
+  padding: 25px;
+}
+
+#Donatebooks-family ul.matter li {
+  list-style: decimal;
+  margin-left: 32px;
+}
+
+@media screen and (max-width: 1400px) {
+  #Donatebooks-family .form_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#Donatebooks-family .form_btn button {
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 3px;
+  max-width: 220px;
+  padding: 10px 25px;
+  background-color: transparent;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #231815;
+  width: 220px;
+  margin-right: 20px;
+  border: 1px solid #231815;
+}
+
+#Donatebooks-family .form_btn button:hover {
+  background-color: #6a4945;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1400px) {
+  #Donatebooks-family .form_btn button {
+    width: 50%;
+    margin-right: 10px;
+  }
+  #Donatebooks-family .form_btn button:nth-last-child(1) {
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+}
+
+#Donatebooks-Hi-Life ul.text {
+  list-style-type: disc;
+  margin-bottom: 50px;
+}
+
+#Donatebooks-Hi-Life ul.text li {
+  list-style: disc;
+  margin-left: 32px;
+}
+
+#Donatebooks-Hi-Life ul.text li.image {
+  margin-left: 0px;
+  list-style: none;
+}
+
+#Donatebooks-Hi-Life img {
+  max-width: 700px;
+  width: 100%;
+}
+
+#Donatebooks-Hi-Life ul.matter {
+  list-style-type: disc;
+  border: 1px solid #000000;
+  padding: 25px;
+}
+
+#Donatebooks-Hi-Life ul.matter li {
+  list-style: decimal;
+  margin-left: 32px;
+}
+
+@media screen and (max-width: 1400px) {
+  #Donatebooks-Hi-Life .form_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#Donatebooks-Hi-Life .form_btn button {
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 3px;
+  max-width: 220px;
+  padding: 10px 25px;
+  background-color: transparent;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #231815;
+  width: 220px;
+  margin-right: 20px;
+  border: 1px solid #231815;
+}
+
+#Donatebooks-Hi-Life .form_btn button:hover {
+  background-color: #6a4945;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1400px) {
+  #Donatebooks-Hi-Life .form_btn button {
+    width: 50%;
+    margin-right: 10px;
+  }
+  #Donatebooks-Hi-Life .form_btn button:nth-last-child(1) {
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+}
+
+#Donatebooks-seven ul.text {
+  list-style-type: disc;
+  margin-bottom: 50px;
+}
+
+#Donatebooks-seven ul.text li {
+  list-style: disc;
+  margin-left: 32px;
+}
+
+#Donatebooks-seven ul.text li.image {
+  margin-left: 0px;
+  list-style: none;
+}
+
+#Donatebooks-seven img {
+  max-width: 700px;
+  width: 100%;
+}
+
+#Donatebooks-seven ul.matter {
+  list-style-type: disc;
+  border: 1px solid #000000;
+  padding: 25px;
+}
+
+#Donatebooks-seven ul.matter li {
+  list-style: decimal;
+  margin-left: 32px;
+}
+
+@media screen and (max-width: 1400px) {
+  #Donatebooks-seven .form_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#Donatebooks-seven .form_btn button {
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 3px;
+  max-width: 220px;
+  padding: 10px 25px;
+  background-color: transparent;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #231815;
+  width: 220px;
+  margin-right: 20px;
+  border: 1px solid #231815;
+}
+
+#Donatebooks-seven .form_btn button:hover {
+  background-color: #6a4945;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1400px) {
+  #Donatebooks-seven .form_btn button {
+    width: 50%;
+    margin-right: 10px;
+  }
+  #Donatebooks-seven .form_btn button:nth-last-child(1) {
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+}
+/*# sourceMappingURL=Donate-books.css.map */
