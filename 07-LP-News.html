@@ -996,9 +996,10 @@
                     </div>
 
                     <nav class="pageNumber d-flex justify-content-center  align-items-center">
-                        <ul class="d-lg-flex d-none justify-content-center align-items-center">
+                        <!-- 06-11修改 -->
+                        <ul class="d-flex justify-content-center align-items-center">
                             <li class="total-data">
-                                共 <span>3</span>筆資料，第<span>1/5</span>頁，每頁顯示5筆
+                                共3筆資料，第1/5頁，每頁顯示5筆
                             </li>
                             <li class="BTN">
                                 <a class="firstBTN" href="">第一頁</a>
@@ -1012,10 +1013,11 @@
                             <li class="number"><a href="#">7</a></li>
                             <li class="BTN">
                                 <a class="nextBTN" href="">下一頁</a>
-                                <a class="lastBTN" href="">最後一頁</a>
+                                <a class="lastBTN d-none d-lg-inline" href="">最後一頁</a>
                             </li>
                         </ul>
-                        <a class=" more d-lg-none" onclick="getData('News')"><div>更多消息</div></a>
+                        <!-- 06-11修改 -->
+                        <a class=" more d-none" onclick="getData('News')"><div>更多消息</div></a>
                     </nav>
                 </div>
                 <!-- 內頁終點 -->
