@@ -2,8 +2,21 @@
 @import "./_function.scss";
 
 
+.pageContent{
+    padding: 132px 0 0;
+    
+    @media (max-width: 1200px){
+        flex: 1;
+        max-width: 100%;
+    }
+}
 
 .Delivery {
+
+    &.fullpage{
+
+    }
+
     .search {
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -305,7 +318,7 @@
                 }
             }
 
-            @media screen and (max-width:768px) {
+            @media screen and (max-width:1200px) {
                 ul {
                     flex-direction: column;
 

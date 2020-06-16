@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 05-19調整 開始 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <!-- 05-19調整 結束 -->
+    <title>誠品文化藝術基金會</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- font-awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!-- google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:200,300,400,500,600,700,900&display=swap&subset=chinese-traditional"
+        rel="stylesheet">
+    <!-- layout -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- page css  -->
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/Delivery-InsidePage.css">
+    <style>
+
+
+
+    </style>
+</head>
+
+<body>
+    <!-- main content -->
+    <main class="container">
+        <div class="row position-relative align-items-start">
+            <!-- page content -->
+            <section class="col-12 pageContent">
+                <!-- 內頁起點 -->
+                <div class="Delivery fullpage">
+                    <div class="d-flex search">
+                        <div class="col-12">
+                            <ul class="title">
+                                <li>
+                                    <div class="icon"></div>
+                                </li>
+                                <li>篩選條件</li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-2 col-12 name">
+                            <label for="">單位名稱</label>
+                        </div>
+                        <div class="col-xl-10 col-12 form_input">
+                            <input type="text" name="phone" placeholder="">
+                        </div>
+                        <div class="col-xl-2 col-12 name">
+                            <label for="">單位屬性</label>
+                        </div>
+                        <div class="col-xl-10 col-12 form_input">
+                            <ul class="d-flex school">
+                                <li><input type="radio" checked="checked" name="class_number" value="" />
+                                    <div>國小</div>
+                                </li>
+                                <li><input type="radio" checked="checked" name="class_number" value="" />
+                                    <div>國中</div>
+                                </li>
+                                <li><input type="radio" checked="checked" name="class_number" value="" />
+                                    <div>高中職</div>
+                                </li>
+                                <li><input type="radio" checked="checked" name="class_number" value="" />
+                                    <div>民間團體</div>
+                                </li>
+                                <li><input type="radio" checked="checked" name="class_number" value="" />
+                                    <div>政府單位</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-2 col-12 name">
+                            <label for="">類別</label>
+                        </div>
+                        <div class="col-xl-10 col-12 form_input">
+                            <ul class="d-flex Category">
+                                <li><input type="radio" checked="checked" name="class_number" value="" />
+                                    <div>一般</div>
+                                </li>
+                                <li><input type="radio" checked="checked" name="class_number" value="" />
+                                    <div>沿線</div>
+                                </li>
+                                <li><input type="radio" checked="checked" name="class_number" value="" />
+                                    <div>長期</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-2 col-12 name">
+                            <label for="">狀態</label>
+                        </div>
+                        <div class="col-xl-10 col-12 form_input">
+                            <ul class="d-flex Delivery_status">
+                                <li><input type="radio" checked="checked" name="class_number" value="" />
+                                    <div>處理中(待寄送)</div>
+                                </li>
+                                <li><input type="radio" checked="checked" name="class_number" value="" />
+                                    <div>配送中(部分寄出)</div>
+                                </li>
+                                <li><input type="radio" checked="checked" name="class_number" value="" />
+                                    <div>已結案</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 form_btn">
+                            <button>查詢</button>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="d-flex Distribution_report">
+                        <div class="col-12 form_btn">
+                            <button>取消</button>
+                            <button>儲存</button>
+                            <button class="Export">配送報表匯出</button>
+                        </div>
+                        <div class="col-12 Delivery_Form">
+                            <ol>
+                                <ul>
+                                    <li class="date">
+                                        <span>標題</span>
+                                        <input type="text" name="phone" placeholder="">
+                                    </li>
+                                    <li class="date">
+                                        <span>預計配送日</span>
+                                        <input type="text" name="phone" placeholder="">
+                                    </li>
+                                    <li>
+                                        <span>預計配送箱數</span>
+                                        <input type="text" name="phone" placeholder="">
+                                    </li>
+                                    <li>
+                                        <span>預設狀態</span>
+                                        <select class="grade">
+                                            <option selected="true">未鎖定</option>
+                                            <option>處理中</option>
+                                            <option>配送中</option>
+                                            <option>已結案</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>目前已分類箱數：100</li>
+                                    <li>已分配本數：100</li>
+                                </ul>
+                            </ol>
+                            <table class="rwd-table">
+                                <thead>
+                                    <tr>
+                                        <th class="click">
+                                            <div>
+                                                <span>全選</span>
+                                            </div>
+                                        </th>
+                                        <th class="data">
+                                            <div>
+                                                <span>申請</span>
+                                                <span>日期</span>
+                                            </div>
+                                        </th>
+                                        <th class="status">
+                                            <div>
+                                                <span>狀態</span>
+                                            </div>
+                                        </th>
+                                        <th class="unit">
+                                            <div>
+                                                <span>申請單位</span>
+                                            </div>
+                                        </th>
+                                        <th class="Remarks">
+                                            <div>
+                                                <span>基金會備註</span>
+                                            </div>
+                                        </th>
+                                        <th class="demand">
+                                            <div>
+                                                <span>需求</span>
+                                                <span>箱數</span>
+                                            </div>
+                                        </th>
+                                        <th class="Deliverybox">
+                                            <div>
+                                                <span>配送</span>
+                                                <span>箱數</span>
+                                            </div>
+                                        </th>
+                                        <th class="Deliverybook">
+                                            <div>
+                                                <span>配送</span>
+                                                <span>本數</span>
+                                            </div>
+                                        </th>
+                                        <th class="Remaining">
+                                            <div>
+                                                <span>剩餘</span>
+                                                <span>箱數</span>
+                                            </div>
+                                        </th>
+                                        <th class="accumulation">
+                                            <div>
+                                                <span>累積</span>
+                                                <span>配送本數</span>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-th="全選" class="click_area">
+                                            <div>
+                                                <input type="checkbox" id="myCheck">
+                                            </div>
+                                        </td>
+                                        <td data-th="申請日期" class="data_area">
+                                            <div>
+                                                <span>2019</span>
+                                                <span>12/11</span>
+                                            </div>
+                                        </td>
+                                        <td data-th="狀態">
+                                            <div>
+                                                <select id="">
+                                                    <option value="">處理中(待寄送)</option>
+                                                    <option value="">配送中(部分寄出)</option>
+                                                    <option value="">已結案</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td data-th="申請單位">
+                                            <div>
+                                                <span>OOe國小</span>
+                                            </div>
+                                        </td>
+                                        <td data-th="基金會備註">
+                                            <div>
+                                                <span>
+                                                    全社區書可
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td data-th="需求箱數">
+                                            <div>
+                                                <input type="text">
+                                            </div>
+                                        </td>
+                                        <td data-th="配送箱數">
+                                            <div>
+                                                <input type="text">
+                                            </div>
+                                        </td>
+                                        <td data-th="配送本數">
+                                            <div>
+                                                <input type="text">
+                                            </div>
+                                        </td>
+                                        <td data-th="剩餘箱數">
+                                            <div>
+                                                <span>1</span>
+                                            </div>
+                                        </td>
+                                        <td data-th="累積配送本數">
+                                            <div>
+                                                <span>360000</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- 內頁終點 -->
+            </section>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row footer_area">
+                <div class="col-xl-3 logo_area px-0">
+                    <a href="#" title="回首頁" aria-label="回首頁" class="logo">
+                        <img class="w-100" src="../img/index/logo-white.png" alt="">
+                    </a>
+                </div>
+                <div class="col-xl-5 info_area">
+                    <div class="footer-info">
+                        <p class="d-block text-center text-sm-left">財團法人誠品文化藝術基金會</p>
+                        <p>11073台北市信義區菸廠路88號4F之7</p>
+                        <p>
+                            <span>電　　話</span>
+                            <span>02-6636-9888</span>
+                        </p>
+                        <p>
+                            <span>傳　　真</span>
+                            <span>02-6636-1230</span>
+                        </p>
+                        <p>
+                            <span>統一編號</span>
+                            <span>25681974</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="icon_area">
+                    <div class="row d-flex justify-content-center mx-0">
+                        <div class="content px-0">
+                            <a href=""><p>個人資料保護管理政策</p></a>
+                            <a href=""><p>版權所有聲明</p></a>
+                        </div>
+                        <div class="icon_block px-0">
+                            <a href="">
+                                <div class="icon-bg">
+                                    <div class="mail-icon"><img src="../img/icon/emaill.png" alt=""></div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="icon-bg">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="icon-bg"><i class="fab fa-facebook-f"></i></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="Page_area">
+        <div class="Page-BG">
+            <div></div>
+        </div>
+    </div>
+
+    <a href="#" class="go_to_top" id="BackTop">
+        <img src="../img/icon/top.png" alt="">
+    </a>
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="../js/main.js"></script>
+    <!-- page js -->
+    <script>
+
+    </script>
+
+</body>
+
+</html>
