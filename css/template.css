@@ -460,7 +460,7 @@ header #topline nav > ul > li a .cicle {
 }
 
 header #topline nav > ul > li a .cicle:hover {
-  border: 1.4px #978475 solid;
+  border: 2px #978475 solid;
 }
 
 header #topline nav > ul > li a .cicle .fa-info {
