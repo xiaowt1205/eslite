@@ -4,13 +4,6 @@
 
 header {
     position: relative;
-    z-index: 2;
-
-    // 06/17 修改
-    @media (max-width:768px) {
-        z-index: 0;
-    }
-    // 06/17 修改
     
     @media (max-width:576px) {
         padding: 0;
@@ -267,9 +260,6 @@ header {
 
                                 @media(max-width:992px) {
                                     display: block;
-                                    // 06/17修正
-                                    z-index: 2;
-                                    // 06/17修正
                                 }
                             }
                         }
