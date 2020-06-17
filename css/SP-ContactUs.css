@@ -19,6 +19,11 @@
   text-indent: 30px;
 }
 
+.Connection_area .Connection_form .name > label,
+.Connection_area .Connection_form .name > div {
+  min-width: 170px;
+}
+
 .Connection_area .Connection_form .text {
   margin-bottom: 30px;
   text-align: justify;
