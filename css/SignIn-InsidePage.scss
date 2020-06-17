@@ -118,10 +118,17 @@
     }
 
     .form_btn {
-
+        
         @media (max-width:1400px) {
             display: flex;
         }
+
+        // 06-17修改 開始
+        @media (max-width:1200px) {
+            flex-wrap: wrap;
+        }
+        // 06-17修改 結束
+
 
         @media (max-width:768px) {
             padding: 10px 15px;
@@ -153,6 +160,7 @@
             }
 
             @media (max-width:1200px) {
+
                 &:nth-child(1) {
                     order: 0;
                     width: 100%;
