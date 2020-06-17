@@ -463,6 +463,8 @@ nav{
                         background-color: transparent;
                         border: none;
                         color: white;
+                        display: block;
+                        user-select:text;
                     }
 
                     &:hover{
