@@ -48,7 +48,7 @@ var swiper = new Swiper('.vendor_area-mob .swiper-container', {
 var doOnce = false;
 var statistics = document.querySelector("#Statistics")
 
-function dynamicNumberCounter(id,setNum) {
+function dynamicNumberCounter(id, setNum) {
     var inner = document.getElementById(id);
 
     var num = 0;
@@ -57,7 +57,7 @@ function dynamicNumberCounter(id,setNum) {
     var setNum = setNum;
 
     // if ((document.body.scrollTop >= 400 && document.body.scrollTop <= 400 + 150) || (document.documentElement.scrollTop >= 400 && document.documentElement.scrollTop <= 400 + 150)) {
-    if (document.body.scrollTop >= pageY(statistics)|| document.documentElement.scrollTop >= pageY(statistics) - 100) {
+    if (document.body.scrollTop >= pageY(statistics) || document.documentElement.scrollTop >= pageY(statistics) - 100) {
         if (doOnce === false) {
             inner.innerHTML = 0
             set = setInterval(function () {
@@ -85,13 +85,26 @@ window.onscroll = function () {
     dynamicNumberCounter("total_1", 600000);
 }
 
-$('.aside-btn-title').click(function () {
-    $(this).toggleClass('active')
-})
-
 
 //06-08 get element position Y axis in page
 function pageY(elem) {
     return elem.offsetParent ? elem.offsetTop + pageY(elem.offsetParent) : elem.offsetTop;
 }
-    
+
+
+//06-17調整 開始
+$('.aside-btn-title').click(function () {
+    $(this).toggleClass('active')
+})
+
+$(document).ready(function () {
+    if ($(window).width() < 992) {
+        $('.aside-btn-group .collapse').collapse('hide')
+    }
+    $(window).resize(function () {
+        if ($(window).width() < 992) {
+            $('.aside-btn-group .collapse').collapse('hide')
+        }
+    });
+});
+//06-17調整 結束
