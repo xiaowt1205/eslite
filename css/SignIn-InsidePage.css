@@ -163,6 +163,13 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .login .form_btn {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 768px) {
   .login .form_btn {
     padding: 10px 15px;
