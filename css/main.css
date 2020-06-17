@@ -517,6 +517,8 @@ nav .search_box.active .search i {
 .modal .modal-content .modal-footer {
   border: none;
   padding: 30px 0 0 0;
+  min-width: 280px;
+  margin: auto;
 }
 
 .modal .modal-content .modal-footer a .circle {
@@ -525,13 +527,13 @@ nav .search_box.active .search i {
   border: 1.5px #FFFFFF solid;
   border-radius: 50%;
   position: relative;
-  margin: 0 20px;
+  margin: 0 10px 0 20px;
 }
 
 .modal .modal-content .modal-footer a .circle i {
   position: absolute;
   top: 50%;
-  left: 53%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-size: 20px;
@@ -553,6 +555,7 @@ nav .search_box.active .search i {
   width: 0;
   background-color: transparent;
   border: none;
+  color: white;
 }
 
 .modal .modal-content .modal-footer a.modal-menu-search:hover i {
