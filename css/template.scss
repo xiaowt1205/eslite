@@ -440,7 +440,9 @@ main {
 
 .insidePageTitle {
     padding-top: 70px;
-    height: 632px;
+    //06-17調整 開始
+    min-height: 632px;
+    //06-17調整 結束
     display: flex;
     justify-content: center;
     align-items: center;
