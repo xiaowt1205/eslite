@@ -640,7 +640,7 @@ main.container {
 
 .insidePageTitle {
   padding-top: 70px;
-  height: 632px;
+  min-height: 632px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
