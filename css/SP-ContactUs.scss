@@ -24,6 +24,17 @@
 
 
     .Connection_form {
+
+        // 06/17 修改
+        .name {
+
+            &>label,
+            &>div {
+                min-width: 170px;
+            }
+        }
+        // 06/17 修改
+        
         .text {
             margin-bottom: 30px;
             text-align: justify;
