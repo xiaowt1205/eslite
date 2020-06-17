@@ -418,6 +418,12 @@ nav{
         .modal-footer{
             border: none;
             padding:30px 0 0 0;
+
+            // 06-17調整 開始
+            min-width: 280px;
+            margin: auto;
+            // 06-17調整 結束
+
             
             a{
                 .circle{
@@ -426,12 +432,17 @@ nav{
                     border: 1.5px $fc-white solid;
                     border-radius: 50%;
                     position: relative;
-                    margin: 0 20px;
+
+                    // 06-17調整 開始
+                    margin: 0 10px 0 20px;
+                    // 06-17調整 結束
 
                     i{
                         position: absolute;
                         top: 50%;
-                        left: 53%;
+                        // 06-17調整 開始
+                        left: 50%;
+                        // 06-17調整 結束
                         transform: translate(-50% , -50%);
                         font-size: $fs-20;
                     }
@@ -451,6 +462,7 @@ nav{
                         width: 0;
                         background-color: transparent;
                         border: none;
+                        color: white;
                     }
 
                     &:hover{
