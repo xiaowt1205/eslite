@@ -692,3 +692,17 @@ table.table_area {
 th {
     word-break: break-all;
 }
+// 06/17調整
+.text_area{
+    .picture {
+        iframe {
+            max-width: 100%;
+            max-height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+        }
+    }
+}
+// 06/17調整
