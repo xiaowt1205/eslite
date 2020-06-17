@@ -99,13 +99,6 @@ header #topline nav > ul > li {
 
 header {
   position: relative;
-  z-index: 2;
-}
-
-@media (max-width: 768px) {
-  header {
-    z-index: 0;
-  }
 }
 
 @media (max-width: 576px) {
@@ -427,7 +420,6 @@ header #topline nav > ul > li.menu-area .menu-icon .menu-btn-mob {
 @media (max-width: 992px) {
   header #topline nav > ul > li.menu-area .menu-icon .menu-btn-mob {
     display: block;
-    z-index: 2;
   }
 }
 
