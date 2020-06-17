@@ -297,9 +297,6 @@ header {
 
                         .cicle {
                             position: relative;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
                             width: 24px;
                             height: 24px;
                             border: 2px black solid;
@@ -310,7 +307,12 @@ header {
                             }
 
                             .fa-info {
-                                margin-left: 1px;
+                                //06-17調整 開始
+                                position: absolute;
+                                top: 50%;
+                                left: calc(50% + 2.5px);
+                                transform: translate(-50%,-50%);
+                                //06-17調整 開始
                                 text-align: center;
                                 font-size: $fs-14;
                             }

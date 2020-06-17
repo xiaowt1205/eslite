@@ -280,10 +280,22 @@ header #topline nav > ul > li:nth-child(-n + 5) {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1460px) {
   header #topline nav > ul > li:nth-child(-n + 5) {
     padding: 0px 20px;
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header #topline nav > ul > li:nth-child(-n + 5) {
+    padding: 0px 15px;
+  }
+}
+
+@media screen and (max-width: 1065px) {
+  header #topline nav > ul > li:nth-child(-n + 5) {
+    padding: 0px 10px;
   }
 }
 
@@ -363,15 +375,6 @@ header #topline nav > ul > li a .circle {
   position: relative;
   min-width: 24px;
   min-height: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border: 2px black solid;
   border-radius: 50%;
 }
@@ -381,7 +384,11 @@ header #topline nav > ul > li a .circle:hover {
 }
 
 header #topline nav > ul > li a .circle .fa-info {
-  margin-left: 4px;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 2.5px);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
   font-size: 14px;
 }
@@ -1120,31 +1127,24 @@ header #headline .headline_area .banner .swiper-banner {
 }
 
 @media (min-width: 1200px) {
-  header #headline .headline_area .banner .swiper-banner .swiper-container {
-    margin-left: auto;
-    margin-right: unset;
-    height: unset;
+  header #headline .headline_area .banner .swiper-banner.swiper-container {
     width: 93%;
     height: 440px;
   }
 }
 
 @media (min-width: 1400px) {
-  header #headline .headline_area .banner .swiper-banner .swiper-container {
+  header #headline .headline_area .banner .swiper-banner.swiper-container {
     width: 98%;
     height: 515px;
   }
 }
 
 @media (min-width: 1600px) {
-  header #headline .headline_area .banner .swiper-banner .swiper-container {
+  header #headline .headline_area .banner .swiper-banner.swiper-container {
     width: 100%;
     height: 590px;
   }
-}
-
-header #headline .headline_area .banner .swiper-banner .swiper-container img {
-  width: unset !important;
 }
 
 header .mobile-aside {
@@ -1610,6 +1610,33 @@ main .bg {
           transition-timing-function: ease-in-out;
 }
 
+#Statistics .container_1600 .statistics_area .content .business_area .business_block::before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 6px;
+  background-color: #231815;
+  bottom: 0;
+  left: 50%;
+  top: 55%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media screen and (max-width: 768px) {
+  #Statistics .container_1600 .statistics_area .content .business_area .business_block::before {
+    width: 50px;
+    height: 4px;
+    top: 54%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #Statistics .container_1600 .statistics_area .content .business_area .business_block {
+    border: 5px solid #544747;
+  }
+}
+
 #Statistics .container_1600 .statistics_area .content .business_area .business_block:hover {
   border: 12px solid #6a4945;
   -webkit-box-shadow: 0 0 10px #000000;
@@ -1684,6 +1711,7 @@ main .bg {
   padding-bottom: 13px;
   position: relative;
   letter-spacing: 7px;
+  margin-left: -15px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1703,6 +1731,7 @@ main .bg {
   #Statistics .container_1600 .statistics_area .content .business_area .business_block .business_text span:nth-child(1) {
     font-size: 24px;
     font-weight: 800;
+    margin-left: -10px;
   }
 }
 
@@ -1715,30 +1744,6 @@ main .bg {
 @media screen and (max-width: 375px) {
   #Statistics .container_1600 .statistics_area .content .business_area .business_block .business_text span:nth-child(1) {
     font-size: 14px;
-  }
-}
-
-#Statistics .container_1600 .statistics_area .content .business_area .business_block .business_text span:nth-child(1)::before {
-  content: '';
-  position: absolute;
-  width: 80px;
-  height: 6px;
-  background-color: #231815;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-@media screen and (max-width: 1024px) {
-  #Statistics .container_1600 .statistics_area .content .business_area .business_block .business_text span:nth-child(1)::before {
-    margin-left: 10px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #Statistics .container_1600 .statistics_area .content .business_area .business_block .business_text span:nth-child(1)::before {
-    width: 35px;
   }
 }
 

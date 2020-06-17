@@ -460,15 +460,6 @@ header #topline nav > ul > li a:hover {
 
 header #topline nav > ul > li a .cicle {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 24px;
   height: 24px;
   border: 2px black solid;
@@ -480,7 +471,11 @@ header #topline nav > ul > li a .cicle:hover {
 }
 
 header #topline nav > ul > li a .cicle .fa-info {
-  margin-left: 1px;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 2.5px);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
   font-size: 14px;
 }

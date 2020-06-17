@@ -135,10 +135,20 @@ header {
                             padding: 0px 25px;
                         }
 
-                        @media screen and (max-width:1200px) {
+                        // 06-17調整 開始
+                        @media screen and (max-width:1460px) {
                             padding: 0px 20px;
                             font-size: $fs-14;
                         }
+
+                        @media screen and (max-width:1200px) {
+                            padding: 0px 15px;
+                        }
+
+                        @media screen and (max-width:1065px) {
+                            padding: 0px 10px;
+                        }
+                        // 06-17調整 結束
 
                         @media(max-width:1024px) {
                             display: none;
@@ -198,18 +208,22 @@ header {
                             position: relative;
                             min-width: 24px;
                             min-height: 24px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
                             border: 2px black solid;
                             border-radius: 50%;
+
 
                             &:hover {
                                 border: 1.4px $fc-hover solid;
                             }
 
                             .fa-info {
-                                margin-left: 4px;
+
+                                //06-17調整 開始
+                                position: absolute;
+                                top: 50%;
+                                left: calc(50% + 2.5px);
+                                transform: translate(-50%,-50%);
+                                //06-17調整 開始
                                 text-align: center;
                                 font-size: $fs-14;
                             }
@@ -787,13 +801,12 @@ header {
                 .swiper-banner {
                     height: 100%;
 
-
-                    .swiper-container {
+                    // 06-17調整 開始
+                    &.swiper-container {
+                    // 06-17調整 結束
+                    
 
                         @media (min-width:1200px) {
-                            margin-left: auto;
-                            margin-right: unset;
-                            height: unset;
                             width: 93%;
                             height: 440px;
                         }
@@ -807,11 +820,6 @@ header {
                             width: 100%;
                             height: 590px;
                         }
-
-                        img {
-                            width: unset !important;
-                        }
-
                     }
                 }
             }
@@ -1176,6 +1184,31 @@ main {
                         transition: .3s;
                         transition-timing-function: ease-in-out;
 
+                        // 06-17調整 開始
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 80px;
+                            height: 6px;
+                            background-color: $bc-brown;
+                            bottom: 0;
+                            left: 50%;
+                            top: 55%;
+                            transform: translateX(-50%);
+
+
+                            @media screen and (max-width:768px) {
+                                width: 50px;
+                                height: 4px;
+                                top: 54%;
+                            }
+                        }
+                        @media screen and (max-width:768px) {
+                            border: 5px solid $br-brown;
+                        }
+                        // 06-17調整 結束
+
+
                         &:hover {
                             border: 12px solid $br-brown-hover;
                             box-shadow: 0 0 10px $br-shadow;
@@ -1233,6 +1266,10 @@ main {
                                 position: relative;
                                 letter-spacing: 7px;
 
+                                //06-17調整 開始
+                                margin-left: -15px;
+                                //06-17調整 結束
+
                                 @media screen and (max-width:1024px) {
                                     margin-left: -20px;
                                     letter-spacing: 3px;
@@ -1245,6 +1282,9 @@ main {
                                 @media screen and (max-width:768px) {
                                     font-size: $fs-24;
                                     font-weight: 800;
+                                    //06-17調整 開始
+                                    margin-left: -10px;
+                                    //06-17調整 結束
                                 }
 
                                 @media screen and (max-width:576px) {
@@ -1253,25 +1293,6 @@ main {
 
                                 @media screen and (max-width:375px) {
                                     font-size: $fs-14;
-                                }
-
-                                &::before {
-                                    content: '';
-                                    position: absolute;
-                                    width: 80px;
-                                    height: 6px;
-                                    background-color: $bc-brown;
-                                    bottom: 0;
-                                    left: 50%;
-                                    transform: translateX(-50%);
-
-                                    @media screen and (max-width:1024px) {
-                                        margin-left: 10px;
-                                    }
-
-                                    @media screen and (max-width:768px) {
-                                        width: 35px;
-                                    }
                                 }
 
                                 &::after {
