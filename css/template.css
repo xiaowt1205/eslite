@@ -347,7 +347,7 @@ header #topline nav > ul > li:nth-child(7) {
   border-left: 0 #808080 solid;
   border-right: 0 #808080 solid;
   display: none;
-  position: unset;
+  position: static;
 }
 
 header #topline nav > ul > li.nav-icon {
