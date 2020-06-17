@@ -463,8 +463,11 @@ nav{
                         background-color: transparent;
                         border: none;
                         color: white;
+
+                        // 06-17調整 開始
                         display: block;
                         user-select:text;
+                        // 06-17調整 結束
                     }
 
                     &:hover{
