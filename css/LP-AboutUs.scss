@@ -7,7 +7,9 @@
 .btnGroup {
 
     .project {
-        @include btn_style(780px, 80px, 30px, 13px, $light-brown, $brown-hover, $brown);
+        // 06/17修改
+        @include btn_style(780px, unset, 30px, 13px, $light-brown, $brown-hover, $brown);
+        // 06/17修改
         @include text_style($fs-18, unset, unset, unset);
         color: $white;
         margin-bottom: 30px;

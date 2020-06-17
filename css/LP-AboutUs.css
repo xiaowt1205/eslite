@@ -94,7 +94,7 @@
 
 .btnGroup .project {
   max-width: 780px;
-  max-height: 80px;
+  max-height: unset;
   padding: 30px 25px;
   border-radius: 13px;
   background-color: #6a4945;
