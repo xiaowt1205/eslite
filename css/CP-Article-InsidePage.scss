@@ -228,7 +228,12 @@
 
 .multiple-pic {
     .text_area {
+        padding: 50px 0px;
 
+        @media screen and (max-width:768px) {
+            padding: 0px;
+        }
+        
         .text-around {
             margin-bottom: 40px;
             font-size: 14px;
