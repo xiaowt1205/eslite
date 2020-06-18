@@ -77,7 +77,6 @@
         .QA {
             padding: 20px 15px 20px 0px;
             border-bottom: 1px solid $fc-pure-gray;
-            cursor: pointer;
 
             .query {
                 font-weight: bold;
@@ -86,6 +85,10 @@
                 align-items: center;
                 line-height: 2;
                 letter-spacing: 2px;
+
+                // 06-18調整 開始
+                cursor: pointer;
+                // 06-18調整 結束
                 
 
 
@@ -115,7 +118,10 @@
                 max-height: 0;
                 transition: 0.3s;
                 letter-spacing: 1.5px;
-
+                
+                // 06-18調整 開始
+                cursor: default;
+                // 06-18調整 結束
             }
 
             &.active {

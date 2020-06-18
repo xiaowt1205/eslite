@@ -174,7 +174,6 @@
 .question .QA-tab .QA {
   padding: 20px 15px 20px 0px;
   border-bottom: 1px solid #4D4D4D;
-  cursor: pointer;
 }
 
 .question .QA-tab .QA .query {
@@ -188,6 +187,7 @@
           align-items: center;
   line-height: 2;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 .question .QA-tab .QA .query .fa-chevron-up {
@@ -219,6 +219,7 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
   letter-spacing: 1.5px;
+  cursor: default;
 }
 
 .question .QA-tab .QA.active .fa-chevron-up {
