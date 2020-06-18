@@ -197,11 +197,10 @@ main {
     @include region(100%, 100vh, rgba(20, 14, 12, 0.9));
     position: fixed;
     top: 0;
-    left: 0;
+    left:0;
     display: none;
     justify-content: center;
     align-items: center;
-
     &.active {
         display: flex;
         z-index: 5;
@@ -210,6 +209,11 @@ main {
     .customization-swiper-content {
         // 05/13 修正XX位置
         position: absolute;
+        // 06/17修正
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+         // 06/17修正
         @include region(100%, 100%, unset);
         max-height: 800px;
         // 05/13 修正XX位置
@@ -271,12 +275,12 @@ main {
             .swiper-pagination-fraction {
                 @include text_style($fs-32, unset, unset, 3px);
                 position: relative;
-                bottom: unset;
-                left: unset;
+                bottom: 0;
+                left:0;
                 transform: translateY(-7px);
                 margin-left: 20px;
                 margin-bottom: -5px;
-                width: unset;
+                width: 150px;
                 min-width: 150px;
                 display: flex;
                 justify-content: center;

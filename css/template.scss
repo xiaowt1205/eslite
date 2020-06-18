@@ -207,7 +207,9 @@ header {
                     &:nth-child(7) {
                         @include border-two-side(0, 0, $fc-gray, solid);
                         display: none;
-                        position: unset;
+                        // 06/17修正
+                        position: static;
+                        // 06/17修正
                     }
 
                     &.nav-icon {
