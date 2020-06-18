@@ -803,6 +803,7 @@ footer {
                         }
                     }
 
+                    // 06-18調整 開始
                     &:nth-child(1) {
                         display: block;
                         text-align: center;
@@ -811,6 +812,8 @@ footer {
                             text-align: left;
                         }
                     }
+                    // 06-18調整 結束
+
 
                     @media screen and (max-width:576px) {
                         min-width: 240px;
