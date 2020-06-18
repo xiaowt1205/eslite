@@ -1067,6 +1067,17 @@ footer .footer_area .info_area .footer-info p span:nth-child(2) {
   }
 }
 
+footer .footer_area .info_area .footer-info p:nth-child(1) {
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  footer .footer_area .info_area .footer-info p:nth-child(1) {
+    text-align: left;
+  }
+}
+
 @media screen and (max-width: 576px) {
   footer .footer_area .info_area .footer-info p {
     min-width: 240px;

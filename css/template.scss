@@ -803,6 +803,15 @@ footer {
                         }
                     }
 
+                    &:nth-child(1) {
+                        display: block;
+                        text-align: center;
+
+                        @media(min-width: 576px){
+                            text-align: left;
+                        }
+                    }
+
                     @media screen and (max-width:576px) {
                         min-width: 240px;
                         margin-bottom: 10px;
