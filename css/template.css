@@ -1300,6 +1300,12 @@ footer .footer_area .icon_area .icon_block .icon-bg .mail-icon {
   margin-bottom: 40px;
 }
 
+@media (max-width: 1400px) and (min-width: 1200px) {
+  .form_input {
+    padding-left: 30px;
+  }
+}
+
 @media (max-width: 992px) {
   .form_input {
     margin-bottom: 30px;
