@@ -57,56 +57,58 @@ a {
     max-width: 1000px;
 }
 
-nav{
+nav {
+
     // 04/08 新增功能 頭
     .search_box {
-    position: relative;
+        position: relative;
 
-    .search {
-        position: absolute;
-        right: 0;
-        bottom: -10px;
-        width: 0px;
-        height: 40px;
-        background-color: $brown-hover;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transform: translateY(100%);
-        transition: .3s;
-
-        input {
-            width: 0px;
-            height: 30px;
-            transition: .3s;
-            border: 0px solid;
-        }
-
-        i {
-            opacity: 0;
-            padding: 0px 5px 0px 10px;
-            color: $white;
-        }
-
-    }
-
-    &.active {
         .search {
-            width: 215px;
-            padding: 5px;
+            position: absolute;
+            right: 0;
+            bottom: -10px;
+            width: 0px;
+            height: 40px;
+            background-color: $brown-hover;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(100%);
+            transition: .3s;
 
             input {
-                width: 165px;
+                width: 0px;
+                height: 30px;
+                transition: .3s;
+                border: 0px solid;
             }
 
             i {
-                opacity: 1;
+                opacity: 0;
+                padding: 0px 5px 0px 10px;
+                color: $white;
+            }
+
+        }
+
+        &.active {
+            .search {
+                width: 215px;
+                padding: 5px;
+
+                input {
+                    width: 165px;
+                }
+
+                i {
+                    opacity: 1;
+                }
             }
         }
     }
-}
-// 04/08 新增功能 尾
+
+    // 04/08 新增功能 尾
 }
 
 .menu {
@@ -126,7 +128,7 @@ nav{
         animation-timing-function: ease-in-out;
         overflow-y: overlay;
 
-        @media (max-width:992px){
+        @media (max-width:992px) {
             display: none;
         }
 
@@ -167,7 +169,7 @@ nav{
                 font-size: $fs-22;
                 margin-right: 30px;
 
-                div {
+                .name {
                     width: 180px;
                     border-bottom: 1px solid $fc-white;
                     padding-bottom: 15px;
@@ -175,9 +177,7 @@ nav{
             }
 
             ul {
-
                 .menu-content {
-
 
                     &.collapse-content {
                         color: $fc-white;
@@ -257,13 +257,97 @@ nav{
                 }
             }
 
-            &:first-child{
+            &:first-child {
                 margin-left: 40px;
             }
 
-            &:last-child {
+            // 07-02修改
+
+            &:nth-last-child(2) {
                 margin-left: auto;
             }
+
+            &.nav-icon {
+                position: absolute;
+                width: auto;
+                bottom: -20px;
+                right: 0;
+                transform: translate(-30px, 100%);
+                display: flex;
+                .search_box {
+                    i {
+                        transition: .5s;
+                    }
+
+                    input {
+                        transition: .5s;
+                        transform: rotate(180deg);
+                        width: 0;
+                        background-color: transparent;
+                        border: none;
+                        color: white;
+
+                        // 06-17調整 開始
+                        display: block;
+                        user-select: text;
+                        // 06-17調整 結束
+                    }
+
+                    &:hover {
+                        i {
+                            margin-left: 10px;
+                        }
+
+                        input {
+                            width: 100px;
+                            border: 1px white solid;
+                        }
+                    }
+                }
+                // .modal-footer {
+                //     border: none;
+                //     padding: 30px 0 0 0;
+        
+                //     // 06-17調整 開始
+                //     min-width: 280px;
+                //     margin: auto;
+                //     // 06-17調整 結束
+        
+        
+                //     a {
+                //         .circle {
+                //             width: 28px;
+                //             height: 28px;
+                //             border: 1.5px $fc-white solid;
+                //             border-radius: 50%;
+                //             position: relative;
+        
+                //             // 06-17調整 開始
+                //             margin: 0 10px 0 20px;
+                //             // 06-17調整 結束
+        
+                //             i {
+                //                 position: absolute;
+                //                 top: 50%;
+                //                 // 06-17調整 開始
+                //                 left: 50%;
+                //                 // 06-17調整 結束
+                //                 transform: translate(-50%, -50%);
+                //                 font-size: $fs-20;
+                //             }
+                //         }
+        
+                //         i {
+                //             font-size: $fs-24;
+                //             color: $fc-white;
+                //         }
+        
+
+                //     }
+                // }
+            }
+
+            // 07-02修改
         }
 
     }
@@ -298,7 +382,7 @@ nav{
         }
     }
 
-    a{
+    a {
         color: inherit;
     }
 }
@@ -338,9 +422,9 @@ nav{
             padding: 25px 0 0 0;
             position: relative;
             width: 280px;
-            margin:auto;
+            margin: auto;
 
-            &::after{
+            &::after {
                 content: ' ';
                 position: absolute;
                 bottom: -10px;
@@ -415,18 +499,18 @@ nav{
             }
         }
 
-        .modal-footer{
+        .modal-footer {
             border: none;
-            padding:30px 0 0 0;
+            padding: 30px 0 0 0;
 
             // 06-17調整 開始
             min-width: 280px;
             margin: auto;
             // 06-17調整 結束
 
-            
-            a{
-                .circle{
+
+            a {
+                .circle {
                     width: 28px;
                     height: 28px;
                     border: 1.5px $fc-white solid;
@@ -437,27 +521,28 @@ nav{
                     margin: 0 10px 0 20px;
                     // 06-17調整 結束
 
-                    i{
+                    i {
                         position: absolute;
                         top: 50%;
                         // 06-17調整 開始
                         left: 50%;
                         // 06-17調整 結束
-                        transform: translate(-50% , -50%);
+                        transform: translate(-50%, -50%);
                         font-size: $fs-20;
                     }
                 }
 
-                i{
+                i {
                     font-size: $fs-24;
                     color: $fc-white;
                 }
 
-                &.modal-menu-search{
-                    i{
+                &.modal-menu-search {
+                    i {
                         transition: .5s;
                     }
-                    input{
+
+                    input {
                         transition: .5s;
                         width: 0;
                         background-color: transparent;
@@ -466,15 +551,16 @@ nav{
 
                         // 06-17調整 開始
                         display: block;
-                        user-select:text;
+                        user-select: text;
                         // 06-17調整 結束
                     }
 
-                    &:hover{
-                        i{
+                    &:hover {
+                        i {
                             margin-left: 10px;
                         }
-                        input{
+
+                        input {
                             width: 150px;
                             border: 1px white solid;
                         }
@@ -484,7 +570,7 @@ nav{
         }
     }
 
-    a{
+    a {
         color: inherit;
     }
 }
@@ -618,7 +704,7 @@ footer {
     padding: 50px 15px;
     background-color: $main-color-dark;
 
-     a{
+    a {
         color: inherit;
     }
 
@@ -921,7 +1007,7 @@ footer {
         flex-wrap: wrap;
 
         .number {
-            &.active{
+            &.active {
                 a {
                     background-color: $bc-number-black;
                     color: $fc-white;
@@ -945,18 +1031,18 @@ footer {
             }
         }
 
-        .total-data{
+        .total-data {
             display: flex;
             font-size: $fs-16;
             color: #808080;
             margin-right: 20px;
             justify-content: center;
 
-            @media (max-width:1400px){
+            @media (max-width:1400px) {
                 width: 100%;
             }
 
-            @media (max-width:1024px){
+            @media (max-width:1024px) {
                 display: none;
             }
         }
@@ -980,7 +1066,7 @@ footer {
                 }
             }
 
-            .firstBTN{
+            .firstBTN {
                 margin-right: 20px;
             }
 
@@ -994,7 +1080,7 @@ footer {
         }
     }
 
-    .more{
+    .more {
         min-width: 130px;
         max-width: 300px;
         width: 100%;
@@ -1014,7 +1100,7 @@ footer {
 }
 
 // 05-25修改 開始
-.input_btn_style{
+.input_btn_style {
     @include text_style($fs-16, unset, center, 3px);
     @include btn_style(220px, unset, 10px, unset, unset, transparent, $brown);
     @include font_hover($bc-brown, $fc-white);
@@ -1033,6 +1119,7 @@ footer {
         }
     }
 }
+
 // 05-25修改 開始
 
 
