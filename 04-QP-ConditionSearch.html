@@ -891,7 +891,7 @@
                 </div>
                 <!-- 06-17調整 開始 -->
                 <div class="modal-footer d-flex justify-content-around">
-                <!-- 06-17調整 結束 -->
+                    <!-- 06-17調整 結束 -->
                     <a href="">
                         <i class="fas fa-share-alt"></i>
                     </a>
@@ -1145,15 +1145,13 @@
             <div></div>
         </div>
     </div>
-    
+
     <a href="#" class="go_to_top" id="BackTop">
         <img src="./img/icon/top.png" alt="">
     </a>
 
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
@@ -1185,6 +1183,31 @@
         $('.end .clearBTN').click(function () {
             $('#datepicker_end').val("");
         })
+    </script>
+
+    <script>
+        $('#datepicker_start').click(function () {
+            var prev = document.querySelector('.ui-datepicker-prev');
+            prev.childNodes[0].innerHTML = '';
+            $(prev.childNodes[0]).addClass('fas fa-chevron-left')
+            $(prev.childNodes[0]).removeClass('ui-icon ui-icon-circle-triangle-e')
+            var next = document.querySelector('.ui-datepicker-next');
+            $(next.childNodes[0]).addClass('fas fa-chevron-right')
+            $(next.childNodes[0]).removeClass('ui-icon ui-icon-circle-triangle-e')
+            next.childNodes[0].innerHTML = '';
+        }
+        )
+        $('#datepicker_end').click(function () {
+            var prev = document.querySelector('.ui-datepicker-prev');
+            $(prev.childNodes[0]).addClass('fas fa-chevron-left')
+            $(prev.childNodes[0]).removeClass('ui-icon ui-icon-circle-triangle-e')
+            prev.childNodes[0].innerHTML = '';
+            var next = document.querySelector('.ui-datepicker-next');
+            $(next.childNodes[0]).addClass('fas fa-chevron-right')
+            $(next.childNodes[0]).removeClass('ui-icon ui-icon-circle-triangle-e')
+            next.childNodes[0].innerHTML = '';
+        }
+        )
     </script>
 
 </body>
