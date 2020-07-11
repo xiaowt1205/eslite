@@ -1,6 +1,5 @@
 @import "./_variables.scss";
 
-
 %letter-spacing {
     letter-spacing: 2px;
 }
@@ -75,3 +74,98 @@
     }
 }
 
+
+.ui-datepicker {
+    width: 20em;
+    height: 22em;
+
+    .ui-datepicker-title {
+        margin: 0 3em;
+    }
+
+    .ui-datepicker-header {
+        background: #ffffff;
+        border: 0px solid #ffffff;
+        padding: 0.5em 0;
+
+        .ui-icon {
+            background-image: initial;
+            width: 100%;
+            height: 100%;
+            left: 0%;
+            margin-left: 0px;
+            top: 0%;
+            margin-top: 1px;
+
+            &::before {
+                color: #000000;
+                text-indent: 1px;
+                content: "\f104";
+                display: block;
+            }
+        }
+
+        .ui-state-hover,
+        .ui-widget-content .ui-state-hover,
+        .ui-widget-header .ui-state-hover,
+        .ui-state-focus,
+        .ui-widget-content .ui-state-focus,
+        .ui-widget-header .ui-state-focus {
+            border: 0px solid #ffffff;
+            border-radius: 200%;
+        }
+
+        .ui-state-hover {
+            &.ui-datepicker-prev-hover {
+                background: #eee;
+
+            }
+
+            &.ui-datepicker-next-hover {
+                background: #eee;
+            }
+
+        }
+    }
+
+    .ui-datepicker-calendar {
+
+        .ui-state-default,
+        .ui-widget-content .ui-state-default,
+        .ui-widget-header .ui-state-default {
+            border: 0px solid #ffffff;
+            background: #ffffff;
+            border-radius: 200%;
+        }
+
+        .ui-state-default {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 44px;
+            height: 44px;
+
+            &:hover {
+                background: #eee;
+            }
+
+            &.ui-state-active {
+                border: 1px solid #000000;
+                border-radius: 200%;
+            }
+        }
+    }
+
+    .ui-datepicker-prev {
+        left: 10px;
+    }
+
+    .ui-datepicker-next {
+        right: 10px;
+    }
+
+    .ui-datepicker-prev,
+    .ui-datepicker-next {
+        top: 0.5em;
+    }
+}
