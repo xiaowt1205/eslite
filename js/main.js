@@ -43,3 +43,12 @@ if($('.pageNumber .number').length >= 1){
 $('.search_icon').click(function () {
     $('.search_box').toggleClass('active')
 })
+
+
+//07-16新增 開始
+$('.name label').each(function(index){
+    if($(this).text().length >= 6){
+        $(this).addClass("star_offset");
+    }
+})
+//07-16新增 結束

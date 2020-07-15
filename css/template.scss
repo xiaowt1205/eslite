@@ -968,7 +968,15 @@ footer {
             &::after {
                 content: '*';
                 color: red;
-                font-size: $fs-22;
+                font-size: $fs-18;
+            }
+
+            &.star_offset{
+                &::after {
+                    position: absolute;
+                    right: 5px;
+                    top: 5px;
+                }
             }
         }
     }
