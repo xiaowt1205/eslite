@@ -78,6 +78,8 @@
 .ui-datepicker {
     width: 20em;
     height: 22em;
+    background-color: white;
+    z-index: 99 !important;
 
     .ui-datepicker-title {
         margin: 0 3em;
