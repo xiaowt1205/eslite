@@ -707,7 +707,7 @@ header {
 
                                     // 0512-修正
                                     @media(min-width:1025px) {
-                                        padding: 0px 0px 150px;
+                                        padding: 0px 0px 125px;
                                     }
 
                                     // 0512-修正
@@ -786,11 +786,7 @@ header {
                     max-width: 1340px;
 
                     @media screen and (max-width:1680px) {
-                        width: calc(100% - 248px);
-                    }
-
-                    @media screen and (max-width:1680px) {
-                        width: 100%;
+                        width: 71vw;
                     }
                 }
             }

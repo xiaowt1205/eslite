@@ -100,6 +100,8 @@ header #topline nav > ul > li {
 .ui-datepicker {
   width: 20em;
   height: 22em;
+  background-color: white;
+  z-index: 99 !important;
 }
 
 .ui-datepicker .ui-datepicker-title {
@@ -1107,7 +1109,7 @@ header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .asi
 
 @media (min-width: 1025px) {
   header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn .gradient-mask {
-    padding: 0px 0px 150px;
+    padding: 0px 0px 125px;
   }
 }
 
@@ -1202,13 +1204,7 @@ header #headline .headline_area .swiper_block .headline_swiper {
 
 @media screen and (max-width: 1680px) {
   header #headline .headline_area .swiper_block .headline_swiper {
-    width: calc(100% - 248px);
-  }
-}
-
-@media screen and (max-width: 1680px) {
-  header #headline .headline_area .swiper_block .headline_swiper {
-    width: 100%;
+    width: 71vw;
   }
 }
 
