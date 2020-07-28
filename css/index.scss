@@ -3,7 +3,7 @@
 @import "./model.scss";
 
 * {
-    font-family: 'Noto Serif TC', serif;
+    font-family: "Noto Serif TC", serif;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -16,11 +16,11 @@ header {
     overflow: hidden;
     z-index: 2;
 
-    @media (max-width:1680px) {
+    @media (max-width: 1680px) {
         padding: 0px 0px 0px 80px;
     }
 
-    @media (max-width:768px) {
+    @media (max-width: 768px) {
         padding: 0px;
     }
 
@@ -29,18 +29,17 @@ header {
         max-width: 1600px;
         padding: 68px 15px 45px 0px;
 
-        @media (max-width:1200px) {
+        @media (max-width: 1200px) {
             padding: 40px 30px 45px 0px;
         }
 
-        @media (max-width:768px) {
+        @media (max-width: 768px) {
             position: relative;
             padding: 35px 0px;
         }
 
         .row {
-            @media (max-width:768px) {
-
+            @media (max-width: 768px) {
                 .logo_area {
                     flex: 0 0 100%;
                     max-width: 100%;
@@ -51,13 +50,13 @@ header {
         .area {
             padding: 0px;
 
-            @media (max-width:1200px) {
+            @media (max-width: 1200px) {
                 flex: 0 0 100%;
                 max-width: 100%;
             }
 
             .logo {
-                @media (max-width:768px) {
+                @media (max-width: 768px) {
                     width: 100%;
                     max-width: 200px;
                     min-width: unset;
@@ -70,11 +69,11 @@ header {
                     max-width: 320px;
                     width: 140%;
 
-                    @media screen and (max-width:1200px) {
+                    @media screen and (max-width: 1200px) {
                         width: 260px;
                     }
 
-                    @media screen and (max-width:768px) {
+                    @media screen and (max-width: 768px) {
                         width: 150px;
                     }
                 }
@@ -82,7 +81,7 @@ header {
         }
 
         .col-3 {
-            @media screen and (max-width:576px) {
+            @media screen and (max-width: 576px) {
                 flex: 0 0 100%;
                 max-width: 100%;
             }
@@ -93,11 +92,11 @@ header {
             align-items: flex-start;
             position: unset;
 
-            @media screen and (max-width:1200px) {
+            @media screen and (max-width: 1200px) {
                 align-items: center;
             }
 
-            @media screen and (max-width:768px) {
+            @media screen and (max-width: 768px) {
                 position: absolute;
                 right: 15px;
                 flex: 0 0 25%;
@@ -107,19 +106,18 @@ header {
                 transform: translateY(-50%);
             }
 
-            &>ul {
+            & > ul {
                 width: 100%;
                 height: 22px;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
 
-
-                @media(max-width:576px) {
+                @media (max-width: 576px) {
                     height: 20px;
                 }
 
-                &>li {
+                & > li {
                     @extend %letter-spacing;
                     text-align: center;
                     display: inline-block;
@@ -131,49 +129,49 @@ header {
                         padding: 0px 30px;
                         font-size: $fs-16;
 
-                        @media screen and (max-width:1660px) {
+                        @media screen and (max-width: 1660px) {
                             padding: 0px 25px;
                         }
 
                         // 06-17調整 開始
-                        @media screen and (max-width:1460px) {
+                        @media screen and (max-width: 1460px) {
                             padding: 0px 20px;
                             font-size: $fs-14;
                         }
 
-                        @media screen and (max-width:1200px) {
+                        @media screen and (max-width: 1200px) {
                             padding: 0px 15px;
                         }
 
-                        @media screen and (max-width:1065px) {
+                        @media screen and (max-width: 1065px) {
                             padding: 0px 10px;
                         }
                         // 06-17調整 結束
 
-                        @media(max-width:1024px) {
+                        @media (max-width: 1060px) {
                             display: none;
                         }
                     }
 
                     &:nth-child(5) {
-                        @media(max-width:1400px) {
+                        @media (max-width: 1400px) {
                             @include border-two-side(1px, 1px, $fc-gray, solid);
                         }
                     }
 
                     &.nav-icon {
-                        @media screen and (max-width:1200px) {
+                        @media screen and (max-width: 1200px) {
                             display: none;
                         }
 
                         a {
                             margin-left: 25px;
 
-                            @media screen and (max-width:1600px) {
+                            @media screen and (max-width: 1600px) {
                                 margin-left: 20px;
                             }
 
-                            @media screen and (max-width:1200px) {
+                            @media screen and (max-width: 1200px) {
                                 margin-left: 20px;
                             }
 
@@ -191,13 +189,12 @@ header {
                         color: $fc-black;
                         font-size: $fs-16;
                         font-weight: $fw-bold;
-                        transition: .3s;
+                        transition: 0.3s;
                         transition-timing-function: ease;
 
-                        @media(max-width:1600px) {
+                        @media (max-width: 1600px) {
                             font-size: $fs-14;
                         }
-
 
                         &:hover {
                             color: $fc-hover;
@@ -211,18 +208,16 @@ header {
                             border: 2px black solid;
                             border-radius: 50%;
 
-
                             &:hover {
                                 border: 2px $fc-hover solid;
                             }
 
                             .fa-info {
-
                                 //06-17調整 開始
                                 position: absolute;
                                 top: 50%;
                                 left: calc(50% + 2.5px);
-                                transform: translate(-50%,-50%);
+                                transform: translate(-50%, -50%);
                                 //06-17調整 開始
                                 text-align: center;
                                 font-size: $fs-14;
@@ -231,17 +226,17 @@ header {
                     }
 
                     &.nav-icon {
-                        @media (max-width:1400px) {
+                        @media (max-width: 1400px) {
                             display: none;
                         }
                     }
 
-                    &>ul {
+                    & > ul {
                         background-color: $bc-white;
                         width: 240px;
                         max-height: 0px;
                         overflow: hidden;
-                        transition: .3s;
+                        transition: 0.3s;
                         transition-timing-function: ease-out;
                         position: absolute;
                         top: 100%;
@@ -252,7 +247,7 @@ header {
                         border-bottom-right-radius: 10px;
                         border-bottom-left-radius: 10px;
 
-                        &>li {
+                        & > li {
                             margin-bottom: 10px;
 
                             a {
@@ -261,12 +256,12 @@ header {
 
                                 &.collapse-deco {
                                     position: relative;
-                                    transition: .3s;
+                                    transition: 0.3s;
                                     transition-timing-function: ease-in-out;
 
                                     &::after,
                                     &::before {
-                                        content: ' ';
+                                        content: " ";
                                         position: absolute;
                                         right: -20px;
                                         top: 10px;
@@ -283,15 +278,14 @@ header {
                                 }
                             }
 
-                            &>ul {
+                            & > ul {
                                 width: 100%;
                                 max-height: 0px;
                                 overflow: hidden;
-                                transition: .3s;
+                                transition: 0.3s;
                                 transition-timing-function: ease-out;
 
                                 li {
-
                                     margin-bottom: 5px;
 
                                     a {
@@ -302,14 +296,14 @@ header {
                             }
 
                             &:hover {
-                                &>ul {
+                                & > ul {
                                     max-height: 300px;
                                     padding: 10px 0 0px 0;
-                                    transition: .3s;
+                                    transition: 0.3s;
                                     transition-timing-function: ease-in;
                                 }
 
-                                &>a {
+                                & > a {
                                     &.collapse-deco {
                                         &::before {
                                             transform: rotate(0deg);
@@ -321,13 +315,12 @@ header {
                     }
 
                     &:hover {
-                        &>ul {
+                        & > ul {
                             max-height: 600px;
                             padding: 35px 0 25px 0;
-                            transition: .3s;
+                            transition: 0.3s;
                             transition-timing-function: ease-in;
                             z-index: 11;
-
                         }
                     }
                 }
@@ -337,7 +330,7 @@ header {
                 z-index: 3;
                 justify-content: center;
 
-                @media(max-width:1200px) {
+                @media (max-width: 1200px) {
                     right: 0px;
                 }
 
@@ -352,11 +345,11 @@ header {
             margin-right: -130px;
             width: 130px;
 
-            @media (max-width:1680px) {
+            @media (max-width: 1680px) {
                 margin-right: 0;
             }
 
-            @media (max-width:768px) {
+            @media (max-width: 768px) {
                 z-index: 3;
             }
 
@@ -364,11 +357,11 @@ header {
                 position: relative;
                 display: flex;
 
-                @media (max-width:1200px) {
+                @media (max-width: 1200px) {
                     justify-content: flex-end;
                 }
 
-                @media (max-width:576px) {
+                @media (max-width: 576px) {
                     position: absolute;
                     top: 50%;
                     right: 15px;
@@ -384,17 +377,17 @@ header {
                         padding: 0px 15px;
                         @include border-two-side(0px, 0px, $fc-gray, solid);
 
-                        @media(max-width:1400px) {
+                        @media (max-width: 1400px) {
                             display: flex;
                             justify-content: flex-end;
                             align-items: center;
                         }
 
-                        @media(max-width:1200px) {
+                        @media (max-width: 1200px) {
                             margin-left: 30px;
                         }
 
-                        @media screen and (max-width:992px) {
+                        @media screen and (max-width: 992px) {
                             display: none;
                         }
                     }
@@ -402,7 +395,7 @@ header {
                     .menu-btn-mob {
                         display: none;
 
-                        @media screen and (max-width:992px) {
+                        @media screen and (max-width: 992px) {
                             display: block;
                         }
                     }
@@ -417,14 +410,13 @@ header {
         max-width: 1600px;
         padding: 0px 0px 75px;
 
-        @media(max-width:1200px) {
+        @media (max-width: 1200px) {
             padding: 0px 0px 40px;
         }
 
-        @media(max-width:768px) {
+        @media (max-width: 768px) {
             padding: 0px;
         }
-
 
         .headline_area {
             .swiper_block {
@@ -432,12 +424,12 @@ header {
                 justify-content: flex-start;
                 width: 100%;
 
-                @media screen and (max-width:1200px) {
+                @media screen and (max-width: 1200px) {
                     position: relative;
                     justify-content: space-between;
                 }
 
-                @media(max-width:1024px) {
+                @media (max-width: 1060px) {
                     flex-direction: column;
                 }
 
@@ -446,32 +438,32 @@ header {
                     position: relative;
                     order: 0;
 
-                    @media screen and (max-width:1024px) {
+                    @media screen and (max-width: 1060px) {
                         position: unset;
                         flex: 0 0 91.666667%;
                         max-width: 91.666667%;
                     }
 
-                    @media screen and (max-width:1024px) {
+                    @media screen and (max-width: 1060px) {
                         order: 1;
                     }
 
-                    @media screen and (max-width:768px) {
+                    @media screen and (max-width: 768px) {
                         // 05-19修改  開始
                         position: static;
                         // 05-19修改  結束
                     }
 
-                    @media(min-width:992px) {
+                    @media (min-width: 992px) {
                         margin-top: 35px;
                     }
 
-                    @media(min-width:1200px) {
+                    @media (min-width: 1200px) {
                         margin-top: 0;
                         margin-left: 10px;
                     }
 
-                    @media screen and (max-width:1200px) {
+                    @media screen and (max-width: 1200px) {
                         margin-top: 0;
                     }
 
@@ -481,23 +473,29 @@ header {
                         display: flex;
                         justify-content: center;
                         margin-bottom: 70px;
+                        position: relative;
+                        left: -15px;
 
-                        @media screen and (max-width:1400px) {
-                            margin-bottom: 40px;
+                        @media screen and (max-width: 1680px) {
+                            margin-bottom: 15px;
                         }
 
-                        @media screen and (max-width:1200px) {
+                        @media screen and (max-width: 1400px) {
+                            margin-bottom: 0px;
+                        }
+
+                        @media screen and (max-width: 1350px) {
                             width: 320px;
                             position: absolute;
                             top: 20px;
                             left: 248px;
                         }
 
-                        @media screen and (max-width:1024px) {
+                        @media screen and (max-width: 1060px) {
                             left: 0px;
                         }
 
-                        @media screen and (max-width:768px) {
+                        @media screen and (max-width: 768px) {
                             top: auto;
                             bottom: 0px;
                             margin-bottom: 0px;
@@ -506,12 +504,10 @@ header {
                             // 05-19修改  開始
                             width: 100%;
                             // 05-19修改  結束
-
-
                         }
 
                         .swiper-pagination {
-                            @media screen and (max-width:768px) {
+                            @media screen and (max-width: 768px) {
                                 justify-content: center;
                                 // 05-19修改  開始
                                 left: 50%;
@@ -522,20 +518,18 @@ header {
                             span {
                                 margin: 0px 15px;
 
-                                @media screen and (max-width:768px) {
+                                @media screen and (max-width: 768px) {
                                     margin: 0px 5px;
                                 }
                             }
-
                         }
-
                     }
 
                     .link-icon-group {
                         display: flex;
                         justify-content: center;
 
-                        @media screen and (max-width:1400px) {
+                        @media screen and (max-width: 1680px) {
                             display: none;
                         }
 
@@ -566,38 +560,36 @@ header {
                         width: 252px;
                         align-items: center;
 
-                        @media(min-width:1200px) {
+                        @media (min-width: 1200px) {
                             position: unset;
                         }
-
                     }
 
                     .swiper-pagination-bullet {
-
-                        @media(min-width:992px) {
+                        @media (min-width: 992px) {
                             margin-right: 25px;
                             border: 1.5px solid $main-color;
                             background: $main-color;
                             opacity: 1;
                         }
 
-                        @media(min-width:1200px) {
+                        @media (min-width: 1200px) {
                             margin-right: 25px;
                             border: 1.5px solid white;
                             background: white;
-                            opacity: .8;
-                            transition: .8s;
+                            opacity: 0.8;
+                            transition: 0.8s;
                         }
 
                         &.swiper-pagination-bullet-active {
                             background-color: $black;
 
-                            @media(min-width:992px) {
+                            @media (min-width: 992px) {
                                 border: 1.5px solid $main-color;
                                 background: transparent;
                             }
 
-                            @media(min-width:1200px) {
+                            @media (min-width: 1200px) {
                                 border: 1.5px solid white;
                                 opacity: 1;
                             }
@@ -614,11 +606,11 @@ header {
                         height: 100%;
                         position: relative;
 
-                        @media(max-width:1024px) {
+                        @media (max-width: 1060px) {
                             padding: 25px 0 15px 0;
                         }
 
-                        @media(max-width:768px) {
+                        @media (max-width: 768px) {
                             display: none;
                         }
 
@@ -629,8 +621,7 @@ header {
                             overflow: hidden;
                             @include border-two-side(1px, 0, $fc-white, solid);
 
-
-                            @media screen and (max-width:1024px) {
+                            @media screen and (max-width: 1060px) {
                                 align-items: center;
                             }
 
@@ -641,19 +632,19 @@ header {
                                 letter-spacing: 5px;
                                 color: $fc-white;
                                 font-size: $fs-16;
-                                transition: .5s;
+                                transition: 0.5s;
 
-                                @media(max-width:1024px) {
+                                @media (max-width: 1060px) {
                                     &:hover {
                                         width: 450px;
 
-                                        @media screen and (max-width:1024px) {
+                                        @media screen and (max-width: 1060px) {
                                             width: 415px;
                                         }
                                     }
                                 }
 
-                                @media(max-width:768px) {
+                                @media (max-width: 768px) {
                                     writing-mode: unset;
                                     @include border-two-side(0px, 0, $fc-white, solid);
                                     padding: 0;
@@ -664,7 +655,7 @@ header {
                                     overflow: unset;
 
                                     &::after {
-                                        content: ' ';
+                                        content: " ";
                                         width: 210px;
                                         height: 1px;
                                         background-color: $fc-white;
@@ -675,13 +666,13 @@ header {
                                     }
                                 }
 
-                                @media screen and (max-width:1024px) {
+                                @media screen and (max-width: 1060px) {
                                     width: 126px;
                                     padding: 0px 15px;
                                     writing-mode: unset;
                                 }
 
-                                @media(min-width:1025px) {
+                                @media (min-width: 1061px) {
                                     font-size: $fs-20;
                                     display: flex;
                                     justify-content: center;
@@ -698,7 +689,11 @@ header {
                                     width: 100%;
                                     height: 100%;
                                     transition: 0.5s;
-                                    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+                                    background: linear-gradient(
+                                        180deg,
+                                        rgba(255, 255, 255, 0) 0%,
+                                        rgba(255, 255, 255, 0.3) 100%
+                                    );
                                     opacity: 0;
                                     transition-timing-function: ease-in-out;
                                     line-height: 61px;
@@ -706,17 +701,17 @@ header {
                                     overflow: hidden;
 
                                     // 0512-修正
-                                    @media(min-width:1025px) {
+                                    @media (min-width: 1061px) {
                                         padding: 0px 0px 125px;
                                     }
 
                                     // 0512-修正
 
-                                    @media (max-width:1024px) {
+                                    @media (max-width: 1060px) {
                                         top: 0%;
                                     }
 
-                                    @media(max-width:768px) {
+                                    @media (max-width: 768px) {
                                         display: none;
                                     }
 
@@ -728,13 +723,13 @@ header {
                                         transition: 1s;
 
                                         // 0512-修正
-                                        @media(min-width:1025px) {
+                                        @media (min-width: 1061px) {
                                             flex-direction: row-reverse;
                                         }
 
                                         // 0512-修正
 
-                                        @media(max-width:1024px) {
+                                        @media (max-width: 1060px) {
                                             position: absolute;
                                             top: 50%;
                                             left: 0;
@@ -744,8 +739,15 @@ header {
                                         }
 
                                         .aside-sub-btn {
-                                            transition: .3s;
+                                            transition: 0.3s;
                                             opacity: 0.5;
+
+                                            @media (max-width: 1200px) {
+                                                font-size: 10px;
+                                            }
+                                            @media (max-width: 1060px) {
+                                                font-size: 12px;
+                                            }
 
                                             &:hover {
                                                 opacity: 1;
@@ -756,18 +758,26 @@ header {
 
                                 &:hover {
                                     .gradient-mask {
-                                        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+                                        background: linear-gradient(
+                                            180deg,
+                                            rgba(255, 255, 255, 0) 0%,
+                                            rgba(255, 255, 255, 0.3) 100%
+                                        );
                                         opacity: 1;
                                         top: 0;
 
-                                        @media(max-width:1024px) {
-                                            background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+                                        @media (max-width: 1060px) {
+                                            background: linear-gradient(
+                                                270deg,
+                                                rgba(255, 255, 255, 0) 0%,
+                                                rgba(255, 255, 255, 0.3) 100%
+                                            );
                                         }
 
                                         .aside-sub-btn-group {
                                             opacity: 1;
 
-                                            @media(max-width:1024px) {
+                                            @media (max-width: 1060px) {
                                                 justify-content: flex-end;
                                             }
                                         }
@@ -785,7 +795,7 @@ header {
                 .headline_swiper {
                     max-width: 1340px;
 
-                    @media screen and (max-width:1680px) {
+                    @media screen and (max-width: 1680px) {
                         width: 71vw;
                     }
                 }
@@ -799,8 +809,7 @@ header {
 
                     // 06-17調整 開始
                     &.swiper-container {
-                    // 06-17調整 結束
-                    
+                        // 06-17調整 結束
 
                         // @media (min-width:1200px) {
                         //     width: 93%;
@@ -816,9 +825,9 @@ header {
                         //     width: 100%;
                         //     height: 590px;
                         // }
-                        
-                        .swiper-slide{
-                            img{
+
+                        .swiper-slide {
+                            img {
                                 max-width: 100%;
                                 max-height: 100%;
                             }
@@ -832,7 +841,7 @@ header {
     .mobile-aside {
         display: none;
 
-        @media (max-width:768px) {
+        @media (max-width: 768px) {
             display: block;
         }
 
@@ -849,7 +858,7 @@ header {
                 }
 
                 & .fa-chevron-up {
-                    transition: .5s;
+                    transition: 0.5s;
                 }
 
                 &.active {
@@ -858,7 +867,6 @@ header {
                         transition: 1s;
                         max-height: 400px;
                         margin-top: 20px;
-
                     }
 
                     & .fa-chevron-up {
@@ -869,10 +877,8 @@ header {
 
             &:hover {
                 .aside-btn-title {
-
                     .icon {
                         display: block;
-
                     }
 
                     &:active {
@@ -886,7 +892,6 @@ header {
     }
 
     .aside-bg {
-
         position: absolute;
         top: 0;
         left: 0;
@@ -895,15 +900,15 @@ header {
         height: 100%;
         background-color: $main-color;
 
-        @media screen and (max-width:1200px) {
+        @media screen and (max-width: 1200px) {
             width: 33.5%;
         }
 
-        @media screen and (max-width:1024px) {
+        @media screen and (max-width: 1060px) {
             width: calc(100% - 120px);
         }
 
-        @media screen and (max-width:768px) {
+        @media screen and (max-width: 768px) {
             display: none;
         }
     }
@@ -926,15 +931,15 @@ main {
         box-sizing: border-box;
         background-color: $bc-light-brown;
 
-        @media screen and (max-width:1600px) {
+        @media screen and (max-width: 1600px) {
             width: calc(100% - 80px);
         }
 
-        @media screen and (max-width:1330px) {
+        @media screen and (max-width: 1330px) {
             width: calc(100% - 80px);
         }
 
-        @media screen and (max-width:1024px) {
+        @media screen and (max-width: 1060px) {
             width: calc(100% - 70px);
         }
     }
@@ -945,19 +950,19 @@ main {
     overflow: hidden;
     padding: 50px 80px 70px;
 
-    @media screen and (max-width:1600px) {
+    @media screen and (max-width: 1600px) {
         padding: 50px 40px 70px;
     }
 
-    @media screen and (max-width:1330px) {
+    @media screen and (max-width: 1330px) {
         padding: 50px 40px 70px;
     }
 
-    @media screen and (max-width:1024px) {
+    @media screen and (max-width: 1060px) {
         padding: 50px 35px 70px;
     }
 
-    @media screen and (max-width:576px) {
+    @media screen and (max-width: 576px) {
         padding: 55px 0px 50px;
     }
 
@@ -968,7 +973,6 @@ main {
         padding: 0px 40px;
 
         .statistics_area {
-
             .title_region {
                 position: relative;
                 margin: 0 auto;
@@ -977,11 +981,11 @@ main {
                 flex-wrap: wrap;
                 z-index: 2;
 
-                @media screen and (max-width:1366px) {
+                @media screen and (max-width: 1366px) {
                     padding: 0px 0px 15px;
                 }
 
-                @media screen and (max-width:1200px) {
+                @media screen and (max-width: 1200px) {
                     flex-direction: column;
                     align-items: center;
                     padding: 0px 20px;
@@ -990,7 +994,7 @@ main {
                 .title_block {
                     display: flex;
 
-                    @media screen and (max-width:1024px) {
+                    @media screen and (max-width: 1060px) {
                         flex-direction: column;
                         justify-content: center;
                     }
@@ -1001,17 +1005,17 @@ main {
                         letter-spacing: 1.5px;
                         margin: 0;
 
-                        @media screen and (max-width:1366px) {
+                        @media screen and (max-width: 1366px) {
                             font-size: $fs-67;
                         }
 
-                        @media screen and (max-width:1024px) {
+                        @media screen and (max-width: 1060px) {
                             padding-bottom: 20px;
                             font-size: $fs-48;
                             letter-spacing: 3px;
                         }
 
-                        @media screen and (max-width:768px) {
+                        @media screen and (max-width: 768px) {
                             text-align: center;
                             font-size: $fs-30;
                             letter-spacing: 1px;
@@ -1019,7 +1023,7 @@ main {
                         }
 
                         &::after {
-                            content: '';
+                            content: "";
                             display: none;
                             width: 100%;
                             height: 2px;
@@ -1029,12 +1033,12 @@ main {
                             left: 50%;
                             transform: translateX(-50%);
 
-                            @media screen and (max-width:768px) {
+                            @media screen and (max-width: 768px) {
                                 display: block;
                                 width: 200px;
                             }
 
-                            @media screen and (max-width:576px) {
+                            @media screen and (max-width: 576px) {
                                 width: 100px;
                             }
                         }
@@ -1047,15 +1051,14 @@ main {
                         margin: auto 0px 0px;
                         padding-left: 40px;
 
-                        @media screen and (max-width:768px) {
+                        @media screen and (max-width: 768px) {
                             padding-left: 15px;
                         }
 
-                        @media screen and (max-width:576px) {
+                        @media screen and (max-width: 576px) {
                             font-size: $fs-14;
                             text-align: center;
                             padding: 20px 0px 10px;
-
                         }
                     }
                 }
@@ -1077,19 +1080,19 @@ main {
                     display: flex;
                     flex-direction: row;
 
-                    @media screen and (max-width:1200px) {
+                    @media screen and (max-width: 1200px) {
                         padding: 20px 0px 0px;
                         margin-bottom: 40px;
                         margin-left: 0;
                         align-items: center;
                     }
 
-                    @media screen and (max-width:768px) {
+                    @media screen and (max-width: 768px) {
                         flex-direction: column;
                         margin-bottom: 10px;
                     }
 
-                    &>a {
+                    & > a {
                         display: contents;
                     }
 
@@ -1100,7 +1103,7 @@ main {
                         align-items: center;
                         font-weight: $fw-bold;
                         min-width: 255px;
-                        max-height: 40PX;
+                        max-height: 40px;
                         padding: 10px 0px;
                         margin-top: auto;
                         background-color: $bc-white;
@@ -1109,16 +1112,16 @@ main {
                         letter-spacing: 5px;
                         transition: all 2s;
 
-                        @media screen and (max-width:1600px) {
+                        @media screen and (max-width: 1600px) {
                             min-width: 200px;
                         }
 
-                        @media screen and (max-width:1024px) {
+                        @media screen and (max-width: 1060px) {
                             min-width: 250px;
                             margin-bottom: 10px;
                         }
 
-                        @media screen and (max-width:576px) {
+                        @media screen and (max-width: 576px) {
                             min-width: 180px;
                             font-size: $fs-10;
                         }
@@ -1143,16 +1146,16 @@ main {
                 border-top: 2px $black solid;
                 border-bottom: 2px $black solid;
 
-                @media screen and (max-width:1200px) {
+                @media screen and (max-width: 1200px) {
                     padding: 50px 0px;
                 }
 
-                @media screen and (max-width:576px) {
+                @media screen and (max-width: 576px) {
                     padding: 20px 0px;
                     border-top: 0px $black solid;
                 }
 
-                @media screen and (max-width:414px) {
+                @media screen and (max-width: 414px) {
                     border-bottom: 0px $black solid;
                 }
 
@@ -1160,15 +1163,15 @@ main {
                     flex-direction: column;
                     margin: 0px 42px;
 
-                    @media screen and (max-width:1200px) {
+                    @media screen and (max-width: 1200px) {
                         margin: 0px 30px;
                     }
 
-                    @media screen and (max-width:768px) {
+                    @media screen and (max-width: 768px) {
                         margin: 0px 15px;
                     }
 
-                    @media screen and (max-width:576px) {
+                    @media screen and (max-width: 576px) {
                         margin: 0px 10px;
                     }
 
@@ -1184,12 +1187,12 @@ main {
                         align-items: center;
                         width: 340px;
                         height: 340px;
-                        transition: .3s;
+                        transition: 0.3s;
                         transition-timing-function: ease-in-out;
 
                         // 06-17調整 開始
                         &::before {
-                            content: '';
+                            content: "";
                             position: absolute;
                             width: 80px;
                             height: 6px;
@@ -1199,18 +1202,16 @@ main {
                             top: 55%;
                             transform: translateX(-50%);
 
-
-                            @media screen and (max-width:768px) {
+                            @media screen and (max-width: 768px) {
                                 width: 50px;
                                 height: 4px;
                                 top: 54%;
                             }
                         }
-                        @media screen and (max-width:768px) {
+                        @media screen and (max-width: 768px) {
                             border: 5px solid $br-brown;
                         }
                         // 06-17調整 結束
-
 
                         &:hover {
                             border: 12px solid $br-brown-hover;
@@ -1223,22 +1224,22 @@ main {
                             }
                         }
 
-                        @media screen and (max-width:1600px) {
+                        @media screen and (max-width: 1600px) {
                             width: 300px;
                             height: 300px;
                         }
 
-                        @media screen and (max-width:1024px) {
+                        @media screen and (max-width: 1060px) {
                             width: 250px;
                             height: 250px;
                         }
 
-                        @media screen and (max-width:768px) {
+                        @media screen and (max-width: 768px) {
                             width: 200px;
                             height: 200px;
                         }
 
-                        @media screen and (max-width:576px) {
+                        @media screen and (max-width: 576px) {
                             width: 165px;
                             height: 165px;
                             border: 2px solid $br-brown;
@@ -1249,7 +1250,7 @@ main {
                             }
                         }
 
-                        @media screen and (max-width:375px) {
+                        @media screen and (max-width: 375px) {
                             width: 140px;
                             height: 140px;
                         }
@@ -1259,7 +1260,7 @@ main {
                             flex-direction: column;
                             align-items: center;
                             margin-top: -15px;
-                            color: #321C07;
+                            color: #321c07;
                             transform: translateY(17%);
 
                             & span:nth-child(1) {
@@ -1273,16 +1274,16 @@ main {
                                 margin-left: -15px;
                                 //06-17調整 結束
 
-                                @media screen and (max-width:1024px) {
+                                @media screen and (max-width: 1060px) {
                                     margin-left: -20px;
                                     letter-spacing: 3px;
                                 }
 
-                                @media screen and (max-width:992px) {
+                                @media screen and (max-width: 992px) {
                                     font-size: $fs-32;
                                 }
 
-                                @media screen and (max-width:768px) {
+                                @media screen and (max-width: 768px) {
                                     font-size: $fs-24;
                                     font-weight: 800;
                                     //06-17調整 開始
@@ -1290,32 +1291,32 @@ main {
                                     //06-17調整 結束
                                 }
 
-                                @media screen and (max-width:576px) {
+                                @media screen and (max-width: 576px) {
                                     font-size: $fs-20;
                                 }
 
-                                @media screen and (max-width:375px) {
+                                @media screen and (max-width: 375px) {
                                     font-size: $fs-14;
                                 }
 
                                 &::after {
-                                    content: '冊';
+                                    content: "冊";
                                     position: absolute;
                                     font-size: $fs-24;
                                     bottom: 0;
                                     right: 0;
                                     transform: translate(90%, -55%);
 
-                                    @media screen and (max-width:1024px) {
+                                    @media screen and (max-width: 1060px) {
                                         right: -5px;
                                     }
 
-                                    @media screen and (max-width:768px) {
+                                    @media screen and (max-width: 768px) {
                                         font-size: $fs-10;
                                         bottom: 8px;
                                     }
 
-                                    @media screen and (max-width:576px) {
+                                    @media screen and (max-width: 576px) {
                                         right: -3px;
                                         bottom: 5px;
                                     }
@@ -1328,11 +1329,11 @@ main {
                                 font-weight: $fw-700;
                                 letter-spacing: 3px;
 
-                                @media screen and (max-width:1024px) {
+                                @media screen and (max-width: 1060px) {
                                     font-size: $fs-20;
                                 }
 
-                                @media screen and (max-width:992px) {
+                                @media screen and (max-width: 992px) {
                                     font-size: $fs-18;
                                     padding-top: 10px;
                                 }
@@ -1350,18 +1351,17 @@ main {
                                 transform: rotate(-150deg);
                                 font-size: $fs-27;
 
-                                @media screen and (max-width:576px) {
+                                @media screen and (max-width: 576px) {
                                     font-size: $fs-14;
                                 }
                             }
-
                         }
                     }
 
                     .btn-moblie {
                         display: none;
 
-                        @media screen and (max-width:768px) {
+                        @media screen and (max-width: 768px) {
                             display: block;
                         }
 
@@ -1370,7 +1370,7 @@ main {
                             padding: 15px 0px;
                             letter-spacing: 2px;
 
-                            @media screen and (max-width:576px) {
+                            @media screen and (max-width: 576px) {
                                 font-size: $fs-14;
                                 font-weight: $fw-bold;
                             }
@@ -1384,31 +1384,29 @@ main {
                             letter-spacing: 2px;
                         }
                     }
-
                 }
-
             }
 
             .btn-grop {
                 padding: 53px 0px;
 
-                @media screen and (max-width:768px) {
+                @media screen and (max-width: 768px) {
                     align-items: center;
                     flex-direction: column;
                 }
 
-                @media screen and (max-width:414px) {
+                @media screen and (max-width: 414px) {
                     padding: 10px 0px 53px;
                 }
 
                 .btn-pc {
                     margin: 0px 30px 55px;
 
-                    @media screen and (max-width:1200px) {
+                    @media screen and (max-width: 1200px) {
                         margin-bottom: 5px;
                     }
 
-                    @media screen and (max-width:768px) {
+                    @media screen and (max-width: 768px) {
                         margin-bottom: 15px;
                     }
 
@@ -1431,7 +1429,7 @@ main {
                             background-color: $br-brown;
                         }
 
-                        @media screen and (max-width:768px) {
+                        @media screen and (max-width: 768px) {
                             width: 164px;
                             height: 32px;
                             border-radius: 50px;
@@ -1439,13 +1437,12 @@ main {
                             font-size: $fs-14;
                         }
 
-                        @media screen and (max-width:576px) {
+                        @media screen and (max-width: 576px) {
                             margin-bottom: 5px;
                         }
                     }
                 }
             }
-
         }
     }
 
@@ -1458,22 +1455,21 @@ main {
         height: 200%;
         transform: translate(-50%, 0%);
 
-        @media screen and (max-width:1600px) {
+        @media screen and (max-width: 1600px) {
             width: calc(100% - 80px);
         }
 
-        @media screen and (max-width:1330px) {
+        @media screen and (max-width: 1330px) {
             width: calc(100% - 80px);
         }
 
-        @media screen and (max-width:1024px) {
+        @media screen and (max-width: 1060px) {
             width: calc(100% - 70px);
         }
 
-        @media screen and (max-width:576px) {
+        @media screen and (max-width: 576px) {
             width: 100%;
         }
-
 
         .slash {
             position: absolute;
@@ -1506,13 +1502,13 @@ main {
             padding-bottom: 25px;
             margin: 0;
 
-            @media screen and (max-width:576px) {
+            @media screen and (max-width: 576px) {
                 font-size: $fs-27;
                 padding-bottom: 20px;
             }
 
             &::after {
-                content: '';
+                content: "";
                 width: 330px;
                 height: 3px;
                 background-color: $black;
@@ -1521,7 +1517,7 @@ main {
                 left: 50%;
                 transform: translateX(-50%);
 
-                @media screen and (max-width:576px) {
+                @media screen and (max-width: 576px) {
                     width: 80px;
                 }
             }
@@ -1536,7 +1532,7 @@ main {
             padding-left: 10px;
             letter-spacing: 13px;
 
-            @media screen and (max-width:576px) {
+            @media screen and (max-width: 576px) {
                 padding: 15px 0px 0px;
                 font-size: $fs-16;
             }
@@ -1548,37 +1544,37 @@ main {
 
         & .card:nth-child(1) .Plan_bg {
             &::after {
-                background-image: url('../img/index/plan_01.jpg');
+                background-image: url("../img/index/plan_01.jpg");
             }
         }
 
         & .card:nth-child(2) .Plan_bg {
             &::after {
-                background-image: url('../img/index/plan_02.jpg');
+                background-image: url("../img/index/plan_02.jpg");
             }
         }
 
         & .card:nth-child(3) .Plan_bg {
             &::after {
-                background-image: url('../img/index/plan_03.jpg');
+                background-image: url("../img/index/plan_03.jpg");
             }
         }
 
         & .card:nth-child(4) .Plan_bg {
             &::after {
-                background-image: url('../img/index/plan_04.jpg');
+                background-image: url("../img/index/plan_04.jpg");
             }
         }
 
-        @media screen and (max-width:1600px) {
+        @media screen and (max-width: 1600px) {
             padding: 0px 75px 140px;
         }
 
-        @media screen and (max-width:1199px) {
+        @media screen and (max-width: 1199px) {
             padding: 0px 85px 140px;
         }
 
-        @media screen and (max-width:576px) {
+        @media screen and (max-width: 576px) {
             padding: 0px 20px;
         }
 
@@ -1597,7 +1593,7 @@ main {
                 display: flex;
                 justify-content: center;
 
-                @media screen and (max-width:576px) {
+                @media screen and (max-width: 576px) {
                     justify-content: flex-start;
                 }
 
@@ -1614,7 +1610,7 @@ main {
                     min-width: 136px;
                     transform: translateY(10px);
 
-                    @media screen and (max-width:576px) {
+                    @media screen and (max-width: 576px) {
                         font-size: $fs-18;
                         letter-spacing: 4px;
                         min-width: 90px;
@@ -1629,7 +1625,7 @@ main {
                     padding: 0px 0px 0px 20px;
                     transform: translateY(15px);
 
-                    @media screen and (max-width:768px) {
+                    @media screen and (max-width: 768px) {
                         margin-top: 0px;
                         overflow: hidden;
                         text-overflow: ellipsis;
@@ -1638,7 +1634,7 @@ main {
                         text-align: left;
                     }
 
-                    @media screen and (max-width:576px) {
+                    @media screen and (max-width: 576px) {
                         font-size: $fs-10;
                     }
                 }
@@ -1648,7 +1644,7 @@ main {
                     align-items: flex-end;
                     padding: 0px 23px;
 
-                    @media screen and (max-width:576px) {
+                    @media screen and (max-width: 576px) {
                         display: none;
                     }
 
@@ -1673,15 +1669,15 @@ main {
                     cursor: pointer;
                     transition: all 1s;
 
-                    @media screen and (max-width:1024px) {
+                    @media screen and (max-width: 1060px) {
                         display: none;
                     }
 
-                    @media screen and (max-width:993px) {
+                    @media screen and (max-width: 993px) {
                         width: 200px;
                     }
 
-                    @media screen and (max-width:576px) {
+                    @media screen and (max-width: 576px) {
                         display: none;
                     }
 
@@ -1720,7 +1716,7 @@ main {
                         transform: translateY(-50%);
 
                         &::after {
-                            content: '';
+                            content: "";
                             position: absolute;
                             height: 2px;
                             width: 5px;
@@ -1740,7 +1736,7 @@ main {
                 overflow: hidden;
 
                 &::after {
-                    content: '';
+                    content: "";
                     position: absolute;
                     background-repeat: no-repeat;
                     background-position: center;
@@ -1771,7 +1767,7 @@ main {
     background-color: $bc-light-brown;
     padding: 100px 0px;
 
-    @media screen and (max-width:576px) {
+    @media screen and (max-width: 576px) {
         padding: 45px 0px;
     }
 
@@ -1789,13 +1785,13 @@ main {
             padding-bottom: 25px;
             margin: 0;
 
-            @media screen and (max-width:576px) {
+            @media screen and (max-width: 576px) {
                 font-size: $fs-27;
                 padding-bottom: 20px;
             }
 
             &::after {
-                content: '';
+                content: "";
                 width: 120%;
                 height: 2px;
                 background-color: #000000;
@@ -1804,7 +1800,7 @@ main {
                 left: 50%;
                 transform: translateX(-50%);
 
-                @media screen and (max-width:576px) {
+                @media screen and (max-width: 576px) {
                     width: 80px;
                 }
             }
@@ -1819,7 +1815,7 @@ main {
             padding-left: 10px;
             letter-spacing: 13px;
 
-            @media screen and (max-width:576px) {
+            @media screen and (max-width: 576px) {
                 padding: 15px 0px 0px;
                 font-size: $fs-16;
             }
@@ -1834,23 +1830,22 @@ main {
         &.content {
             padding: 0px;
 
-            @media screen and (max-width:1600px) {
+            @media screen and (max-width: 1600px) {
                 padding: 0px 75px;
-
             }
 
-            @media screen and (max-width:1199px) {
+            @media screen and (max-width: 1199px) {
                 padding: 0px 50px;
                 margin-bottom: 70px;
             }
 
-            @media screen and (max-width:576px) {
+            @media screen and (max-width: 576px) {
                 padding: 0px 20px;
                 margin-bottom: 40px;
             }
         }
 
-        @media screen and (min-width:577px) {
+        @media screen and (min-width: 577px) {
             &:hover {
                 .play_img {
                     &::before {
@@ -1861,7 +1856,7 @@ main {
             }
         }
 
-        @media screen and (max-width:992px) {
+        @media screen and (max-width: 992px) {
             margin-bottom: 0;
         }
 
@@ -1873,11 +1868,11 @@ main {
             overflow: hidden;
             transition: all 2s;
 
-            @media screen and (max-width:768px) {
+            @media screen and (max-width: 768px) {
                 height: 440px;
             }
 
-            @media screen and (max-width:576px) {
+            @media screen and (max-width: 576px) {
                 height: 140px;
                 width: 280px;
                 margin: 0 auto;
@@ -1892,14 +1887,14 @@ main {
             }
 
             &::before {
-                content: '';
+                content: "";
                 width: 100%;
                 height: 100%;
                 position: absolute;
                 top: 0;
                 left: 0;
                 z-index: 1;
-                background-image: url('../img/index/video.jpg');
+                background-image: url("../img/index/video.jpg");
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -1907,7 +1902,7 @@ main {
             }
 
             &::after {
-                content: '';
+                content: "";
                 width: 100%;
                 height: 100%;
                 position: absolute;
@@ -1918,12 +1913,10 @@ main {
                 background-color: $bc-brown-Transparent;
             }
 
-
-
-            @media screen and (max-width:576px) {
+            @media screen and (max-width: 576px) {
                 padding: 0px;
 
-                &>a {
+                & > a {
                     position: absolute;
                     z-index: 3;
                     top: 50%;
@@ -1946,7 +1939,7 @@ main {
             .icon {
                 display: none;
 
-                @media screen and (max-width:576px) {
+                @media screen and (max-width: 576px) {
                     width: 70px;
                     height: 50px;
                     padding: 25px 35px;
@@ -1969,7 +1962,7 @@ main {
                 width: 100%;
                 display: none;
 
-                @media screen and (max-width:576px) {
+                @media screen and (max-width: 576px) {
                     display: block;
                 }
             }
@@ -1987,20 +1980,19 @@ main {
             transform: translate(-50%, -50%);
             z-index: 3;
 
-            @media screen and (max-width:768px) {
+            @media screen and (max-width: 768px) {
                 height: 100%;
                 padding: 65px 70px 0px;
             }
 
-            @media screen and (max-width:576px) {
+            @media screen and (max-width: 576px) {
                 padding: 40px 0px;
 
                 //05-19調整 開始
                 position: static;
                 left: 0;
-                transform: translate(0,0);
+                transform: translate(0, 0);
                 //05-19調整 結束
-
             }
 
             .text {
@@ -2015,8 +2007,7 @@ main {
                     margin: 0 auto 30px;
                     position: relative;
 
-
-                    @media screen and (max-width:576px) {
+                    @media screen and (max-width: 576px) {
                         color: $fc-black;
                         font-size: $fs-16;
                         letter-spacing: 5px;
@@ -2026,7 +2017,7 @@ main {
                     }
 
                     &::after {
-                        content: '';
+                        content: "";
                         position: absolute;
                         bottom: 0;
                         left: 50%;
@@ -2035,15 +2026,15 @@ main {
                         height: 2px;
                         background-color: $fc-white;
 
-                        @media screen and (max-width:576px) {
+                        @media screen and (max-width: 576px) {
                             display: none;
                         }
                     }
                 }
             }
 
-            &>a {
-                @media screen and (max-width:576px) {
+            & > a {
+                @media screen and (max-width: 576px) {
                     display: none;
                 }
             }
@@ -2054,7 +2045,7 @@ main {
                 border-radius: 15px;
                 margin-bottom: 50px;
 
-                @media screen and (max-width:576px) {
+                @media screen and (max-width: 576px) {
                     display: none;
                 }
 
@@ -2071,11 +2062,11 @@ main {
                     text-align: justify;
                     line-height: 35px;
 
-                    @media screen and (max-width:768px) {
+                    @media screen and (max-width: 768px) {
                         font-size: $fs-13;
                     }
 
-                    @media screen and (max-width:576px) {
+                    @media screen and (max-width: 576px) {
                         font-size: $fs-12;
                         letter-spacing: 1px;
                         color: $fc-black;
@@ -2090,7 +2081,7 @@ main {
 
     .player_pc {
         .player {
-            @media screen and (max-width:600px) {
+            @media screen and (max-width: 600px) {
                 display: none;
             }
         }
@@ -2100,7 +2091,7 @@ main {
         .player {
             display: none;
 
-            @media screen and (max-width:600px) {
+            @media screen and (max-width: 600px) {
                 display: block;
             }
         }
@@ -2119,7 +2110,7 @@ main {
         position: relative;
         cursor: pointer;
 
-        @media screen and (max-width:576px) {
+        @media screen and (max-width: 576px) {
             width: 170px;
             padding: 5px 25px;
         }
@@ -2148,7 +2139,7 @@ main {
             font-weight: $fw-bold;
             color: $fc-black;
 
-            @media screen and (max-width:576px) {
+            @media screen and (max-width: 576px) {
                 font-size: $fs-10;
             }
         }
@@ -2164,7 +2155,7 @@ main {
             transform: translateY(-50%);
 
             &::after {
-                content: '';
+                content: "";
                 position: absolute;
                 height: 2px;
                 width: 5px;
@@ -2190,32 +2181,31 @@ main {
         margin: 0 auto 80px;
         padding: 100px 0px;
 
-        @media screen and (max-width:1600px) {
+        @media screen and (max-width: 1600px) {
             padding: 100px 30px;
         }
 
-        @media screen and (max-width:1366px) {
+        @media screen and (max-width: 1366px) {
             padding: 80px 30px 100px;
         }
 
-        @media screen and (max-width:576px) {
+        @media screen and (max-width: 576px) {
             padding: 40px 20px 65px;
         }
 
         .news_area {
             justify-content: center;
 
-            @media screen and (max-width:1366px) {
+            @media screen and (max-width: 1366px) {
                 justify-content: start;
             }
-
         }
 
         .title_region {
             position: relative;
             z-index: 3;
 
-            @media screen and (max-width:1366px) and (min-width:577px) {
+            @media screen and (max-width: 1366px) and (min-width: 577px) {
                 width: 100%;
                 display: flex;
                 align-items: flex-end;
@@ -2240,12 +2230,12 @@ main {
                 & :nth-child(2) {
                     letter-spacing: 0px;
 
-                    @media screen and (max-width:576px) {
+                    @media screen and (max-width: 576px) {
                         letter-spacing: 4px;
                     }
                 }
 
-                @media screen and (max-width:576px) {
+                @media screen and (max-width: 576px) {
                     font-size: $fs-32;
                     display: flex;
                     flex-direction: column;
@@ -2253,7 +2243,7 @@ main {
                 }
 
                 &::after {
-                    content: '';
+                    content: "";
                     width: 85%;
                     height: 2px;
                     background-color: #000000;
@@ -2261,18 +2251,18 @@ main {
                     bottom: 0;
                     left: 0;
 
-                    @media screen and (max-width:1366px) and (min-width:576px) {
+                    @media screen and (max-width: 1366px) and (min-width: 576px) {
                         display: none;
                     }
 
-                    @media screen and (max-width:576px) {
+                    @media screen and (max-width: 576px) {
                         width: 120px;
                     }
                 }
             }
 
             .title_block {
-                @media screen and (max-width:1366px) and (min-width:577px) {
+                @media screen and (max-width: 1366px) and (min-width: 577px) {
                     padding-bottom: 35px;
                     margin-left: -15px;
                 }
@@ -2287,12 +2277,11 @@ main {
                     letter-spacing: 25px;
                     text-align: left;
 
-                    @media screen and (max-width:576px) {
+                    @media screen and (max-width: 576px) {
                         padding: 15px 0px 0px;
                         font-size: $fs-16;
                         letter-spacing: 17px;
                     }
-
                 }
             }
         }
@@ -2306,26 +2295,25 @@ main {
             position: relative;
             z-index: 3;
 
-            @media screen and (max-width:1366px) {
+            @media screen and (max-width: 1366px) {
                 flex: 0 0 100%;
                 max-width: 100%;
             }
 
-            @media screen and (max-width:576px) {
+            @media screen and (max-width: 576px) {
                 margin-top: 30px;
             }
 
             & :nth-child(1) {
                 .block {
                     &::before {
-                        content: '';
+                        content: "";
                         position: absolute;
                         width: 100%;
                         height: 1px;
                         background-color: $br-gray;
                         top: 0;
                         left: 0;
-
                     }
                 }
             }
@@ -2336,14 +2324,14 @@ main {
                 position: relative;
                 align-items: center;
 
-                @media screen and (max-width:768px) {
+                @media screen and (max-width: 768px) {
                     flex-direction: row;
                     padding: 20px 0px;
                     flex-wrap: wrap;
                 }
 
                 &::after {
-                    content: '';
+                    content: "";
                     position: absolute;
                     width: 100%;
                     height: 1px;
@@ -2357,7 +2345,7 @@ main {
                         &::before {
                             display: block;
 
-                            @media screen and (max-width:576px) {
+                            @media screen and (max-width: 576px) {
                                 display: none;
                             }
                         }
@@ -2367,9 +2355,8 @@ main {
                 p {
                     margin: 0px;
                     font-size: $fs-18;
-                    
 
-                    @media screen and (max-width:576px) {
+                    @media screen and (max-width: 576px) {
                         font-size: $fs-12;
                     }
 
@@ -2384,18 +2371,18 @@ main {
                         text-align: center;
                         // 05-14修改 - 結束
 
-                        @media screen and (max-width:576px) {
+                        @media screen and (max-width: 576px) {
                             padding: 0px 10px;
 
                             &::before {
-                                @media screen and (max-width:576px) {
+                                @media screen and (max-width: 576px) {
                                     display: none;
                                 }
                             }
                         }
 
                         &::before {
-                            content: '';
+                            content: "";
                             position: absolute;
                             width: 25px;
                             height: 5px;
@@ -2411,18 +2398,18 @@ main {
                         padding-left: 45px;
                         letter-spacing: 2px;
 
-                        @media screen and (max-width:768px) {
+                        @media screen and (max-width: 768px) {
                             margin-top: 15px;
                             width: 100%;
                             padding-left: 0;
                         }
 
-                        @media screen and (max-width:576px) {
+                        @media screen and (max-width: 576px) {
                             line-height: 30px;
                             font-size: $fs-16;
                         }
 
-                        @media screen and (max-width:414px) {
+                        @media screen and (max-width: 414px) {
                             font-size: $fs-14;
                         }
                     }
@@ -2434,7 +2421,7 @@ main {
                 display: flex;
                 justify-content: flex-end;
 
-                @media screen and (max-width:576px) {
+                @media screen and (max-width: 576px) {
                     justify-content: center;
                     margin-top: 50px;
                 }
@@ -2449,7 +2436,7 @@ main {
                     letter-spacing: 5px;
                     font-weight: $fw-600;
 
-                    @media screen and (max-width:576px) {
+                    @media screen and (max-width: 576px) {
                         width: 170px;
                         height: 25px;
                         line-height: 25px;
@@ -2508,14 +2495,13 @@ main {
 #Vendor {
     padding: 0px 100px 110px;
 
-    @media screen and (max-width:1024px) {
+    @media screen and (max-width: 1060px) {
         padding: 0px 30px 110px;
     }
 
     .content {
-
-        @media screen and (max-width:1200px) {
-            &>div {
+        @media screen and (max-width: 1200px) {
+            & > div {
                 text-align: center;
             }
         }
@@ -2524,11 +2510,11 @@ main {
             position: relative;
             width: 100%;
 
-            @media screen and (max-width:1024px) {
+            @media screen and (max-width: 1060px) {
                 padding: 0px 30px;
             }
 
-            @media screen and (max-width:576px) {
+            @media screen and (max-width: 576px) {
                 display: none;
             }
 
@@ -2544,7 +2530,7 @@ main {
                 display: flex;
 
                 &::before {
-                    content: '';
+                    content: "";
                     position: absolute;
                     right: -5px;
                     height: 100%;
@@ -2552,7 +2538,7 @@ main {
                     width: 2px;
                     background-color: $black;
 
-                    @media screen and (max-width:1300px) {
+                    @media screen and (max-width: 1300px) {
                         right: -10px;
                     }
                 }
@@ -2565,7 +2551,6 @@ main {
                     background-repeat: no-repeat;
                     background-size: contain;
                     // 05-14 修改 結束
-
                 }
             }
 
@@ -2577,13 +2562,13 @@ main {
                 transform: translate(-100%, -50%);
                 transition: all 2s;
 
-                @media screen and (max-width:1200px) {
+                @media screen and (max-width: 1200px) {
                     left: -5px;
                 }
 
                 .arrow_button {
                     &::before {
-                        content: '';
+                        content: "";
                         position: absolute;
                         height: 2px;
                         width: 10px;
@@ -2591,11 +2576,10 @@ main {
                         transform: rotate(-45deg);
                         transform-origin: left;
                         background-color: $fc-black;
-
                     }
                 }
 
-                @media screen and (max-width:1024px) {
+                @media screen and (max-width: 1060px) {
                     left: 50%;
                     transform: translate(-150%, 100%);
                 }
@@ -2609,13 +2593,13 @@ main {
                 transform: translate(100%, -50%);
                 transition: all 2s;
 
-                @media screen and (max-width:1200px) {
+                @media screen and (max-width: 1200px) {
                     right: -5px;
                 }
 
                 .arrow_button {
                     &::after {
-                        content: '';
+                        content: "";
                         position: absolute;
                         height: 2px;
                         width: 10px;
@@ -2626,7 +2610,7 @@ main {
                     }
                 }
 
-                @media screen and (max-width:1024px) {
+                @media screen and (max-width: 1060px) {
                     right: 50%;
                     transform: translate(150%, 100%);
                 }
@@ -2639,7 +2623,7 @@ main {
                 background-color: blanchedalmond;
                 border-bottom: 2px solid $fc-black;
 
-                @media screen and (max-width:1200px) {
+                @media screen and (max-width: 1200px) {
                     margin: auto;
                 }
             }
@@ -2654,7 +2638,7 @@ main {
             width: 100%;
             display: none;
 
-            @media screen and (max-width:576px) {
+            @media screen and (max-width: 576px) {
                 display: block;
                 padding-right: 30px;
                 padding-left: 30px;
@@ -2665,9 +2649,9 @@ main {
                 margin-bottom: 20px;
 
                 // 05-14 修改 開始
-                .swiper-wrapper{
-                    .swiper-slide{
-                        a{
+                .swiper-wrapper {
+                    .swiper-slide {
+                        a {
                             display: block;
                             width: 100%;
 
@@ -2683,7 +2667,7 @@ main {
                         }
                     }
                 }
-                 // 05-14 修改 結束
+                // 05-14 修改 結束
             }
 
             .arrow_button-prev {
@@ -2696,7 +2680,7 @@ main {
 
                 .arrow_button {
                     &::before {
-                        content: '';
+                        content: "";
                         position: absolute;
                         height: 2px;
                         width: 10px;
@@ -2704,11 +2688,10 @@ main {
                         transform: rotate(-45deg);
                         transform-origin: left;
                         background-color: $fc-black;
-
                     }
                 }
 
-                @media screen and (max-width:1024px) {
+                @media screen and (max-width: 1060px) {
                     left: 50%;
                     transform: translate(-150%, 0%);
                 }
@@ -2724,7 +2707,7 @@ main {
 
                 .arrow_button {
                     &::after {
-                        content: '';
+                        content: "";
                         position: absolute;
                         height: 2px;
                         width: 10px;
@@ -2735,7 +2718,7 @@ main {
                     }
                 }
 
-                @media screen and (max-width:1024px) {
+                @media screen and (max-width: 1060px) {
                     right: 50%;
                     transform: translate(150%, 0%);
                 }
@@ -2748,14 +2731,13 @@ main {
                 background-color: blanchedalmond;
                 border-bottom: 2px solid $fc-black;
 
-                @media screen and (max-width:1200px) {
+                @media screen and (max-width: 1200px) {
                     margin: auto;
                 }
             }
         }
     }
 }
-
 
 @keyframes video-fadeOut {
     from {
