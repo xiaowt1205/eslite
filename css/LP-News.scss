@@ -38,11 +38,10 @@
             &:hover {
                 background-color: $bc-dark-brown-hover;
                 color: $fc-white;
-
             }
             &.active {
                 font-weight: $fw-700;
-                background-color: $black;
+                background-color: #352E2C;
                 color: $white;
             }
         }
