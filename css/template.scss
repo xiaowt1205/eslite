@@ -1340,3 +1340,23 @@ footer {
     }
 
 }
+
+@media print{
+    .insidePageTitle{
+        justify-content: flex-start;
+        align-items: flex-start;
+        .breadcrumbArea{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .btnArea{
+        display: none;
+    }
+    .iconGroup{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+}

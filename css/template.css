@@ -1772,4 +1772,33 @@ footer .footer_area .icon_area .icon_block .icon-bg .mail-icon {
           transform: translateY(100%);
   margin-left: 20px;
 }
+
+@media print {
+  .insidePageTitle {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .insidePageTitle .breadcrumbArea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .btnArea {
+    display: none;
+  }
+  .iconGroup {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+}
 /*# sourceMappingURL=template.css.map */

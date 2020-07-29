@@ -6,6 +6,7 @@ var swiper = new Swiper('.banner .swiper-banner', {
         el: '.swiper-pagination',
         clickable: true,
     },
+    updateOnWindowResize:true,
 });
 
 var footer_swiper = new Swiper('.vendor_area .swiper-container', {
@@ -30,7 +31,7 @@ var footer_swiper = new Swiper('.vendor_area .swiper-container', {
 
 
 
-var swiper = new Swiper('.vendor_area-mob .swiper-container', {
+var swiper2 = new Swiper('.vendor_area-mob .swiper-container', {
     slidesPerView: 2,
     spaceBetween: 30,
     breakpoints: {
@@ -105,6 +106,11 @@ $(document).ready(function () {
         if ($(window).width() < 992) {
             $('.aside-btn-group .collapse').collapse('hide')
         }
+       console.log(swiper);
+        setTimeout(function () {
+            swiper.update();
+        }, 300);
     });
 });
+
 //06-17調整 結束

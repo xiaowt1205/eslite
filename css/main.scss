@@ -1109,6 +1109,28 @@ footer {
 // 05-25修改 開始
 
 
+//07-26
+@media print {
+    footer {
+     margin-top: -150px;
+        .container{
+            .row{
+                .icon_area{
+                    margin-left: 50px;
+                    .row{
+                        .content{
+                            margin-left: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//end
+
 @keyframes menu-fadeIn {
     from {
         opacity: 0;

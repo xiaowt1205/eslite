@@ -95,6 +95,8 @@
 .ui-datepicker {
   width: 20em;
   height: 22em;
+  background-color: white;
+  z-index: 99 !important;
 }
 
 .ui-datepicker .ui-datepicker-title {
@@ -1407,6 +1409,18 @@ footer .footer_area .icon_area .icon_block .icon-bg .mail-icon {
   .input_btn_style:nth-last-child(1) {
     margin-left: 10px;
     margin-right: 0px;
+  }
+}
+
+@media print {
+  footer {
+    margin-top: -150px;
+  }
+  footer .container .row .icon_area {
+    margin-left: 50px;
+  }
+  footer .container .row .icon_area .row .content {
+    margin-left: 25px;
   }
 }
 

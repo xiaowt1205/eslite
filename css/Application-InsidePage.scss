@@ -707,22 +707,18 @@ input[type=number]::-webkit-outer-spin-button {
                 margin-bottom: 40px;
                 padding: 15px;
             }
-
             // 06/08修正
             .form_input {
                 &.data {
                     display: flex;
                     flex-wrap: nowrap;
-
                     @media (max-width:768px) {
                         flex-wrap: wrap;
-
                         &>input {
                             width: 75%;
                             margin-bottom: 15px;
                         }
                     }
-
                     span {
                         font-size: $fs-18;
                         font-weight: $fw-600;
@@ -730,7 +726,6 @@ input[type=number]::-webkit-outer-spin-button {
                         justify-content: center;
                         align-items: center;
                         min-width: 56px;
-
                         @media (max-width:768px) {
                             margin-bottom: 15px;
                         }
@@ -738,7 +733,6 @@ input[type=number]::-webkit-outer-spin-button {
 
                 }
             }
-
             // 06/08修正
         }
 
