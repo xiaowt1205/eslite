@@ -2,52 +2,6 @@
 @import "./_variables.scss";
 @import "./_function.scss";
 
-* {
-    box-sizing: border-box;
-}
-.phoneStyleTitle {
-    @media (max-width:768px) {
-        margin-bottom: 30px;
-    }
-}
-.btnGroup {
-    display: flex;
-    flex-wrap: wrap;
-    a {
-        margin: 0px 20px 17px 0px;
-        font-weight: $fw-700;
-
-        &:nth-last-child(1) {
-            margin-bottom: 30px;
-        }
-        @media (max-width:768px) {
-            margin: 0px 10px 10px 0px;
-            &:nth-last-child(1) {
-                margin-bottom: 20px;
-            }
-        }
-        .btnArea {
-            @include text_style($fs-16, unset, center, 2px);
-            padding: 10px 30px;
-            border-radius: 8px;
-            border: 1px solid $black;
-            color: $fc-pure-gray;
-            @media (max-width:768px) {
-                padding: 5px 10px;
-            }
-            &:hover {
-                background-color: $bc-dark-brown-hover;
-                color: $fc-white;
-
-            }
-            &.active {
-                font-weight: $fw-700;
-                background-color: #352E2C;
-                color: $white;
-            }
-        }
-    }
-}
 .table_row{
     padding: 15px 0;
     letter-spacing: 3px;
@@ -55,6 +9,7 @@
     font-weight: bold;
     display: flex;
     border-bottom: 1px solid #808080;
+    position: relative;
     @media(max-width:1199px){
         flex-direction: column;
         border: 1px solid $bc-news-brown;
@@ -71,6 +26,14 @@
     }
     @media(max-width:540px){
         font-size: 12px;
+    }
+    .table_herf{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
     }
     .table_column{
         padding: 0 10px;
@@ -104,6 +67,8 @@
             padding: 0;
         }
         &:last-child{
+            position: relative;
+            z-index: 99;
             &::before{
                display: none; 
             }
