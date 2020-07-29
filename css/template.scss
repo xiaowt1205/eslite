@@ -2,6 +2,7 @@
 @import "./_variables.scss";
 @import "./_function.scss";
 
+
 header {
     position: relative;
     
@@ -1341,21 +1342,46 @@ footer {
 
 }
 
-@media print{
-    .insidePageTitle{
-        justify-content: flex-start;
-        align-items: flex-start;
-        .breadcrumbArea{
-            display: flex;
-            flex-direction: column;
-        }
+@media  print {  
+    @page{
+        size: 49cm !important;
+        margin: -7cm 15mm 8mm 15mm !important;
     }
-    .btnArea{
+    html{
+        zoom: 2;
+        position: relative;
+        left: -0.9cm;
+        top: 0cm;
+    }
+    * {
+        -webkit-print-color-adjust: exact !important;
+    }
+    .noBreak {
+        break-inside: avoid;
+    }
+    .noPrint {
         display: none;
     }
-    .iconGroup{
-        display: none;
+    header #topline nav{
+        padding: 0px 5%;
     }
+    .menu-icon{
+        display: none !important;
+    }
+    // .insidePageTitle{
+    //     justify-content: flex-start;
+    //     align-items: flex-start;
+    //     .breadcrumbArea{
+    //         display: flex;
+    //         flex-direction: column;
+    //     }
+    // }
+    // .btnArea{
+    //     display: none;
+    // }
+    // .iconGroup{
+    //     display: none;
+    // }
     footer{
         display: none;
     }
