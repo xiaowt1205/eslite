@@ -996,7 +996,7 @@ header #headline .headline_area .swiper_block .Menu_list .aside-btn-group {
   }
 }
 
-header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a {
+header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1010,38 +1010,44 @@ header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a {
 }
 
 @media screen and (max-width: 1060px) {
-  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a {
+  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
 }
 
-header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn {
+header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn {
   width: 62px;
   padding: 15px 0px;
   text-align: start;
   letter-spacing: 5px;
-  color: #FFFFFF;
   font-size: 16px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  color: #FFFFFF;
+}
+
+header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn > a {
+  color: #FFFFFF;
+  position: relative;
+  z-index: 5;
 }
 
 @media (max-width: 1060px) {
-  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn:hover {
+  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn:hover {
     width: 450px;
   }
 }
 
 @media screen and (max-width: 1060px) and (max-width: 1060px) {
-  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn:hover {
+  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn:hover {
     width: 415px;
   }
 }
 
 @media (max-width: 768px) {
-  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn {
+  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn {
     -webkit-writing-mode: unset;
         -ms-writing-mode: unset;
             writing-mode: unset;
@@ -1054,7 +1060,7 @@ header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .asi
     margin-bottom: 10px;
     overflow: unset;
   }
-  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn::after {
+  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn::after {
     content: " ";
     width: 210px;
     height: 1px;
@@ -1068,7 +1074,7 @@ header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .asi
 }
 
 @media screen and (max-width: 1060px) {
-  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn {
+  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn {
     width: 126px;
     padding: 0px 15px;
     -webkit-writing-mode: unset;
@@ -1078,7 +1084,7 @@ header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .asi
 }
 
 @media (min-width: 1061px) {
-  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn {
+  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn {
     font-size: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1096,7 +1102,7 @@ header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .asi
   }
 }
 
-header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn .gradient-mask {
+header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn .gradient-mask {
   padding-top: 15px;
   position: absolute;
   top: 50%;
@@ -1116,24 +1122,24 @@ header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .asi
 }
 
 @media (min-width: 1061px) {
-  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn .gradient-mask {
+  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn .gradient-mask {
     padding: 0px 0px 125px;
   }
 }
 
 @media (max-width: 1060px) {
-  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn .gradient-mask {
+  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn .gradient-mask {
     top: 0%;
   }
 }
 
 @media (max-width: 768px) {
-  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn .gradient-mask {
+  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn .gradient-mask {
     display: none;
   }
 }
 
-header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn .gradient-mask .aside-sub-btn-group {
+header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn .gradient-mask .aside-sub-btn-group {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1146,7 +1152,7 @@ header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .asi
 }
 
 @media (min-width: 1061px) {
-  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn .gradient-mask .aside-sub-btn-group {
+  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn .gradient-mask .aside-sub-btn-group {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -1155,7 +1161,7 @@ header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .asi
 }
 
 @media (max-width: 1060px) {
-  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn .gradient-mask .aside-sub-btn-group {
+  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn .gradient-mask .aside-sub-btn-group {
     position: absolute;
     top: 50%;
     left: 0;
@@ -1166,29 +1172,29 @@ header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .asi
   }
 }
 
-header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn .gradient-mask .aside-sub-btn-group .aside-sub-btn {
+header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn .gradient-mask .aside-sub-btn-group .aside-sub-btn {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   opacity: 0.5;
 }
 
 @media (max-width: 1200px) {
-  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn .gradient-mask .aside-sub-btn-group .aside-sub-btn {
+  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn .gradient-mask .aside-sub-btn-group .aside-sub-btn {
     font-size: 10px;
   }
 }
 
 @media (max-width: 1060px) {
-  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn .gradient-mask .aside-sub-btn-group .aside-sub-btn {
+  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn .gradient-mask .aside-sub-btn-group .aside-sub-btn {
     font-size: 12px;
   }
 }
 
-header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn .gradient-mask .aside-sub-btn-group .aside-sub-btn:hover {
+header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn .gradient-mask .aside-sub-btn-group .aside-sub-btn:hover {
   opacity: 1;
 }
 
-header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn:hover .gradient-mask {
+header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn:hover .gradient-mask {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
   opacity: 1;
@@ -1196,25 +1202,25 @@ header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .asi
 }
 
 @media (max-width: 1060px) {
-  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn:hover .gradient-mask {
+  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn:hover .gradient-mask {
     background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
     background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
   }
 }
 
-header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn:hover .gradient-mask .aside-sub-btn-group {
+header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn:hover .gradient-mask .aside-sub-btn-group {
   opacity: 1;
 }
 
 @media (max-width: 1060px) {
-  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn:hover .gradient-mask .aside-sub-btn-group {
+  header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn:hover .gradient-mask .aside-sub-btn-group {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
 }
 
-header #headline .headline_area .swiper_block .Menu_list .aside-btn-group a .aside-btn a {
+header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn a {
   position: relative;
 }
 

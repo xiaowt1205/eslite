@@ -614,7 +614,7 @@ header {
                             display: none;
                         }
 
-                        a {
+                        &>div {
                             display: flex;
                             align-items: flex-end;
                             position: relative;
@@ -630,9 +630,16 @@ header {
                                 padding: 15px 0px;
                                 text-align: start;
                                 letter-spacing: 5px;
-                                color: $fc-white;
                                 font-size: $fs-16;
                                 transition: 0.5s;
+                                color: $fc-white;
+
+
+                                &>a{
+                                    color: $fc-white;
+                                    position: relative;
+                                    z-index:5;
+                                }
 
                                 @media (max-width: 1060px) {
                                     &:hover {
