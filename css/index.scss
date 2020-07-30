@@ -749,6 +749,10 @@ header {
                                             transition: 0.3s;
                                             opacity: 0.5;
 
+                                            &>a{
+                                                color: $white;
+                                            }
+
                                             @media (max-width: 1200px) {
                                                 font-size: 10px;
                                             }

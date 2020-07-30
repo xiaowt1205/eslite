@@ -1178,6 +1178,10 @@ header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div 
   opacity: 0.5;
 }
 
+header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn .gradient-mask .aside-sub-btn-group .aside-sub-btn > a {
+  color: #FFFFFF;
+}
+
 @media (max-width: 1200px) {
   header #headline .headline_area .swiper_block .Menu_list .aside-btn-group > div .aside-btn .gradient-mask .aside-sub-btn-group .aside-sub-btn {
     font-size: 10px;
