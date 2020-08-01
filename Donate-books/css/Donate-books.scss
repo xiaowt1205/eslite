@@ -1,4 +1,4 @@
-#Freight{
+#Freight {
     ul.text {
         list-style-type: disc;
 
@@ -21,7 +21,7 @@
         }
     }
 
-    .image{
+    .image {
         margin-top: 50px;
         display: flex;
         justify-content: center;
@@ -36,20 +36,20 @@
     }
 }
 
-#Send{
+#Send {
     ul.text {
-    list-style-type: disc;
+        list-style-type: disc;
 
-    li {
-        list-style: disc;
-        margin-left: 32px;
+        li {
+            list-style: disc;
+            margin-left: 32px;
 
-        &.image {
-            margin-left: 0px;
-            list-style: none;
+            &.image {
+                margin-left: 0px;
+                list-style: none;
+            }
         }
     }
-}
 
     li {
         &.image_center {
@@ -59,7 +59,7 @@
         }
     }
 
-    .image{
+    .image {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -73,7 +73,7 @@
     }
 
 
-    .table{
+    .table {
         width: 100%;
         border: 1px solid black;
 
@@ -132,31 +132,32 @@
                 padding-right: 0;
             }
 
-            tbody{
+            tbody {
                 display: flex;
                 align-items: flex-start;
 
-                tr{
+                tr {
 
-                    &:nth-child(1){
+                    &:nth-child(1) {
                         min-width: 88px;
                     }
 
                     display: flex;
                     flex-wrap: wrap;
-                    
+
                     th,
-                    td{
+                    td {
                         width: 100%;
                     }
-                    .store{
+
+                    .store {
                         padding: 0;
                         height: 270px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
 
-                        img{
+                        img {
                             max-width: 100%;
                             max-height: 100%;
                         }
@@ -167,7 +168,7 @@
     }
 }
 
-#Smartcabinet{
+#Smartcabinet {
     ul.text {
         list-style-type: disc;
         margin-bottom: 50px;
@@ -200,38 +201,39 @@
         }
     }
 
-    .Description{
+    .Description {
 
-        p{
-            &.title{
+        p {
+            &.title {
                 font-size: 18px;
                 margin-bottom: 5px;
             }
         }
 
-        .D_text-around{
+        .D_text-around {
             display: flex;
             justify-content: space-between;
 
-            .image{
-                    width: 200px;
-                    margin-left: 20px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-start;
+            .image {
+                width: 200px;
+                margin-left: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
 
-                img{
+                img {
                     max-width: 100%;
                     max-width: 100%;
                 }
             }
         }
 
-        .D_block{
-            img{
-                margin:15px 0;
+        .D_block {
+            img {
+                margin: 15px 0;
             }
-            ul{
+
+            ul {
                 padding-left: 15px;
                 margin-bottom: 0;
             }
@@ -239,7 +241,7 @@
     }
 }
 
-#Description{
+#Description {
     ul.text {
         list-style-type: disc;
 
@@ -251,6 +253,11 @@
                 margin-left: 0px;
                 list-style: none;
             }
+            // 修正07-31
+            a {
+                text-decoration: underline;
+            }
+            // 修正07-31
         }
     }
 
@@ -267,43 +274,44 @@
         width: 100%;
     }
 
-    p{
-        &.title{
+    p {
+        &.title {
             font-size: 18px;
             margin-bottom: 5px;
         }
     }
 
-    .D_text-around{
+    .D_text-around {
         display: flex;
         justify-content: space-between;
 
-        .image{
-                width: 200px;
-                margin-left: 20px;
-                display: flex;
-                justify-content: center;
-                align-items: flex-start;
+        .image {
+            width: 200px;
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
 
-            img{
+            img {
                 max-width: 100%;
                 max-width: 100%;
             }
         }
     }
 
-    .D_block{
-        img{
-            margin:15px 0;
+    .D_block {
+        img {
+            margin: 15px 0;
         }
-        ul{
+
+        ul {
             padding-left: 15px;
             margin-bottom: 0;
         }
     }
 }
 
-#Donatebooks-family{
+#Donatebooks-family {
     ul.text {
         list-style-type: disc;
         margin-bottom: 50px;
@@ -346,13 +354,15 @@
             letter-spacing: 3px;
             max-width: 220px;
             padding: 10px 25px;
-            background-color:transparent;
+            background-color: transparent;
             transition: .3s;
             color: #231815;
+
             &:hover {
-                background-color:#6a4945;
+                background-color: #6a4945;
                 color: #FFFFFF;
             }
+
             width: 220px;
             margin-right: 20px;
             border: 1px solid #231815;
@@ -370,7 +380,7 @@
     }
 }
 
-#Donatebooks-Hi-Life{
+#Donatebooks-Hi-Life {
     ul.text {
         list-style-type: disc;
         margin-bottom: 50px;
@@ -413,13 +423,15 @@
             letter-spacing: 3px;
             max-width: 220px;
             padding: 10px 25px;
-            background-color:transparent;
+            background-color: transparent;
             transition: .3s;
             color: #231815;
+
             &:hover {
-                background-color:#6a4945;
+                background-color: #6a4945;
                 color: #FFFFFF;
             }
+
             width: 220px;
             margin-right: 20px;
             border: 1px solid #231815;
@@ -437,7 +449,7 @@
     }
 }
 
-#Donatebooks-seven{
+#Donatebooks-seven {
     ul.text {
         list-style-type: disc;
         margin-bottom: 50px;
@@ -480,13 +492,15 @@
             letter-spacing: 3px;
             max-width: 220px;
             padding: 10px 25px;
-            background-color:transparent;
+            background-color: transparent;
             transition: .3s;
             color: #231815;
+
             &:hover {
-                background-color:#6a4945;
+                background-color: #6a4945;
                 color: #FFFFFF;
             }
+
             width: 220px;
             margin-right: 20px;
             border: 1px solid #231815;

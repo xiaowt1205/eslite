@@ -256,6 +256,10 @@
   list-style: none;
 }
 
+#Description ul.text li a {
+  text-decoration: underline;
+}
+
 #Description li.image_center {
   padding-top: 20px;
   margin: 0 auto;
