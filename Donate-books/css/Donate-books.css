@@ -1,3 +1,7 @@
+ul li a {
+  text-decoration: underline;
+}
+
 #Freight ul.text {
   list-style-type: disc;
 }
@@ -254,10 +258,6 @@
 #Description ul.text li.image {
   margin-left: 0px;
   list-style: none;
-}
-
-#Description ul.text li a {
-  text-decoration: underline;
 }
 
 #Description li.image_center {

@@ -1,3 +1,13 @@
+ul{
+    li {
+        // 修正07-31
+        a {
+            text-decoration: underline;
+        }
+        // 修正07-31
+    }
+}
+
 #Freight {
     ul.text {
         list-style-type: disc;
@@ -241,7 +251,7 @@
     }
 }
 
-#Description {
+#Description{
     ul.text {
         list-style-type: disc;
 
@@ -253,11 +263,6 @@
                 margin-left: 0px;
                 list-style: none;
             }
-            // 修正07-31
-            a {
-                text-decoration: underline;
-            }
-            // 修正07-31
         }
     }
 
