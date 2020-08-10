@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
 @media (min-width: 576px) and (max-width: 992px) {
@@ -414,15 +415,63 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (max-width: 1199px) {
   .table_row .table_column .content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     border-bottom: 1px solid #938075;
     padding: 16px 25px;
     display: table-cell;
     vertical-align: middle;
     text-align: left;
+  }
+}
+
+.table_row .table_column .content .start-date {
+  font-size: 16px;
+  font-weight: unset;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.table_row .table_column .content .start-date::after {
+  content: '起';
+}
+
+@media (max-width: 1199px) {
+  .table_row .table_column .content .start-date {
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 540px) {
+  .table_row .table_column .content .start-date {
+    font-size: 12px;
+  }
+}
+
+.table_row .table_column .content .end-date {
+  font-size: 16px;
+  font-weight: unset;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.table_row .table_column .content .end-date::after {
+  content: '止';
+}
+
+@media (max-width: 540px) {
+  .table_row .table_column .content .end-date {
+    font-size: 12px;
   }
 }
 

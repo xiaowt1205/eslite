@@ -155,12 +155,35 @@
             display: flex;
             align-items: center;
             text-align: center;
+            flex-direction: column;
             @media(max-width:1199px){
+                flex-direction: row;
                 border-bottom: 1px solid $bc-news-brown;
                 padding: 16px 25px;
                 display: table-cell;
                 vertical-align: middle;
                 text-align: left;
+            }
+            .start-date{
+                @include text_style($fs-16, unset, center, 0);
+                &::after{
+                    content: '起';
+                }
+                @media(max-width:1199px){
+                    margin-right: 12px;
+                }
+                @media (max-width: 540px){
+                    font-size: $fs-12;
+                }
+            }
+            .end-date{
+                @include text_style($fs-16, unset, center, 0);
+                &::after{
+                    content: '止';  
+                }
+                @media (max-width: 540px){
+                    font-size: $fs-12;
+                }
             }
             .download_btns{
                 min-width: 150px;
