@@ -1805,11 +1805,11 @@ footer .footer_area .icon_area .icon_block .icon-bg .mail-icon {
   }
 }
 
-ul.WYSIWYG {
+.WYSIWYG ul {
   padding-left: 20px;
 }
 
-ul.WYSIWYG li {
+.WYSIWYG ul li {
   list-style: disc;
 }
 /*# sourceMappingURL=template.css.map */
