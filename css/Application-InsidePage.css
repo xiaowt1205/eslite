@@ -1028,14 +1028,6 @@ input[type=number]::-webkit-outer-spin-button {
   margin-bottom: 30px;
 }
 
-.books_form .Information_from .text_title li ul {
-  padding-left: 20px;
-}
-
-.books_form .Information_from .text_title li ul li {
-  list-style: disc;
-}
-
 .books_form .Information_from .form_input select.identity {
   width: 110px;
   background-position-x: calc(100% - 15px);
