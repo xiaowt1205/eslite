@@ -138,6 +138,7 @@ header {
                                 max-height: 0px;
                                 overflow: hidden;
                                 transition: .3s;
+                                transition-delay: .3s;
                                 transition-timing-function: ease-out;
 
                                 li {
@@ -156,6 +157,7 @@ header {
                                     max-height: 300px;
                                     padding: 10px 0 0px 0;
                                     transition: .3s;
+                                    transition-delay: .3s;
                                     transition-timing-function: ease-in;
                                 }
 

@@ -380,6 +380,8 @@ header #topline nav > ul > li > ul > li > ul {
   overflow: hidden;
   -webkit-transition: .3s;
   transition: .3s;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
   -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
 }
@@ -398,6 +400,8 @@ header #topline nav > ul > li > ul > li:hover > ul {
   padding: 10px 0 0px 0;
   -webkit-transition: .3s;
   transition: .3s;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
   -webkit-transition-timing-function: ease-in;
           transition-timing-function: ease-in;
 }
