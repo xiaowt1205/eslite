@@ -325,8 +325,8 @@
 }
 
 .question .QA-tab .QA.active .answer {
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   max-height: 3000px;
