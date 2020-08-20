@@ -6,93 +6,61 @@
 .three,
 .four,
 .five,
-.multiple-pic{
+.multiple-pic {
     ol,
     ul,
-    li
-    {
+    li {
         text-align: left;
         list-style-type: unset;
         list-style-position: inside;
     }
 
-    ol{
-        li{
+    ol {
+        li {
             list-style-type: decimal;
         }
     }
 }
-//05-29調整 結束
 
 .two {
     .text_area {
-
         .picture {
-            margin-bottom: 50px;
             text-align: center;
             overflow: hidden;
-
-            // 05-27修改 開始
-            height: 395px;
             position: relative;
-
             img {
                 max-width: 100%;
-                max-height: 100%;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
+                height: auto;
             }
-
-            // 05-27修改 結束
-
         }
 
         .text_block {
             @include text_style($fs-14, $fw-600, justify, 4px);
             line-height: 1.5;
             padding: 50px 0px;
-
             p {
                 margin-bottom: 20px;
-
                 &:nth-last-child(1) {
                     margin-bottom: 0px;
                 }
             }
         }
-
     }
 }
-
 .three {
     .text_area {
         display: flex;
         flex-direction: column;
-
         .picture {
             order: 1;
             margin-bottom: 50px;
             text-align: center;
-            overflow: hidden;
-
-            // 05-27修改 開始
-            height: 395px;
             position: relative;
-
             img {
-                max-width: 100%;
-                max-height: 100%;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
+                width: 100%;
+                height: auto;
             }
-
-            // 05-27修改 結束
         }
-
         .text_block {
             @include text_style($fs-14, $fw-600, justify, 4px);
             line-height: 1.5;
@@ -106,53 +74,44 @@
                 }
             }
         }
-
     }
 }
 
 .four {
     .text_area {
         display: flex;
-        padding: 50px 0px;
 
-        @media screen and (max-width:768px) {
+        @media screen and (max-width: 768px) {
             flex-direction: column;
             flex-wrap: wrap;
             padding: 0px;
         }
 
         .picture {
-            margin-right: 50px;
-
-            // 05-27修改 開始
-            width: 100%;
-            height: 395px;
             position: relative;
+            margin-right: 5%;
+            max-width: 39%;
 
-            @media (max-width:768px) {
+            @media (max-width: 768px) {
+                max-width: 100%;
                 margin-right: 0px;
                 margin-bottom: 35px;
             }
 
             img {
-                max-width: 100%;
-                max-height: 100%;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50% , -50%);
+                width: 100%;
+                height: auto;
             }
 
             // 05-27修改 結束
-
         }
 
         .text_block {
             @include text_style($fs-14, $fw-600, justify, 4px);
             line-height: 1.5;
-            width: 60%;
+            flex: 1;
 
-            @media screen and (max-width:1400px) {
+            @media screen and (max-width: 1400px) {
                 width: 100%;
                 margin-bottom: 35px;
             }
@@ -171,48 +130,42 @@
 .five {
     .text_area {
         display: flex;
-        padding: 50px 0px;
         flex-direction: row-reverse;
 
-        @media screen and (max-width:768px) {
+        @media screen and (max-width: 768px) {
             flex-direction: column;
             flex-wrap: wrap;
             padding: 0px;
         }
 
         .picture {
-            margin-left: 50px;
+            // 05-27修改 開始
+            max-width: 39%;
+            position: relative;
+            @media (max-width: 768px) {
+                max-width: 100%;
+                margin-bottom: 35px;
+            }
 
-           // 05-27修改 開始
-           width: 100%;
-           height: 395px;
-           position: relative;
+            img {
+                width: 100%;
+                height: auto;
+            }
 
-           @media (max-width:768px) {
-               margin-left: 0px;
-               margin-bottom: 35px;
-           }
-
-           img {
-               max-width: 100%;
-               max-height: 100%;
-               position: absolute;
-               top: 50%;
-               left: 50%;
-               transform: translate(-50% , -50%);
-           }
-
-           // 05-27修改 結束
+            // 05-27修改 結束
         }
 
         .text_block {
             @include text_style($fs-14, $fw-600, justify, 4px);
-            width: 60%;
+            flex: 1;
             line-height: 1.5;
-
-            @media screen and (max-width:1300px) {
+            margin-right: 5%;
+            @media screen and (max-width: 1300px) {
                 width: 100%;
                 margin-bottom: 35px;
+            }
+            @media screen and (max-width: 768px) {
+                margin-right: 0;
             }
 
             p {
@@ -230,10 +183,10 @@
     .text_area {
         padding: 50px 0px;
 
-        @media screen and (max-width:768px) {
+        @media screen and (max-width: 768px) {
             padding: 0px;
         }
-        
+
         .text-around {
             margin-bottom: 40px;
             font-size: 14px;
@@ -242,7 +195,7 @@
             letter-spacing: 4px;
             line-height: 1.5;
 
-            @media (max-width:768px) {
+            @media (max-width: 768px) {
                 margin-bottom: 30px;
             }
 
@@ -251,7 +204,7 @@
                 margin-left: 15px;
                 width: 250px;
 
-                @media (max-width:768px) {
+                @media (max-width: 768px) {
                     margin-left: 0;
                     margin-bottom: 10px;
                     height: unset;
@@ -274,7 +227,6 @@ table.table_area {
     font-size: $fs-14;
     font-weight: $fw-600;
 
-
     tr {
         border: 1px solid $fc-pure-gray;
         border-collapse: collapse;
@@ -295,7 +247,6 @@ table.table_area {
         }
     }
 
-
     & th,
     td {
         border: 1px solid $fc-pure-gray;
@@ -303,7 +254,6 @@ table.table_area {
         padding: 2px 4px;
         text-align: center;
     }
-
 
     @media screen and (max-width: 768px) {
         border: 0px solid $fc-pure-gray;
@@ -353,7 +303,7 @@ table.table_area {
     .text_title {
         padding: 100px 0px 50px;
 
-        @media screen and (max-width:576px) {
+        @media screen and (max-width: 576px) {
             padding: 40px 0px 30px;
         }
 
@@ -365,7 +315,7 @@ table.table_area {
     .picture_block {
         position: relative;
 
-        @media screen and (max-width:991px) {
+        @media screen and (max-width: 991px) {
             margin-bottom: 100px;
         }
 
@@ -373,34 +323,33 @@ table.table_area {
             width: 100%;
             height: 150px;
             display: flex;
-            @media screen and (max-width:768px) {
+            @media screen and (max-width: 768px) {
                 height: 200px;
             }
-            @media screen and (max-width:576px) {
+            @media screen and (max-width: 576px) {
                 height: 250px;
             }
 
             // 05-27 修改 開始
-            
-            a{
+
+            a {
                 width: 100%;
                 height: 100%;
                 display: block;
-                position:relative;
-                border: 1px solid rgba(102, 82, 82,0.2);
+                position: relative;
+                border: 1px solid rgba(102, 82, 82, 0.2);
 
                 img {
                     max-width: 100%;
                     max-height: 100%;
-                    position:absolute;
-                    top:50%;
-                    left:50%;
-                    transform:translate(-50% , -50%);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                 }
             }
 
             // 05-27 修改 結束
-
         }
 
         .arrow_button-prev {
@@ -410,7 +359,7 @@ table.table_area {
             left: -40px;
             transform: translate(-100%, -50%);
 
-            @media screen and (max-width:991px) {
+            @media screen and (max-width: 991px) {
                 top: 120%;
                 left: 40%;
                 transform: translate(-100%, 0%);
@@ -418,7 +367,7 @@ table.table_area {
 
             .arrow_button {
                 &::before {
-                    content: '';
+                    content: "";
                     position: absolute;
                     height: 2px;
                     width: 10px;
@@ -437,7 +386,7 @@ table.table_area {
             padding: 20px 0px;
             transform: translate(100%, -50%);
 
-            @media screen and (max-width:991px) {
+            @media screen and (max-width: 991px) {
                 top: 120%;
                 right: 40%;
                 transform: translate(100%, 0%);
@@ -445,7 +394,7 @@ table.table_area {
 
             .arrow_button {
                 &::after {
-                    content: '';
+                    content: "";
                     position: absolute;
                     height: 2px;
                     width: 10px;
@@ -464,12 +413,12 @@ table.table_area {
             background-color: blanchedalmond;
             border-bottom: 2px solid $fc-black;
 
-            @media screen and (max-width:1366px) {
+            @media screen and (max-width: 1366px) {
                 margin: auto;
                 width: 40px;
             }
 
-            @media screen and (max-width:991px) {
+            @media screen and (max-width: 991px) {
                 width: 70px;
             }
         }
@@ -482,11 +431,11 @@ table.table_area {
     @include text_style($fs-14, $fw-600, unset, 4px);
     margin-bottom: 60px;
 
-    &>div {
+    & > div {
         display: flex;
         padding: 2.5px 0px;
 
-        &>div {
+        & > div {
             width: 110px;
             padding-right: 20px;
             white-space: nowrap;
@@ -495,7 +444,7 @@ table.table_area {
 
             &::after {
                 position: absolute;
-                content: '';
+                content: "";
                 width: 1px;
                 height: 15px;
                 top: 50%;
@@ -507,7 +456,7 @@ table.table_area {
     }
 
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 50%;
         left: 0;
@@ -518,37 +467,37 @@ table.table_area {
     }
 
     .firtst_data {
-        &>div {
-            &>p {
+        & > div {
+            & > p {
                 letter-spacing: 15px;
             }
         }
 
-        &>p {
+        & > p {
             padding-left: 20px;
         }
     }
 
     .new_data {
-        &>div {
-            &>p {
+        & > div {
+            & > p {
                 letter-spacing: 2.7px;
             }
         }
 
-        &>p {
+        & > p {
             padding-left: 20px;
         }
     }
 
     .click_point {
-        &>div {
-            &>p {
+        & > div {
+            & > p {
                 letter-spacing: 2.7px;
             }
         }
 
-        &>p {
+        & > p {
             padding-left: 20px;
         }
     }
@@ -558,7 +507,7 @@ table.table_area {
     .text_title {
         padding: 70px 0px 40px;
 
-        @media screen and (max-width:576px) {
+        @media screen and (max-width: 576px) {
             padding: 40px 0px 30px;
         }
 
@@ -592,7 +541,6 @@ table.table_area {
                 .btn {
                     background-color: $white;
                 }
-
             }
         }
 
@@ -615,7 +563,6 @@ table.table_area {
                 @include text_btn(1px, $fc-gray);
             }
         }
-
     }
 }
 
@@ -627,7 +574,7 @@ table.table_area {
         padding: 70px 0px 40px;
         width: 100%;
 
-        @media screen and (max-width:576px) {
+        @media screen and (max-width: 576px) {
             padding: 40px 0px 30px;
         }
 
@@ -648,7 +595,7 @@ table.table_area {
                 margin-bottom: 100px;
             }
 
-            @media screen and (max-width:768px) {
+            @media screen and (max-width: 768px) {
                 width: 100%;
                 margin-right: 0px;
             }
@@ -656,7 +603,7 @@ table.table_area {
             .text_block {
                 p {
                     font-size: $fs-18;
-                    transition: .5s;
+                    transition: 0.5s;
                 }
             }
 
@@ -680,7 +627,6 @@ table.table_area {
             position: relative;
             overflow: hidden;
 
-
             p {
                 width: 100%;
                 padding: 25px;
@@ -696,17 +642,3 @@ table.table_area {
 th {
     word-break: break-all;
 }
-// 06/17調整
-.text_area{
-    .picture {
-        iframe {
-            max-width: 100%;
-            max-height: 100%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50% , -50%);
-        }
-    }
-}
-// 06/17調整

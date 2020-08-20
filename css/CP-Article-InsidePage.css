@@ -28,21 +28,14 @@
 }
 
 .two .text_area .picture {
-  margin-bottom: 50px;
   text-align: center;
   overflow: hidden;
-  height: 395px;
   position: relative;
 }
 
 .two .text_area .picture img {
   max-width: 100%;
-  max-height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  height: auto;
 }
 
 .two .text_area .text_block {
@@ -78,19 +71,12 @@
           order: 1;
   margin-bottom: 50px;
   text-align: center;
-  overflow: hidden;
-  height: 395px;
   position: relative;
 }
 
 .three .text_area .picture img {
-  max-width: 100%;
-  max-height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
 }
 
 .three .text_area .text_block {
@@ -114,7 +100,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 50px 0px;
 }
 
 @media screen and (max-width: 768px) {
@@ -130,27 +115,22 @@
 }
 
 .four .text_area .picture {
-  margin-right: 50px;
-  width: 100%;
-  height: 395px;
   position: relative;
+  margin-right: 5%;
+  max-width: 39%;
 }
 
 @media (max-width: 768px) {
   .four .text_area .picture {
+    max-width: 100%;
     margin-right: 0px;
     margin-bottom: 35px;
   }
 }
 
 .four .text_area .picture img {
-  max-width: 100%;
-  max-height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
 }
 
 .four .text_area .text_block {
@@ -159,7 +139,9 @@
   text-align: justify;
   letter-spacing: 4px;
   line-height: 1.5;
-  width: 60%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 @media screen and (max-width: 1400px) {
@@ -181,7 +163,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 50px 0px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -201,27 +182,20 @@
 }
 
 .five .text_area .picture {
-  margin-left: 50px;
-  width: 100%;
-  height: 395px;
+  max-width: 39%;
   position: relative;
 }
 
 @media (max-width: 768px) {
   .five .text_area .picture {
-    margin-left: 0px;
+    max-width: 100%;
     margin-bottom: 35px;
   }
 }
 
 .five .text_area .picture img {
-  max-width: 100%;
-  max-height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
 }
 
 .five .text_area .text_block {
@@ -229,14 +203,23 @@
   font-weight: 600;
   text-align: justify;
   letter-spacing: 4px;
-  width: 60%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   line-height: 1.5;
+  margin-right: 5%;
 }
 
 @media screen and (max-width: 1300px) {
   .five .text_area .text_block {
     width: 100%;
     margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .five .text_area .text_block {
+    margin-right: 0;
   }
 }
 
@@ -447,7 +430,7 @@ table.table_area td {
 }
 
 .picture_area .picture_block .arrow_button-prev .arrow_button::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 2px;
   width: 10px;
@@ -478,7 +461,7 @@ table.table_area td {
 }
 
 .picture_area .picture_block .arrow_button-next .arrow_button::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 2px;
   width: 10px;
@@ -539,7 +522,7 @@ table.table_area td {
 
 .message_area > div > div::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 1px;
   height: 15px;
   top: 50%;
@@ -550,7 +533,7 @@ table.table_area td {
 }
 
 .message_area::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 0;
@@ -717,8 +700,8 @@ table.table_area td {
 
 .area_link .link_area a .text_block p {
   font-size: 18px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .area_link .link_area a:hover .text_block p {
@@ -754,15 +737,5 @@ table.table_area td {
 
 th {
   word-break: break-all;
-}
-
-.text_area .picture iframe {
-  max-width: 100%;
-  max-height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=CP-Article-InsidePage.css.map */
