@@ -1853,9 +1853,10 @@ main {
             }
 
             @media screen and (max-width: 576px) {
-                padding: 0px 20px;
+                padding: 0px;
                 margin-bottom: 40px;
             }
+            
         }
 
         @media screen and (min-width: 577px) {
@@ -1923,6 +1924,9 @@ main {
                 left: 0;
                 z-index: 2;
                 background-color: $bc-brown-Transparent;
+                @media screen and (max-width: 576px) {
+                    border-radius: 15px;
+                }
             }
 
             @media screen and (max-width: 576px) {

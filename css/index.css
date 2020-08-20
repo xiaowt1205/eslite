@@ -2500,7 +2500,7 @@ main .bg {
 
 @media screen and (max-width: 576px) {
   #Video .player.content {
-    padding: 0px 20px;
+    padding: 0px;
     margin-bottom: 40px;
   }
 }
@@ -2576,6 +2576,12 @@ main .bg {
   left: 0;
   z-index: 2;
   background-color: rgba(35, 24, 21, 0.443);
+}
+
+@media screen and (max-width: 576px) {
+  #Video .player .play_img::after {
+    border-radius: 15px;
+  }
 }
 
 @media screen and (max-width: 576px) {
