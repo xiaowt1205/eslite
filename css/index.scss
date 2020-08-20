@@ -1860,8 +1860,9 @@ main {
 
         @media screen and (min-width: 577px) {
             &:hover {
+                overflow: hidden;
                 .play_img {
-                    &::before {
+                    .play_img_content {
                         transform: scale(1.3);
                         transform-origin: center;
                     }
@@ -1880,6 +1881,7 @@ main {
             position: relative;
             overflow: hidden;
             transition: all 2s;
+            
 
             @media screen and (max-width: 768px) {
                 height: 440px;
@@ -1892,22 +1894,19 @@ main {
                 border-radius: 15px;
 
                 &:hover {
-                    &::before {
+                    .play_img_content {
                         transform: scale(1.3);
                         transform-origin: center;
                     }
                 }
             }
-
-            &::before {
-                content: "";
+            .play_img_content{
                 width: 100%;
                 height: 100%;
                 position: absolute;
                 top: 0;
                 left: 0;
                 z-index: 1;
-                background-image: url("../img/index/video.jpg");
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -1920,6 +1919,7 @@ main {
                 height: 100%;
                 position: absolute;
                 mix-blend-mode: multiply;
+                border-radius: 50px;
                 top: 0;
                 left: 0;
                 z-index: 2;
