@@ -231,7 +231,6 @@
 
 @media (max-width: 768px) {
   .btnGroup .project {
-    max-height: 90px;
     margin-bottom: 40px;
     font-size: 16px;
     position: relative;

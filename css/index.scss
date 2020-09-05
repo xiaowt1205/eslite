@@ -811,6 +811,9 @@ header {
                     @media screen and (max-width: 1680px) {
                         width: 71vw;
                     }
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                    }
                 }
             }
 

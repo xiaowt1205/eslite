@@ -1242,6 +1242,12 @@ header #headline .headline_area .swiper_block .headline_swiper {
   }
 }
 
+@media screen and (max-width: 768px) {
+  header #headline .headline_area .swiper_block .headline_swiper {
+    width: 100%;
+  }
+}
+
 header #headline .headline_area .banner {
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.24), 0 -10px 25px rgba(0, 0, 0, 0.23);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.24), 0 -10px 25px rgba(0, 0, 0, 0.23);
