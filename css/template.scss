@@ -1390,9 +1390,15 @@ footer {
 }
 .WYSIWYG{
     ul{
-        padding-left:20px;
+        padding-left:40px;
         li{
             list-style: disc;
+        }
+    }
+    ol{
+        padding-left:40px;
+        li{
+            list-style: decimal;
         }
     }
 }

@@ -1810,10 +1810,18 @@ footer .footer_area .icon_area .icon_block .icon-bg .mail-icon {
 }
 
 .WYSIWYG ul {
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 .WYSIWYG ul li {
   list-style: disc;
+}
+
+.WYSIWYG ol {
+  padding-left: 40px;
+}
+
+.WYSIWYG ol li {
+  list-style: decimal;
 }
 /*# sourceMappingURL=template.css.map */
