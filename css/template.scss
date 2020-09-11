@@ -383,6 +383,12 @@ main {
         padding-left: 15px;
         padding-right: 15px;
     }
+    .breadcrumb-item{
+        display: flex;
+        a{
+            display: flex;
+        }
+    }
 }
 
 .imgSize {
@@ -494,13 +500,14 @@ main {
             & .breadcrumb-item:nth-last-child(1) {
                 position: relative;
             }
-
+           
             a {
                 text-decoration: unset;
                 color: $fc-black;
                 letter-spacing: 4px;
+                display: flex;
             }
-
+            
             .breadcrumb-item.active {
                 color: $fc-black;
             }
@@ -600,6 +607,7 @@ main {
         color: $fc-black;
     }
 
+    
     .breadcrumb-item+.breadcrumb-item::before {
         content: ">";
         color: $fc-black;

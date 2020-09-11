@@ -659,6 +659,18 @@ main.container {
   padding-right: 15px;
 }
 
+main .breadcrumb-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .breadcrumb-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .imgSize {
   width: 100%;
   min-width: 81px;
@@ -809,6 +821,9 @@ main.container {
   text-decoration: unset;
   color: #000000;
   letter-spacing: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .insidePageTitle .breadcrumbArea .breadcrumb .breadcrumb-item.active {
