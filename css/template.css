@@ -1829,7 +1829,7 @@ footer .footer_area .icon_area .icon_block .icon-bg .mail-icon {
 }
 
 .WYSIWYG ul li {
-  list-style: disc;
+  list-style: unset;
 }
 
 .WYSIWYG ol {
@@ -1837,6 +1837,6 @@ footer .footer_area .icon_area .icon_block .icon-bg .mail-icon {
 }
 
 .WYSIWYG ol li {
-  list-style: decimal;
+  list-style: unset;
 }
 /*# sourceMappingURL=template.css.map */
