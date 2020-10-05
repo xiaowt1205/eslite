@@ -455,9 +455,10 @@ main {
     min-height: 632px;
     //06-17調整 結束
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
 
     @media (max-width:768px) {
         display: none;
